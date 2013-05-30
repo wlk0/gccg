@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCFF - RW - Dwar - Down, Down to Mithril Town
+#      MEDF - Down, Down to Mithril Town [Dwar]
 #
 
 ####
@@ -22,6 +22,7 @@ Deck
 2 An Unexpected Outpost (DM)
 1 Big Bats (FB)
 1 Black Crows (FB)
+1 Bolg, Son of Azog (DF)
 1 Cave Worm (TD)
 1 Cave-drake (LE)
 1 Dire Wolves (TD)
@@ -30,7 +31,6 @@ Deck
 1 Fell Winter (LE)
 2 Great Secrets Buried There (DM)
 1 Many Sorrows Befall (TD)
-1 Marsh-drake (TD)
 1 Monstrosity of Diverse Shape (BA)
 1 Pierced by Many Wounds (DM)
 1 Power Built by Waiting (AS)
@@ -113,17 +113,17 @@ Sideboard
 1 Alone and Unadvised (AS)
 1 Balrog of Moria (TW)
 1 Bane of the Ithil-stone (TW)
-1 Doubled Vigilance (DM)
+1 Call of the Deeps (DF)
+1 Crossing the Border (DF)
 1 Fell Turtle (TW)
 1 Greed (LE)
 1 Lost in Free-domains (TW)
-1 Nature's Revenge (WH)
 1 News of Doom (LE)
+1 Out of Practise (DF)
 1 Rolled down to the Sea (WH)
-1 Scatha Ahunt (TD)
-1 Siege (TW)
 1 Stormcrow (PR)
 1 Witch-king of Angmar (TW)
+1 Wyrmsiege (DF)
 
 # Hero Resource (3)
 
@@ -233,4 +233,3 @@ Sites
 1 The Wind Throne [M] (LE)
 1 The Worthy Hills [M] (LE)
 1 Thranduil's Halls [M] (LE)
-
