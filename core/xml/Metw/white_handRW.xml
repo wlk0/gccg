@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
-<ccg-setinfo name="The White Hand" dir="WhiteHandRW" abbrev="WH" game="Middle-earth">
+<ccg-setinfo name="The White Hand" dir="WhiteHand" abbrev="WH" game="Middle-earth">
   <cards>
 
     <card name="Alatar" graphics="AlatarRW.jpg" text="Unique.  Avatar.  -5 mp if eliminated.  Your sources of kill mp are worth their normal value.  If you have more than 7 P, all detainment attacks against your companies become non-detainment.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
-<ccg-setinfo name="The Dragons" dir="DragonsRW" abbrev="TD" game="Middle-earth">
+<ccg-setinfo name="The Dragons" dir="Dragons" abbrev="TD" game="Middle-earth">
   <cards>
 
     <card name="Agburanar Ahunt" graphics="AgburanarAhuntRW.jpg" text="Unique.  Multiple Manifestation of Agburanar.  Three strikes.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
-<ccg-setinfo name="The Wizards" dir="WizardsRW" abbrev="TW" game="Middle-earth">
+<ccg-setinfo name="The Wizards" dir="Wizards" abbrev="TW" game="Middle-earth">
   <cards>
 
     <card name="Abductor" graphics="AbductorRW.jpg" text="One strike.  Effect: Each successful strike does not wound a character, but rather places them off to the side with this card.  After the attack has been faced, if any characters were placed off to the side, this card becomes a permanent event host which takes the characters prisoner at the site the attack was keyed to.  The rescue attack is Men — 2 strikes at 9 prowess.">

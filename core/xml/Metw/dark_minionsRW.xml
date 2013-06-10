@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
-<ccg-setinfo name="Dark Minions" dir="DarkMinionsRW" abbrev="DM" game="Middle-earth">
+<ccg-setinfo name="Dark Minions" dir="DarkMinions" abbrev="DM" game="Middle-earth">
   <cards>
 
     <card name="Anarin" graphics="AnarinRW.jpg" text="Unique.  Agent.  As an Agent, may move to any H.
