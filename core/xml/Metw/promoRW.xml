@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
-<ccg-setinfo name="Promotional" dir="PromoRW" abbrev="PR" game="Middle-earth">
+<ccg-setinfo name="Promotional" dir="Promo" abbrev="PR" game="Middle-earth">
   <cards>
 
     <card name="Fury of the Iron Crown" graphics="FuryoftheIronCrownRW.jpg" text="Unique.  Manifestation of the Iron Crown.  Playable on a non-detainment orc, troll, man, or Nazgûl attack.  The attack receives +4 prowess.  After the attack is faced, it is automatically defeated, and The Iron Crown may be placed from the defender’s hand with any member of the defending company.">
