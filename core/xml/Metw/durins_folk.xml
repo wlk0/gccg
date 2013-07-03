@@ -1502,7 +1502,7 @@
 			 <attr key="class" value="Creature"/>
 			 <attr key="prowess" value="10"/>
 			 <attr key="body" value="-"/>
-			 <attr key="mp" value="2"/>
+			 <attr key="mp" value="1"/>
 			 <attr key="strikes" value="3"/>
 			 <attr key="subclass" value="Undead"/>
 		</card>

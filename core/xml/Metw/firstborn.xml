@@ -1038,7 +1038,7 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="prowess" value="(+1"/>
 			 <attr key="body" value="-)"/>
-			 <attr key="sp" value="2"/>
+			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Elrond"/>
 	</card>
 	<card name="Chief-guardian" graphics="Chiefguardian.jpg" text="Unique. Galadriel specific. Playable on Fanar. +1 EI against Elves with home site Lórien. Fanar requires only 2 points of influence to control and may only be controlled by Galadriel or GI. Discard this card if Fanar is not in a company with Galadriel and moves to a site not in Wold &amp; Foothills or its adjacent regions. Additionally, if he is the highest mind Elf in the company Fanar is a leader. If the company contains only Elves, you choose defending non-wounded characters for any attack that does not choose defending characters, and you assign all strikes during CvCC at a site in a Wilderness [w] region.">
