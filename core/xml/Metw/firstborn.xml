@@ -838,7 +838,7 @@
 			 <attr key="mind" value="+1"/>
 			 <attr key="keyword" value="startable"/>
 	</card>
-	<card name="Light of the Lady" graphics="Light of the Lady.jpg" text="Unique. Playable on Galadriel. If she is at Lórien you may now bring Lady of the Golden Wood into play from your hand, discard pile or sideboard (overriding any conflicting rules). Discard Lady of the Golden Wood if Galadriel is not at Lórien. Additionally, if you are Galadriel, this card gives 1 P and you may play True Fána on Lady Galadriel as if she were a Wizard: modify her prowess for True Fána by +2 (+4 if Nenya has been played the same turn).">
+	<card name="Light of Lothlórien" graphics="Light of Lothlorien.jpg" text="Unique. Playable on Galadriel. If she is at Lórien you may now bring Lady of the Golden Wood into play from your hand, discard pile or sideboard (overriding any conflicting rules). Discard Lady of the Golden Wood if Galadriel is not at Lórien. Additionally, if you are Galadriel, this card gives 1 P and you may play True Fána on Lady Galadriel as if she were a Wizard: modify her prowess for True Fána by +2 (+4 if Nenya has been played the same turn).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
