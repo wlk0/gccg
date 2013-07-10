@@ -60,7 +60,7 @@ my $xml = 1+index(join(" ",@ARGV),"text");
 my $cache = 1+index(join(" ",@ARGV),"cache");
 my $keep = 1+index(join(" ",@ARGV),"keep");
 
-getstore("http://gatherer.wizards.com/Pages/Search/Default.aspx?output=checklist&set=|[\"$seturl\"]","$set-check.html") unless $cache;
+getstore("http://gatherer.wizards.com/Pages/Search/Default.aspx?action=advanced&output=checklist&set=|[\"$seturl\"]","$set-check.html") unless $cache;
 
 my ($check,$text);
 
@@ -305,8 +305,10 @@ sub FilterText
 {
 	($_) = shift;
 	s/\s*—\s*/ - /g;
+	s/’/'/g;
 	s/{Q}/{UT}/g; #the untap symbol is {UT} here
 	s/{S}i}?/{S}/g; #fix bug with snow mana representation
+	s/{(\d)}(\d)}/{$1$2}/g;
 	s/{\((.)\/(.)\)(?:}|(?={))/{\U$1$2\E}/g; #hybrid mana symbols need to be made uppercase in GCCG
 	s/ ?\(.+?\)(?:(?! \w) )?//g; #strip reminder text, without messing up spacing if it occurs mid-sentence
 	s/<br \/>/\n/g;

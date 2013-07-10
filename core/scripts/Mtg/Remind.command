@@ -20,7 +20,7 @@ MTG_KEYWORDS{''}="{green}List of available keywords\n
 {yellow}F: {white}Fading, Fateful Hour, Fateseal, Fear, Fight, First Strike, Flanking, Flash, Flashback, Flying, Forecast, Fortify, Fuse, Frenzy.\n
 {yellow}G: {white}Graft, Grandeur, Gravestorm.\n
 {yellow}H: {white}Haste, Haunt, Hellbent, Hexproof, Hideaway, Horsemanship.\n
-{yellow}I: {white}Imprint, Infect, Intimidate.\n
+{yellow}I: {white}Imprint, Indestructible, Infect, Intimidate.\n
 {yellow}J: {white}Join Forces.\n
 {yellow}K: {white}Kicker, Kinship.\n
 {yellow}L: {white}Landfall, Landwalk, Level Up, Lifelink, Living Weapon.\n
@@ -106,6 +106,7 @@ MTG_KEYWORDS{'hexproof'}="{yellow}Hexproof{white} is a static ability. \"Hexproo
 MTG_KEYWORDS{'hideaway'}="{yellow}Hideaway{white} represents a static ability and a triggered ability. It means \"This permanent enters the battlefield tapped\" and \"When this permanent enters the battlefield, look at the top four cards of your library. Exile one of them face down and put the rest on the bottom of your library in any order. The exiled card gains 'Any player who has controlled the permanent that exiled this card may look at this card in the exile zone.'\"";
 MTG_KEYWORDS{'horsemanship'}="{yellow}Horsemanship{white} is a static ability. A creature with horsemanship can't be blocked by creatures without horsemanship. A creature with horsemanship can block a creature with or without horsemanship.";
 MTG_KEYWORDS{'imprint'}="{yellow}Imprint{white} is an ability word that deals with exiling one or more cards and looking at their characteristics. The term itself has no rules meaning.";
+MTG_KEYWORDS{'indestructible'}="{yellow}Indestructible{white} is a static ability. A permanent with indestructible can't be destroyed, and if it's a creature, it doesn't get checked for lethal damage. Other effects (such as sacrificing it or reducing its toughness to 0) can still cause it to go to the graveyard.";
 MTG_KEYWORDS{'infect'}="{yellow}Infect{white} is a static ability. Damage dealt to a player by a source with infect doesn't cause that player to lose life. Rather, it causes the player to get that many poison counters. Damage dealt to a creature by a source with infect isn't marked on that creature. Rather, it causes that many -1/-1 counters to be put on that creature.";
 MTG_KEYWORDS{'intimidate'}="{yellow}Intimidate{white} is a static ability. A creature with intimidate can't be blocked except by artifact creatures and/or creatures that share a color with it.";
 MTG_KEYWORDS{'join forces'}="{yellow}Join forces{white} is an ability word which denotes an opportunity for multiple players to spend mana. The term itself has no rules meaning.";

@@ -12,7 +12,7 @@ if(!port)
 
 factory.port=29101;
 
-INITIAL_MONEY=50.0;
+INITIAL_MONEY=0.0;
 GAME_BONUS=13.0;
 BET_BONUS_MULTIPLIER=1;
 LOSER_PERCENTAGE=0.2;
@@ -188,15 +188,17 @@ def RewardCard
 }
 
 #
-# SetHook(setting name, value) - Called before checking a setting to apply.
+# SetHook(setting name, value) - Called before checking a setting to apply. Return 0 if not handled.
 #
 def SetHook
 {
   push(r);
   push(s);
+  return(0);
   
   if(ARG[0]=="reward")
   {
+    return(1);
     if(typeof(ARG[1])!="string")
     {
       if(!has_entry("reward",users{UserWithoutMode()}[3][0]))

@@ -940,7 +940,7 @@ def _InitializeGame
 def _EndGame
 {
   if(isfunction("EndGame"))
-    call("EndGame",NULL);
+    EndGame(NULL);
   if (con != server.meta)
   {
     net_send(con,("OK",NULL));
@@ -1843,6 +1843,15 @@ def CommandReconnect
 HELP{"any"}{"reconnect"}=("","reconnect to server",NULL,
 "If you have lost connection to the meta server, this will attempt to put you back in the chatroom without having to close and reopen the program.");
 
+def CommandDisconnect
+{
+  if(server!=NULL)
+  {
+    net_close(server);
+    Msg("{red}Closed connection.");
+  }
+}
+
 #
 # CommandWho() - Implementation of /who command.
 #
@@ -2209,7 +2218,7 @@ def ChatCommandRenamedeck
   {
     push(n);
     n=join(ARG," ");
-    if(has_entry(n,decks)
+    if(has_entry(n,decks))
       Msg("{red}You already have a deck with that name.");
     else
     {
@@ -7346,22 +7355,22 @@ def RegisterSubmenu
 }
 
 #
-# RegisterPlaysetSubmenu() - Set registration menu. (NOT CURRENTLY SUPPORTED)
+# RegisterPlaysetSubmenu() - Set registration menu.
 #
-#def RegisterPlaysetSubmenu
-#{
-#  push(m);
-#  push(d);
-#  m=(,);
-#  for(s)(sets())
-#  {
-#    d=set_data(s);
-#    m=m+(("Register "+d[0]+" playset","/registerplayset "+s,""),);
-#  }
-#  Submenu("Register Playset",m);
-#  d=pop();
-#  m=pop();
-#}
+def RegisterPlaysetSubmenu
+{
+  push(m);
+  push(d);
+  m=(,);
+  for(s)(sets())
+  {
+    d=set_data(s);
+    m=m+(("Register "+d[0]+" playset","/registerplayset "+s,""),);
+  }
+  Submenu("Register Playset",m);
+  d=pop();
+  m=pop();
+}
 
 #
 # CheckLegalitySubmenu() - Deck legality checking menu.
@@ -9972,14 +9981,21 @@ def RefreshBook
 {
   if(mode!="offline")
   {
-    push(u);
-    u=select("!book_refresh{#}",ARG);
-    if(length(u))
+    if(server.meta==NULL)
+      0;
+    else if(!net_isopen(server.meta))
+      0;
+    else
     {
-      SendMeta("Refresh",u);
-      forall("book_refresh{#}=1",u);
+      push(u);
+      u=select("!book_refresh{#}",ARG);
+      if(length(u))
+      {
+        SendMeta("Refresh",u);
+        forall("book_refresh{#}=1",u);
+      }
+      u=pop();
     }
-    u=pop();
   }
 }
 
