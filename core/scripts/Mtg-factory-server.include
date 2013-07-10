@@ -192,14 +192,53 @@ def InitDistributions
   distribution{"AVR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"M13"}=(,);
   distribution{"M13"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+#these nese next two sets don't actually have boosters, but the reward function needs to be able to generate them  
+  distribution{"COM"}=(,);
+  distribution{"COM"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"PC2"}=(,);
+  distribution{"PC2"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+
   distribution{"RTR"}=(,);
   distribution{"RTR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"GTC"}=(,);
   distribution{"GTC"}{"booster"}=((1,"RTR/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"DGM"}=(,);
   distribution{"DGM"}{"booster"}=((1,"10*L+2*RTR/RL+2*GTC/RL+ML"),(10,"C"),(3,"U"),(1,"2*R+M"));
+# the following is only for reference, since MOD has a separate procedure
+  distribution{"MOD"}=(,);
+  distribution{"MOD"}{"booster"}=((1,"12*C+6*U+2*R+M"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"M14"}=(,);
   distribution{"M14"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+}
+
+#
+# ProduceMOD_Booster() - Produce Modern Masters booster.
+#
+def ProduceMOD_Booster
+{
+  push(p);
+  push(i);
+  p=RandomCardSet("MOD",((11,"C"),(3,"U"),(1,"R")));
+
+# falling back on the procedure given in distribution{"MOD"} involves
+# constructing and destructing a 1600-element list for every single pack,
+# which is wasteful
+  i=random(1693);
+
+  if(i<15)
+    p[0]=random(cards{"MOD"}{"M"});
+  else if(i<121)
+    p[0]=random(cards{"MOD"}{"R"});
+  else if(i<481)
+    p[0]=random(cards{"MOD"}{"U"});
+  else
+# it's already a common, but replace it with a new one anyway
+# since the foil slot is supposed to allow duplicates
+    p[0]=random(cards{"MOD"}{"C"});
+
+  return(p);
+  i=pop();
+  p=pop();
 }
 
 #

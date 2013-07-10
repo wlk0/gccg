@@ -410,8 +410,7 @@
      <attr key="power" value="2"/>
      <attr key="toughness" value="2"/>
     </card>					
-    <card name="Marit Lage" graphics="Tokens/MaritLage2020B.jpg" text="Flying
-Marit Lage is indestructible.">
+    <card name="Marit Lage" graphics="Tokens/MaritLage2020B.jpg" text="Flying, indestructible">
      <attr key="color" value="Black"/>
      <attr key="type" value="Legendary Creature"/>
      <attr key="subtype" value="Avatar"/>
@@ -1503,7 +1502,7 @@ At the beginning of each upkeep, if no spells were cast last turn, transform Wol
      <attr key="power" value="1"/>
      <attr key="toughness" value="1"/>
     </card>
-    <card name="Emblem: Elspeth, Knight Errant" graphics="Emblems/Emblem_ElspethKnightErrant.jpg" text="Artifacts, creatures, enchantments, and lands you control are indestructible.">
+    <card name="Emblem: Elspeth, Knight Errant" graphics="Emblems/Emblem_ElspethKnightErrant.jpg" text="Artifacts, creatures, enchantments, and lands you control have indestructible.">
     </card>
     <card name="Emblem: Koth of the Hammer" graphics="Emblems/Emblem_KothoftheHammer.jpg" text="Mountains you control have '{T}: This land deals 1 damage to target creature or player.'">
     </card>
@@ -1623,11 +1622,21 @@ Whenever a card is put into your graveyard from anywhere, you may return it to y
      <attr key="power" value="*"/>
      <attr key="toughness" value="*"/>
     </card>
-    <card name="9" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Bat" graphics="Tokens/Bat11B.jpg" text="Flying">
+     <attr key="color" value="Black"/>
+     <attr key="type" value="Creature"/>
+     <attr key="subtype" value="Bat"/>
+     <attr key="power" value="1"/>
+     <attr key="toughness" value="1"/>
     </card>
-    <card name="90" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Spider" graphics="Tokens/Spider24B.jpg" text="Reach">
+     <attr key="color" value="Black"/>
+     <attr key="type" value="Creature"/>
+     <attr key="subtype" value="Spider"/>
+     <attr key="power" value="2"/>
+     <attr key="toughness" value="4"/>
     </card>
-    <card name="1" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Emblem: Garruk, Caller of Beasts" graphics="Emblems/Emblem_GarrukCallerofBeasts.jpg" text="Whenever you cast a creature spell, you may search your library for a creature card, put it onto the battlefield, then shuffle your library.">
     </card>
     <card name="2" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
     </card>
@@ -2263,7 +2272,7 @@ Whenever you roll {C}, creatures can't attack you until a player planeswalks." b
    <attr key="color" value="Plane" />
   </card>
   <card name="Bant" graphics="Planes/Bant.jpg" text="All creatures have exalted. 
-Whenever you roll {C}, put a divinity counter on target green, white, or blue creature. That creature is indestructible as long as it has a divinity counter on it." back="500">
+Whenever you roll {C}, put a divinity counter on target green, white, or blue creature. That creature has indestructible for as long as it has a divinity counter on it." back="500">
    <attr key="rarity" value="C" />
    <attr key="type" value="Plane" />
    <attr key="subtype" value="Alara" />
@@ -2590,7 +2599,7 @@ Whenever you roll {C}, you may destroy target nonland permanent." back="500">
    <attr key="color" value="Plane" />
   </card>
   <card name="Gavony" graphics="Planes/Gavony.jpg" text="All creatures have vigilance.
-Whenever you roll {C}, creatures you control are indestructible this turn." back="500">
+Whenever you roll {C}, creatures you control have indestructible this turn." back="500">
    <attr key="rarity" value="C" />
    <attr key="type" value="Plane" />
    <attr key="subtype" value="Innistrad" />
@@ -2704,7 +2713,7 @@ Whenever you roll {C}, creatures you control get +1/+0 and gain first strike unt
    <attr key="color" value="Plane" />
   </card>
   <card name="Orochi Colony" graphics="Planes/OrochiColony.jpg" text="Whenever a creature you control deals combat damage to a player, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
-Whenever you roll {C}, target creature is unblockable this turn." back="500">
+Whenever you roll {C}, target creature can't be blocked this turn." back="500">
    <attr key="rarity" value="C" />
    <attr key="type" value="Plane" />
    <attr key="subtype" value="Kamigawa" />

@@ -444,7 +444,7 @@ def EndGame
   persistent = persistent - 1;
   if (persistent > 0)
   {
-    sleep(2);
+    sleep(3);
     net_close(meta.connection);
     InitServer(players_wanted);
     InitGame();
@@ -1733,7 +1733,7 @@ def Verb
   {
     if(ARG[1]=="look at")
       return("looks at");
-    else if(substr(ARG[1],length(ARG[1])-2,2)=="ch")
+    else if(right(ARG[1],2)=="ch" || right(ARG[1],1)=="s")
       return(ARG[1]+"es");
     else
       return(ARG[1]+"s");

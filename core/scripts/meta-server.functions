@@ -188,11 +188,14 @@ PLAYSET_BONUS_MULTIPLIER=SET_BONUS_MULTIPLIER*PLAYSET_COUNT;
 REQUIRE_VERSION="0.8.9";
 REQUIRE_GAME_VERSION="0.9.3";
 REQUIRE_SERVER_VERSION="0.8.70";
-TIME_ZONE="GMT+2";
+TIME_ZONE="GMT";
 ANONYMOUS_IP="gccg.sourceforge.net";
 RTFM="http://gccg.sourceforge.net/pages/faq.php";
 
 SILENT_SEALED_TRADE=0;
+
+# time when /save was most recently issued
+lastsave=0;
 
 #
 # Note: help documentation must be added to client.functions.
@@ -2412,9 +2415,15 @@ def CommandReload
 #
 def CommandSave
 {
-  SendAll("Message","{green}Saving...");
-  SaveAll();
-  SendAll("Message","Server data saved.");
+  if(lastsave + 60 > current_time())
+    Reply("{orange}Data has already been saved recently.");
+  else
+  {
+    SendAll("Message","{green}Saving...");
+    SaveAll();
+    SendAll("Message","Server data saved.");
+    lastsave=current_time();
+  }
 }
 
 #

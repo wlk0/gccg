@@ -20,7 +20,7 @@ BOOK_DEFAULT_SORT=("[age]","[color]","[name]");
 imprint=0;
 # Servers
 if(server.name=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
-  server.name="gccgmeta.sytes.net";
+  server.name="william-floyd.dreamhost.com";
 #  server.name="localhost";
 
 # lobby background color
@@ -137,8 +137,9 @@ FILTER_OPTIONS=(
  ("Instants","find('Instant',Attr('type',#))!=NULL",(1,"[age]","[color]","[name]")),
  ("Sorceries","find('Sorcery',Attr('type',#))!=NULL",(1,"[age]","[color]","[name]")),
  ("Planeswalkers","find('Planeswalker',Attr('type',#))!=NULL",(1,"[color]","[name]")),
+ ("Auras","find('Aura',Attr('subtype',#))!=NULL",(1,"[age]","[color]","[name]")),
+ ("Equipment","find('Equipment',Attr('subtype',#))!=NULL",(1,"[age]","[color]","[name]")),
  "{hr}",
- ("Tribal Creatures","TribalLegal(#) && TypeLegal('Vintage',#)",("[subtype]","[color]","[name]")),
  ("Vintage Restricted","TypeRestricted('Vintage',#)",(1,"[age]","[color]","[name]")),
  ("Legacy Banned","!TypeLegal('Legacy',#)",(1,"[age]","[color]","[name]")),
  ("Commander Banned","!TypeLegal('Commander',#)",(1,"[age]","[color]","[name]")),
@@ -432,6 +433,7 @@ def EmblemSubmenu
   Submenu("Select Emblem",(
   ("Domri Rade","",'Send("Transfer",(1,("out.of.play",187),("play",0)))'),
   ("Elspeth, Knight-Errant","",'Send("Transfer",(1,("out.of.play",167),("play",0)))'),
+  ("Garruk, Caller of Beasts","",'Send("Transfer",(1,("out.of.play",191),("play",0)))'),
   ("Koth of the Hammer","",'Send("Transfer",(1,("out.of.play",168),("play",0)))'),
   ("Liliana of the Dark Realms","",'Send("Transfer",(1,("out.of.play",175),("play",0)))'),
   ("Sorin, Lord of Innistrad","",'Send("Transfer",(1,("out.of.play",169),("play",0)))'),
@@ -485,6 +487,7 @@ def TokenSubmenuB
 {
   Submenu("Select Token",(
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
+   ("Bat 1/1 (B, flying)","",'Send("Transfer",(1,("out.of.play",189),("play",0)))'),
    ("Bear 2/2 (G)","",'Send("Transfer",(1,("out.of.play",11),("play",0)))'),
    ("Beast 3/3 (G)","",'Send("Transfer",(1,("out.of.play",12),("play",0)))'),
    ("Beast 4/4 (G)","",'Send("Transfer",(1,("out.of.play",13),("play",0)))'),
@@ -690,7 +693,8 @@ def TokenSubmenuS
    ("Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",79),("play",0)))'),
    ("Soldier Ally 1/1 (W)","",'Send("Transfer",(1,("out.of.play",110),("play",0)))'),
    ("Spawn 2/2 (A)","",'Send("Transfer",(1,("out.of.play",80),("play",0)))'),
-   ("Spider 1/2 (G, reach)","",'Send("Transfer",(1,("out.of.play",81),("play",0)))'),   
+   ("Spider 1/2 (G, reach)","",'Send("Transfer",(1,("out.of.play",81),("play",0)))'),
+   ("Spider 2/4 (B, reach)","",'Send("Transfer",(1,("out.of.play",190),("play",0)))'),
    ("Spirit 1/1 (C)","",'Send("Transfer",(1,("out.of.play",82),("play",0)))'),
    ("Spirit 1/1 (BW, flying)","",'Send("Transfer",(1,("out.of.play",83),("play",0)))'),
    ("Spirit 1/1 (W, flying)","",'Send("Transfer",(1,("out.of.play",84),("play",0)))'),
