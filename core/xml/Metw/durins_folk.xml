@@ -433,7 +433,6 @@
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
-			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
 		<card name="Dwarven Armoury" graphics="Dwarven Armoury.jpg" text="Playable if you have at least 2 Dwarf characters in play. Place up to 3 of the following items under this card from your hand, sideboard or discard pile when you play this card: Dwarven Chain-shirt, Miner's Pick, or Shield of Iron-bound Ash. If any of your companies is at a Dwarf-hold you may discard this card to play these items with the company (you need not tap these characters or the site).">
 			 <attr key="type" value="Hero Resource"/>
@@ -1373,7 +1372,6 @@
 			 <attr key="mind" value="+1"/>
 			 <attr key="cp" value="+1"/>
 			 <attr key="sp" value="1"/>
-			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
 		<card name="Ravens of Northern Rhovanion" graphics="Ravens of Northern Rhovanion.jpg" text="Unique. Playable at any site in Northern Rhovanion if the influence check is greater than 8. Standard Modifications: Roäc the Raven or Carc in the company (+3). Longbeard Dwarves and characters with home site Dale or Lake Town may play this faction at a tapped site. tap: give +2 to an influence check against any hero faction playable at sites in Northern Rhovanion, Southern Rhovanion, Dorwinion and Iron Hills.">
 			 <attr key="type" value="Hero Resource"/>
