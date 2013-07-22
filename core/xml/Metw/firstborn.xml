@@ -1054,6 +1054,7 @@
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
+			 <attr key="specific" value="Lord-player"/>
 	</card>
 	<card name="Drive back the Shadow" graphics="Drive back the Shadow.jpg" text="Unique. Galadriel specific. Rotate this card 90° (or place a token) each time Galadriel plays Nenya while at a Ruins &amp; Lairs [R], Shadow-hold [S] or Dark-hold [D] in Wilderland or its adjacent regions (only once for each site). For each time rotated you may place such a site with this card instead of discarding it: the region containing the site is now considered a Wilderness [w] for all purposes and all versions are considered a Ruins &amp; Lairs [R]. For each site attached (to a maximum of 4) this card is worth 1 mp and all attacks against hero companies in these regions have their prowess modified by -1. A minion player may discard a site attached to this card by discarding a magic resource or technology special item, if he has a company at the corresponding minion version of that site.">
 			 <attr key="type" value="Stage Resource"/>
