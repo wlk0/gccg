@@ -1690,6 +1690,12 @@ namespace Evaluator
 		file+="/";
 		file+=arg.String();
 
+		if(!FileExist(file)) {
+			file=CCG_DATADIR;
+			file+="/scripts/global/";
+			file+=arg.String();
+		}
+
 		if(execdir == "" || !FileExist(file)) {
 
 		    file=getenv("HOME");
