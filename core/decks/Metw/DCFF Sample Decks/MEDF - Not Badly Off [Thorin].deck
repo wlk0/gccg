@@ -1,18 +1,17 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCGO - DwL - Thorin - Not Badly Off - AV
+#      DCFF - Thorin - Not Badly Off 
 #
 
 ####
 Deck
 ####
 
-# Dual Resource (4)
+# Dual Resource (2)
 
-1 Dwarven Cunning (DF)
-1 Fungi (DF)
-2 Old Grudge (DF)
+1 Durang (DF)
+1 Old Grudge (DF)
 
 # Dwarf-lord Character (4)
 
@@ -20,78 +19,77 @@ Deck
 
 # Hazard (33)
 
-1 Alone and Unadvised (AS)
+1 "Bert" (Bûrat) (TW)
 2 An Unexpected Outpost (DM)
-1 Arouse Defenders (LE)
 1 Assassin (TW)
-1 Black Crows (FB)
+2 Black Crows (FB)
 1 Bûthrakaur the Green (DM)
 2 Choking Shadows (TW)
 3 Doors of Night (TW)
 1 Dwarven Warparty (DF)
-1 Fell Winter (TW)
 1 Fell Winter (LE)
 1 Foolish Words (LE)
-2 Hermit Troll (DF)
+3 Hermit Troll (DF)
 1 Hoarmûrath of Dír (TW)
-1 Lure of Expedience (LE)
-2 Minions Stir (LE)
+1 Indûr Dawndeath (TW)
+3 Minions Stir (LE)
 1 Mouth of Sauron (TW)
-1 Nameless Thing (DM)
+1 Nature's Revenge (WH)
+1 Out of Practise (DF)
 1 Power Built by Waiting (AS)
 1 Saruman the Wise (AS)
-2 Trolls from the Mountains (AS)
+1 Trolls from the Mountains (AS)
 2 Twilight (TW)
 1 Umagaur the Pale (DM)
 1 Wild Trolls (LE)
-1 Ûvatha the Horseman (TW)
 
 # Hero Character (9)
 
 1 Bifur (TW)
 1 Bofur (TW)
+1 Bombur (TW)
+1 Dori (TW)
+1 Dwarven Miner (DF)
 1 Dís (DF)
-1 Frerin (DF)
 1 Fíli (TW)
-1 Glóin (TW)
-1 Kíli (TW)
 1 Nori (TW)
 1 Óin (TW)
 
-# Hero Resource (19)
+# Hero Resource (21)
 
 1 Blue Mountain Dwarves (TW)
 1 Clan Bonds (DF)
+1 Concealment (TW)
+2 Cup of Farewell (DM)
 3 Dwarven Light-stone (DM)
-2 Forgotten Scrolls (DM)
-1 Marvels Told (TD)
-1 Promptings of Wisdom (WH)
-3 Secret Entrance (TW)
-2 The Dwarves Are upon You! (DM)
+1 Hoard Gathering (DF)
+2 Marvels Told (TD)
+1 Noldo-lantern (DM)
+1 Safe from the Shadow (AS)
+1 Smoke Rings (DM)
+3 The Dwarves Are upon You! (DM)
 1 To the Uttermost Foundations (DM)
-3 Vein of Arda (DM)
-1 Withdrawn to Mordor (DM)
+1 Torque of Hues (TW)
+2 Vein of Arda (DM)
 
 # Minion Character (1)
 
 1 Drór (DM)
 
-# Minion Resource (2)
+# Minion Resource (3)
 
 1 Back to the Fray (LE)
 1 Iron Shield of Old (AS)
+1 We Have Come to Kill (LE)
 
-# Stage Resource (9)
+# Stage Resource (7)
 
 1 Born under the Mountains (DF)
-1 Deep Mountain Fortress (DF)
-1 Delver's Harvest (WH)
+2 Deep Mountain Fortress (DF)
 1 Dwarven Alchemist (DF)
 1 Dwarven Galleries (DF)
 1 Great Miners (DF)
 1 Oakenshield (DF)
-1 Promise of Treasure (DF)
-1 Son of Thráin (DF)
 
 ####
 Pool
@@ -101,14 +99,15 @@ Pool
 
 1 Miner's Pick (DF)
 
-# Dwarf-lord Character (1)
+# Hero Character (7)
 
-1 Balin [D] (DF)
-
-# Hero Character (2)
-
+1 Balin [H] (TW)
+1 Borin (DF)
 1 Dworin (DF)
+1 Frerin (DF)
 1 Frár (DF)
+1 Glóin (TW)
+1 Náli (DF)
 
 # Hero Resource (2)
 
@@ -122,64 +121,80 @@ Pool
 
 # Stage Resource (3)
 
-1 Crimson Hood (DF)
 1 Durin's Day (DF)
+1 Promise of Treasure (DF)
 1 Trusted Counsellor (FB)
 
 #########
 Sideboard
 #########
 
-# Hazard (3)
+# Dual Resource (1)
 
+1 Dry Tunnels (DF)
+
+# Hazard (10)
+
+1 Camthalion (FP)
+1 Covetous Thoughts (LE)
+1 Crossing the Border (DF)
 1 Drowning Seas (TW)
+1 Evenstar of Her People (FB)
 1 Lost in Free-domains (TW)
+1 Lure of Expedience (LE)
+1 Nameless Thing (DM)
 1 News of Doom (LE)
-
-# Hero Character (3)
-
-1 Attack-lord (DF)
-1 Dwarven Miner (DF)
-1 King's Advisor (DF)
+1 The Roving Eye (LE)
 
 # Hero Resource (21)
 
 1 An Unexpected Party (DM)
 1 Battle-axe of the Fallen (DF)
-1 Bill the Pony (TW)
 1 Block (TW)
 1 Dragon-helm (DM)
 1 Dwarven Hoard (TD)
+2 Forgotten Scrolls (DM)
 2 Gems of Arda (DM)
-1 Hoard Gathering (DF)
 1 Into Dark Tunnels (DM)
 1 Knowledge of the Enemy (DM)
 3 Longbottom Leaf (BA)
-1 Marvels Told (TD)
+1 Noble Hound (DM)
 1 Petty-dwarves [H] (AS)
-1 Safe from the Shadow (AS)
 1 Secret Ways (DM)
 1 Smoke Rings (DM)
 1 The Arkenstone [H] (TW)
 1 Value Food and Cheer (DF)
+1 Withdrawn to Mordor (DM)
 
-# Minion Resource (3)
+# Minion Resource (2)
 
 1 Blasting Fire (WH)
 1 Liquid Fire (WH)
-1 Old Prejudice (LE)
 
-# Stage Resource (10)
+# Stage Resource (6)
 
 1 A Good Bit Laid By (DF)
-2 Deep Mountain Fortress (DF)
-1 Earth-eater (WH)
-1 Gnawed Ways (WH)
+2 Delver's Harvest (WH)
 1 Kheleglin (FP)
 1 Legacy of Smiths (WH)
-1 Mischief in a Mean Way (WH)
-1 New Tunnels (DF)
 1 Not Badly Off (DF)
+
+################
+Sideboard vs. fw
+################
+
+# Hazard (10)
+
+1 Blind to the West (WH)
+1 Choked with Vanity (FB)
+1 Cruel Claw Perceived (WH)
+1 Diminish and Depart (BA)
+1 Doom of the Noldor (FB)
+1 Hard to Tame (DF)
+1 Inner Rot (WH)
+1 Ire of the East (WH)
+1 Power Relinquished to Artifice (WH)
+1 Something Else at Work (WH)
 
 #####
 Sites
@@ -218,3 +233,4 @@ Sites
 1 The Wind Throne [H] (TW)
 1 The Worthy Hills [H] (AS)
 1 Weathertop [H] (TW)
+

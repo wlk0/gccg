@@ -1,17 +1,18 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCGO - DwL - Dain - Trade is King - AV
+#      {blue}DCFF - Dáin - Trade Is King{white}
 #
 
 ####
 Deck
 ####
 
-# Dual Resource (3)
+# Dual Resource (4)
 
-1 Dwarven Art of War (DF)
 2 Old Grudge (DF)
+1 Origin of Stone (DF)
+1 Profitable Trade (DF)
 
 # Dwarf-lord Character (4)
 
@@ -20,77 +21,68 @@ Deck
 # Hazard (37)
 
 2 An Unexpected Outpost (DM)
-1 Assassin (TW)
-1 Aware of their Ways (DM)
-1 Black Crows (FB)
-1 Cave Worm (TD)
+2 Black Crows (FB)
+2 Cave-drake (TW)
+2 Crossing the Border (DF)
 1 Daelomin at Home (TD)
 3 Doors of Night (LE)
-1 Dragon's Desolation (TW)
 1 Fell Winter (LE)
+1 Flooded to the Surface (DF)
 1 Foolish Words (LE)
 1 From the Pits of Angband (TD)
-1 Hoarmûrath of Dír (TW)
-1 Leucaruth (TW)
+1 Indûr Dawndeath (TW)
+1 Lady of the Golden Wood (AS)
 1 Leucaruth at Home (TD)
+1 Marsh-drake (TD)
 1 Mouth of Sauron (TW)
-1 Nameless Thing (DM)
-1 Peril Returned (TD)
-1 Prowess of Age (TD)
-1 Rain-drake (TD)
+2 Nameless Thing (DM)
+1 Out of Practise (DF)
 1 Revealed to all Watchers (DM)
-1 Scatha (TD)
-1 Silent Watcher (TW)
-1 Smaug (TW)
+1 Saruman the Wise (AS)
 1 Summons from Long Sleep (AS)
-2 True Fire-drake (TD)
+1 Terror from the Deeps (DF)
+3 True Fire-drake (TD)
 3 Twilight (TW)
-1 Were-worm (TD)
-1 Wild Fell Beast (TD)
-1 Winged Cold-drake (TD)
-1 Winged Fire-drake (TD)
-1 Withered Lands (TD)
+3 Wyrmsiege (DF)
 
-# Hero Character (2)
+# Hero Character (3)
 
-1 Lipór (DF)
-1 Náin, Son of Grór (DF)
+1 Floi (DF)
+1 Lóni (DF)
+1 Thorin III Stonehelm (DF)
 
-# Hero Resource (31)
+# Hero Resource (29)
 
 1 A Chance Meeting (TW)
-1 A More or Less Decent Giant (DF)
-2 At Your Service! (DF)
-1 Carc (DF)
 1 Clan Bonds (DF)
-1 Cup of Farewell (DM)
 1 Dragon's Hunger (TD)
-3 Dragon-feuds (TD)
+2 Dragon-feuds (TD)
 1 Durin's Axe (TW)
 1 Enruned Shield (TD)
-1 Horn of Defiance (GW)
 1 Horns, Horns, Horns (DM)
-1 Longbottom Leaf (BA)
+2 Look More Closely Later (TD)
 2 Marvels Told (TD)
+1 Men of Dale (TD)
+1 Men of Northern Rhovanion (TW)
 1 No Strangers at this Time (AS)
 1 Ravens of Northern Rhovanion (DF)
-1 Sated Beast (TD)
-1 Shimmer of Hope (DF)
-1 Smoke Rings (DM)
+1 Reforging (TW)
+2 Smoke Rings (DM)
+3 Songs of the Old (DF)
 3 The Dwarves Are upon You! (DM)
-2 The Old Thrush (TW)
+1 The Old Thrush (TW)
+1 Thrór's Map [H] (TD)
 1 Withdrawn to Mordor (DM)
-1 Wood-elves (TW)
 1 Wormsbane (TD)
 
-# Minion Resource (1)
+# Minion Character (1)
 
-1 Thong of Fire (AS)
+1 Fori the Beardless (DM)
 
 # Stage Resource (2)
 
-1 Ironfoot (DF)
-1 Son of Nain (DF)
+1 Gatherer of Loyalties (WH)
+1 Great Achievement (DF)
 
 ####
 Pool
@@ -100,45 +92,46 @@ Pool
 
 1 Balin [D] (DF)
 
-# Hero Character (5)
+# Hero Character (6)
 
-1 Borin (DF)
+1 Dori (TW)
 1 Dworin (DF)
-1 Lóni (DF)
-1 Thorin III Stonehelm (DF)
+1 Gimli, Son of Gloin (DF)
+1 Nori (TW)
+1 Náin, Son of Grór (DF)
 1 Thráin II (TD)
 
 # Hero Resource (3)
 
 1 Healing Herbs (TW)
+1 Necklace of Silver and Pearls (TD)
 1 Pipe (DF)
-1 Star-glass (TW)
 
 # Stage Resource (3)
 
-1 Durin's Day (DF)
-1 Son of Dáin (DF)
+1 Ironfoot (DF)
+1 Son of Nain (DF)
 1 Trusted Counsellor (FB)
 
 #########
 Sideboard
 #########
 
-# Dual Resource (1)
+# Hazard (13)
 
-1 Deadly Dart (PR)
-
-# Hazard (9)
-
-1 Crossing the Border (DF)
+1 Aware of their Ways (DM)
+1 Covetous Thoughts (LE)
+1 Durin's Bane (DM)
 1 Eärcaraxë Ahunt (TD)
-1 Lady of the Golden Wood (AS)
-1 Rolled down to the Sea (WH)
-1 Siege (TW)
+1 News of Doom (LE)
+1 Old Enemies (DF)
+1 Scatha (TD)
 1 Slip Treacherously (AS)
 1 Smaug at Home (TD)
+1 Stay Her Appetite (LE)
+1 The Roving Eye (LE)
 1 Unhappy Blows (AS)
-1 Wyrmsiege (DF)
+1 Wild Fell Beast (TD)
 
 # Hero Character (3)
 
@@ -146,40 +139,36 @@ Sideboard
 1 King's Advisor (DF)
 1 Pathfinder (DF)
 
-# Hero Resource (18)
+# Hero Resource (17)
 
-1 Dragon-lore (TD)
+1 At Your Service! (DF)
+1 Carc (DF)
 1 Emerald of the Mariner (TD)
+1 Horn of Defiance (GW)
 1 Iron Hill Dwarves (TW)
 1 King under the Mountain (TD)
-1 Kingdom of Old Restored (DF)
 2 Longbottom Leaf (BA)
-1 Men of Dale (TD)
+1 Magical Harp (TD)
+1 Marvels Told (TD)
 1 Men of Dorwinion [H] (TW)
-1 Men of Northern Rhovanion (TW)
-1 No Strangers at this Time (AS)
-1 Promptings of Wisdom (WH)
-1 Restored to Its Owner (DF)
 1 Returned Exiles (TD)
 1 Roäc the Raven (TW)
-1 Shield of Iron-bound Ash (TW)
-1 Smoke Rings (DM)
+1 Sated Beast (TD)
 1 The Arkenstone [H] (TW)
+1 The Old Thrush (TW)
+1 Wood-elves (TW)
 
-# Minion Resource (2)
+# Minion Resource (1)
 
-1 Leg It Double Quick (LE)
-1 No News of Our Riding (LE)
+1 I'll Be At Your Heels (LE)
 
-# Stage Resource (7)
+# Stage Resource (6)
 
 1 A Merrier World (WH)
-1 Clad for War (DF)
 1 Friendship of Old Renewed (DF)
-1 Gatherer of Loyalties (WH)
-1 Great Achievement (DF)
-1 Mining Settlement (DF)
-1 Strength from the Ered Engrin (DF)
+1 Legacy of Smiths (WH)
+2 Mining Settlement (DF)
+1 Son of Dáin (DF)
 
 ################
 Sideboard vs. fw
@@ -187,16 +176,16 @@ Sideboard vs. fw
 
 # Hazard (10)
 
-1 Alone and Unadvised (AS)
-1 Awaken Defenders (LE)
+1 Blind to the West (WH)
 1 Cast from the Order (WH)
-1 Earth-tremors (DM)
-1 Foolish Words (LE)
+1 Cruel Claw Perceived (WH)
+1 Doom of the Noldor (FB)
+1 Hard to Tame (DF)
 1 Inner Rot (WH)
 1 Nature's Revenge (WH)
+1 Something Else at Work (WH)
 1 Stormcrow (PR)
 1 The Way is Shut (DM)
-1 Witch-king of Angmar (TW)
 
 #####
 Sites
@@ -210,7 +199,7 @@ Sites
 
 # Dwarf-lord Site (2)
 
-2 Iron Hill Dwarf-hold [D] (DF)
+3 Iron Hill Dwarf-hold [D] (DF)
 
 # Fallen-wizard Site (3)
 
@@ -235,7 +224,6 @@ Sites
 1 Dol Guldur [H] (TW)
 1 Framsburg [H] (TD)
 1 Gaurblog Lug [H] (DF)
-1 Giant's Isle [H] (RS)
 1 Goblin-gate [H] (TW)
 1 Gold Hill [H] (TD)
 1 Gondmaeglom [H] (TD)
@@ -256,3 +244,4 @@ Sites
 1 The Lonely Mountain [H] (TW)
 1 The Wind Throne [H] (TW)
 1 Zarak Dûm [H] (TD)
+
