@@ -807,10 +807,10 @@ namespace Evaluator
 					throw LangErr("ReadBinary","invalid count");
 				}
 
-				do {
+				while ( i ) {
 					ret.AddList(ReadBinary(F));
 					i--;
-				} while ( i );
+				}
 
 				return ret;
 
