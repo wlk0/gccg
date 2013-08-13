@@ -256,6 +256,8 @@ namespace Evaluator
 	    Data _return(const Data& arg); 
 	    Data apply(const Data& arg); 
 	    Data attach(const Data& arg); 
+	    Data binary_load(const Data& arg); 
+	    Data binary_save(const Data& arg); 
 	    Data cache_parameters(const Data& arg); 
 	    Data cache_size(const Data& arg); 
 	    Data del_entry(const Data& arg); 
@@ -1760,6 +1762,84 @@ namespace Evaluator
 	    return Null;
 	}
 
+    /// binary_load(s) - Load the value of the variable with name $s$ from
+    /// the save directory. Return 1, if success, 0 otherwise.
+    template <class Application> Data Parser<Application>::binary_load(const Data& arg)
+	{
+	    if(!arg.IsString())
+		ArgumentError("load",arg);
+
+	    string s=arg.String();
+	    if(s=="")
+		throw LangErr("load","empty variable name");
+	    string f=savedir+"/"+s;
+
+	    security.ReadFile(f);
+
+		ifstream F(f.c_str(), ios::in | ios::binary);
+		if(!F) {
+			throw LangErr("ReadLiteral","invalid code");
+			return 0;
+		}
+
+		char buf[4];
+		F.read(buf, 3);
+
+		// if not binary encoded, load as string
+		if ( strncmp(buf, "CCG", 3) ) {
+			F.close();
+			return load(arg); 
+		}
+
+		// version, unused for now
+		unsigned char ver;
+		F.read((char*)&ver, 1);
+
+		variable[s]=ReadBinary(F);
+		F.close();
+	    return 1;
+	}
+
+    /// binary_save(s) - Save the variable with name $s$ to save
+    /// directory or skip this if it is a database. If the variable $s$ is not declared, throw
+    /// error. If the variable has two dots in it's name, throw fatal
+    /// error. Return 1, if success, 0 otherwise.
+    template <class Application> Data Parser<Application>::binary_save(const Data& arg)
+	{
+	    if(!arg.IsString())
+		ArgumentError("save",arg);
+
+	    string s=arg.String();
+	    if(!IsVariable(s))
+		throw LangErr("save","invalid variable '"+s+"'");
+
+	    if(database.find(s) != database.end())
+	    {
+			database[s].SaveToDisk();
+			return 1;
+	    }
+		
+	    if(variable.find(s) == variable.end())
+		throw LangErr("binary_save","variable "+s+" not defined");
+		
+	    string f=savedir+"/"+s;
+	    security.WriteFile(f);
+		
+		ofstream F(f.c_str(), ios::out | ios::binary);
+		if ( !F ) return 0;
+
+		// 4 bytes header, fourth byte not used
+		unsigned char ver=0;
+		F.write("CCG", 3);
+		F.write((char*)&ver, 1);
+
+		tobinary(variable[s], F);
+
+		F.close();
+
+	    return 1;
+	}
+
     /// keys(D) - Return list of key elements of dictionary $D$ or
     /// throw error if $D$ is not a dictionary. This functions also
     /// returns list of first elements of list containing only pairs.
@@ -2003,6 +2083,8 @@ namespace Evaluator
 			
 	    internal_function["apply"]=&Parser<Application>::apply;
 	    internal_function["attach"]=&Parser<Application>::attach;
+	    internal_function["binary_load"]=&Parser<Application>::binary_load;
+	    internal_function["binary_save"]=&Parser<Application>::binary_save;
 	    internal_function["cache_parameters"]=&Parser<Application>::cache_parameters;
 	    internal_function["cache_size"]=&Parser<Application>::cache_size;
 	    internal_function["call"]=&Parser<Application>::call;
