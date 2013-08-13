@@ -1768,20 +1768,17 @@ namespace Evaluator
     template <class Application> Data Parser<Application>::binary_load(const Data& arg)
 	{
 	    if(!arg.IsString())
-		ArgumentError("load",arg);
+		ArgumentError("binary_load",arg);
 
 	    string s=arg.String();
 	    if(s=="")
-		throw LangErr("load","empty variable name");
+		throw LangErr("binary_load","empty variable name");
 	    string f=savedir+"/"+s;
 
 	    security.ReadFile(f);
 
 		ifstream F(f.c_str(), ios::in | ios::binary);
-		if(!F) {
-			throw LangErr("ReadLiteral","invalid code");
-			return 0;
-		}
+		if(!F) return 0;
 
 		char buf[4];
 		F.read(buf, 3);
@@ -1808,11 +1805,11 @@ namespace Evaluator
     template <class Application> Data Parser<Application>::binary_save(const Data& arg)
 	{
 	    if(!arg.IsString())
-		ArgumentError("save",arg);
+		ArgumentError("binary_save",arg);
 
 	    string s=arg.String();
 	    if(!IsVariable(s))
-		throw LangErr("save","invalid variable '"+s+"'");
+		throw LangErr("binary_save","invalid variable '"+s+"'");
 
 	    if(database.find(s) != database.end())
 	    {

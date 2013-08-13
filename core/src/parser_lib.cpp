@@ -44,6 +44,9 @@
 #define GCCG_DOUBLE 0x04
 #define GCCG_LIST 0x05
 
+// binary buff size
+#define GCCG_RBBUF 1024
+
 
 using namespace std;
 
@@ -774,7 +777,7 @@ namespace Evaluator
 		int i=0;
 		double d=0;
 		unsigned char ch;
-		char buf[1024];
+		char buf[GCCG_RBBUF+1];
 		string str;
 		F.read((char*)&ch, 1);
 		if ( !F ) throw LangErr("ReadBinary", "Cannot read element type");
@@ -782,13 +785,14 @@ namespace Evaluator
 			case GCCG_NULL:
 				return Null;
 
-			// ugly hardcoded size but enough
 			case GCCG_STRING:
-				buf[1023]=0;
 				F.read((char*)&i, sizeof(int)); if ( !F ) throw LangErr("ReadBinary", "Cannot read string length");
-				if ( i > 1024 ) throw LangErr("ReadBinary", "String length exceed buffer size");
-				F.read(buf, i); if ( !F ) throw LangErr("ReadBinary", "Cannot read string");
-				str=buf;
+				buf[GCCG_RBBUF]=0;
+				while ( i ) {
+					F.read(buf, ::min(i, GCCG_RBBUF)); if ( !F ) throw LangErr("ReadBinary", "Cannot read string");
+					i-=::min(i, GCCG_RBBUF);
+					str+=buf;
+				}
 				return str;
 
 			case GCCG_INT:
