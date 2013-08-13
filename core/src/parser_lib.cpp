@@ -37,6 +37,14 @@
 #undef min
 #endif
 
+// binary element types
+#define GCCG_NULL 0x01
+#define GCCG_STRING 0x02
+#define GCCG_INT 0x03
+#define GCCG_DOUBLE 0x04
+#define GCCG_LIST 0x05
+
+
 using namespace std;
 
 //
@@ -304,6 +312,54 @@ namespace Evaluator
 		return ret;
 	}
 	
+	/// tobinary(e) - Convert any element to binary stream.
+	void tobinary(const Data& arg, ofstream & F)
+	{
+		int i;
+		int sz;
+		unsigned char ch;
+		double d;
+		if(arg.IsString()) {
+			const string& s=arg.String();
+			ch=GCCG_STRING;
+			sz=s.size()+1;
+			F.write((char*)&ch, 1);
+			F.write((char*)&sz, sizeof(int));
+			F.write((char*)s.c_str(), sz);
+		}
+		else if(arg.IsNull()) {
+			ch=GCCG_NULL;
+			F.write((char*)&ch, 1);
+		}
+		else if(arg.IsReal()) {
+			ch=GCCG_DOUBLE;
+			d=arg.Real();
+			F.write((char*)&ch, 1);
+			F.write((char*)&d, sizeof(double));
+		}
+		else if(arg.IsInteger()) {
+			ch=GCCG_INT;
+			i=arg.Integer();
+			F.write((char*)&ch, 1);
+			F.write((char*)&i, sizeof(int));
+		}
+		else if(arg.IsList()) {
+			const Data& L=arg;
+			ch=GCCG_LIST;
+			sz=L.Size();
+			F.write((char*)&ch, 1);
+			F.write((char*)&sz, sizeof(int));
+
+			Data elem;
+			for(size_t i=0; i<L.Size(); i++) {
+				tobinary(L[i], F);
+			}
+		}
+
+		if ( !F )
+			throw LangErr("tobinary", "Write error");
+	}
+
 	/// tostr(e) - Convert any element to string. This string is in
 	/// such format that it produces element $e$ when evaluated.
 	Data tostr(const Data& arg)
@@ -710,6 +766,58 @@ namespace Evaluator
 			ret[i]=L[j];
 
 		return ret;
+	}
+
+	Data ReadBinary(ifstream & F)
+	{
+		Data ret;
+		int i=0;
+		double d=0;
+		unsigned char ch;
+		char buf[1024];
+		string str;
+		F.read((char*)&ch, 1);
+		if ( !F ) throw LangErr("ReadBinary", "Cannot read element type");
+		switch(ch) {
+			case GCCG_NULL:
+				return Null;
+
+			// ugly hardcoded size but enough
+			case GCCG_STRING:
+				buf[1023]=0;
+				F.read((char*)&i, sizeof(int)); if ( !F ) throw LangErr("ReadBinary", "Cannot read string length");
+				if ( i > 1024 ) throw LangErr("ReadBinary", "String length exceed buffer size");
+				F.read(buf, i); if ( !F ) throw LangErr("ReadBinary", "Cannot read string");
+				str=buf;
+				return str;
+
+			case GCCG_INT:
+				F.read((char*)&i, sizeof(int));
+				return i;
+
+			case GCCG_DOUBLE:
+				F.read((char*)&d, sizeof(double));
+				return d;
+
+			case GCCG_LIST:
+				F.read((char*)&i, sizeof(int));
+				ret.MakeList();
+
+				if ( i < 0 ) {
+					throw LangErr("ReadBinary","invalid count");
+				}
+
+				do {
+					ret.AddList(ReadBinary(F));
+					i--;
+				} while ( i );
+
+				return ret;
+
+			default:
+				throw LangErr("ReadBinary", "Invalid element type");
+		}
+
 	}
 
 	Data ReadLiteral(const char*& src)

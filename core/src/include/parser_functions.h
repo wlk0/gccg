@@ -49,6 +49,7 @@ namespace Evaluator
 {
 	// Standard library.
 	Data ReadLiteral(const char*& src);
+	Data ReadBinary(ifstream & F);
 	Data _safemode(const Data& arg);
 	Data array(const Data& arg);
 	Data copy(const Data& arg);
@@ -86,6 +87,7 @@ namespace Evaluator
 	Data toint(const Data& arg);
 	Data toreal(const Data& arg);
 	Data tostr(const Data& arg);
+	void tobinary(const Data& arg, ofstream & F);
 	Data toval(const Data& arg);
 	Data type_of(const Data& arg);
 	Data uc(const Data& args);

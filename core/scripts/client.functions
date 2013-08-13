@@ -10016,12 +10016,12 @@ def SaveBookState
   {
     push(s);
     s=forall("(#,book_entry(card.book,#))",cards());
-    if(!load("book.cache"))
+    if(!binary_load("book.cache"))
       book.cache=(,);
     if(!has_entry(server.name,book.cache))
       book.cache{server.name}=(,);
     book.cache{server.name}{username}=s;
-    save("book.cache");
+    binary_save("book.cache");
     s=pop();
   }
 }
@@ -10032,7 +10032,7 @@ def SaveBookState
 #
 def LoadBookState
 {
-  if(load("book.cache"))
+  if(binary_load("book.cache"))
   {
     if(has_entry(server.name,book.cache))
     {
