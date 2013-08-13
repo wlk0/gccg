@@ -33,6 +33,7 @@
 #include <vector>
 #include <list>
 #include <cstdlib>
+#include <string.h>
 
 #if !defined(__BCPLUSPLUS__) && !defined(_MSC_VER)
 # include <unistd.h>
