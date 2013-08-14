@@ -1,0 +1,127 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      V - Balrog - Great Shadow
+#
+
+####
+Deck
+####
+
+# Balrog Character (3)
+
+3 The Balrog [B] (BA)
+
+# Hazard (30)
+
+2 Ambusher (LE)
+3 An Unexpected Outpost (DM)
+1 Bairanax Ahunt (TD)
+1 Barrow-wight (LE)
+1 Call of Home (LE)
+3 Chill Douser (DM)
+2 Ent in Search of the Entwives (LE)
+1 Itangast Ahunt (TD)
+1 Lost in Free-domains (LE)
+3 Lure of the Senses (LE)
+2 Marsh-drake (LE)
+1 Muster Disperses (LE)
+2 Nothing to Eat or Drink (LE)
+2 River (LE)
+3 Twilight (LE)
+2 Wild Trolls (LE)
+
+# Minion Character (6)
+
+1 Bûrat (AS)
+1 Gorbag (LE)
+1 Grishnákh (LE)
+1 Lagduf (LE)
+1 Tûma (AS)
+1 Wûluag (AS)
+
+# Minion Resource (30)
+
+1 A Nice Place to Hide (LE)
+1 Awaiting the Call (LE)
+3 Catch an Elusive Scent (LE)
+3 Crept Along Cleverly (WH)
+3 Dark Tryst (AS)
+2 Great Fissure (BA)
+3 Hide in Dark Places (LE)
+1 High Helm (LE)
+1 Orcs of Moria (LE)
+1 Palantír of Orthanc [M] (LE)
+1 Sable Shield (LE)
+1 Stinker (LE)
+3 Swift Strokes (LE)
+3 War-warg (LE)
+3 War-wolf (LE)
+
+####
+Pool
+####
+
+# Minion Character (4)
+
+1 Bûthrakaur (BA)
+1 Orc Veteran (LE)
+1 Troll Lout (LE)
+1 Troll-chief (LE)
+
+# Minion Resource (2)
+
+1 Orders from the Great Demon (BA)
+1 Thrall-ring (AS)
+
+#########
+Sideboard
+#########
+
+# Hazard (7)
+
+1 Foolish Words (LE)
+1 Nameless Thing (DM)
+1 Rain-drake (TD)
+1 Sellswords Between Charters (LE)
+1 Slayer (LE)
+1 Stench of Mordor (LE)
+1 True Fire-drake (LE)
+
+# Minion Character (6)
+
+3 Crook-legged Orc (BA)
+2 Orc Tracker (LE)
+1 Troll Lout (LE)
+
+# Minion Resource (11)
+
+1 Ancient Black Axe (AS)
+1 Bold Thrust (LE)
+1 Broad-headed Spear (LE)
+1 Foul-smelling Paste (LE)
+1 Great Bats (AS)
+1 Hold Rebuilt and Repaired (AS)
+1 Iron Shield of Old (AS)
+1 Orc Quarrels (LE)
+2 Snaga-hai (LE)
+1 Sudden Call (LE)
+
+#####
+Sites
+#####
+
+# Balrog Site (6)
+
+2 Moria [B] (BA)
+2 The Under-gates [B] (BA)
+1 The Under-leas [B] (BA)
+1 The Under-vaults [B] (BA)
+
+# Minion Site (5)
+
+1 Dimrill Dale [M] (LE)
+1 Glittering Caves [M] (LE)
+1 Isengard [M] (LE)
+1 Mount Gundabad [M] (LE)
+1 Ost-in-Edhil [M] (LE)
