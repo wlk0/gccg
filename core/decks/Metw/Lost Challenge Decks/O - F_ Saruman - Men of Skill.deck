@@ -1,0 +1,151 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      O - F_ Saruman - Men of Skill
+#
+
+####
+Deck
+####
+
+# Fallen-wizard Character (3)
+
+3 Saruman [F] (WH)
+
+# Hazard (30)
+
+2 Ambusher (TW)
+2 An Unexpected Outpost (DM)
+1 Bairanax Ahunt (TD)
+2 Barrow-wight (TW)
+2 Cave-drake (TW)
+1 Corsairs of Umbar (TW)
+1 Ent in Search of the Entwives (LE)
+1 Eyes of the Shadow (DM)
+1 Eärcaraxë Ahunt (TD)
+2 Foolish Words (TD)
+1 Itangast Ahunt (TD)
+1 No Way Forward (DM)
+1 Old Man Willow (TW)
+1 Orc-watch (TW)
+1 Power Built by Waiting (AS)
+1 Redoubled Force (DM)
+3 River (TW)
+2 Slayer (TW)
+1 Troll-purse (DM)
+3 Twilight (TW)
+
+# Hero Character (2)
+
+1 Annalena (TW)
+1 Vôteli (TW)
+
+# Hero Resource (13)
+
+2 Barrow-blade (DM)
+2 Hall of Fire (DM)
+1 Horns, Horns, Horns (DM)
+2 Rebuild the Town (DM)
+2 Smoke Rings (DM)
+1 Warm Now Be Heart and Limb (TD)
+2 When You Know More (DM)
+1 Withdrawn to Mordor (DM)
+
+# Minion Character (5)
+
+1 Baugúr (PRde)
+1 Dorelas (LE)
+2 Ill-favoured Fellow (WH)
+1 Layos (LE)
+
+# Minion Resource (8)
+
+2 Dark Tryst (AS)
+2 Swift Strokes (LE)
+2 That Ain't No Secret (LE)
+2 Weigh All Things to a Nicety (LE)
+
+# Stage Resource (9)
+
+3 Double-dealing (WH)
+1 Fortress of the Towers (WH)
+1 Gatherer of Loyalties (WH)
+1 Great Patron (WH)
+1 Man of Skill (WH)
+1 The Fortress of Isen (WH)
+1 Wizard's Myrmidon (WH)
+
+####
+Pool
+####
+
+# Hero Character (5)
+
+1 Balin [H] (TW)
+1 Bofur (TW)
+1 Celeborn (TW)
+1 Ghân-buri-Ghân (TW)
+1 Wacho (TW)
+
+# Hero Resource (2)
+
+1 Dagger of Westernesse (TW)
+1 Shield of Iron-bound Ash (TW)
+
+# Stage Resource (2)
+
+1 The Forge-master (WH)
+1 Thrall of the Voice (WH)
+
+#########
+Sideboard
+#########
+
+# Hazard (2)
+
+1 Alone and Unadvised (AS)
+1 Lost in Free-domains (TW)
+
+# Hero Resource (14)
+
+1 A Chance Meeting (TW)
+1 A Panoply of Wings (WH)
+1 Dagger of Westernesse (TW)
+1 Dark Quarrels (TW)
+1 Horns, Horns, Horns (DM)
+1 Marvels Told (TD)
+2 Noble Hound (DM)
+1 Rangers of the North (TW)
+2 Schwertmeister (PRde)
+2 When I Know Anything (TD)
+1 Woses of the Eryn Vorn [H] (AS)
+
+# Minion Resource (5)
+
+2 Blasting Fire (WH)
+2 Vile Fumes (WH)
+1 Voices of Malice (LE)
+
+# Stage Resource (6)
+
+1 A Strident Spawn (WH)
+3 Half-orcs (WH)
+1 Saruman's Machinery (WH)
+1 The White Hand (WH)
+
+#####
+Sites
+#####
+
+# Fallen-wizard Site (2)
+
+1 Isengard [F] (WH)
+1 The White Towers [F] (WH)
+
+# Hero Site (1)
+
+1 Bree [H] (TW)
+
+# Minion Site (1)
+
+1 The Worthy Hills [M] (LE)
