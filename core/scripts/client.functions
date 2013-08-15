@@ -309,6 +309,12 @@ FILTER_FUNCTIONS=(,);
 BASE_TABLE_WIDTH=1024;
 BASE_TABLE_HEIGHT=768;
 
+# Which load function should be called? (for compatibility)
+if(isfunction("binary_load"))
+  LOAD_FN="binary_load";
+else
+  LOAD_FN="load";
+
 # Standard menu definitions
 MENU=(,);
 MENU{"Main Menu - "}=((1,"Quit","Ctrl+Q","quit()"),);
@@ -10016,7 +10022,7 @@ def SaveBookState
   {
     push(s);
     s=forall("(#,book_entry(card.book,#))",cards());
-    if(!binary_load("book.cache"))
+    if(!call(LOAD_FN,("book.cache",)))
       book.cache=(,);
     if(!has_entry(server.name,book.cache))
       book.cache{server.name}=(,);
@@ -10032,7 +10038,7 @@ def SaveBookState
 #
 def LoadBookState
 {
-  if(binary_load("book.cache"))
+  if(call(LOAD_FN,("book.cache",)))
   {
     if(has_entry(server.name,book.cache))
     {
