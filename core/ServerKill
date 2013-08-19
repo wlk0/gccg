@@ -28,3 +28,8 @@ print "Shutting down factory server process.\n";
 $ps=join(" ",factory_servers($game));
 kill_ps($ps);
 wait_ps($ps);
+
+print "Shutting down central server process.\n";
+$ps=join(" ",central_servers($game));
+kill_ps($ps);
+wait_ps($ps);

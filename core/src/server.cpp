@@ -1,6 +1,6 @@
 /*
     Gccg - Generic collectible card game.
-    Copyright (C) 2001,2002,2003,2004,2005 Tommi Ronkainen
+    Copyright (C) 2001-2013 Tommi Ronkainen
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License
@@ -924,10 +924,12 @@ int main(int argc,const char** argv)
 		security.AllowWriteFile(CCG_SAVEDIR"/"+Database::game.Gamedir()+"/*");
 		security.AllowExecute(CCG_DATADIR"/scripts/meta-server.functions");
 		security.AllowExecute(CCG_DATADIR"/scripts/factory-server.functions");
+		security.AllowExecute(CCG_DATADIR"/scripts/central-server.functions");
 		security.AllowExecute(CCG_DATADIR"/scripts/server.functions");
 		security.AllowExecute(CCG_DATADIR"/scripts/common.include");
 		security.AllowExecute(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+"-meta-server.include");
 		security.AllowExecute(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+"-factory-server.include");
+		security.AllowExecute(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+"-central-server.include");
 		security.AllowExecute(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+"-server.include");
 		security.AllowExecute(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+"-common.include");
 		security.AllowExecute(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+".rules");

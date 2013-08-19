@@ -1,0 +1,539 @@
+#
+# Variables:
+#
+# distribution{set}{product} - rarity distribution of the product
+# rarities - generate these distributions from the card data
+# promo.booster{set} - remaining booster cards to give as prizes
+
+#
+# CONSTANTS
+# =========
+
+if(!port)
+  port=29100;
+
+INITIAL_MONEY=0.0;
+GAME_BONUS=13.0;
+BET_BONUS_MULTIPLIER=1;
+LOSER_PERCENTAGE=0.2;
+DRAW_PERCENTAGE=0.4;
+PLAYSET_COUNT=4;
+
+ANONYMOUS_IP="www.wizards.com";
+
+# Order in which bonus sets need to be filled out
+REWARD_ORDER = ("UG","UH","P1","P2","P3","S1","COM","PC2");
+
+if(!load("products"))
+{
+  products=(,);
+  products{"Beta booster"}=(50000,2.45,("BE","booster"),50000);
+  products{"Beta starter"}=(50000,7.95,("BE","starter"),50000);
+  products{"Arabian Nights booster"}=(50000,1.45,("AN","booster"),50000);
+  products{"Antiquities booster"}=(50000,1.45,("AQ","booster"),50000);
+  products{"Legends booster"}=(50000,2.45,("LG","booster"),50000);
+  products{"The Dark booster"}=(50000,1.45,("DK","booster"),50000);
+  products{"Fallen Empires booster"}=(50000,1.45,("FE","booster"),50000);
+  save("products");
+}
+
+promo.booster = (,);
+
+#
+# HOOKS
+# =====
+
+# SealedStartHook(sealed player name,mode name,money,options) - This hook is called after
+#   initialization of sealed mode is complete. Current user is a
+#   player entering in the sealed mode. Note: This hook can be called more often than end hook.
+#
+def SealedStartHook
+{
+  check_card(ARG[0],1098);
+  if(users{ARG[0]}[2]{1098}[0]==0)
+  {
+    Reply("Adding some lands...");
+    AddCards(ARG[0],1098,45);
+    AddCards(ARG[0],1135,45);
+    AddCards(ARG[0],1175,45);
+    AddCards(ARG[0],1201,45);
+    AddCards(ARG[0],1254,45);
+    Refresh(1098,1135,1175,1201,1254);
+  }
+}
+
+# SealedEndHook() - This hook is called before ending sealed
+#   mode. Current user is sealed mode player.
+#
+def SealedEndHook
+{
+  check_card(User(),1098);
+  if(users{User()}[2]{1098}[0] > 0)
+  {
+    Reply("Removing extra lands...");
+    DelCards(User(),1098,45);
+    DelCards(User(),1135,45);
+    DelCards(User(),1175,45);
+    DelCards(User(),1201,45);
+    DelCards(User(),1254,45);
+    Refresh(1098,1135,1175,1201,1254);
+  }
+}
+
+# EndGameHook(player name who declared,result,result options,player numbers,player names,bet) - This
+#   hook is called at the beginning of the game result
+#   prosessing. Note: this hook is not called for undecided results.
+#
+def EndGameHook
+{
+  if(length(ARG[3])>1)
+  {
+    push(p);
+    push(c);
+    for(p)(ARG[4])
+    {
+      if(users{p}[4][1][0]==0)
+      {
+         if(!has_entry("reward",users{UserWithoutMode(p)}[3][0]))
+           InitializeReward(p);
+         RewardCard(p,users{UserWithoutMode(p)}[3][0]{"reward"});
+         
+         c=random(200);
+         if(c==198)
+           RewardCard(p,"COM");
+         else if(c==199)
+           RewardCard(p,"PC2");
+      }
+    }
+    c=pop();
+    p=pop();
+  }
+}
+
+#
+# RegisterHook(set) - Called after registering a set. Used for updating reward sets.
+#
+def RegisterHook
+{
+  push(i);
+  
+  i=find(ARG[0],REWARD_ORDER);
+  
+  if(i != NULL && i+1 < length(REWARD_ORDER))
+  {
+    users{User()}[3][0]{"reward"} = REWARD_ORDER[i+1];
+    Reply("{green}The reward cards you receive after a game will now be from {yellow}"+REWARD_ORDER[i+1]+"{green}.");
+    Reply("{green}If you still want to collect cards from the old set, you can use {yellow}/set reward "+REWARD_ORDER[i]+"{green}.");
+  }
+  
+  i=pop();
+}
+
+#
+# SetHook(setting name, value) - Called before checking a setting to apply. Return 0 if not handled.
+#
+def SetHook
+{
+  push(r);
+  push(s);
+  return(0);
+  
+  if(ARG[0]=="reward")
+  {
+    return(1);
+    if(typeof(ARG[1])!="string")
+    {
+      if(!has_entry("reward",users{UserWithoutMode()}[3][0]))
+        InitializeReward(UserWithoutMode());
+      Reply("{green}You are currently set up to receive your reward cards from {yellow}"+users{UserWithoutMode()}[3][0]{"reward"}+"{green}.");
+    }
+    else
+    {
+      s=uc(ARG[1]);
+      r=find(s,REWARD_ORDER);
+  
+      if(r != NULL)
+      {
+        push(f);
+        f=0;
+        
+# a player can always collect a reward set they've already completed
+        if(count(s,users{UserWithoutMode()}[3][2]))
+          f=1;
+# a player can always collect the first reward set
+        else if(r==0)
+          f=1;
+# otherwise, a player can only collect a reward set if all the previous sets in line are registered
+        else
+        {
+          for(s)(r)
+          {
+            if(count(REWARD_ORDER[s],users{UserWithoutMode()}[3][2]))
+              f=f+1;
+          }
+          f=f/r;
+        }
+        
+        if(f)
+        {
+          users{UserWithoutMode()}[3][0]{"reward"} = s;
+          Reply("{green}The reward cards you receive after a game will now be from {yellow}"+s+"{green}.");
+        }
+        else
+          Reply("{red}You still have other reward sets to collect before you can move on to that one.");
+        f=pop();
+      }
+      else
+        Reply("{red}That isn't a reward set. The reward sets are {yellow}"+join(REWARD_ORDER,", ")+"{red}, and they must be collected in that order.");
+    }
+  }
+  
+  s=pop();
+  r=pop();
+}
+
+# FUNCTIONS:
+#
+# InitializeReward(player) - Set a player's reward set to the next one they need to complete.
+#
+def InitializeReward
+{
+  push(r);
+  push(s);
+  
+  r="";
+  for(s)(REWARD_ORDER)
+  {
+    if(r=="" && !count(s,users{UserWithoutMode(ARG)}[3][2]))
+      r=s;
+  } 
+  
+  if(r=="")
+    r=s;
+  
+  users{UserWithoutMode(ARG)}[3][0]{"reward"} = r;
+  
+  s=pop();
+  r=pop();
+}
+
+#
+# RewardCard(player, set) - Give player a bonus card selected from the set.
+#
+def RewardCard
+{
+  push(p);
+  push(c);
+  push(s);
+  push(ready);
+  p=ARG[0];
+  s=ARG[1];
+  if(length(s)<1)
+  {
+    if(Con(p)>-1)
+      Send(Con(p),("Message","{red}You were supposed to get a reward card for the game, but something bad happened. Contact a server administrator."));
+    Log("Attempted to give "+p+" a reward card from bad set: "+tostr(s));
+  }
+  else
+  {
+    if(!has_entry(s,promo.booster))
+      promo.booster{s} = (,);
+  
+    if(!length(promo.booster{s}))
+      promo.booster{s}=shuffle(flatten(Produce(s,"booster",1)));
+  }
+  
+  c=first(promo.booster{s});
+  promo.booster{s}=tail(promo.booster{s});
+  AddCard(p,c);
+  SendAll("Message","{blue}"+p+" receives{gold} #"+c+"# {blue}as a reward for the game.");
+  if(Con(p)>-1)
+    Send(Con(p),("SetCardbook",((c,users{p}[2]{c}),)));
+           
+  ready=pop();
+  s=pop();
+  c=pop();
+  p=pop();
+}
+
+#
+# InitDistributions() - Initialize product distribution data.
+#
+def InitDistributions
+{
+  distribution=(,);
+# BE products have custom procedure
+  distribution{"AN"}=(,);
+  distribution{"AN"}{"booster"}=((5,"C"),(2,"U"),(1,"R"));
+  distribution{"AQ"}=(,);
+  distribution{"AQ"}{"booster"}=((5,"C"),(2,"U"),(1,"R"));
+  distribution{"LG"}=(,);
+  distribution{"LG"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"DK"}=(,);
+  distribution{"DK"}{"booster"}=((5,"C"),(2,"U"),(1,"R"));
+  distribution{"FE"}=(,);
+  distribution{"FE"}{"booster"}=((5,"C"),(2,"U"),(1,"R"));
+  distribution{"IA"}=(,);
+  distribution{"IA"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"IA"}{"starter"}=((22,"2*L"),(26,"C"),(9,"U"),(3,"R"));
+  distribution{"HL"}=(,);
+  distribution{"HL"}{"booster"}=((5,"C"),(2,"U"),(1,"R"));
+  distribution{"AL"}=(,);
+  distribution{"AL"}{"booster"}=((8,"C"),(3,"U"),(1,"R"));
+  distribution{"MI"}=(,);
+  distribution{"MI"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"MI"}{"starter"}=((22,"2*L"),(26,"C"),(9,"U"),(3,"R"));
+  distribution{"VI"}=(,);
+  distribution{"VI"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"WL"}=(,);
+  distribution{"WL"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"TE"}=(,);
+  distribution{"TE"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"TE"}{"starter"}=((22,"2*L"),(26,"C"),(9,"U"),(3,"R"));
+  distribution{"SH"}=(,);
+  distribution{"SH"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"EX"}=(,);
+  distribution{"EX"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"US"}=(,);
+  distribution{"US"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"US"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"UL"}=(,);
+  distribution{"UL"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"UD"}=(,);
+  distribution{"UD"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"MM"}=(,);
+  distribution{"MM"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"MM"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"NE"}=(,);
+  distribution{"NE"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"PY"}=(,);
+  distribution{"PY"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"IN"}=(,);
+  distribution{"IN"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"IN"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"PS"}=(,);
+  distribution{"PS"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"AP"}=(,);
+  distribution{"AP"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"OD"}=(,);
+  distribution{"OD"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"OD"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"UG"}=(,);
+  distribution{"UG"}{"booster"}=((1,"L"),(6,"C"),(2,"U"),(1,"R"));
+  distribution{"TO"}=(,);
+  distribution{"TO"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"JD"}=(,);
+  distribution{"JD"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"ON"}=(,);
+  distribution{"ON"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"ON"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"LE"}=(,);
+  distribution{"LE"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"SC"}=(,);
+  distribution{"SC"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"MR"}=(,);
+  distribution{"MR"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"MR"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"4TH"}=(,);
+  distribution{"4TH"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"4TH"}{"starter"}=((22,"2*L"),(26,"C"),(9,"U"),(3,"R"));
+  distribution{"5TH"}=(,);
+  distribution{"5TH"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"5TH"}{"starter"}=((22,"2*L"),(26,"C"),(9,"U"),(3,"R"));
+  distribution{"6TH"}=(,);
+  distribution{"6TH"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"6TH"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"7TH"}=(,);
+  distribution{"7TH"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"7TH"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"8TH"}=(,);
+  distribution{"8TH"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"8TH"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"9TH"}=(,);
+  distribution{"9TH"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"9TH"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"XE"}=(,);
+  distribution{"XE"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"XE"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"M10"}=(,);
+  distribution{"M10"}{"booster"}=((11,"C"),(3,"U"),(1,"R+R+M"));
+  distribution{"M11"}=(,);
+  distribution{"M11"}{"booster"}=((11,"C"),(3,"U"),(1,"R+R+M"));
+  distribution{"M12"}=(,);
+  distribution{"M12"}{"booster"}=((11,"C"),(3,"U"),(1,"R+R+M"));
+  distribution{"RV"}=(,);
+  distribution{"RV"}{"booster"}=((11,"C+3*L"),(3,"U+2*L"),(1,"R"));
+  distribution{"RV"}{"starter"}=((45,"C+3*L"),(13,"U+2*L"),(2,"R"));
+  distribution{"DS"}=(,);
+  distribution{"DS"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"FD"}=(,);
+  distribution{"FD"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"CK"}=(,);
+  distribution{"CK"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"CK"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"UH"}=(,);
+  distribution{"UH"}{"booster"}=((10,"C"),(3,"U"),(1,"L"),(1,"R"));
+  distribution{"BK"}=(,);
+  distribution{"BK"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"P1"}=(,);
+  distribution{"P1"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"P2"}=(,);
+  distribution{"P2"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"P3"}=(,);
+  distribution{"P3"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"S1"}=(,);
+  distribution{"S1"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"SK"}=(,);
+  distribution{"SK"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"RA"}=(,);
+  distribution{"RA"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"RA"}{"starter"}=((30,"2*L"),(32,"C"),(10,"U"),(3,"R"));
+  distribution{"GP"}=(,);
+  distribution{"GP"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"DI"}=(,);
+  distribution{"DI"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"CS"}=(,);
+  distribution{"CS"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"TS"}=(,);
+  distribution{"TS"}{"booster"}=((10,"C"),(3,"U"),(1,"S"),(1,"R"));
+  distribution{"TS"}{"starter"}=((30,"2*L"),(29,"C"),(10,"U"),(3,"S"),(3,"R"));
+  distribution{"PC"}=(,);
+  distribution{"PC"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"FS"}=(,);
+  distribution{"FS"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"LRW"}=(,);
+  distribution{"LRW"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"MOR"}=(,);
+  distribution{"MOR"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"SM"}=(,);
+  distribution{"SM"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"R"));
+  distribution{"EVE"}=(,);
+  distribution{"EVE"}{"booster"}=((11,"C"),(3,"U"),(1,"R"));
+  distribution{"ALA"}=(,);
+  distribution{"ALA"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"CFX"}=(,);
+  distribution{"CFX"}{"booster"}=((11,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"ARE"}=(,);
+  distribution{"ARE"}{"booster"}=((11,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"ZDK"}=(,);
+  distribution{"ZDK"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"WWK"}=(,);
+  distribution{"WWK"}{"booster"}=((11,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"ROE"}=(,);
+  distribution{"ROE"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"SOM"}=(,);
+  distribution{"SOM"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"MBS"}=(,);
+  distribution{"MBS"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"NPH"}=(,);
+  distribution{"NPH"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"ISD"}=(,);
+  distribution{"ISD"}{"booster"}=((1,"L"),(9,"C"),(3,"U"),(1,"2*R+M"),(1,"11*SC+6*SU+2*SR+SM"));
+  distribution{"DKA"}=(,);
+  distribution{"DKA"}{"booster"}=((1,"ISD/L"),(9,"C"),(3,"U"),(1,"2*R+M"),(1,"12*SC+6*SU+2*SR+SM"));
+  distribution{"AVR"}=(,);
+  distribution{"AVR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"M13"}=(,);
+  distribution{"M13"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+# these nese next two sets don't actually have boosters, but the reward function needs to be able to generate them  
+  distribution{"COM"}=(,);
+  distribution{"COM"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"PC2"}=(,);
+  distribution{"PC2"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+
+  distribution{"RTR"}=(,);
+  distribution{"RTR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"GTC"}=(,);
+  distribution{"GTC"}{"booster"}=((1,"RTR/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"DGM"}=(,);
+  distribution{"DGM"}{"booster"}=((1,"10*L+2*RTR/RL+2*GTC/RL+ML"),(10,"C"),(3,"U"),(1,"2*R+M"));
+# the following is only for reference, since MOD has a separate procedure
+  distribution{"MOD"}=(,);
+  distribution{"MOD"}{"booster"}=((1,"12*C+6*U+2*R+M"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"M14"}=(,);
+  distribution{"M14"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+}
+
+#
+# ProduceMOD_Booster() - Produce Modern Masters booster.
+#
+def ProduceMOD_Booster
+{
+  push(p);
+  push(i);
+  p=RandomCardSet("MOD",((11,"C"),(3,"U"),(1,"2*R+M")));
+
+# falling back on the procedure given in distribution{"MOD"} involves
+# constructing and destructing a 1600-element list for every single pack,
+# which is wasteful
+  i=random(1693);
+
+  if(i<15)
+    p[0]=random(cards{"MOD"}{"M"});
+  else if(i<121)
+    p[0]=random(cards{"MOD"}{"R"});
+  else if(i<481)
+    p[0]=random(cards{"MOD"}{"U"});
+  else
+# it's already a common, but replace it with a new one anyway
+# since the foil slot is supposed to allow duplicates
+    p[0]=random(cards{"MOD"}{"C"});
+
+  return(p);
+  i=pop();
+  p=pop();
+}
+
+#
+# ProduceBE_Booster() - Produce beta booster.
+#
+def ProduceBE_Booster
+{
+  push(p);
+  p=RandomCardSet("BE",((11,"C"),(3,"U"),(1,"R")));
+  i=0;
+  while(i < 11)
+  {
+    if(random(121) < 46)
+      p[i]=random(cards{"BE"}{"L"});
+    i=i+1;
+  }
+  while(i < 14)
+  {
+    if(random(121) < 26)
+      p[i]=random(cards{"BE"}{"L"});
+    i=i+1;
+  }
+  if(random(121) < 4)
+    p[i]=random(cards{"BE"}{"L"});
+  return(p);
+  p=pop();
+}
+
+#
+# ProduceBE_Starter() - Produce beta starter.
+#
+def ProduceBE_Starter
+{
+  push(p);
+  p=RandomCardSet("BE",((45,"C"),(13,"U"),(2,"R")));
+  i=0;
+  while(i < 45)
+  {
+    if(random(121) < 46)
+      p[i]=random(cards{"BE"}{"L"});
+    i=i+1;
+  }
+  while(i < 58)
+  {
+    if(random(121) < 26)
+      p[i]=random(cards{"BE"}{"L"});
+    i=i+1;
+  }
+  if(random(121) < 4)
+    p[58]=random(cards{"BE"}{"L"});
+  if(random(121) < 4)
+    p[59]=random(cards{"BE"}{"L"});
+  return(p);
+  p=pop();
+}
