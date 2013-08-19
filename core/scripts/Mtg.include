@@ -106,6 +106,7 @@ GAME_MENU{"Current Deck Menu"}=(
 GAME_MENU{"Tap a card"}=(
  (1,"Tap/Untap","middle click",""),
  (1,"Tap and keep tapped","","SetStayTapped()"),
+ (1,"Keep untapped","","SetStayUntapped()"),
  (1,"Flip","",'Send("Rotate",(object.number,((card_data(object.number))[1]+180)%360))'),
 );
 
@@ -1240,13 +1241,16 @@ def PlayKeyControlKeyO
     cd = card_data(c);
     if(find("Land",Attr("type",cd[2])) != NULL && cd[1] == 0)
     {
-      if(isfunction("TapHook"))
+      if(!IsStayUntapped(c))
       {
-        if(call("TapHook",c))
+        if(isfunction("TapHook"))
+        {
+          if(TapHook(c))
+            Send("Rotate",(c,90));
+        }
+        else
           Send("Rotate",(c,90));
       }
-      else
-        Send("Rotate",(c,90));
     }
   }
 }
@@ -1263,18 +1267,21 @@ def PlayKeyControlKeyM
     cd = card_data(c);
     if(find("Creature",Attr("type",cd[2])) != NULL && cd[1] == 0)
     {
-      if(isfunction("TapHook"))
+      if(!IsStayUntapped(c))
       {
-        if(call("TapHook",c))
+        if(isfunction("TapHook"))
+        {
+          if(TapHook(c))
+          {
+            a=a+1;
+            Send("Rotate",(c,90));
+          }
+        }
+        else
         {
           a=a+1;
           Send("Rotate",(c,90));
         }
-      }
-      else
-      {
-        a=a+1;
-        Send("Rotate",(c,90));
       }
     }
   }
@@ -1418,6 +1425,22 @@ def UntapHook
   else if((card_data(ARG))[1]==180)
     return(0);
   else if((card_data(ARG))[1]!=0)
+    return(1);
+}
+
+#
+# TapHook(object number) - Return 1 if card shoud be tapped using Ctrl+O or Ctrl+M.
+#
+def TapHook
+{
+  if((card_data(ARG))[1]==180)
+  {
+    Send("Rotate",(ARG,270));
+    return(0);
+  }
+  else if((card_data(ARG))[1]==270)
+    return(0);
+  else if((card_data(ARG))[1]!=90)
     return(1);
 }
 

@@ -309,11 +309,15 @@ FILTER_FUNCTIONS=(,);
 BASE_TABLE_WIDTH=1024;
 BASE_TABLE_HEIGHT=768;
 
-# Which load function should be called? (for compatibility)
+# Which load/save functions should be called? (for compatibility)
 if(isfunction("binary_load"))
   LOAD_FN="binary_load";
 else
   LOAD_FN="load";
+if(isfunction("binary_save"))
+  SAVE_FN="binary_save";
+else
+  SAVE_FN="save";
 
 # Standard menu definitions
 MENU=(,);
@@ -6356,6 +6360,8 @@ def KeyF10
   execute("init");
   execute("init."+GAMEDIR);
   Msg("Function definitions updated");
+  println("----------------------");
+  println("Function definitions updated");
 }
 
 #
@@ -8877,7 +8883,7 @@ def MouseMiddleClickCard
   }
   else if((card_data(object.number))[1]==180) 
   {
-    UnsetStayTapped();
+    UnsetStayUntapped();
     Send("Rotate",(object.number,270));
   }
   else if(tapped_left(object.number)) 
@@ -8888,7 +8894,10 @@ def MouseMiddleClickCard
   else 
   {
     if(untapped(object.number))
+    {
+      UnsetStayUntapped();
       Send("Rotate",(object.number,90));
+    }
   }
 }
 
@@ -10022,12 +10031,12 @@ def SaveBookState
   {
     push(s);
     s=forall("(#,book_entry(card.book,#))",cards());
-    if(!call(LOAD_FN,("book.cache",)))
+    if(!call(LOAD_FN,"book.cache"))
       book.cache=(,);
     if(!has_entry(server.name,book.cache))
       book.cache{server.name}=(,);
     book.cache{server.name}{username}=s;
-    binary_save("book.cache");
+    call(SAVE_FN,"book.cache");
     s=pop();
   }
 }
@@ -10038,7 +10047,7 @@ def SaveBookState
 #
 def LoadBookState
 {
-  if(call(LOAD_FN,("book.cache",)))
+  if(call(LOAD_FN,"book.cache"))
   {
     if(has_entry(server.name,book.cache))
     {

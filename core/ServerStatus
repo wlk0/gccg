@@ -5,19 +5,33 @@ use server;
 for(@games)
 {
     print ucfirst($_)."\n";
-    print "Factory servers\n";
+    
+    $i=0;
     for (factory_servers($_))
     {
+	print "Factory servers\n" unless $i;
+	$i=1;
 	show_server($_);
     }
-    print "Meta servers\n";
+    $i=0;
     for (meta_servers($_))
     {
+	print "Meta servers\n" unless $i;
+	$i=1;
 	show_server($_);
     }
-    print "Game servers\n";
+    $i=0;
+    for (central_servers($_))
+    {
+	print "Central servers\n" unless $i;
+	$i=1;
+	show_server($_);
+    }
+    $i=0;
     for (game_servers($_))
     {
+	print "Game servers\n" unless $i;
+	$i=1;
 	show_server($_);
     }
     print "Launch script PIDs:\n";
@@ -25,6 +39,8 @@ for(@games)
     print "  Meta: $pids\n" if($pids ne "");
     $pids=join(" ",scripts($_,"factory"));
     print "  Factory: $pids\n" if($pids ne "");
+    $pids=join(" ",scripts($_,"central"));
+    print "  Central: $pids\n" if($pids ne "");
     $pids=join(" ",scripts($_,"table"));
     print "  Tables: $pids\n" if($pids ne "");
     print "\n";

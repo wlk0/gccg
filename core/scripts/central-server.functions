@@ -19,7 +19,7 @@
 #
 ##############################################################################
 #
-#                    Function definitions for meta server
+#                    Function definitions for central server
 #
 ##############################################################################
 #
@@ -43,14 +43,12 @@
 #
 # Variables:
 #
+# cards{set}{rarity} - weighted list of card numbers of the given set and rarity
 # command.acl{command} - list of users allowed to use command
 #   0 number of parameters required
 #   1 list of users ("player" is anyone but special user)
 # con - connection which caused event
 # error.echo - if not NULL, send copies of errors to that connection
-# factory.server - connection number to factory server
-# factory.server_name - name of the factory server
-# factory.port - port number to connect
 # faq - collection of latest faq entries as a list of strings
 # function{name} - function callback table containing valid commands
 # game.data - structure holding generic game information (see. game_data())
@@ -64,8 +62,9 @@
 # products{product name} - list of products (initialized by game specific code)
 #   0 amount available
 #   1 price
-#   2 order code for factory server
+#   2 order code
 #   3 last print run size
+# rarities - list of rarities
 # set.data{set abbrev} - set information for each card set (see. set_data())
 # tables{connection} - list of game tables
 #   0 server name
@@ -125,6 +124,7 @@
 # AvailableForTrade(user name,card number) - return 1 if player can give the card away (i.e. not registered)
 # Buy(amount,product name) - Client buys product.
 # BuyCard(card number) - Client buys a card.
+# CardsOfSetWithRarity(card numbers,rarity) - Return weighted set of cards with the given rarity
 # CheckSealedCharacter(mode name) - Check existence of sealed character and create if necessary.
 # Command(string) - Handle special commands.
 # Con(user name) - return connection number of the player or -1 if not connected
@@ -136,9 +136,12 @@
 # DisconnectServer() - called when game server disconnects
 # EndGame(player name who declared,result,options) - Game ended by game server.
 # EnsurePriceUpdate(old,new) - Check if new (seller list,price) pair differs from old and send update if they do.
+# FixedSet(set,list of card names) - return fixed set of card numbers.
 # Give("username amount") - Give money
 # GiveCard(user name,card number) - Give card
 # GiveMoney(user name,amount) - Give or remove money
+# Initialize() - Initialize all tables.
+# InitTables(set abbrev) - initialize card tables for set
 # JoinTable(table number) - Player joins table
 # LeaveTable() - leave the table where player is sitting if any
 # Log() - write arguments to log
@@ -146,6 +149,8 @@
 # Null() - null command for tcp/ip keepalive
 # PrizeForDraw(nmb. of players, bet) - Calcluate prize for draw.
 # PrizeForWin(nmb. of players, bet) - Calcluate prize for winner.
+# Produce(type,set,quantity) - return n "boosters" or "starters" of set
+# RandomCardSet(set abbrev,distribution) - return random sample of cards with given distribution
 # RefreshChatRoom() - called when client asks for chat room update after the game
 # RegisterDeck(registration id,deck structure) - Store deck info for tournament purposes.
 # RegisterGameResult(nmb. of players,player names,player name who declared,result type) - update player stats
@@ -279,12 +284,12 @@ function{"WeStartedGame"}="WeStartedGame";
 def SaveAll
 {
   Log("Saving data");
-  save("users");
-  save("prices");
-  save("products");
-  save("ban");
-  save("tableban");
-  save("restrict");
+  binary_save("users");
+  binary_save("prices");
+  binary_save("products");
+  binary_save("ban");
+  binary_save("tableban");
+  binary_save("restrict");
 }
 
 # 
@@ -858,7 +863,7 @@ def RegisterPlayer
     Reply("{red}{sz16}You can send an application for an account by email.");
     net_server_close(con);
   }
-  else if(!is_user(ARG[0]) && load("nologin"))
+  else if(!is_user(ARG[0]) && binary_load("nologin"))
   {
     Reply("{red}{sz20}Sorry, but this server does not allow new accounts.");
     Reply("{red}{hr}");
@@ -1202,70 +1207,38 @@ def Buy
     Reply("{red}Invalid number of products.");
   else
   {
-    if(factory.server==NULL)
-      Reply("{red}Cards are temporarily unavailable.");
+    if(users{User()}[1] < (ARG[0] - TicketsOf(User(),ARG[1]))*products{ARG[1]}[1])
+      Reply("{red}Not enough money.");
     else
     {
-      if(users{User()}[1] < (ARG[0] - TicketsOf(User(),ARG[1]))*products{ARG[1]}[1])
-        Reply("{red}Not enough money.");
+      if(products{ARG[1]}[0] <= 0)
+        Reply("{red}Cards sold out.");
+      else if(products{ARG[1]}[0] - ARG[0] < 0)
+        Reply("{red}Only "+products{ARG[1]}[0]+" available.");
       else
       {
-        if(products{ARG[1]}[0] <= 0)
-          Reply("{red}Cards sold out.");
-        else if(products{ARG[1]}[0] - ARG[0] < 0)
-          Reply("{red}Only "+products{ARG[1]}[0]+" available.");
+        if(ARG[0]==1)
+        {
+          if(Mode()!="")
+            SendAllNP("Message",User()+" buys "+ARG[1]);
+          Log(User()+" buys "+ARG[1]);
+        }
         else
         {
-          push(ok);
-          push(ready);
-          push(c);
-
-          ok=0;
-
-          if(!net_send(factory.server,(ARG[0],)+products{ARG[1]}[2]))
-            Reply("{red}Cards are temporarily unavailable.");
-          else
-            ok=1;
-
-          if(ok)
-          {
-            ready=0;
-            while(!ready)
-            {
-              c=net_get();
-              if(c!=NULL)
-              {
-                ready=1;
-                if(ARG[0]==1)
-                {
-                  if(Mode()!="")
-                    SendAllNP("Message",User()+" buys "+ARG[1]);
-                  Log(User()+" buys "+ARG[1]);
-                }
-                else
-                {
-                  if(Mode()!="")
-                    SendAllNP("Message",User()+" buys "+ARG[0]+" "+ARG[1]+"s");
-                  Log(User()+" buys "+ARG[0]+" "+ARG[1]+"s");
-                }
-                c=flatten(toval(c[1]));
-                net_server_send(con,("Buy",c));
-                add_to_collection(User(),c);
-
-                m=ARG[0] - AddTickets(User(),ARG[1],-ARG[0]);
-                m=m*products{ARG[1]}[1];
-
-                TransferMoney(User(),-m);
-
-                products{ARG[1]}[0]=products{ARG[1]}[0]-ARG[0];
-              }
-            }
-          }
-
-          c=pop();
-          ready=pop();
-          ok=pop();
+          if(Mode()!="")
+            SendAllNP("Message",User()+" buys "+ARG[0]+" "+ARG[1]+"s");
+          Log(User()+" buys "+ARG[0]+" "+ARG[1]+"s");
         }
+        c=flatten(Produce(products{ARG[1]}[2]+(ARG[0],)));
+        net_server_send(con,("Buy",c));
+        add_to_collection(User(),c);
+
+        m=ARG[0] - AddTickets(User(),ARG[1],-ARG[0]);
+        m=m*products{ARG[1]}[1];
+
+        TransferMoney(User(),-m);
+
+        products{ARG[1]}[0]=products{ARG[1]}[0]-ARG[0];
       }
     }
   }
@@ -2378,6 +2351,153 @@ def SystemInfo
   }
 }
 
+#
+# CardsOfSetWithRarity(card numbers,rarity) - Return weighted set of cards with given rarity.
+#
+def CardsOfSetWithRarity
+{
+  return(having_rarity(ARG[1],ARG[0]));
+}
+
+#
+# RandomCardSet(set abbrev,distribution) - Return random sample of cards with given distribution.
+#
+def RandomCardSet
+{
+  push(d);
+  push(r);
+  push(t);
+  push(pack);
+  pack=(,);
+  for(d)(ARG[1])
+  {
+    dist=(,);
+    for(r)(split(d[1],"+"))
+    {
+      reps=1;
+      if(find("*",r))
+      {
+        t=split(r,"*");
+        if(reps=toint(t[0]))
+          r=t[1];
+        else if(reps=toint(t[1]))
+          r=t[0];
+        else
+        {
+          Log("Invalid distribution token: "+r);
+          r="";
+        }
+      }
+      if(find("/",r))
+      {
+        t=split(r,"/");
+        dist=dist+(cards{t[0]}{t[1]}*reps);
+      }
+      else
+        dist=dist+(cards{ARG[0]}{r}*reps);
+    }
+    pack=pack+left(shuffle(flatten(dist)),d[0]);
+  }
+  return(pack);
+  pack=pop();
+  r=pop();
+  d=pop();
+}
+
+
+#
+# CompleteCardSet(set abbrev,distribution) - Return weighted full copy of distribution.
+#
+def CompleteCardSet
+{
+  return(cards{ARG[0]}{ARG[1]});
+}
+
+#
+# InitTables(set abbrev) - Initialize card distribution tables for a set.
+#
+def InitTables
+{
+  push(s);
+  if(cards==NULL)
+    cards=(,);
+  s=set_data(ARG);
+  s=seq(s[1],s[2]);
+  cards{ARG}=(,);
+  for(r)(rarities)
+    cards{ARG}{r}=CardsOfSetWithRarity(s,r);
+  s=pop();
+}
+
+#
+# Produce(set,type,quantity) - Return n "boosters" or "starters" of set.
+#
+def Produce
+{
+  if(isfunction("Produce"+ucfirst(ARG[1])))
+     return(repeat(ARG[2],"call('Produce'+ucfirst(ARG[1]),ARG[0])"));
+  else if(isfunction("Produce"+ARG[0]+"_"+ucfirst(ARG[1])))
+     return(repeat(ARG[2],"call('Produce'+ARG[0]+'_'+ucfirst(ARG[1]),NULL)"));
+  else if(has_entry(ARG[0],distribution))
+  {
+    if(has_entry(ARG[1],distribution{ARG[0]}))
+      return(repeat(ARG[2],"RandomCardSet(ARG[0],distribution{ARG[0]}{ARG[1]},ARG[2])"));
+    else
+      Log("Invalid product asked: "+ARG[0]+" "+ARG[1]);
+  }
+  else
+    Log("Invalid product asked: "+ARG[0]+" "+ARG[1]);
+}
+
+#
+# FixedSet(set,list of card names) - return fixed set of card numbers.
+#
+def FixedSet
+{
+  push(c);
+  c=images(ARG[1]);
+  if(count((,),c))
+  {
+    Log("ERROR: FixedSet: Invalid card names in fixed set: "+tostr(ARG[1]));
+    push(i);
+    for(i)(length(ARG[1]))
+    {
+       if(c[i]==(,))
+         Log("FAILED:     "+ARG[1][i]);
+    }
+    i=pop();
+    c=(,);
+  }
+  else
+  {
+    c=select("set_of(#)==ARG[0]",flatten(c));
+    if(length(ARG[1]) != length(c))
+    {
+      Log("ERROR: Fixed set size does not match for: "+join(sort(ARG[1]),", "));
+      Log("ERROR: Result was                       : "+join(sort(name(c)),", "));
+    }
+  }
+
+  return(c);
+  c=pop();
+}
+
+#
+# Initialize() - Initialize all card distribution tables.
+#
+def Initialize
+{
+  Log("Initializing tables... ");
+
+  InitDistributions();
+  forall("InitTables(#)",sets());
+
+  for(s)(keys("cards"))
+  {
+    Log("Set "+s+": "+join(select("#!=''",forall("if(length(cards{s}{#})) length(cards{s}{#})+'x'+#; else ''",keys(cards{s})))," "));
+  }
+}
+
 #  /COMMANDS
 #  =========
 
@@ -2422,8 +2542,8 @@ def CommandReload
   Log("Reloading function definitions");
   error.echo=con;
   execute("common.include");
-  execute("meta-server.functions");
-  execute(GAMEDIR+"-meta-server.include");
+  execute("central-server.functions");
+  execute(GAMEDIR+"-central-server.include");
   SendAll("Message","Success");
   error.echo=pop();
 }
@@ -2516,17 +2636,7 @@ def CommandReboot
 #
 def CommandCheckfactory
 {    
-  if(factory.server==NULL)
-  {
-    Reply("No factory server found! Attempting to reconnect...");
-    factory.server=net_connect(factory.server_name,factory.port);
-    if(factory.server==NULL)
-      Reply("Still no connection. Try again later.");
-    else
-      Reply("Connection reestablished.");
-  }
-  else
-    Reply("Factory server is still online. Nothing to do.");
+  Reply("This is a central server. Factory functions are built in.");
 }
 
 #
@@ -3112,7 +3222,7 @@ def CommandFaq
 {
   push(m);
   m=join(ARG," ");
-  if(!load("faq"))
+  if(!binary_load("faq"))
     faq=(,);
   if(m=="")
   {
@@ -3128,7 +3238,7 @@ def CommandFaq
     m=m+" ("+User()+")";
     SendAll("Message","{cyan}FAQ: "+m);
     faq=faq+(m,);
-    save("faq");
+    binary_save("faq");
   }
   m=pop();
 }
@@ -3140,12 +3250,12 @@ def CommandFaqclear
 {
   push(f);
   f=SavePath()+"faq_proposals.txt";
-  load("faq");
+  binary_load("faq");
   faq=(""," * FAQ Proposals "+date()+" "+time()+" *","")+faq;
   write_file(f,faq);
   Reply("FAQ Proposals written to '"+f+"'.");
   faq=(,);
-  save("faq");
+  binary_save("faq");
   f=pop();
 }
 

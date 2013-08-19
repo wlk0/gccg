@@ -9,6 +9,7 @@ TORRENT_VERSION=1;
 # =========
 
 # Deck name mapping.
+deck_name=(,);
 deck_name{"deck"}="library";
 deck_name{"discard pile"}="graveyard";
 deck_name{"sideboard"}="sideboard";

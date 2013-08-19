@@ -19,7 +19,7 @@
 #
 ##############################################################################
 #
-#                              Chat room
+# Combined central server
 #
 ##############################################################################
 
@@ -28,22 +28,30 @@ trigger "init" "" code
   game.data=game_data();
   GAME=game.data{"game"};
   GAMEDIR=game.data{"gamedir"};
-
+  
   execute("common.include");
-
-  factory.server_name="localhost";
-
+  execute("central-server.functions");
+  if(!execute(GAMEDIR+"-central-server.include"))
+  {
+    println("");
+    println(GAMEDIR+"-central-server.include not defined for this game");
+    println("");
+    quit(1);
+  }
+  
+  randomize();
   tables=(,);
   players=(,);
-
-  execute("meta-server.functions");
-  execute(GAMEDIR+"-meta-server.include");
-
+  set.data=(,);
+  forall("set.data{#}=set_data(#)",sets());
+  rarities=rarities();
+  Log("Rarities found: "+join(rarities," "));
+  
   Log("Loading old data... ");
 
   users=(,);
 
-  if(load("users"))
+  if(binary_load("users"))
   {
     attach("users","DBStringKeys");
     delsaved("users");
@@ -52,18 +60,18 @@ trigger "init" "" code
   else
     attach("users","DBStringKeys");
 
-  if(!load("prices"))
+  if(!binary_load("prices"))
     prices=(,);
-  if(!load("ban"))
+  if(!binary_load("ban"))
     ban=(,);
-  if(!load("tableban"))
+  if(!binary_load("tableban"))
     tableban=(,);
-  if(!load("restrict"))
+  if(!binary_load("restrict"))
     restrict=(,);
 
   cache_parameters("users",(5,900,5,25));
-
-  randomize();
+  
+  Initialize();
 }
 
 trigger "init" "server" code
@@ -82,9 +90,8 @@ trigger "error" "command" code
 {
   Log("ERROR: "+net_client_name(event)+" message: "+error.message);
   if(error.echo!=NULL)
-  {
     Send(error.echo,("Message","{red}ERROR: "+net_client_name(event)+" message: "+error.message));
-  }
+  
   stacktrace();
   errors=errors+1;
   set_error_trigger("","");
@@ -92,43 +99,8 @@ trigger "error" "command" code
 
 trigger "init" "game" code
 {
-  push(try);
-  randomize();
-  Log("Initializing server at port "+port);
+  Log("Initializing central server at port "+port);
   net_create_server(port);
-  try=5;
-  while(try)
-  {
-    Log("Connecting to factory "+factory.server_name+" port "+factory.port+" ... ");
-    factory.server=net_connect(factory.server_name,factory.port);
-    if(factory.server==NULL)
-    {
-      Log("FAILED: factory not yet available, waiting...");
-      sleep(5);
-      try=try-1;
-    }
-    else
-    {
-      Log("connected");
-      push(c);
-      while(try)
-      {
-        c=net_get();
-        if(c!=NULL)
-        {
-          set.data=toval(c[1]);
-          Log("received set info for "+length(set.data)+" set(s)");
-          try=0;
-        }
-      }
-      c=pop();
-    }
-  }
-
-  if(set.data==NULL)
-    quit(1);
-
-  try=pop();
 }
 
 trigger "main" "" code
@@ -149,3 +121,4 @@ trigger "exit" "" code
 {
   SaveAll();
 }
+

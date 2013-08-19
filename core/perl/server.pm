@@ -10,7 +10,7 @@ use File::Path;
 %server_size=(); # RSS of the server indexed by the server process PID
 %server_options=(); # arguments indexed by the server process PID
 %script_game=(); # games for each running Server script indexed by the PID
-%script_type=(); # type 'meta', 'factory' or 'table' of the Server script indexed by the PID
+%script_type=(); # type 'meta', 'factory', 'central', or 'table' of the Server script indexed by the PID
 %ppid=(); # Parent process IDs.
 @games=(); # List of games found based on servers.
 
@@ -18,7 +18,7 @@ use File::Path;
 $conf_game="";    # Name of the game
 @conf_servers=(); # Server commands.
 @conf_logs=();    # Log files.
-@conf_types=();   # Server types: 'meta', 'factory', 'game'.
+@conf_types=();   # Server types: 'meta', 'factory', 'central', 'game'.
 
 read_server_processes();
 
@@ -77,6 +77,10 @@ sub read_server_processes
 	    elsif(m/factory-/)
 	    {
 		$script_type{$pid}="factory";
+	    }
+	    elsif(m/central-/)
+	    {
+		$script_type{$pid}="central";
 	    }
 	    else
 	    {
@@ -143,6 +147,15 @@ sub factory_servers
 {
     my $game=shift;
     return match_servers("--load factory-server.triggers",$game);
+}
+
+#
+# central_servers() - Return a list of central server processes IDs.
+#
+sub central_servers
+{
+    my $game=shift;
+    return match_servers("--load central-server.triggers",$game);
 }
 
 #
@@ -312,7 +325,7 @@ sub read_conf
 	    die "unknown game '$game'" if $port eq "";
 	    $conf_game=$game;
 	}
-	elsif(m/^(factory|meta|game)(.*)/)
+	elsif(m/^(factory|meta|central|game)(.*)/)
 	{
 	    my $servertype=$1;
 	    my $arg=$2;
