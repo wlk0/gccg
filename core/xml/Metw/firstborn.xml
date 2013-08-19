@@ -888,11 +888,6 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(2)"/>
 	</card>
-	<card name="Shipwrights of Lindon" graphics="Shipwrights of Lindon.jpg" text="Playable on a character with home site Grey Havens. If moving to a Port or site in a Coastal Sea [c] region, you may discard (for no effect) one Fair Sailing, Great Ship, Stars or The Evenstar from hand and tap target character to replace the company’s new site with a Port or site in a Coastal Sea region; this site must be in the same or an adjacent region as the site originally moved to. You may discard this card to bring one Fair Sailing, Stars or The Evenstar from your discard pile to your play deck (reshuffle). Cannot be duplicated on a given character.">
-			 <attr key="type" value="Hero Resource"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Permanent-event"/>
-	</card>
     <card name="Soul-piercing" graphics="Soulpiercing.jpg" text="Playable on Galadriel. One of your opponent’s characters at Galadriel’s current site (your choice) must make a CCmodified by -2. If the character fails this CC you may look at opponent’s hand. Otherwise opponent may remove a corruption card from the character. Cannot be duplicated on a given turn for a given character">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
@@ -917,6 +912,11 @@
 			 <attr key="keyword" value="Battle-gear"/>
 			 <attr key="keyword" value="Sage only"/>
 			 <attr key="keyword" value="Warrior only"/>
+	</card>
+	<card name="Swanships of Lindon" graphics="Swanships of Lindon.jpg" text="Playable on a character with home site Grey Havens. If moving to a Port or site in a Coastal Sea [c] region, you may discard (for no effect) one Fair Sailing, Great Ship, Stars or The Evenstar from hand and tap target character to replace the company’s new site with a Port or site in a Coastal Sea region; this site must be in the same or an adjacent region as the site originally moved to. You may discard this card to bring one Fair Sailing, Stars or The Evenstar from your discard pile to your play deck (reshuffle). Cannot be duplicated on a given character.">
+			 <attr key="type" value="Hero Resource"/>
+			 <attr key="rarity" value="C"/>
+			 <attr key="class" value="Permanent-event"/>
 	</card>
     <card name="The High Sea" graphics="The High Sea.jpg" text="Unique. Playable on a non-avatar Elf character in any out of play pile, if you discard (for no effect) from hand a Favor of the Valar or Returned Beyond All Hope. May also be played on an Elf placed “off to the side” with Sail to the West. Make a roll, adding the character’s mind; if the result is greater than 10, the character may be brought into play under GI at Grey Havens (discard Sail to the West). Otherwise, discard this card. Alternatively, playable on an Elf with mind 6 or more placed “off to the side” with Sail to the West. The character is worth full mp to you.">
 			 <attr key="type" value="Hero Resource"/>
