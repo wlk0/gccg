@@ -1,6 +1,6 @@
 #
 #    Gccg - Generic collectible card game.
-#    Copyright (C) 2001-2012 Tommi Ronkainen
+#    Copyright (C) 2001-2013 Tommi Ronkainen
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -430,6 +430,8 @@ HELP{"chat"}{"bans"}=("","list bans",NULL,
 "This command lists all banned users and restricted domains.");
 HELP{"play"}{"bid"}=("bid","place a bid",NULL,
 "Simple auction system works as follows: each player places their bids using this command. The bid can be any text. When each player has placed their bids, the auction results are displayed and book-keeping for bidding is reseted to be ready for next bidding.");
+HELP{"chat"}{"canceldraft"}=("","cancel a draft",NULL,
+"If you've reserved a draft and want to take it back, this command will free up the table to be reclaimed. Privileged users can also use this command with a numeric argument to reclaim a draft tbale with the given number, no matter who reserved it.");
 HELP{"chat"}{"delproduct"}=("id,t","delete product",("God","Salesman"),
 "This command removes one product. The ordering code {yellow}id t{white} is the same as in {yellow}/addproduct{white}.");
 HELP{"chat"}{"have"}=("player","show player's have list",NULL,
@@ -454,6 +456,8 @@ HELP{"chat"}{"ro"}=("","restore original deck",NULL,
 "You can retrieve the original composition of the registered deck with this command. Be careful when using this command, since it overwrites your current deck with the content of the registered deck. See also {orange}/help rd{white}.");
 HELP{"chat"}{"ro2"}=("","restore alternative original deck",NULL,
 "You can retrieve the original composition of the alternative registered deck with this command. Be careful when using this command, since it overwrites your current deck with the content of the alternative registered deck. See also {orange}/help rd2{white}.");
+HELP{"chat"}{"startdraft"}=("n,setcodes","start a draft",NULL,
+"If there is an open draft table available, reserve a draft for {yellow}n{white} players using the chosen products; the server will automatically determine the price to enter the draft based on those products. Set codes can be separated by spaces, commas, hyphens, or slashes. If only one set code is given, it defaults to 3 copies of that set.");
 HELP{"chat"}{"users"}=("pattern","list of users",NULL,
 "Show list of all users matching wildcard {yellow}pattern{white} or all users if not given. The total number of users matching is shown instead if the list is too long.");
 HELP{"chat"}{"want"}=("player","show player's want list",NULL,
@@ -472,6 +476,8 @@ HELP{"play"}{"loadgame"}=("","restore your game",NULL,
 "Searches if there is a saved game for current player(s) and restores it, if found. Note that you must be playing at the same server, where you saved your game - not necessarily at the same table. The game server announces at the beginning of the game, if there is a saved game available for your play group. Restoring the saved game does not remove it from the server; see also {orange}/help delgame{white}.");
 HELP{"play"}{"delgame"}=("","delete your saved game",NULL,
 "Remove a saved game for the current group of players. This command should be applied to save disk space on a server, when the saved game is not needed anymore.");
+HELP{"play"}{"autopass"}=("","force a draft to proceed",NULL,
+"If you are at a draft table, and it has been a while since the cards were last passed, you can use this command to force the server to randomly pick for the players who haven't made their most recent pick.");
 HELP{"chat"}{"yell"}=("message","send message to all",NULL,
 "This command echoes a {yellow}message{white} to all players, even those who are currently playing.");
 HELP{"chat"}{"unban"}=("player","unban a player",("God","Guard"),
@@ -1850,6 +1856,7 @@ def CommandReconnect
     Msg("Connection is still open. Cannot reconnect.");
   c=pop();
 }
+
 HELP{"any"}{"reconnect"}=("","reconnect to server",NULL,
 "If you have lost connection to the meta server, this will attempt to put you back in the chatroom without having to close and reopen the program.");
 
@@ -1861,6 +1868,9 @@ def CommandDisconnect
     Msg("{red}Closed connection.");
   }
 }
+
+HELP{"any"}{"disconnect"}=("","disconnect to server",NULL,
+"Close the connection to your table or meta server without having to quit the program.");
 
 #
 # CommandWho() - Implementation of /who command.
@@ -2241,6 +2251,7 @@ def ChatCommandRenamedeck
       decks=del_entry(deck.name,decks);
       SelectDeck(join(ARG," "));
     }
+    n=pop();
   }
 }
 
@@ -2759,6 +2770,49 @@ def ChatCommandSealed
 
 HELP{"chat"}{"sealed"}=("args","play sealed deck",NULL,
 "The sealed deck game is based on alter egos of players. To initiate an sealed deck event, you must first transfer an amount of money to the sealed deck alter ego of your player character. This is accomplished by the command {yellow}/sealed <n>{white}, where {yellow}<n>{white} is the amount of money to start with. Tha cards and money already owned by the sealed deck alter ego, is not lost. The money is added to instead. The command also switches to the sealed deck character immediately. If you want to switch between your normal character and the sealed deck character, you can say {yellow}/sealed{white} without any arguments. To transfer all cards and money back to your main character, say {yellow}/sealed end{white}.");
+
+#
+# ChatCommandDraft() - Implementation of /draft command.
+#
+def ChatCommandDraft
+{
+  if(length(ARG)==0)
+  {
+     if(right(username,6)=="-draft")
+     {
+       Send("Sealed",("draft","off",NULL,(,)));
+     }
+     else
+     {
+       Send("Sealed",("draft","on",NULL,(,)));
+     }
+     if(get_attr(card.book,"visible"))
+       set_attr(card.book,"visible",0);
+     ClearCardBook();
+  }
+  else if(length(ARG)==1)
+  {
+    if(ARG[0]=="end")
+    {
+      Send("Sealed",("draft","end",NULL,(,)));
+    }
+    else if(right(username,7)!="-draft")
+    {
+      n=toreal(ARG[0]);
+      password{username+"-draft"}=password{username};
+      save("password");
+      Send("Sealed",("draft","start",n,(,)));
+    }
+    if(get_attr(card.book,"visible"))
+      set_attr(card.book,"visible",0);
+    ClearCardBook();
+  }
+  else
+    Msg("{red}Invalid arguments.");
+}
+
+HELP{"chat"}{"draft"}=("args","play draft deck",NULL,
+"The draft game is based on alter egos of players. To initiate a draft, you must first transfer an amount of money to the draft alter ego of your player character. This is accomplished by the command {yellow}/draft <n>{white}, where {yellow}<n>{white} is the amount of money to start with. Tha cards and money already owned by the draft alter ego, is not lost. The money is added to instead. The command also switches to the draft character immediately. If you want to switch between your normal character and the draft character, you can say {yellow}/draft{white} without any arguments. To transfer all cards and money back to your main character, say {yellow}/draft end{white}.");
 
 #
 # CommandNewuser() - Implementation of /newuser command.
@@ -7164,6 +7218,7 @@ def ChooseDeckMenu
         l=(("{blue}<back>","","ChooseDeckMenu('')"),);
         l=l+forall("(#,)",sort(deck.groups{ARG}));
         Menu("Choose a deck",l);
+        l=pop();
       }
     }
     else
@@ -7194,6 +7249,7 @@ def ChooseGroupMenu
     l=forall("('{green}'+#,'','AddDeckToGroup(#)')",keys(deck.groups));
     l=l+(("{blue}New group...","","Msg('You can create a new group by typing {yellow}/addgroup [groupname]{white}.')"),);
     Menu("Choose a group",l);
+    l=pop();
   }
 }
 
@@ -7419,6 +7475,7 @@ def MergeDeckSubmenu
         l=(("{blue}<back>","","MergeDeckSubmenu('')"),);
         l=l+forall("(#,'','MergeDeck(#)')",sort(deck.groups{ARG}));
         Menu("Merge deck with...",l);
+        l=pop();
       }
     }
     else
@@ -8253,7 +8310,7 @@ def CardMenu
   {
     m=ConstructMenu("Tap a card");
     if(length(m) < 1)
-      m=(("Tap/Untap","middle click",""),("Tap and keep tapped","","SetStayTapped()"));
+      m=(("Tap/Untap","middle click",""),("Keep tapped","","SetStayTapped()"),("Keep untapped","","SetStayUntapped()"));
 
     for(t)(TargetingOptions())
       m=m+(("Attach like "+join(t," / "),"","ManualTarget("+object.number+","+tostr(t)+")"),);
@@ -9088,8 +9145,8 @@ def Category
 
     return(c);
 
-    card=pop();
     c=pop();
+    card=pop();
 }
 
 #
