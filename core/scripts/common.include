@@ -84,7 +84,7 @@ def CountCards
 #
 def ValidMode
 {
-  return(ARG=="" || ARG=="sealed");
+  return(ARG=="" || ARG=="sealed" || ARG=="draft");
 }
 
 #

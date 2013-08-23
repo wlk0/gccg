@@ -1,6 +1,6 @@
 #
 #    Gccg - Generic collectible card game.
-#    Copyright (C) 2001-2012 Tommi Ronkainen
+#    Copyright (C) 2001-2013 Tommi Ronkainen
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -52,6 +52,14 @@
 # deck_rules{game system}{part names} - Contain the list of rules
 #   which describes card limits for the given game system.
 # deck_status{player name} - (how many proxies, deck match registered, deck is in original form)
+# draft - if 1, this table is a draft table
+# draft.direction - which way to pass (1=right, -1=left)
+# draft.packsize - number of cards in the current packs
+# draft.paused - 1 if transfers should be disabled
+# draft.players - number of players who were still at the table as of the most recent pass
+# draft.picked[player] - 1 if player has made a pick from the most recent pack
+# draft.passtime - time of most recent pass
+# draft.startpacksize - number of cards originally in the current round of packs
 # end.player - who most recently declared end of turn
 # flag.game_started - set when the game is started
 # flag.game_broken - set when on of the players has quit
@@ -76,6 +84,7 @@
 # persistent - if >1, don't free memory and reload XML for next game, just subtract 1 and reconnect
 # play.stack - list of cards waiting for PlayStage2
 # player - player causing event
+# player.deck{player number} - object number of player's "deck" pile
 # player.name{player number} - name of the players and watchers
 # player.registered{connection} - 1 if player or watcher is registered
 # players - current total number of players (not counting watchers)
@@ -138,7 +147,7 @@
 # CreateDeck(owner,name,x,y) - create new deck to the game
 # DeclareResult(win|lose|draw|undecided,optional sub type) - Declare the result of the game.
 # DelMarker(object number,marker type,[count]) - Delete marker(s) from an object.
-# Detach(object number)
+# Detach(object number) - Break a card free of attachment.
 # EndGame() - close the current game
 # Flip(object number) - Reval or hide object.
 # Group(object number) - Return list of all cards attached recursively including card itself.
@@ -212,6 +221,9 @@ MARKER_COLOR[7]="default";
 
 # Maximum inactive time
 MAX_PING=120;
+
+# In a draft, the time each player has to pick a card based on size of the pack
+DRAFT_LIMIT=(10,15,15,15,15,30,30,30,30,30,45,45,45,45,60);
 
 # Number of consecutive games to run in a single process,
 # without unloading XML files or allocated memory
@@ -343,6 +355,7 @@ def InitServer
   last_vis=copy(4,ARG);
   markers=(,);
   play.stack=copy((,),ARG);
+  player.deck=(,);
   player.name=(,);
   player.registered=(,);
   deck_status=(,);
@@ -401,6 +414,7 @@ def InitGame
   Log("Registering server to "+meta.server+".");
   cookie=GeneratePassword();
   net_send(meta.connection,("RegisterServer",(port,players_wanted,bet,cookie,keys(deck_rules),server_description,VERSION,options.tournament)));
+  draft=(server_description=="Draft Table");
   WaitMetaEvents("StartGame");
   Log("Launching the game.");
 }
@@ -465,6 +479,8 @@ def CreatePlayerObjects
   {
     if(decks[i][1][1]==ARG)
     {
+      if(decks[i][1][2]=="deck")
+        player.deck{ARG}=decks[i][0];
       for(p)(watchers)
       {
         if(decks[i][1][1]==p)
@@ -549,7 +565,17 @@ def StartGame
    CreatePlayerObjects(p);
 
   SendAll("StartGame",NULL);
-  if(load(SaveFilename()))
+  if(draft)
+  {
+    SendAll("Message","{yellow}This is a drafting table. Cards will be given to you automatically, and you can pick one by moving it to the top of your deck. Once everyone has picked a card, the rest will be passed to the next player.");
+    SendAll("Message","{yellow}If enough time has passed and you haven't made a pick, anyone can enter {cyan}/autopass{yellow}, and then the players who haven't picked yet will be given a random card from their pack so that they can be passed on. If you leave the table while a draft is in progress, all your remaining picks will be random.");
+    draft.direction=1;
+    draft.paused=1;
+    draft.players = players_wanted;
+    draft.picked = (0,)*players_wanted;
+      
+  } 
+  else if(load(SaveFilename()))
   {
     SendAll("Message","{green}{sz16}You have saved game on this server.");
     SendAll("Message","{green}{sz16}You may restore it using {yellow}/loadgame{green} or delete it using{yellow} /delgame{green}.");
@@ -562,6 +588,12 @@ def StartGame
   flag.game_started=1;
   flag.game_broken=0;
   flag.game_halted=0;
+  
+  if(draft)
+  {
+    p=WaitMetaEvents("DistributeProduct");
+    DistributeProduct(p[1]);
+  }
 
   i=pop();
   n=pop();
@@ -895,7 +927,7 @@ def ReceiveData
       if(RegisterPlayer(parameter) && watchers==players_wanted)
       {
         PlayerShuffle();
-        if(players_wanted > 3 && players_wanted % 2 == 0)
+        if(!draft && players_wanted > 3 && players_wanted % 2 == 0)
         {
           SendAll("Message","{green}This table supports team games. Do you want to play a team game? (Answer {yellow}yes{green} or {yellow}no{green}.)");
           waitfor=0;
@@ -985,13 +1017,18 @@ def ReceiveClose
     if(player < players)
     {
       SendAll("Message","{red}"+player.name{player}+" quits.");
-      flag.game_broken=1;
-      if(flag.game_started)
-        CommandSavegame();
-      if(OnePlayerLeft())
-        flag.game_halted=1;
-      if(flag.game_halted)
-        SendAll("Message","{red}Game halted.");
+      if(draft)
+        draft.players = draft.players + draft.picked[player] - 1;
+      else
+      {
+        flag.game_broken=1;
+        if(flag.game_started)
+          CommandSavegame();
+        if(OnePlayerLeft())
+          flag.game_halted=1;
+        if(flag.game_halted)
+          SendAll("Message","{red}Game halted.");
+      }
     }
     else
     {
@@ -2279,6 +2316,49 @@ def Transfer
     Reply("{red}Invalid transfer source.");
   else if(length(ARG[2]) < 1)
     Reply("{red}Invalid transfer target.");
+  else if(draft)
+  {
+#   The only transfers allowed in draft are a single card from your own hand to the top of your deck
+#   if you haven't made a pick yet, and the reverse transaction (take-back) if you have
+    if(!draft.paused && ARG[0]==1 && length(ARG[1])>2 && length(ARG[2])>1 && ARG[1][0]=="hand"
+            && ARG[2][0]=="deck.top" && draft.picked[player]==0)
+    {
+      if(length(hand[player]) > ARG[1][2] && ARG[1][1]==player && ARG[2][1]==player.deck{player})
+      {
+        c=hand[player][ARG[1][2]];
+        hand[player]=index(hand[player],seq(0,length(hand[player])-1)-(ARG[1][2],));
+        decks{ARG[2][1]}[0]=decks{ARG[2][1]}[0]+(c,);
+        
+        SendAll("DelHand",(player,ARG[1][2]));
+        SendAll("PutDeck",(ARG[2][1],card_back(c)));
+        Send(player,("Message","you select "+name(c)));
+        SendOther(player,("Message",player.name{player}+" selects a card"));
+        
+        draft.picked[player]=1;
+        if(sum(draft.picked)==draft.players)
+          DraftPass();
+      }
+    }
+    else if(!draft.paused && ARG[0]==1 && length(ARG[1])>1 && length(ARG[2])>1 && ARG[1][0]=="deck.top"
+             && ARG[2][0]=="hand" && draft.picked[player]==1)
+    {
+      if(ARG[2][1]==player && ARG[1][1]==player.deck{player})
+      {      
+        c=last(decks{ARG[1][1]}[0]);
+        decks{ARG[1][1]}[0]=head(decks{ARG[1][1]}[0]);
+        hand[player]=hand[player]+(c,);
+      
+        SendAll("DelDeckTop",ARG[1][1]);
+      
+        Send(player,("PutHand",(player,c)));
+        SendOther(player,("PutHand",(player,card_back(c))));
+        Send(player,("Message","you cancel your pick"));
+        SendOther(player,("Message",player.name{player}+" cancels their pick"));
+      
+        draft.picked[player]=0;
+      }
+    }
+  }
   else
   {
 # Get transfer options.
@@ -2475,6 +2555,121 @@ def Transfer
 }
 
 #
+# DistributeProduct(product name,contents of packs) - Receive draft packs and hand them out to players.
+#
+def DistributeProduct
+{
+  if(draft)
+  {
+    push(p);
+    draft.startpacksize = length(ARG[1][0]);
+    draft.packsize = draft.startpacksize;
+    for(p)(players_wanted)
+    {
+      hand[p]=ARG[1][p];
+      Send(p,("SetHand",(p,hand[p])));
+      SendOther(p,("SetHand",(p,card_back(hand[p]))));
+      draft.picked[p]=0;
+    }
+    if(draft.direction>0)
+      p="right";
+    else
+      p="left";
+    SendAll("Message","You've received a "+ARG[0]+", and you'll be passing to the "+p+" this time.");
+    draft.passtime=current_time();
+    draft.paused=0;
+    p=pop();
+  }
+}
+
+#
+# DraftPass() - Handle card movements during a draft.
+#
+def DraftPass
+{
+  if(draft)
+  {
+    push(p);
+    push(n);
+    push(c);
+    for(p)(players_wanted)
+    {
+      if(draft.picked[p]==0)
+      {
+        n=random(draft.packsize);
+        c=hand[p][n];
+        hand[p]=index(hand[p],seq(0,length(hand[p])-1)-(n,));
+        decks{player.deck{p}}[0]=decks{player.deck{p}}[0]+(c,);
+        
+        Send(p,("Message","It's time to pass, so your selection was made at random: "+name(c)));
+        SendAll("DelHand",(p,n));
+        SendAll("PutDeck",(player.deck{p},card_back(c)));
+      }
+      
+      SendAll("SetHand",(p,(,)));
+    }
+    
+    draft.packsize = draft.packsize - 1;
+    if(draft.packsize)
+    {
+      SendAll("Message","{green}Passing...");
+      c=repeat(players_wanted,"(,)");
+      for(p)(players_wanted)
+      {
+        if(draft.direction>0)
+        {
+#         Pass to the right: 0-2-4..., then around to 1-3-5...
+          n=p+2;
+          if(n==players_wanted)
+            n=(players_wanted+1)%2;
+          else if(n>players_wanted)
+            n=players_wanted%2;
+        }
+        else
+        {
+#         Pass to the left: ...4-2-0, then around...5-3-1
+          n=p-2;
+          if(n==-1)
+            n=players_wanted-(1+((players_wanted+1)%2));
+          else if(n==-2)
+            n=players_wanted-(1+(players_wanted%2));
+        }
+            
+        c[n]=hand[p];
+      }
+      
+      draft.players=0;
+      for(p)(players_wanted)
+      {
+        n=Plr2Con(p);
+        if(n != NULL)
+        {
+          if(net_server_isopen(n))
+            draft.players=draft.players+1;
+        }
+        hand[p]=c[p];
+        draft.picked[p]=0;
+        Send(p,("SetHand",(p,c[p])));
+        SendOther(p,("SetHand",(p,card_back(c[p]))));
+      }
+      draft.passtime=current_time();
+    }
+    else
+    {
+      draft.paused=1;
+      c=forall("(player.name{#},right(decks{player.deck{#}}[0],draft.startpacksize))",seq(0,players_wanted-1));
+      draft.direction=-draft.direction;
+      net_send(meta.connection,("DraftChoices",c));
+      p=WaitMetaEvents("DistributeProduct");
+      DistributeProduct(p[1]);
+    }
+    c=pop();
+    n=pop();
+    p=pop();
+  }
+}
+
+#
 # OTHER GAME PROTOCOL FUNCTIONS
 # =============================
 
@@ -2517,6 +2712,9 @@ def UploadDeck
 
    if(flag.deck_uploaded[player])
      SendAll("Message","{red}"+player.name{player}+" tried to upload deck twice.");
+   else if(draft)
+#  uploaded decks are not used in draft mode
+     1;
    else
    {
      D=ARG;
@@ -2554,8 +2752,10 @@ def UploadDeck
        D{p}=sort(D{p});
 
      SendAll("Message","{blue}"+player.name{player}+" uploads his deck.");
+     fc = first(cards());
 
      d=sort(flatten(values(D)));
+     d=select('# >= fc',d);
      d=sort(forall('(count(#,d),#)',unique(d)));
 
      net_send(meta.connection,("DeckCheck",(player.name{player},d,D)));
@@ -2717,8 +2917,10 @@ def WatcherSay
 #
 def DeclareResult
 {
+  if(draft)
+    1;
 # declaring a loss after someone else's declared win (etc.) should count as acceptance, not a new result
-  if(EquivalentResult(player.name{player},ARG[0]))
+  else if(EquivalentResult(player.name{player},ARG[0]))
     AcceptResult();
   else if(count(ARG[0],AcceptableResult()) || ARG[0]=="undecided")
   {
@@ -2740,7 +2942,7 @@ def DeclareResult
 #  AcceptResult() - Give acceptance to the currently declared result.
 #
 def AcceptResult
-{   
+{
   if(result != NULL)
   {
     result.accepted[player]=1;
@@ -2758,7 +2960,9 @@ def AcceptResult
 #
 def ShuffleDeck
 {
-  if(has_entry(ARG,decks))
+  if(draft)
+    1;
+  else if(has_entry(ARG,decks))
   {
     push(v);    
     v=visible[decks{ARG}[1]]{decks{ARG}[2]};
@@ -2877,7 +3081,9 @@ def ShuffleDeck
 #
 def Reveal
 {
-  if(count(ARG[0],hand.object))
+  if(draft)
+    1;
+  else if(count(ARG[0],hand.object))
   {
     push(o);
     o=Owner(ARG[0]);
@@ -3097,9 +3303,12 @@ def SearchDeck
 {
   if(has_entry(ARG,decks))
   {
-    MsgVerbObject("look at",ARG);
-    Send(player,("SearchDeck",reverse(decks{ARG}[0])));
-   }
+    if(!draft || player==decks{ARG}[1])
+    {
+      MsgVerbObject("look at",ARG);
+      Send(player,("SearchDeck",reverse(decks{ARG}[0])));
+    }
+  }
 }
 
 #
@@ -3118,7 +3327,9 @@ def AddMarker
   else
     c=1;
 
-  if(IsObject(o) && m >= 0 && m < length(MARKER_COLOR))
+  if(draft)
+    1;
+  else if(IsObject(o) && m >= 0 && m < length(MARKER_COLOR))
   {
     if(c==0)
     {
@@ -3175,7 +3386,9 @@ def DelMarker
   else
     c=1;
 
-  if(IsObject(o) && m >= 0 && m < length(MARKER_COLOR))
+  if(draft)
+    1;
+  else if(IsObject(o) && m >= 0 && m < length(MARKER_COLOR))
   {
     if(c==0)
     {
@@ -3272,7 +3485,9 @@ def Attach
 #
 def Flip
 {
-  if(has_entry(ARG,decks))
+  if(draft)
+    1;
+  else if(has_entry(ARG,decks))
   {
     push(v);
     v=visible[decks{ARG}[1]]{decks{ARG}[2]};
@@ -3450,10 +3665,30 @@ def HandleMetaServer
     Log("Shutting down server.");
     quit(2);
   }
-  else if(ARG[0]=="Log")
+  else if(draft && ARG[0]=="SetPlayers")
   {
-    Log("META SERVER: "+ARG[1]);
+    Log("Table claimed for a "+ARG[1]+" player draft");
+    players_wanted=ARG[1];
   }
+  else if(draft && ARG[0]=="Irregularity")
+  {
+    Log("Received a code "+ARG[1]+" irregularity, quitting...")
+    SendAll("Message","{red}The central server is cutting us off. Looks like you'll have to leave and start over.");
+# Codes:
+#   1  a player somehow managed to join with insufficient money
+#   2  the cards drafted don't match the cards opened
+#   3  at least two players ended up with different numbers of cards
+    quit(2);
+  }
+  else if(draft && ARG[0]=="FinishDraft")
+  {
+    Log("No more products to receive; cleaning up");
+    SendAll("Message","{green}That concludes this draft. We hope you all made some good picks.");
+    result="undecided";
+    EndGame();
+  }
+  else if(ARG[0]=="Log")
+    Log("META SERVER: "+ARG[1]);
 }
 
 #
@@ -3666,37 +3901,40 @@ def Command
 #
 def CommandSavegame
 {
-  push(n);
-  n=SaveFilename();
+  if(!draft)
+  {
+    push(n);
+    n=SaveFilename();
 
-  SendAll("Message","{green}Saving game '"+n+"'...");
-  savegame=(,);
-  savegame{"active"}=active;
-  savegame{"avatars"}=avatar.pos;
-  savegame{"decks"}=decks;
-  savegame{"deck_status"}=deck_status;
-  savegame{"server_status"}=(bet,game.data);
-  savegame{"hand"}=hand;
-  savegame{"markers"}=markers;
-  savegame{"next_object"}=next_object;
-  savegame{"order"}=PlayerOrder();
-  savegame{"score"}=score;
-  savegame{"server_flags"}=server_flags;
-  savegame{"table"}=table;
-  savegame{"table.stack_order"}=table.stack_order;
-  savegame{"team"}=team;
-  savegame{"transfers"}=transfers;
-  if(isfunction("SavegameHook"))
-    savegame{"special"}=SavegameHook();
+    SendAll("Message","{green}Saving game '"+n+"'...");
+    savegame=(,);
+    savegame{"active"}=active;
+    savegame{"avatars"}=avatar.pos;
+    savegame{"decks"}=decks;
+    savegame{"deck_status"}=deck_status;
+    savegame{"server_status"}=(bet,game.data);
+    savegame{"hand"}=hand;
+    savegame{"markers"}=markers;
+    savegame{"next_object"}=next_object;
+    savegame{"order"}=PlayerOrder();
+    savegame{"score"}=score;
+    savegame{"server_flags"}=server_flags;
+    savegame{"table"}=table;
+    savegame{"table.stack_order"}=table.stack_order;
+    savegame{"team"}=team;
+    savegame{"transfers"}=transfers;
+    if(isfunction("SavegameHook"))
+      savegame{"special"}=SavegameHook();
 
-  eval(n+"=savegame");
+    eval(n+"=savegame");
 
-  if(save(n))
-    SendAll("Message","{green}Done. (You can now declare {yellow}/undecided{green} and continue the game later).");
-  else
-    SendAll("Message","{red}Failed. Unable to write save file.");
+    if(save(n))
+      SendAll("Message","{green}Done. (You can now declare {yellow}/undecided{green} and continue the game later).");
+    else
+      SendAll("Message","{red}Failed. Unable to write save file.");
 
-  n=pop();
+    n=pop();
+  }
 }
 
 #
@@ -3819,8 +4057,10 @@ def CommandLoadgame
   del=1;
   n=SaveFilename();
 
-  if(!AllDecksLoaded())
-    Reply("{red}You cannot load a game until game has properly initialized.");
+  if(draft)
+    Reply("{red}No loading games in draft mode!");
+  else if(!AllDecksLoaded())
+    Reply("{red}You cannot load a game until it has properly initialized.");
   else if(!load(n))
     Reply("{red}No saved game '"+n+"' found.");
   else
@@ -4010,7 +4250,7 @@ def CommandSharehand
     if(v < 6)
       SendOther(player,("SetHand",(player,card_back(hand[player]))));
   }
-  
+  v=pop(); 
 }
 
 #
@@ -4088,6 +4328,7 @@ def SetTeamsAgainst
 #      else
 #        Send(p,("CreateDeck",(next_object - 1,player,"opponent "+d,CoordToPlr(decks{s}[3],decks{s}[4],p))));
 #    }
+#    s=pop();
 #    p=pop();
 #  }
 #  d=pop();
@@ -4252,4 +4493,24 @@ def CommandBid
 def CommandRtfm
 {
   Say(RTFM);
+}
+
+#
+# CommandAutopass() - Make random picks and automatically pass if players have exceeded the time limit.
+#
+def CommandAutopass
+{
+  if(draft && !draft.paused)
+  {
+    push(l);
+    if(draft.packsize>length(DRAFT_LIMIT))
+      l=last(DRAFT_LIMIT);
+    else
+      l=DRAFT_LIMIT[draft.packsize-1];
+    if(l+draft.passtime<current_time())
+      DraftPass();
+    else
+      Reply("{red}The time limit isn't over yet. Players get "+l+" seconds for this pick.");
+    l=pop();
+  }
 }

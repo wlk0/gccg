@@ -41,6 +41,7 @@ trigger "init" "" code
   
   randomize();
   tables=(,);
+  draft.tables=(,);
   players=(,);
   set.data=(,);
   forall("set.data{#}=set_data(#)",sets());

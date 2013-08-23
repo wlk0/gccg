@@ -866,7 +866,7 @@ namespace Evaluator
 		else if(op=='&') //bitwise AND
 		{
 		    EvalSum(src,e);
-		    ret=ret | e;
+		    ret=ret & e;
 		}
 		else //bitwise XOR
 		{
