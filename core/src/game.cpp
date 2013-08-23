@@ -1539,15 +1539,15 @@ Evaluator::Data Table::Execute(const string& code)
 	cerr << endl << flush;
 	cerr << "=================================================================" << endl;
 	cerr << "ERROR #" << errornumber << endl << endl;
-	cout << endl << "Code caused exception:" << endl;
+	cerr << endl << "Code caused exception:" << endl;
 	if(code.length() > 500)
-	    cout << code.substr(0,500) << "...." << endl;
+	    cerr << code.substr(0,500) << "...." << endl;
 	else
-	    cout << code << endl;
+	    cerr << code << endl;
 			
-	cout << endl << e.Message() << endl;
+	cerr << endl << e.Message() << endl;
 
-	cout << endl << "Stacktrace:" << endl;
+	cerr << endl << "Stacktrace:" << endl;
 	parser.stacktrace(Null);
 		
 	errornumber++;

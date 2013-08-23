@@ -18,6 +18,11 @@ BET_BONUS_MULTIPLIER=1;
 LOSER_PERCENTAGE=0.2;
 DRAW_PERCENTAGE=0.4;
 PLAYSET_COUNT=4;
+DRAFT_MIN_PLAYERS=2;
+DRAFT_MAX_PLAYERS=8;
+# Number of packs per player used in a typical draft
+DRAFT_DEFAULT_PRODUCTS=3;
+DRAFT_MAX_PRODUCTS=6;
 
 ANONYMOUS_IP="www.wizards.com";
 
@@ -60,6 +65,14 @@ def SealedStartHook
     AddCards(ARG[0],1254,45);
     Refresh(1098,1135,1175,1201,1254);
   }
+}
+
+#
+# SealedStartCount() - Return number of cards that are automatically given to new sealed users.
+#
+def SealedStartCount
+{
+  return(225);
 }
 
 # SealedEndHook() - This hook is called before ending sealed

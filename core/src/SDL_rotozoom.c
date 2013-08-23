@@ -45,7 +45,7 @@ zoomSurfaceRGBA (SDL_Surface * src, SDL_Surface * dst, int smooth)
   int x, y, sx, sy, *sax, *say, *csax, *csay, csx, csy, ex, ey, t1, t2, sstep;
   tColorRGBA *c00, *c01, *c10, *c11;
   tColorRGBA *sp, *csp, *dp;
-  int sgap, dgap, orderRGBA;
+  int dgap; //, sgap, orderRGBA;
 
   /* Variable setup */
   if (smooth)
@@ -95,9 +95,9 @@ zoomSurfaceRGBA (SDL_Surface * src, SDL_Surface * dst, int smooth)
   /* Pointer setup */
   sp = csp = (tColorRGBA *) src->pixels;
   dp = (tColorRGBA *) dst->pixels;
-  sgap = src->pitch - src->w * 4;
+  //sgap = src->pitch - src->w * 4;
   dgap = dst->pitch - dst->w * 4;
-  orderRGBA = (src->format->Rmask == 0x000000ff);
+  //orderRGBA = (src->format->Rmask == 0x000000ff);
 
   /* Switch between interpolating and non-interpolating code */
   if (smooth)
@@ -307,7 +307,7 @@ transformSurfaceRGBA (SDL_Surface * src, SDL_Surface * dst, int cx, int cy,
   int x, y, t1, t2, dx, dy, xd, yd, sdx, sdy, ax, ay, ex, ey, sw, sh;
   tColorRGBA c00={0,0,0}, c01={0,0,0}, c10={0,0,0}, c11={0,0,0};
   tColorRGBA *pc, *sp;
-  int gap, orderRGBA;
+  int gap; //, orderRGBA;
 
   /* Variable setup */
   xd = ((src->w - dst->w) << 15);
@@ -318,7 +318,7 @@ transformSurfaceRGBA (SDL_Surface * src, SDL_Surface * dst, int cx, int cy,
   sh = src->h - 1;
   pc = dst->pixels;
   gap = dst->pitch - dst->w * 4;
-  orderRGBA = (src->format->Rmask == 0x000000ff);
+//  orderRGBA = (src->format->Rmask == 0x000000ff);
 
   /* Switch between interpolating and non-interpolating code */
   if (smooth)
@@ -496,7 +496,7 @@ void
 transformSurfaceY (SDL_Surface * src, SDL_Surface * dst, int cx, int cy,
 		   int isin, int icos)
 {
-  int x, y, dx, dy, xd, yd, sdx, sdy, ax, ay, sw, sh;
+  int x, y, dx, dy, xd, yd, sdx, sdy, ax, ay; //, sw, sh;
   tColorY *pc, *sp;
   int gap;
 
@@ -505,8 +505,8 @@ transformSurfaceY (SDL_Surface * src, SDL_Surface * dst, int cx, int cy,
   yd = ((src->h - dst->h) << 15);
   ax = (cx << 16) - (icos * cx);
   ay = (cy << 16) - (isin * cx);
-  sw = src->w - 1;
-  sh = src->h - 1;
+//  sw = src->w - 1;
+//  sh = src->h - 1;
   pc = dst->pixels;
   gap = dst->pitch - dst->w;
   /* Clear surface to colorkey */

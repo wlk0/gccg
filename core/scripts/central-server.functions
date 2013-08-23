@@ -26,6 +26,7 @@
 #
 # Constants:
 #
+# ALLOW_DRAFTS - whether to allow draft tables to connect
 # BET_BONUS_MULTIPLIER - extra bet
 # DRAFT_DEFAULT_PRODUCTS - number of products per player used in a typical draft
 # DRAFT_MAX_PRODUCTS - maximum number of products allowed for a draft
@@ -208,6 +209,8 @@ DRAW_PERCENTAGE=1.00;
 SET_BONUS_MULTIPLIER=0.5;
 PLAYSET_COUNT=4;
 PLAYSET_BONUS_MULTIPLIER=SET_BONUS_MULTIPLIER*PLAYSET_COUNT;
+
+ALLOW_DRAFTS=1;
 DRAFT_MIN_PLAYERS=2;
 DRAFT_MAX_PLAYERS=4;
 DRAFT_DEFAULT_PRODUCTS=3;
@@ -565,6 +568,12 @@ def RegisterServer
     Send(con,("Log","Invalid bet."));
     net_server_close(con);
   }
+  elseif(t&2 && !ALLOW_DRAFTS)
+  {
+    Log("ERROR: Server "+net_client_name(con)+" attempted to register as a draft table, but drafts are not allowed here.");
+    Send(con,("Log","This server does not accept draft tables."));
+    net_server_close(con);
+  }
   else
   {
 #   kill duplicate tables that may linger from same IP and port
@@ -749,6 +758,14 @@ def CheckSealedCharacter
     users{u}[3][0]{"realname"}=users{User()}[3][0]{"realname"}+" ("+ARG+")";
     users{u}[3][0]{"avatar"}=users{User()}[3][0]{"avatar"};
     return(0);
+  }
+  else if(isfunction("SealedStartCount"))
+  {
+    u=(count_cards(u))[0];
+    if(!u)
+      return(0);
+    else
+      return(u-SealedStartCount());
   }
   else
     return((count_cards(u))[0]);
@@ -1240,7 +1257,7 @@ def ToggleJoinGame
           tables{players{con}[2]}[6]=tables{players{con}[2]}[6]+(con,);
           tables{players{con}[2]}[7]=tables{players{con}[2]}[7]+(players{con}[0],);
           SendAllNP("SetJoinGame",(con,players{con}[2],1));
-	     if(length(tables{players{con}[2]}[6]) >= tables{players{con}[2]}[5])
+	      if(length(tables{players{con}[2]}[6]) >= tables{players{con}[2]}[5])
             StartGame(players{con}[2]);
         }
         e=pop();
@@ -1918,7 +1935,7 @@ def GiveCard
         msg=1;
         if(SILENT_SEALED_TRADE)
         {
-          if(Con(u)>=0 && Con(ARG[0])>=0)
+          if(con>=0 && Con(ARG[0])>=0)
           {
             if(Mode()=="sealed" && Mode(ARG[0])=="sealed"
                && players{con}[2] != -1
@@ -3670,7 +3687,7 @@ def CommandDebug
 }
 
 #
-# CommandRtfm() - Implementation of the command /debug.
+# CommandRtfm() - Implementation of the command /rtfm.
 #
 def CommandRtfm
 {

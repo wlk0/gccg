@@ -26,7 +26,12 @@
 #
 # Constants:
 #
+# ALLOW_DRAFTS - whether to allow draft tables to connect
 # BET_BONUS_MULTIPLIER - extra bet
+# DRAFT_DEFAULT_PRODUCTS - number of products per player used in a typical draft
+# DRAFT_MAX_PRODUCTS - maximum number of products allowed for a draft
+# DRAFT_MIN_PLAYERS - minimum players required to start a draft
+# DRAFT_MAX_PLAYERS - maximum players allowed in a draft
 # GAME - title of the game
 # GAMEDIR - name of the directory of the game
 # GAME_BONUS - base prize for each game
@@ -45,9 +50,21 @@
 #
 # command.acl{command} - list of users allowed to use command
 #   0 number of parameters required
-#   1 list of users ("player" is anyone but special user)
+#   1 list of users ("player" is any unprivileged user)
 # con - connection which caused event
-# error.echo - if not NULL, send copies of errors to that connection
+# draft.tables{connection} - list of tables for drafting
+#   0 number of players required
+#   1 list of products used
+#   2 amount of money required to participate
+#   3 table status (0=free slot, 1=parameters have been set, 2=draft is running, 3=successfully completed)
+#   4 time when table was claimed (if status has been 1 for more than an hour, table may be reclaimed as free slot)
+#   5 player who claimed this table
+#   6 list of players
+#     0 player name
+#     1 list of drafted cards
+#   7 number of rounds of product that have been opened
+#   8 list of cards in current round of opened product
+# error.echo - if not NULL, send copies of errors to this connection number
 # factory.server - connection number to factory server
 # factory.server_name - name of the factory server
 # factory.port - port number to connect
@@ -81,7 +98,9 @@
 #   10 description
 #   11 (list of players that started the game)
 #   12 (list of players names that started the game)
-#   13 tournament mode flag
+#   13 flags
+#      &1: tournament mode
+#      &2: draft
 # users{name} - list of registered players
 #   0 password
 #   1 money
@@ -104,7 +123,7 @@
 #     4 (last login time,last event time,connection from)
 #     5 player administrative info
 #     6 list of registered playsets
-#     7 money in escrow
+#     7 money in escrow for drafting
 #     8-9 reserved
 #   4 backupdata
 #     0 - registered tournament decks 
@@ -186,6 +205,12 @@ SET_BONUS_MULTIPLIER=0.5;
 PLAYSET_COUNT=4;
 PLAYSET_BONUS_MULTIPLIER=SET_BONUS_MULTIPLIER*PLAYSET_COUNT;
 
+ALLOW_DRAFTS=1;
+DRAFT_MIN_PLAYERS=2;
+DRAFT_MAX_PLAYERS=4;
+DRAFT_DEFAULT_PRODUCTS=3;
+DRAFT_MAX_PRODUCTS=10;
+
 REQUIRE_VERSION="0.8.9";
 REQUIRE_GAME_VERSION="0.9.3";
 REQUIRE_SERVER_VERSION="0.8.70";
@@ -205,6 +230,7 @@ command.acl=(,);
 command.acl{"/addproduct"}=(4,("God","Salesman"));
 command.acl{"/ban"}=(-1,("God","Guard"));
 command.acl{"/bans"}=(0,("God","Salesman","Guard","Judge","player"));
+command.acl{"/canceldraft"}=(-1,("God","Salesman","Guard","Judge","player"));
 command.acl{"/checkfactory"}=(0,("God",));
 command.acl{"/delproduct"}=(2,("God","Salesman"));
 command.acl{"/debug"}=(-1,("God",));
@@ -229,6 +255,7 @@ command.acl{"/ro"}=(0,("player",));
 command.acl{"/ro2"}=(0,("player",));
 command.acl{"/rtfm"}=(-1,("God","Salesman","Guard","Judge","player"));
 command.acl{"/save"}=(0,("God","Salesman","Guard","Judge","player"));
+command.acl{"/startdraft"}=(-1,("God","Salesman","Guard","Judge","player"));
 command.acl{"/test"}=(-1,("God",));
 command.acl{"/torrent"}=(0,("God","Salesman","Guard","Judge","player"));
 command.acl{"/unban"}=(1,("God",));
@@ -246,6 +273,7 @@ function{"Buy"}="Buy";
 function{"BuyCard"}="BuyCard";
 function{"Command"}="Command";
 function{"DeckCheck"}="DeckCheck";
+function{"DraftChoices"}="DraftChoices";
 function{"EndGame"}="EndGame";
 function{"Give"}="Give";
 function{"GiveCard"}="GiveCard";
@@ -384,6 +412,20 @@ def DisconnectServer
   forall('if(has_entry(#,players)) players{#}[3]=0;',tables{con}[6]);
   SendAllNP("DelRoomTable",con);
   SendAllNP("Message","Table "+con+" is not available anymore.");
+  if(has_entry(con,draft.tables))
+  {
+    if(draft.tables{con}[3]==2)
+    {
+      for(temp)(keys(draft.tables{con}[6]))
+      {
+        TransferMoney(temp,users{temp}[3][7]);
+        users{temp}[3][7] = 0;
+      }
+    }
+    else if(draft.tables{con}[3]==3)
+      DispenseDraftCards(con);
+    del_entry(con,"draft.tables");
+  }
   del_entry(con,"tables");
 }
 
@@ -481,10 +523,6 @@ def RegisterServer
     r=ARG[4];
   else
     r=("N/A",);
-  if(length(ARG) >= 6)
-    d=ARG[5];
-  else
-    d="No description";
   if(length(ARG) >= 7)
     v=ARG[6];
   else
@@ -493,6 +531,19 @@ def RegisterServer
     t=ARG[7];
   else
     t=0;
+  if(t==NULL)
+    t=0;
+  if(length(ARG) >= 6)
+  {
+    d=ARG[5];
+    if(d=="Draft Table")
+    {
+      t=t+2;
+      ARG[1]=0;
+    }
+  }
+  else
+    d="No description";
 
   if(VersionCompare(v,REQUIRE_SERVER_VERSION))
   {
@@ -512,9 +563,15 @@ def RegisterServer
     Send(con,("Log","Invalid bet."));
     net_server_close(con);
   }
+  elseif(t>=2 && !ALLOW_DRAFTS)
+  {
+    Log("ERROR: Server "+net_client_name(con)+" attempted to register as a draft table, but drafts are not allowed here.");
+    Send(con,("Log","This server does not accept draft tables."));
+    net_server_close(con);
+  }
   else
   {
-#   kill duplicate tables that may linger  
+#   kill duplicate tables that may linger from same IP and port
     for(n)(keys(tables))
     {
       if (tables{n}[0] == net_client_name(con) && tables{n}[1] == ARG[0])
@@ -526,13 +583,18 @@ def RegisterServer
         con=pop();
       }        
     }
-    if(t)
+    if(t==1)
       Log("Tournament server "+net_client_name(con)+" registered as server "+con+".");
     else
       Log("Server "+net_client_name(con)+" registered as server "+con+".");
     tables{con}=(net_client_name(con),ARG[0],(,),0,toreal(format("%.2f",ARG[2])),ARG[1],(,),(,),ARG[3],r,d,(,),(,),t);
     SendAllNP("AddRoomTable",(con,tables{con}));
-    if(t)
+    if(t>=2)
+    {
+      SendAllNP("Message","Draft table "+con+" is now available at server "+net_client_name(con)+".");
+      draft.tables{con}=(0,(,),0,0,0,"",(,),0,(,));
+    }
+    else if(t)
       SendAllNP("Message","Tournament table "+con+" is now available at server "+net_client_name(con)+".");
     else
       SendAllNP("Message","Table "+con+" is now available at server "+net_client_name(con)+".");
@@ -692,6 +754,14 @@ def CheckSealedCharacter
     users{u}[3][0]{"avatar"}=users{User()}[3][0]{"avatar"};
     return(0);
   }
+  else if(isfunction("SealedStartCount"))
+  {
+    u=(count_cards(u))[0];
+    if(!u)
+      return(0);
+    else
+      return(u-SealedStartCount());
+  }
   else
     return((count_cards(u))[0]);
   u=pop();
@@ -790,7 +860,7 @@ def SealedEnd
     if(isfunction("SealedEndHook"))
       SealedEndHook();
     SendAllNP("Message","{blue}Transferring all cards and money from "+s+" to "+d+".");
-    for(c)(users{User()}[2])
+    for(c)(users{s}[2])
     {
       t=t+c[1][0];
       repeat(c[1][0],"DelCard(s,c[0])");
@@ -799,7 +869,7 @@ def SealedEnd
     m=users{s}[1];
     TransferMoney(d,m);
     users{s}[1]=0.0;
-    ReRegisterPlayer(d,users{User()}[3][0]{"version"},12345,game.data{"game"},users{User()}[0],users{User()}[3][0]{"system"},users{User()}[3][0]{"serial"});
+    ReRegisterPlayer(d,users{s}[3][0]{"version"},12345,game.data{"game"},users{s}[0],users{s}[3][0]{"system"},users{s}[3][0]{"serial"});
     Reply("{blue}Received $"+format("%.2f",m)+" and "+t+" cards.");
     m=pop();
     t=pop();
@@ -1138,23 +1208,37 @@ def ToggleJoinGame
       }
       else
       {
+        push(e);
+        e=1;
 #
 # Join game.
 #
-#       Player has quit this game
-#       -------------------------
-        if(tables{players{con}[2]}[3] && length(tables{players{con}[2]}[6]) < tables{players{con}[2]}[5])
+#       Draft table
+        if(tables{players{con}[2]}[13] & 2)
         {
-          Reply("{red}Sorry, some of the players are already left and this game is finished soon.");
+          push(d);
+          d=draft.tables{players{con}[2]};
+          e=0;
+          if(d[3]==0)
+            Reply("{red}This table is not ready to join yet. To set up a draft, use {yellow}/startdraft N SET[,SET2,SET3]{red}, where N is the number of players and the SETs are the abbreviations for the sets you want to use.");
+          else if(d[3]==2 && !count(UserWithoutMode(),("God","Guard","Judge")))
+            Reply("{red}The draft is already in progress.");
+          else if(Mode()=="")
+            Reply("{red}You have to be in sealed or draft mode in order to sit at a draft table.");
+          else
+            e=1;
+          d=pop();
         }
+        if(!e)
+          1;
+#       Player has quit this game
+        else if(tables{players{con}[2]}[3] && length(tables{players{con}[2]}[6]) < tables{players{con}[2]}[5])
+          Reply("{red}Sorry, some of the players are already left and this game is finished soon.");
 #       Watcher
-#       -------
         else if(length(tables{players{con}[2]}[6]) >= tables{players{con}[2]}[5])
         {
           if(tables{players{con}[2]}[3])
-          {
             net_server_send(con,("ConnectServer",(ConnectAddress(players{con}[2]),tables{players{con}[2]}[1],tables{players{con}[2]}[8])));
-          }
           else
             Reply("{red}Game full, wait a second and you can watch the game.");
         }
@@ -1164,14 +1248,14 @@ def ToggleJoinGame
           Reply("{red}You have too old client to play or watch (v"+REQUIRE_GAME_VERSION+" required).");
         else
         {
-#       Player joins the game
-#       ---------------------
+#       Player successfully joins the game
           tables{players{con}[2]}[6]=tables{players{con}[2]}[6]+(con,);
           tables{players{con}[2]}[7]=tables{players{con}[2]}[7]+(players{con}[0],);
           SendAllNP("SetJoinGame",(con,players{con}[2],1));
-	  if(length(tables{players{con}[2]}[6]) >= tables{players{con}[2]}[5])
+	      if(length(tables{players{con}[2]}[6]) >= tables{players{con}[2]}[5])
             StartGame(players{con}[2]);
         }
+        e=pop();
       }
     }
     else
@@ -1279,7 +1363,165 @@ def WeStartedGame
   if(IsServer())
   {
     tables{con}[3]=1;
-    SendAllNP("Message","Game started at the table "+con+": "+join(forall("players{#}[0]",tables{con}[6])," vs. "));
+    if(has_entry(con,draft.tables))
+    {
+      push(p);
+      push(err);
+      draft.tables{con}[3]=2;
+      err=0;
+      for(p)(tables{con}[6])
+      {
+        draft.tables{con}[6]{players{p}[0]}=(,);
+        if(users{players{p}[0]}[1] < tables{con}[4])
+        {
+#         the mechanics of bet tables should prevent this anyway, but whatever
+          err=1;
+          Log("ERROR: "+players{p}[0]+" somehow managed to enter draft table "+con+" with insufficient money");
+        }
+        else
+        {
+          TransferMoney(players{p}[0], -tables{con}[4]);
+          if(!users{players{p}[0]}[3][7])
+            users{players{p}[0]}[3][7] = 0;
+          
+          users{players{p}[0]}[3][7] = users{players{p}[0]}[3][7] + tables{con}[4];
+        }
+      } 
+      
+      SendAllNP("Message","Draft started at table "+con+": "+join(forall("players{#}[0]",tables{con}[6]),", "));
+      if(err)
+        net_server_send(con,("Irregularity",1));
+      else
+        OpenDraftProduct(con);
+      
+      err=pop();
+      p=pop();
+    }
+    else
+      SendAllNP("Message","Game started at table "+con+": "+join(forall("players{#}[0]",tables{con}[6])," vs. "));
+  }
+}
+
+#
+# OpenDraftProduct(table number) - Open products for each player and give contents to the table.
+#
+def OpenDraftProduct
+{
+  push(p);
+  push(b);
+  p=draft.tables{ARG}[7];
+  b=draft.tables{ARG}[1][p];
+  if(factory.server==NULL)
+    net_server_send(ARG,("Irregularity",4));
+  else
+  {
+    push(ok);
+    push(ready);
+    push(c);
+
+    ok=0;
+
+    if(!net_send(factory.server,(draft.tables{ARG}[0],)+products{b}[2]))
+      net_server_send(ARG,("Irregularity",4));
+    else
+      ok=1;
+
+    if(ok)
+    {
+      ready=0;
+      while(!ready)
+      {
+        c=net_get();
+        if(c!=NULL)
+        {
+          ready=1;
+          draft.tables{ARG}[8]=sort(flatten(c[1]));
+          net_server_send(ARG,("DistributeProduct",(b,c[1])));
+        }
+      }
+    }
+  }
+  b=pop();
+  p=pop();
+}
+
+#
+# DraftChoices(lists of cards grouped by player) - Record drafted cards, and move on to the next product if necessary.
+#
+def DraftChoices
+{
+  if(has_entry(con,draft.tables))
+  {
+    push(e);
+    push(c);
+    push(p);
+    push(r);
+    c=NULL;
+    e=0;
+    r=(,);
+    for(p)(ARG)
+    {
+      p[1]=flatten(p[1]);
+      if(c==NULL)
+        c=length(p[1]);
+      if(c!=length(p[1]) && !e)
+      {
+        Log("DRAFT ERROR: Table "+con+" sent in "+c+" cards for "+ARG[0][0]+" and "
+            +length(p[1])+" cards for "+p[0]);
+        e=3;
+      }
+      else
+      {
+        draft.tables{con}[6]{p[0]} = draft.tables{con}[6]{p[0]} + p[1];
+        r=r+p[1];
+      }
+    }
+    if(sort(r) != draft.tables{con}[8] && !e)
+    {
+      Log("DRAFT ERROR: Cards sent in from table "+con+" do not match opened cards");
+      Log("  Opened: "+tostr(draft.tables{con}[8]));
+      Log("Received: "+tostr(sort(r)));
+      e=2;
+    }
+      
+    if(e)
+      net_server_send(con,("Irregularity",e));
+    else
+    {
+      draft.tables{con}[7]=draft.tables{con}[7]+1;
+      if(draft.tables{con}[7] >= length(draft.tables{con}[1]))
+      {
+        draft.tables{con}[3]=3;
+        net_server_send(con,("FinishDraft",NULL));
+      }
+      else
+        OpenDraftProduct(con);
+    }
+    r=pop();
+    p=pop();
+    c=pop();
+    e=pop();
+  }
+}
+
+#
+# DispenseDraftCards(table) - Draft is complete. Hand out cards to participants.
+#
+def DispenseDraftCards
+{
+  if(has_entry(ARG,draft.tables))
+  {
+    if(draft.tables{ARG}[3]==3)
+    {
+      push(p);
+      for(p)(draft.tables{ARG}[6])
+      {
+        GiveCards(flatten(p));
+        users{p[0]}[3][7] = users{p[0]}[3][7] - draft.tables{ARG}[2];
+      }
+      p=pop();
+    }
+    draft.tables{ARG}[3]=4;
   }
 }
 
@@ -1423,10 +1665,23 @@ def EndGame
 
   forall('if(has_entry(#,players)) players{#}[3]=0',p);
   forall('if(has_entry(#,players)) players{#}[2]=-1',tables{con}[2]);
-  if(ARG==NULL)
+  if(has_entry(con,draft.tables))
   {
-    SendAllNP("Message","Game '"+join(n," vs. ")+"' ended at table "+con+"{blue} undecided.");
+    if(draft.tables{con}[3]==2)
+    {
+#     Draft aborted before completion due to problems. Give everyone their money back, but no cards.
+      for(temp)(keys(draft.tables{con}[6]))
+      {
+        users{temp}[1] = users{temp}[1] + users{temp}[3][7];
+        users{temp}[3][7] = 0;
+      }
+    }
+    else if(draft.tables{con}[3]==3)
+      DispenseDraftCards(con);
+    SendAllNP("Message","Draft finished at table "+con+".");
   }
+  else if(ARG==NULL)
+    SendAllNP("Message","Game '"+join(n," vs. ")+"' ended at table "+con+"{blue} undecided.");
   else
   {
     SendAllNP("Message","Game '"+join(n," vs. ")+"' ended at table "+con+" - {blue}"+ARG[0]+": "+ARG[1]+" "+ARG[2]);
@@ -1619,19 +1874,25 @@ def GiveCards
     push(c);
     push(m);
     push(n);
+    push(u);
     
     cs=unique(sort(tail(ARG)));
     cs=forall("(count(#,tail(ARG)),#)",cs);
     transfer=(,);
     c=0;
-    
-    if (User()!="God" && User()!="Judge")
+    u=User();
+    if(has_entry(con,draft.tables))
+    {
+      if(draft.tables{con}[3]==3)
+        u="Judge";
+    }
+    if (u!="God" && u!="Judge")
     {
       for(m)(cs)
       {
-        check_card(User(),m[1]);
+        check_card(u,m[1]);
 #         (copies owned,             copies not tradable)
-        n=(users{User()}[2]{m[1]}[0],count(SetOfCard(m[1]),users{ARG[0]}[3][2]));
+        n=(users{u}[2]{m[1]}[0],count(SetOfCard(m[1]),users{ARG[0]}[3][2]));
         if(n[0] < m[0] + n[1])
         {
 #         user is representing too many cards; trim the request to what they can actually send
@@ -1646,13 +1907,13 @@ def GiveCards
     else
       transfer=cs;
       
-    cs=User()+" gives you: ";
+    cs=u+" gives you: ";
     n = ((,),(,));
     for(m)(transfer)
     {
-      if(User()!="God" && User()!="Judge")
+      if(u!="God" && u!="Judge")
       {
-        DelCards(User(),m[1],m[0]);
+        DelCards(u,m[1],m[0]);
         n[0]=n[0]+((m[1],users{User()}[2]{m[1]}),);
       }
       AddCards(ARG[0],m[1],m[0]);
@@ -1673,9 +1934,10 @@ def GiveCards
         Send(Con(ARG[0]),("SetCardbook",n[1]));
       }
       Send(con,("SetCardbook",n[0]));
-      SendOther(Con(ARG[0]),("Message",User()+" gives "+tostr(c)+" cards to "+ARG[0]+"."));
-      Log(User()+" gives "+tostr(c)+" cards to "+ARG[0]+".");
+      SendOther(Con(ARG[0]),("Message",u+" gives "+c+" cards to "+ARG[0]+"."));
+      Log(u+" gives "+c+" cards to "+ARG[0]+".");
     }
+    u=pop();
     n=pop();
     m=pop();
     c=pop();
@@ -1701,18 +1963,20 @@ def GiveCard
     else
     {
       push(m);
+      push(u);
       m=toval(ARG[1]);
-      check_card(User(),m);
-      if(users{User()}[2]{m}[0] < 1 && User()!="God" && User()!="Judge")
+      u=User();
+      check_card(u,m);
+      if(users{u}[2]{m}[0] < 1 && u!="God" && u!="Judge")
         Reply("{red}You don't have that card.");
-      else if(!AvailableForTrade(User(),m) && User()!="God" && User()!="Judge")
+      else if(!AvailableForTrade(u,m) && u!="God" && u!="Judge")
         Reply("{red}The card is registered. You cannot give it away.");
       else
       {
-        if(User()!="God" && User()!="Judge")
+        if(u!="God" && u!="Judge")
         {
-          DelCard(User(),m);
-          Send(con,("SetCardbook",((m,users{User()}[2]{m}),)));
+          DelCard(u,m);
+          Send(con,("SetCardbook",((m,users{u}[2]{m}),)));
         }
         AddCard(ARG[0],m);
         if(Con(ARG[0]) >= 0)
@@ -1722,12 +1986,12 @@ def GiveCard
         msg=1;
         if(SILENT_SEALED_TRADE)
         {
-          if(Con(User())>=0 && Con(ARG[0])>=0)
+          if(con>=0 && Con(ARG[0])>=0)
           {
             if(Mode()=="sealed" && Mode(ARG[0])=="sealed"
-               && players{Con(User())}[2] != -1
-               && players{Con(User())}[2] == players{Con(ARG[0])}[2]
-               && players{Con(User())}[3]
+               && players{con}[2] != -1
+               && players{con}[2] == players{Con(ARG[0])}[2]
+               && players{con}[3]
                && players{Con(ARG[0])}[3]
                )
                  msg=0;
@@ -1735,16 +1999,17 @@ def GiveCard
         }
 
         if(msg)
-          SendAllNP("Message",User()+" gives #"+tostr(m)+"# to "+ARG[0]+".");
+          SendAllNP("Message",u+" gives #"+tostr(m)+"# to "+ARG[0]+".");
         else
         {
-          Log(User()+" gives #"+tostr(m)+"# to "+ARG[0]+".");
-          Send(Con(User()),("Message",User()+" gives #"+tostr(m)+"# to "+ARG[0]+"."));
+          Log(u+" gives #"+tostr(m)+"# to "+ARG[0]+".");
+          Send(con,("Message",u+" gives #"+tostr(m)+"# to "+ARG[0]+"."));
           if(Con(ARG[0])!=-1)
-            Send(Con(ARG[0]),("Message",User()+" gives #"+tostr(m)+"# to "+ARG[0]+"."));
+            Send(Con(ARG[0]),("Message",u+" gives #"+tostr(m)+"# to "+ARG[0]+"."));
         }
         msg=pop();
       }
+      u=pop();
       m=pop();
     }
   }
@@ -2105,9 +2370,11 @@ def RefreshChatRoom
 def User
 {
   if(ARG==NULL)
-    return(players{con}[0]);
-  elseif(has_entry(ARG,players))
+    ARG=con;
+  if(has_entry(ARG,players))
     return(players{ARG}[0]);
+  else if(has_entry(ARG,tables))
+    return("Table "+ARG);
 }
 
 #
@@ -2363,6 +2630,23 @@ def RemoveObsoletePrices
     Reply("Found "+remove_obsolete_prices(seq(s[1][1],s[1][2]))+" entries.");
   }
   return("done");
+}
+
+#
+# CancelDraft(table number) - Cancel a pending draft, after the operation has already been verified as legal.
+#
+def CancelDraft
+{
+  draft.tables{ARG}=(0,(,),0,0,0,"",(,),0,(,));
+  for(p)(tables{ARG}[2])
+    players{p}[2]=-1;
+  tables{ARG}[2]=(,);
+  tables{ARG}[4]=0;
+  tables{ARG}[5]=0;
+  tables{ARG}[10]="Draft Table";
+  SendAllNP("DelRoomTable",ARG);
+  SendAllNP("AddRoomTable",(ARG,tables{ARG}));
+  SendAllNP("Message","The draft at table "+ARG+" has been cancelled.");
 }
 
 #
@@ -2923,7 +3207,7 @@ def CommandKick
   {
     SendAll("Message","{orange}"+User()+" kicks "+ARG[0]+" from the chat room.");
     push(con);
-    Send(Con(ARG[0]),("Message","{red}Your have been kicked out!"));
+    Send(Con(ARG[0]),("Message","{red}You have been kicked out!"));
     con=Con(ARG[0]);
     DisconnectPlayer();
     net_server_close(con);
@@ -3001,6 +3285,157 @@ def CommandW
 #  ban=(,);
 #  restrict=(,);
 #}
+
+#
+# CommandStartdraft(# of players, set[, set2...]) - Start a draft.
+#
+def CommandStartdraft
+{
+  push(e);
+  push(t);
+  push(ct);
+  e=0;
+  ct=current_time();
+  for(t)(draft.tables)
+  {
+    if(User()==t[1][5] && t[1][4]+3600 > ct)
+      e=1;
+  }
+
+  if(e)
+    Reply("{red}You already have a draft table reserved. You can use {yellow}/canceldraft{red} to free up the slot and try again.");
+  else if(length(ARG)<2)
+    Reply("{red}Invalid argument.");
+  else
+  {
+    e = -1;
+    ARG[0]=toint(ARG[0]);
+#   See if there's a free slot
+    for(t)(shuffle(keys(draft.tables)))
+    {
+      if(e<0 && draft.tables{t}[3]==0)
+        e=t;
+    }
+#   See if there's an abandoned table (more than 1 hour old) which can be reclaimed
+    for(t)(shuffle(keys(draft.tables)))
+    {
+      if(e<0 && draft.tables{t}[3]==1 && draft.tables{t}[4]+3600 <= ct)
+        e=t;
+    }
+    if(e<0)
+      Reply("{red}No open draft tables available.");
+    else if(ARG[0] < DRAFT_MIN_PLAYERS || ARG[0] > DRAFT_MAX_PLAYERS)
+      Reply("{red}Invalid number of players.");
+    else
+    {
+      push(p);
+#     Allow separation with spaces, commas, hyphens, or slashes
+      p=uc(join(tail(ARG)," "));
+      p=tr(p,",/-"," ");
+      p=split(p," ");
+      if(length(p)==1)
+        p=p*DRAFT_DEFAULT_PRODUCTS;
+      if(length(p)>DRAFT_MAX_PRODUCTS)
+        Reply("{red}That's too many products for a single draft.");
+      else
+      {
+        push(s);
+        push(err);
+        push(bet);
+        draftsetup=(ARG[0],p,p);
+      
+        if(isfunction("StartDraftHook"))
+          StartDraftHook();
+
+        err=0;
+        bet=0;
+        for(p)(length(draftsetup[2]))
+        {
+          if(!err)
+          {
+            s=(set_data(draftsetup[2][p]))[0];
+            if(s=="")
+            {
+              Reply("{red}Invalid set code: "+draftsetup[2][p]);
+              err=1;
+            }
+            else if(!has_entry(s+" booster",products))
+            {
+              Reply("{red}No products available for "+draftsetup[2][p]);
+              err=1;
+            }
+            else
+            {
+              bet=bet+products{s+" booster"}[1];
+              draftsetup[2][p]=s+" booster";
+            }
+          }
+        }
+        
+        if(!err)
+        {
+#         Everything checks out! Set up the draft table.
+          draft.tables{e}=(ARG[0],draftsetup[2],bet,1,current_time(),UserWithoutMode(),(,),0,(,));
+          for(p)(tables{e}[2])
+            players{p}[2]=-1;
+          tables{e}[2]=(,);
+          tables{e}[4]=bet;
+          tables{e}[5]=ARG[0];
+          tables{e}[10]=join(draftsetup[1],"-")+" Draft";
+          SendAllNP("DelRoomTable",e);
+          SendAllNP("AddRoomTable",(e,tables{e}));
+          net_server_send(e,("SetPlayers",ARG[0]));
+          SendAllNP("Message","There is a "+join(draftsetup[1],"-")+" draft now ready at table "+e+". The price of this draft will be $"+format("%.2f",bet)+".");
+        }
+        bet=pop();
+        err=pop();
+        s=pop();
+      }
+      p=pop();
+    }
+  }
+  ct=pop();
+  t=pop();
+  e=pop();
+}
+
+#
+# CommandCanceldraft([table number]) - Cancel a pending draft.
+#
+def CommandCanceldraft
+{
+  if(length(ARG)>0)
+  {
+    ARG=toint(ARG[0]);
+    if(has_entry(ARG,draft.tables))
+    {
+      if(!count(UserWithoutMode(),("God","Guard","Judge",draft.tables{ARG}[5])))
+        Reply("{red}That table isn't yours to cancel.");
+      else if(draft.tables{ARG}[3] != 1)
+        Reply("{red}You can't cancel that table now.");
+      else
+        CancelDraft(ARG);
+    }
+    else
+      Reply("{red}That isn't a draft table.");
+  }
+  else
+  {
+    push(t);
+    push(e);
+    e=-1;
+    for(t)(keys(draft.tables))
+      if(e<0 && draft.tables{t}[3]==1 && draft.tables{t}[5]==UserWithoutMode())
+        e=t;
+    
+    if(e<0)
+      Reply("{red}You don't have a table reserved.");
+    else
+      CancelDraft(e);
+    e=pop();
+    t=pop();
+  }
+}
 
 #
 # CommandBan() - Implementation of the command /ban.
@@ -3165,7 +3600,7 @@ def CommandDebug
 }
 
 #
-# CommandRtfm() - Implementation of the command /debug.
+# CommandRtfm() - Implementation of the command /rtfm.
 #
 def CommandRtfm
 {

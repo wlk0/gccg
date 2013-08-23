@@ -67,6 +67,14 @@ def SealedStartHook
   }
 }
 
+#
+# SealedStartCount() - Return number of cards that are automatically given to new sealed users.
+#
+def SealedStartCount
+{
+  return(225);
+}
+
 # SealedEndHook() - This hook is called before ending sealed
 #   mode. Current user is sealed mode player.
 #

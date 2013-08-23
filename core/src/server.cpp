@@ -608,11 +608,10 @@ Data Server::set_forsale(const Data& args)
 	if(entry->IsNull())
 		*entry=NewCard();
 
-	Data *have,*forsale,*price;
+	Data *have,*forsale;
 
 	VECTO(entry,0,have);
 	VECTO(entry,1,forsale);
-	VECTO(entry,2,price);
 
 	int new_forsale=args[2].Integer();
 	int old_forsale=forsale->Integer();
