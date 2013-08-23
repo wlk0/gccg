@@ -218,7 +218,7 @@ def ProduceMOD_Booster
 {
   push(p);
   push(i);
-  p=RandomCardSet("MOD",((11,"C"),(3,"U"),(1,"R")));
+  p=RandomCardSet("MOD",((11,"C"),(3,"U"),(1,"2*R+M")));
 
 # falling back on the procedure given in distribution{"MOD"} involves
 # constructing and destructing a 1600-element list for every single pack,

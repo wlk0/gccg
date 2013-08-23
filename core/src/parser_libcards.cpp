@@ -457,7 +457,7 @@ namespace Evaluator
 	    VECTORIZE(Libcards::images);
 			
 	    if(!args.IsString())
-		ArgumentError("images",args);
+		return Null;
 	    string name=args.String();
 			
 	    list<int> crds=cards.Images(name);
@@ -478,7 +478,7 @@ namespace Evaluator
 	    VECTORIZE(Libcards::fuzzy_images);
 			
 	    if(!args.IsString())
-		ArgumentError("fuzzy_images",args);
+		return Null;
 	    string name=args.String();
 			
 	    list<int> crds=cards.Images(name,false);

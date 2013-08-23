@@ -3,6 +3,8 @@
 # Mtg Deck Statistics helper functions
 #
 
+# CountAttr(list of cards, attribute name, text to find)
+# Counts cards that have the given search text in the value of a named attribute.
 def CountAttr
 {
   return(length(select("find(\""+ARG[2]+"\",Attr(\""+ARG[1]+"\",#)) != NULL",ARG[0])));

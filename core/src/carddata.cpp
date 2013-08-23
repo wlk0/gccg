@@ -208,7 +208,7 @@ static bool CanonicalName_select_attr(list<int>& crds,const string& attr,const s
     return change;
 }
 
-/// Helper function for CanonicalName(). Remove cards with
+/*/// Helper function for CanonicalName(). Remove cards with
 /// the same attributes belonging to the same set.
 static void CanonicalName_remove_clones(list<int>& crds,int crd)
 {
@@ -234,7 +234,7 @@ static void CanonicalName_remove_clones(list<int>& crds,int crd)
 	else
 	    i++;
     }
-}
+} */
 
 /// Helper function for CanonicalName(). Try to extract set name
 /// abbreviation from the end of the string. Return empty string of

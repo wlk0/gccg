@@ -57,7 +57,6 @@
 # draft.packsize - number of cards in the current packs
 # draft.paused - 1 if transfers should be disabled
 # draft.players - number of players who were still at the table as of the most recent pass
-# draft.picked[player] - 1 if player has made a pick from the most recent pack
 # draft.passtime - time of most recent pass
 # draft.startpacksize - number of cards originally in the current round of packs
 # end.player - who most recently declared end of turn
@@ -571,9 +570,7 @@ def StartGame
     SendAll("Message","{yellow}If enough time has passed and you haven't made a pick, anyone can enter {cyan}/autopass{yellow}, and then the players who haven't picked yet will be given a random card from their pack so that they can be passed on. If you leave the table while a draft is in progress, all your remaining picks will be random.");
     draft.direction=1;
     draft.paused=1;
-    draft.players = players_wanted;
-    draft.picked = (0,)*players_wanted;
-      
+    draft.players = players_wanted;      
   } 
   else if(load(SaveFilename()))
   {
@@ -1018,7 +1015,7 @@ def ReceiveClose
     {
       SendAll("Message","{red}"+player.name{player}+" quits.");
       if(draft)
-        draft.players = draft.players + draft.picked[player] - 1;
+        draft.players = draft.players + draft.packsize - length(hand[player]) - 1;
       else
       {
         flag.game_broken=1;
@@ -2321,7 +2318,7 @@ def Transfer
 #   The only transfers allowed in draft are a single card from your own hand to the top of your deck
 #   if you haven't made a pick yet, and the reverse transaction (take-back) if you have
     if(!draft.paused && ARG[0]==1 && length(ARG[1])>2 && length(ARG[2])>1 && ARG[1][0]=="hand"
-            && ARG[2][0]=="deck.top" && draft.picked[player]==0)
+            && ARG[2][0]=="deck.top" && length(hand[player])==draft.packsize)
     {
       if(length(hand[player]) > ARG[1][2] && ARG[1][1]==player && ARG[2][1]==player.deck{player})
       {
@@ -2334,13 +2331,12 @@ def Transfer
         Send(player,("Message","you select "+name(c)));
         SendOther(player,("Message",player.name{player}+" selects a card"));
         
-        draft.picked[player]=1;
-        if(sum(draft.picked)==draft.players)
+        if(length(flatten(hand)) + draft.players == draft.packsize * players_wanted)
           DraftPass();
       }
     }
     else if(!draft.paused && ARG[0]==1 && length(ARG[1])>1 && length(ARG[2])>1 && ARG[1][0]=="deck.top"
-             && ARG[2][0]=="hand" && draft.picked[player]==1)
+             && ARG[2][0]=="hand" && length(hand[player])<draft.packsize)
     {
       if(ARG[2][1]==player && ARG[1][1]==player.deck{player})
       {      
@@ -2354,8 +2350,6 @@ def Transfer
         SendOther(player,("PutHand",(player,card_back(c))));
         Send(player,("Message","you cancel your pick"));
         SendOther(player,("Message",player.name{player}+" cancels their pick"));
-      
-        draft.picked[player]=0;
       }
     }
   }
@@ -2562,20 +2556,19 @@ def DistributeProduct
   if(draft)
   {
     push(p);
-    draft.startpacksize = length(ARG[1][0]);
-    draft.packsize = draft.startpacksize;
     for(p)(players_wanted)
     {
       hand[p]=ARG[1][p];
       Send(p,("SetHand",(p,hand[p])));
       SendOther(p,("SetHand",(p,card_back(hand[p]))));
-      draft.picked[p]=0;
     }
     if(draft.direction>0)
       p="right";
     else
       p="left";
     SendAll("Message","You've received a "+ARG[0]+", and you'll be passing to the "+p+" this time.");
+    draft.startpacksize = length(ARG[1][0]);
+    draft.packsize = draft.startpacksize;
     draft.passtime=current_time();
     draft.paused=0;
     p=pop();
@@ -2594,7 +2587,7 @@ def DraftPass
     push(c);
     for(p)(players_wanted)
     {
-      if(draft.picked[p]==0)
+      if(length(hand[p])==draft.packsize)
       {
         n=random(draft.packsize);
         c=hand[p][n];
@@ -2648,7 +2641,6 @@ def DraftPass
             draft.players=draft.players+1;
         }
         hand[p]=c[p];
-        draft.picked[p]=0;
         Send(p,("SetHand",(p,c[p])));
         SendOther(p,("SetHand",(p,card_back(c[p]))));
       }
@@ -3672,12 +3664,13 @@ def HandleMetaServer
   }
   else if(draft && ARG[0]=="Irregularity")
   {
-    Log("Received a code "+ARG[1]+" irregularity, quitting...")
+    Log("Received a code "+ARG[1]+" irregularity, quitting...");
     SendAll("Message","{red}The central server is cutting us off. Looks like you'll have to leave and start over.");
 # Codes:
 #   1  a player somehow managed to join with insufficient money
 #   2  the cards drafted don't match the cards opened
 #   3  at least two players ended up with different numbers of cards
+#   4  a factory server is needed, but unavailable
     quit(2);
   }
   else if(draft && ARG[0]=="FinishDraft")

@@ -2503,7 +2503,7 @@ HELP{"any"}{"loadimages"}=("","load all card images",NULL,
 "Normally all card images are loaded or generated on demand. This may cause unwanted delays when turning pages of the collection. This command loads all images at once.");
 
 #
-# CommandEval() - Implementation of /eval command.
+# CommandEval(code expression) - Evaluate and broadcast code.
 #
 def CommandEval
 {
@@ -2515,7 +2515,21 @@ def CommandEval
 }
 
 HELP{"any"}{"eval"}=("exp","evaluate an expression",NULL,
-"This command takes an expression {yellow}exp{white} and evaluates it using gccg-script engine. The resulting value of the expression is stored to the variable {yellow}E{white} and sent as a message. The expression may contain more than one statement, in which case all but the last one needs to be followed by a semicolon.");
+"This command takes an expression {yellow}exp{white} and evaluates it using gccg-script engine. The resulting value of the expression is stored to the variable {yellow}E{white} and sent as a message. The expression may contain more than one statement, in which case all but the last one needs to be followed by a semicolon.\n"
++"If you want to see the result yourself but not send it to everyone else, use {yellow}/seval{white} instead.");
+
+#
+# CommandSeval(code expression) - Silent evaluation.
+#
+def CommandSeval
+{
+  E=eval(join(ARG," "));
+  Msg(tostr(E));
+}
+
+HELP{"any"}{"eval"}=("exp","evaluate an expression",NULL,
+"This command takes an expression {yellow}exp{white} and evaluates it using gccg-script engine. The resulting value of the expression is stored to the variable {yellow}E{white} and displayed on the screen. The expression may contain more than one statement, in which case all but the last one needs to be followed by a semicolon.\n"
++"If you want other players to see the output, use {yellow}/eval{white} instead.");
 
 #
 # CommandBind(text) - Implementation of /bind command.

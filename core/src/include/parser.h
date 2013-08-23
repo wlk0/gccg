@@ -742,7 +742,7 @@ namespace Evaluator
 			throw LangErr("Parser<Application>::EvalAtom(string&)","Cannot use "+d+" on '"+tostr(*var).String()+"' which is not a list. Code: "+string(_src));
 		    }
 
-		    if(dictionary) // Dictionary
+		    else if(dictionary) // Dictionary
 		    {
 			var=&(*var->FindKey(index))[1];
 		    }
@@ -751,8 +751,8 @@ namespace Evaluator
 			int i=index.Integer();
 			if(i < 0 || size_t(i) >= var->Size())
 			    throw LangErr("Parser<Application>::EvalAtom(string&)","Index '"+tostr(index).String()+"' out of range applied on "+tostr(*var).String());
-
-			var=&(*var)[i];
+			else
+				var=&(*var)[i];
 		    }
 		}
 			
@@ -1540,7 +1540,7 @@ namespace Evaluator
 		a=s.top();
 		s.pop();
 			
-		cout << "[ " << i << ". ] " << s.top() << "(" << a << ")" << endl;
+		cerr << "[ " << i << ". ] " << s.top() << "(" << a << ")" << endl;
 			
 		s.pop();
 		i++;

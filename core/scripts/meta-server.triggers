@@ -34,6 +34,7 @@ trigger "init" "" code
   factory.server_name="localhost";
 
   tables=(,);
+  draft.tables=(,);
   players=(,);
 
   execute("meta-server.functions");
@@ -82,9 +83,8 @@ trigger "error" "command" code
 {
   Log("ERROR: "+net_client_name(event)+" message: "+error.message);
   if(error.echo!=NULL)
-  {
     Send(error.echo,("Message","{red}ERROR: "+net_client_name(event)+" message: "+error.message));
-  }
+  
   stacktrace();
   errors=errors+1;
   set_error_trigger("","");

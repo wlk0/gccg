@@ -12,13 +12,13 @@ def CommandShowstats
 
   push(totalcards);
   push(curdeck);
-  push(num);
   curdeck=decks{deck.name}{"deck"};
   totalcards=length(decks{deck.name}{"deck"});
   
-if(deck.name!=NULL && totalcards) {
-  push(cardtypes);
-  push(cardcolors);
+# make sure there is a deck selected  
+  if(deck.name!=NULL && totalcards) {
+    push(cardtypes);
+    push(cardcolors);
 
 # cardtypes 0=Artifact 1=Creature 2=Enchantment 3=Instant 4=Land 5=Sorcery
 ###FUTURE: 6=Planeswalker 7=Tribal?
@@ -59,7 +59,6 @@ if(deck.name!=NULL && totalcards) {
   cardcolors=pop();
   cardtypes=pop();
 }
-num=pop();
 curdeck=pop();
 totalcards=pop();
 }

@@ -1266,7 +1266,7 @@ Data Table::msgbox_tail(const Data& args)
     deque<string> text = box->Messages();
     deque<string>::iterator i;
     
-    if(n >= text.size())
+    if(n >= (int)text.size())
       i = text.begin();
     else
       i = text.end() - n;

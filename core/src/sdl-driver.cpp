@@ -1483,7 +1483,7 @@ namespace Driver
 	SDL_Surface* surface;
 	SDL_Rect dest;
 	SDL_Color fg;
-	SDL_Color bg;
+//	SDL_Color bg;
 
 	dest.x=x0;
 	dest.y=y0;
@@ -1491,9 +1491,9 @@ namespace Driver
 	fg.r=color.r;
 	fg.g=color.g;
 	fg.b=color.b;
-	bg.r=bgcolor.r;
-	bg.g=bgcolor.g;
-	bg.b=bgcolor.b;
+//	bg.r=bgcolor.r;
+//	bg.g=bgcolor.g;
+//	bg.b=bgcolor.b;
 
 	surface=TTF_RenderText_Blended(font[fontnumber][pointsize],text.c_str(),fg);
 
