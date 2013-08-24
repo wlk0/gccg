@@ -242,11 +242,13 @@ namespace Evaluator
 		Data net_client_name(const Data& arg)
 		{
 			if(!arg.IsInteger())
-				ArgumentError("net_client_name",arg);
+//				ArgumentError("net_client_name",arg);
+				return Null;
 			
 			int client=arg.Integer();
 			if(client < 0 || client >=MAX_CONNECTIONS || people[client].sock==NULL)
-				throw LangErr("net_client_name","invalid client number");
+//				throw LangErr("net_client_name","invalid client number");
+				return Null;
 
 			SDL_LockMutex(people[client].lock);
 			const char *ip=SDLNet_ResolveIP(SDLNet_TCP_GetPeerAddress(people[client].sock));
@@ -576,15 +578,17 @@ namespace Evaluator
 		}
 
 		/// net_server_isopen(n) - Check if server's connection number
-		/// $n$ is open.
+		/// $n$ is open. Return NULL if invalid connection number.
 		Data net_server_isopen(const Data& arg)
 		{
 			if(!arg.IsInteger())
-				ArgumentError("net_server_isopen",arg);
+//				ArgumentError("net_server_isopen",arg);
+				return Null;
 
 			int client=arg.Integer();
 			if(client < 0 || client >=MAX_CONNECTIONS)
-				throw LangErr("net_server_isopen","invalid client number");
+//				throw LangErr("net_server_isopen","invalid client number");
+				return Null;
 
 			SDL_LockMutex(people[client].lock);
 			bool socket_open=(people[client].sock!=NULL && !people[client].closed);
@@ -593,15 +597,17 @@ namespace Evaluator
 			return ((int)socket_open);
 		}
 
-		/// net_isopen(n) - Check if connection number $n$ is open.
+		/// net_isopen(n) - Check if connection number $n$ is open. Return NULL if invalid connection number.
 		Data net_isopen(const Data& arg)
 		{
 			if(!arg.IsInteger())
-				ArgumentError("net_isopen",arg);
+//				ArgumentError("net_isopen",arg);
+				return Null;
 
 			int con=arg.Integer();
 			if(con < 0 || (size_t)con >=connections.size())
-				throw LangErr("net_isopen","invalid connections number");
+//				throw LangErr("net_isopen","invalid connections number");
+				return Null;
 
 			return ((int)(connections[con] != NULL));
 		}
@@ -643,18 +649,21 @@ namespace Evaluator
 		Data net_server_close(const Data& arg)
 		{
 			if(!arg.IsInteger())
-				ArgumentError("net_server_close",arg);
+//				ArgumentError("net_server_close",arg);
+				return Null;
 			
 			int client=arg.Integer();
  			if(client < 0 || client >=MAX_CONNECTIONS)
- 				throw LangErr("net_server_close","invalid client number");
+// 				throw LangErr("net_server_close","invalid client number");
+				return Null;
 
 			SDL_LockMutex(people[client].lock);
 			bool socket_open=people[client].sock!=NULL;
 			SDL_UnlockMutex(people[client].lock);
 
 			if(!socket_open)
-				throw LangErr("net_server_close","socket is already closed");
+//				throw LangErr("net_server_close","socket is already closed");
+				return Null;
 
 			SDL_LockMutex(people[client].lock);
 			people[client].closed=true;
@@ -669,11 +678,13 @@ namespace Evaluator
 		Data net_close(const Data& arg)
 		{
 			if(!arg.IsInteger())
-				ArgumentError("net_close",arg);
+//				ArgumentError("net_close",arg);
+				return Null;
 			
 			int c=arg.Integer();
  			if(c < 0 || c >=(int)connections.size())
- 				throw LangErr("net_close","invalid client number");
+// 				throw LangErr("net_close","invalid client number");
+				return Null;
 
 			SDLNet_TCP_DelSocket(client_socketset, connections[c]);
 			SDLNet_TCP_Close(connections[c]);
