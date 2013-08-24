@@ -169,7 +169,7 @@ def RewardCard
     if(!has_entry(s,promo.booster))
       promo.booster{s} = (,);
   
-    if(!length(promo.booster{s}))
+    if(length(promo.booster{s})<1)
     {
       if(net_send(factory.server,(1,s,"booster")))
       {
@@ -184,16 +184,22 @@ def RewardCard
           }
         }
       }
+      else
+        Log("Factory server unavailable for handling reward request");
     }
   }
   
-  c=first(promo.booster{s});
-  promo.booster{s}=tail(promo.booster{s});
-  AddCard(p,c);
-  SendAll("Message","{blue}"+p+" receives{gold} #"+c+"# {blue}as a reward for the game.");
-  if(Con(p)>-1)
-    Send(Con(p),("SetCardbook",((c,users{p}[2]{c}),)));
-           
+  if(length(promo.booster{s})<1)
+    Send(Con(p),("Message","{blue}You were supposed to get a reward card for the game, but the supply of cards is unavailable. Sorry.");
+  else
+  {
+    c=first(promo.booster{s});
+    promo.booster{s}=tail(promo.booster{s});
+    AddCard(p,c);
+    SendAll("Message","{blue}"+p+" receives{gold} #"+c+"# {blue}as a reward for the game.");
+    if(Con(p)>-1)
+      Send(Con(p),("SetCardbook",((c,users{p}[2]{c}),)));
+  }         
   ready=pop();
   s=pop();
   c=pop();

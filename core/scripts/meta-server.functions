@@ -1288,6 +1288,8 @@ def Buy
   {
     if(factory.server==NULL)
       Reply("{red}Cards are temporarily unavailable.");
+    else if(net_isopen(factory.server))
+      Reply("{red}Cards are temporarily unavailable.");
     else
     {
       if(users{User()}[1] < (ARG[0] - TicketsOf(User(),ARG[1]))*products{ARG[1]}[1])
@@ -1412,6 +1414,8 @@ def OpenDraftProduct
   p=draft.tables{ARG}[7];
   b=draft.tables{ARG}[1][p];
   if(factory.server==NULL)
+    net_server_send(ARG,("Irregularity",4));
+  else if(!net_isopen(factory.server))
     net_server_send(ARG,("Irregularity",4));
   else
   {
@@ -2799,8 +2803,14 @@ def CommandReboot
 # CommandCheckfactory() - Implementation of the command /checkfactory.
 #
 def CommandCheckfactory
-{    
+{
+  push(f);
+  f=0;
   if(factory.server==NULL)
+    f=1;
+  else if(net_isopen(factory.server))
+    f=1;
+  if(f)
   {
     Reply("No factory server found! Attempting to reconnect...");
     factory.server=net_connect(factory.server_name,factory.port);
@@ -2811,6 +2821,8 @@ def CommandCheckfactory
   }
   else
     Reply("Factory server is still online. Nothing to do.");
+
+  f=pop();
 }
 
 #
