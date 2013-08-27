@@ -868,8 +868,8 @@ def SealedEnd
     for(c)(users{s}[2])
     {
       t=t+c[1][0];
-      repeat(c[1][0],"DelCard(s,c[0])");
-      repeat(c[1][0],"AddCard(d,c[0])");
+      DelCards(s,c[0],c[1][0]);
+      AddCards(d,c[0],c[1][0]);
     }
     m=users{s}[1];
     TransferMoney(d,m);
