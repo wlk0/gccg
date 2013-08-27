@@ -29,6 +29,11 @@ while [ ! -z "$1" ]; do
 	elif [ "$a" = "factory" ]; then
 		trg="--load factory-server.triggers"
 		xml="$b.xml"
+	elif [ "$a" = "central" ]; then
+		trg="--load central-server.triggers"
+		xml="$b.xml"
+	elif [ "$a" = "game" ]; then
+		xml="$b.xml"
 	elif [ "$c" != "" ]; then
 		xml=$c
 	elif [ "$1" != "$game" ]; then
@@ -56,6 +61,6 @@ while true; do
 		echo "Server exited normally"
 	else
 		echo "Server returned error, sleeping for a moment"
-		sleep 30
+		sleep 15
 	fi
 done
