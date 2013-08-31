@@ -157,7 +157,7 @@
 			 <attr key="mind" value="6"/>
 			 <attr key="influence" value="2"/>
 			 <attr key="mp" value="2"/>
-			 <attr key="home_site" value="Any Elf-hold Port"/>
+			 <attr key="home_site" value="Edhellond, Grey Havens"/>
 			 <attr key="skills" value="Warrior/Diplomat"/>
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Sinda"/>
@@ -282,7 +282,7 @@
 			 <attr key="mind" value="3"/>
 			 <attr key="influence" value="0"/>
 			 <attr key="mp" value="1"/>
-			 <attr key="home_site" value="Any Elf-hold in Wilderland"/>
+			 <attr key="home_site" value="Rhûbar, any Elf-hold in Wilderland"/>
 			 <attr key="skills" value="Warrior/Scout"/>
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Nando"/>
@@ -381,7 +381,7 @@
 			 <attr key="mind" value="3"/>
 			 <attr key="influence" value="0"/>
 			 <attr key="mp" value="1"/>
-			 <attr key="home_site" value="Any Elf-hold in Mirkwood"/>
+			 <attr key="home_site" value="Rhûbar, any Elf-hold in Wilderland"/>
 			 <attr key="skills" value="Warrior/Ranger"/>
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Silvan"/>	
