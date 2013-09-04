@@ -3834,12 +3834,12 @@
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
-    <card name="Mount Gundabad" graphics="MountGundabadDC.jpg" back="1" text="">
+    <card name="Mount Gundabad" graphics="MountGundabad.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
        <attr key="draw" value="2"/>
        <attr key="region" value="Gundabad"/>
-       <attr key="auto_attack" value="Orcs - 4 strikes with 8 prowess"/>
+       <attr key="auto_attack" value="Orcs - 2 strikes with 8 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="special" value="Ancient Dwarf-ruin."/>
        <attr key="playable" value="Items (minor, major, greater)"/>
