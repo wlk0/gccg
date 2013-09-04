@@ -324,7 +324,7 @@
        <attr key="class" value="Animal Faction"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Beasts of the Wood" graphics="BeastsoftheWood.jpg" text="Playable at any tapped or untapped non-Haven, non-Darkhaven, non-Dark-hold site in Woodland Realm, Western Mirkwood, Heart of Mirkwood, Southern Mirkwood, Fangorn, or Cardolan if the influence check is greater than 11. Standard Modifications: if Radagast is your Wizard (+3). Tap this faction to cancel an attack keyed by name to one of the regions listed above. May also be used as a minion resource card that is only playable by a character in a covert company.">
+    <card name="Beasts of the Wood" graphics="BeastsoftheWoodDC.jpg" text="Playable at any tapped or untapped non-Haven, non-Darkhaven, non-Dark-hold site in Woodland Realm, Western Mirkwood, Heart of Mirkwood, Southern Mirkwood, Fangorn, or Cardolan if the influence check is greater than 11. Standard Modifications: if Radagast is your Wizard (+3). Tap this faction to cancel an attack keyed by name to one of the regions listed above. May also be used as a minion resource card that is only playable by a character in a covert company.">
        <attr key="mp" value="1"/>
        <attr key="rarity" value="C3"/>
        <attr key="class" value="Animal Faction"/>

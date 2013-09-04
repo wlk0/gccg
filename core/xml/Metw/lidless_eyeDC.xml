@@ -1447,7 +1447,7 @@
        <attr key="type" value="Hazard"/>
 	   <attr key="keyword" value="Environment"/>
     </card>
-    <card name="Thrice Outnumbered" graphics="ThriceOutnumberedDC.jpg" text="Each player may take one Man hazard creature from his discard pile and shuffle it into his play deck at the end of each turn. Discard this card or a Man hazard creature from your hand at the end of opponent's organization phase. Discard when any play deck is exhausted. Cannot be duplicated.">
+    <card name="Thrice Outnumbered" graphics="ThriceOutnumbered.jpg" text="Each player may take one Man hazard creature from his discard pile and shuffle it into his play deck at the end of each turn. Discard this card or a Man hazard creature from your hand at the end of opponent's organization phase. Discard when any play deck is exhausted. Cannot be duplicated.">
        <attr key="rarity" value="U"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -1526,7 +1526,7 @@
        <attr key="mind" value="4"/>
 	   <attr key="keyword" value="Spawn"/>
     </card>
-    <card name="Stinker" graphics="Stinker.jpg" text="Unique. Playable at Goblin-gate or Moria. Manifestation of Gollum and My Precious. If his company's size is less than three, tap Stinker to cancel one attack against his company keyed to Wilderness [{w}] or Shadow-land [{s}]. You may tap Stinker if he is at the same non-Darkhaven site as The One Ring; then both Stinker and The One Ring are discarded.">
+    <card name="Stinker" graphics="StinkerDC.jpg" text="Unique. Playable at Goblin-gate, The Under-grottos or Moria. Manifestation of Gollum and My Precious. If his company's size is less than three, tap Stinker to cancel one attack against his company keyed to Wilderness [{w}] or Shadow-land [{s}]. You may tap Stinker if he is at the same non-Darkhaven site as The One Ring; then both Stinker and The One Ring are discarded.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="playable" value=""/>
@@ -1537,7 +1537,7 @@
        <attr key="class" value="Scout Ally"/>
        <attr key="type" value="Minion Resource"/>
        <attr key="mind" value="4"/>
-	   <attr key="keyword" value="Hobbit"/>
+	   <attr key="keyword" value=""/>
     </card>
     <card name="&quot;Two-headed&quot; Troll" graphics="TwoheadedTroll.jpg" text="Playable at any tapped or untapped Ruins &amp; Lairs [{R}] with a Troll automatic-attack. Tap to cancel an Orc or Troll attack. Cannot be duplicated in a given company.">
        <attr key="mp" value="1"/>
