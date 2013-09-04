@@ -89,7 +89,7 @@
        <attr key="class" value="Creature"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Cruel Caradhras" graphics="CruelCaradhrasDC.jpg" text="Playable on a company using region movement to move through one of the following regions (and not stopping at a site therein): High Pass, Redhorn Gate, Angmar, Gundabad, Grey Mountain Narrows, Imlad Morgul, Bosiri, Cleft of Goats, Clyan, Dragon Gap and Narthalf. Each character in target company must face one strike (not an attack) of 8 prowess which cannot be cancelled. Any resulting body check is modified by +1.">
+    <card name="Cruel Caradhras" graphics="CruelCaradhras.jpg" text="Playable on a company using region movement to move through one of the following regions (and not stopping at a site therein): High Pass, Redhorn Gate, Angmar, Gundabad, Grey Mountain Narrows, and Imlad Morgul. Each character in target company must face one strike (not an attack) of 8 prowess which cannot be cancelled. Any resulting body check is modified by +1.">
        <attr key="rarity" value="U2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hazard"/>
@@ -1029,7 +1029,7 @@
        <attr key="type" value="Hero Resource"/>
        <attr key="influence" value="5"/>
     </card>
-    <card name="Legendary Hoard" graphics="LegendaryHoard.jpg" text="Playable on an at home Dragon manifestation. Target Dragon's automatic-attack cannot be cancelled. Rotate this card 90 each time a manifestation of target Dragon is played. If the site receiving the Dragon's automatic-attack is untapped, a number of items played there do not tap the site: not rotated: 1 item; rotated once: 2 items; rotated twice or more: 3 items. If target Dragon is required to be discarded or removed from play, invert Dragon on table until this card is discarded. Discard this card when any item is played at target Dragon's lair that tap the site. Cannot be duplicated on a given Dragon.">
+    <card name="Legendary Hoard" graphics="LegendaryHoardDC.jpg" text="Playable on an at home Dragon manifestation. Target Dragon's automatic-attack cannot be cancelled. Rotate this card 90 each time a manifestation of target Dragon is played. If the site receiving the Dragon's automatic-attack is untapped, a number of items played there do not tap the site: not rotated: 1 item; rotated once: 2 items; rotated twice or more: 3 items. If target Dragon is required to be discarded or removed from play, invert Dragon on table until this card is discarded. Discard this card when any item is played at target Dragon's lair that tap the site. Cannot be duplicated on a given Dragon.">
        <attr key="rarity" value="R2"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hero Resource"/>

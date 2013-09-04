@@ -2085,7 +2085,7 @@
        <attr key="class" value="Man Faction"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Durin's Axe" graphics="DurinsAxe.jpg" text="Unique. Axe. Weapon. Two-handed. +2 prowess (+4 if held by a Dwarf) to a maximum of 9. If held by a Dwarf, 4 marshalling points and 3 corruption points.">
+    <card name="Durin's Axe" graphics="DurinsAxeDC.jpg" text="Unique. Axe. Weapon. Two-handed. +2 prowess (+4 if held by a Dwarf) to a maximum of 9. If held by a Dwarf, 4 marshalling points and 3 corruption points.">
        <attr key="unique" value="yes"/>
        <attr key="corruption" value="2(3)"/>
        <attr key="mp" value="2(4)"/>
@@ -2342,7 +2342,7 @@
        <attr key="mind" value="2"/>
 	   <attr key="keyword" value="Maia"/>
     </card>
-    <card name="Gollum" graphics="Gollum.jpg" text="Unique. Playable at Goblin-gate or Moria. If his company's size is less than three, tap Gollum to cancel one attack against his company keyed to Wilderness [{w}] or Shadow-land [{s}]. Tap Gollum if he is at the same non-Haven site as The One Ring; then both Gollum and The One Ring are discarded.">
+    <card name="Gollum" graphics="GollumDC.jpg" text="Unique. Hobbit. Playable at Goblin-gate, The Under-grottos or Moria. If his company's size is less than three, tap Gollum to cancel one attack against his company keyed to Wilderness [w] or Shadow-land [{s}]. You may tap Gollum if he is at the same non-Haven site as The One Ring; then both Gollum and The One Ring are discarded.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="9"/>
@@ -2380,7 +2380,7 @@
 	   <attr key="keyword" value="Battle-gear"/>
 	   <attr key="keyword" value="Warrior only"/>
     </card>
-    <card name="Gwaihir" graphics="GwaihirDC.jpg" text="Unique. Playable at Eagles' Eyrie. If his company's size is two or less, you may discard Gwaihir during the organization phase to allow his company to move to any site that is not in a Shadow-land [{s}] or Dark-domain [{d}]; only hazard creatures keyed to the site may be played on a company that moves in this fashion.">
+    <card name="Gwaihir" graphics="GwaihirDC.jpg" text="Unique. Eagle. Winged. Playable at Eagles' Eyrie. If his company's size is two or less, you may discard Gwaihir during the organization phase to allow his company to move to any site that is not in a Shadow-land [{s}] or Dark-domain [{d}]; only hazard creatures keyed to the site may be played on a company that moves in this fashion.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="8"/>
@@ -2476,7 +2476,7 @@
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Leaflock" graphics="Leaflock.jpg" text="Unique. Playable at Wellinghall. Tap to cancel the effects of one hazard that targets his company. May not be attacked by automatic-attacks or hazards keyed to his site. Discard Leaflock if his company moves to a site that is not in: Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Enedhwaith, Old Pûkel-land, Brown Lands, Anduin Vales, or Redhorn Gate.">
+    <card name="Leaflock" graphics="Leaflock.jpg" text="Unique. Ent. Playable at Wellinghall. Tap to cancel the effects of one hazard that targets his company. May not be attacked by automatic-attacks or hazards keyed to his site. Discard Leaflock if his company moves to a site that is not in: Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Enedhwaith, Old Pûkel-land, Brown Lands, Anduin Vales, or Redhorn Gate.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="8"/>
@@ -2780,7 +2780,7 @@
        <attr key="class" value="Gold Ring Item"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Quickbeam" graphics="Quickbeam.jpg" text="Unique. Playable at Wellinghall. May not be attacked by automatic-attacks or hazards keyed to his site.">
+    <card name="Quickbeam" graphics="Quickbeam.jpg" text="Unique. Ent. Playable at Wellinghall. May not be attacked by automatic-attacks or hazards keyed to his site.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="9"/>
@@ -2937,7 +2937,7 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Battle-gear"/>
     </card>
-    <card name="Skinbark" graphics="Skinbark.jpg" text="Unique. Playable at Wellinghall. May not be attacked by automatic-attacks or hazards keyed to his site. discard Skinbark if his company moves to a site that is not in: Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Anduin Vales, or Redhorn Gate.">
+    <card name="Skinbark" graphics="Skinbark.jpg" text="Unique. Ent. Playable at Wellinghall. May not be attacked by automatic-attacks or hazards keyed to his site. discard Skinbark if his company moves to a site that is not in: Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Anduin Vales, or Redhorn Gate.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="9"/>
@@ -3120,7 +3120,7 @@
        <attr key="class" value="Dúnadan Faction"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Treebeard" graphics="TreebeardDC.jpg" text="Unique. Playable at Wellinghall. May not be attacked by automatic-attacks or hazards keyed to his site. Discard Treebeard if his company moves to a site that is not in: Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Enedhwaith, Old Pûkel-land, Brown Lands, Anduin Vales, or Redhorn Gate.">
+    <card name="Treebeard" graphics="TreebeardDC.jpg" text="Unique. Ent. Playable at Wellinghall. May not be attacked by automatic-attacks or hazards keyed to his site. Discard Treebeard if his company moves to a site that is not in: Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Enedhwaith, Old Pûkel-land, Brown Lands, Anduin Vales, or Redhorn Gate.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="9"/>
