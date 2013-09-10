@@ -2749,7 +2749,7 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Palantír"/>
     </card>
-    <card name="Paths of the Dead" graphics="PathsoftheDeadDC.jpg" text="Playable only at the end of the organization phase. For its movement, a company that starts at the Dunharrow site and contains Aragorn II or Elessar may move to the Vale of Erech site. The only hazard creatures that may be played on this company are Undead, but any Undead may be played on the company.">
+    <card name="Paths of the Dead" graphics="PathsoftheDeadDC.jpg" text="Playable only at the end of the organization phase. For its movement, a company that starts at the Dunharrow site and contains Aragorn II or Elessar may move with special movement to any site in Lamedon. The company has no site path, and the only hazard creatures that may be played on this company are Undead, but any Undead may be played on the company.">
        <attr key="rarity" value="R"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
