@@ -262,11 +262,11 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Fallen-wizard"/>
 		</card>
-		<card name="Shadows of the Power" graphics="Shadows of the Power.jpg" text="Heralded lord mode. Playable on your Ringwraith at a Darkhaven, if you discard (for no effect) a ring item he bears (cannot be a mind ring). Your Ringwraith becomes a Warlord. +3 to his EI and -5 to your general influence. Your Ringwraith's company is in Heralded Lord mode and may use starter movement. Additionally, your Ringwraith may be in a company with non-overt characters and Half-orcs. You may bring this card to your hand during the organization phase. Cannot be duplicated by a given player.">
+		<card name="Shadows of the Power" graphics="Shadows of the Power.jpg" text="Heralded Lord mode. Playable on your Ringwraith at a Darkhaven, if you discard (for no effect) a ring item he bears (cannot be a mind ring). Your Ringwraith becomes a Warlord. +3 to his EI and -5 to your general influence. Your Ringwraith's company is in Heralded Lord mode and may use starter movement. Additionally, your Ringwraith may be in a company with non-overt characters and Half-orcs. You may bring this card to your hand during the organization phase. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="keyword" value="heralded lord mode"/>
+			 <attr key="keyword" value="Heralded Lord mode"/>
 		</card>
 		<card name="Slaves to the Ring" graphics="Slaves to the Ring.jpg" text="Playable on a Man or Dúnadan faction, if you have a character bearing a Ring for Mortal at the site where the faction is in play. Target faction cannot not be influenced or discarded by any means. Discard this card and target faction if you do not control a Ring for Mortal Men.">
 			 <attr key="type" value="Dual Resource"/>
