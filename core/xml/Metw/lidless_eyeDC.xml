@@ -1762,6 +1762,7 @@
        <attr key="rarity" value="U"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Minion Resource"/>
+	   <attr key="keyword" value="Heralded Lord mode"/>
     </card>
     <card name="Hidden Ways" graphics="HiddenWays.jpg" text="Ranger only. Playable during the organization phase on an untapped ranger whose company is moving. Tap the ranger. No hazard creatures may be keyed by type to Wilderness [{w}] against the ranger's company this turn.">
        <attr key="rarity" value="CB+CS1"/>
