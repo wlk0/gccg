@@ -3,7 +3,7 @@
 #
 # Globals
 #
-$ver="1.0.9.1";		# Current version of core package
+$ver="1.0.10";		# Current version of core package
 %module=();			# $module{mode}{module name} - version numbers of updated/build/installed/available modules.
 %files=();			# $files{mode}{module name}{filename} - include or exclude flags (1 = include, 0 = exclude)
 %sources=();		# $sources{mode} - List of sources.
@@ -1194,6 +1194,7 @@ if (eval{require LWP::UserAgent;1;})
 {
 	$use_LWP = 1;
 	LWP::UserAgent->import();
+	IO::File->import();
 	$ua = LWP::UserAgent->new;
 	$ua->agent("gccg_package/$ver");
 	$ua->show_progress(1);

@@ -2606,7 +2606,7 @@ def DraftPass
     if(draft.packsize)
     {
       SendAll("Message","{green}Passing...");
-      c=repeat(players_wanted,"(,)");
+      c=array(players_wanted);
       for(p)(players_wanted)
       {
         if(draft.direction>0)

@@ -21,7 +21,6 @@ imprint=0;
 # Servers
 if(server.name=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
   server.name="william-floyd.dreamhost.com";
-#  server.name="localhost";
 
 # lobby background color
 BGCOLOR=(98,52,23);
@@ -89,8 +88,7 @@ GAME_MENU{"Main Menu - Play"}=(
  (1,"Play Green Token","",'Send("Transfer",(1,("out.of.play",4),("play",0)))'),
  (1,"{hr}","",""),
  (1,"Select Token Type...","","TokenSubmenu()"),
- (1,"Innistrad Transformed Card...","","ISDSubmenu()"),
- (1,"Dark Ascension Transformed Card...","","DKASubmenu()"),
+ (1,"Select Transformed Card...","","DFCSubmenu()"),
  (1,"Select Emblem Type...","","EmblemSubmenu()"),
  (1,"{hr}","",""),
  (1,"Play Jitte Counter","",'Send("Transfer",(1,("out.of.play",7),("play",0)))'),
@@ -146,7 +144,6 @@ FILTER_OPTIONS=(
  ("Commander Banned","!TypeLegal('Commander',#)",(1,"[age]","[color]","[name]")),
  ("Highlander Banned","!TypeLegal('Highlander',#)",(1,"[age]","[color]","[name]")),
  ("Modern Legal","TypeLegal('Modern',#)",(1,"[age]","[color]","[name]")),
- ("Extended Legal","TypeLegal('Extended',#)",(1,"[age]","[color]","[name]")),
  ("Standard Legal","TypeLegal('Standard',#)",(1,"[age]","[color]","[name]"))
 );
 
@@ -384,48 +381,42 @@ def MouseMiddleClickSchemeBrowser
 # MENU FUNCTIONS
 # ==============
 
-def ISDSubmenu 
+def DFCSubmenu 
 {
   Submenu("Select Transform",(
+   ("{red}Afflicted Deserter -> Werewolf Ransacker","",'Send("Transfer",(1,("out.of.play",146),("play",0)))'),
    ("Bloodline Keeper -> Lord of Lineage","",'Send("Transfer",(1,("out.of.play",126),("play",0)))'),
+   ("{128,128,128}Chalice of Life -> Chalice of Death","",'Send("Transfer",(1,("out.of.play",147),("play",0)))'),
+   ("Chosen of Markov -> Markov's Servant","",'Send("Transfer",(1,("out.of.play",148),("play",0)))'),
    ("{blue}Civilized Scholar -> {red}Homicidal Brute","",'Send("Transfer",(1,("out.of.play",127),("play",0)))'),
    ("{yellow}Cloistered Youth -> {black}Unholy Fiend","",'Send("Transfer",(1,("out.of.play",128),("play",0)))'),
    ("{green}Daybreak Ranger -> Nightfall Predator","",'Send("Transfer",(1,("out.of.play",129),("play",0)))'),
    ("{blue}Delver of Secrets -> Insectile Aberration","",'Send("Transfer",(1,("out.of.play",130),("play",0)))'),
+   ("{128,128,128}Elbrus, the Binding Blade -> {black}Withengar Unbound","",'Send("Transfer",(1,("out.of.play",149),("play",0)))'),
    ("{green}Garruk Relentless -> Garruk, the {black}Veil-Cursed","",'Send("Transfer",(1,("out.of.play",131),("play",0)))'),
    ("{green}Gatstaf Shepherd -> Gatstaf Howler","",'Send("Transfer",(1,("out.of.play",132),("play",0)))'),
    ("{green}Grizzled Outcasts -> Krallenhorde Wantons","",'Send("Transfer",(1,("out.of.play",133),("play",0)))'),
    ("{red}Hanweir Watchkeep -> Bane of Hanweir","",'Send("Transfer",(1,("out.of.play",134),("play",0)))'),
+   ("{red}Hinterland Hermit -> Hinterland Scourge","",'Send("Transfer",(1,("out.of.play",150),("play",0)))'),
+   ("{gold}Huntmaster of the Fells -> Ravager of the Fells","",'Send("Transfer",(1,("out.of.play",151),("play",0)))'),
    ("{red}Instigator Gang -> Wildblood Pack","",'Send("Transfer",(1,("out.of.play",135),("play",0)))'),
    ("{red}Kruin Outlaw -> Terror of Kruin Pass","",'Send("Transfer",(1,("out.of.play",136),("play",0)))'),
+   ("{green}Lambholt Elder -> Silverpelt Werewolf","",'Send("Transfer",(1,("out.of.play",152),("play",0)))'),
+   ("{yellow}Loyal Cathar -> {black}Unhallowed Cathar","",'Send("Transfer",(1,("out.of.play",153),("play",0)))'),
    ("{blue}Ludevic's Test Subject -> Ludevic's Abomination","",'Send("Transfer",(1,("out.of.play",137),("play",0)))'),
    ("{green}Mayor of Avabruck -> Howlpack Alpha","",'Send("Transfer",(1,("out.of.play",138),("play",0)))'),
+   ("{red}Mondronen Shaman -> Tovolar's Magehunter","",'Send("Transfer",(1,("out.of.play",154),("play",0)))'),
+   ("Ravenous Demon -> Archdemon of Greed","",'Send("Transfer",(1,("out.of.play",155),("play",0)))'),
    ("{red}Reckless Waif -> Merciless Predator","",'Send("Transfer",(1,("out.of.play",139),("play",0)))'),
+   ("{green}Scorned Villager -> Moonscarred Werewolf","",'Send("Transfer",(1,("out.of.play",156),("play",0)))'),
    ("Screeching Bat -> Stalking Vampire","",'Send("Transfer",(1,("out.of.play",140),("play",0)))'),
+   ("{blue}Soul Seizer -> Ghastly Haunting","",'Send("Transfer",(1,("out.of.play",157),("play",0)))'),
    ("{yellow}Thraben Sentry -> Thraben Militia","",'Send("Transfer",(1,("out.of.play",141),("play",0)))'),
    ("{red}Tormented Pariah -> Rampaging Werewolf","",'Send("Transfer",(1,("out.of.play",142),("play",0)))'),
    ("{green}Ulvenwald Mystics -> Ulvenwald Primordials","",'Send("Transfer",(1,("out.of.play",143),("play",0)))'),
    ("{red}Village Ironsmith -> Ironfang","",'Send("Transfer",(1,("out.of.play",144),("play",0)))'),
    ("{green}Villagers of Estwald -> Howlpack of Estwald","",'Send("Transfer",(1,("out.of.play",145),("play",0)))')
-  ));
-}
-
-def DKASubmenu 
-{
-  Submenu("Select Transform",(
-  ("{red}Afflicted Deserter -> Werewolf Ransacker","",'Send("Transfer",(1,("out.of.play",146),("play",0)))'),
-  ("{128,128,128}Chalice of Life -> Chalice of Death","",'Send("Transfer",(1,("out.of.play",147),("play",0)))'),
-  ("Chosen of Markov -> Markov's Servant","",'Send("Transfer",(1,("out.of.play",148),("play",0)))'),
-  ("{128,128,128}Elbrus, the Binding Blade -> {black}Withengar Unbound","",'Send("Transfer",(1,("out.of.play",149),("play",0)))'),
-  ("{red}Hinterland Hermit -> Hinterland Scourge","",'Send("Transfer",(1,("out.of.play",150),("play",0)))'),
-  ("{gold}Huntmaster of the Fells -> Ravager of the Fells","",'Send("Transfer",(1,("out.of.play",151),("play",0)))'),
-  ("{green}Lambholt Elder -> Silverpelt Werewolf","",'Send("Transfer",(1,("out.of.play",152),("play",0)))'),
-  ("{yellow}Loyal Cathar -> {black}Unhallowed Cathar","",'Send("Transfer",(1,("out.of.play",153),("play",0)))'),
-  ("{red}Mondronen Shaman -> Tovolar's Magehunter","",'Send("Transfer",(1,("out.of.play",154),("play",0)))'),
-  ("Ravenous Demon -> Archdemon of Greed","",'Send("Transfer",(1,("out.of.play",155),("play",0)))'),
-  ("{green}Scorned Villager -> Moonscarred Werewolf","",'Send("Transfer",(1,("out.of.play",156),("play",0)))'),
-  ("{blue}Soul Seizer -> Ghastly Haunting","",'Send("Transfer",(1,("out.of.play",157),("play",0)))'),
-  ("{green}Wolfbitten Captive -> Krallenhorde Killer","",'Send("Transfer",(1,("out.of.play",158),("play",0)))'),
+   ("{green}Wolfbitten Captive -> Krallenhorde Killer","",'Send("Transfer",(1,("out.of.play",158),("play",0)))'),
   ));
 }
 
@@ -434,6 +425,7 @@ def EmblemSubmenu
   Submenu("Select Emblem",(
   ("Domri Rade","",'Send("Transfer",(1,("out.of.play",187),("play",0)))'),
   ("Elspeth, Knight-Errant","",'Send("Transfer",(1,("out.of.play",167),("play",0)))'),
+  ("Elspeth, Sun's Champion","",'Send("Transfer",(1,("out.of.play",199),("play",0)))'),
   ("Garruk, Caller of Beasts","",'Send("Transfer",(1,("out.of.play",191),("play",0)))'),
   ("Koth of the Hammer","",'Send("Transfer",(1,("out.of.play",168),("play",0)))'),
   ("Liliana of the Dark Realms","",'Send("Transfer",(1,("out.of.play",175),("play",0)))'),
@@ -497,8 +489,10 @@ def TokenSubmenuB
    ("Bird 1/1 (U, flying)","",'Send("Transfer",(1,("out.of.play",16),("play",0)))'),
    ("Bird 1/1 (UW, flying)","",'Send("Transfer",(1,("out.of.play",17),("play",0)))'),
    ("Bird 1/1 (W, flying)","",'Send("Transfer",(1,("out.of.play",18),("play",0)))'),
+   ("Bird 2/2 (U, flying)","",'Send("Transfer",(1,("out.of.play",192),("play",0)))'),
    ("Bird 3/3 (W, flying)","",'Send("Transfer",(1,("out.of.play",112),("play",0)))'),
    ("Bird Soldier 1/1 (W, flying)","",'Send("Transfer",(1,("out.of.play",19),("play",0)))'),
+   ("Boar 2/2 (G)","",'Send("Transfer",(1,("out.of.play",193),("play",0)))'),
   ));
 }
 
@@ -512,6 +506,7 @@ def TokenSubmenuC
    ("Centaur 3/3 (G)","",'Send("Transfer",(1,("out.of.play",22),("play",0)))'),
    ("Centaur 3/3 (G, protection from black)","",'Send("Transfer",(1,("out.of.play",182),("play",0)))'),
    ("Cleric 1/1 (BW, reanimation)","",'Send("Transfer",(1,("out.of.play",183),("play",0)))'),
+   ("Cleric 2/1 (W, enchantment)","",'Send("Transfer",(1,("out.of.play",194),("play",0)))'),
    ("Construct 6/12 (C, trample)","",'Send("Transfer",(1,("out.of.play",100),("play",0)))'),
   ));
 }
@@ -537,6 +532,7 @@ def TokenSubmenuE
   Submenu("Select Token",(
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
    ("Eldrazi Spawn 0/1 (C)","",'Send("Transfer",(1,("out.of.play",101),("play",0)))'),
+   ("Elemental 1/0 (U)","",'Send("Transfer",(1,("out.of.play",195),("play",0)))'),
    ("Elemental 1/1 (R, haste)","",'Send("Transfer",(1,("out.of.play",29),("play",0)))'),
    ("Elemental 2/2 (U, flying)","",'Send("Transfer",(1,("out.of.play",30),("play",0)))'),
    ("Elemental 3/1 (R, haste)","",'Send("Transfer",(1,("out.of.play",31),("play",0)))'),
@@ -592,6 +588,7 @@ def TokenSubmenuH
 {
   Submenu("Select Token",(
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
+   ("Harpy 1/1 (B, flying)","",'Send("Transfer",(1,("out.of.play",196),("play",0)))'),
    ("Hellion 4/4 (R)","",'Send("Transfer",(1,("out.of.play",106),("play",0)))'),
    ("Hippo 1/1 (G)","",'Send("Transfer",(1,("out.of.play",53),("play",0)))'),
    ("Homunculus 0/1 (AU)","",'Send("Transfer",(1,("out.of.play",54),("play",0)))'),
@@ -641,7 +638,7 @@ def TokenSubmenuM
 {
   Submenu("Select Token",(
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
-   ("Marit Lage 20/20 (B)","",'Send("Transfer",(1,("out.of.play",63),("play",0)))'),
+   ("Marit Lage 20/20 (B, indestructible)","",'Send("Transfer",(1,("out.of.play",63),("play",0)))'),
    ("Merfolk 1/1 (U)","",'Send("Transfer",(1,("out.of.play",120),("play",0)))'),
    ("Merfolk Wizard 1/1 (U)","",'Send("Transfer",(1,("out.of.play",64),("play",0)))'),
    ("Minion */* (B)","",'Send("Transfer",(1,("out.of.play",173),("play",0)))'),
@@ -685,12 +682,14 @@ def TokenSubmenuS
   Submenu("Select Token",(
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
    ("Saproling 1/1 (G)","",'Send("Transfer",(1,("out.of.play",73),("play",0)))'),
+   ("Satyr 2/2 (RG)","",'Send("Transfer",(1,("out.of.play",197),("play",0)))'),
    ("Shapeshifter 1/1 (C, changeling)","",'Send("Transfer",(1,("out.of.play",74),("play",0)))'),
    ("Skeleton 1/1 (B)","",'Send("Transfer",(1,("out.of.play",75),("play",0)))'),
    ("Sliver 1/1 (A)","",'Send("Transfer",(1,("out.of.play",76),("play",0)))'),
    ("Snake 1/1 (G)","",'Send("Transfer",(1,("out.of.play",77),("play",0)))'),
    ("Snake 1/1 (UG)","",'Send("Transfer",(1,("out.of.play",78),("play",0)))'),
    ("Soldier 1/1 (RW)","",'Send("Transfer",(1,("out.of.play",186),("play",0)))'),
+   ("Soldier 1/1 (R)","",'Send("Transfer",(1,("out.of.play",198),("play",0)))'),
    ("Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",79),("play",0)))'),
    ("Soldier Ally 1/1 (W)","",'Send("Transfer",(1,("out.of.play",110),("play",0)))'),
    ("Spawn 2/2 (A)","",'Send("Transfer",(1,("out.of.play",80),("play",0)))'),

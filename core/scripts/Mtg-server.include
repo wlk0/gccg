@@ -20,7 +20,7 @@ port=29200;
 meta.port=29100;
 
 if(meta.server=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
-  meta.server="gccgmeta.sytes.net";
+  meta.server="william-floyd.dreamhost.com";
 
 #
 # GAME SPECIFIC FUNCTIONS
