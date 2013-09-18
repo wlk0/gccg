@@ -209,6 +209,8 @@ def InitDistributions
   distribution{"MOD"}{"booster"}=((1,"12*C+6*U+2*R+M"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"M14"}=(,);
   distribution{"M14"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"THS"}=(,);
+  distribution{"THS"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
 }
 
 #

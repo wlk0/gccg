@@ -1221,10 +1221,10 @@ def ToggleJoinGame
           e=0;
           if(d[3]==0)
             Reply("{red}This table is not ready to join yet. To set up a draft, use {yellow}/startdraft N SET[,SET2,SET3]{red}, where N is the number of players and the SETs are the abbreviations for the sets you want to use.");
+          else if(d[3]==1 && Mode()=="")
+            Reply("{red}You have to be in sealed or draft mode in order to sit at a draft table.");
           else if(d[3]==2 && !count(UserWithoutMode(),("God","Guard","Judge")))
             Reply("{red}The draft is already in progress.");
-          else if(Mode()=="")
-            Reply("{red}You have to be in sealed or draft mode in order to sit at a draft table.");
           else
             e=1;
           d=pop();
@@ -1233,7 +1233,7 @@ def ToggleJoinGame
           1;
 #       Player has quit this game
         else if(tables{players{con}[2]}[3] && length(tables{players{con}[2]}[6]) < tables{players{con}[2]}[5])
-          Reply("{red}Sorry, some of the players are already left and this game is finished soon.");
+          Reply("{red}Sorry, some of the players have already left and this game is finished soon.");
 #       Watcher
         else if(length(tables{players{con}[2]}[6]) >= tables{players{con}[2]}[5])
         {
@@ -3397,7 +3397,7 @@ def CommandStartdraft
           SendAllNP("DelRoomTable",e);
           SendAllNP("AddRoomTable",(e,tables{e}));
           net_server_send(e,("SetPlayers",ARG[0]));
-          SendAllNP("Message","There is a "+join(draftsetup[1],"-")+" draft now ready at table "+e+". The price of this draft will be $"+format("%.2f",bet)+".");
+          SendAllNP("Message",User()+" reserved a "+join(draftsetup[1],"-")+" draft at table "+e+". The price of this draft will be $"+format("%.2f",bet)+".");
         }
         bet=pop();
         err=pop();
@@ -3479,7 +3479,7 @@ def CommandBan
         if(Con(u)>=0) 
         {
           Send(Con(u),("Message","{red}{sz30}You are banned!"));
-          Send(Con(u),("Message","{red}{sz30}Search another server!"));
+          Send(Con(u),("Message","{red}{sz30}Find another server if you must!"));
           CommandKick(u,);
         }
       }
