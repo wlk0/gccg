@@ -26,21 +26,21 @@ Deck
 3 Doors of Night (LE)
 1 Doubled Vigilance (DM)
 1 Gandalf the White Rider (AS)
-1 Goblin-faces (WH)
 2 Hermit Troll (DF)
-3 Hobgoblins (LE)
+2 Hobgoblins (LE)
+1 Hoarmûrath of Dír (TW)
 3 Little Snuffler (DM)
+1 Many Sorrows Befall (TD)
 3 Minions Stir (LE)
 1 Mouth of Sauron (TW)
 3 Orc-archers (DF)
-1 Orc-raiders (TW)
+2 Orc-raiders (TW)
 3 Orc-warband (LE)
-3 Orcish Marauders (DF)
+2 Orcish Marauders (DF)
 1 Out of Practise (DF)
-1 Pierced by Many Wounds (DM)
-1 The Back Door (DF)
-1 The Will of Sauron (TW)
+2 Pierced by Many Wounds (DM)
 2 Twilight (TW)
+1 Uruk-lieutenant (LE)
 
 # Minion Character (4)
 
@@ -92,19 +92,15 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (1)
-
-1 Dwarf-friend (DF)
-
 # Hazard (13)
 
-1 Alone and Unadvised (AS)
 1 Assassin (TW)
 1 Bolg, Son of Azog (DF)
-1 Bûthrakaur the Green (DM)
 1 Call of Home (TW)
 1 Crossing the Border (DF)
 1 Lost in Free-domains (TW)
+1 Lure of the Senses (LE)
+1 Nameless Thing (DM)
 1 News of Doom (LE)
 1 Old Enemies (DF)
 1 Orc-tortured (DF)
@@ -116,7 +112,7 @@ Sideboard
 
 1 Prisoner from Ost-in-Edhil (FB)
 
-# Minion Resource (25)
+# Minion Resource (26)
 
 1 Dunlendings [M] (LE)
 1 Dwarven Ring of Durin's Tribe [M] (LE)
@@ -139,25 +135,29 @@ Sideboard
 1 Scroll of Isildur [M] (LE)
 1 Secrets of Their Forging (LE)
 1 Swift Strokes (LE)
+1 Voices of Malice (LE)
+1 Test of Fire (LE)
 1 The Great Eye (AS)
 1 The Reviled Ring (LE)
 1 Trifling Ring (LE)
-1 Weigh All Things to a Nicety (LE)
 
 #####
 Sites
 #####
 
-# Minion Site (40)
+# Dual Site (1)
+
+1 Durin's Tower (DF)
+
+# Minion Site (37)
 
 1 Amon Hen [M] (LE)
 1 Amon Lind [M] (FB)
-1 Bandit Lair [M] (LE)
 1 Barad-dûr [M] (LE)
 1 Blue Mountain Dwarf-hold [M] (LE)
 1 Bree [M] (LE)
-1 Cameth Brin [M] (LE)
 2 Carn Dûm [M] (LE)
+1 Cerin Amroth [M] (FB)
 1 Dale [M] (LE)
 1 Dimrill Dale [M] (LE)
 2 Dol Guldur [M] (LE)
@@ -182,9 +182,8 @@ Sites
 1 The Under-gates [M] (AS)
 1 The Under-grottos [M] (AS)
 1 The Under-leas [M] (AS)
-1 The Under-vaults [M] (AS)
 1 The White Towers [M] (LE)
-1 The Wind Throne [M] (LE)
 1 The Worthy Hills [M] (LE)
 1 Vale of Erech [M] (LE)
 1 Weathertop [M] (AS)
+

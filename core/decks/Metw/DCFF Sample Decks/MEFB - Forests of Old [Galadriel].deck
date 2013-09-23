@@ -56,17 +56,18 @@ Deck
 1 Orophin (TW)
 1 Rúmil (FB)
 
-# Hero Resource (25)
+# Hero Resource (26)
 
-1 A Chance Meeting (TW)
+2 A Chance Meeting (TW)
 2 A Long Good Talk (FB)
 2 Ancient Knowledge (FB)
 1 Ancient Skill and Wisdom (FB)
 1 Bow of the Galadhrim (AS)
 1 Elves of Lothlórien (FB)
+1 Great-road (TW)
 1 Hundreds of Butterflies (DM)
 2 Into the Smoking Cone (DM)
-1 Light of the Lady (FB)
+1 Light of Lothlórien (FB)
 1 Longbottom Leaf (BA)
 1 Looking from Mind to Mind (FB)
 2 Marvels Told (TD)
@@ -75,14 +76,12 @@ Deck
 1 Ringlore (TW)
 1 Smoke Rings (DM)
 1 Treebeard (TW)
-1 Wood-elves (TW)
 
-# Stage Resource (6)
+# Stage Resource (5)
 
 1 Blind to All Else (WH)
 2 Great Achievement (DF)
 1 Great Patron (WH)
-1 Possessions of the Green-elves (FB)
 1 Ring of Water (FB)
 
 ####
@@ -110,7 +109,7 @@ Pool
 # Stage Resource (3)
 
 1 Lady of Many Gifts (FB)
-1 Thrall of the Voice (WH)
+1 The Trees Have Ears (FB)
 1 Trusted Counsellor (FB)
 
 #########
@@ -135,19 +134,16 @@ Sideboard
 1 The Roving Eye (LE)
 1 Twilight (TW)
 
-# Hero Resource (23)
+# Hero Resource (22)
 
 1 Cup of Farewell (DM)
 1 Dwarven Ring of Thrár's Tribe [H] (TW)
 1 Elf-stone (TW)
 1 Elven Cloak (TW)
-1 Emerald of Doriath (TD)
 1 Great Bow of Lórien (FB)
 1 Healing Herbs (TW)
 1 Leaf Brooch (DM)
 2 Lesser Ring (TW)
-1 Lost Tome (DM)
-1 Magic Ring of Courage (TW)
 1 Magic Ring of Nature (TW)
 1 Magic Ring of Stealth (TW)
 1 Marvels Told (TD)
@@ -157,8 +153,13 @@ Sideboard
 1 Tom Bombadil (TW)
 1 Tower Raided (AS)
 1 True Fána (TW)
-1 Waybread (TD)
+2 Waybread (TD)
 1 Wizard's Test (TW)
+1 Wood-elves (TW)
+
+# Minion Resource (1)
+
+1 Binding-ring (LE)
 
 # Stage Resource (2)
 

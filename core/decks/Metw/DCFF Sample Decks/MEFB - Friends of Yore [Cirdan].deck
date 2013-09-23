@@ -8,10 +8,9 @@
 Deck
 ####
 
-# Dual Resource (2)
+# Dual Resource (1)
 
 1 Elf-friend (FB)
-1 Profitable Trade (DF)
 
 # Elf-lord Character (4)
 
@@ -25,7 +24,6 @@ Deck
 2 Black Crows (FB)
 3 Ent in Search of the Entwives (LE)
 1 Fangorn* (FB)
-1 Finglas (FB)
 1 Foolish Words (LE)
 1 Gandalf the White Rider (AS)
 1 Hoarmûrath of Dír (TW)
@@ -42,21 +40,22 @@ Deck
 2 Sentinel of the Grove (FB)
 1 Terror from the Deeps (DF)
 2 Twilight (LE)
-2 Watcher in the Water (LE)
-2 Wrath of the Olvar (FB)
-1 Ûvatha the Horseman (TW)
+3 Watcher in the Water (LE)
+3 Wrath of the Olvar (FB)
 
 # Hero Character (6)
 
-1 Círdor (FB)
-1 Elven Handmaid (FB)
+1 Adrazar (TW)
+1 Andovon Pathdal (FB)
 1 Galdor (TD)
 2 Shipwright (FB)
 1 Tharúdan (FB)
 
 # Hero Resource (28)
 
-3 Blood of Huan (FB)
+1 Aranrûth (FB)
+2 Blood of Huan (FB)
+1 Forewarned Is Forearmed (DM)
 3 Gates of Morning (TW)
 1 Hauberk of Bright Mail (TW)
 1 Longbottom Leaf (BA)
@@ -66,34 +65,31 @@ Deck
 1 Nenseldë the Wingild (TD)
 3 Noble Hound (DM)
 1 Sail to the West (FB)
-2 Shipwrights of Lindon (FB)
 1 Smoke Rings (DM)
+3 Swanships of Lindon (FB)
 1 Sword of Gondolin (TW)
 3 The Evenstar (TW)
 1 Token of Goodwill (DM)
 1 Twice-baked Cakes (TD)
-1 Ulmo's Watch (FB)
-1 Wormsbane (TD)
 
-# Stage Resource (5)
+# Stage Resource (6)
 
 1 Clad for War (DF)
 1 Gatherer of Loyalties (WH)
+1 Great Patron (WH)
 1 Hidden Haven (WH)
-1 Keeper of the Passage (FB)
+1 Kinsman and Ambassador (FB)
 1 The Sea's Prowess (FB)
 
 ####
 Pool
 ####
 
-# Hero Character (8)
+# Hero Character (6)
 
-1 Adrazar (TW)
-1 Andovon Pathdal (FB)
 1 Annalena (TW)
 1 Bladorthin (FB)
-1 Erestor (FB)
+1 Círdor (FB)
 1 Gildor Inglorion (TW)
 1 Shipwright (FB)
 1 Wood-elf (FB)
@@ -111,7 +107,7 @@ Pool
 
 # Stage Resource (3)
 
-1 Master-healer (FB)
+1 Keeper of the Passage (FB)
 1 Thrall of the Voice (WH)
 1 Trusted Counsellor (FB)
 
@@ -119,10 +115,13 @@ Pool
 Sideboard
 #########
 
-# Hazard (13)
+# Dual Resource (1)
+
+1 Profitable Trade (DF)
+
+# Hazard (12)
 
 1 Agburanar Ahunt (TD)
-1 Alone and Unadvised (AS)
 1 Bairanax Ahunt (TD)
 1 Call of Home (LE)
 1 Covetous Thoughts (LE)
@@ -135,40 +134,39 @@ Sideboard
 1 The Reach of Ulmo (DM)
 1 The Roving Eye (LE)
 
-# Hero Resource (24)
+# Hero Character (2)
+
+2 Elven Handmaid (FB)
+
+# Hero Resource (23)
 
 1 A Friend of Yore (FB)
-1 Adamant Helmet (TD)
 1 Belegaer (TD)
+1 Blood of Huan (FB)
 1 Cloudless Day (TD)
 1 Crisfuin (FB)
 1 Echo of All Joy (TD)
+1 Elven Blade (FB)
 1 Elves of Edhellond (FP)
 1 Elves of Lindon (TW)
-1 Emerald of Doriath (TD)
 1 Great-road (TW)
-1 Great-shield of Rohan (TW)
 1 Hair of Uinen (FB)
-1 Healing Song (FB)
 1 Kindling of the Spirit (TW)
 1 Longbottom Leaf (BA)
 1 Men of Lebennin (TW)
-1 Moon (TW)
 1 Sail to the West (FB)
 1 Smoke Rings (DM)
 1 Star of High Hope (TD)
 1 The High Sea (FB)
+1 The Iron Crown [H] (PR)
 2 The Old Thrush (TW)
-1 Tower Guard of Minas Tirith (TW)
+1 Ulmo's Watch (FB)
+1 Wormsbane (TD)
 
-# Minion Resource (1)
+# Minion Resource (2)
 
 1 Ready to His Will (LE)
-
-# Stage Resource (2)
-
-1 Great Patron (WH)
-1 Kinsman and Ambassador (FB)
+1 Smart and Secret (LE)
 
 ################
 Sideboard vs. fw
