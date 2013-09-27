@@ -1255,7 +1255,7 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Stolen Knowledge"/>
     </card>
-    <card name="Mallorn" graphics="MallornDC.jpg" text="Unique. Playable at Bag End only if Earth of Galadriel's Orchard is stored there. Bag End becomes a Haven for the purposes of healing and bringing characters into play. Bag End can untap during its owner's untap phase. If Bag End is discarded, return it to its location deck. All Hobbit factions are worth +1 marshalling points.">
+    <card name="Mallorn" graphics="Mallorn.jpg" text="Unique. Playable at Bag End only if Earth of Galadriel's Orchard is stored there. Bag End becomes a Haven for the purposes of healing and bringing characters into play. Bag End can untap during its owner's untap phase. If Bag End is discarded, return it to its location deck. All Hobbit factions are worth +1 marshalling points.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="3"/>
        <attr key="rarity" value="R2"/>
