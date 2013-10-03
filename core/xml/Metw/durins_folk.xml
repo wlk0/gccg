@@ -1712,7 +1712,7 @@
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="What have I got in my Pocket?" graphics="What have I got in my Pocket.jpg" text="Riddling Attempt. Playable during the site phase on a character at the same site as one of opponent's companies. Tap the character. Opponent chooses a character from his company for this riddling attempt. Each player makes a riddling roll, modified by +2 if his character is a sage and by +1 if a Hobbit (re-roll ties). The player with the highest result wins: he names an item (not a unique item already in play) and the other player reveals his hand. If the item is revealed the winner may immediately play that item with the riddling character from hand or discard pile; loser discards the revealed item.">
+		<card name="What Have I Got in My Pocket?" graphics="What Have I Got in My Pocket.jpg" text="Riddling Attempt. Playable during the site phase on a character at the same site as one of opponent's companies. Tap the character. Opponent chooses a character from his company for this riddling attempt. Each player makes a riddling roll, modified by +2 if his character is a sage and by +1 if a Hobbit (re-roll ties). The player with the highest result wins: he names an item (not a unique item already in play) and the other player reveals his hand. If the item is revealed the winner may immediately play that item with the riddling character from hand or discard pile; loser discards the revealed item.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Short-event"/>
