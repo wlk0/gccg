@@ -20,7 +20,7 @@ BOOK_DEFAULT_SORT=("[age]","[color]","[name]");
 imprint=0;
 # Servers
 if(server.name=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
-  server.name="william-floyd.dreamhost.com";
+  server.name="gccgcentral.bornano.fr";
 
 # lobby background color
 BGCOLOR=(98,52,23);
@@ -74,9 +74,11 @@ game.bindings=(
 # =====
 #if(!VersionCompare(VERSION,"0.9.7"))
   GAME_MENU{"Main Menu - Chat"}=(
-    (1,"Show/Hide {blue}Planes","","TogglePlanes()"),
     (1,"Show/Hide {blue}Schemes","","ToggleSchemes()"),
+    (1,"Show/Hide {blue}Planes","","TogglePlanes()"),
+    (1,"Show/Hide {blue}Hero's Path","","ToggleChallenge()"),
   );
+  GAME_MENU{"Main Menu - Offline"}=GAME_MENU{"Main Menu - Chat"};
 
 GAME_MENU{"Main Menu - Play"}=(
  (1,"{hr}","",""),
@@ -219,7 +221,7 @@ def InitializeHook
 {
 #  if(!VersionCompare(VERSION,"0.9.7"))
 #  {
-    planes.book=create_book(w(5),h(165),obj=obj+1,"Plane Browser",3,3,500);
+    planes.book=create_book(w(5),h(190),obj=obj+1,"Plane Browser",3,3,500);
     book_set_index(planes.book,sort_by(("[name]",),seq(501,586),0));
     set_attr(planes.book,"ontop",Z_COLLECTION);
     set_bgcolor(planes.book,BKBGCOLOR);
@@ -227,13 +229,23 @@ def InitializeHook
     set_textcolor(planes.book,BKBRCOLOR);
     book_set_page(planes.book,0);
     
-    schemes.book=create_book(w(80),h(190),obj=obj+1,"Scheme Browser",2,4,700);
+    schemes.book=create_book(w(5),h(165),obj=obj+1,"Scheme Browser",2,4,700);
     book_set_index(schemes.book,sort_by(("[name]",),seq(701,750),0));
     set_attr(schemes.book,"ontop",Z_COLLECTION);
     set_bgcolor(schemes.book,BKBGCOLOR);
     set_fgcolor(schemes.book,COLORS{'BLACK'});
     set_textcolor(schemes.book,BKBRCOLOR);
     book_set_page(schemes.book,0);
+    
+    challenge.book=create_book(w(70),h(215),obj=obj+1,"Hero's Path",3,5,800);
+    book_set_index(challenge.book,("Heroes",)+seq(801,807)+("Hydra",)+seq(822,836));
+    set_attr(challenge.book,"ontop",Z_COLLECTION);
+    set_bgcolor(challenge.book,BKBGCOLOR);
+    set_fgcolor(challenge.book,COLORS{'GREEN'});
+    set_textcolor(challenge.book,BKBRCOLOR);
+    book_set_page(challenge.book,0);
+    
+    books = books+(planes.book,schemes.book,challenge.book);
 #  }
 }
 
@@ -281,6 +293,12 @@ def ToggleSchemes
   raise(schemes.book);
 }
 
+def ToggleChallenge
+{
+  set_attr(challenge.book,"visible",!get_attr(challenge.book,"visible"));
+  raise(challenge.book);
+}
+
 #
 # MOUSE
 # =====
@@ -320,6 +338,17 @@ def MouseWheelSchemeBrowser
 }
 
 #
+# MouseWheelHerosPath(dir) - Scroll through challenge cards (0=up, 1=down).
+#
+def MouseWheelHerosPath
+{
+  if(ARG)
+    KeyPageDown();
+  else
+    KeyPageUp();
+}
+
+#
 # MouseLeftClickPlaneBrowser() - Remove a card from the planar deck.
 #
 def MouseLeftClickPlaneBrowser
@@ -327,7 +356,6 @@ def MouseLeftClickPlaneBrowser
   raise(object.number);
   if(deck.name != NULL && card_back(card.number)!=card.number && card.number!=NULL && has_entry("planes",decks{deck.name}))
     EditDel("planes",card.number);
-  book_set_deck(planes.book,decks{deck.name});
 }
 
 #
@@ -338,7 +366,28 @@ def MouseLeftClickSchemeBrowser
   raise(object.number);
   if(deck.name != NULL && card_back(card.number)!=card.number && card.number!=NULL && has_entry("schemes",decks{deck.name}))
     EditDel("schemes",card.number);
-  book_set_deck(schemes.book,decks{deck.name});
+}
+
+#
+# MouseLeftClickHerosPath() - Remove a card from the challenge deck.
+#
+def MouseLeftClickHerosPath
+{
+  push(dp);
+  raise(object.number);
+  if(deck.name != NULL && card_back(card.number)!=card.number && card.number!=NULL)
+  {
+    dp="challenge";
+    if(card.number<822)
+    {
+      dp="exile";
+      if(has_entry("command",decks{deck.name}))
+        dp="command";
+    }
+    if(has_entry(dp,decks{deck.name}))
+      EditDel(dp,card.number);
+  }
+  dp=pop();
 }
 
 #
@@ -348,15 +397,7 @@ def MouseMiddleClickPlaneBrowser
 {
   raise(object.number);
   if(deck.name != NULL && card_back(card.number)!=card.number && card.number!=NULL)
-  {
-    if(!has_entry('planes',decks{deck.name}))
-      decks{deck.name}{'planes'}=(card.number,);
-    else
-      decks{deck.name}{'planes'}=decks{deck.name}{'planes'} + (card.number,);
-    
-    cards_missing=listbox_set_deck(deck.box,decks{deck.name},card.book);
-    book_set_deck(planes.book,decks{deck.name});
-  }
+     EditAdd("planes",card.number);
 }
 
 #
@@ -366,15 +407,17 @@ def MouseMiddleClickSchemeBrowser
 {
   raise(object.number);
   if(deck.name != NULL && card_back(card.number)!=card.number && card.number!=NULL)
-  {
-    if(!has_entry('schemes',decks{deck.name}))
-      decks{deck.name}{'schemes'}=(card.number,);
-    else
-      decks{deck.name}{'schemes'}=decks{deck.name}{'schemes'} + (card.number,);
-    
-    cards_missing=listbox_set_deck(deck.box,decks{deck.name},card.book);
-    book_set_deck(schemes.book,decks{deck.name});
-  }
+    EditAdd("schemes",card.number);
+}
+
+#
+# MouseMiddleClickHerosPath() - Add a card to the challenge deck.
+#
+def MouseMiddleClickHerosPath
+{
+  raise(object.number);
+  if(deck.name != NULL && card_back(card.number)!=card.number && card.number!=NULL)
+    EditAdd(deck.part,card.number);
 }
 
 #
@@ -849,6 +892,57 @@ def PlaySchemesMenu
 }
 
 #
+# PlayChallengeMenu() - Generate menu for challenge deck.
+#
+def PlayChallengeMenu
+{
+  push(m);
+  m=(,);
+  if(card.number!=NULL)
+  {
+    m=m+(
+      ("Play top card","Ctrl+P",""),
+      ("{hr}","",""),
+      ("Look","Ctrl+L",""),
+      ("Reveal/Hide deck","Ctrl+F",""),
+      ("Shuffle","Ctrl+S",""),
+    );
+  }
+
+  m=m+(
+    ("Touch","Ctrl+T",""),
+  );
+
+  Menu("Challenge Deck",m);
+  m=pop();
+}
+
+#
+# PlayChallengeDiscardMenu() - Generate menu for challenge graveyard.
+#
+def PlayChallengeDiscardMenu
+{
+  push(m);
+  m=(,);
+  if(card.number!=NULL)
+  {
+    m=m+(
+      ("Play top card","Ctrl+P",""),
+      ("{hr}","",""),
+      ("Look","Ctrl+L",""),
+      ("Shuffle to the deck","",'Send("Transfer",(length(deck(deck.objects[me]{"challenge discard"})),("deck.top",deck.objects[me]{"challenge discard"}),("deck.top",deck.objects[me]{"challenge"}))); Send("ShuffleDeck",deck.objects[me]{"challenge"});'),
+    );
+  }
+
+  m=m+(
+    ("Touch","Ctrl+T",""),
+  );
+
+  Menu("Challenge Graveyard",m);
+  m=pop();
+}
+
+#
 # PlaneBrowserMenu() - Generate menu for plane book.
 #
 def PlaneBrowserMenu
@@ -920,6 +1014,45 @@ def SchemeBrowserMenu
 
   Menu(m,b);
 
+  m=pop();
+  b=pop();
+}
+
+#
+# HerosPathMenu() - Generate menu for challenge book.
+#
+def HerosPathMenu
+{
+  push(b);
+  push(m);
+
+  b=(,);
+  m="Hero's Path Menu";
+  if(card.number && mode=="play")
+  {
+    m=card.name;
+    b=b+(
+      ("Bring {blue}"+card.name+"{black} to the play","",'Send("Transfer",(1,("out.of.play",card.number),("play",0)))'),
+    );
+  }
+  else if(card.number && (mode=="chat" || mode=="watch"))
+  {
+    m=card.name;
+    if(deck.name != NULL && has_entry(deck.name,decks))
+    {
+      b=b+(("Add one to the deck","middle click",""),
+      ("Remove one from the deck","left click",""));
+    }
+    b=b+(("Show card text w/ errata","Ctrl+H",""),);
+  }
+
+  b=b+(("{hr}","",""),);
+  b=b+(("Previous page","Page Up",""),("Next page","Page Down",""));
+  b=b+(("Close","Esc",'set_attr(challenge.book,"visible",0)'),);
+
+  Menu(m,b);
+
+  m=pop();
   b=pop();
 }
 
@@ -1169,7 +1302,7 @@ def KeyPageUp
 {
   if(object.name=="Current Deck")
     listbox_scroll(deck.box,-5);
-  else if((object.number==planes.book || object.number==schemes.book) && object.number != NULL)
+  else if(count(object.number,books) && object.number != NULL)
   {
     push(p);
     p=book_page(object.number);
@@ -1204,7 +1337,7 @@ def KeyPageDown
 {
   if(object.name=="Current Deck")
     listbox_scroll(deck.box,5);
-  else if((object.number==planes.book || object.number==schemes.book) && object.number != NULL)
+  else if(count(object.number,books) && object.number != NULL)
   {
     push(p);
     p=book_page(object.number);
@@ -1395,6 +1528,41 @@ def CreateDeckHook
 }
 
 #
+# EditAddHook(deck part,card name or number) - Make sure special cards go to their proper deck sections.
+#
+def EditAddHook
+{
+# Precondition: arguments have been sanitized and assigned to "deck.addpart" and "cn" respectively.
+  return(1);
+  
+  if(cn>500 && cn<587)
+  {
+    CheckDeckPart("planes");
+    deck.addpart="planes";
+  }
+  else if(cn>700 && cn<751)
+  {
+    CheckDeckPart("schemes");
+    deck.addpart="schemes";
+  }
+  else if(cn>800 && cn<822)
+  {
+    if(has_entry("command",decks{deck.name}))
+      deck.addpart="command";
+    else
+    {
+      CheckDeckPart("exile");
+      deck.addpart="exile";
+    }
+  }
+  else if(cn>821 && cn<837)
+  {
+    CheckDeckPart("challenge");
+    deck.addpart="challenge";
+  }
+}
+
+#
 # PutTableHook() - Clear imprint flag.
 #
 def PutTableHook
@@ -1412,7 +1580,7 @@ def SingleCardMenuHook
 }
 
 #
-# UntapHook(object number) - Return 1 if card shoud be untapped using Ctrl+U.
+# UntapHook(object number) - Return 1 if card should be untapped using Ctrl+U.
 #
 def UntapHook
 {
@@ -1428,7 +1596,7 @@ def UntapHook
 }
 
 #
-# TapHook(object number) - Return 1 if card shoud be tapped using Ctrl+O or Ctrl+M.
+# TapHook(object number) - Return 1 if card should be tapped using Ctrl+O or Ctrl+M.
 #
 def TapHook
 {

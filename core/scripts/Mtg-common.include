@@ -17,6 +17,8 @@ deck_name{"exile"}="exile";
 deck_name{"command"}="command zone";
 deck_name{"planes"}="planar deck";
 deck_name{"schemes"}="scheme deck";
+deck_name{"challenge"}="hydra deck";
+deck_name{"challenge discard"}="hydra graveyard";
 deck_name{"opponent deck"}="library";
 deck_name{"opponent discard pile"}="graveyard";
 deck_name{"opponent sideboard"}="sideboard";
@@ -24,6 +26,8 @@ deck_name{"opponent exile"}="exile";
 deck_name{"opponent command"}="command zone";
 deck_name{"opponent planes"}="planar deck";
 deck_name{"opponent schemes"}="scheme deck";
+deck_name{"opponent challenge"}="hydra deck";
+deck_name{"opponent challenge discard"}="hydra graveyard";
 
 #
 # RuleCountBiggestPopulation(list of card numbers) - Count the biggest number of creatures having the same type.

@@ -334,7 +334,7 @@ void MessageBox::WriteMessage(const string& text)
 		    out+="\e[31m";
 		else if(code=="{orange}" || code=="{yellow}" || code=="{brown}" || code=="{gold}")
 		    out+="\e[33m";
-		else if(code=="{reset}" || code=="{white}" || code=="{gray}")
+		else if(code=="{reset}" || code=="{white}" || code=="{gray}" || code=="{silver}")
 		    out+="\e[37m";
 		else if(code=="{cyan}" || code=="{blue}")
 		    out+="\e[34m";

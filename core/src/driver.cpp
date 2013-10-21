@@ -214,6 +214,8 @@ namespace Driver
 			style.color=Color(205,173,0);
 		else if(ret=="{gray}")
 			style.color=Color(77,77,77);
+		else if(ret=="{silver}")
+			style.color=Color(154,154,154);
 		else if(ret=="{magenta}")
 			style.color=Color(205,0,205);
 		else if(ret=="{orange}")

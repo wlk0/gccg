@@ -86,12 +86,15 @@ clean:
 
 ccg_text_client: $(CLIENT) tmp/text-driver.o tmp/game-text-version.o
 	$(LD) -o ccg_text_client $(CLIENT) tmp/text-driver.o tmp/game-text-version.o $(LIBS_TEXT)
+	strip ccg_text_client
 
 ccg_client: $(CLIENT) tmp/sdl-driver.o tmp/game-sdl-version.o
 	$(LD) -o ccg_client $(CLIENT) tmp/sdl-driver.o tmp/game-sdl-version.o $(LIBS)
+	strip ccg_client
 
 ccg_server: $(SERVER)
 	$(LD) -o ccg_server $(SERVER) $(LIBS_TEXT)
+	strip ccg_server
 
 gccg: $(GCCG)
 	$(LD) -o gccg $(GCCG) $(LIBS_TEXT)

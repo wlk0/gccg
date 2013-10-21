@@ -192,11 +192,13 @@ def InitDistributions
   distribution{"AVR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"M13"}=(,);
   distribution{"M13"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
-#these nese next two sets don't actually have boosters, but the reward function needs to be able to generate them  
+# these next three sets don't actually have boosters, but the reward function needs to be able to generate them
   distribution{"COM"}=(,);
   distribution{"COM"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"PC2"}=(,);
   distribution{"PC2"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"C13"}=(,);
+  distribution{"C13"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
 
   distribution{"RTR"}=(,);
   distribution{"RTR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
@@ -290,9 +292,9 @@ def ProduceBE_Starter
     i=i+1;
   }
   if(random(121) < 4)
-    p[i]=random(cards{"BE"}{"L"});
+    p[58]=random(cards{"BE"}{"L"});
   if(random(121) < 4)
-    p[i+1]=random(cards{"BE"}{"L"});
+    p[59]=random(cards{"BE"}{"L"});
   return(p);
   p=pop();
 }
