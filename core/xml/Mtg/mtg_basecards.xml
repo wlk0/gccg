@@ -3327,79 +3327,167 @@
     </card>
     <card name="9" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
     </card>
-    <card name="800" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="_unknown_" graphics="challengeback.jpg" text="" back="800">
     </card>
-    <card name="1" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Protector" graphics="Challenge/TheProtector.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="1" />
     </card>
-    <card name="2" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Philosopher" graphics="Challenge/ThePhilosopher.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="1" />
     </card>
-    <card name="3" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Avenger" graphics="Challenge/TheAvenger.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="1" />
     </card>
-    <card name="4" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Warrior" graphics="Challenge/TheWarrior.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="1" />
     </card>
-    <card name="5" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Hunter" graphics="Challenge/TheHunter.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="1" />
     </card>
-    <card name="6" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Harvester" graphics="Challenge/TheHarvester.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="2" />
     </card>
-    <card name="7" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="The Slayer" graphics="Challenge/TheSlayer.jpg" text="" back="4">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Hero" />
+      <attr key="color" value="Hero" />
+      <attr key="loyalty" value="3" />
     </card>
-    <card name="8" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="8" graphics="" text="Reserved Hero 4">
     </card>
-    <card name="9" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="9" graphics="" text="Reserved Hero 4">
     </card>
-    <card name="10" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="10" graphics="" text="Reserved Hero 4">
     </card>
-    <card name="1" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="1" graphics="" text="Reserved Hero 4">
     </card>
-    <card name="2" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="2" graphics="" text="Reserved Hero 4">
     </card>
-    <card name="3" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="3" graphics="" text="Reserved Hero 5">
     </card>
-    <card name="4" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="4" graphics="" text="Reserved Hero 6">
     </card>
-    <card name="5" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="5" graphics="" text="Reserved Hero 7">
     </card>
-    <card name="6" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="6" graphics="" text="Reserved Hero 7">
     </card>
-    <card name="7" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="7" graphics="" text="Reserved Hero 7">
     </card>
-    <card name="8" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="8" graphics="" text="Reserved Hero 7">
     </card>
-    <card name="9" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="9" graphics="" text="Reserved Hero 7">
     </card>
-    <card name="20" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="20" graphics="" text="Reserved Hero 8">
     </card>
-    <card name="1" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="1" graphics="" text="Reserved Hero 9">
     </card>
-    <card name="2" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Hydra Head" graphics="Challenge/HydraHead.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Creature" />
+      <attr key="subtype" value="Head" />
+      <attr key="color" value="Hydra" />
+      <attr key="power" value="0" />
+      <attr key="toughness" value="3" />
     </card>
-    <card name="3" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Ravenous Brute Head" graphics="Challenge/RavenousBruteHead.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Elite Creature" />
+      <attr key="subtype" value="Head" />
+      <attr key="color" value="Hydra" />
+      <attr key="power" value="0" />
+      <attr key="toughness" value="6" />
     </card>
-    <card name="4" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Savage Vigor Head" graphics="Challenge/SavageVigorHead.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Elite Creature" />
+      <attr key="subtype" value="Head" />
+      <attr key="color" value="Hydra" />
+      <attr key="power" value="0" />
+      <attr key="toughness" value="8" />
     </card>
-    <card name="5" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Shrieking Titan Head" graphics="Challenge/ShriekingTitanHead.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Elite Creature" />
+      <attr key="subtype" value="Head" />
+      <attr key="color" value="Hydra" />
+      <attr key="power" value="0" />
+      <attr key="toughness" value="8" />
     </card>
-    <card name="6" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Snapping Fang Head" graphics="Challenge/SnappingFangHead.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Elite Creature" />
+      <attr key="subtype" value="Head" />
+      <attr key="color" value="Hydra" />
+      <attr key="power" value="0" />
+      <attr key="toughness" value="8" />
     </card>
-    <card name="7" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Disorienting Glower" graphics="Challenge/DisorientingGlower.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="8" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Distract the Hydra" graphics="Challenge/DistracttheHydra.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="9" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Grown from the Stump" graphics="Challenge/GrownfromtheStump.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="30" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Hydra's Impenetrable Hide" graphics="Challenge/HydrasImpenetrableHide.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="1" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Neck Tangle" graphics="Challenge/NeckTangle.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="2" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Noxious Hydra Breath" graphics="Challenge/NoxiousHydraBreath.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="3" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Strike the Weak Spot" graphics="Challenge/StriketheWeakSpot.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="4" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Swallow the Hero Whole" graphics="Challenge/SwallowtheHeroWhole.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="5" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Torn Between Heads" graphics="Challenge/TornBetweenHeads.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
-    <card name="6" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Unified Lunge" graphics="Challenge/UnifiedLunge.jpg" text="" back="800">
+      <attr key="rarity" value="C" />
+      <attr key="type" value="Sorcery" />
+      <attr key="color" value="Hydra" />
     </card>
     <card name="7" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
     </card>

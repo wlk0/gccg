@@ -27,6 +27,7 @@
 # Constants:
 #
 # ALLOW_DRAFTS - whether to allow draft tables to connect
+# ALLOWED_DECK_NAMES - list of acceptable IDs when registering a deck
 # BET_BONUS_MULTIPLIER - extra bet
 # DRAFT_DEFAULT_PRODUCTS - number of products per player used in a typical draft
 # DRAFT_MAX_PRODUCTS - maximum number of products allowed for a draft
@@ -37,6 +38,7 @@
 # GAME_BONUS - base prize for each game
 # INITIAL_MONEY - starting budget for player
 # LOSER_PERCENTAGE - share of the total prize for loser
+# MAX_DECK_SIZE - maximum size allowed for a registered deck
 # REQUIRE_GAME_VERSION - version number required for client to play
 # REQUIRE_SERVER_VERSION - version number required for servers
 # REQUIRE_VERSION - version number required for client to connect
@@ -129,6 +131,7 @@
 #     0 - registered tournament decks 
 #           users{name}[4][0]{id}=deck content as a list of pairs (numb.of cards,card number)
 #           users{name}[4][0]{id-original}=deck content in client-side format
+#           --if id = "download", then deck content is available for download by other players
 #     1 - last proxy check result (nmb.of proxies,registered flag,orginal form flag)
 #     2 - registration date for tournament decks 
 #           users{name}[4][0]{id}=date and time of registration
@@ -201,6 +204,10 @@ GAME_BONUS=20.0;
 BET_BONUS_MULTIPLIER=1.0;
 LOSER_PERCENTAGE=0.20;
 DRAW_PERCENTAGE=1.00;
+
+ALLOWED_DECK_NAMES=("default","alternative","download");
+MAX_DECK_SIZE=300;
+
 SET_BONUS_MULTIPLIER=0.5;
 PLAYSET_COUNT=4;
 PLAYSET_BONUS_MULTIPLIER=SET_BONUS_MULTIPLIER*PLAYSET_COUNT;
@@ -234,6 +241,7 @@ command.acl{"/canceldraft"}=(-1,("God","Salesman","Guard","Judge","player"));
 command.acl{"/checkfactory"}=(0,("God",));
 command.acl{"/delproduct"}=(2,("God","Salesman"));
 command.acl{"/debug"}=(-1,("God",));
+command.acl{"/downloaddeck"}=(1,("God","Salesman","Guard","Judge","player"));
 command.acl{"/have"}=(1,("God","Salesman","Guard","Judge","player"));
 command.acl{"/info"}=(-1,("God","Judge"));
 command.acl{"/giveticket"}=(-1,("God","Salesman","Judge"));
@@ -1091,18 +1099,46 @@ def RegisterDeck
       if(typeof(ARG[0])=="string")
       {
         push(c);
+        push(l);
 
         if(users{User()}[4][0]=="unused")
           users{User()}[4][0]=(,);
 
         c=0;
-        if(users{User()}[4][0]{ARG[0]}!=ARG[1])
-           c=1;
-
-        if(users{User()}[4][0]{ARG[0]+"-original"}!=ARG[2])
-           c=1;
-
-        if(c)
+        l=length(flatten(values(ARG[2])));
+        
+        if(l > MAX_DECK_SIZE)
+        {
+          Reply("{cyan}This deck is too large to register.");
+          Log(User()+" tried to register a deck with "+l+" cards, limit is "+MAX_DECK_SIZE);
+          c=-1;
+        }
+        else if(!isdict(ARG[1]) || !isdict(ARG[2]))
+        {
+          Reply("{cyan}This is not a valid deck.");
+          Log(User()+" tried to register a malformed deck");
+          c=-1;
+        }
+#        else if(right(ARG[0],9)=="-original")
+        else if(find(ARG[0],ALLOWED_DECK_NAMES)==NULL)
+        {
+          Reply("{cyan}You can't use that as a deck identifier.");
+          c=-1;
+        }
+        else
+        {
+          if(!has_entry(ARG[0],users{User()}[4][0]))
+            users{User()}[4][0]{ARG[0]}=NULL;
+          if(users{User()}[4][0]{ARG[0]}!=ARG[1])
+            c=1;
+            
+          if(!has_entry(ARG[0]+"-original",users{User()}[4][0]))
+            users{User()}[4][0]{ARG[0]+"-original"}=NULL;  
+          if(users{User()}[4][0]{ARG[0]+"-original"}!=ARG[2])
+            c=1;
+        }
+        
+        if(c==1)
         {
           users{User()}[4][0]{ARG[0]}=ARG[1];
           users{User()}[4][0]{ARG[0]+"-original"}=ARG[2];
@@ -1110,16 +1146,24 @@ def RegisterDeck
           if(users{User()}[4][2]=="unused")
             users{User()}[4][2]=(,);
           users{User()}[4][2]{ARG[0]}=date()+" "+time();
-          SendAll("Message","{blue}"+User()+" has registered "+ARG[0]+" deck.");
-       
-          Log(User()+" has registered "+ARG[0]+" deck.");
+          
+          if(ARG[0]=="download")
+          {
+            if(length(ARG[1]) > 0)
+              SendAll("Message","{cyan}"+User()+" has uploaded a deck for review. You can save a copy with {yellow}/downloaddeck "+User()+"{reset} .");
+            else
+              SendAll("Message","{cyan}"+User()+" has taken down their downloadable deck.");
+          }
+          else
+            SendAll("Message","{blue}"+User()+" registered their "+ARG[0]+" deck.");
         }
-        else
+        else if(c==0)
         {
           Reply("{cyan}Your deck has not changed since the last registration.");
-          Log(User()+" registration of "+ARG[0]+" deck ignored - no change.");
+          Log(User()+" tried to register "+ARG[0]+" deck, but it was unchanged");
         }
-
+        
+        l=pop();
         c=pop();
       }
     }
@@ -3203,6 +3247,22 @@ def CommandRo2
   else
     Send(con,("RestoreDeck",("default",users{User()}[4][0]{"alternative-original"})));
 }
+
+#
+# CommandDownloaddeck() - Implementation of the command /downloaddeck.
+#
+def CommandDownloaddeck
+{
+  if(!has_entry(ARG[0],users))
+    Reply("{red}No such user.");
+  else if(!has_entry("download",users{ARG[0]}[4][0]))
+    Reply("{red}"+ARG[0]+" does not have a downloadable deck.");
+  else if(length(users{ARG[0]}[4][0]{"download"}) < 1)
+    Reply("{red}"+ARG[0]+" does not have a downloadable deck.");
+  else
+    Send(con,("RestoreDeck",("Downloaded from "+ARG[0],users{ARG[0]}[4][0]{"download-original"})));
+}
+
 
 #
 # CommandKick(user) - Implementation of the command /kick.

@@ -103,6 +103,7 @@ def RandomCardSet
   }
   return(pack);
   pack=pop();
+  t=pop();
   r=pop();
   d=pop();
 }

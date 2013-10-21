@@ -79,6 +79,7 @@
 # book.filter{filter expression} - precalculated filtered card lists
 # book.index{(filter expression,sorting expression)} - precalculated book indices
 # book_refresh - dictionary mapping card numbers to NULL or 1 if they are refreshed from server.
+# books - list of object numbers used for card books
 # booster - current real content of booster
 # booster.box - box to display a booster/starter bought
 # booster.open_at_once - 1 if booster should be opened immediately
@@ -564,10 +565,6 @@ function{"Torrent"}="Torrent";
 function{"HaveList"}="HaveList";
 function{"WantList"}="WantList";
 
-# NFM 2005-08-16
-playerhave = (,);
-playerwant = (,);
-
 def playerhas {
   if(playerhave{ARG[0]} != NULL)
     return (find(ARG[1],playerhave{ARG[0]}) != NULL);
@@ -583,11 +580,6 @@ def playerwants {
 }
 
 modifier=" ";
-
-pm_name=NULL;
-
-undo_buffer=(,);
-undo.pos=-1;
 
 #
 # FUNCTIONS WAITING FOR C++ IMPLEMENTATION
@@ -730,6 +722,10 @@ def Initialize
   message(chat_msg.box,"{sz9}press {orange}F6{white} to make this box disappear or reappear");
 
   message(name.box,username);
+  pm_name=NULL;
+  
+  playerhave = (,);
+  playerwant = (,);
 
   mode_object{"chat"}=mode_object{"chat"}+(money.box,name.box,deckname.box);
 
@@ -749,6 +745,7 @@ def Initialize
   set_bgcolor(card.book,BKBGCOLOR);
   set_fgcolor(card.book,BKBRCOLOR);
   set_textcolor(card.book,BKTXCOLOR);
+  books = (card.book,);
 
   CheckFilterVersion();
   if(!load("book.current_index"))
@@ -779,6 +776,9 @@ def Initialize
   deck.box=create_listbox(screen.width-w(sum(DECKBOX_SIZE)+4),h(135),obj=obj+1,"Current Deck",100,("#","Name of the card",""),DECKBOX_SIZE,34,(1,0,1));
   set_attr(deck.box,"ontop",Z_DLIST);
   raise(deck.box);
+  
+  undo_buffer=(,);
+  undo.pos=-1;
 
   info.box=create_cardbox(0,0,obj=obj+1,"Info");
   set_attr(info.box,"draggable",1);
@@ -1162,8 +1162,11 @@ def RefreshCurrentDeck
 {
   if(deck.name!=NULL && has_entry(deck.name,decks))
   {
-    book_set_deck(card.book,decks{deck.name});
+    push(b);
+    for(b)(books)
+      book_set_deck(b,decks{deck.name});
     cards_missing=listbox_set_deck(deck.box,decks{deck.name},card.book);
+    b=pop();
   }
 }
 
@@ -1175,9 +1178,12 @@ def SetCardbook
   book_set_entry(card.book,ARG);
   if(deck.name!=NULL && has_entry(deck.name,decks))
   {
-    book_set_deck(card.book,decks{deck.name});
+    push(b);
+    for(b)(books)
+      book_set_deck(b,decks{deck.name});
     cards_missing=listbox_set_deck(deck.box,decks{deck.name},card.book); 
     forall("book_refresh{#}=1",keys(ARG));
+    b=pop();
   }
 }
 
@@ -1252,7 +1258,8 @@ def DeleteDeck
       deck.groups{g}=deck.groups{g}-(ARG,);
       
     decks=del_entry(ARG,decks);
-    book_set_deck(card.book,NewDeck());
+    for(g)(books)
+      book_set_deck(g,NewDeck());
     cards_missing=listbox_set_deck(deck.box,NewDeck(),card.book);
     set_attr(deck.box,"visible",0);
     deck.name=NULL;
@@ -1270,30 +1277,36 @@ def DeleteDeck
 }
 
 #
-# BookSetPrice(card number,price) - set my price for a card and update it on server.
+# BookSetPrice(card number,price,[object number of book]) - set my price for a card and update it on server.
 #
 def BookSetPrice
 {
   push(e);
+  if(length(ARG)==2)
+    ARG=ARG+(card.book,);
+  
   if(ARG[1] >= 0.0)
   {
-    e=book_entry(card.book,ARG[0]);
+    e=book_entry(ARG[2],ARG[0]);
     e[3]=ARG[1];
-    book_set_entry(card.book,((ARG[0],e),));
+    book_set_entry(ARG[2],((ARG[0],e),));
     SendMeta("SetPrice",(ARG[0],ARG[1]));
   }
   e=pop();
 }
 
 #
-# BookChangeForsale(card number,difference) - decrease or increase number of cards for sale.
+# BookChangeForsale(card number,difference,[object number of book]) - decrease or increase number of cards for sale.
 #
 def BookChangeForsale
 {
   push(e);
-  e=book_entry(card.book,ARG[0]);
+  if(length(ARG)==2)
+    ARG=ARG+(card.book,);
+  
+  e=book_entry(ARG[2],ARG[0]);
   e[4]=e[4]+ARG[1];
-  book_set_entry(card.book,((ARG[0],e),));
+  book_set_entry(ARG[2],((ARG[0],e),));
   SendMeta("SetForsale",(ARG[0],e[4]));
   e=pop();
 }
@@ -2388,22 +2401,64 @@ def ChatCommandRd2
 }
 
 #
-# WatchCommandRd() - Implementation of /rd command in watch mode.
+# ChatCommandUploaddeck() - Implementation of /uploaddeck command in chat mode.
 #
+def ChatCommandUploaddeck
+{
+  push(deck.name);
+  ARG=join(ARG," ");
+  
+  if(ARG=="0")  
+    SendMeta("RegisterDeck",("download",(,),(,)));
+  else if(length(ARG) > 0)
+  {
+    if(has_entry(ARG,decks))
+    {
+      deck.name=ARG;
+      ARG="";
+    }
+    else
+      Msg("{red}You don't have a deck with that name.");
+  }
+  if(length(ARG)==0)
+  {
+    if(deck.name == NULL)
+      Msg("{red}No deck selected.");
+    else
+    {
+      push(d);
+      for(p)(keys(decks{deck.name}))
+        decks{deck.name}{p}=sort(decks{deck.name}{p});
+      d=sort(flatten(values(decks{deck.name})));
+      d=sort(forall('(count(#,d),#)',unique(d)));
+      SendMeta("RegisterDeck",("download",d,decks{deck.name}));
+      d=pop();
+    }
+  }
+  
+  deck.name=pop();
+}
+
 def WatchCommandRd
   ChatCommandRd();
 
-#
-# WatchCommandRd2() - Implementation of /rd2 command in watch mode.
-#
 def WatchCommandRd2
   ChatCommandRd2();
 
+def WatchCommandUploaddeck
+  ChatCommandUploaddeck();
+
 HELP{"chat"}{"rd"}=("","register your tournament deck",NULL,
-"Send the content of the current deck to the meta server for registration. The meta server stores a copy of the deck. After you have registered your deck, game servers check your game decks against the registered deck. Then reports are generated wether the game deck is identical to the registered deck and/or wether the combined parts of the game deck contains the same cards as the registered one. NOTE: The game servers do not report anything if the deck is not registered. So, it is up to the player to observe that an opponent haven't change his deck during tournament event. See also {orange}/help ro{white}.");
+"Send the content of the current deck to the meta server for registration. The meta server stores a copy of the deck. After you have registered your deck, game servers check your game decks against the registered deck. Then reports are generated wether the game deck is identical to the registered deck and/or wether the combined parts of the game deck contains the same cards as the registered one. NOTE: The game servers do not report anything if the deck is not registered. So, it is up to the player to observe that an opponent haven't change his deck during tournament event. See also {yellow}/help ro{white}.");
 
 HELP{"chat"}{"rd2"}=("","register your 2nd tournament deck",NULL,
-"This registers the second deck for the tournement (if needed). See also {orange}/help rd{white}.");
+"This registers the second deck for the tournement (if needed). See also {yellow}/help rd{white}.");
+
+HELP{"chat"}{"uploaddeck"}=("[deck name]","upload a deck for review",NULL,
+"This uploads your deck to the server, just like {yellow}/rd{white}. The main difference is that using this allows other players to retrieve your decklist using {yellow}/downloaddeck{reset}. If {yellow}0{reset} is provided as an optional argument, takes down your uploaded deck. Otherwise, if a deck name is provided as argument, upload that deck instead of the currently selected one.");
+
+HELP{"chat"}{"downloaddeck"}=("user","download a deck",NULL,
+"If {yellow}user{reset} has uploaded a deck for review, this will retrieve it from the server and import it as a new decklist.");
 
 #
 # CommandUnset() - Implementation of /unset command.
@@ -2516,10 +2571,10 @@ def CommandEval
 
 HELP{"any"}{"eval"}=("exp","evaluate an expression",NULL,
 "This command takes an expression {yellow}exp{white} and evaluates it using gccg-script engine. The resulting value of the expression is stored to the variable {yellow}E{white} and sent as a message. The expression may contain more than one statement, in which case all but the last one needs to be followed by a semicolon.\n"
-+"If you want to see the result yourself but not send it to everyone else, use {yellow}/seval{white} instead.");
++"If you don't want to broadcast the result, use {yellow}/seval{reset} or {yellow}/neval{reset} instead.");
 
 #
-# CommandSeval(code expression) - Silent evaluation.
+# CommandSeval(code expression) - Evaluate code, with output displayed only to self instead of as a public message.
 #
 def CommandSeval
 {
@@ -2527,9 +2582,19 @@ def CommandSeval
   Msg(tostr(E));
 }
 
-HELP{"any"}{"eval"}=("exp","evaluate an expression",NULL,
+HELP{"any"}{"seval"}=("exp","evaluate an expression",NULL,
 "This command takes an expression {yellow}exp{white} and evaluates it using gccg-script engine. The resulting value of the expression is stored to the variable {yellow}E{white} and displayed on the screen. The expression may contain more than one statement, in which case all but the last one needs to be followed by a semicolon.\n"
-+"If you want other players to see the output, use {yellow}/eval{white} instead.");
++"To suppress the output, use {yellow}/neval{reset}; to broadcast it to other players, use {yellow}/eval{white} instead.");
+
+#
+# CommandNeval(code expression) - Evaluate code, with no output.
+#
+def CommandNeval
+  E=eval(join(ARG," "));
+
+HELP{"any"}{"neval"}=("exp","evaluate an expression",NULL,
+"This command takes an expression {yellow}exp{white} and evaluates it using gccg-script engine. The resulting value of the expression is stored to the variable {yellow}E{white}. The expression may contain more than one statement, in which case all but the last one needs to be followed by a semicolon.\n"
++"To see the output or show it to other players, use {yellow}/eval{reset} or {yellow}/seval{white} instead.");
 
 #
 # CommandBind(text) - Implementation of /bind command.
@@ -2698,9 +2763,9 @@ def WatchCommandInplay
       if(m!="")
         m=m+", ";
       if(count(first(c),c) > 1)
-        m=m+count(first(c),c)+" x ";
+        m=m+count(first(c),c)+"x ";
       m=m+first(c);
-      c=c-(first(c),);
+      c=tail(c);
     }
     Msg("{green}Player "+p+":{white} "+m);
   }
@@ -2774,8 +2839,11 @@ def ChatCommandSealed
       save("password");
       Send("Sealed",("sealed","start",n,(,)));
     }
-    if(get_attr(card.book,"visible"))
-      set_attr(card.book,"visible",0);
+    for(b)(books)
+    {
+      if(get_attr(b,"visible"))
+        set_attr(b,"visible",0);
+    }
     ClearCardBook();
   }
   else
@@ -2817,8 +2885,11 @@ def ChatCommandDraft
       save("password");
       Send("Sealed",("draft","start",n,(,)));
     }
-    if(get_attr(card.book,"visible"))
-      set_attr(card.book,"visible",0);
+    for(b)(books)
+    {
+      if(get_attr(b,"visible"))
+        set_attr(b,"visible",0);
+    }
     ClearCardBook();
   }
   else
@@ -4402,6 +4473,7 @@ def AddRoomTable
     push(h);
     push(b);
     
+    DelRoomTable(ARG[0]);
     c=FreeTablePos();
     o=table.object[c[0]][c[1]];
 
@@ -4785,22 +4857,18 @@ def RestoreDeck
   if(n=="default")
   {
     if(deck.name == NULL)
-    {
-      Msg("{red}You must create empty deck or select deck to overwrite before restore.");
-      n=NULL;
-    }
-    else
-      n=deck.name;
+      Msg("{red}You must create an empty deck or select a deck to overwrite before restoring.");
+      
+    n=deck.name;
   }
-
   if(n != NULL)
   {
     if(ARG[1] == NULL)
-      Msg("{red}You haven't stored any decks to the server yet.");
+      Msg("{red}No data available. Maybe you tried to restore a deck without registering one first?");
     else
     {
       decks{n}=ARG[1];
-      Msg("Deck '"+n+"' received.");
+      Msg("Received the '"+n+"' deck.");
       SelectDeck(n);
     }
   }
@@ -4970,7 +5038,7 @@ def CommandDelpart
 }
 
 #
-# AddDeckPart() - Add deck part with the given name to the current deck.
+# AddDeckPart(part name) - Add deck part with the given name to the current deck.
 #
 def AddDeckPart
 {
@@ -4987,7 +5055,24 @@ def AddDeckPart
 }
 
 #
-# RemoveDeckPart() - Remove named part from the current deck if it exists.
+# CheckDeckPart(part name) - If given deck part already exists, return 1. Otherwise, create it and return 0.
+# If no deck is selected, return NULL.
+#
+def CheckDeckPart
+{
+  if(deck.name==NULL)
+    return(NULL);
+  else if(has_entry(lc(ARG),decks{deck.name}))
+    return(1);
+  else
+  {
+    decks{deck.name}{lc(ARG)}=(,);
+    return(0);
+  }
+}
+
+#
+# RemoveDeckPart(part name) - Remove named part from the current deck if it exists.
 #
 def RemoveDeckPart
 {
@@ -5015,51 +5100,53 @@ def RemoveDeckPart
 def EditAdd
 {
   push(o);
+  push(cn);
+  
   if(!has_entry(deck.name,decks) || deck.name==NULL)
     Msg("{red}You must have a deck selected.");
-  else if(!has_entry(ARG[0],decks{deck.name}))
-    Msg("{red}Cannot add to deck: no such deck part as "+tostr(ARG[0])+".");
   else
   {
+    if(typeof(ARG[1])=="string")
+      cn=first(FindCards(1,ARG[1]));
+    else
+      cn=ARG[1];
+    deck.addpart=ARG[0];
+    
     o=1;
     if(isfunction("EditAddHook"))
       o=EditAddHook(ARG);
-      
+    
     if(o)
     {
-      if(typeof(ARG[1])=="string")
-        o=AddToDeck(deck.name,ARG[0],ARG[1],1);
-      else if(typeof(ARG[1])=="integer")
-      {
-        o=ARG[1];
-        decks{deck.name}{ARG[0]}=decks{deck.name}{ARG[0]} + (o,);
-      }
+      if(!has_entry(deck.addpart,decks{deck.name}))
+        Msg("{red}Cannot add to deck: no such deck part as "+tostr(deck.addpart)+".");
+      else if(cn==NULL)
+        Msg("{red}No such card.");
+      else if(canonical_name(cn)==NULL)
+        Msg("{red}No such card.");  
       else
       {
-        Msg("{red}Bad card name argument.");
-        o=NULL;
-      }
+        decks{deck.name}{deck.addpart}=decks{deck.name}{deck.addpart} + (cn,);
 
-      if(o!=NULL)
-      {
         if(undo.pos<0)
         {
-          undo_buffer=((o,1,"",ARG[0]),);
+          undo_buffer=((cn,1,"",deck.addpart),);
           undo.pos=0;
         }
-        else if(undo_buffer[undo.pos][0]==o && undo_buffer[undo.pos][2]=="" && undo_buffer[undo.pos][3]==ARG[0])
+        else if(undo_buffer[undo.pos][0]==cn && undo_buffer[undo.pos][2]=="" && undo_buffer[undo.pos][3]==deck.addpart)
           undo_buffer[undo.pos][1]=undo_buffer[undo.pos][1] + 1;
-        else if(undo_buffer[undo.pos][0]==o && undo_buffer[undo.pos][2]==ARG[0] && undo_buffer[undo.pos][3]=="")
+        else if(undo_buffer[undo.pos][0]==cn && undo_buffer[undo.pos][2]==deck.addpart && undo_buffer[undo.pos][3]=="")
           undo_buffer[undo.pos][1]=undo_buffer[undo.pos][1] - 1;
         else
         {
           undo.pos=undo.pos+1;
-          undo_buffer=left(undo_buffer,undo.pos)+((o,1,"",ARG[0]),);
+          undo_buffer=left(undo_buffer,undo.pos)+((cn,1,"",deck.addpart),);
         }
         RefreshCurrentDeck();
       }
     }
   }
+  cn=pop();
   o=pop();
 }
 
@@ -5877,7 +5964,7 @@ def PriceDelta
 def KeyReturn
 {
   DelCursor();
-  if((mode=="chat" || mode=="watch") && (isreal(input) || input=="") && card.number && object.name=="My Collection")
+  if((mode=="chat" || mode=="watch") && (isreal(input) || input=="") && card.number && count(object.number,books))
     HandlePriceInput();
   else
   {
@@ -6098,9 +6185,9 @@ def HandlePriceInput
   push(p);
   push(e);
   push(r);
-  if(card.number && object.name=="My Collection")
+  if(card.number && count(object.number,books))
   {
-    e=book_entry(card.book,card.number);
+    e=book_entry(object.number,card.number);
     r=Attr("rarity",card.number);
     p=toreal(format("%.2f",toreal(join(split(input,","),"."))));
 
@@ -6146,9 +6233,9 @@ def ChatKeyControlKeyS
 {
   push(b);
   push(r);
-  if(card.number && object.name=="My Collection")
+  if(card.number && count(object.number,books))
   {
-    b=book_entry(card.book,card.number);
+    b=book_entry(object.number,card.number);
     r=Attr("rarity",card.number);
 
     if(b[4] < b[0] && Mode()=="")
@@ -6191,7 +6278,7 @@ def ChatKeyControlKeyA
 {
   if(deck.name != NULL)
   {
-    if(object.name=="My Collection" && card.number!=NULL && card_back(card.number)!=card.number)
+    if(card.number!=NULL && card_back(card.number) != card.number && count(object.number,books))
     {
       if(deck.part==NULL)
         SelectDeckPart("deck");
@@ -6216,7 +6303,7 @@ def OfflineKeyControlKeyA
 #
 def ChatKeyControlKeyW
 {
-  if(Mode()=="" && card.number && object.name=="My Collection")
+  if(Mode()=="" && card.number && count(object.number,books))
     BookChangeForsale(card.number,-1);
 }
 
@@ -9988,32 +10075,44 @@ def SetAwayOff
 # ================
 
 #
-# SetBookPage(page) - Select the page for your collection.
+# SetBookPage(page,[object number of card book]) - Select the page for your collection.
 #
 def SetBookPage
 {
   push(u);
   push(p);
   push(r);
-  p=ARG;
-  r=(,);
-  if(mode!="" && isfunction("book_cards"))
+  push(b);
+  if(typeof(ARG)=="integer")
   {
-    u=book_cards(card.book,p);
+    p=ARG;
+    b=card.book;
+  }
+  else if(typeof(ARG)=="list")
+  {
+    p=ARG[0];
+    b=ARG[1];
+  }
+  r=(,);
+  if(mode!="" && isfunction("book_cards") && count(b,books))
+  {
+    u=book_cards(b,p);
     if(p>0)
-      u=u+book_cards(card.book,p-1);
+      u=u+book_cards(b,p-1);
     else
-      u=u+book_cards(card.book,book_last_page(card.book));
+      u=u+book_cards(b,book_last_page(b));
 
-    if(p<book_last_page(card.book))
-      u=u+book_cards(card.book,p+1);
+    if(p<book_last_page(b))
+      u=u+book_cards(b,p+1);
     else
-      u=u+book_cards(card.book,0);
+      u=u+book_cards(b,0);
 
     RefreshBook(u);
   }
 
-  book_set_page(card.book,p);
+  if(count(b,books))
+    book_set_page(b,p);
+  b=pop();
   r=pop();
   p=pop();
   u=pop();

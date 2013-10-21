@@ -1,5 +1,5 @@
 deck_rules=(,);
-server_description="Universal (THS)";
+server_description="Universal (C13)";
 
 deck_rules{"Empty"}=(,);
 deck_rules{"Empty"}{""}=(
@@ -91,16 +91,47 @@ deck_rules{"Commander"}{"exile+command"}=(
 deck_rules{"Highlander"}=(,);
 deck_rules{"Highlander"}{"deck"}=(
   ("RuleDeckSizes",(100,)),
-  ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest","Snow-Covered Plains","Snow-Covered Island","Snow-Covered Swamp","Snow-Covered Mountain","Snow-Covered Forest","Relentless Rats","Shadowborn Apostle"),
+  ("RulePass",NULL),
+);
 
+deck_rules{"Highlander"}{"sideboard"}=(
+  ("RuleDeckMaximum",15),
+  ("RulePass",NULL),
+);
+
+deck_rules{"Highlander"}{"deck+sideboard"}=(
+  ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest","Snow-Covered Plains","Snow-Covered Island","Snow-Covered Swamp","Snow-Covered Mountain","Snow-Covered Forest","Relentless Rats","Shadowborn Apostle"),
   ("RuleCardSets",("UG","UH",0)),
-  ("RuleCardLimitEach",("Ancestral Recall", "Balance", "Black Lotus", "Chaos Orb", "Dread Return", "Enlightened Tutor", "Entomb", "Falling Star", "Fastbond", "Flash", "Grindstone", "Imperial Seal", "Library of Alexandria", "Life from the Loam", "Lion's Eye Diamond", "Mana Crypt", "Mana Vault", "Mind Twist", "Mox Emerald", "Mox Jet", "Mox Pearl", "Mox Ruby", "Mox Sapphire", "Mystical Tutor", "Skullclamp", "Sol Ring", "Strip Mine", "Survival of the Fittest", "Tolarian Academy", "Time Vault", "Time Walk", "Tinker", "Trinisphere", "Umezawa's Jitte", "Vampiric Tutor", "Wheel of Fortune", "Yawgmoth's Will", "Amulet of Quoz", "Bronze Tablet", "Contract from Below", "Darkpact", "Demonic Attorney", "Jeweled Bird", "Rebirth", "Tempest Efreet", "Timmerian Fiends",0)),
+  
+  ("RuleCardLimitEach",("Amulet of Quoz","Bronze Tablet","Contract from Below","Darkpact","Demonic Attorney","Jeweled Bird","Rebirth","Tempest Efreet","Timmerian Fiends","Chaos Orb","Falling Star","Shahrazad","Ancestral Recall","Balance","Black Lotus","Crucible of Worlds","Demonic Tutor","Fastbond","Flash","Gifts Ungiven","Imperial Seal","Intuition","Library of Alexandria","Life from the Loam","Lion's Eye Diamond","Mana Crypt","Mana Vault","Mind Twist","Mox Emerald","Mox Jet","Mox Pearl","Mox Ruby","Mox Sapphire","Sensei's Divining Top","Skullclamp","Sol Ring","Stoneforge Mystic","Strip Mine","Survival of the Fittest","Time Vault","Time Walk","Timetwister","Tinker","Tolarian Academy","Umezawa's Jitte","Vampiric Tutor","Wheel of Fortune",0)),
 
   ("RuleCardLimitGeneral",1),
   ("RulePass",NULL),
 );
 
-deck_rules{"Highlander"}{"sideboard"}=(
+#############
+# PRISMATIC #
+#############
+
+deck_rules{"Prismatic"}=(,);
+
+deck_rules{"Prismatic"}{"deck"}=(
+  ("RuleDeckMinimum",(250,)),
+  ("RuleCheckExpression",("Deck must have at least 20 white cards","count('White',Attr('color',#)) >= 20")),
+  ("RuleCheckExpression",("Deck must have at least 20 blue cards","count('Blue',Attr('color',#)) >= 20")),
+  ("RuleCheckExpression",("Deck must have at least 20 black cards","count('Black',Attr('color',#)) >= 20")),
+  ("RuleCheckExpression",("Deck must have at least 20 red cards","count('Red',Attr('color',#)) >= 20")),
+  ("RuleCheckExpression",("Deck must have at least 20 green cards","count('Green',Attr('color',#)) >= 20")),
+  ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest","Snow-Covered Plains","Snow-Covered Island","Snow-Covered Swamp","Snow-Covered Mountain","Snow-Covered Forest","Relentless Rats","Shadowborn Apostle"),
+  ("RuleCardSets",("UG","UH",0)),
+
+  ("RuleCardLimitEach",("Amulet of Quoz","Bronze Tablet","Contract from Below","Darkpact","Demonic Attorney","Jeweled Bird","Rebirth","Tempest Efreet","Timmerian Fiends","Chaos Orb","Falling Star","Shahrazad","Ancestral Recall","Balance","Battle of Wits","Black Lotus","Bribery","Bringer of the Black Dawn","Buried Alive","Burning Wish","Congregation at Dawn","Crucible of Worlds","Cunning Wish","Demonic Consultation","Demonic Tutor","Detritivore","Diabolic Intent","Dust Bowl","Earthcraft","Eladamri's Call","Enlightened Tutor","Entomb","Eternal Witness","Fabricate","Fastbond","Flash","Gifts Ungiven","Glittering Wish","Grim Tutor","Hermit Druid","Idyllic Tutor","Imperial Seal","Insidious Dreams","Intuition","Library of Alexandria","Life from the Loam","Living Wish","Mana Crypt","Mana Vault","Merchant Scroll","Mox Emerald","Mox Jet","Mox Pearl","Mox Ruby","Mox Sapphire","Mystical Teachings","Mystical Tutor","Personal Tutor","Rishadan Port","Skullclamp","Sol Ring","Steelshaper's Gift","Sterling Grove","Strip Mine","Summoner's Pact","Sundering Titan","Supply // Demand","Survival of the Fittest","Sylvan Scrying","Time Walk","Timetwister","Tinker","Tolaria West","Transmute Artifact","Umezawa's Jitte","Vampiric Tutor","Wheel of Fortune","Yawgmoth's Bargain","Yawgmoth's Will",0)),
+  
+  ("RuleCardLimitGeneral",4),
+  ("RulePass",NULL),
+);
+
+deck_rules{"Prismatic"}{"sideboard"}=(
   ("RuleDeckSizes",(0,)),
   ("RulePass",NULL),
 );

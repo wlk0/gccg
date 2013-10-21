@@ -27,7 +27,7 @@ DRAFT_MAX_PRODUCTS=6;
 ANONYMOUS_IP="www.wizards.com";
 
 # Order in which bonus sets need to be filled out
-REWARD_ORDER = ("UG","UH","P1","P2","P3","S1","COM","PC2");
+REWARD_ORDER = ("UG","UH","P1","P2","P3","S1","COM","PC2","C13");
 
 if(!binary_load("products"))
 {
@@ -111,11 +111,13 @@ def EndGameHook
            InitializeReward(p);
          RewardCard(p,users{UserWithoutMode(p)}[3][0]{"reward"});
          
-         c=random(200);
-         if(c==198)
+         c=random(300);
+         if(c==297)
            RewardCard(p,"COM");
-         else if(c==199)
+         else if(c==298)
            RewardCard(p,"PC2");
+         else if(c==298)
+           RewardCard(p,"C13");
       }
     }
     c=pop();
@@ -448,11 +450,13 @@ def InitDistributions
   distribution{"AVR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"M13"}=(,);
   distribution{"M13"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
-# these nese next two sets don't actually have boosters, but the reward function needs to be able to generate them  
+# these next three sets don't actually have boosters, but the reward function needs to be able to generate them
   distribution{"COM"}=(,);
   distribution{"COM"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"PC2"}=(,);
   distribution{"PC2"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"C13"}=(,);
+  distribution{"C13"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
 
   distribution{"RTR"}=(,);
   distribution{"RTR"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
