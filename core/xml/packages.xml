@@ -314,6 +314,7 @@
 	<include dir="graphics/Mtg/Emblems"/>
 	<include file="graphics/Mtg/JitteCounter.jpg"/>
 	<include file="graphics/Mtg/StormCounter.jpg"/>
+	<include file="graphics/Mtg/PoisonCounter.jpg"/>
   </module>
   <module name="mtg-cards-001" version="15">
 	<include dir="graphics/Mtg/PM"/>

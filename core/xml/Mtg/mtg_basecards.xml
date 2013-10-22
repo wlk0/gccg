@@ -28,9 +28,9 @@
       <attr key="color" value="White"/>
       <attr key="type" value="Token"/>
     </card>
-    <card name="JitteCounter" graphics="JitteCounter.jpg" text="">
+    <card name="Jitte Counter" graphics="JitteCounter.jpg" text="">
     </card>					
-    <card name="StormCounter" graphics="StormCounter.jpg" text="">
+    <card name="Storm Counter" graphics="StormCounter.jpg" text="">
     </card>					
     <card name="Angel" graphics="Tokens/Angel44W.jpg" text="">
      <attr key="color" value="White"/>
@@ -3813,7 +3813,7 @@
     </card>
     <card name="8" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
     </card>
-    <card name="9" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
+    <card name="Poison Counter" graphics="PoisonCounter.jpg" text="">
     </card>
     <card name="1000" graphics="" text="THIS IS A FREE SLOT, USE THIS ONE AND NEVER CREATE MORE!!!">
     </card>

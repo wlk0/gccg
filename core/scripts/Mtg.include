@@ -95,6 +95,7 @@ GAME_MENU{"Main Menu - Play"}=(
  (1,"{hr}","",""),
  (1,"Play Jitte Counter","",'Send("Transfer",(1,("out.of.play",7),("play",0)))'),
  (1,"Play Storm Counter","",'Send("Transfer",(1,("out.of.play",8),("play",0)))'),
+ (1,"Play Poison Counter","",'Send("Transfer",(1,("out.of.play",999),("play",0)))'),
  (1,"{hr}","",""),
  (1,"Look at your sideboard","",'search.source=sideboard;Send("SearchDeck",sideboard)'),
  );
@@ -458,7 +459,7 @@ def DFCSubmenu
    ("{red}Tormented Pariah -> Rampaging Werewolf","",'Send("Transfer",(1,("out.of.play",142),("play",0)))'),
    ("{green}Ulvenwald Mystics -> Ulvenwald Primordials","",'Send("Transfer",(1,("out.of.play",143),("play",0)))'),
    ("{red}Village Ironsmith -> Ironfang","",'Send("Transfer",(1,("out.of.play",144),("play",0)))'),
-   ("{green}Villagers of Estwald -> Howlpack of Estwald","",'Send("Transfer",(1,("out.of.play",145),("play",0)))')
+   ("{green}Villagers of Estwald -> Howlpack of Estwald","",'Send("Transfer",(1,("out.of.play",145),("play",0)))'),
    ("{green}Wolfbitten Captive -> Krallenhorde Killer","",'Send("Transfer",(1,("out.of.play",158),("play",0)))'),
   ));
 }
