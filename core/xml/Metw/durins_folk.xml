@@ -129,14 +129,14 @@
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="site_type" value="{F}"/>
-			 <attr key="site_path" value="{w}{w}{w}"/>
+			 <attr key="site_path" value="{w}{b}{b}{w}{w}"/>
 			 <attr key="draw" value="2"/>
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Iron Hills"/>
-			 <attr key="haven" value="Rhûbar"/>
-			 <attr key="playable" value="Items (minor*) *--battle-gear items only--"/>
+			 <attr key="haven" value="Lórien"/>
+			 <attr key="playable" value="Items (minor)"/>
 			 <attr key="auto_attack" value="Dwarves -- 2 strikes with 8 prowess (detainment)"/>
-			 <attr key="special" value="If you have a Dwarf sage at this site, you may discard a Reforging from hand or the company to make hoard items playable this turn."/>
+			 <attr key="special" value="Durang is playable at this site (as if at an Under-deeps site). Reforging may be played at this site by a Dwarf sage (as if Information were playable). Both these resources may be stored here (as if at a Haven [H])."/>
 		     <attr key="keyword" value="Dwarf-hold"/>
 		</card>
 		<card name="Barak-shathur" graphics="Barakshathur2.jpg" back="1" text="">
@@ -151,7 +151,7 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Items (minor*, major*, gold ring) * --battle-gear items only--"/>
 			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 9 prowess"/>
-			 <attr key="special" value="A sage in a covert company may tap to shuffle any 1 item with the word 'Dwarf' or 'Dwarven' in its cardtext or title into play deck, from discard pile or sideboard. Tap site if untapped."/>
+			 <attr key="special" value="Once per turn, a Dwarf or sage in a covert company at this site may tap to shuffle one item with the word 'Dwarf' or 'Dwarven' in its card text or title from your discard pile or sideboard into your play deck (tap the site if untapped)."/>
 		     <attr key="keyword" value="Dwarf-hold"/>
 		</card>
 		<card name="Battle-axe of the Fallen" graphics="Battleaxe of the Fallen.jpg" text="Unique. Playable at Ruins of Belegost or Ruins of Nogrod if the company discards (for no effect) a Lost Knowledge card it controls. Weapon. Axe. Warrior only: +3 prowess to a maximum of 9. Dwarf only: +5 prowess against Spawn, Dragons and Drakes (to a maximum of 11). Dwarf-leader or Firebeard only: double the effects of The Dwarves are upon you! for Firebeard Dwarves in the company.">
@@ -405,8 +405,8 @@
 			 <attr key="region" value="Dungeon"/>
 			 <attr key="adjacent" value="Moria (5), The Under-gates (6)"/>
 			 <attr key="playable" value="Information"/>
-			 <attr key="auto_attack" value="Trap -- 2 strikes with 8 prowess"/>
-			 <attr key="special" value="Hidden site. When this site is revealed and the company does not contain a Dwarf, you must discard a Lost Knowledge card to move here. Tap a character at this site to take Ancient Stair or The Iron-pit from your sideboard to your hand."/>
+			 <attr key="auto_attack" value="Trap -- 2 strikes with 7 prowess"/>
+			 <attr key="special" value="Hidden site. Unless the company contains a Dwarf, it must discard a Lost Knowledge card it controls to reveal this site. Tap a character at this site to take one Ancient Stair, Legendary Stair, or The Iron-pit from your sideboard to your hand."/>
 			 <attr key="keyword" value="Hidden site"/>
 		</card>
 		<card name="Dwarf-chopper" graphics="Dwarfchopper.jpg" text="Unique. Weapon. Axe. Playable at Deep-cleft or any non-Darkhaven [K] Under-deeps site. +2 prowess to a maximum of 9 (+4 against Dwarves to a maximum of 10). Leader only: +2 EI against Orcs. Hurog only: tap: face a Dwarf-attack as if he were a single character company.">
@@ -919,7 +919,7 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(*)"/>
 		</card>
-		<card name="Knowledge of Earth's Treasures" graphics="Knowledge of Earths Treasures.jpg" text="Dwarf-lord specific. Playable on a Dwarf-lord bearing a Dwarven Ring. tap: during your end-of-turn phase to take an Ore card playable at your Dwarf-lord's current site from your discard pile or play deck (reshuffle) to your hand. Dwarf-lord makes a CC modified by +2. Discard this card if your Lord does not bear a Dwarven Ring. Cannot be duplicated by a given player.">
+		<card name="Knowledge of Arda's Treasures" graphics="Knowledge of Ardas Treasures.jpg" text="Dwarf-lord specific. Playable on a Dwarf-lord bearing a Dwarven Ring. tap: during your end-of-turn phase to take an Ore card playable at your Dwarf-lord's current site from your discard pile or play deck (reshuffle) to your hand. Dwarf-lord makes a CC modified by +2. Discard this card if your Lord does not bear a Dwarven Ring. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
