@@ -449,6 +449,60 @@ namespace Evaluator
 			
 	    return ret;
 	}
+
+	/// server_scripts() - Return a list of strings containing extension
+	/// scripts under scripts/Game-server or scripts/global-server directory.
+	Data server_scripts(const Data& args)
+	{
+	    if(!args.IsNull())
+		ArgumentError("server_scripts",args);
+
+	    // Search game-specific directory
+	    string file;
+	    file=CCG_DATADIR;
+	    file+="/scripts/";
+	    file+=game.Gamedir();
+	    file+="-server/";
+
+	    Data ret;
+	    ret.MakeList();
+
+	    struct dirent *e;
+	    DIR* d;
+	    string f;
+
+	    security.OpenDir(file);
+	    d=opendir(file.c_str());
+	    if(d)
+	    {
+		while((e=readdir(d)) != NULL)
+		{
+		    f=e->d_name;
+		    if(!IsDirectory(file+f))
+			ret.AddList(f);
+		}
+		closedir(d);
+	    }
+	    
+	    // Search global add-ons directory
+	    file=CCG_DATADIR;
+	    file+="/scripts/global-server/";
+
+	    security.OpenDir(file);
+	    d=opendir(file.c_str());
+	    if(d)
+	    {
+		while((e=readdir(d)) != NULL)
+		{
+		    f=e->d_name;
+		    if(!IsDirectory(file+f))
+			ret.AddList(f);
+		}
+		closedir(d);
+	    }
+			
+	    return ret;
+	}
 		
 	/// images(s) - Return a list of image numbers, which has a
 	/// card name $s$.

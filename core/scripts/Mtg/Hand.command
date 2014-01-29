@@ -30,30 +30,54 @@ def ColorCardName
 
 def CommandHand
 {
-  push(cards);
-  push(deck);
   push(i);
   push(h);
   h="{orange}Sample hand:";
-  if(length(ARG)<1) cards = 7;
-  else cards = toint(ARG[0]);
-  deck=shuffle(decks{deck.name}{"deck"});
+  if(length(ARG)<1) deckpos = HANDSIZE;
+  else deckpos = toint(ARG[0]);
+  sampledeck=shuffle(decks{deck.name}{"deck"});
   
-  if (cards > length(deck))
+  if (deckpos > length(sampledeck))
     Msg("{red}Not enough cards in the deck.");
-  else if (cards < 1)
+  else if (deckpos < 1)
     Msg("{red}Nothing to do.");
   else
   {
-    for(i)(seq(0,cards-1))
-      h=h+ColorCardName(deck[i]);
+    for(i)(deckpos)
+      h=h+ColorCardName(sampledeck[i]);
     Msg(left(h,length(h)-1)+".");
   }
   h=pop();
   i=pop();
-  deck=pop();
-  cards=pop();
+}
+
+def CommandNextcard
+{
+  push(i);
+  push(h);
+  h="{orange}You drew";
+  if(length(ARG)<1) ARG = 1;
+  else ARG = toint(ARG[0]);
+  
+  if (deckpos < 1)
+    Msg("{red}Draw a hand first.");
+  else if (deckpos + ARG > length(sampledeck))
+    Msg("{red}Not enough cards in the deck.");
+  else if (ARG < 1)
+    Msg("{red}Nothing to do.");
+  else
+  {
+    for(i)(ARG)
+      h=h+ColorCardName(sampledeck[deckpos+i]);
+    Msg(left(h,length(h)-1)+".");
+    deckpos = deckpos+ARG;
+  }
+  h=pop();
+  i=pop();
 }
 
 HELP{"any"}{"hand"}=("[n]","generate sample hand",NULL,
-"Shuffle up the deck and deal out a sample hand of {yellow}n{white} cards, for testing your deck's consistency without having to go to a table. If not specified, {yellow}n{white} is 7.");
+"Shuffle up the deck and deal out a sample hand of {yellow}n{white} cards, for testing your deck's consistency without having to go to a table. If not specified, {yellow}n{white} is 7. To deal additional cards, use {yellow}/nextcard{white}");
+
+HELP{"any"}{"nextcard"}=("[n]","draw more cards to go with sample hand",NULL,
+"After dealing out a sample hand with {yellow}/hand{white}, you can use this to draw additional cards as a continuation. If not specified, {yellow}n{white} is 1.");

@@ -232,7 +232,7 @@ Z_MBOX = 20;
 Z_DECKS = 10;
 
 # Version number of filtering algorithm.
-BOOK_FILTER_VERSION="0.10";
+BOOK_FILTER_VERSION="0.11";
 
 # Mininum binary version required to use this script.
 MINIMUM_VERSION="0.9.0";
@@ -305,6 +305,13 @@ BOOK_DEFAULT_SORT=("[age]","[name]");
 
 # Mapping from filter function names to a pair (type,short help text).
 FILTER_FUNCTIONS=(,);
+
+# Mapping from attribute types to data types:
+# if GAME_ATTRIBUTES{attr}=="i", treat as int type
+# if "r", treat as real type
+# "s" is default, for string type, and in fact string attributes need not be listed
+# It's also possible for this to contain "a:OtherAttr", in which case "attr" is treated as an alias for "OtherAttr".
+GAME_ATTRIBUTES=(,);
 
 # Common (server-side) basic table size (independent of the display size)
 BASE_TABLE_WIDTH=1024;
@@ -2753,6 +2760,7 @@ def WatchCommandInplay
 {
   push(c);
   push(m);
+  push(n);
   Msg("{orange}Cards on table:");
   for(p)(players)
   {
@@ -2762,13 +2770,15 @@ def WatchCommandInplay
     {
       if(m!="")
         m=m+", ";
-      if(count(first(c),c) > 1)
-        m=m+count(first(c),c)+"x ";
+      n=count(first(c),c);
+      if(n > 1)
+        m=m+n+"x ";
       m=m+first(c);
-      c=tail(c);
+      c=right(c,length(c)-n);
     }
-    Msg("{green}Player "+p+":{white} "+m);
+    Msg("{green}"+player.name{p}+":{white} "+m);
   }
+  n=pop();
   m=pop();
   c=pop();
 }
@@ -3003,11 +3013,13 @@ def CommandSelect
 }
 
 HELP{"any"}{"sort"}=("[n],k1,k2,...","sort display",NULL,
-"Sort the current collection view according to one or more sort keys {yellow}k1{white}, {yellow}k2{white}, etc. Each key is one of the following: name of the card attribute, {green}age{white} as age of the set, {green}name{white} as name of the card, or {green}set{white} as name of the set card belongs. The valid card attributes are "+
+"Sort the collection view according to one or more sort keys {yellow}k1{white}, {yellow}k2{white}, etc. Each key can be: a card attribute, {green}age{white} as age of the set, {green}name{white} as name of the card, or {green}set{white} as name of the set.\n"+
+"The valid card attributes are "+
 
 join(forall('"{green}"+#+"{white}"',head(attributes())),", ")+" and {green}"+last(attributes())
 
-+"{white}. By default, the value of the key {yellow}k1{white} is taken as subtitles for the display. You can discard all subtitles by giving an optional argument {yellow}n{white} with value {green}0{white}. A positive value {yellow}n{white} adds more levels to the subtitle resolution. See also {orange}/help select{white} and {orange}/help display{white}.");
++"{white}.\nBy default, the value of the key {yellow}k1{white} is taken as subtitles for the display. You can discard all subtitles by giving an optional argument {yellow}n{white} with value {green}0{white}. A positive value {yellow}n{white} adds more levels to the subtitle resolution.\n"+
+"You can also put a {yellow}#{white} character in front of a sort key to treat values as numbers instead of text (for example, a value of {yellow}9{white} will come earlier than {yellow}10{white}), or a {yellow}-{white} sign to sort in reverse order. See also {orange}/help select{white} and {orange}/help display{white}.");
 
 #
 # CommandSort() - Implementation of /sort command.
@@ -9953,7 +9965,7 @@ def AvatarRecalcTable
     xy=TableCoord(ARG);
     x1=(image_width(table.image)+w(10))*xy[0]+w(20);
     x2=x1+image_width(table.image)-1;
-    y=(image_height(table.image)+h(10))*xy[1]+h(270+image_height(table.image)-h(45));
+    y=(image_height(table.image)+h(10))*xy[1]+h(270+image_height(table.image)-h(42));
     d=(x2-x1+1)/(length(room.tables{ARG}[2])+1);
 
     for(p)(room.tables{ARG}[2])
@@ -10432,14 +10444,48 @@ def String2Sorting
 #
 def str2sorting
 {
+  strprefix="";
+  push(s);
+  push(t);
+  t=1;
+  while(t)
+  {
+    s=first(ARG);
+    if(s=='-' || s=='!')
+    {
+      strprefix=strprefix+'-';
+      ARG=substr(ARG,1);
+    }
+    else if(s=='#')
+    {
+      strprefix=strprefix+'N';
+      ARG=substr(ARG,1);
+    }
+    else if(s=='*')
+    {
+      strprefix=strprefix+'C';
+      ARG=substr(ARG,1);
+    }
+    else t=0;
+  }
+  ARG=lc(ARG);
+  
   if(ARG=="age")
-    return("[age]");
+    return(strprefix+"[age]");
   else if(ARG=="set")
-    return("[set]");
+    return(strprefix+"[set]");
   else if(ARG=="name")
-    return("[name]");
-  else if(count(lc(ARG),attributes()))
-    return("["+lc(ARG)+"]");
+    return(strprefix+"[name]");
+  else if(count(ARG,attributes()))
+    return(strprefix+"["+ARG+"]");
+  else if(has_entry(ARG,GAME_ATTRIBUTES))
+  {
+    ARG=GAME_ATTRIBUTES{ARG};
+    if(left(ARG,2)=="a:")
+      return(strprefix+"["+substr(ARG,2)+"]");
+  }
+  s=pop();
+  t=pop();
 }
 
 #
@@ -10590,11 +10636,23 @@ def str2filter_exp
     return(str2filter_join(e,"&&"));
   else
   {
-    e=str2filter_split(ARG," or ","str2filter_rel");
+    e=str2filter_split(ARG,"&&","str2filter_rel");
     if(e!=NULL)
-      return(str2filter_join(e,"||"));
+      return(str2filter_join(e,"&&"));
     else
-      return(str2filter_rel(ARG));
+    {
+      e=str2filter_split(ARG," or ","str2filter_rel");
+      if(e!=NULL)
+        return(str2filter_join(e,"||"));
+      else
+      {
+        e=str2filter_split(ARG,"||","str2filter_rel");
+        if(e!=NULL)
+          return(str2filter_join(e,"||"));
+        else
+          return(str2filter_rel(ARG));
+      }
+    }
   }
   e=pop();
 }
@@ -10606,37 +10664,37 @@ def str2filter_exp
 def str2filter_rel
 {
   push(e);
-  e=str2filter_split(ARG,">=","str2filter_sum");
+  e=str2filter_split(ARG,">=","str2filter_bits");
   if(e!=NULL)
     return(str2filter_join(str2filter_typeconvert(e),">="));
   else 
   {
-    e=str2filter_split(ARG,"<=","str2filter_sum");
+    e=str2filter_split(ARG,"<=","str2filter_bits");
     if(e!=NULL)
       return(str2filter_join(str2filter_typeconvert(e),"<="));
     else
     {
-      e=str2filter_split(ARG,"!=","str2filter_sum");
+      e=str2filter_split(ARG,"!=","str2filter_bits");
       if(e!=NULL)
         return(str2filter_join(str2filter_typeconvert(e),"!="));
       else
       {
-        e=str2filter_split(ARG,"=","str2filter_sum");
+        e=str2filter_split(ARG,"=","str2filter_bits");
         if(e!=NULL)
           return(str2filter_join(str2filter_typeconvert(e),"=="));
         else
         {
-          e=str2filter_split(ARG,"<","str2filter_sum");
+          e=str2filter_split(ARG,"<","str2filter_bits");
           if(e!=NULL)
             return(str2filter_join(str2filter_typeconvert(e),"<"));
           else
           {
-            e=str2filter_split(ARG,">","str2filter_sum");
+            e=str2filter_split(ARG,">","str2filter_bits");
             if(e!=NULL)
               return(str2filter_join(str2filter_typeconvert(e),">"));
             else
             {
-              e=str2filter_split(ARG," has ","str2filter_sum");
+              e=str2filter_split(ARG," has ","str2filter_bits");
               if(e!=NULL)
               {
                 e=str2filter_typetostring(e);
@@ -10644,7 +10702,7 @@ def str2filter_rel
                 return("find(lc("+e[1][0]+"),lc("+e[0][0]+"))!=NULL","s");
               }
               else
-                return(str2filter_sum(ARG));
+                return(str2filter_bits(ARG));
             }
           }
         }
@@ -10652,6 +10710,33 @@ def str2filter_rel
     }
   }
 
+  e=pop();
+}
+
+#
+# str2filter_bits(string) - Helper function for String2Filter().
+#  Parse bitwise expression.
+#
+def str2filter_bits
+{
+  push(e);
+  e=str2filter_split(ARG,"&","str2filter_bits");
+  if(e!=NULL)
+    return(str2filter_join(str2filter_typeconvert(e),"&"));
+  else
+  {
+    e=str2filter_split(ARG,"|","str2filter_bits");
+    if(e!=NULL)
+      return(str2filter_join(str2filter_typeconvert(e),"|"));
+    else
+    {
+      e=str2filter_split(ARG,"^","str2filter_bits");
+      if(e!=NULL)
+        return(str2filter_join(str2filter_typeconvert(e),"^"));
+      else
+        return(str2filter_sum(ARG));
+    }
+  }
   e=pop();
 }
 
@@ -10739,7 +10824,46 @@ def str2filter_atom
       return(a,"s");
   }
   else if(count(lc(a),attributes()))
-    return("Attr('"+lc(a)+"',#)","s");
+  {
+    a=lc(a);
+    push(b);
+    if(has_entry(a,GAME_ATTRIBUTES))
+    {
+      b=GAME_ATTRIBUTES{a};
+      if(b=="i")
+        return("toint(Attr('"+a+"',#))","s");
+      else if(b=="r")
+        return("toreal(Attr('"+a+"',#))","s");
+      else
+        return("Attr('"+a+"',#)","s");
+    }
+    else
+      return("Attr('"+a+"',#)","s");
+    
+    b=pop();
+  }
+  else if(has_entry(a,GAME_ATTRIBUTES))
+  {
+    push(b);
+    b=GAME_ATTRIBUTES{a};
+    if(left(b,2)=="a:")
+    {
+      a=substr(b,2);
+      b="s";
+      if(has_entry(a,GAME_ATTRIBUTES))
+        b=GAME_ATTRIBUTES{a};
+      if(b=="i")
+        return("toint(Attr('"+a+"',#))","s");
+      else if(b=="r")
+        return("toreal(Attr('"+a+"',#))","s");
+      else
+        return("Attr('"+a+"',#)","s");
+    }
+    else
+      Msg({red}Invalid attribute definition '"+b+"'.");
+    
+    b=pop();
+  }
   else if(count(lc(a),keys(FILTER_FUNCTIONS)))
     return("filter_"+lc(a)+"(#)",FILTER_FUNCTIONS{lc(a)}[0]);
   else if(left(a,6) == "pwant(" && right(a,1) == ")") {

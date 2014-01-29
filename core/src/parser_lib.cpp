@@ -1073,6 +1073,8 @@ namespace Evaluator
 				s+=j;
 			if((*L)[i].IsString())
 				s+=(*L)[i].String();
+			else if((*L)[i].IsInteger() || (*L)[i].IsReal())
+				s+=(tostr((*L)[i])).String();
 			else
 				ArgumentError("join",arg);
 		}

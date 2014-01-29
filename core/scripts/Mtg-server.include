@@ -20,7 +20,7 @@ port=29200;
 meta.port=29100;
 
 if(meta.server=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
-  meta.server="gccgcentral.bornano.fr";
+  meta.server="gccg.bornano.fr";
 
 #
 # GAME SPECIFIC FUNCTIONS
@@ -235,6 +235,12 @@ def UploadDeckHook
       "{green}The Hydra always goes last in the turn order. At the beginning of its main phase, it casts the top card of its deck (if it's a sorcery, players make all choices for it). At the beginning of its end step, it deals 1 damage to each player for each regular head, and 2 damage for each elite head.\n"+
       "{yellow}Players can attack heads with creatures, or target them with other spells. Whenever a head dies, reveal the top two cards of the hydra deck. Any heads go to the battlefield to replace the fallen one, and any sorceries go to the graveyard without being cast.\n"+
       "{green}At the beginning of each end step, if there are no Heads on the battlefield, the Hydra is defeated! Good luck!");
+    else if(max(haschallenge)>839 && max(haschallenge)<853)
+      SendAll("Message","{red}Bring up to three Hero cards with you to battle the Horde!\n"+
+      "{orange}Start by taking three turns, then the Horde takes its first turn. Proceed with normal turn order thereafter.\n"+
+      "{red}At the beginning of the Horde's main phase, it casts the top two cards of its deck (if it's a sorcery, players make all choices for it). Artifacts may allow it to cast additional cards, so watch out!\n"+
+      "{orange}You can attack and target the Horde as though it were a player. Anything that would cause the Horde to lose life, instead puts that many cards from the top of its deck into its graveyard.\n"+
+      "{red}If the Horde controls no creatures AND there are no cards left in its deck, you win! Good luck!");
     
     if(players_wanted>2)
       i=sum(hasscheme);

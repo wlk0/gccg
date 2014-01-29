@@ -2,6 +2,10 @@
 # VARIABLES
 # =========
 
+#these exist so the format filters don't get clogged with page after page of basic lands from early sets
+MIN_STANDARD_AGE=81;
+MIN_MODERN_AGE=42;
+
 # Size of columns of the decklist in pixels.
 DECKBOX_SIZE=(20,225,120);
 # Number of cards in hand.
@@ -11,7 +15,7 @@ STRING_KEEP_TAPPED="{T}";
 # keep-untapped text
 STRING_KEEP_UNTAPPED="{UT}";
 # minor version number for filter algorithm
-BOOK_FILTER_VERSION_MINOR=".27";
+BOOK_FILTER_VERSION_MINOR=".1";
 # Default export format.
 DEFAULT_EXPORT_FORMAT="Gccg";
 # default book sorting criteria.
@@ -20,7 +24,7 @@ BOOK_DEFAULT_SORT=("[age]","[color]","[name]");
 imprint=0;
 # Servers
 if(server.name=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
-  server.name="gccgcentral.bornano.fr";
+  server.name="gccg.bornano.fr";
 
 # lobby background color
 BGCOLOR=(98,52,23);
@@ -108,7 +112,8 @@ GAME_MENU{"Tap a card"}=(
  (1,"Tap/Untap","middle click",""),
  (1,"Tap and keep tapped","","SetStayTapped()"),
  (1,"Keep untapped","","SetStayUntapped()"),
- (1,"Flip","",'Send("Rotate",(object.number,((card_data(object.number))[1]+180)%360))'),
+ (1,"Turn around","",'Send("Rotate",(object.number,((card_data(object.number))[1]+180)%360))'),
+ (1,"Flip over","Ctrl+F",""),
 );
 
 GAME_MENU{"A Card"}=(
@@ -145,14 +150,24 @@ FILTER_OPTIONS=(
  ("Vintage Restricted","TypeRestricted('Vintage',#)",(1,"[age]","[color]","[name]")),
  ("Legacy Banned","!TypeLegal('Legacy',#)",(1,"[age]","[color]","[name]")),
  ("Commander Banned","!TypeLegal('Commander',#)",(1,"[age]","[color]","[name]")),
- ("Highlander Banned","!TypeLegal('Highlander',#)",(1,"[age]","[color]","[name]")),
- ("Modern Legal","TypeLegal('Modern',#)",(1,"[age]","[color]","[name]")),
- ("Standard Legal","TypeLegal('Standard',#)",(1,"[age]","[color]","[name]"))
+ ("Modern Legal","TypeLegal('Modern',#)&&age(#)>=MIN_MODERN_AGE",(1,"[age]","[color]","[name]")),
+ ("Standard Legal","TypeLegal('Standard',#)&&age(#)>=MIN_STANDARD_AGE",(1,"[age]","[color]","[name]"))
 );
 
 FILTER_FUNCTIONS=(,);
-FILTER_FUNCTIONS{"mana"}=("i","converted mana cost");
+#FILTER_FUNCTIONS{"mana"}=("i","converted mana cost");
 FILTER_FUNCTIONS{"pt"}=("s","power and toughness");
+
+GAME_ATTRIBUTES=(,);
+GAME_ATTRIBUTES{"power"}="i";
+GAME_ATTRIBUTES{"p"}="a:power";
+GAME_ATTRIBUTES{"toughness"}="i";
+GAME_ATTRIBUTES{"t"}="a:toughness";
+GAME_ATTRIBUTES{"cmc"}="i";
+GAME_ATTRIBUTES{"mana"}="a:cmc";
+GAME_ATTRIBUTES{"cn"}="i";
+GAME_ATTRIBUTES{"permanent"}="i";
+GAME_ATTRIBUTES{"coloridentity"}="i";
 
 # FILTERS
 # =======
@@ -160,32 +175,33 @@ FILTER_FUNCTIONS{"pt"}=("s","power and toughness");
 #
 # mana(cost string) - Helper function to filter_mana(). Return the
 #   converted mana cost for a single cost string.
+# No longer needed, CMC is now included as a primitive in card data.
 #
-def mana
-{
-  return(sum(forall("toint(#)",split(strreplace(tr(ARG,"RGBUW","1.0"),"21.0","2"),"{"))));
-}
+#def mana
+#{
+#  return(sum(forall("toint(#)",split(strreplace(tr(ARG,"RGBUW","1.0"),"21.0","2"),"{"))));
+#}
 
 #
 # filter_mana(card number) - Return converted mana cost of the card.
 #
-def filter_mana
-{
-  if((c=Attr("cost",ARG)) == "")
-    return(0);
-  else
-    return(min(apply("mana",split(c,"//"))));
-}
+#def filter_mana
+#{
+#  if((cmc=Attr("cost",ARG)) == "")
+#    return(0);
+#  else
+#    return(min(apply("mana",split(cmc,"//"))));
+#}
 
 #
 # filter_pt(card number) - Return slash-separated power and toughness.
 #
 def filter_pt
 {
-  if((c=Attr("power",ARG)+"/"+Attr("toughness",ARG)) == "/")
+  if((pt=Attr("power",ARG)+"/"+Attr("toughness",ARG)) == "/")
     return("");
   else
-    return(c);
+    return(pt);
 }
 
 # FUNCTIONS
@@ -239,7 +255,7 @@ def InitializeHook
     book_set_page(schemes.book,0);
     
     challenge.book=create_book(w(70),h(215),obj=obj+1,"Hero's Path",3,5,800);
-    book_set_index(challenge.book,("Heroes",)+seq(801,807)+("Hydra",)+seq(822,836));
+    book_set_index(challenge.book,("Heroes",)+seq(801,814)+("Hydra",)+seq(822,836)+("Horde",)+seq(838,852));
     set_attr(challenge.book,"ontop",Z_COLLECTION);
     set_bgcolor(challenge.book,BKBGCOLOR);
     set_fgcolor(challenge.book,COLORS{'GREEN'});
@@ -265,7 +281,10 @@ def StartGame
   Send("UploadDeck",decks{deck.name});
   Send("ShuffleDeck",deck);
   if(has_entry('exile',decks{deck.name}))
-    Send("Score",(me,toint(score[me])*2));
+  {
+    if(min(decks{deck.name}{'exile'})>822)
+      Send("Score",(me,toint(score[me])*2));
+  }
 }
 
 #
@@ -471,6 +490,7 @@ def EmblemSubmenu
   ("Elspeth, Knight-Errant","",'Send("Transfer",(1,("out.of.play",167),("play",0)))'),
   ("Elspeth, Sun's Champion","",'Send("Transfer",(1,("out.of.play",199),("play",0)))'),
   ("Garruk, Caller of Beasts","",'Send("Transfer",(1,("out.of.play",191),("play",0)))'),
+  ("Kiora, the Crashing Wave","",'Send("Transfer",(1,("out.of.play",200),("play",0)))'),
   ("Koth of the Hammer","",'Send("Transfer",(1,("out.of.play",168),("play",0)))'),
   ("Liliana of the Dark Realms","",'Send("Transfer",(1,("out.of.play",175),("play",0)))'),
   ("Sorin, Lord of Innistrad","",'Send("Transfer",(1,("out.of.play",169),("play",0)))'),
@@ -534,6 +554,7 @@ def TokenSubmenuB
    ("Bird 1/1 (UW, flying)","",'Send("Transfer",(1,("out.of.play",17),("play",0)))'),
    ("Bird 1/1 (W, flying)","",'Send("Transfer",(1,("out.of.play",18),("play",0)))'),
    ("Bird 2/2 (U, flying)","",'Send("Transfer",(1,("out.of.play",192),("play",0)))'),
+   ("Bird 2/2 (U, flying, enchantment)","",'Send("Transfer",(1,("out.of.play",203),("play",0)))'),
    ("Bird 3/3 (W, flying)","",'Send("Transfer",(1,("out.of.play",112),("play",0)))'),
    ("Bird Soldier 1/1 (W, flying)","",'Send("Transfer",(1,("out.of.play",19),("play",0)))'),
    ("Boar 2/2 (G)","",'Send("Transfer",(1,("out.of.play",193),("play",0)))'),
@@ -547,8 +568,10 @@ def TokenSubmenuC
    ("Cat 1/1 (R)","",'Send("Transfer",(1,("out.of.play",20),("play",0)))'),
    ("Cat 2/1 (B)","",'Send("Transfer",(1,("out.of.play",21),("play",0)))'),
    ("Cat 2/2 (W)","",'Send("Transfer",(1,("out.of.play",113),("play",0)))'),
+   ("Cat Soldier 1/1 (W, vigilance)","",'Send("Transfer",(1,("out.of.play",201),("play",0)))'),
    ("Centaur 3/3 (G)","",'Send("Transfer",(1,("out.of.play",22),("play",0)))'),
    ("Centaur 3/3 (G, protection from black)","",'Send("Transfer",(1,("out.of.play",182),("play",0)))'),
+   ("Centaur 3/3 (G, enchantment)","",'Send("Transfer",(1,("out.of.play",207),("play",0)))'),
    ("Cleric 1/1 (BW, reanimation)","",'Send("Transfer",(1,("out.of.play",183),("play",0)))'),
    ("Cleric 2/1 (W, enchantment)","",'Send("Transfer",(1,("out.of.play",194),("play",0)))'),
    ("Construct 6/12 (C, trample)","",'Send("Transfer",(1,("out.of.play",100),("play",0)))'),
@@ -579,6 +602,7 @@ def TokenSubmenuE
    ("Elemental 1/0 (U)","",'Send("Transfer",(1,("out.of.play",195),("play",0)))'),
    ("Elemental 1/1 (R, haste)","",'Send("Transfer",(1,("out.of.play",29),("play",0)))'),
    ("Elemental 2/2 (U, flying)","",'Send("Transfer",(1,("out.of.play",30),("play",0)))'),
+   ("Elemental 3/1 (R, haste, enchantment)","",'Send("Transfer",(1,("out.of.play",206),("play",0)))'),
    ("Elemental 3/1 (R, haste)","",'Send("Transfer",(1,("out.of.play",31),("play",0)))'),
    ("Elemental 3/3 (R)","",'Send("Transfer",(1,("out.of.play",32),("play",0)))'),
    ("Elemental 4/4 (G)","",'Send("Transfer",(1,("out.of.play",33),("play",0)))'),
@@ -622,6 +646,7 @@ def TokenSubmenuG
    ("Goblin Rogue 1/1 (B)","",'Send("Transfer",(1,("out.of.play",50),("play",0)))'),   
    ("Goblin Soldier 1/1 (RW)","",'Send("Transfer",(1,("out.of.play",51),("play",0)))'),
    ("Goblin Warrior 1/1 (GR)","",'Send("Transfer",(1,("out.of.play",52),("play",0)))'),
+   ("Gold (A)","",'Send("Transfer",(1,("out.of.play",208),("play",0)))'),
    ("Golem 3/3 (A)","",'Send("Transfer",(1,("out.of.play",104),("play",0)))'),
    ("Golem 9/9 (A)","",'Send("Transfer",(1,("out.of.play",105),("play",0)))'),
    ("Griffin 2/2 (W, flying)","",'Send("Transfer",(1,("out.of.play",116),("play",0)))'),
@@ -666,7 +691,8 @@ def TokenSubmenuK
    ("Kithkin Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",60),("play",0)))'),   
    ("Knight 2/2 (W, first strike)","",'Send("Transfer",(1,("out.of.play",61),("play",0)))'),
    ("Knight 2/2 (W, vigilance)","",'Send("Transfer",(1,("out.of.play",179),("play",0)))'),
-   ("Kor Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",119),("play",0)))'),   
+   ("Kor Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",119),("play",0)))'),
+   ("Kraken 9/9 (U)","",'Send("Transfer",(1,("out.of.play",204),("play",0)))'),
   ));
 }
 
@@ -735,6 +761,7 @@ def TokenSubmenuS
    ("Soldier 1/1 (RW)","",'Send("Transfer",(1,("out.of.play",186),("play",0)))'),
    ("Soldier 1/1 (R)","",'Send("Transfer",(1,("out.of.play",198),("play",0)))'),
    ("Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",79),("play",0)))'),
+   ("Soldier 1/1 (W, enchantment)","",'Send("Transfer",(1,("out.of.play",202),("play",0)))'),
    ("Soldier Ally 1/1 (W)","",'Send("Transfer",(1,("out.of.play",110),("play",0)))'),
    ("Spawn 2/2 (A)","",'Send("Transfer",(1,("out.of.play",80),("play",0)))'),
    ("Spider 1/2 (G, reach)","",'Send("Transfer",(1,("out.of.play",81),("play",0)))'),
@@ -801,6 +828,7 @@ def TokenSubmenuZ
   Submenu("Select Token",(
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
    ("Zombie 2/2 (B)","",'Send("Transfer",(1,("out.of.play",98),("play",0)))'),
+   ("Zombie 2/2 (B, enchantment)","",'Send("Transfer",(1,("out.of.play",205),("play",0)))'),
    ("Zombie Giant 5/5 (B)","",'Send("Transfer",(1,("out.of.play",125),("play",0)))'),
    ("Zombie Wizard 1/1 (BU)","",'Send("Transfer",(1,("out.of.play",99),("play",0)))'),
   ));
@@ -1556,7 +1584,7 @@ def EditAddHook
       deck.addpart="exile";
     }
   }
-  else if(cn>821 && cn<837)
+  else if(cn>821 && cn<853)
   {
     CheckDeckPart("challenge");
     deck.addpart="challenge";
@@ -1624,7 +1652,7 @@ def PlayCard
   a=1;
   if(options{"playtograve"}=="on")
   {
-    if(imprint<=0 && !ARG[1] && (find("Instant",Attr("type",ARG[0]))!=NULL || find("Sorcery",Attr("type",ARG[0]))!=NULL))
+    if(imprint<=0 && !ARG[1] && Attr("permanent",ARG[0])==0)
     {
       Send("Transfer",(1,("play",ARG[0],0),("deck.top",discard)));
       a=0;
@@ -1681,19 +1709,25 @@ rules.category=(
 	'imprint==1','("attach","imprint")'
   ),
   (
-	'findspace.facedown','("permanent","")'
+	'findspace.facedown','("permanent",current_time())'
   ),
   (
 	'type==NULL','("permanent","")'
   ),
   (
-	'find("Instant",type)!=NULL || find("Sorcery",type)!=NULL','("spell","")'
+	'permanent==0 && card>821 && card<853','("ospell","")'
+  ),
+  (
+	'permanent==0','("spell","")'
   ),
   (
 	'find("Land",type)!=NULL','("land",name(card))'
   ),
   (
 	'type=="World Enchantment"','("wenchantment",name(card))'
+  ),
+  (
+	'card>821 && card<853','("opermanent",name(card))'
   ),
   (
 	'1','("permanent",name(card))'
@@ -1738,12 +1772,20 @@ rules.coordinate=(
      (("StacksByGroup",90,8,6,12,card.xstep+10,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
+  (("opermanent",),(
+     (("StacksByGroup",90,-card.ystep-64,6,12,card.xstep+10,0),),
+     (("AutoRaiseGroupTail","yes"),)
+  )),
   (("wenchantment",),(
      (("StacksByGroup",8*(card.xstep+10),12,6,12,card.xstep+10,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("spell",),(
      (("StacksByGroup",5*(card.xstep),36,24,0,0,0),),
+     (("AutoRaiseGroupTail","yes"),)
+  )),
+  (("ospell",),(
+     (("StacksByGroup",5*(card.xstep),-card.ystep-64,24,0,0,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("attach",),(

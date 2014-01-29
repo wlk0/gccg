@@ -924,7 +924,7 @@ namespace Evaluator
 		    else
 			ret=Data((int)(ret < e));
 		}
-		else if(op=='>')	
+		else if(op=='>')
 		{
 		    if(eq)
 			ret=Data((int)!(ret < e));
@@ -932,7 +932,7 @@ namespace Evaluator
 			ret=Data((int)(e < ret));
 		}
 		else
-		    throw LangErr("Parser<Application>::EvalRelation(string&)","Invalid relation");
+		    throw LangErr("Parser<Application>::EvalRelation(string&)","Invalid relation "+string(_src));
 			
 		EatWhiteSpace(src);
 	    }

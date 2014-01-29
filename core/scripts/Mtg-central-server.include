@@ -116,7 +116,7 @@ def EndGameHook
            RewardCard(p,"COM");
          else if(c==298)
            RewardCard(p,"PC2");
-         else if(c==298)
+         else if(c==299)
            RewardCard(p,"C13");
       }
     }
@@ -471,6 +471,8 @@ def InitDistributions
   distribution{"M14"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"THS"}=(,);
   distribution{"THS"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"BNG"}=(,);
+  distribution{"BNG"}{"booster"}=((1,"THS/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
 }
 
 #

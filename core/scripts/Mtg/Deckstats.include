@@ -12,12 +12,12 @@ def CountAttr
 
 def CountMtgManaEqual
 {
-  return(length(select("filter_mana(#) == ARG[1]",ARG[0])));
+  return(length(select("toint(Attr('cmc',#)) == ARG[1]",ARG[0])));
 }
 
 def CountMtgManaGreater
 {
-  return(length(select("filter_mana(#) > ARG[1]",ARG[0])));
+  return(length(select("toint(Attr('cmc',#)) > ARG[1]",ARG[0])));
 }
 
 def MtgAverageMana
@@ -25,5 +25,5 @@ def MtgAverageMana
   if(length(ARG)==0)
     return(0);
   else
-    return(toreal(sum(forall("filter_mana(#)",ARG))) / length(ARG));
+    return(toreal(sum(forall("toint(Attr('cmc',#))",ARG))) / length(ARG));
 }

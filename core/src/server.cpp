@@ -935,7 +935,9 @@ int main(int argc,const char** argv)
 		security.AllowWriteFile("./vardump");
 		security.AllowOpenDir(CCG_DATADIR"/scripts");
 		security.AllowOpenDir(CCG_DATADIR"/scripts/global");
-		security.AllowOpenDir(CCG_DATADIR"/scripts/"+Database::game.Gamedir());
+		security.AllowOpenDir(CCG_DATADIR"/scripts/global-server");
+		security.AllowOpenDir(CCG_DATADIR"/scripts/"+Database::game.Gamedir());	
+		security.AllowOpenDir(CCG_DATADIR"/scripts/"+Database::game.Gamedir()+"-server");
 		security.AllowOpenDir(CCG_SAVEDIR"/"+Database::game.Gamedir()+"/users-db");
 
 		if(options.find("rules")!=options.end())
