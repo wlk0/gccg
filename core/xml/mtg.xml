@@ -89,6 +89,8 @@
   <cardset source="mod.xml"/>
   <cardset source="m14.xml"/>
   <cardset source="ths.xml"/>
+  <cardset source="c13.xml"/>
+  <cardset source="bng.xml"/>
 
   <image file="b.png" tag="{B}"/>
   <image file="g.png" tag="{G}"/>
@@ -259,6 +261,10 @@
   <option name="Green Red White text" value="{gold}"/>
   <option name="Green White text" value="{gold}"/>
   <option name="Red White text" value="{gold}"/>
+
+  <option name="Hero text" value="{gold}"/>
+  <option name="Hydra text" value="{green}"/>
+  <option name="Horde text" value="{red}"/>
 
   <trigger event="location hint" attribute="type"/>
   <trigger event="location hint" attribute="color"/>

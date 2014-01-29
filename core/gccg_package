@@ -777,7 +777,7 @@ sub install_modules
 		else
 		{
 			print "Module $_ is already up-to-date; skipping...\n"
-				."     (use './gccg_package reinstall $_' to force)";
+				."     (use './gccg_package reinstall $_' to force)\n";
 		}
 	}
 	

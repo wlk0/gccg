@@ -116,9 +116,7 @@ def CreateTypeLegalTable
         s=(,);
   
         for(c)(head(r[1]))
-        {
           s=s+seq(tail(set_data(c)));
-        }
         
         for(c)(s)
           TYPE_LEGAL{ARG}[c]=last(r[1]);
@@ -135,8 +133,9 @@ def CreateTypeLegalTable
       }
       else if(r[0]=="RuleCardLimitAny")
       {
-        for(c)(images(r[1]))
-          TYPE_LEGAL{ARG}[c]=999;
+        for(s)(tail(r))
+          for(c)(images(s))
+            TYPE_LEGAL{ARG}[c]=999;
       }
       else if(r[0]=="RuleLimitEachByExpression")
 # || (r[0]=="RuleLimitByExpression" && r[1][0] < 2))

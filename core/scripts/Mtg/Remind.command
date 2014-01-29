@@ -20,7 +20,7 @@ MTG_KEYWORDS{''}="{green}List of available keywords\n
 {yellow}F: {white}Fading, Fateful Hour, Fateseal, Fear, Fight, First Strike, Flanking, Flash, Flashback, Flying, Forecast, Fortify, Fuse, Frenzy.\n
 {yellow}G: {white}Graft, Grandeur, Gravestorm.\n
 {yellow}H: {white}Haste, Haunt, Hellbent, Heroic, Hexproof, Hideaway, Horsemanship.\n
-{yellow}I: {white}Imprint, Indestructible, Infect, Intimidate.\n
+{yellow}I: {white}Imprint, Indestructible, Infect, Inspired, Intimidate.\n
 {yellow}J: {white}Join Forces.\n
 {yellow}K: {white}Kicker, Kinship.\n
 {yellow}L: {white}Landfall, Landwalk, Level Up, Lifelink, Living Weapon.\n
@@ -30,7 +30,7 @@ MTG_KEYWORDS{''}="{green}List of available keywords\n
 {yellow}P: {white}Persist, Phasing, Poisonous, Populate, Proliferate, Protection, Provoke, Prowl.\n
 {yellow}R: {white}Radiance, Rampage, Reach, Rebound, Recover, Regenerate, Reinforce, Replicate, Retrace, Ripple.\n
 {yellow}S: {white}Sacrifice, Scavenge, Scry, Shadow, Shroud, Soulbond, Soulshift, Splice, Split Second, Storm, Sunburst, Suspend, Sweep.\n
-{yellow}T: {white}Tap, Threshold, Trample, Transfigure, Transmute, Totem Armor, Typecycling.\n
+{yellow}T: {white}Tap, Threshold, Trample, Transfigure, Transmute, Tribute, Totem Armor, Typecycling.\n
 {yellow}U: {white}Undying, Unearth, Unleash, Untap.\n
 {yellow}V: {white}Vanishing, Vigilance.\n
 {yellow}W: {white}Wither.\n
@@ -69,7 +69,7 @@ MTG_KEYWORDS{'deathtouch'}="{yellow}Deathtouch{white} is a static ability. Any n
 MTG_KEYWORDS{'defender'}="{yellow}Defender{white} is a static ability. A creature with defender can't attack.";
 MTG_KEYWORDS{'delve'}="{yellow}Delve{white} is a static ability which means \"For each generic mana in this spell's total cost, you may exile a card from your graveyard rather than pay that mana.\"";
 MTG_KEYWORDS{'detain'}="When you \"{yellow}detain{white}\" a permanent, it means that until the start of your next turn, that permanent can't attack or block, and its activated abilities can't be activated.";
-MTG_KEYWORDS{'devotion'}="If an effect asks for your {yellow}devotion{white} to a color, look in the mana costs of permanents you control and count the number of mana symbols of that color. The total result is your devotion. Hybrid ({WU}) and Phyrexian ({WP}) mana symbols with the correct color still count.";
+MTG_KEYWORDS{'devotion'}="If an effect asks for your {yellow}devotion{white} to a color, look in the mana costs of permanents you control and count the number of mana symbols of that color. The total result is your devotion. Hybrid ({WU}) and Phyrexian ({WP}) mana symbols with the correct color still count. If an effect looks for devotion to two colors at once, hybrid mana symbols only count once, even if they have both colors correct.";
 MTG_KEYWORDS{'devour'}="{yellow}Devour{white} is a static ability. \"Devour N\" means \"As this object enters the battlefield, you may sacrifice any number of creatures. This permanent enters the battlefield with N +1/+1 counters on it for each creature sacrificed this way.\"";
 MTG_KEYWORDS{'domain'}="{yellow}Domain{white} is an ability word related to counting basic land types. The term itself has no rules meaning.";
 MTG_KEYWORDS{'double strike'}="{yellow}Double strike{white} is a static ability. If at least one attacking or blocking creature has first strike or double strike as the combat damage step begins, the only creatures that assign combat damage in that step are those with first strike or double strike. After that step, instead of proceeding to the end of combat step, the phase gets a second combat damage step. The only creatures that assign combat damage in that step are the remaining attackers and blockers that had neither first strike nor double strike as the first combat damage step began, as well as the remaining attackers and blockers that currently have double strike. After that step, the phase proceeds to the end of combat step.";
@@ -111,6 +111,7 @@ MTG_KEYWORDS{'horsemanship'}="{yellow}Horsemanship{white} is a static ability. A
 MTG_KEYWORDS{'imprint'}="{yellow}Imprint{white} is an ability word that deals with exiling one or more cards and looking at their characteristics. The term itself has no rules meaning.";
 MTG_KEYWORDS{'indestructible'}="{yellow}Indestructible{white} is a static ability. A permanent with indestructible can't be destroyed, and if it's a creature, it doesn't get checked for lethal damage. Other effects (such as sacrificing it or reducing its toughness to 0) can still cause it to go to the graveyard.";
 MTG_KEYWORDS{'infect'}="{yellow}Infect{white} is a static ability. Damage dealt to a player by a source with infect doesn't cause that player to lose life. Rather, it causes the player to get that many poison counters. Damage dealt to a creature by a source with infect isn't marked on that creature. Rather, it causes that many -1/-1 counters to be put on that creature.";
+MTG_KEYWORDS{'inspired'}="{yellow}Inspired{white} is an ability word that deals with permanents beoming untapped. The term itself has no rules meaning.";
 MTG_KEYWORDS{'intimidate'}="{yellow}Intimidate{white} is a static ability. A creature with intimidate can't be blocked except by artifact creatures and/or creatures that share a color with it.";
 MTG_KEYWORDS{'join forces'}="{yellow}Join forces{white} is an ability word which denotes an opportunity for multiple players to spend mana. The term itself has no rules meaning.";
 MTG_KEYWORDS{'kicker'}="{yellow}Kicker{white} is a static ability that functions. \"Kicker [cost]\" means \"You may pay an additional [cost] as you cast this spell.\"";
@@ -167,6 +168,7 @@ MTG_KEYWORDS{'threshold'}="{yellow}Threshold{white} is an ability word related t
 MTG_KEYWORDS{'trample'}="{yellow}Trample{white} is a static ability. The controller of an attacking creature with trample first assigns damage to the creature(s) blocking it. Once all those blocking creatures are assigned lethal damage, any remaining damage is assigned as its controller chooses among those blocking creatures and the player or planeswalker the creature is attacking. When checking for assigned lethal damage, take into account damage already marked on the creature and damage from other creatures that's being assigned during the same combat damage step, but not any abilities or effects that might change the amount of damage that's actually dealt. The attacking creature's controller need not assign lethal damage to all those blocking creatures but in that case can't assign any damage to the player or planeswalker it's attacking.";
 MTG_KEYWORDS{'transfigure'}="{yellow}Transfigure{white} is an activated ability. \"Transfigure [cost]\" means \"[Cost], Sacrifice this permanent: Search your library for a creature card with the same converted mana cost as this permanent and put it onto the battlefield. Then shuffle your library. Activate this ability only any time you could cast a sorcery.\"";
 MTG_KEYWORDS{'transmute'}="{yellow}Transmute{white} is an activated ability that functions only while the card with transmute is in a player's hand. \"Transmute [cost]\" means \"[Cost], Discard this card: Search your library for a card with the same converted mana cost as the discarded card, reveal that card, and put it into your hand. Then shuffle your library. Activate this ability only any time you could cast a sorcery.\"";
+MTG_KEYWORDS{'tribute'}="{yellow}Tribute{white} is a static ability. \"Tribute N\" means \"As this creature enters the battlefield, choose an opponent. That player may have this creature enter the battlefield with an additional N +1/+1 counters on it.\" If that player doesn't, an additional triggered ability will lay out consequences for what happens.";
 MTG_KEYWORDS{'totem armor'}="{yellow}Totem armor{white} is a static ability which means \"If enchanted permanent would be destroyed, instead remove all damage marked on it and destroy this Aura.\"";
 MTG_KEYWORDS{'typecycling'}="{yellow}Typecycling{white} is a variant of the {yellow}cycling{white} ability. \"[Type]cycling [cost]\" means \"[Cost], Discard this card: Search your library for a [type] card, reveal it, and put it into your hand. Then shuffle your library.\"";
 MTG_KEYWORDS{'undying'}="{yellow}Undying{white} is a triggered ability which means \"When this permanent is put into a graveyard from the battlefield, if it had no +1/+1 counters on it, return it to the battlefield under its owner's control with a +1/+1 counter on it.\"";

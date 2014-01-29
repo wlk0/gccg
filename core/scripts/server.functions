@@ -1584,6 +1584,8 @@ def ObjectName
       return("a card");
     else if(name(table{o}[0])==NULL)
       return("unknown card (server too old)");
+    else if(table{o}[4]>=180 && card_attr("flipid",table{o}[0])==NULL && card_attr("flipname",table{o}[0])!=NULL)
+      return(card_attr("flipname",table{o}[0]));
     else
       return(name(table{o}[0]));
   }
