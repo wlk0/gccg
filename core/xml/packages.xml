@@ -129,7 +129,7 @@
 	<include file="scripts/Lotr-server.include"/>
 	<include file="lotr-sample.conf"/>
   </module>
-  <module name="mtg" version="1.3.11">
+  <module name="mtg" version="1.3.11.1">
   	<include file="Mtg"/>
 	<include file="Mtg.bat"/>
 	<include file="xml/mtg.xml"/>
@@ -159,7 +159,6 @@
 	<include files="graphics/Mtg/*_starter.jpg"/>
 	<include files="graphics/Mtg/*_token.jpg"/>
 	<include file="graphics/Mtg/mtgback.jpg"/>
-	<include file="graphics/avatar/br2.png"/>
   </module>
   <module name="pokemon" version="1.2">
 	<include file="Pokemon"/>
