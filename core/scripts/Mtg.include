@@ -1715,7 +1715,7 @@ rules.category=(
 	'type==NULL','("permanent","")'
   ),
   (
-	'permanent==0 && card>821 && card<853','("ospell","")'
+	'toint(permanent)==0 && card>821 && card<853','("ospell","")'
   ),
   (
 	'toint(permanent)==0','("spell","")'
