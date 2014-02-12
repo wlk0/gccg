@@ -34,6 +34,7 @@
   <cardset source="red_nightfall.xml"/>
   <cardset source="dominion_of_the_seven.xml"/>
   <cardset source="court_of_ardor.xml"/>
+  <cardset source="CoolPlaySet.xml"/>
       
   <image file="b.png" tag="{b}"/>
   <image file="c.png" tag="{c}"/>
