@@ -1664,9 +1664,9 @@ def PlayCard
     if(isvar("rules.category"))
       a=FindSpace(ARG[0],0,ARG[1]);
     else
-      a=(screen.width/2+random(seq(-20,20)),random(seq(-20,20)));
-
-    Send("Transfer",(1,("play",ARG[0],ARG[1]),("table",a[0]+card.width/2,a[1]+card.height/2,0,ARG[1])));
+      a=(BASE_TABLE_WIDTH/2+random(seq(-20,20)),random(seq(-20,20)));
+      
+    Send("Transfer",(1,("play",ARG[0],ARG[1]),("table",a[0]+(card.width*50)/(w(10)*w(10)),a[1]+(card.height*50)/(h(10)*h(10)),0,ARG[1])));
 
     awaiting_card=1;
     imprint=0;
@@ -1764,20 +1764,20 @@ rules.category=(
 
 rules.coordinate=(
   (("land",),(
-     (("StacksByGroup",90,card.ystep+48,6,12,card.xstep+10,0),),
+     (("StacksByGroup",100,card.ystep+54,6,12,card.xstep+10,0),),
      (("OffscreenEnabled","yes"),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("permanent",),(
-     (("StacksByGroup",90,8,6,12,card.xstep+10,0),),
+     (("StacksByGroup",100,15,6,12,card.xstep+10,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("opermanent",),(
-     (("StacksByGroup",90,-card.ystep-64,6,12,card.xstep+10,0),),
+     (("StacksByGroup",100,-card.ystep-64,6,12,card.xstep+10,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("wenchantment",),(
-     (("StacksByGroup",8*(card.xstep+10),12,6,12,card.xstep+10,0),),
+     (("StacksByGroup",8*(card.xstep+10),8,6,12,card.xstep+10,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("spell",),(
