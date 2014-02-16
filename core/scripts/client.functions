@@ -787,12 +787,26 @@ def Initialize
   undo_buffer=(,);
   undo.pos=-1;
 
-  info.box=create_cardbox(0,0,obj=obj+1,"Info");
+  if(!load("info.x") || !load("info.y"))
+  {
+    info.x=0;
+    info.y=0;
+  }
+  if(info.x<0)
+   info.x=0;
+  if(info.y<0)
+   info.y=0;
+  if(info.x + (card.width * 100 / toint(game_option("table card size"))) > screen.width)
+   info.x = screen.width - (card.width * 100 / toint(game_option("table card size")));
+  if(info.y + (card.height * 100 / toint(game_option("table card size"))) > screen.height)
+   info.y = screen.height - (card.height * 100 / toint(game_option("table card size")));
+  info.box=create_cardbox(info.x,info.y,obj=obj+1,"Info");
   set_attr(info.box,"draggable",1);
   set_attr(info.box,"ontop",Z_ZOOM);
   raise(info.box);
   info.current=NULL;
-  info.persistent=0;
+  if(!load("info.persistent"))
+    info.persistent=0;
 
   menu.object=(obj=obj+1);
 
@@ -913,6 +927,9 @@ def SaveAll
   if(book.index{book.current_index}==NULL)
     book.current_index=("default","default");
   save("book.current_index");
+  save("info.x");
+  save("info.y");
+  save("info.persistent");
   SaveBookState();
   save("logs");
 }
@@ -3992,9 +4009,9 @@ def PlayCard
   if(isvar("rules.category"))
     a=FindSpace(ARG[0],0,ARG[1]);
   else
-    a=(screen.width/2+random(seq(-20,20)),random(seq(-20,20)));
+    a=(BASE_TABLE_WIDTH/2+random(seq(-20,20)),random(seq(-20,20)));
 
-  Send("Transfer",(1,("play",ARG[0],ARG[1]),("table",a[0]+card.width/2,a[1]+card.height/2,0,ARG[1])));
+  Send("Transfer",(1,("play",ARG[0],ARG[1]),("table",a[0]+card.width*50/w(100),a[1]+card.height*50/h(100),0,ARG[1])));
 
   awaiting_card=1;
   a=pop();
@@ -9030,6 +9047,12 @@ def MouseMoveObject
 
   x=object.x;
   y=object.y;
+  
+  if(object.number==info.box)
+  {
+    info.x=(object_data(info.box))[0];
+    info.y=(object_data(info.box))[1];
+  }
 
   if(me>1)
     x=x-((me/2) * BASE_TABLE_WIDTH / ((players + 1) / 2));
@@ -9777,7 +9800,7 @@ def InitializeScoreSystem
 
   for(p)(MAX_PLAYERS)
   {
-    score.object[p]=create_msgbox(screen.width-1010,y,obj=obj+1,"score"+p,1000,25,1);
+    score.object[p]=create_msgbox(10,h(y),obj=obj+1,"score"+p,screen.width-20,h(25),1);
     set_bgcolor(score.object[p],NULL);
     set_textsize(score.object[p],20);
     set_textalign(score.object[p],2);
@@ -9965,7 +9988,7 @@ def AvatarRecalcTable
     xy=TableCoord(ARG);
     x1=(image_width(table.image)+w(10))*xy[0]+w(20);
     x2=x1+image_width(table.image)-1;
-    y=(image_height(table.image)+h(10))*xy[1]+h(270+image_height(table.image)-h(42));
+    y=(image_height(table.image)+h(10))*xy[1]+h(228)+image_height(table.image);
     d=(x2-x1+1)/(length(room.tables{ARG}[2])+1);
 
     for(p)(room.tables{ARG}[2])
@@ -10860,24 +10883,16 @@ def str2filter_atom
         return("Attr('"+a+"',#)","s");
     }
     else
-      Msg({red}Invalid attribute definition '"+b+"'.");
+      Msg("{red}Invalid attribute definition '"+b+"'.");
     
     b=pop();
   }
   else if(count(lc(a),keys(FILTER_FUNCTIONS)))
     return("filter_"+lc(a)+"(#)",FILTER_FUNCTIONS{lc(a)}[0]);
-  else if(left(a,6) == "pwant(" && right(a,1) == ")") {
-    push(player);
-    player = substr(a,6,length(a)-7);
-    return("playerwants(\""+player+"\",#)", "i");
-    player = pop();
-  }
-  else if(left(a,6) == "phave(" && right(a,1) == ")") {
-    push(player);
-    player = substr(a,6,length(a)-7);
-    return("playerhas(\""+player+"\",#)", "i");
-    player = pop();
-  }
+  else if(left(a,6) == "pwant(" && right(a,1) == ")")
+    return("playerwants('" + substr(a,6,length(a)-7) + "',#)", "i");
+  else if(left(a,6) == "phave(" && right(a,1) == ")")
+    return("playerhas('" + substr(a,6,length(a)-7) + "',#)", "i");
   else if(a=="set")
     return("set_of(#)","s");
   else if(a=="name")

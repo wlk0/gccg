@@ -73,7 +73,7 @@ deck_rules{"Commander"}{"deck+exile+command"}=(
   ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest","Snow-Covered Plains","Snow-Covered Island","Snow-Covered Swamp","Snow-Covered Mountain","Snow-Covered Forest","Relentless Rats","Shadowborn Apostle"),
   
   ("RuleCardSets",("UG","UH",0)),
-  ("RuleCardLimitEach",("Amulet of Quoz","Bronze Tablet","Contract from Below","Darkpact","Demonic Attorney","Jeweled Bird","Rebirth","Tempest Efreet","Timmerian Fiends","Chaos Orb","Falling Star","Shahrazad","Ancestral Recall","Balance","Biorhythm","Black Lotus","Channel","Coalition Victory","Emrakul, the Aeons Torn","Fastbond","Gifts Ungiven","Griselbrand","Karakas","Library of Alexandria","Limited Resources","Metalworker","Mox Emerald","Mox Jet","Mox Pearl","Mox Ruby","Mox Sapphire","Painter's Servant","Panoptic Mirror","Primeval Titan","Protean Hulk","Recurring Nightmare","Sundering Titan","Sway of the Stars","Time Vault","Time Walk","Tinker","Tolarian Academy","Trade Secrets","Upheaval","Worldfire","Yawgmoth's Bargain",0)),
+  ("RuleCardLimitEach",("Amulet of Quoz","Bronze Tablet","Contract from Below","Darkpact","Demonic Attorney","Jeweled Bird","Rebirth","Tempest Efreet","Timmerian Fiends","Chaos Orb","Falling Star","Shahrazad","Ancestral Recall","Balance","Biorhythm","Black Lotus","Channel","Coalition Victory","Emrakul, the Aeons Torn","Fastbond","Gifts Ungiven","Griselbrand","Karakas","Library of Alexandria","Limited Resources","Metalworker","Mox Emerald","Mox Jet","Mox Pearl","Mox Ruby","Mox Sapphire","Painter's Servant","Panoptic Mirror","Primeval Titan","Protean Hulk","Recurring Nightmare","Sundering Titan","Sway of the Stars","Sylvan Primordial","Time Vault","Time Walk","Tinker","Tolarian Academy","Trade Secrets","Upheaval","Worldfire","Yawgmoth's Bargain",0)),
 
   ("RuleCardLimitGeneral",1),
   ("RulePass",NULL),
@@ -152,7 +152,7 @@ deck_rules{"Modern"}{"sideboard"}=(
 deck_rules{"Modern"}{"deck+sideboard"}=(
   ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest","Snow-Covered Plains","Snow-Covered Island","Snow-Covered Swamp","Snow-Covered Mountain","Snow-Covered Forest","Relentless Rats","Shadowborn Apostle"),
 
-  ("RuleCardLimitEach",("Ancestral Vision","Ancient Den","Bitterblossom","Blazing Shoal","Bloodbraid Elf","Chrome Mox","Cloudpost","Dark Depths","Dread Return","Glimpse of Nature","Golgari Grave-Troll","Great Furnace","Green Sun's Zenith","Hypergenesis","Jace, the Mind Sculptor","Mental Misstep","Ponder","Preordain","Punishing Fire","Rite of Flame","Seat of the Synod","Second Sunrise","Seething Song","Sensei's Divining Top","Skullclamp","Stoneforge Mystic","Sword of the Meek","Tree of Tales","Umezawa's Jitte","Vault of Whispers","Wild Nacatl",0)),
+  ("RuleCardLimitEach",("Ancestral Vision","Ancient Den","Blazing Shoal","Bloodbraid Elf","Chrome Mox","Cloudpost","Dark Depths","Deathrite Shaman","Dread Return","Glimpse of Nature","Golgari Grave-Troll","Great Furnace","Green Sun's Zenith","Hypergenesis","Jace, the Mind Sculptor","Mental Misstep","Ponder","Preordain","Punishing Fire","Rite of Flame","Seat of the Synod","Second Sunrise","Seething Song","Sensei's Divining Top","Skullclamp","Stoneforge Mystic","Sword of the Meek","Tree of Tales","Umezawa's Jitte","Vault of Whispers",0)),
 
   ("RuleAllowedSetsReprint",("8TH","9TH","XE","M10","M11","M12","M13","M14","MR","DS","FD","CK","BK","SK","RA","GP","DI","CS","TS","PC","FS","LRW","MOR","SM","EVE","ALA","CFX","ARE","ZDK","WWK","ROE","SOM","MBS","NPH","ISD","DKA","AVR","RTR","GTC","DGM","THS","BNG",4)),
 );
