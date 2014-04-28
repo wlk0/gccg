@@ -1,5 +1,5 @@
 deck_rules=(,);
-server_description="Universal (BNG)";
+server_description="Universal (JOU)";
 
 deck_rules{"Empty"}=(,);
 deck_rules{"Empty"}{""}=(
@@ -154,7 +154,7 @@ deck_rules{"Modern"}{"deck+sideboard"}=(
 
   ("RuleCardLimitEach",("Ancestral Vision","Ancient Den","Blazing Shoal","Bloodbraid Elf","Chrome Mox","Cloudpost","Dark Depths","Deathrite Shaman","Dread Return","Glimpse of Nature","Golgari Grave-Troll","Great Furnace","Green Sun's Zenith","Hypergenesis","Jace, the Mind Sculptor","Mental Misstep","Ponder","Preordain","Punishing Fire","Rite of Flame","Seat of the Synod","Second Sunrise","Seething Song","Sensei's Divining Top","Skullclamp","Stoneforge Mystic","Sword of the Meek","Tree of Tales","Umezawa's Jitte","Vault of Whispers",0)),
 
-  ("RuleAllowedSetsReprint",("8TH","9TH","XE","M10","M11","M12","M13","M14","MR","DS","FD","CK","BK","SK","RA","GP","DI","CS","TS","PC","FS","LRW","MOR","SM","EVE","ALA","CFX","ARE","ZDK","WWK","ROE","SOM","MBS","NPH","ISD","DKA","AVR","RTR","GTC","DGM","THS","BNG",4)),
+  ("RuleAllowedSetsReprint",("8TH","9TH","XE","M10","M11","M12","M13","M14","MR","DS","FD","CK","BK","SK","RA","GP","DI","CS","TS","PC","FS","LRW","MOR","SM","EVE","ALA","CFX","ARE","ZDK","WWK","ROE","SOM","MBS","NPH","ISD","DKA","AVR","RTR","GTC","DGM","THS","BNG","JOU",4)),
 );
 
 ############
@@ -173,7 +173,7 @@ deck_rules{"Standard"}{"sideboard"}=(
 deck_rules{"Standard"}{"deck+sideboard"}=(
   ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest","Shadowborn Apostle"),
   
-  ("RuleAllowedSetsReprint",("RTR","GTC","DGM","M14","THS","BNG",4)),
+  ("RuleAllowedSetsReprint",("RTR","GTC","DGM","M14","THS","BNG","JOU",4)),
 );
 
 #########
@@ -448,21 +448,21 @@ deck_rules{"Standard"}{"deck+sideboard"}=(
 #
 #  ("RuleAllowedSetsReprint",("ISD","DKA","AVR",4)),
 #);
-
-deck_rules{"Ravnica Block 2"}=(,);
-deck_rules{"Ravnica Block 2"}{"deck"}=(
-  ("RuleDeckMinimum",60),
-  ("RulePass",NULL),
-);
-deck_rules{"Ravnica Block 2"}{"sideboard"}=(
-  ("RuleDeckMaximum",15),
-  ("RulePass",NULL),
-);
-deck_rules{"Ravnica Block 2"}{"deck+sideboard"}=(
-  ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest"),
-
-  ("RuleAllowedSetsReprint",("RTR","GTC","DGM",4)),
-);
+#
+#deck_rules{"Ravnica Block 2"}=(,);
+#deck_rules{"Ravnica Block 2"}{"deck"}=(
+#  ("RuleDeckMinimum",60),
+#  ("RulePass",NULL),
+#);
+#deck_rules{"Ravnica Block 2"}{"sideboard"}=(
+#  ("RuleDeckMaximum",15),
+#  ("RulePass",NULL),
+#);
+#deck_rules{"Ravnica Block 2"}{"deck+sideboard"}=(
+#  ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest"),
+#
+#  ("RuleAllowedSetsReprint",("RTR","GTC","DGM",4)),
+#);
 
 deck_rules{"Theros Block"}=(,);
 deck_rules{"Theros Block"}{"deck"}=(
@@ -476,7 +476,7 @@ deck_rules{"Theros Block"}{"sideboard"}=(
 deck_rules{"Theros Block"}{"deck+sideboard"}=(
   ("RuleCardLimitAny","Plains","Island","Swamp","Mountain","Forest"),
 
-  ("RuleAllowedSetsReprint",("THS","BNG",4)),
+  ("RuleAllowedSetsReprint",("THS","BNG","JOU",4)),
 );
 
 ##########

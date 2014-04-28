@@ -964,8 +964,7 @@ def RegisterPlayer
     {
       Reply("{red}Incorrect password!");
       Reply("{red}Maybe someone has already registered player named {yellow}"+ARG[0]+"{red}.");
-      if(ARG[0]=="Windows")
-        Reply("{red}{sz20}YOU MUST EDIT YOUR USERNAME IN .BAT FILE!");
+      Reply("{red}Try {yellow}/nick [NAME]{red} to pick another name, then right click and reconnect.");
       Log("ERROR: incorrect password for "+ARG[0]+" from "+net_client_name(con));
       net_server_close(con);
     }

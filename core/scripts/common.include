@@ -100,7 +100,7 @@ def ValidUsername
     {
       push(n);
       n=split(ARG,"-");
-      return(ValidUsername(n[0]) && ValidUsername(n[1]));
+      return(ValidUsername(n[0]) && ValidMode(n[1]));
       n=pop();
     }
     else if(length(ARG) >= 2 && length(ARG) <= 10)

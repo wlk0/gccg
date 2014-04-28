@@ -219,13 +219,13 @@
 # Z-levels (for deciding which objects should be placed on top of others)
 Z_LOBBYCHAT = 1000;
 Z_MENU = 100;
+Z_SCORE = 99;
 Z_ZOOM = 95;
 Z_BOOSTER = 90;
 Z_PRODUCTMENU = 80;
 Z_DLIST = 70;
 Z_COLLECTION = 70;
 Z_ALERT = 60;
-Z_SCORE = 50;
 Z_SETASIDE = 40;
 Z_HAND = 30;
 Z_MBOX = 20;
@@ -428,6 +428,7 @@ HELP{"any"}=(,);
 HELP{"play"}=(,);
 HELP{"chat"}=(,);
 HELP{"watch"}=(,);
+HELP{"offline"}=(,);
 
 # Help texts from serverside commands.
 HELP{"chat"}{"addproduct"}=("n,id,t,prc","add product",("God","Salesman"),
@@ -1908,6 +1909,25 @@ def CommandDisconnect
 
 HELP{"any"}{"disconnect"}=("","disconnect to server",NULL,
 "Close the connection to your table or meta server without having to quit the program.");
+
+def OfflineCommandNick
+{
+  push(n);
+  n=ARG;
+  if(ValidUsername(n))
+  {
+    username=n;
+    save("username");
+    Msg("Name changed to "+n+".");
+  }
+  else
+    Msg("{red}Invalid username. Names are limited to 10 characters long, and can contain letters, numbers, and _ .");
+  
+  n=pop();
+}
+
+HELP{"offline"}{"nick"}=("new name","change your name",NULL,
+"Use this command to change your name, in case the first name you tried was unavailable. Legal usernames can be up to 10 characters long and can contain letters, numbers, and the underscore _.");
 
 #
 # CommandWho() - Implementation of /who command.
@@ -5436,6 +5456,10 @@ HELP{"chat"}{"addgroup"}=("groupname","Add a new deck group",NULL,
 "Create a deck group with the given name. You can use deck groups to help organize similar decks.");
 HELP{"chat"}{"delgroup"}=("groupname","Remove a deck group",NULL,
 "If there is a deck group with the given name, remove it. Any decks you have in that group will not be deleted, but they will reappear in the main deck selection menu.");
+HELP{"chat"}{"addpart"}=("part name","Add a new section to a deck",NULL,
+"Add a section for organizing the current deck, such as {yellow}sideboard{white}. If this section has the same name as one of the piles used in a game, the cards in that section will start the game in that pile.");
+HELP{"chat"}{"delpart"}=("part name","Remove a section from a deck",NULL,
+"If the current deck has a section with the given name, remove that section and all cards in it.");
 
 #
 # TEXT INPUT AND EDIT

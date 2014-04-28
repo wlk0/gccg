@@ -91,6 +91,7 @@
   <cardset source="ths.xml"/>
   <cardset source="c13.xml"/>
   <cardset source="bng.xml"/>
+  <cardset source="jou.xml"/>
 
   <image file="b.png" tag="{B}"/>
   <image file="g.png" tag="{G}"/>
@@ -265,6 +266,7 @@
   <option name="Hero text" value="{gold}"/>
   <option name="Hydra text" value="{green}"/>
   <option name="Horde text" value="{red}"/>
+  <option name="God text" value="{154,77,154}"/>
 
   <trigger event="location hint" attribute="type"/>
   <trigger event="location hint" attribute="color"/>
