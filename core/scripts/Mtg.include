@@ -255,10 +255,10 @@ def InitializeHook
     book_set_page(schemes.book,0);
     
     challenge.book=create_book(w(70),h(215),obj=obj+1,"Hero's Path",3,5,800);
-    book_set_index(challenge.book,("Heroes",)+seq(801,814)+("Hydra",)+seq(822,836)+("Horde",)+seq(838,852));
+    book_set_index(challenge.book,("Heroes",)+seq(801,819)+(869,820,821,"Hydra",)+seq(822,836)+("Horde",)+seq(838,852)+("God",)+seq(854,868));
     set_attr(challenge.book,"ontop",Z_COLLECTION);
     set_bgcolor(challenge.book,BKBGCOLOR);
-    set_fgcolor(challenge.book,COLORS{'GREEN'});
+    set_fgcolor(challenge.book,COLORS{'VIOLET'});
     set_textcolor(challenge.book,BKBRCOLOR);
     book_set_page(challenge.book,0);
     
@@ -668,6 +668,7 @@ def TokenSubmenuH
    ("Horror */* (C)","",'Send("Transfer",(1,("out.of.play",107),("play",0)))'),
    ("Human 1/1 (R)","",'Send("Transfer",(1,("out.of.play",165),("play",0)))'),
    ("Human 1/1 (W)","",'Send("Transfer",(1,("out.of.play",163),("play",0)))'),
+   ("Hydra */* (G)","",'Send("Transfer",(1,("out.of.play",209),("play",0)))'),
   ));
 }
 
@@ -712,6 +713,7 @@ def TokenSubmenuM
    ("Merfolk 1/1 (U)","",'Send("Transfer",(1,("out.of.play",120),("play",0)))'),
    ("Merfolk Wizard 1/1 (U)","",'Send("Transfer",(1,("out.of.play",64),("play",0)))'),
    ("Minion */* (B)","",'Send("Transfer",(1,("out.of.play",173),("play",0)))'),
+   ("Minotaur 2/3 (R)","",'Send("Transfer",(1,("out.of.play",210),("play",0)))'),
    ("Myr 1/1 (A)","",'Send("Transfer",(1,("out.of.play",65),("play",0)))'),
   ));
 }
@@ -758,13 +760,16 @@ def TokenSubmenuS
    ("Sliver 1/1 (A)","",'Send("Transfer",(1,("out.of.play",76),("play",0)))'),
    ("Snake 1/1 (G)","",'Send("Transfer",(1,("out.of.play",77),("play",0)))'),
    ("Snake 1/1 (UG)","",'Send("Transfer",(1,("out.of.play",78),("play",0)))'),
+   ("Snake 1/1 (BG, enchantment, deathtouch)","",'Send("Transfer",(1,("out.of.play",211),("play",0)))'),
    ("Soldier 1/1 (RW)","",'Send("Transfer",(1,("out.of.play",186),("play",0)))'),
    ("Soldier 1/1 (R)","",'Send("Transfer",(1,("out.of.play",198),("play",0)))'),
    ("Soldier 1/1 (W)","",'Send("Transfer",(1,("out.of.play",79),("play",0)))'),
    ("Soldier 1/1 (W, enchantment)","",'Send("Transfer",(1,("out.of.play",202),("play",0)))'),
    ("Soldier Ally 1/1 (W)","",'Send("Transfer",(1,("out.of.play",110),("play",0)))'),
    ("Spawn 2/2 (A)","",'Send("Transfer",(1,("out.of.play",80),("play",0)))'),
+   ("Sphinx 4/4 (U, flying)","",'Send("Transfer",(1,("out.of.play",212),("play",0)))'),
    ("Spider 1/2 (G, reach)","",'Send("Transfer",(1,("out.of.play",81),("play",0)))'),
+   ("Spider 1/3 (BG, enchantment, deathtouch)","",'Send("Transfer",(1,("out.of.play",213),("play",0)))'),
    ("Spider 2/4 (B, reach)","",'Send("Transfer",(1,("out.of.play",190),("play",0)))'),
    ("Spirit 1/1 (C)","",'Send("Transfer",(1,("out.of.play",82),("play",0)))'),
    ("Spirit 1/1 (BW, flying)","",'Send("Transfer",(1,("out.of.play",83),("play",0)))'),
@@ -829,6 +834,7 @@ def TokenSubmenuZ
    ("{blue}{sz12}<back>","","TokenSubmenu()"),
    ("Zombie 2/2 (B)","",'Send("Transfer",(1,("out.of.play",98),("play",0)))'),
    ("Zombie 2/2 (B, enchantment)","",'Send("Transfer",(1,("out.of.play",205),("play",0)))'),
+   ("Zombie */* (B)","",'Send("Transfer",(1,("out.of.play",214),("play",0)))'),
    ("Zombie Giant 5/5 (B)","",'Send("Transfer",(1,("out.of.play",125),("play",0)))'),
    ("Zombie Wizard 1/1 (BU)","",'Send("Transfer",(1,("out.of.play",99),("play",0)))'),
   ));
@@ -1574,7 +1580,7 @@ def EditAddHook
     CheckDeckPart("schemes");
     deck.addpart="schemes";
   }
-  else if(cn>800 && cn<822)
+  else if((cn>800 && cn<822) || cn=869)
   {
     if(has_entry("command",decks{deck.name}))
       deck.addpart="command";
@@ -1584,7 +1590,7 @@ def EditAddHook
       deck.addpart="exile";
     }
   }
-  else if(cn>821 && cn<853)
+  else if(cn>821 && cn<869)
   {
     CheckDeckPart("challenge");
     deck.addpart="challenge";
@@ -1664,7 +1670,7 @@ def PlayCard
     if(isvar("rules.category"))
       a=FindSpace(ARG[0],0,ARG[1]);
     else
-      a=(BASE_TABLE_WIDTH/2+random(seq(-20,20)),random(seq(-20,20)));
+      a=(BASE_TABLE_WIDTH/2+random(seq(-20,20)),random(seq(0,40)));
       
     Send("Transfer",(1,("play",ARG[0],ARG[1]),("table",a[0]+(card.width*50)/(w(10)*w(10)),a[1]+(card.height*50)/(h(10)*h(10)),0,ARG[1])));
 
@@ -1777,7 +1783,7 @@ rules.coordinate=(
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("wenchantment",),(
-     (("StacksByGroup",8*(card.xstep+10),8,6,12,card.xstep+10,0),),
+     (("StacksByGroup",8*(card.xstep+10),15,6,12,card.xstep+10,0),),
      (("AutoRaiseGroupTail","yes"),)
   )),
   (("spell",),(

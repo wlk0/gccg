@@ -14,7 +14,7 @@ MTG_KEYWORDS = (,);
 MTG_KEYWORDS{''}="{green}List of available keywords\n
 {yellow}A: {white}Absorb, Affinity, Amplify, Annihilator, Attach, Aura Swap.\n
 {yellow}B: {white}Banding, Bands with Other, Batallion, Battle Cry, Bestow, Bloodrush, Bloodthirst, Bushido, Buyback.\n
-{yellow}C: {white}Cascade, Champion, Changeling, Channel, Chroma, Cipher, Clash, Conspire, Convoke, Counter, Cumulative Upkeep, Cycling.\n
+{yellow}C: {white}Cascade, Champion, Changeling, Channel, Chroma, Cipher, Clash, Conspire, Constellation, Convoke, Counter, Cumulative Upkeep, Cycling.\n
 {yellow}D: {white}Deathtouch, Defender, Delve, Detain, Devotion, Devour, Domain, Double Strike, Dredge.\n
 {yellow}E: {white}Echo, Emblem, Enchant, Entwine, Epic, Equip, Evoke, Evolve, Exalted, Extort.\n
 {yellow}F: {white}Fading, Fateful Hour, Fateseal, Fear, Fight, First Strike, Flanking, Flash, Flashback, Flying, Forecast, Fortify, Fuse, Frenzy.\n
@@ -29,7 +29,7 @@ MTG_KEYWORDS{''}="{green}List of available keywords\n
 {yellow}O: {white}Offering, Overload.\n
 {yellow}P: {white}Persist, Phasing, Poisonous, Populate, Proliferate, Protection, Provoke, Prowl.\n
 {yellow}R: {white}Radiance, Rampage, Reach, Rebound, Recover, Regenerate, Reinforce, Replicate, Retrace, Ripple.\n
-{yellow}S: {white}Sacrifice, Scavenge, Scry, Shadow, Shroud, Soulbond, Soulshift, Splice, Split Second, Storm, Sunburst, Suspend, Sweep.\n
+{yellow}S: {white}Sacrifice, Scavenge, Scry, Shadow, Shroud, Soulbond, Soulshift, Splice, Split Second, Storm, Strive, Sunburst, Suspend, Sweep.\n
 {yellow}T: {white}Tap, Threshold, Trample, Transfigure, Transmute, Tribute, Totem Armor, Typecycling.\n
 {yellow}U: {white}Undying, Unearth, Unleash, Untap.\n
 {yellow}V: {white}Vanishing, Vigilance.\n
@@ -59,6 +59,7 @@ MTG_KEYWORDS{'chroma'}="{yellow}Chroma{white} is an ability word related to coun
 MTG_KEYWORDS{'cipher'}="{yellow}Cipher{white} represents a spell ability, as well as a static ability that can grant a triggered ability to a creature. \"Cipher\" means \"If this spell is represented by a card, you may exile this card encoded on a creature you control.\" and \"As long as this card is encoded on that creature, that creature has 'Whenever this creature deals combat damage to a player, you may copy this card and you may cast the copy without paying its mana cost.'\"";
 MTG_KEYWORDS{'clash'}="When you \"{yellow}clash{white} with an opponent,\" it means \"Choose an opponent. You and that opponent each clash.\" Each clashing player reveals the top card of his or her library, then puts that card on the top or bottom. A player wins if his or her card had a higher converted mana cost.";
 MTG_KEYWORDS{'conspire'}="{yellow}Conspire{white} represents both a static ability and a triggered ability; it means \"As an additional cost to cast this spell, you may tap two untapped creatures you control that each share a color with it\" and \"When you cast this spell, if its conspire cost was paid, copy it. If the spell has any targets, you may choose new targets for the copy.\"";
+MTG_KEYWORDS{'constellation'}="{yellow}Constellation{white} is an ability word related to enchantments entering the battlefield under your control. The term itself has no rules meaning.";
 MTG_KEYWORDS{'convoke'}="{yellow}Convoke{white} is a static ability which means \"For each mana in this spell's total cost, you may tap an untapped creature you control rather than pay that mana. If that mana is colored, the creature you tap must share a color with that mana.\"";
 MTG_KEYWORDS{'counter'}="{yellow}Counter{white} has 2 meanings.\n
         1. To cancel a spell or ability so it doesn't resolve and none of its effects occur.\n
@@ -160,6 +161,7 @@ MTG_KEYWORDS{'soulshift'}="{yellow}Soulshift{white} is a triggered ability. \"So
 MTG_KEYWORDS{'splice'}="{yellow}Splice{white} is a static ability. \"Splice onto [subtype] [cost]\" means \"You may reveal this card from your hand as you cast a [subtype] spell. If you do, copy this card's text box onto that spell and pay [cost] as an additional cost to cast that spell.\"";
 MTG_KEYWORDS{'split second'}="{yellow}Split second{white} is a static ability which means \"As long as this spell is on the stack, players can't cast other spells or activate abilities that aren't mana abilities.\"";
 MTG_KEYWORDS{'storm'}="{yellow}Storm{white} is a triggered ability which means \"When you cast this spell, put a copy of it onto the stack for each other spell that was cast before it this turn. If the spell has any targets, you may choose new targets for any of the copies.\"";
+MTG_KEYWORDS{'strive'}="{yellow}Strive{white} is an ability word related to the option to pay additional mana to choose more targets for a spell. The term itself has no rules meaning.";
 MTG_KEYWORDS{'sunburst'}="{yellow}Sunburst{white} is a static ability which means \"If this object is entering the battlefield from the stack as a creature, it enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it. If this object is entering the battlefield from the stack and isn't entering the battlefield as a creature, it enters the battlefield with a charge counter on it for each color of mana spent to cast it.\"";
 MTG_KEYWORDS{'suspend'}="{yellow}Suspend{white} represents a static and two triggered abilities. \"Suspend N - [cost]\" means \"If you could begin to cast this card by putting it onto the stack from your hand, you may pay [cost] and exile it with N time counters on it. This action doesn't use the stack,\" and \"At the beginning of your upkeep, if this card is suspended, remove a time counter from it,\" and \"When the last time counter is removed from this card, if it's exiled, play it without paying its mana cost if able. If you can't, it remains exiled. If you cast a creature spell this way, it gains haste until you lose control of the spell or the permanent it becomes.\"";
 MTG_KEYWORDS{'sweep'}="{yellow}Sweep{white} is an ability word related to returning lands you control to their owner's hand. The term itself has no rules meaning.";

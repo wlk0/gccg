@@ -412,6 +412,7 @@ def InitGame
   }
   Log("Registering server to "+meta.server+".");
   cookie=GeneratePassword();
+  Log("Cookie is: "+cookie);
   net_send(meta.connection,("RegisterServer",(port,players_wanted,bet,cookie,keys(deck_rules),server_description,VERSION,options.tournament)));
   draft=(server_description=="Draft Table");
   WaitMetaEvents("StartGame");

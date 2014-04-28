@@ -241,6 +241,12 @@ def UploadDeckHook
       "{red}At the beginning of the Horde's main phase, it casts the top two cards of its deck (if it's a sorcery, players make all choices for it). Artifacts may allow it to cast additional cards, so watch out!\n"+
       "{orange}You can attack and target the Horde as though it were a player. Anything that would cause the Horde to lose life, instead puts that many cards from the top of its deck into its graveyard.\n"+
       "{red}If the Horde controls no creatures AND there are no cards left in its deck, you win! Good luck!");
+    else if(max(haschallenge)>855 && max(haschallenge)<869)
+      SendAll("Message","{154,77,154}You dare challenge the God, Xenagos?\n"+
+      "Use up to three Hero cards. If one of these is a Hero Equipment, also use the Forge a Godslayer sticker card to choose an extra ability for it.\n"+
+      "{154,77,154}At the start of the game, I've broken free from my deck, and brought two copies of Rollicking Throng along with me to the battlefield. You go first, but during each of my turns, I call upon two more cards from the top of my deck and cast them.\n"+
+      "You may attack me or my revelers directly, or target me as a player. We will attack when a card's effect puts us in the mood, but not otherwise.\n"+
+      "{154,77,154}To win, all you have to do is destroy me after going through all my underlings. But that will never happen, right?");
     
     if(players_wanted>2)
       i=sum(hasscheme);
