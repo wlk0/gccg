@@ -65,11 +65,13 @@ class Server
 		{return Data(0,0,0.0);}
 	/// Return address of the card structure in variable 'users'. Initialize if not exist.
 	Data* Card(const Data& user,const Data& number);
+	Data* SafeCard(const Data& user,const Data& number);
 	/// Remove obsolete 'prices' entries.
 	int RemoveObsoletePrices(const Data& card_number);
 	
 	Data add_to_collection(const Data&args);
 	Data check_card(const Data&args);
+	Data safe_check_card(const Data&args);
 	Data count_cards(const Data&args);
 	Data del_prices(const Data&args);
 	Data have_list(const Data&args);
@@ -144,6 +146,7 @@ Server::Server(const list<string>& triggers,double bet,map<string,string> option
 	
 	parser.SetFunction("add_to_collection",&Server::add_to_collection);
 	parser.SetFunction("check_card",&Server::check_card);
+	parser.SetFunction("safe_check_card",&Server::safe_check_card);
 	parser.SetFunction("count_cards",&Server::count_cards);
 	parser.SetFunction("del_prices",&Server::del_prices);
 	parser.SetFunction("is_user",&Server::is_user);
@@ -230,6 +233,19 @@ Data* Server::Card(const Data& user,const Data& number)
 	return entry;
 }
 
+Data* Server::SafeCard(const Data& user,const Data& number)
+{
+        VAR(col,"users");
+        MAP(col,user);
+        if ( col->IsNull() ) return NULL;
+        VEC(col,2);
+        Data* entry;
+        MAPTO(col,number,entry);
+        if(entry->IsNull())
+                *entry=NewCard();
+        return entry;
+}
+
 // Scan unused pricing information and remove them. Return number of
 // entries removed.
 int Server::RemoveObsoletePrices(const Data& card_number)
@@ -248,10 +264,13 @@ int Server::RemoveObsoletePrices(const Data& card_number)
 	Data *entry,*sell;
 	for(size_t i=0; i<P.Size(); i++)
 	{
-	  entry=Card(P[i][0],card_number);
-		VECTO(entry,1,sell);
-		if(*sell < 1)
-			obsolete.push_back(P[i][0]);
+	  entry=SafeCard(P[i][0],card_number);
+		if ( entry )
+		{
+			VECTO(entry,1,sell);
+			if(*sell < 1)
+				obsolete.push_back(P[i][0]);
+		}
 	}
 
 	// Clean prices.
@@ -297,6 +316,24 @@ Data Server::check_card(const Data& args)
 	Card(args[0],args[1]);
 	
 	return Null;
+}
+
+Data Server::safe_check_card(const Data& args)
+{
+        if(!args.IsList(2) || !args[0].IsString() || !args[1].IsInteger())
+                ArgumentError("check_card",args);
+        if(!IsUser(args[0]))
+                throw LangErr("check_card","invalid user "+tostr(args[0]).String());
+
+        if(args[1].Integer() < 0)
+                throw LangErr("check_card","invalid card number");
+
+        if ( !SafeCard(args[0],args[1]) ) {
+                cout << "Internal server error (" << args[0] << " at safe_check_card)" << endl << flush;
+                return 0;
+        }
+
+        return 1;
 }
 
 /// add_to_collection(user,list of cards) - Add a list of cards to collection (variable 'users') of the given user. Note: there is no error chcekcing for card numbers.
