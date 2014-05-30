@@ -3334,7 +3334,7 @@ def CommandRo2
 #
 def CommandDownloaddeck
 {
-  if(users{ARG[0]} == NULL)
+  if(!is_user(ARG[0]))
     Reply("{red}No such user.");
   else if(!has_entry("download",users{ARG[0]}[4][0]))
     Reply("{red}"+ARG[0]+" does not have a downloadable deck.");
