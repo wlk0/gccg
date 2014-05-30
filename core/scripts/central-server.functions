@@ -1796,8 +1796,15 @@ def BuyCard
   else
   {
     s=random(p[0]);
-    check_card(s,c);
-    if(!AvailableForSale(s,c,1) || users{s}[2]{c}[1] < 1)
+    if ( !isfunction("safe_check_card"))
+    {
+      check_card(s,c);
+    }
+    if ( isfunction("safe_check_card") && safe_check_card(s,c) == 0 )
+    {
+        Reply("{red}Internal server error.");
+    }
+    else if(!AvailableForSale(s,c,1) || users{s}[2]{c}[1] < 1)
     {
       Reply("{red}Not available for sale anymore by "+s+".");
       remove_obsolete_prices(c,);
@@ -3327,7 +3334,7 @@ def CommandRo2
 #
 def CommandDownloaddeck
 {
-  if(!has_entry(ARG[0],users))
+  if(users{ARG[0]} == NULL)
     Reply("{red}No such user.");
   else if(!has_entry("download",users{ARG[0]}[4][0]))
     Reply("{red}"+ARG[0]+" does not have a downloadable deck.");
