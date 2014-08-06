@@ -309,6 +309,9 @@
     <requires name="mtg-cards-089" version="1" />
     <requires name="mtg-cards-090" version="1" />
     <requires name="mtg-cards-091" version="1" />
+    <requires name="mtg-cards-092" version="1" />
+    <requires name="mtg-cards-093" version="1" />
+    <requires name="mtg-cards-094" version="1" />
   </module>
   <module name="mtg-cards-000" version="27">
 	<include dir="graphics/Mtg/Tokens"/>
@@ -595,6 +598,15 @@
   </module>
   <module name="mtg-cards-091" version="1">
 	<include dir="graphics/Mtg/JOU"/>
+  </module>
+  <module name="mtg-cards-092" version="1">
+	<include dir="graphics/Mtg/VMA"/>
+  </module>
+  <module name="mtg-cards-093" version="1">
+	<include dir="graphics/Mtg/CNS"/>
+  </module>
+  <module name="mtg-cards-094" version="1">
+	<include dir="graphics/Mtg/M15"/>
   </module>
   <module name="pokemon-cards" version="1.9.0">
 	<requires name="pokemon-cards-000" version="5" />

@@ -92,6 +92,9 @@
   <cardset source="c13.xml"/>
   <cardset source="bng.xml"/>
   <cardset source="jou.xml"/>
+  <cardset source="vma.xml"/>
+  <cardset source="cns.xml"/>
+  <cardset source="m15.xml"/>
 
   <image file="b.png" tag="{B}"/>
   <image file="g.png" tag="{G}"/>
