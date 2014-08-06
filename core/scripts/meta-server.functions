@@ -2229,6 +2229,10 @@ def Password
     else 
     {
       users{u}[0]=ARG[1];
+      if(is_user(u+"-draft"))
+      {
+        users{u+"-draft"}[0]=ARG[1];
+      }
       if(is_user(u+"-sealed"))
       {
         users{u+"-sealed"}[0]=ARG[1];

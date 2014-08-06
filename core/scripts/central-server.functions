@@ -2184,6 +2184,10 @@ def Password
       {
         users{u+"-sealed"}[0]=ARG[1];
       }
+      if(is_user(u+"-draft"))
+      {
+        users{u+"-draft"}[0]=ARG[1];
+      }
       Reply("Password changed on server.");
     }
     u=pop();

@@ -2114,6 +2114,7 @@ def CommandPasswd
       SendMeta("Password",(password{username},p));
     }
     password{username}=p;
+    password{username+"-draft"}=p;
     password{username+"-sealed"}=p;
     save("password");
     Msg("Password changed locally.");
