@@ -475,6 +475,12 @@ def InitDistributions
   distribution{"BNG"}{"booster"}=((1,"THS/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"JOU"}=(,);
   distribution{"JOU"}{"booster"}=((1,"THS/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"VMA"}=(,);
+  distribution{"VMA"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"CMS"}=(,);
+  distribution{"CMS"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"M15"}=(,);
+  distribution{"M15"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
 }
 
 #
