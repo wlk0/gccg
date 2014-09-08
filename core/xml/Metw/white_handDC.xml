@@ -2,7 +2,6 @@
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
 <ccg-setinfo name="The White Hand" dir="WhiteHand" abbrev="WH" game="Middle-earth">
   <cards>
-
     <card name="Alatar" graphics="Alatar.jpg" text="Unique. Hazards your companies defeat (even with *) are worth full kill marshalling points. If you have more than 7 stage points, all detainment attacks against your companies attack normally instead. If at one of his Wizardhavens when a hazard creature attacks one of your companies, he may immediately join that company. Alatar must face a strike from the creature (in all cases). Following all of the creature's attacks, Alatar must tap (if untapped) and make a corruption check.">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Scout/Ranger/Sage"/>
@@ -201,7 +200,6 @@
        <attr key="rarity" value="C4"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hazard"/>
-	   <attr key="keyword" value="Song"/>
     </card>
     <card name="Flotsam and Jetsam" graphics="FlotsamandJetsam.jpg" text="If a player has 15 or fewer cards in his play deck (20 or fewer if a Fallen-wizard), all effects are automatically canceled which allow him to search through or look at any portion of his play deck or discard pile outside of the normal sequence of play. Discard when any play deck is exhausted. Cannot be duplicated.">
        <attr key="rarity" value="R3"/>
@@ -288,7 +286,7 @@
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Noble Steed" graphics="NobleSteed.jpg" text="Playable at any tapped or untapped non-Haven site in Rohan, Southern Rhovanion, Khand, Dorwinion, Horse Plains, or Harondor. If each character in a company controls a Noble Steed (or Bill the Pony or Shadowfax), the company may move up to two additional regions. Tap to cancel a strike (not from an automatic-attack) against its bearer or itself.">
+    <card name="Noble Steed" graphics="NobleSteedDC.jpg" text="Horse. Playable at any tapped or untapped non-Haven site in Rohan, Southern Rhovanion, Khand, Dorwinion, Horse Plains, or Harondor. If each character in a company controls a horse ally, the company may move up to two additional regions. Tap to cancel a strike (not from an automatic-attack) against its bearer or itself.">
        <attr key="mp" value="1"/>
        <attr key="body" value="8"/>
        <attr key="prowess" value="0"/>
@@ -324,7 +322,7 @@
        <attr key="class" value="Animal Faction"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Beasts of the Wood" graphics="BeastsoftheWoodDC.jpg" text="Playable at any tapped or untapped non-Haven, non-Darkhaven, non-Dark-hold site in Woodland Realm, Western Mirkwood, Heart of Mirkwood, Southern Mirkwood, Fangorn, or Cardolan if the influence check is greater than 11. Standard Modifications: if Radagast is your Wizard (+3). Tap this faction to cancel an attack keyed by name to one of the regions listed above. May also be used as a minion resource card that is only playable by a character in a covert company.">
+    <card name="Beasts of the Wood" graphics="BeastsoftheWoodDC.jpg" text="Playable at any tapped or untapped non-Haven, non- Darkhaven, non-Dark-hold site in Woodland Realm, Western Mirkwood, Heart of Mirkwood, Southern Mirkwood, Fangorn, Cardolan, or Old Forest if the influence check is greater than 11. Standard Modifications: if Radagast is your Wizard (+3). Tap this faction to cancel an attack keyed by name to one of the regions listed above. May also be used as a minion resource card that is only playable by a character in a covert company">
        <attr key="mp" value="1"/>
        <attr key="rarity" value="C3"/>
        <attr key="class" value="Animal Faction"/>
@@ -537,6 +535,7 @@
        <attr key="rarity" value="R3"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Stage Resource"/>
+	   <attr key="keyword" value="Technology"/>
     </card>
     <card name="The Fortress of Isen" graphics="TheFortressofIsenDC.jpg" text="Unique. May not be a starting stage card. Playable if you are Alatar, Pallando, or Saruman. Playable on Isengard. Isengard is protected. Other Fallen-wizards may not use the Wizardhaven card for Isengard. Cards that give marshalling points are not playable at the site by your opponent in all cases. Discard this card when the site is discarded or returned to its location deck.">
        <attr key="unique" value="yes"/>
@@ -580,7 +579,7 @@
        <attr key="type" value="Stage Resource"/>
 	   <attr key="specific" value="Fallen-wizard"/>
     </card>
-    <card name="Guarded Haven" graphics="GuardedHavenDC.jpg" text="Playable on one of your Wizardhavens other than Isengard, The White Towers, or Rhosgobel. The site is protected. Cards that give marshalling points are not playable at the site by your opponent in all cases. Cannot be duplicated on a given site.">
+    <card name="Guarded Haven" graphics="GuardedHavenDC.jpg" text="Playable on one of your non-protected Wizardhavens [H] other than Isengard, The White Towers, or Rhosgobel. The site is protected. Cards that give marshalling points are not playable at the site by your opponent in all cases. Cannot be duplicated on a given site.">
        <attr key="sp" value="1"/>
        <attr key="mp" value="1"/>
        <attr key="rarity" value="U3"/>
@@ -701,6 +700,7 @@
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Stage Resource"/>
 	   <attr key="keyword" value="Battle-gear"/>
+	   <attr key="keyword" value="Bow"/>
     </card>
     <card name="The Great Hunt" graphics="TheGreatHunt.jpg" text="Alatar specific. Playable if you are Alatar and have at least 12 stage points. Your opponent reveals cards one at a time from his play deck or his discard pile (your choice). Any hazard creature revealed immediately attacks Alatar's company. This process stops when 5 creatures or all cards of the deck (or pile) have been revealed. Reshuffle play deck if used. Thereafter, your opponent discards face-up. Whenever your opponent discards a creature during your turn, you may choose to have it attack Alatar's company instead. Cannot be duplicated.">
        <attr key="sp" value="3"/>
@@ -910,6 +910,8 @@
        <attr key="type" value="Stage Resource"/>
        <attr key="mind" value="2"/>
        <attr key="influence" value="3"/>
+	   <attr key="keyword" value="Animal"/>
+	   <attr key="keyword" value="Flying"/>
     </card>
     <card name="Shifter of Hues" graphics="ShifterofHues.jpg" text="Radagast specific. Shapeshifter. Place this card on Radagast if he is in play. Return this card to your hand: when you play another Shapeshifter card or, if you choose, during your organization phase. In addition to adopting the given attributes, Radagast's skills become Warrior/Diplomat. Radagast may not move. You may keep one more card than normal in your hand. Radagast can tap give +2 to the corruption checks of the characters in one company through your next organization phase (this company must be moving with at least one Wilderness in their site path). Radagast may bear, but may not use, items.">
        <attr key="corruption" value="-2"/>
@@ -944,7 +946,7 @@
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Stage Resource"/>
     </card>
-    <card name="Many-coloured Robes" graphics="ManycolouredRobesDC.jpg" text="Unique. Saruman specific. Place this card on Saruman if he is in play. If on Saruman, he may tap during his end-of-turn phase to take Ringlore, Lordly Presence, or First of the Order from his discard pile to his hand. {cyan} UEP: Unique. Saruman specific. Place this card on Saruman if he is in play. If on Saruman, he may tap Many-coloured Robes during his end-of-turn phase to take Ringlore, Lordly Presence, or First of the Order from his discard pile to his hand.">
+    <card name="Many-coloured Robes" graphics="ManycolouredRobesDC.jpg" text="Unique. Saruman specific. Place this card on Saruman if he is in play. If on Saruman, he may tap Many-coloured Robes during his end-of-turn phase to take Ringlore, Lordly Presence, or First of the Order from his discard pile to his hand.">
        <attr key="unique" value="yes"/>
        <attr key="corruption" value="1"/>
        <attr key="sp" value="1"/>

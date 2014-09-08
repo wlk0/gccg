@@ -84,7 +84,7 @@
 			 <attr key="mp" value="3"/>
 			 <attr key="home_site" value="Edhellond"/>
 			 <attr key="skills" value="Warrior/Scout/Ranger"/>
-			 <attr key="race" value="Elf(-lord)"/>
+			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Sinda"/>
 	</card>
 	<card name="Celeborn, Lord of Lórien" graphics="Celeborn Lord of Lorien.jpg" text="Unique. Sinda. Galadriel specific. Manifestation of Celeborn. Leader. +2 EI against Elves. +1 prowess against Orcs. +1 to your hand size if he is at Lórien and Galadriel is not. May only be controlled by Galadriel or GI. -2 mp if eliminated.">
@@ -260,7 +260,7 @@
 			 <attr key="keyword" value="Noldo"/>
 			 <attr key="keyword" value="Avatar"/>
 	</card>
-	<card name="Legolas of Greenwood" graphics="Legolas of Greenwood.jpg" text="Unique. Sinda. Manifestation of Legolas. +2 EI against the Wood-elves faction. If a song has been played on him or an entity in the company this turn, he receives +1 prowess and +1 to his CC.">
+	<card name="Legolas of Greenwood" graphics="Legolas of Greenwood.jpg" text="Unique. Silvan. Sinda. Manifestation of Legolas. +2 EI against the Wood-elves faction. If a song has been played on him or an entity in the company this turn, he receives +1 prowess and +1 to his CC.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
@@ -273,6 +273,7 @@
 			 <attr key="skills" value="Warrior/Scout"/>
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Sinda"/>
+			 <attr key="keyword" value="Silvan"/>
 	</card>
 	<card name="Mallorn-dweller" graphics="Mallorndweller.jpg" text="Nando. tap: cancel an attack against his company keyed to single Wilderness [w]. Only one Mallorn-dweller may tap in this fashion per turn per company.">
 			 <attr key="type" value="Hero Character"/>
@@ -296,7 +297,7 @@
 			 <attr key="mind" value="4"/>
 			 <attr key="influence" value="0"/>
 			 <attr key="mp" value="1"/>
-			 <attr key="home_site" value="Celebannon"/>
+			 <attr key="home_site" value="Celebannon, Thranduil's Halls"/>
 			 <attr key="skills" value="Warrior"/>
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Sinda"/>
@@ -311,7 +312,7 @@
 			 <attr key="influence" value="2"/>
 			 <attr key="mp" value="3"/>
 			 <attr key="cp" value="(+2)"/>
-			 <attr key="home_site" value="None"/>
+			 <attr key="home_site" value="Barad-dûr"/>
 			 <attr key="specific" value="Sauron"/>
 			 <attr key="skills" value="Warrior/Sage"/>
 			 <attr key="race" value="Elf"/>
@@ -338,7 +339,7 @@
 			 <attr key="mind" value="3"/>
 			 <attr key="influence" value="0"/>
 			 <attr key="mp" value="1"/>
-			 <attr key="home_site" value="Any Elf-hold Port"/>
+			 <attr key="home_site" value="Grey Havens, any Elf-hold port"/>
 			 <attr key="skills" value="Warrior/Sage"/>
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Sinda"/>
@@ -488,7 +489,7 @@
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Elves"/>
 	</card>
-	<card name="Falathrim" graphics="Falathrim.jpg" text="Elves. 5 strikes. Detainment and -3 prowess against heroand covert companies. Playable keyed to any region containing a hero Haven [H] and bordering on a Coastal Sea [c], and to its adjacent Coastal Sea regions. If The Watchful Peace is in play, may also be played keyed to any Coastal Sea region. If all strikes are successful against an overt company, the company must return to its site of origin. As a short-event, playable at any time by a hero player to cancel an attack by Pirates or Corsairs of Umbar keyed to any of the above named regions.">
+	<card name="Falathrim" graphics="Falathrim.jpg" text="Elves. 5 strikes. Detainment and -3 prowess against hero and covert companies. Playable keyed to any region containing a hero Haven [H] and bordering on a Coastal Sea [c], and to its adjacent Coastal Sea regions. If The Watchful Peace is in play, may also be played keyed to any Coastal Sea region. If all strikes are successful against an overt company, the company must return to its site of origin. As a short-event, playable at any time by a hero player to cancel an attack by Pirates or Corsairs of Umbar keyed to any of the above named regions.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Creature/Short-event"/>
@@ -509,7 +510,7 @@
 			 <attr key="strikes" value="2"/>
 			 <attr key="subclass" value="Awakened Plant"/>
 	</card>
-	<card name="Finglas" graphics="Finglas.jpg" text="Unique. Awakened Plant. Manifestation of Leaflock. 1 strike. Detainment and -2 prowess against hero andcovert companies. As a creature, playable keyed to Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Enedhwaith, Old Pûkel-land, Brown Lands, Anduin Vales, or Redhorn Gate, and to Border-holds [B] and Ruins &amp; Lairs [R] in these regions. As a short-event, play to cancel a resource event declared earlier in the same chain of effects, if the company has faced an Awakend Plant attack this turn.">
+	<card name="Finglas" graphics="Finglas.jpg" text="Unique. Awakened Plant. Manifestation of Leaflock. 1 strike. Detainment and -2 prowess against hero and covert companies. As a creature, playable keyed to Fangorn, Rohan, Gap of Isen, Wold &amp; Foothills, Enedhwaith, Old Pûkel-land, Brown Lands, Anduin Vales, or Redhorn Gate, and to Border-holds [B] and Ruins &amp; Lairs [R] in these regions. As a short-event, play to cancel a resource event declared earlier in the same chain of effects, if the company has faced an Awakend Plant attack this turn.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -537,7 +538,7 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="keyword" value="Maia"/>
 	</card>
-    <card name="He Is Lost to Us" graphics="He Is Lost to Us.jpg" text="Playable on a Lord or Fallen-wizard, if youropponent has 6 P or more. All creatures with an asterix (*) that are not of the same race as opponent’s avatar attack normally against the company, not as detainment. Opponent receives full kill mp for such defeated creatures. If this card would normally be discarded, place it in opponent’s mp.">
+    <card name="He Is Lost to Us" graphics="He Is Lost to Us.jpg" text="Playable on a Lord or Fallen-wizard, if your opponent has 6 P or more. All creatures with an asterix (*) that are not of the same race as opponent’s avatar attack normally against the company, not as detainment. Opponent receives full kill mp for such defeated creatures. If this card would normally be discarded, place it in opponent’s mp.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -633,12 +634,12 @@
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="2"/>
+			 <attr key="keyword" value="Prisoner"/>
 	</card>
    	<card name="A Long Good Talk" graphics="A Long Good Talk.jpg" text="Playable on Gandalf, Radagast, or a manifestation of an Elf-lord. Cannot be duplicated by a given player. If in the company, Treebeard andTom Bombadil are not discarded as per their card text when moving to Tom’s House and/or Wellinghall. If both these allies are in the same company you may place them in your mp with this card: it is worth 1 mp and you may tap both (at any time) to either:* Discard Rolled Down to the Sea or The Balance of Things before it resolves;* Give +2 to a ring test, or take one Cracks of Doom, Favor of the Valar, or The Old Thrush from your discard pile to your hand;* Store Fate of the Ithil Stone or Into the Smoking Cone (if inverted) at Mount Doom or Barad-dûr as if at a Haven [H].* Make Awakened Plant creatures playable against minion companies at your avatar’s current site.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="mp" value="(1)"/>
 	</card>
 	<card name="Ancient Knowledge" graphics="Ancient Knowledge.jpg" text="Playable on an Elf with mind 5 or more at a Haven [H]. When a Stolen Knowledge or Lost Knowledge card is required to be discarded from the company, you may discard this card instead.">
 			 <attr key="type" value="Hero Resource"/>
@@ -818,7 +819,7 @@
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Long-event"/>
 	</card>
- 	<card name="Hair of Uinen" graphics="Hair of Uinen.jpg" text="Unique. Environment. Cancels the effects of Drowing Seas, Storms of Ossë, and Winds of Wrath. Additionally, if Gatesof Morning is in play, an Elf or Dúnadan may tap to give -2 prowess or -1 body to a hazard creature attack against his company keyed to or at a Coastal Sea [c] region (by type or name).">
+ 	<card name="Hair of Uinen" graphics="Hair of Uinen.jpg" text="Unique. Environment. Cancels the effects of Drowning Seas, Storms of Ossë, and Winds of Wrath. Additionally, if Gates of Morning is in play, an Elf or Dúnadan may tap to give -2 prowess or -1 body to a hazard creature attack against his company keyed to or at a Coastal Sea [c] region (by type or name).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
@@ -845,7 +846,7 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="1"/>
 	</card>
-	<card name="Looking from Mind to Mind" graphics="Looking from Mind to Mind.jpg" text="Playable during the organization phase on a companyof 3 or more characters with a majority of Elves. An Elf or Wizard in the company may tap to untap another Elf or Wizard in the company with an equal or lower mind (10 for a Wizard). Discard this card when the company size is below 3, when Elves are no longer a majority in the company, or when any play deck is exhausted.">
+	<card name="Looking from Mind to Mind" graphics="Looking from Mind to Mind.jpg" text="Playable during the organization phase on a company of 3 or more characters with a majority of Elves. An Elf or Wizard in the company may tap to untap another Elf or Wizard in the company with an equal or lower mind (10 for a Wizard). Discard this card when the company size is below 3, when Elves are no longer a majority in the company, or when any play deck is exhausted.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -942,11 +943,11 @@
 			 <attr key="mp" value="(5)"/>
 			 <attr key="keyword" value="startable"/>
 	</card>
-	<card name="Ulmo's Watch" graphics="Ulmos Watch.jpg" text="Unique. Playable if you tap an Elf with mind 7 or more (5 or more if a Sinda). If a hero company moves with at least 3 Wilderness [www] in their site path or to a site in a Coastal Sea [c] region, an Elf, Dúndadan, Maia or Wizard in the company may tap to reveal a card played on-guard at their new site. Additionally, if Gates of Morning is in play their hazard limit is reduced by 1 (to a minimum of 2).">
+	<card name="Ulmo's Watch" graphics="Ulmos Watch.jpg" text="Unique. Playable if you tap a Dúnadan or Elf with a mind of 7 or more (5 or more if a Sinda). If a hero company moves with at least three Wildernesses [w] or one Coastal Sea [c] in their site path, their company's size is considered 2 less than normal for the company (to a minimum of 2) until the end of the turn. Additionally, if Gates of Morning is in play, each Elf, Dúnadan, Maia, and Wizard in such a company gains the sage skill and may tap to discard a card placed on-guard at his company's new site.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
-			 <attr key="class" value="Permanent-event"/>
+			 <attr key="class" value="Long-event"/>
 	</card>
 	<card name="Ungolcrist" graphics="Ungolcrist.jpg" text="Unique. Playable at Shelob’s Lair. Weapon. +2 prowess to a maximum of 8. Warrior only: +4 prowess against Spiders (to a maximum of 10) and -3 to target’s body. Bearer must make a CC modified by +1 when his company faces a Spider attack; bearer must be assigned the first strike from such an attack and must make an additional CC modified by -1 if the attack is cancelled.">
 			 <attr key="type" value="Hero Resource"/>
@@ -1031,7 +1032,7 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Círdan"/>
 	</card>
-	<card name="Captain of the House" graphics="Captain of the House.jpg" text="Unique. Elrond specific. Playable on Glorfindel at Rivendell (or in your starting company). Glorfindel becomes a leader, requires only 6 points of influence to control and can only be controlled by Elrond or GI. He receives +1 prowess against Nazgul, Spawn and Dragons, and the body of such strikes against him is modified by -1. Discard this card if Glorfindel is not in a company with Elrond and moves to a site that is not in Eriador or its adjacent regions. tap: during your end-of-turn phase to take one Power Against the Shadow from your discard pile to your hand.">
+	<card name="Captain of the House" graphics="Captain of the House.jpg" text="Unique. Playable on Glorfindel at Rivendell (or in your starting company). Glorfindel becomes a leader, requires only 6 points of influence to control and can only be controlled by Elrond or GI. He receives +1 prowess against Nazgul, Spawn and Dragons, and the body of such strikes against him is modified by -1. Discard this card if Glorfindel is not in a company with Elrond and moves to a site that is not in Eriador or its adjacent regions. tap: during your end-of-turn phase to take one Power Against the Shadow from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
@@ -1132,7 +1133,7 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Thranduil"/>
 	</card>
-	<card name="Libraries of Imladris" graphics="Libraries of Imladris.jpg" text="Elrond specific. Playable on a sage at Rivendell(or in your starting company). Character may use spirit-magic. Additionally, if Praise to Elbereth is played all characters in the company receive +2 to their rolls for removing corruption cards untill the end of the turn. Cannot be duplicated on a given character.">
+	<card name="Libraries of Imladris" graphics="Libraries of Imladris.jpg" text="Playable on a sage at Rivendell (or in your starting company if you are Gandalf or Elrond Half- elven). Target sage may use spirit-magic. He may tap to discard one Memories Grown Dim or No Memory of This Place. Additionally, when you play Praise to Elbereth you may attempt to remove one corruption card from a character in the company (as if during the organization phase; +2 to the roll).">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1341,11 +1342,10 @@
 			 <attr key="cp" value="5"/>
 			 <attr key="keyword" value="Elven Ring"/>
 	</card>
-	<card name="They Are Accounted For" graphics="They Are Accounted For.jpg" text="Black player only. All ring tests are modified by: +1 for every Elven Ring in play; +1 for every 2 Dwarven Rings in play; +1 for every 3 Man Rings in play; and +1 for every 5 other rings in play. Discard this card if The One Ring comes into play. Cannot be duplicated.">
+	<card name="They Are Accounted For" graphics="They Are Accounted For.jpg" text="Any test for a gold ring is modified by: +1 for every Elven Ring in play; +1 for every two Dwarven Rings in play; +1 for every three Man and/or Spirit Rings in play; and +1 for every five other rings in play. Discard this card if The One Ring comes into play. Cannot be duplicated.">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="specific" value="Black player"/>
 	</card>
     <card name="Amon Lind" graphics="Amon Lind.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
@@ -1445,9 +1445,9 @@
 			 <attr key="draw_opp" value="1"/>
 			 <attr key="region" value="Woodland Realm"/>
 			 <attr key="haven" value="Lórien"/>
-			 <attr key="special" value="Port on Taurduin. If you move to this site using Port-on-River movement, any Elf in the company may tap to play Old Winyards at this site (as if at a Border-hold [B])."/>
+			 <attr key="special" value="Port-on-Celduin. Any Elf or Man in a company that has moved here this turn from a site in Dorwinion or Northern Rhovanion may tap to play Old Winyards here (as if at a Border-hold [B])."/>
 			 <attr key="keyword" value="Elf-hold"/>
-	         <attr key="keyword" value="Port on Taurduin"/>
+	         <attr key="keyword" value="Port-on-Celduin"/>
 	</card>
 	<card name="Celebannon" graphics="Celebannon2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1462,7 +1462,7 @@
 			 <attr key="playable" value="Information, Items* (minor, major) *—non-battle-gear items only—"/>
 			 <attr key="auto_attack" value="Elves - 3 strikes with 8 prowess (detainment against covert companies); Elves - 2 strikes with 9 prowess (detainment against covert companies)"/>
 			 <attr key="keyword" value="Elf-hold"/>
-	         <attr key="keyword" value="Port on Taurduin"/>
+	         <attr key="keyword" value="Port-on-Celduin"/>
 	</card>
 	<card name="Cerin Amroth" graphics="Cerin Amroth.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
@@ -1489,7 +1489,7 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Information, Items* (minor, major, gold ring) *—non-battle-gear items only—"/>
 			 <attr key="auto_attack" value="(1st) Elves — 3 strikes with 7 prowess; (2nd) Elves — 2 strikes with 8 prowess; (3rd) Elves — 1 strike with 9 prowess"/>
-			 <attr key="special" value="Any company moving to this site has its hazard limit increased by 1."/>
+			 <attr key="special" value=" If Gandalf the White Rider or Lady of the Golden Wood is in play as a permanent-event, it must be used as an additional automatic-attack (discard after use - ignore result of defeat). Any company moving to this site has its hazard limit increased by 1."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
 	<card name="Cor Angaladh" graphics="Cor Angaladh.jpg" back="1" text="">
@@ -1504,6 +1504,7 @@
 			 <attr key="haven" value="Lórien"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
 			 <attr key="auto_attack" value="Undead. Awakened Plant — 2 strikes with 8 prowess; each character wounded must make a CC."/>
+			 <attr key="special" value="Barrow-blade and Necklace of Girion are playable at the site (and also from the discard pile) if Vanish in Sunlight was played on an attack against the company the same turn."/>
 	</card>
 	<card name="Cor Angaladh" graphics="Cor Angaladh2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1517,6 +1518,7 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
 			 <attr key="auto_attack" value="Undead. Awakened Plant — 2 strikes with 8 prowess; each character wounded must make a CC"/>
+			 <attr key="special" value="Non-unique hoard items are playable at this site."/>
 	</card>
 	<card name="Edhellond" graphics="Edhellond.jpg" back="1" text="">
 			 <attr key="type" value="Fallen-wizard Site"/>
@@ -1543,7 +1545,7 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Lindon"/>
 			 <attr key="playable" value="Information"/>
-			 <attr key="auto_attack" value="Elves — 3 strikes with 11 prowess (only if you have 12 P or more)"/>
+			 <attr key="auto_attack" value="Elves —3 strikes with 11 prowess (only if you have 12 P or more)"/>
 			 <attr key="special" value="Port. You cannot play any card which would make this site a Haven [H]. This site may not be used by overt companies or if you are Círdan. This site must be used as a site card for Grey Havens by all other Lord and Fallen-wizard players with 12or more P."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	         <attr key="keyword" value="Port"/>
@@ -1588,7 +1590,7 @@
 			 <attr key="auto_attack" value="Elves — 3 strikes with 11 prowess (only if you have 12 P or more)"/>
 			 <attr key="special" value="Port on Anduin. You cannot play any card which would make this site a Haven [H]. This site may not be used by overt companies or if you are Galadriel. This site must be used as a site card for Lórien by all other Lord and Fallen-wizard players with 12 ormore P."/>
 			 <attr key="keyword" value="Elf-hold"/>
-	         <attr key="keyword" value="Port on Anduin"/>
+	         <attr key="keyword" value="Port-on-Anduin"/>
 	</card>
 	<card name="Lórien" graphics="Lorien.jpg" back="1" text="">
 			 <attr key="type" value="Elf-lord Site"/>
@@ -1600,7 +1602,7 @@
 			 <attr key="region" value="Wold &amp; Foothills"/>
 			 <attr key="special" value="Galadriel specific. This site is a protected Lordhaven [H]. If one of your companies is at this site, all attacks against it are cancelled. Characters with Lórien as a home site may be brought into play at this site regardless of the presence of any other character."/>
 			 <attr key="keyword" value="Elf-hold"/>
-	         <attr key="keyword" value="Port on Anduin"/>
+	         <attr key="keyword" value="Port-on-Anduin"/>
 	</card>
 	<card name="Mount Rerir" graphics="Mount Rerir.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
@@ -1655,9 +1657,9 @@
 			 <attr key="haven1" value="Lórien - {w}{b}{b}{w}{b}{w}"/>
 			 <attr key="haven2" value="Elanthia - {w}{s}{w}{w}{w}{w}"/>
 			 <attr key="haven3" value="Cybrethil - {w}{c}{b}{w}{w}{w}"/>
-			 <attr key="special" value="Port on Sea of Rhûn."/>
+			 <attr key="special" value="Port-on-Sea of Rhûn."/>
 			 <attr key="keyword" value="Elf-hold"/>
-	         <attr key="keyword" value="Port on Sea of Rhûn"/>
+	         <attr key="keyword" value="Port-on-Sea of Rhûn."/>
 	</card>
 	<card name="Rhûbar" graphics="Rhubar2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1671,9 +1673,9 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Items (minor, major, greater)"/>
 			 <attr key="auto_attack" value="(1st) Elves — each character faces a strike with 9 prowess (detainment against covert companies); (2nd) Animals (Elvish Hounds) — 4 strikes with 9 prowess (against overt companies only)."/>
-			 <attr key="special" value="Port on Sea of Rhûn. Any company moving to this site has its hazard limit increased by 2. A minion company may not attack another company at this site. A Ringwraith may not move to this site."/>
+			 <attr key="special" value="Port-on-Sea of Rhûn. Any company moving to this site has its hazard limit increased by 2. A minion company may not attack another company at this site. A Ringwraith may not move to this site."/>
 			 <attr key="keyword" value="Elf-hold"/>
-	         <attr key="keyword" value="Port on Sea of Rhûn"/>
+	         <attr key="keyword" value="Port-on-Sea of Rhûn."/>
 	</card>
 	<card name="Rivendell" graphics="Rivendell2.jpg" back="1" text="">
 			 <attr key="type" value="Fallen-wizard Site"/>

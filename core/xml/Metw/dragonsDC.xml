@@ -62,11 +62,12 @@
 	   <attr key="keyword" value="Cold-dragon"/>
 	   <attr key="keyword" value="Winged"/>
     </card>
-    <card name="Black Breath" graphics="BlackBreath.jpg" text="Corruption. Place with any wounded character in a company that just faced a Nazgul attack; the character receives 3 corruption points. Target character makes a body check during each of his organization phases. Whenever target creature would normally heal, he instead makes a roll (or draws a #): if the result is greater than 10, he heals normally and this card is removed. The roll is modified by +2 if the character is at a Haven{H} and by +2 for each sage in his company that taps in support.">
+    <card name="Black Breath" graphics="BlackBreath.jpg" text="Corruption. Disease. Place with any wounded character in a company that just faced a Nazgul attack; the character receives 3 corruption points. Target character makes a body check during each of his organization phases. Whenever target creature would normally heal, he instead makes a roll (or draws a #): if the result is greater than 10, he heals normally and this card is removed. The roll is modified by +2 if the character is at a Haven{H} and by +2 for each sage in his company that taps in support.">
        <attr key="corruption" value="3"/>
        <attr key="rarity" value="R2"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hazard"/>
+	   <attr key="keyword" value="Disease"/>
 	   <attr key="keyword" value="Corruption"/>
     </card>
     <card name="Carrion Birds" graphics="CarrionBirds.jpg" text="May be played keyed to wilderness after any Orc, Troll, or Man attack keyed to wilderness and against the same company. Animals. Each character in the company faces one strike. Any character wounded by Carrion Birds makes two body checks instead of one, both checks modified by -1.">
@@ -79,7 +80,7 @@
        <attr key="class" value="Creature"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Cave Worm" graphics="CaveWormDC.jpg" text="Drake. One strike. May be played keyed to Redhorn Gate, High Pass, Gap of Isen, Angmar, Gundabad, Grey Mountain Narrows, Withered Heath, Númeriador, Iron Hills or any mountain region.">
+    <card name="Cave Worm" graphics="CaveWormDC.jpg" text="Drake. One strike. May be played keyed to Redhorn Gate, High Pass, Gap of Isen, Angmar, Gundabad, Grey Mountain Narrows, Withered Heath, Númeriador, Iron Hills, Dragon Gap, or any mountain region.">
        <attr key="strikes" value="1"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="-"/>
@@ -267,7 +268,7 @@
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Ice-drake" graphics="Icedrake.jpg" text="Drake. Two strikes. May be played keyed to Elven Shores, Forochel, Angmar, Gundabad, Grey Mountains, Grey Mountain Narrows and Withered Heath.">
+    <card name="Ice-drake" graphics="IcedrakeDC.jpg" text="Drake. Two strikes. May be played keyed to Elven Shores, Forochel, Angmar, Gundabad, Grey Mountains, Grey Mountain Narrows and Withered Heath.">
        <attr key="strikes" value="2"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="-"/>
@@ -814,7 +815,7 @@
        <attr key="influence" value="2"/>
 	   <attr key="keyword" value="Longbeard"/>
     </card>
-    <card name="A Short Rest" graphics="AShortRest.jpg" text="Each moving company may draw an extra card for each region less than four in its site path.">
+    <card name="A Short Rest" graphics="AShortRest.jpg" text="Each moving company may draw an extra card for each region less than four in its site path. Cannot be duplicated.">
        <attr key="rarity" value="C2"/>
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -865,6 +866,7 @@
        <attr key="class" value="Major Item"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Battle-gear"/>
+	   <attr key="keyword" value="Bow"/>
 	   <attr key="keyword" value="Hoard Item"/>
 	   <attr key="keyword" value="Warrior only"/>
     </card>
@@ -919,6 +921,7 @@
        <attr key="rarity" value="C2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Elf only"/>
     </card>
     <card name="Emerald of Doriath" graphics="EmeraldofDoriath.jpg" text="Unique. Hoard item. +1 to direct influence against Elves and Elf factions. If bearer is a Wizard, your general influence is increased by two.">
        <attr key="unique" value="yes"/>
@@ -1039,6 +1042,7 @@
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Ritual"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Lore of the Ages" graphics="LoreoftheAges.jpg" text="Playable on an Elf at a Haven [{H}]; tap the Elf. When facing an attack, bearer may tap to give +1 prowess to all characters in his company against the attack. Bearer makes a corruption check.">
        <attr key="corruption" value="2"/>
@@ -1046,6 +1050,7 @@
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Lore"/>
+	   <attr key="keyword" value="Elf only"/>
     </card>
     <card name="Magical Harp" graphics="MagicalHarp.jpg" text="Unique. Hoard item. Tap Magical Harp to cancel all actions for the rest of the turn that discard a target character in bearer's company. Bearer makes a corruption check. This item may also be so tapped during opponent's site phase.">
        <attr key="unique" value="yes"/>
@@ -1062,6 +1067,7 @@
        <attr key="rarity" value="C2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Warrior only"/>
     </card>
     <card name="Many Turns and Doublings" graphics="ManyTurnsandDoublings.jpg" text="Ranger only. Cancel an attack by Wolves, Spiders, Animals, or Undead. Alternatively, if Gates of Morning is in play, decrease the hazard limit against the ranger's company by one (no minimum).">
        <attr key="rarity" value="C2"/>
@@ -1078,12 +1084,14 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Lore"/>
 	   <attr key="keyword" value="Information"/>
+	   <attr key="keyword" value="Dwarf only"/>
     </card>
     <card name="Marvels Told" graphics="MarvelsTold.jpg" text="Ritual. Tap a sage to force the discard of a hazard non-environment permanent-event or long-event. Sage makes a corruption check modified by -2.">
 	   <attr key="rarity" value="C2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Ritual"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Master of Esgaroth" graphics="MasterofEsgaroth.jpg" text="Playable at the end of the organization phase on a moving company. If the company moves to a Border-hold [{B}], it can take a second movement/hazard phase immediately following its first movement/hazard phase.">
        <attr key="rarity" value="C2"/>
@@ -1095,6 +1103,7 @@
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Ritual"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Mathom Lore" graphics="MathomLore.jpg" text="Playable on a Hobbit at Bag End; tap the Hobbit. During the organization phase, bearer may tap to choose a minor item from your play deck or discard pile to place into your hand. Reshuffle your play deck if it was used. Bearer makes a corruption check.">
        <attr key="corruption" value="2"/>
@@ -1102,6 +1111,7 @@
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Lore"/>
+	   <attr key="keyword" value="Hobbit only"/>
     </card>
     <card name="Men of Dale" graphics="MenofDale.jpg" text="Unique. Playable at Dale if the influence check is greater than 7. Standard modifications: Men (+2), Dwarves (+1).">
        <attr key="unique" value="yes"/>
@@ -1201,7 +1211,7 @@
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Star of High Hope" graphics="StarofHighHope.jpg" text="Environment. The prowess of each Elf and Dúnadan is modified by +1 (by +2 if Gates of Morning is in play).">
+    <card name="Star of High Hope" graphics="StarofHighHope.jpg" text="Environment. The prowess of each Elf and Dúnadan is modified by +1 (by +2 if Gates of Morning is in play). Cannot be duplicated.">
        <attr key="rarity" value="U2"/>
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -1234,6 +1244,7 @@
        <attr key="class" value="Minor Item"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Lost Knowledge"/>
+	   <attr key="keyword" value="Diplomat only"/>
     </card>
     <card name="Trickery" graphics="Trickery.jpg" text="Scout only against an Orc, Troll, Man, Elf, Slayer, Awakened Plant, or Giant attack against his company. Make a roll (or draw a #); if the result is greater than 5, the attack is cancelled.">
        <attr key="rarity" value="C2"/>
@@ -1270,6 +1281,7 @@
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Ritual"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Washed and Refreshed" graphics="WashedandRefreshed.jpg" text="Playable at the end of the organization phase on a moving company. When the company's new site is revealed, the company may untap a number of characters equal to the number of regions less than four in its site path.">
        <attr key="rarity" value="C2"/>
@@ -1291,12 +1303,14 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Light Enchantment"/>
 	   <attr key="keyword" value="Information"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Wielded Twice" graphics="WieldedTwice.jpg" text="Ritual. Tap a sage to untap an item in his company. Sage makes a corruption check.">
 	   <attr key="rarity" value="C2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Ritual"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Wit" graphics="Wit.jpg" text="Modify one riddling roll by +3. If applicable, this card may also be played during your opponent's site-phase if a riddling roll is called for.">
        <attr key="rarity" value="U2"/>
@@ -1321,6 +1335,7 @@
        <attr key="influence" value="+2"/>
 	   <attr key="keyword" value="Battle-gear"/>
 	   <attr key="keyword" value="Hoard Item"/>
+	   <attr key="keyword" value="Staff"/>
     </card>
     <card name="Wondrous Maps" graphics="WondrousMaps.jpg" text="Playable at the end of the organization phase on a company using region cards with the last one being a Shadow-land [{s}]. (Play regions face-up.) This card is used as a site card, Ruins &amp; Lairs [{R}] (automatic-attack: Orcs -- 4 strikes at 7 prowess, items: (minor, major), cards opponent draws: 3, you draw 1). The company may only leave the site using region movement. Discard Wondrous Maps when the company moves to a new site.">
        <attr key="rarity" value="C1"/>
@@ -1364,7 +1379,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Man-hold"/>
-	   <attr key="keyword" value="Port on Celduin"/>
+	   <attr key="keyword" value="Port-on-Celduin"/>
     </card>
     <card name="Framsburg" graphics="Framsburg.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1379,7 +1394,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
-	   <attr key="keyword" value="Port on Anduin"/>
+	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Gold Hill" graphics="GoldHill.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1447,7 +1462,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
-	   <attr key="keyword" value="Port on Greyflood"/>
+	   <attr key="keyword" value="Port"/>
 	   <attr key="keyword" value="Swamp"/>
     </card>
     <card name="Zarak Dûm" graphics="ZarakDum.jpg" back="1" text="">

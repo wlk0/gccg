@@ -3,7 +3,7 @@
 <ccg-setinfo name="The Balrog" dir="Balrog" abbrev="BA" game="Middle-earth">
   <cards>
 
-    <card name="Strider" graphics="StriderDC.jpg" text="Unique. Manifestation of Aragorn II. You may bring Aragorn II into play with Strider's company, removing Strider from the game and automatically transferring all cards on Strider to Aragorn II. +3 direct influence against the Rangers of the North faction. Tap Strider to search your discard pile for any one item, ally, or faction playable at his current site the site must be in Arthedain, Cardolan, Rhudaur, or The Shire. {green} DCE: Tap Strider to search your discard pile for any one item, ally, or faction playable at his current site the site must be in Arthedain, Cardolan, Old Forest, Rhudaur, or The Shire.">
+    <card name="Strider" graphics="StriderDC.jpg" text="Unique. Manifestation of Aragorn II. You may bring Aragorn II into play with Strider's company, removing Strider from the game and automatically transferring all cards on Strider to Aragorn II. +3 direct influence against the Rangers of the North faction. Tap Strider to search your discard pile for any one item, ally, or faction playable at his current site - the site must be in Arthedain, Cardolan, Old Forest, Rhudaur, or The Shire.    ">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Scout/Ranger"/>
        <attr key="mp" value="3"/>
@@ -129,7 +129,7 @@
        <attr key="influence" value="2"/>
 	   <attr key="keyword" value="Leader"/>
     </card>
-    <card name="Beorning Skin-changers" graphics="BeorningSkinchangersDC.jpg" text="Animals. Men. Bears. Two strikes. As a creature, playable only against minion companies. May also be keyed to Anduin Vales, Western Mirkwood, Wold &amp; Foothills; and to sites in these regions. Alternatively, playable as a short-event against a moving hero company. Unless the company contains Beorn or an untapped warrior with prowess greater than 4, it must return to its site of origin. {cyan} UEP: Alternatively, playable as a short-event against a hero company moving through mentioned regions or with two wilderness {ww} in its sitepath. Unless the company contains Beorn or an untapped warrior with prowess greater than 4, it must return to its site of origin.">
+    <card name="Beorning Skin-changers" graphics="BeorningSkinchangersDC.jpg" text="Animals. Men. Bears. Two strikes. As a creature, playable only against minion companies. May also be keyed to Anduin Vales, Western Mirkwood, Wold and Foothills; and to sites in these regions. Alternatively, playable as a short-event against a hero company moving through the above mentioned regions or with two Wilderness [ww] in its site path. Unless the company contains Beorn or an untapped warrior with prowess greater than 4, it must return to its site of origin.">
        <attr key="strikes" value="2"/>
        <attr key="mp" value="1*"/>
        <attr key="playable" value="{w}{w}"/>
@@ -202,6 +202,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hazard"/>
+	   <attr key="keyword" value="Environment"/>
     </card>
     <card name="Imprisoned and Mocked" graphics="ImprisonedandMocked.jpg" text="Playable before strikes are assigned on a non-detainment Orc or Troll attack with more strikes than characters and allies in the company. If the attack is not canceled or defeated, make a roll following the attack adding two for each excess strike. If the result minus five is greater than the prowess of the highest mind character in the company (of your choice), place that character &quot;off to the side&quot; with this card and discard all cards on that character. Otherwise, discard this card. During that character's next long-event phase, discard this card and return the character to its owner's hand.">
        <attr key="rarity" value="C1"/>
@@ -286,7 +287,7 @@
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="To Fealty Sworn" graphics="ToFealtySwornDC.jpg" text="Playable on a Hobbit: in the same company as Return of the King or during the same site phase his company plays a unique hero faction at a Free-hold (not Bag End). The Hobbit gains the warrior skill, +2 prowess, and +5 direct influence against the Hobbits faction and characters with Bag End as a home site. Cannot be duplicated on a given Hobbit.">
+    <card name="To Fealty Sworn" graphics="ToFealtySwornDC.jpg" text="Playable on a Hobbit: in the same company as Return of the King or during the same site phase his company plays a unique non- Hobbit hero faction at a Free-hold [F]. The Hobbit gains the warrior skill, +2 prowess, and +5 direct influence against Hobbits. Cannot be duplicated on a given Hobbit.">
        <attr key="mp" value="1"/>
        <attr key="rarity" value="C1"/>
        <attr key="class" value="Permanent-event"/>
@@ -518,7 +519,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Minion Resource"/>
-	   <attr key="keyword" value="Information"/>
+	   <attr key="keyword" value="Lost Knowledge"/>
     </card>
     <card name="Memories of Old Torture" graphics="MemoriesofOldTorture.jpg" text="Balrog specific. Playable on a Man, Drake, Orc, Troll, or Giant hazard creature attack with one strike for each of its attacks. All attacks of the creature are canceled. The creature becomes an ally under the control of any character in the company. The character need not tap. The ally has a mind of 1, body of 7, and prowess equal to its normal prowess minus 7. It gives 1 ally marshalling point. Discard this card and the ally if the company moves through a Free-domain or Dark-domain.">
        <attr key="specific" value="Balrog"/>
@@ -670,6 +671,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
+	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -720,7 +722,7 @@
     </card>
     <card name="The Drowning-deeps" graphics="The DrowningdeepsDC.jpg" back="1" text="{green} DCE: add to adjacent sites: Ruins of Belegost (12), Ruins of Nogrod (12)">
        <attr key="unique" value="yes"/>
-       <attr key="adjacent" value=" Blue Mountain Dwarf-hold (13), The Under-vaults (8), Remains of Thangorodrim (9)"/>
+       <attr key="adjacent" value=" Blue Mountain Dwarf-hold (13), The Under-vaults (8), Remains of Thangorodrim (9), Ruins of Belegost (11), Ruins of Nogrod (11)"/>
        <attr key="draw" value="1"/>
        <attr key="region" value="Under-deeps"/>
        <attr key="site_type" value="{R}"/>
@@ -785,6 +787,7 @@
        <attr key="rarity" value="C2"/>
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
+	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="The Pûkel-deeps" graphics="ThePukeldeeps.jpg" back="1" text="">
@@ -817,7 +820,7 @@
     </card>
     <card name="The Rusted-deeps" graphics="The RusteddeepsDC.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="adjacent" value=" Iron Hill Dwarf-hold (13), The Wind-deeps (8)"/>
+       <attr key="adjacent" value="  Iron Hill Dwarf-hold (13), Barak-shathûr (13), The Wind-deeps (8), Ruins of Kheledkhizdín (8), Mines of Falek-dim (8), The Cobalt-deeps (8)"/>
        <attr key="draw" value="1"/>
        <attr key="region" value="Under-deeps"/>
        <attr key="site_type" value="{R}"/>
@@ -933,7 +936,7 @@
     </card>
     <card name="The Wind-deeps" graphics="The WinddeepsDC.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="adjacent" value=" The Wind Throne (0), The Under-leas (5), The Rusted-deeps (8)"/>
+       <attr key="adjacent" value=" The Wind Throne (0), The Under-leas (5), The Rusted-deeps (8), The Cobalt-deeps (5)"/>
        <attr key="draw" value="1"/>
        <attr key="region" value="Under-deeps"/>
        <attr key="site_type" value="{R}"/>
