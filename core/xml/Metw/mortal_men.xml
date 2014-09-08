@@ -12,7 +12,7 @@
 			 <attr key="subclass" value="Animals, Vermin"/>
 			 <attr key="keyword" value="Vermin"/>
 		</card>
-		<card name="Between Two Worlds" graphics="Between Two Worlds.jpg" text="Unique. Stature card. Playable on a Ring for MortalMen if borne by a Man or Dúnadan with a normal mind of 8 or more. Bearer may tap test any gold ring item in his company. All non-Maia, non-Nazgul, non-Undead strikes against the bearer are ineffectual. Bearer may not have followers. Bearer must make a CC to move. Bearer may not bear non-ring items.">
+		<card name="Between Two Worlds" graphics="Between Two Worlds.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men if borne by a Man or Dúnadan with a normal mind of 8 or more. Bearer may tap test any gold ring item in his company. All non-Maia, non-Nazgul, non-Undead strikes against the bearer are ineffectual. Bearer may not have followers. Bearer must make a CC to move. Bearer may not bear non-ring items.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
@@ -29,6 +29,7 @@
 			 <attr key="mind" value="3"/>
 			 <attr key="mp" value="2"/>
 			 <attr key="specific" value="Sauron"/>
+			 <attr key="keyword" value="Sage"/>
 		</card>
 		<card name="Bound up with It" graphics="Bound up with It.jpg" text="Unique. All players must now test any gold ring items they have in play; only ring special items with a printed mp of 3 or more may be played resulting this test. Additionally, any Narya, Nenya or Vilya played this turn may be shuffled into the play deck instead of discarded. Any discarded Ring for Mortal Men may be shuffled into the play deck. This card may also be played as a hazard.">
 			 <attr key="type" value="Dual Resource"/>

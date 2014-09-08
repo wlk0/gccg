@@ -110,8 +110,7 @@
        <attr key="class" value="Greater Item"/>
        <attr key="type" value="Hero Resource"/>
        <attr key="influence" value="(+4)"/>
-	   <attr key="keyword" value="Battle-gear"/>
-	   <attr key="keyword" value="Helmet"/>
+	   <attr key="keyword" value="Treasure"/>
     </card>
   </cards>
 </ccg-setinfo>

@@ -111,6 +111,7 @@
        <attr key="rarity" value="R"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hazard"/>
+	   <attr key="keyword" value="Corruption"/>
     </card>
     <card name="Barrow-wight" graphics="BarrowwightDC.jpg" text="Undead. One strike. After the attack, each character wounded by Barrow-wight makes a corruption check modified by -2. {cyan} UEP: Barrow-wight is playable at Barrow-downs.">
        <attr key="strikes" value="1"/>
@@ -190,7 +191,7 @@
        <attr key="class" value="Creature"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Corsairs of Umbar" graphics="CorsairsofUmbarDC.jpg" text="Men. Five strikes. May also be played keyed to Andrast, Andrast Coast, Anfalas, Bay of Belfalas, Belfalas, Cardolan, Elven Shores, Enedhwaith, Eriadoran Caoast, Harondor, Lindon, Lebennin, Mouths of the Anduin and Old Pûkel-land; and may also be played at Ruins &amp; Lairs [{R}] and Shadow-holds [{S}] in these regions. May also be played at any site in Elven Shores, Eriadoran Coast, Andrast Coast, Bay of Belfalas, or Mouths of the Anduin.">
+    <card name="Corsairs of Umbar" graphics="CorsairsofUmbarDC.jpg" text="Men. Five strikes. May also be played keyed to Andrast, Anfalas, Belfalas, Cardolan, Elven Shores, Enedhwaith, Harondor, Lindon, Lebennin, Old Pûkel-land, Andrast Coast, Bay of Belfalas, Eriadoran Coast, Coast of Harad, Hyarmenfalas, Mardruak, Mardruak Cape and Mouths of the Anduin; and may also be played at Border-holds [B], Ruins and Lairs [R] and Shadow-holds [S] in these regions.">
        <attr key="strikes" value="5"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="-"/>
@@ -525,7 +526,7 @@
        <attr key="class" value="Creature/Short-event"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Mûmak (Oliphant)" graphics="MumakOliphantDC.jpg" text="Animals. May be played keyed to Dagorlad, Gorgoroth, Horse Plains, Ithilien, Khand, Nurn, Udun; and may also be played at sites in these regions. May also be played (on the same turn and on the same company as Corsairs of Umbar) keyed to Andrast, Anfalas, Belfalas, Lebennin; and at Ruins &amp; Lairs [{R}] and Shadow-holds [{S}] in these regions. {cyan} UEP: Animals. May be keyed to Dagorlad, Gorgoroth, Horse Plains, Ithilien, Khand, Nurn, Udun, or Harondor; and may also be played at sites in these regions. May also be played (on the same turn and on the same company as Corsairs of Umbar) keyed to Andrast, Anfalas, Belfalas, Lebennin; and at Ruins and Lairs and Shadow-holds in these regions. {green} DCE: May be played keyed to Dagorlad, Harondor, Near Harad, Gorgoroth, Horse Plains, Ithilien, Khand, Nurn, Ûdun; and may also be played at sites in these regions. May also be played (on the same turn and on the same company as Corsairs of Umbar) keyed to Andrast, Anfalas, Belfalas, Lebennin; and at Ruins and  Lairs and Shadow-holds in these regions.">
+    <card name="Mûmak (Oliphant)" graphics="MumakOliphantDC.jpg" text="Animals. Two strikes. May be played keyed to Dagorlad, Gorgoroth, Horse Plains, Ithilien, Khand, Nurn, Ûdun, Chelkar, Harondor, Haruzan, Hyarmenfalas and any Jungle [j] region in the Utter-south; and may also be played at sites in these regions. May also be played (on the same turn and on the same company as Corsairs of Umbar) keyed to Andrast, Anfalas, Belfalas, Lebennin and Mardruak; and at Ruins and Lairs [R] and Shadow-holds [S] in these regions.">
        <attr key="strikes" value="2"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="-"/>
@@ -1949,6 +1950,7 @@
        <attr key="rarity" value="CB2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Ranger only"/>
 	</card>
     <card name="Andúril, the Flame of the West" graphics="AnduriltheFlameoftheWest.jpg" text="Unique. Sage only during the site phase at an untapped site where &quot;information&quot; is playable. Tape the sage and the site. Sage makes a corruption check modified by -3. Keep sage tapped until Andúril is stored at a Haven [{H}]. Once stored, you may discard a stored Reforging and place Andúril with Narsil. In addition to Narsil's effects, Andúril gives its bearer 4 marshalling points, +4 prowess (to a maximum of 11), +1 direct influence, and one more corruption point. Andúril may be tapped to untap a Dúnadan character in the same company, but its bearer must make a corruption check modified by -1.">
        <attr key="unique" value="yes"/>
@@ -1974,12 +1976,14 @@
        <attr key="rarity" value="CB"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Ranger only"/>
     </card>
     <card name="Athelas" graphics="Athelas.jpg" text="A Dúnadan can tap and use this item to heal a character in his company (change from wounded to well, character remains tapped). Aragorn II can also tap and use this item to remove a corruption card from a character in his company. Discard after use. {cyan} UEP: A Dunadan can tap and use this item to heal a character in his company (change from wounded to well, character remains tapped). A manifestation of Aragorn II can also tap and use this item to remove a corruption card from a character in his company. Discard after use.">
        <attr key="corruption" value="1"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value="Minor Item"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Food item"/>
     </card>
     <card name="Beautiful Gold Ring" graphics="BeautifulGoldRing.jpg" text="Discard Beatiful Gold Ring when tested. If tested, make a roll (or draw a #) to determine which ring card may be immediately played: - The One Ring (12+); - a Dwarven Ring (10, 11, 12+); - a Magic Ring (1, 2, 3, 4, 5, 6, 7); - a Lesser Ring (any result).">
        <attr key="corruption" value="1"/>
@@ -2026,7 +2030,7 @@
        <attr key="rarity" value="U"/>
        <attr key="class" value="Special Item"/>
        <attr key="type" value="Hero Resource"/>
-	   <attr key="keyword" value="Lore"/>
+	   <attr key="keyword" value="Lost Knowledge"/>
     </card>
     <card name="Bridge" graphics="Bridge.jpg" text="Playable at the end of the movement/hazard phase on a company that moved to a Haven [{H}]. That company may move to an additional site on the same turn. Another site card may be played and a movement/hazard phase immediately follows for that company.">
        <attr key="rarity" value="U"/>
@@ -2186,6 +2190,7 @@
        <attr key="rarity" value="R"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Diplomat only"/>
     </card>
     <card name="Earth of Galadriel's Orchard" graphics="EarthofGaladrielsOrchard.jpg" text="Unique. Only playable at Lórien. 2 marshalling points if stored at Bag End.">
        <attr key="unique" value="yes"/>
@@ -2208,7 +2213,7 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Song"/>
     </card>
-    <card name="Elf-stone" graphics="Elfstone.jpg" text="+2 to direct influence used agains an Elf character or an Elf faction. May not be duplicated on a given character.">
+    <card name="Elf-stone" graphics="Elfstone.jpg" text="+2 to direct influence used against an Elf character or an Elf faction. May not be duplicated on a given character.">
        <attr key="corruption" value="1"/>
        <attr key="rarity" value="CB2"/>
        <attr key="class" value="Minor Item"/>
@@ -2315,6 +2320,7 @@
        <attr key="rarity" value="CA"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Ranger only"/>
     </card>
     <card name="Gates of Morning" graphics="GatesofMorning.jpg" text="Environment. All environment hazard cards in play are immediately discarded, and all hazard environment effects are canceled. Cannot be duplicated.">
        <attr key="rarity" value="F5"/>
@@ -2417,6 +2423,7 @@
        <attr key="rarity" value="CA2"/>
        <attr key="class" value="Minor Item"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Food item"/>
     </card>
     <card name="Hiding" graphics="Hiding.jpg" text="Scout only at the end of the organization phase. Scout's company may not move to another site this turn. Cancels all hazard creature attacks against the scout's company this turn.">
        <attr key="rarity" value="R"/>
@@ -2471,7 +2478,7 @@
        <attr key="class" value="Dúnadan Faction"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Lapse of Will" graphics="LapseofWill.jpg" text="The prowess of each attack is modified by -1. The prowess of each Nazgul attack is modified by -3.">
+    <card name="Lapse of Will" graphics="LapseofWill.jpg" text="The prowess of each attack is modified by -1. The prowess of each Nazgul attack is modified by -3. Cannot be duplicated">
        <attr key="rarity" value="U"/>
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -2619,10 +2626,11 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Food item"/>
     </card>
-    <card name="Misty Mountains" graphics="MistyMountains.jpg" text="Playable at the end of the organization phase on a company containing a ranger. If the company uses region cards for its site path, tap the ranger to move as if the following pairs of regions were adjacent: Rhudaur and Anduin Vales, Rhudaur and Wold &amp; Foothills, Hollin and Wold &amp; Foothills, Hollin and Fangorn, Dunland and Fangorn. Otherwise, if the site moved to is in one of the regions listed above, the hazard limit is reduced by two (to a minimum of two). Cannot be duplicated on a given company.">
+    <card name="Misty Mountains" graphics="MistyMountains.jpg" text="Playable at the end of the organization phase on a company containing a ranger. If the company uses region cards for its site path, tap the ranger to move as if the following pairs of regions were adjacent: Rhudaur and Anduin Vales, Rhudaur and Wold &amp; Foothills, Hollin and Wold &amp; Foothills, Hollin and Fangorn, Dunland and Fangorn. Alternatively, if the the site moved to is in one of the regions listed above or is in Misty Mountains (Northern or Southern Spur), the hazard limit is reduced by two (to a minimum of two). Cannot be duplicated on a given company.">
        <attr key="rarity" value="CB2"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Ranger only"/>
     </card>
     <card name="Moon" graphics="Moon.jpg" text="Environment. If Gates of Morning is in play, treat all Wildernesses [{w}] as Border-lands [{b}] and all Border-lands [{b}] as Free-domains [{f}] for the purposes of playing hazards. If Doors of Night is in play, treat all Dark-domains [{d}] as Shadow-lands [{s}] and all Shadow-lands [{s}] as Wildernesses [{w}] for the purposes of playing hazards. Cannot be duplicated.">
        <attr key="rarity" value="U"/>
@@ -2639,6 +2647,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Ranger only"/>
     </card>
     <card name="Muster" graphics="MusterDC.jpg" text="Warrior only. An influence check against a faction by a warrior is modified by adding the warrior's prowess to a maximum modifier of +5.">
        <attr key="rarity" value="CA"/>
@@ -2672,11 +2681,13 @@
        <attr key="rarity" value="CB"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Diplomat only"/>
     </card>
     <card name="Old Friendship" graphics="OldFriendship.jpg" text="Diplomat only. +5 to an influence check against a character or +4 to a corruption check made by a character in the same company.">
        <attr key="rarity" value="CB"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Diplomat only"/>
     </card>
     <card name="Old Road" graphics="OldRoad.jpg" text="Allows a character at a Haven [{H}] to attempt to bring a faction into play. The length of the site path from this Haven to the site at which the faction can be played must be two or less (this must be verified by an available site card). The influence check for this attempt is modified by -1 and is not modified by the influencing character's direct influence.">
        <attr key="rarity" value="CB2"/>
@@ -2721,6 +2732,7 @@
        <attr key="class" value="Special Item"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Palantír"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Palantír of Minas Tirith" graphics="PalantirofMinasTirith.jpg" text="Unique. Palantír. Playable only at Minas Tirith. With its bearer able to use a Palantír, tap Palantír of Minas Tirith to look at the top five cards of your play deck; shuffle these 5 cards and return them to the top of your play deck. do the same to your opponent's play deck. Bearer makes a corruption check.">
        <attr key="unique" value="yes"/>
@@ -2758,6 +2770,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Diplomat only"/>
     </card>
     <card name="Potion of Prowess" graphics="PotionofProwess.jpg" text="Discard to give +1 prowess to all characters in bearer's company until the end of the turn.">
        <attr key="corruption" value="1"/>
@@ -2772,6 +2785,7 @@
        <attr key="rarity" value="U"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Song"/>
     </card>
     <card name="Precious Gold Ring" graphics="PreciousGoldRing.jpg" text="Discard Precious Gold Ring when tested. If tested, make a roll (or draw a #) to determine which ring card may be immediately played: - The One Ring (10, 11, 12+); - a Dwarven ring (8, 9, 10, 11, 12+); - a Magic Ring (1, 2, 3, 4, 5); - a Lesser Ring (any result).">
        <attr key="corruption" value="1"/>
@@ -2828,7 +2842,7 @@
        <attr key="class" value="Special Item"/>
        <attr key="type" value="Hero Resource"/>
        <attr key="influence" value="0(2)"/>
-	   <attr key="keyword" value="Lore"/>
+	   <attr key="keyword" value="Lost Knowledge"/>
     </card>
     <card name="Reforging" graphics="Reforging.jpg" text="Sage only during the site phase at an untapped site where &quot;Information&quot; is playable. Tap the sage and the site. Sage may not untap until Reforging is stored at a Haven [{H}]. During your organization phase, you may tap a sage at a Haven and discard a stored Reforging to retrieve any minor or major weapon, armor, or shield from your discard pile. The item must be placed under the control of a character in the sage's company.">
        <attr key="mp" value="1"/>
@@ -2836,7 +2850,6 @@
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Information"/>
-	   <attr key="keyword" value="Lore"/>
 	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Rescue Prisoners" graphics="RescuePrisonersDC.jpg" text="Playable at an already tapped Dark-hold [{D}] or Shadow-hold [{S}] during the site phase. The company faces a spider attack (2 strikes with 7 prowess). If no characters are untapped after the attack, discard Rescue Prisoners. Otherwise, you may tap 1 character in the company and put Rescue Prisoners under his control. That character may not untap until Rescue Prisoners is stored at a Haven [{H}], Border-hold [{B}], or Free-hold [{F}] during his organization phase. You receive the marshalling points for this card only when it is stored. Cannot be duplicated at a given site.">
@@ -2864,7 +2877,6 @@
  	   <attr key="rarity" value="U"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
-	   <attr key="keyword" value="Lore"/>
 	   <attr key="keyword" value="Information"/>
 	   <attr key="keyword" value="Sage only"/>
     </card>
@@ -2883,6 +2895,7 @@
        <attr key="class" value="Diplomat Ally"/>
        <attr key="type" value="Hero Resource"/>
        <attr key="mind" value="1"/>
+	   <attr key="keyword" value="Animal"/>
 	   <attr key="keyword" value="Flying"/>
     </card>
     <card name="Sacrifice of Form" graphics="SacrificeofFormDC.jpg" text="Spell. Wizard only. All of the strikes from one attack against your Wizard's company fail; +3 to any body checks made to determine if the attack is defeated. Discard the Wizard (i.e. he becomes unrevealed) and any non-item cards he controls. Place any items he controls under his card and keep these off to the side (these items are considered to still be in play). If the Wizard is put back into play, return his items to him and place Sacrifice of Form with him. Wizard receives +1 to his prowess, body and direct influence. May not be duplicated on a given Wizard.">
@@ -2911,6 +2924,7 @@
        <attr key="rarity" value="R"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Sage only"/>
     </card>
     <card name="Secret Passage" graphics="SecretPassage.jpg" text="Playable only at the end of the organization phase. If the company that it is played on moves to a Ruins &amp; Lairs [{R}] site, opponent may only play hazard creatures that are keyed to the company's site.">
        <attr key="rarity" value="CA"/>
@@ -3046,11 +3060,11 @@
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Environment"/>
     </card>
-    <card name="The Great Eagles" graphics="TheGreatEaglesDC.jpg" text="Unique. Playable at Eagles' Eyrie if the influence check is greater than 9. Standard Modifications: none.">
+    <card name="The Great Eagles" graphics="TheGreatEagles.jpg" text="Unique. Playable at Eagles' Eyrie if the influence check is greater than 9. Standard Modifications: none.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="3"/>
        <attr key="rarity" value="U"/>
-       <attr key="class" value="Animal Faction"/>
+       <attr key="class" value="Eagle Faction"/>
        <attr key="type" value="Hero Resource"/>
     </card>
     <card name="The Mithril-coat" graphics="TheMithrilcoat.jpg" text="Unique. Armor. +3 body (to a maximum of 10).">
@@ -3062,6 +3076,7 @@
        <attr key="class" value="Greater Item"/>
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Battle-gear"/>
+	   <attr key="keyword" value="Treasure"/>
     </card>
     <card name="The Old Thrush" graphics="TheOldThrushDC.jpg" text="-3 to the prowess and body of a non-Nazgul attack with a prowess of 13 or more. Cannot be duplicated on a given attack.">
        <attr key="rarity" value="U"/>
@@ -3165,6 +3180,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Ranger only"/>
     </card>
     <card name="Wizard's Fire" graphics="WizardsFire.jpg" text="Spell. Wizard only. +5 prowess for the Wizard against one attack. Wizard makes a corruption check modified by -4.">
        <attr key="magic" value="Spell"/>
@@ -3233,6 +3249,7 @@
        <attr key="rarity" value="R"/>
        <attr key="class" value="Wose Faction"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Wose"/>
     </card>
     <card name="Woses of the Drúadan Forest" graphics="WosesoftheDruadanForest.jpg" text="Unique. Playable at Drúadan Forest if the influence check is greater than 9. Standard Modifications: none.">
        <attr key="unique" value="yes"/>
@@ -3240,6 +3257,7 @@
        <attr key="rarity" value="U"/>
        <attr key="class" value="Wose Faction"/>
        <attr key="type" value="Hero Resource"/>
+	   <attr key="keyword" value="Wose"/>
     </card>
     <card name="Amon Hen" graphics="AmonHen.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3254,6 +3272,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Bag End" graphics="BagEnd.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3710,7 +3729,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Man-hold"/>
-	   <attr key="keyword" value="Port on Celduin"/>
+	   <attr key="keyword" value="Port-on-Celduin"/>
     </card>
     <card name="Lond Galen" graphics="LondGalen.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3735,7 +3754,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Elf-hold"/>
-	   <attr key="keyword" value="Port on Anduin"/>
+	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Lossadan Cairn" graphics="LossadanCairn.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3791,6 +3810,7 @@
 	   <attr key="keyword" value="Battleground"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Man-hold"/>
+	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Moria" graphics="Moria.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3874,7 +3894,6 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
-	   <attr key="keyword" value="Port on Greyflood"/>
     </card>
     <card name="Pelargir" graphics="Pelargir.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3888,7 +3907,7 @@
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Port"/>
-	   <attr key="keyword" value="Port on Anduin"/>
+	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Rhosgobel" graphics="RhosgobelDC.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3939,6 +3958,7 @@
        <attr key="site_path" value="{w}{b}{w}{w}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Shelob's Lair" graphics="ShelobsLair.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3965,7 +3985,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Man-hold"/>
-	   <attr key="keyword" value="Port on Celduin"/>
+	   <attr key="keyword" value="Port-on-Celduin"/>
     </card>
     <card name="Southron Oasis" graphics="SouthronOasis.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
