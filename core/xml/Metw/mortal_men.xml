@@ -135,7 +135,7 @@
 			 <attr key="cp" value="6"/>
 			 <attr key="keyword" value="Stature card"/>
 		</card>
-		<card name="Lord of Gifts" graphics="Lord of Gifts.jpg" text="Sauron specific. Offering attempt. Playable on an opponent’s character when making an influence attempt against him. Place one itemfrom your hand or from the influencer’s company (cannot be a manifestation of The One Ring or an Elven Ring) with target character. The influence attempt is modified by +4 or double the mp the item gives opponent. If the attempt is successful, you take control of target character; place this card with the item which may not be transferred. If the influence attempt fails, target character must make a CC. If he fails this check, he is taken Prisoner at the nearest Dark-hold [D] (your choice); discard any ring or jewel items. Rescue-attack — 1 automatic-attack at the site must be faced again (hazard player’s choice).">
+		<card name="Lord of Gifts" graphics="Lord of Gifts.jpg" text="Sauron specific. Offering attempt. Playable on an opponent’'s character when making an influence attempt against him. Place one itemfrom your hand or from the influencer’s company (cannot be a manifestation of The One Ring or an Elven Ring) with target character. The influence attempt is modified by +4 or double the mp the item gives opponent. If the attempt is successful, you take control of target character; place this card with the item which may not be transferred. If the influence attempt fails, target character must make a CC. If he fails this check, he is taken Prisoner at the nearest Dark-hold [D] (your choice); discard any ring or jewel items. Rescue-attack — 1 automatic-attack at the site must be faced again (hazard player’s choice).">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -149,12 +149,12 @@
 			 <attr key="mp" value="(5)"/>
 			 <attr key="specific" value="Sauron"/>
 		</card>
-		<card name="Lure of the Rings" graphics="Lure of the Rings.jpg" text="All hero characters bearing a gold ring item mustmake a CC at the beginning of their movement/ hazard phase. This CC is modified by -6 when moving through Gorgoroth or a Dark-Domain [d], or to The Under-Forges. Cannot be duplicated.">
+		<card name="Lure of the Rings" graphics="Lure of the Rings.jpg" text="All hero characters bearing a gold ring item must make a CC at the beginning of their movement/ hazard phase. This CC is modified by -6 when moving through Gorgoroth or a Dark-Domain [d], or to The Under-Forges. Cannot be duplicated.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Master of the Dead" graphics="Master of the Dead.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men, if borneby Aragorn II or a Man or Dúnadan sage. Bearer may makea CC to cancel an Undead attack. Additionally, bearer may tap to place 1 Undead creature played on his company with this card; the attack is cancelled and the creature becomes an ally under his control with a body equal to the bearer’s and prowess equal to its normal prowess -7. It now yields ally mp as given on the card. You may opt to have it attack an opponent’s company as a creature before resolving vCC. Remove the creature from play afterwards.">
+		<card name="Master of the Dead" graphics="Master of the Dead.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men, if borne by Aragorn II or a Man or Dúnadan sage. Bearer may makea CC to cancel an Undead attack. Additionally, bearer may tap to place 1 Undead creature played on his company with this card; the attack is cancelled and the creature becomes an ally under his control with a body equal to the bearer’s and prowess equal to its normal prowess -7. It now yields ally mp as given on the card. You may opt to have it attack an opponent’s company as a creature before resolving vCC. Remove the creature from play afterwards.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="unique" value="yes"/>
