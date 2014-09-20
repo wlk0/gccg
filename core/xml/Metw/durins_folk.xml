@@ -111,8 +111,8 @@
 			 <attr key="haven" value="Carn Dûm"/>
 			 <attr key="playable" value="Items (minor, gold ring)"/>
 			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 8 prowess (detainment against covert companies that do not contain Elves)"/>
-			 <attr key="special" value="Hidden site. Tap a sage when this site card is revelaed to move there. A Dwarf at this site may discard a Lost Knowledge he controls to make hoard items playable at this site until the end of turn. Petty-dwarves faction may be played at this site."/>
-			 <attr key="keyword" value="Hidden site"/>		
+			 <attr key="special" value="Hidden Site. Tap a sage when this site card is revelaed to move there. A Dwarf at this site may discard a Lost Knowledge he controls to make hoard items playable at this site until the end of turn. Petty-dwarves faction may be played at this site."/>
+			 <attr key="keyword" value="Hidden Site"/>		
 		</card>
 		<card name="Bar-en-Ibûn" graphics="BarenIbun.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
@@ -126,8 +126,8 @@
 			 <attr key="haven" value="Rivendell"/>
 			 <attr key="playable" value="Items (minor, gold ring)"/>
 			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 8 prowess (detainment against covert companies that do not contain Elves)"/>
-			 <attr key="special" value="Hidden site. Tap a sage when this site card is revelaed to move there. A Dwarf at this site may discard a Lost Knowledge he controls to make hoard items playable at this site until the end of turn. Petty-dwarves faction may be played at this site."/>
-		     <attr key="keyword" value="Hidden site"/>
+			 <attr key="special" value="Hidden Site. Tap a sage when this site card is revelaed to move there. A Dwarf at this site may discard a Lost Knowledge he controls to make hoard items playable at this site until the end of turn. Petty-dwarves faction may be played at this site."/>
+		     <attr key="keyword" value="Hidden Site"/>
 		</card>
 		<card name="Barak-shathur" graphics="Barakshathur.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
@@ -418,9 +418,9 @@
 			 <attr key="adjacent" value="Moria (5), The Under-gates (6)"/>
 			 <attr key="playable" value="Information"/>
 			 <attr key="auto_attack" value="Trap -- 2 strikes with 7 prowess"/>
-			 <attr key="special" value="Hidden site. Unless the company contains a Dwarf, it must discard a Lost Knowledge card it controls to reveal this site. Tap a character at this site to take one Ancient Stair, Legendary Stair, or The Iron-pit from your sideboard to your hand."/>
+			 <attr key="special" value="Hidden Site. Unless the company contains a Dwarf, it must discard a Lost Knowledge card it controls to reveal this site. Tap a character at this site to take one Ancient Stair, Legendary Stair, or The Iron-pit from your sideboard to your hand."/>
              <attr key="keyword" value="Dungeon"/>
-			 <attr key="keyword" value="Hidden site"/>
+			 <attr key="keyword" value="Hidden Site"/>
 		</card>
 		<card name="Dwarf-chopper" graphics="Dwarfchopper.jpg" text="Unique. Weapon. Axe. Playable at Deep-cleft or any non-Darkhaven [K] Under-deeps site. +2 prowess to a maximum of 9 (+4 against Dwarves to a maximum of 10). Leader only: +2 EI against Orcs. Hurog only: tap: face a Dwarf-attack as if he were a single character company.">
 			 <attr key="type" value="Minion Resource"/>
@@ -1084,8 +1084,8 @@
 			 <attr key="adjacent" value="Wondrous Maps* (0), Ostigurth (7), The Under-courts (10)"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
 			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 10 prowess (detainment if the company contains a Dwarf majority)"/>
-			 <attr key="special" value="Contains a hoard. Hidden site. *You may move to this site from any Wondrous Maps site in Nurn or Horse Plains.  Dwarven Warparty may be played keyed to this site."/>
-			 <attr key="keyword" value="Hidden site"/>
+			 <attr key="special" value="Contains a hoard. Hidden Site. *You may move to this site from any Wondrous Maps site in Nurn or Horse Plains.  Dwarven Warparty may be played keyed to this site."/>
+			 <attr key="keyword" value="Hidden Site"/>
 		</card>
 		<card name="Mines of Falek-dim" graphics="Mines of Falekdim.jpg" back="1" text="">
 			 <attr key="type" value="Dual Site"/>
