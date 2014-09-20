@@ -1417,7 +1417,7 @@
 			 <attr key="haven" value="Lórien"/>
 			 <attr key="playable" value="Information"/>
 			 <attr key="auto_attack" value="Elves — 2 strikes with 8 prowess (detainment if the company contains an Elf)"/>
-			 <attr key="special" value="Hidden site. Tap an Elf to reveal this site. If Huinen is at this site, tap the site to look at opponent's hand; tap Huinen and make a CC to place any number of hazards from opponent's hand either on top or bottom of his play deck."/>
+			 <attr key="special" value="Hidden Site. Tap an Elf to reveal this site. If Huinen is at this site, tap the site to look at opponent's hand; tap Huinen and make a CC to place any number of hazards from opponent's hand either on top or bottom of his play deck."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
 	<card name="Ceber Fanuin" graphics="Ceber Fanuin2.jpg" back="1" text="">
@@ -1432,7 +1432,7 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Information, Items (minor, major, gold ring)"/>
 			 <attr key="auto_attack" value="Elves — 2 strikes with 10 prowess (detainment if the company contains an Elf and Huinen is not at the site)"/>
-			 <attr key="special" value="Hidden site. Tap an Elf to reveal this site."/>
+			 <attr key="special" value="Hidden Site. Tap an Elf to reveal this site."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
 	<card name="Celebannon" graphics="Celebannon.jpg" back="1" text="">
@@ -1645,7 +1645,7 @@
 			 <attr key="auto_attack" value="(1st) Traps — 2 strikes with 11 prowess; (2nd) Opponent may play as an automatic-attack one Nameless Thing, Watcher in the Water or an Elf creature from his hand; keep the creature with the site (as a 2nd automatic-attack) until it is defeated or the site leaves active play."/>
 			 <attr key="special" value="Hidden Site. Discard a Stolen Knowledge card from the company to reveal this site. When a gold ring is tested in a company at this site, the result of the roll is modified by +3. Contains a hoard."/>
 			 <attr key="keyword" value="Dungeon"/>
-	         <attr key="keyword" value="Hidden site"/>
+	         <attr key="keyword" value="Hidden Site"/>
 	</card>
 	<card name="Rhûbar" graphics="Rhubar.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
