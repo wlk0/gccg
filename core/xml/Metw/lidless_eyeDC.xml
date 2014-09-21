@@ -2367,7 +2367,7 @@
        <attr key="rarity" value="CB+CS1"/>
        <attr key="class" value="Orc Faction"/>
        <attr key="type" value="Minion Resource"/>
-	   <attr key="keyword" value="Slave faction"/>
+	   <attr key="keyword" value="Slave Faction"/>
     </card>
     <card name="Southrons" graphics="Southrons.jpg" text="Unique. Manifestation of hero Southrons. Playable at Southron Oasis if the influence check is greater than 8. Standard Modifications: Haradrim (+2), Asdriags (-2).">
        <attr key="unique" value="yes"/>
