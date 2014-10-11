@@ -3838,6 +3838,7 @@
        <attr key="site_path" value="{w}{b}{f}{w}{s}{d}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Volcano"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Mount Gram" graphics="MountGram.jpg" back="1" text="">

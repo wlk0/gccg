@@ -7,7 +7,7 @@
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="1"/>
-       <attr key="home_site" value="Any Ruins and Lairs"/>
+       <attr key="home_site" value="Any non-Under-deeps Ruins &amp; Lairs"/>
        <attr key="prowess" value="5"/>
        <attr key="body" value="8"/>
        <attr key="rarity" value="U2"/>
@@ -59,7 +59,7 @@
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="1"/>
-       <attr key="home_site" value="Any Ruins and Lairs"/>
+       <attr key="home_site" value="Any non-Under-deeps Ruins &amp; Lairs"/>
        <attr key="body" value="8"/>
        <attr key="prowess" value="6"/>
        <attr key="rarity" value="U2"/>
@@ -72,7 +72,7 @@
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Scout"/>
        <attr key="mp" value="1"/>
-       <attr key="home_site" value="Any Ruins and Lairs"/>
+       <attr key="home_site" value="Any non-Under-deeps Ruins &amp; Lairs"/>
        <attr key="body" value="8"/>
        <attr key="prowess" value="5"/>
        <attr key="rarity" value="U2"/>

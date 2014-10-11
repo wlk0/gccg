@@ -1372,7 +1372,7 @@
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Pocket-handkerchief" graphics="Pockethandkerchief.jpg" text="May not be included with a starting company unless it contains a Hobbit. Discard this item to cancel any effect that would return bearer to your hand (or would discard him, if bearer is a Hobbit.)">
+		<card name="Pocket Handkerchief" graphics="Pocket Handkerchief.jpg" text="May not be included with a starting company unless it contains a Hobbit. Discard this item to cancel any effect that would return bearer to your hand (or would discard him, if bearer is a Hobbit.)">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Minor Item"/>

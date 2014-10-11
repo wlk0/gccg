@@ -3546,6 +3546,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{d}"/>
+	   <attr key="keyword" value="Volcano"/>
     </card>
     <card name="Mount Gram" graphics="MountGram.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
