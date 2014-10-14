@@ -2,6 +2,20 @@
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
 <ccg-setinfo name="Nine Rings for Mortal Men doomed to die" dir="MortalMen" abbrev="NM" game="Middle-earth">
   <cards>
+  		<card name="A Thing of Surpassing Potency" graphics="A Thing of Surpassing Potency.jpg" text="Playable if The One Ring is in play and borne by a non-Hobbit character with a mind greater than 4. All bonusses and Marshalling Points from other special items and rings in play are modified by -1 (to a minimum of 1). Additionally, all CC by other ringbearers are modified by -1, and any manifestation of Narya, Nenya or Vilya cannot be used.">
+			 <attr key="type" value="Hazard"/>
+			 <attr key="rarity" value="C"/>
+			 <attr key="class" value="Permanent-event"/>
+		</card>
+  		<card name="A Weapon in the Right Hands" graphics="A Weapon in the Right Hands.jpg" text="Unique. Playable on The One Ring. The item cannot be concealed or transferred (unless bearer is eliminated by a body check). If bearer is in Barad-dÃ»r (or Dol Guldur if opponent is The Necromancer) he faces an attack during the site phase (alone): Maia â€” 1 strike with 24 prowess, body 12, the strike cannot be canceled, redirected, or made ineffectful. If the strike is defeated. and bearer of The One Ring is still in play after a corruption check during the en-of-turn phase, you win the game, otherwise you loose (or you`re fucked)">
+			 <attr key="type" value="Hero Resource"/>
+			 <attr key="rarity" value="R"/>
+			 <attr key="unique" value="yes"/>
+			 <attr key="class" value="Permanent-event"/>
+			 <attr key="prowess" value="+1"/>
+			 <attr key="body" value="-"/>
+			 <attr key="cp" value="+1"/>
+		</card>
         <card name="Beijabar Bees" graphics="Beijabar Bees.jpg" text="Vermin, Animals. 20 strikes. Playable only if Doors of Night is not in play. Detainment. May be played keyed to Anduin Vales, Beorn’s House, Rhosgobel and The Carrock. Cannot be played on a company containg a character with one of these sites as a home site. May also be played as a resource short-event by such character before initiating CvCC: opponent’s company faces an attack by Beijabar Bees.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
@@ -20,17 +34,7 @@
 			 <attr key="cp" value="8"/>
 			 <attr key="keyword" value="Stature card"/>
 		</card>
-		<card name="Bolvag" graphics="Bolvag.jpg" text="Unique. Sauron specific. Playable at Minas Durlith. May use shadow-magic, spirit-magic and sorcery. He may play factions at Barad-dûr and Minas Durlith as if he were a leader and with +5 to the influence attempt. You may eliminate an Orc in his company to untap these sites. Discard Bolvag if his company moves to a site not in Udûn, Gorgoroth, Imlad Morgul or Nurn, or to an Under-deeps site with a surface site not in these regions.">
-			 <attr key="type" value="Minion Resource"/>
-			 <attr key="rarity" value="R"/>
-			 <attr key="unique" value="yes"/>
-			 <attr key="class" value="Sage Ally"/>
-			 <attr key="prowess" value="2/10"/>
-			 <attr key="mind" value="3"/>
-			 <attr key="mp" value="2"/>
-			 <attr key="specific" value="Sauron"/>
-			 <attr key="keyword" value="Sage"/>
-		</card>
+
 		<card name="Bound up with It" graphics="Bound up with It.jpg" text="Unique. All players must now test any gold ring items they have in play; only ring special items with a printed mp of 3 or more may be played resulting this test. Additionally, any Narya, Nenya or Vilya played this turn may be shuffled into the play deck instead of discarded. Any discarded Ring for Mortal Men may be shuffled into the play deck. This card may also be played as a hazard.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="R"/>
@@ -85,11 +89,6 @@
 			 <attr key="cp" value="6"/>
 			 <attr key="keyword" value="Stature card"/>
 		</card>
-		<card name="Hidden Precious" graphics="Hidden Precious.jpg" text="Playable only during the organization phase.Any ring item borne by a character at a Haven [H] has its mp and CP reduced by 1 (to a minimum of 1).">
-			 <attr key="type" value="Hero Resource"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Long-event"/>
-		</card>
         <card name="Hives" graphics="Hives.jpg" text="Unique. Vermin. Playable at a site in Anduin Vales by a character with Beorn’s House as a home site, if the influence check is greater than 5. tap: : ap: during your end-of-turn phase to bring one Beijabar Bees from your discard pile or sideboard to your play deck and shuffle. This faction only untaps if one of your companies is at Beorn’s House.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
@@ -142,17 +141,12 @@
 			  <attr key="specific" value="Sauron"/>
 			  <attr key="keyword" value="Offering attempt"/>
 		</card>
-		<card name="Lord of the World" graphics="Lord of the World.jpg" text="Sauron specific. Playable if you have more mp than anyother players for one of the following categories: allies, characters, factions, items or miscellaneous mp cards. Rotate this card 90° (at any time) if you have more mp than any other players for one of the above mentioned categories (other than the category chosen to play this card; rotate only once for each category). If rotated 360° you receive this card’s mp. Discard this card if you do not have more mp than any other players for at least one of the mentioned categories. Cannot be duplicated.">
-			 <attr key="type" value="Minion Resource"/>
+		<card name="Lore of the Rings" graphics="Lore of the Rings.jpg" text="Place this card on your sage avatar when in play. He may tap to test a gold ring in his company; afterwards he makes a CC. Discard a Lost Knowledge card from the company to place Wisdom to Wield with this card from hand or discard pile: it affects your avatar and is not discarded (unless this card is discarded).">
+			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="mp" value="(5)"/>
-			 <attr key="specific" value="Sauron"/>
-		</card>
-		<card name="Lure of the Rings" graphics="Lure of the Rings.jpg" text="All hero characters bearing a gold ring item must make a CC at the beginning of their movement/ hazard phase. This CC is modified by -6 when moving through Gorgoroth or a Dark-Domain [d], or to The Under-Forges. Cannot be duplicated.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Permanent-event"/>
+			 <attr key="sp" value="1"/>
+			 <attr key="keyword" value="Lore"/>
 		</card>
 		<card name="Master of the Dead" graphics="Master of the Dead.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men, if borne by Aragorn II or a Man or Dúnadan sage. Bearer may makea CC to cancel an Undead attack. Additionally, bearer may tap to place 1 Undead creature played on his company with this card; the attack is cancelled and the creature becomes an ally under his control with a body equal to the bearer’s and prowess equal to its normal prowess -7. It now yields ally mp as given on the card. You may opt to have it attack an opponent’s company as a creature before resolving vCC. Remove the creature from play afterwards.">
 			 <attr key="type" value="Dual Resource"/>
@@ -244,11 +238,6 @@
 			 <attr key="cp" value="2"/>
 			 <attr key="keyword" value="Corruption"/>
 		</card>
-		<card name="Rings of Power" graphics="Rings of Power.jpg" text="All players may take one ring item from their discard pile to their hand (regardless of other cards in play). Alternatively, play to cancel the effects of Rolled Down to the Sea. Remove this card from the game.">
-			 <attr key="type" value="Dual Resource"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Short-event"/>
-		</card>
 		<card name="Secret Precious" graphics="Secret Precious.jpg" text="Lost Knowledge. Tap a scout and a sage at a Free-hold [F] or Border-hold [B] to make gold ring items playable at the site until the end of the turn. Opponent may bring one hazard from his sideboard or discard pile to his play deck (reshuffle).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
@@ -262,12 +251,6 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Fallen-wizard"/>
-		</card>
-		<card name="Shadows of the Power" graphics="Shadows of the Power.jpg" text="Heralded Lord mode. Playable on your Ringwraith at a Darkhaven, if you discard (for no effect) a ring item he bears (cannot be a mind ring). Your Ringwraith becomes a Warlord. +3 to his EI and -5 to your general influence. Your Ringwraith's company is in Heralded Lord mode and may use starter movement. Additionally, your Ringwraith may be in a company with non-overt characters and Half-orcs. You may bring this card to your hand during the organization phase. Cannot be duplicated by a given player.">
-			 <attr key="type" value="Minion Resource"/>
-			 <attr key="rarity" value="R"/>
-			 <attr key="class" value="Permanent-event"/>
-			 <attr key="keyword" value="Heralded Lord mode"/>
 		</card>
 		<card name="Slaves to the Ring" graphics="Slaves to the Ring.jpg" text="Playable on a Man or Dúnadan faction, if you have a character bearing a Ring for Mortal at the site where the faction is in play. Target faction cannot not be influenced or discarded by any means. Discard this card and target faction if you do not control a Ring for Mortal Men.">
 			 <attr key="type" value="Dual Resource"/>
@@ -290,6 +273,13 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="specific" value="Sauron"/>
 			 <attr key="keyword" value="startable"/>
+		</card>
+		<card name="The Ring's Dominion" graphics="The Rings Dominion.jpg" text="Playable on your Fallen-wizard or Elf-lord if Spells Born of Discord is in play. Instead of tapping to use a magic ring he bears, he may make a CC and tap the magic ring.">
+			 <attr key="type" value="Stage Resource"/>
+			 <attr key="rarity" value="U"/>
+			 <attr key="class" value="Permanent-event"/>
+			 <attr key="cp" value="1"/>
+			 <attr key="sp" value="2"/>
 		</card>
 		<card name="Unspeakable Beauty" graphics="Unspeakable Beauty.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men borne by a female Man or Dúnadan character (or by Adûnaphel the Ringwraith). Bearer may designate one male character in her company which may be controlled costing no EI; you may bring such a character into play regardless of his mind value and he must always be controlled by bearer (regardless of any hazard effects). Additionally, +10 to bearer’s influence attempts against opponent’s male characters. This modification cannot be altered by any other effect.">
 			 <attr key="type" value="Dual Resource"/>
@@ -316,6 +306,16 @@
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
+			 <attr key="class" value="Permanent-event"/>
+		</card>
+		<card name="Y" graphics=".jpg" text="">
+			 <attr key="type" value="Minion Resource"/>
+			 <attr key="rarity" value="U"/>
+			 <attr key="class" value="Permanent-event"/>
+		</card>
+		<card name="Z" graphics=".jpg" text="">
+			 <attr key="type" value="Minion Resource"/>
+			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
   </cards>
