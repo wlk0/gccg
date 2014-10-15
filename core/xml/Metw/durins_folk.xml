@@ -240,7 +240,7 @@
 			 <attr key="mind" value="4"/>
 			 <attr key="influence" value="1"/>
 			 <attr key="mp" value="1"/>
-			 <attr key="home_site" value="Barak-shathur"/>
+			 <attr key="home_site" value="Barak-shathûr"/>
 			 <attr key="skills" value="Warrior/Scout"/>
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Firebeard"/>
@@ -877,7 +877,7 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 		</card>
-		<card name="Khazadshatur" graphics="Khazadshatur.jpg" text="Unique. Helmet. Playable at Goblin-gate. +2 to body to a maximum of 9. Dwarf only: +1 EI against Dwarves. All dark enchantments targeting bearer are cancelled. tap: give +3 prowess (or +3 to the roll) against a strike for which weapons do not modify or prowess is not used to determine the result.">
+		<card name="Khazadshathûr" graphics="Khazadshathur.jpg" text="Unique. Helmet. Playable at Goblin-gate. +2 to body to a maximum of 9. Dwarf only: +1 EI against Dwarves. All dark enchantments targeting bearer are cancelled. tap: give +3 prowess (or +3 to the roll) against a strike for which weapons do not modify or prowess is not used to determine the result.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1709,7 +1709,7 @@
 			 <attr key="mind" value="6"/>
 			 <attr key="influence" value="2"/>
 			 <attr key="mp" value="2"/>
-			 <attr key="home_site" value="Barak-shathur"/>
+			 <attr key="home_site" value="Barak-shathûr"/>
 			 <attr key="skills" value="Warrior/Diplomat"/>
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Firebeard"/>
