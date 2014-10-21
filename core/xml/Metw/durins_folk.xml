@@ -1426,7 +1426,7 @@
 			 <attr key="region" value="Under-deeps"/>
 			 <attr key="adjacent" value="Blue Mountain Dwarf-hold (11)*, The Drowning-deeps (11)*"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
-			 <attr key="auto_attack" value="(1st) Traps -- 3 strikes with 9 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-hold [S]"/>
+			 <attr key="auto_attack" value="(1st) Traps -- 3 strikes with 8 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-hold [S]"/>
 			 <attr key="special" value=" Ancient Dwarf-ruin. * Hero companies may discard a Lost Knowledge card from the company to lower the movement roll by 7."/>
 			 <attr key="keyword" value="Ancient Dwarf-ruin"/>
 		</card>
