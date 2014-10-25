@@ -8,7 +8,7 @@
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Creature/Short-event"/>
 			 <attr key="prowess" value="12/8"/>
-			 <attr key="mp" value="3"/>
+			 <attr key="mp" value="2"/>
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Elves"/>
 		</card>
