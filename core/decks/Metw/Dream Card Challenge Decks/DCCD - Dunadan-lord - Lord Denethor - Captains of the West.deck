@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Dunadan-lord - Denethor - Captains of Gondor
+#      DCCD - Dunadan-lord - Lord Denethor - Captains of the West
 #
 
 ####
@@ -59,6 +59,7 @@ Deck
 1 Glamdring (TW)
 1 Knowledge of the Enemy (DM)
 2 Lock nor Bar May Hinder (DF)
+1 Longbottom Leaf (BA)
 2 Many Turns and Doublings (TD)
 1 Marvels Told (TD)
 1 Orcrist (TW)
@@ -69,7 +70,6 @@ Deck
 1 Smoke Rings (DM)
 1 Steward of Gondor (WR)
 1 Stories of the Elder Days (WR)
-1 The Ithil-stone (AS)
 1 Trickery (TD)
 1 Ungolcrist (FB)
 2 War Preparations (WR)
@@ -98,12 +98,12 @@ Pool
 1 Damrod (TW)
 1 Faramir (TW)
 1 Ioreth (TD)
-1 Mablung of Ithilien (WR)
+1 Mablung (TW)
 
 # Hero Resource (3)
 
+1 Archer of Ithilien (WR)
 1 Backpack (RS)
-1 Potion of Prowess (TW)
 1 Shield of Iron-bound Ash (TW)
 
 # Stage Resource (3)
@@ -124,7 +124,7 @@ Sideboard
 
 1 Call of the Deeps (DF)
 1 Eärcaraxë Ahunt (TD)
-1 Ice-drake (NW)
+1 Ice-drake (TD)
 1 King of the Dead (TI)
 1 Muster Disperses (LE)
 1 Too Much to Ask (WR)
@@ -133,16 +133,18 @@ Sideboard
 
 1 Robin Smallburrow (TW)
 
-# Hero Resource (11)
+# Hero Resource (14)
 
+2 Archer of Ithilien (WR)
 1 Healing Herbs (TW)
-1 Longbottom Leaf (BA)
 1 Lore of the Ages (TD)
 1 Many Foes He Fought (TD)
 1 Noldo-lantern (DM)
+1 Potion of Prowess (TW)
 1 Putting away All Fear (WR)
 1 Star-glass (TW)
 1 Tales of the Hunt (TD)
+1 The Ithil-stone (AS)
 1 Tower Guard of Minas Tirith (TW)
 1 Tower Raided (AS)
 1 True-hearted Man (RS)
@@ -159,7 +161,7 @@ Sites
 
 1 Edhellond [F] (FB)
 
-# Hero Site (31)
+# Hero Site (33)
 
 1 Amon Lhaw [H] (TI)
 1 Amrûn [H] (SL)
@@ -176,7 +178,9 @@ Sites
 1 Gobel Mírlond [H] (AS)
 1 Haudh-in-Gwanûr [H] (DM)
 1 Henneth Annûn [H] (TW)
+1 Joghul's Shrine [H] (GP)
 1 Lugarlur [H] (SL)
+1 Medlóshad [H] (GP)
 1 Minas Morgul [H] (TW)
 1 Minas Tirith [H] (TW)
 1 Mount Doom [H] (TW)
@@ -186,8 +190,8 @@ Sites
 1 Pelargir [H] (TW)
 1 Raider-hold [H] (AS)
 1 Shelob's Lair [H] (TW)
-1 Sturlurtsa [H] (CP)
-1 Temple of Kondri Odchi [H] (CP)
+1 Sturlurtsa [H] (GP)
+1 Temple of Kondri Odchi [H] (GP)
 1 The Hospice of Lost Faith [H] (SL)
 1 Urlurtsu Nurn [H] (DM)
 1 Vale of Erech [H] (TW)
