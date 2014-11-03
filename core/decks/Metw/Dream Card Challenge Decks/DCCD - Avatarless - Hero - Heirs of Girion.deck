@@ -12,7 +12,7 @@ Deck
 
 1 Deadly Dart (PR)
 1 Elf-friend (FB)
-1 Morinehtar (CP)
+1 Morinehtar (GP)
 1 Well Aimed (FB)
 
 # Grey Agent Character (2)
@@ -20,7 +20,7 @@ Deck
 1 Fram Wyrmslayer (GW)
 1 Goblin-basher (DF)
 
-# Hazard (35)
+# Hazard (34)
 
 2 An Unexpected Outpost (DM)
 1 Bairanax at Home (TD)
@@ -33,7 +33,6 @@ Deck
 1 Foolish Words (TD)
 1 Fruitless Victory (NE)
 2 Great Northern Bear (GW)
-1 Ice-drake (NW)
 2 Kelvar Enraged (GW)
 1 Land-drake (TD)
 1 Lord of the Eagles (DF)
@@ -71,7 +70,7 @@ Deck
 1 Elf-stone (TW)
 1 Great Bow of Yew (FB)
 1 Kindling of the Spirit (TW)
-2 Long They Journeyed (CP)
+2 Long They Journeyed (GP)
 1 Longbottom Leaf (BA)
 1 Men of Dale (TD)
 1 Men of Northern Rhovanion (TW)
@@ -115,9 +114,10 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (3)
+# Dual Resource (4)
 
 1 Dragon-scales (GW)
+1 Hollow by the Left Breast (GW)
 1 Sharp Blade (WR)
 1 Well Aimed (FB)
 
@@ -128,14 +128,13 @@ Sideboard
 1 Fell-bear (NW)
 1 Lure of Magic (NE)
 
-# Hero Resource (13)
+# Hero Resource (12)
 
 1 Alert the Folk (TD)
 1 Block (TW)
 1 Carc (DF)
 1 Cram (TD)
 1 Healing Herbs (TW)
-1 Hollow by the Left Breast (GW)
 1 Horns, Horns, Horns (DM)
 1 Iron Hill Dwarves (TW)
 1 King of Dale (GW)
