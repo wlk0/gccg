@@ -28,13 +28,13 @@ Deck
 2 Doors of Night (LE)
 3 Dragon's Blood (TD)
 2 From the Pits of Angband (TD)
-1 Ice-drake (NW)
+1 Ice-drake (TD)
 3 Land-drake (TD)
 1 Lure of Magic (NE)
 1 Marsh-drake (TD)
 1 Nameless Thing (DM)
 2 Quick as a Snake (WR)
-1 Sand-drake (SL)
+1 Sand-drake (TD)
 3 Summons from Long Sleep (AS)
 1 Taint of Glory (WR)
 1 Turukulon (TI)
@@ -48,16 +48,16 @@ Deck
 # Minion Character (8)
 
 1 Baduila (DM)
+1 Dragon's Disciple (GW)
 1 Haeldwyn (GW)
 1 Ill-favoured Fellow (WH)
 1 Leärdinoth (NE)
 1 Orc Tracker (LE)
 2 Orc of the Claw (GW)
-1 The Dragon's Disciple (GW)
 
 # Minion Resource (30)
 
-1 Are There Dragons in This Land? (GW)
+1 Are There Dragons? (GW)
 1 Artful Words (GW)
 1 Beast-thrall (GW)
 1 Beaten into Submission (GW)
@@ -88,9 +88,9 @@ Pool
 # Minion Character (4)
 
 1 Crook-legged Orc (BA)
+1 Dragon's Disciple (GW)
 1 Miruimor (NE)
 1 Râisha (DM)
-1 The Dragon's Disciple (GW)
 
 # Minion Resource (5)
 
@@ -110,10 +110,10 @@ Sideboard
 
 # Hazard (7)
 
+1 Ash-drake (NE)
 1 Cursed Treasure (GW)
 1 Gondring Ahunt (NW)
 1 Grima Wormtongue (TI)
-1 Sand-drake (SL)
 1 Siege of Gondor (WR)
 1 Slip Treacherously (AS)
 1 Too Much to Ask (WR)

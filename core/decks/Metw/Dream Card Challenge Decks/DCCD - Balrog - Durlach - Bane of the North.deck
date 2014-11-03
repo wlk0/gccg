@@ -16,7 +16,7 @@ Deck
 
 1 Ancient Rite (WR)
 1 Grinding Ice (NW)
-1 Rings of Power (NM)
+1 Rings of Power (RS)
 
 # Hazard (33)
 
@@ -95,6 +95,10 @@ Pool
 Sideboard
 #########
 
+# Dual Resource (1)
+
+1 Hollow by the Left Breast (GW)
+
 # Hazard (7)
 
 1 Drought (SL)
@@ -109,7 +113,7 @@ Sideboard
 
 1 Troll Henchman (KN)
 
-# Minion Resource (12)
+# Minion Resource (11)
 
 1 Black Ring of Arda (NE)
 1 Fizzling Torch (NE)
@@ -118,7 +122,6 @@ Sideboard
 1 Magic Ring of Delusion (LE)
 1 Magic Ring of Savagery (LE)
 1 Minor Ring (LE)
-1 Shoot in the Eye (GW)
 1 Test of Fire (LE)
 1 Wargs of the Forochel (LE)
 1 Wind-horde (NW)

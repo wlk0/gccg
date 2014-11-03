@@ -1,0 +1,223 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      DCCD - Wizard - Pallando - Master of Sands2
+#
+
+####
+Deck
+####
+
+# Dual Character (1)
+
+1 Háin (DS)
+
+# Dual Resource (6)
+
+1 Bracers of Mira (CA)
+1 Dwarf-friend (DF)
+1 Dwarven Axe (DF)
+2 Flight Unmarked (RS)
+1 War Mattock (DF)
+
+# Hazard (43)
+
+1 Alone and Unadvised (AS)
+1 Bolg, Son of Azog (DF)
+1 Carrion Birds (TD)
+1 Carrion Feeders (BA)
+2 Cave-drake (LE)
+1 Crebain (TW)
+1 Darkness Ahead (TI)
+1 Dire Wolves (LE)
+1 Foolish Words (LE)
+1 Glutan (RS)
+2 Hobgoblins (TD)
+1 Hobgoblins (LE)
+1 Ireful Flames (PR)
+1 Lure of the Senses (LE)
+2 Marsh-drake (LE)
+1 Mensharag (TI)
+1 Morgul-rats (TD)
+1 Neeker-breekers (PR)
+2 Orc-guard (TW)
+1 Power Built by Waiting (AS)
+1 Rats! (LE)
+1 Terror of Halifirien (TI)
+1 Uiendarlaif (GP)
+1 Vuk (SL)
+1 Wake of War (TW)
+2 Wake of War (LE)
+2 War-wargs (NW)
+1 Wargs (TW)
+1 Wargs (LE)
+1 Watcher in the Water (LE)
+2 Where the Wargs Howl (NW)
+2 Wolf-riders (TD)
+1 Wolves (TW)
+2 Worm's Stench (TD)
+
+# Hero Character (4)
+
+1 Bahadur (BO)
+3 Pallando [H] (TW)
+
+# Hero Resource (37)
+
+1 A Chance Meeting (TW)
+1 A More or Less Decent Giant (DF)
+1 Blade of Másra (SL)
+1 Clan Bonds (DF)
+2 Dwarven Hoard (TD)
+1 Dwarves of Blackflame (DS)
+1 Dwarves of Mablad-dûm (SL)
+1 Eyes of Mandos (DM)
+1 Flatter a Foe (TD)
+1 Fly, You Fools! (RS)
+2 Forewarned Is Forearmed (DM)
+1 Glamour of Surpassing Excellance (AS)
+2 Houses of Healing (TD)
+2 Lock nor Bar May Hinder (DF)
+2 No Strangers at this Time (AS)
+1 Nár's Folk (SL)
+2 Rescue Prisoners (TW)
+1 Risky Blow (TW)
+1 Smoke Rings (DM)
+1 Staff of Medra (SL)
+3 The Dwarves Are upon You! (DM)
+1 Travelling Merchants (SL)
+1 Vanishment (TW)
+1 Visor of Sirayn (SL)
+2 We Must Away! (DF)
+1 Wizard's Flame (TW)
+2 Wizard's Staff (TD)
+
+####
+Pool
+####
+
+# Dual Character (2)
+
+1 Dom (DS)
+1 Dár (SL)
+
+# Hero Character (6)
+
+1 Bodyguard (TI)
+1 Boron (SL)
+1 Dolin (SL)
+1 Pallando [H] (TW)
+1 Peshtin (SL)
+1 Tabaya Kas (SL)
+
+# Hero Resource (3)
+
+1 Make League and Common Council (GP)
+1 Pipe (DF)
+1 Shield of Iron-bound Ash (TW)
+
+#########
+Sideboard
+#########
+
+# Dual Resource (5)
+
+2 Dwarven Cunning (DF)
+1 Old Grudge (DF)
+1 Oliphaunt (SL)
+1 Tûr Betark (SL)
+
+# Hazard (5)
+
+1 Ash-drake (NE)
+1 Full of Froth and Rage (AS)
+1 Kraken (SL)
+1 Many Burdens (RS)
+1 Swamp-dragon (SL)
+
+# Hero Character (1)
+
+1 Psousèn the Valorous (BO)
+
+# Hero Resource (14)
+
+1 Bavor's Tribe United (SL)
+1 Clan Másra (SL)
+1 Fireworks (DM)
+1 Focussed Staff (RS)
+1 Kingdom of Old Restored (DF)
+1 Longbottom Leaf (BA)
+1 Look More Closely Later (TD)
+1 Marvels Told (TD)
+1 Master of Sands (SL)
+1 Master of Wood, Water, or Hill (TD)
+1 Return to Old Dwellings (DF)
+1 Smoke Rings (DM)
+1 Staff Asunder (TD)
+1 The Southern Hammer (SL)
+
+#####
+Sites
+#####
+
+# Court of Ardor Site (5)
+
+1 Citadel of Ardor (CA)
+1 Engkîr (CA)
+1 Ithilkîr (CA)
+1 Menelcarca (CA)
+1 Taurang (CA)
+
+# Dual Site (6)
+
+1 Deeps of Fuinur (SL)
+1 Evefalin Cavern-systems (SL)
+1 Quartz-halls (DS)
+1 The Amber-deeps (SL)
+1 The Brass-deeps (BO)
+1 The Limestone-caverns (BO)
+
+# Hero Site (42)
+
+1 Abandoned Caravansary [H] (SL)
+1 Adûn-Tarîk [H] (SL)
+1 Amaru [H] (CA)
+1 Bar Falin [H] (SL)
+1 Baruzimabûl [H] (DS)
+1 Bâtan-Urîd [H] (SL)
+1 Charnesra [H] (SL)
+1 Cirlond [H] (BO)
+1 Ephydis [H] (BO)
+1 Fhûl [H] (SL)
+1 Fuinur's Well [H] (SL)
+1 Harbâz [H] (BO)
+1 Hau Nysrin [H] (SL)
+1 Inyalonî [H] (BO)
+1 Isvat [H] (BO)
+1 Khibil Êphalak [H] (SL)
+1 Lakes of Kann-Sharmûnda [H] (CA)
+1 Laurrë's Manor [H] (CA)
+1 Mablád-dûm [H] (SL)
+1 Mount Arysis [H] (SL)
+1 Mûmakil Cemetery [H] (SL)
+1 Naerphys [H] (BO)
+1 Nevazar's Tomb [H] (BO)
+1 Ny Chennacatt [H] (SL)
+1 Nárad-dûm (SL)
+1 Oasis of Fult [H] (SL)
+1 Pred [H] (SL)
+1 Rînaghnâti [H] (BO)
+1 Sud Sicanna [H] #1 (SL)
+1 Tartaust [H] (SL)
+1 Taurondë [H] (CA)
+1 The Tower of Birds [H] (SL)
+1 Tombs of Oran-plaar [H] (CA)
+1 Ty-Ar-Rana [H] (CA)
+1 Târik an-Aruwânâi [H] (BO)
+1 Tûl Harar [H] (BO)
+1 Tûl Isra [H] (SL)
+1 Tûl Póac [H] (SL)
+1 Valagalen [H] (DS)
+1 Valley of Tombs [H] (BO)
+1 Ventazvah Ôran-tal [H] (BO)
+1 Xyunaï [H] (BO)
