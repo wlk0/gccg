@@ -53,19 +53,19 @@ Deck
 1 Mallorn-dweller (FB)
 1 Wood-elf (FB)
 
-# Hero Resource (21)
+# Hero Resource (20)
 
 2 Ancient Knowledge (FB)
 1 Aranrûth (FB)
-1 Bow of Dragon-horn (TD)
 1 Bow of the Galadhrim (AS)
 2 Clean the Greenwood (FB)
 1 Gates of Morning (TW)
 1 Glamdring (TW)
 2 Great Bow of Yew (FB)
 1 Greenwood the Great (FB)
+1 Hundreds of Butterflies (DM)
 1 Longbottom Leaf (BA)
-2 Marvels Told (TD)
+1 Marvels Told (TD)
 1 Muster (TW)
 2 Risky Blow (TW)
 2 Smoke Rings (DM)
@@ -82,11 +82,11 @@ Deck
 1 I'll Report You (LE)
 2 Swift Strokes (LE)
 
-# Stage Resource (6)
+# Stage Resource (7)
 
 1 Great Achievement (DF)
 1 Lord of Wood and Beast (FB)
-1 Possessions of the Green-elves (FB)
+2 Possessions of the Green-elves (FB)
 1 Prince of Mirkwood (FB)
 1 Wardens of the Woodland Realm (FB)
 1 Wizard's Trove (WH)
@@ -95,18 +95,23 @@ Deck
 Pool
 ####
 
-# Hero Character (4)
+# Hero Character (6)
 
 1 Bladorthin (FB)
 1 Haldir (TW)
+1 Glorfindel (TW)
 1 Legolas (TW)
+1 Othar (FB)
 1 Wood-elf (FB)
 
 # Hero Resource (3)
 
-1 Elf-stone (TW)
 1 Star-glass (TW)
 1 Towers Destroyed (FB)
+
+# Dual Resource (4)
+
+1 Bow of Yew (FB)
 
 # Stage Resource (2)
 
@@ -119,19 +124,20 @@ Sideboard
 
 # Dual Resource (2)
 
-1 Bow of Yew (FB)
 1 Desperate Strike (DF)
+1 Bow of Yew (FB)
 
 # Hazard (14)
 
 1 Camthalion (FP)
 1 Covetous Thoughts (LE)
+1 Crossing the Border (DF)
 1 Durin's Bane (DM)
 1 Elf-lord Revealed in Wrath (LE)
 1 Evenstar of Her People (FB)
 1 Falathrim (FB)
 1 Galadhrim (AS)
-2 He Is Lost to Us (FB)
+1 He Is Lost to Us (FB)
 1 Nameless Thing (DM)
 1 Stay Her Appetite (LE)
 1 The Dark Days (FB)
@@ -141,7 +147,6 @@ Sideboard
 # Hero Resource (19)
 
 1 A Panoply of Wings (WH)
-1 Arrows Shorn of Ebony (TD)
 1 Clean the Greenwood (FB)
 1 Elf-path (TD)
 1 Elven Rope (BA)
@@ -151,13 +156,14 @@ Sideboard
 1 Great Bow of Lórien (FB)
 1 Longbottom Leaf (BA)
 1 Many Turns and Doublings (TD)
-1 Marvels Told (TD)
+2 Marvels Told (TD)
 1 Muster (TW)
 1 Pass the Doors of Dol Guldur (DM)
 1 Refuge (TD)
 1 Rescue Prisoners (TW)
+1 Safe from the Shadow (AS)
 1 The Hunt (DM)
-2 The Old Thrush (TW)
+1 The Old Thrush (TW)
 
 # Stage Resource (5)
 
@@ -166,6 +172,23 @@ Sideboard
 1 Legacy of Smiths (WH)
 1 Legendary Hunt (FB)
 1 The Great Hunt (WH)
+
+################
+Sideboard vs. fw
+################
+
+# Hazard (10)
+
+1 Blind to the West (WH)
+1 Call of the Deeps (DF)
+1 Cast from the Order (WH)
+1 Doom of the Noldor (FB)
+1 Hard to Tame (DF)
+1 He Is Lost to Us (FB)
+1 Inner Rot (WH)
+1 Nature's Revenge (WH)
+1 Power Relinquished to Artifice (WH)
+1 Something Else at Work (WH)
 
 #####
 Sites
