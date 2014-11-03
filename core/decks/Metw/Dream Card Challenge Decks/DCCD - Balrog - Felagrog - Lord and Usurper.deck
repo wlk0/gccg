@@ -12,42 +12,42 @@ Deck
 
 4 The Balrog [B] (BA)
 
-# Dual Resource (7)
+# Dual Resource (5)
 
 3 Durang (DF)
-2 Fungi (DF)
-2 Miner's Pick (DF)
+1 Fungi (DF)
+1 Miner's Pick (DF)
 
-# Hazard (33)
+# Hazard (34)
 
 2 An Unexpected Outpost (DM)
+1 Black Crows (FB)
 1 Caran-carach (NE)
-3 Dire Wolves (TD)
+2 Dire Wolves (TD)
 3 Doors of Night (TW)
 2 Fell Winter (TW)
 2 Legacy of Carcaroth (NW)
 1 Lure of Nature (TW)
 1 Pierced by Many Wounds (DM)
-2 The Pack at the Door (NW)
+1 Shut Yer Mouth (LE)
+1 The Pack at the Door (NW)
 2 Twilight (TW)
 3 Wake of War (TW)
 1 War-wargs (NW)
 2 War-wolves (NW)
 2 Wargs (TW)
-1 Watcher in the Water (LE)
-2 Were-wolf (NW)
+2 Watcher in the Water (LE)
+2 Were-wolf (NE)
 1 White Wolves (NW)
 2 Wolves (TW)
 
-# Minion Character (7)
+# Minion Character (4)
 
 1 Bolg of the North (DF)
-1 Doeth (Durthak) (WH)
 1 Orc Captain (LE)
 2 Orc Tracker (LE)
-2 Orc Veteran (LE)
 
-# Minion Resource (26)
+# Minion Resource (29)
 
 1 A Worthy Substitute (NE)
 2 Ancient Secrets (BA)
@@ -55,7 +55,7 @@ Deck
 2 Burning Rick, Cot, and Tree (LE)
 2 Dark Forges (NE)
 1 Dwarf-chopper (DF)
-1 Foe Dismayed (BA)
+2 Foe Dismayed (BA)
 1 Gangways over the Fire (BA)
 1 Great Bats (AS)
 1 Great Lord of Goblin-gate (AS)
@@ -64,21 +64,26 @@ Deck
 1 I'll Report You (LE)
 1 Marauding Band of Orcs (NE)
 1 Orcs of Moria (LE)
+1 Orders from the Great Demon (BA)
 2 Strangling Coils (BA)
 1 Swarm of Bats (LE)
 2 Swift Strokes (LE)
 1 Tokens to Show (AS)
-1 Weigh All Things to a Nicety (LE)
+2 Weigh All Things to a Nicety (LE)
 
 ####
 Pool
 ####
 
-# Minion Character (3)
+# Minion Character (9)
 
 1 Bûthrakaur (BA)
+1 Crook-legged Orc (BA)
+1 Doeth (Durthak) (WH)
+2 Goblin-miner (NE)
 1 Hurog (NE)
 1 Lugdush (WH)
+2 Orc Veteran (LE)
 
 # Minion Resource (3)
 
@@ -90,21 +95,33 @@ Pool
 Sideboard
 #########
 
-# Hazard (4)
+# Hazard (14)
 
+1 Call of the Deeps (DF)
+1 Capricious Spirit (RS)
+1 Choked with Vanity (FB)
+1 Crossing the Border (DF)
+1 Doom of the Noldor (FB)
+1 Glutan (RS)
 1 Many Burdens (RS)
+1 Mensharag (TI)
 1 Muster Disperses (TW)
+1 Ninevet (DF)
+1 Old Enemies (DF)
 1 Slip Treacherously (AS)
+1 Vuk (SL)
 1 Wielder's Curse (GW)
 
-# Minion Character (6)
+# Minion Character (4)
 
-2 Crook-legged Orc (BA)
-2 Goblin-miner (NE)
+1 Crook-legged Orc (BA)
+1 Goblin-miner (NE)
 2 Orc Grunt (NE)
 
-# Minion Resource (10)
+# Minion Resource (12)
 
+1 A New Domain (DF)
+1 An Evil Fortune (DF)
 1 Ancient Black Axe (AS)
 1 Blasting Fire (WH)
 1 Breach the Hold (BA)
