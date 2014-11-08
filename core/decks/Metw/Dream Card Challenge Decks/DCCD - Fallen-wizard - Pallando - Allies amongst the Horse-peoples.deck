@@ -8,12 +8,10 @@
 Deck
 ####
 
-# Dual Agent Character (1)
+# Dual Character (5)
 
 1 Aryen the Beastmaster (GW)
-
-# Dual Character (3)
-
+1 Daurukh (GP)
 1 Jehn Remak (SL)
 1 Khandash (SL)
 1 Khursh (BO)
@@ -21,7 +19,7 @@ Deck
 # Dual Resource (6)
 
 1 Deadly Dart (PR)
-1 Iorags (CP)
+1 Iorags (GP)
 2 Mighty Steed (TI)
 2 Southron Scimitar (SL)
 
@@ -72,7 +70,7 @@ Deck
 1 Concealment (TW)
 1 Dark Quarrels (TW)
 1 Fair Gold Ring (TW)
-1 Long They Journeyed (CP)
+1 Long They Journeyed (GP)
 1 Longbottom Leaf (BA)
 2 Noble Steed (WH)
 1 Southrons [H] (TW)
@@ -103,7 +101,7 @@ Deck
 
 # Stage Resource (4)
 
-1 Mission to the East (CP)
+1 Mission to the East (GP)
 2 Never Refuse (WH)
 1 Wizard's Myrmidon (WH)
 
@@ -144,9 +142,9 @@ Sideboard
 
 # Dual Resource (5)
 
-1 Ahar (CP)
+1 Ahar (GP)
 1 Desert Amber (SL)
-1 Ered Harmal* (CP)
+1 Ered Harmal* (GP)
 2 Mounted Lance (TI)
 
 # Grey Agent Character (1)
@@ -155,7 +153,7 @@ Sideboard
 
 # Hero Resource (3)
 
-1 Taarum Elves (CP)
+1 Taarum Elves (GP)
 1 The Great Battle of Our Time (WR)
 1 The Old Thrush (TW)
 
@@ -164,8 +162,8 @@ Sideboard
 1 Bone Dragon (NE)
 1 Magic Ring of Fury (LE)
 1 Minor Ring (LE)
-1 Ring of Flame (CP)
-1 Ring of the Dispossessed (CP)
+1 Ring of Flame (GP)
+1 Ring of the Dispossessed (GP)
 1 Secret Book (AS)
 
 # Stage Resource (5)
@@ -180,34 +178,35 @@ Sideboard
 Sites
 #####
 
-# Hero Site (24)
+# Hero Site (25)
 
 1 Amrûn [H] (SL)
 1 An Karagmir [H] (SL)
-1 Arentaurr [H] (CP)
+1 Arentaurr [H] (GP)
 1 Cairn of the Colruh Hazurbal [H] (SL)
 1 Gobel Mírlond [H] (AS)
 1 Haudh-in-Gwanûr [H] (DM)
 1 Henneth Annûn [H] (TW)
-1 Iorag Camp [H] (CP)
-1 Joghul's Shrine [H] (CP)
+1 Iorag Camp [H] (GP)
+1 Joghul's Shrine [H] (GP)
 1 Kref Masar [H] (SL)
 1 Maresh [H] (SL)
-1 Mistrand [H] (CP)
+1 Mistrand [H] (GP)
 1 Monastery of the True Faith [H] (SL)
 1 Mount Arysis [H] (SL)
 1 Nûrniag Camp [H] (AS)
 1 Poison Rock [H] (BO)
 1 Southron Oasis [H] (TW)
-1 Sturlurtsa [H] (CP)
-1 Temple of Kondri Odchi [H] (CP)
+1 Sturlurtsa [H] (GP)
+1 Temple of Kondri Odchi [H] (GP)
 1 The Hospice of Lost Faith [H] (SL)
-1 Thraath [H] (CP)
-1 Ulk Chey Sart [H] (CP)
+1 Thraath [H] (GP)
+1 Ulk Chey Sart [H] (GP)
+1 Ulk Jey Ama [H] (GP)
 1 Variag Camp [H] (TW)
-1 Wain-Easterling Camp [H] (CP)
+1 Wain-Easterling Camp [H] (GP)
 
 # Minion Site (2)
 
-1 Oraishapek's Mound [M] (CP)
-1 Temple of Lokuthor [M] (CP)
+1 Oraishapek's Mound [M] (GP)
+1 Temple of Lokuthor [M] (GP)

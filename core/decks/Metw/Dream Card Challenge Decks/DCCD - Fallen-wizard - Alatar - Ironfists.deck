@@ -13,7 +13,7 @@ Deck
 1 Anguirel (NW)
 1 Durang (DF)
 1 Dwarf-friend (DF)
-1 Logath Herdsmen (CP)
+1 Logath Herdsmen (GP)
 2 Old Grudge (DF)
 
 # Fallen-wizard Character (4)
@@ -58,7 +58,7 @@ Deck
 1 Lóni (DF)
 1 Náli (DF)
 1 Pathfinder (DF)
-1 Yanos Kosvar (CP)
+1 Yanos Kosvar (GP)
 
 # Hero Resource (17)
 
@@ -106,7 +106,7 @@ Pool
 # Hero Resource (2)
 
 1 Black Arrow (PR)
-1 Fate Let Our Ways Meet (RS)
+1 Fate Let Our Ways Meet (TI)
 
 # Minion Character (2)
 
@@ -170,33 +170,35 @@ Sites
 
 1 Deep Mines (WH)
 
-# Hero Site (17)
+# Hero Site (19)
 
 1 Barak-shathur [H] (DF)
 1 Caves of Ûlund [H] (TW)
 1 Celeb-ost [H] (NW)
 1 Dol Guldur [H] (TW)
+1 Elgaer [H] (GP)
 1 Gaurblog Lug [H] (DF)
 1 Hollow Spire [H] (ML)
 1 Iron Hill Dwarf-hold [H] (TW)
-1 Joghul's Shrine [H] (CP)
-1 Logath Camp [H] (CP)
+1 Joghul's Shrine [H] (GP)
+1 Logath Camp [H] (GP)
 1 Mirror Halls [H] (ML)
-1 Nan Morsereg [H] (CP)
+1 Nan Morsereg [H] (GP)
 1 Nurunkhizdín [H] (DF)
 1 The Lonely Mountain [H] (TW)
 1 The Sulfur-deeps [H] (DM)
 1 The Wind Throne [H] (TW)
 1 Thunder Cleft [H] (GW)
 1 Tol Buruth [H] (NE)
+1 Wain-Easterling Camp [H] (GP)
 
 # Minion Site (9)
 
-1 Adan Tomb [M] (CP)
+1 Adan Tomb [M] (GP)
 1 Barak-shathur [M] (DF)
 1 Buhr Widu [M] (LE)
 1 Iron Hill Dwarf-hold [M] (LE)
-1 Logath Camp [M] (CP)
+1 Logath Camp [M] (GP)
 1 Nurunkhizdín [M] (DF)
 1 Númenórean Tomb [M] (ML)
 1 Thunder Cleft [M] (GW)
