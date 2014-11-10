@@ -35,7 +35,7 @@ Deck
 1 War-wolves (NW)
 1 Wargs (TW)
 1 Wargs (LE)
-1 Were-wolf (NW)
+1 Were-wolf (NE)
 2 Where the Wargs Howl (NW)
 1 Wolf-riders (TD)
 2 Wolves (TW)
@@ -76,7 +76,7 @@ Deck
 1 We Must Join with Him (TI)
 2 Weigh All Things to a Nicety (LE)
 1 Wolf-steed (NW)
-1 Wolves Feed (KN)
+1 Wolves' Feed (KN)
 
 ####
 Pool
@@ -92,7 +92,7 @@ Pool
 
 # Minion Resource (4)
 
-1 Dog-lord of Waw (CP)
+1 Dog-lord of Waw (GP)
 1 Fizzling Torch (NE)
 1 Orc-endurance (NE)
 1 Orc-pouch (NE)
@@ -108,7 +108,7 @@ Sideboard
 # Hazard (4)
 
 1 Nameless Thing (DM)
-1 Uiendarlaif (CP)
+1 Uiendarlaif (GP)
 1 War-wolves (NW)
 1 White Wolves (NW)
 
