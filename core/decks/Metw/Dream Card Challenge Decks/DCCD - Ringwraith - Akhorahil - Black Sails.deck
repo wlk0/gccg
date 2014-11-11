@@ -8,18 +8,15 @@
 Deck
 ####
 
-# Dual Character (4)
+# Dual Character (2)
 
 2 Dúnadan Mariner (WR)
-1 Harngorin (SL)
-1 Khandash (SL)
 
-# Dual Resource (5)
+# Dual Resource (4)
 
-2 The King's Men (WR)
-1 Bozishnarod (SL)
 1 Local Hospitality (RS)
 1 Southron Scimitar (SL)
+2 The King's Men (WR)
 
 # Hazard (33)
 
@@ -28,13 +25,11 @@ Deck
 1 Barrow-wight (TW)
 1 Black Crows (FB)
 2 Chill Douser (DM)
-1 Corsairs of Umbar (TW)
 1 Doors of Night (TW)
 2 Doors of Night (LE)
-1 Greed (TW)
-1 Half-trolls of Far Harad (TW)
+1 Exhalation of Decay (DM)
 2 Lesinavi (SL)
-1 Mewlips (TI)
+2 Mewlips (TI)
 1 Out of Practise (DF)
 2 Plague of Wights (LE)
 2 Sand Devil (SL)
@@ -43,52 +38,55 @@ Deck
 1 Slip Treacherously (AS)
 2 Stirring Bones (DM)
 1 Taint of Deep Lore (WR)
-2 The Moon Is Dead (DM)
+3 The Moon Is Dead (DM)
 2 Twilight (TW)
 
-# Minion Character (8)
+# Minion Character (7)
 
 4 Akhôrahil the Ringwraith (LE)
 1 Carlon (SL)
-1 Hador (LE)
-1 Miruimor (NE)
+1 Nuluzir (SL)
 1 Sakalure (SL)
 
-# Minion Resource (27)
+# Minion Resource (29)
 
 1 A Worthy Substitute (NE)
 1 Akhôrahil Unleashed (LE)
 1 Bade to Rule (LE)
+1 Black Númenóreans (AS)
 3 Black Sails (SL)
-2 Bright Gold Ring (LE)
+3 Bright Gold Ring (LE)
 1 By the Ringwraith's Word (LE)
 1 Crooked Promptings (LE)
 1 Cult of the Dark Lord (SL)
-2 Deeper Shadow (LE)
 1 High Helm (LE)
-3 Iron-road (LE)
+2 Iron-road (LE)
 1 Join With That Power (AS)
 1 Not Slay Needlessly (LE)
 2 Secret Book (AS)
 1 Secrets of Their Forging (LE)
 2 The Black Council (WH)
-1 The Mornarturi (SL)
+1 Tribute to Sauron (NE)
 1 Umbarean Corsairs (LE)
-1 Voices of Malice (LE)
+2 Voices of Malice (LE)
 2 Weigh All Things to a Nicety (LE)
 
 ####
 Pool
 ####
 
-# Dual Character (2)
+# Dual Character (4)
 
 1 Dúnadan Mariner (WR)
+1 Harngorin (SL)
+1 Khandash (SL)
 1 Zokhad (SL)
 
-# Minion Character (2)
+# Minion Character (4)
 
 1 Angamaitë (SL)
+1 Miruimor (NE)
+1 Mélorak (SL)
 1 Sangahyando (SL)
 
 # Minion Resource (3)
@@ -108,23 +106,33 @@ Sideboard
 1 Seeing-stones of Ankatarë (SL)
 1 Tarma of Ar-Pharazôn (SL)
 
-# Hazard (3)
+# Hazard (9)
 
+1 Capricious Spirit (RS)
+1 Corsairs of Umbar (TW)
 1 Endless Whispers (DM)
+1 King of the Dead (TI)
+1 Muster Disperses (TW)
 1 Politics (WR)
+1 Ring-chained (NM)
 1 Stormcrow (TD)
+1 Ta-Fa-Lisch (DF)
 
-# Minion Resource (13)
+# Minion Resource (17)
 
 1 Abhorred Ring (NE)
 1 Arms of the Sea (SL)
-1 Driven as by a Madness (AS)
+1 Calm Song (GW)
+1 Channels of Chey (GP)
+1 Deeper Shadow (LE)
 1 Eyes of the Well (SL)
 1 Fell Rider (LE)
 1 I'll Be At Your Heels (LE)
+1 Magic Ring of Fury (LE)
 1 Magic Ring of Lies (LE)
 1 Magic Ring of Weals (LE)
 1 Minor Ring (LE)
+1 Phantom Devised by Wizardry (NE)
 1 The Tormented Earth (AS)
 1 Trifling Ring (LE)
 1 Veils of Shadow (LE)
@@ -134,11 +142,11 @@ Sideboard
 Sites
 #####
 
-# Minion Site (25)
+# Minion Site (30)
 
 1 Amrûn [M] (SL)
 1 An Karagmir [M] (SL)
-1 Bozisha-Dar [M] (SL)
+2 Bozisha-Dar [M] (SL)
 1 Bûr Esmer [M] (SL)
 1 Coastal Signal Tower [M] (WR)
 1 Dol Amroth [M] (LE)
@@ -152,13 +160,16 @@ Sites
 1 Lighthouse at the Cape of Octopuses [M] (SL)
 1 Minas Morgul [M] (LE)
 1 Minas Tirith [M] (LE)
+1 Monastery of the True Faith [M] (SL)
 1 Ny Chennacatt [M] (SL)
 1 Pelargir [M] (LE)
 1 Pelican Islands [M] (SL)
 1 Setmaenen [M] (WR)
+1 Sud Sicanna [M] (SL)
 1 The Hospice of Lost Faith [M] (SL)
 1 Tol Glingal [M] (SL)
-1 Tol Uialgaer [M] (SL)
+1 Tolfalas [M] (AS)
+1 Tresti [M] (SL)
 1 Umbar [M] (SL)
 1 Vamag [M] (SL)
 1 Ûrêzâyan [M] (SL)
