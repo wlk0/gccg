@@ -6,6 +6,7 @@
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="class" value="Permanent-event"/>
+			 <attr key="mp" value="2"/>
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Thorin"/>
 		</card>
