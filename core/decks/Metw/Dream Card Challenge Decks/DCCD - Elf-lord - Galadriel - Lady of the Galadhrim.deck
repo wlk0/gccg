@@ -8,13 +8,9 @@
 Deck
 ####
 
-# Dual Character (1)
+# Dual Resource (3)
 
-1 Hirbrand (NE)
-
-# Dual Resource (2)
-
-1 Essay on Ringcraft (FB)
+2 Essay on Ringcraft (FB)
 1 Rivermen of the Anduin Vales (GW)
 
 # Elf-lord Character (4)
@@ -24,130 +20,139 @@ Deck
 # Hazard (33)
 
 1 An Unexpected Outpost (DM)
-1 Beijabar Bees (NM)
 1 Black Crows (FB)
-1 Black Vapour (BA)
-1 Boars (FB)
-2 Flies and Spiders (DM)
-3 Full of Froth and Rage (AS)
+1 Enchanted Stream (AS)
+1 Flies and Spiders (DM)
+1 Foolish Words (LE)
+2 Full of Froth and Rage (AS)
 2 Giant Spiders (TW)
 1 Great Northern Bear (GW)
-1 Greed (TW)
 1 It Stinks (NM)
+2 King-spider (DF)
 3 Lesser Spiders (TD)
 1 Lord of the Eagles (DF)
 1 Morgai-flies (NM)
 1 Neeker-breekers (PR)
 1 Ninevet (DF)
-2 Pierced by Many Wounds (DM)
+1 Out of Practise (DF)
+1 Pierced by Many Wounds (DM)
+2 Protecting Their Domain (FB)
 1 River (TW)
-1 Searching Eye (TD)
 2 Shelob's Brood (BA)
+1 Spiders Huge and Horrible (NE)
 1 Terror from the Deeps (DF)
-1 Thrice Told Tales (RS)
 1 Twilight (TW)
+1 Venomous Sting (WR)
 2 Watcher in the Water (TW)
 
-# Hero Character (7)
+# Hero Character (5)
 
-1 Aegnor (FB)
+1 Celebrían (FB)
 1 Elven Handmaid (FB)
-1 Fanar (FB)
 1 Haldir (TW)
 1 Mallorn-dweller (FB)
-1 Orophin (TW)
-1 Taurnil (RS)
+1 Wood-elf (FB)
 
-# Hero Resource (25)
+# Hero Resource (23)
 
-1 A Friend or Three (TW)
-1 Ancient Knowledge (FB)
-3 Beautiful Gold Ring (TW)
-1 Concealment (TW)
+1 A Chance Meeting (TW)
+1 A Long Good Talk (FB)
+2 Ancient Knowledge (FB)
+2 Beautiful Gold Ring (TW)
+2 Concealment (TW)
 1 Elves of Lothlórien (FB)
-1 Fair Gold Ring (TW)
-1 Fair Travels in Wilderness (TW)
+1 Glamdring (TW)
 1 Into the Smoking Cone (DM)
-1 Leaflock (TW)
 1 Looking from Mind to Mind (FB)
-1 Mirror of Galadriel (TW)
-1 Nenya (TW)
+2 Marvels Told (TD)
+1 New Best Friend (RS)
+1 New Closeness to His Kin (FB)
 2 Noble Hound (DM)
-2 Of the Green-elves (FB)
 1 Royal Duo (FB)
-1 Safe from the Shadow (AS)
 2 Smoke Rings (DM)
-1 Test of Lore (TW)
 1 The Wind Is Turning (WR)
-1 Thorough Search (TW)
+1 Token of Goodwill (DM)
+1 Treebeard (TW)
 
-# Minion Resource (2)
+# Minion Resource (1)
 
 1 Crept Along Cleverly (WH)
-1 Voices of Malice (LE)
 
-# Stage Resource (4)
+# Stage Resource (5)
 
-1 Lady of Many Gifts (FB)
-1 Ring of Water (FB)
-1 Sworn to the Lord (FB)
+1 Blind to All Else
+1 Chief-guardian (FB)
+1 Great Achievement (DF)
+1 Great Patron (WH)
 1 Wizard's Trove (WH)
+
 
 ####
 Pool
 ####
 
-# Hero Character (3)
+# Minion Character (2)
 
+1 Celedhring (FB)
+1 Nimloth (DM)
+
+# Hero Character (7)
+
+1 Aegnor (FB)
 1 Celeborn, Lord of Lórien (FB)
+1 Fanar (FB)
+1 Mallorn-dweller (FB)
+1 Orophin (TW)
 1 Rúmil (FB)
 1 Wood-elf (FB)
 
-# Hero Resource (2)
+# Hero Resource (3)
 
-1 Jewel of Beleriand (AS)
+1 Healing Herbs (TW)
 1 Rumours of Rings (BA)
+1 Star-glass (TW)
 
-# Minion Character (1)
+# Stage Resource (3)
 
-1 Celedhring (FB)
-
-# Minion Resource (1)
-
-1 Maranya (FP)
-
-# Stage Resource (2)
-
-1 Order of Jewel and Ring-smiths (FB)
+1 Lady of Many Gifts (FB)
+1 Lady of Many Visions (FB)
 1 Trusted Counsellor (FB)
 
 #########
 Sideboard
 #########
 
-# Hazard (4)
+# Hazard (8)
 
-1 Drawn to Its Master (NM)
+1 Beijabar Bees (NM)
+1 Lost in Free-domains (LE)
+1 Majmun (SL)
 1 Muster Disperses (TW)
+1 Searching Eye (TD)
 1 Terror of Halifirien (TI)
-1 The Sea Is Unrelenting (SL)
+1 The Will of the Ring (TW)
+1 Thrice Told Tales (RS)
 
-# Hero Resource (14)
+# Hero Resource (20)
 
 1 Cup of Farewell (DM)
-1 Dwarven Ring of Thélor's Tribe [H] (TW)
 1 Elf-stone (TW)
-1 Leaf Brooch (DM)
+1 Forgotten Scrolls (DM)
+2 Leaf Brooch (DM)
 1 Lost Tome (DM)
+1 Magic Ring of Courage (TW)
 1 Magic Ring of Nature (TW)
 1 Magic Ring of Stealth (TW)
 1 Magic Ring of Words (TW)
+1 Mirror of Galadriel (TW)
 1 Phial of Galadriel (DM)
 1 Rush along Recklessly (WR)
-1 Star-glass (TW)
+1 Test of Lore (TW)
 1 Three Golden Hairs (TD)
+1 Tower Raided (AS)
+1 Tom Bombadil (TW)
 1 Very Active Governess (FB)
-1 Waybread (TD)
+2 Waybread (TD)
 
 # Minion Resource (2)
 
@@ -158,37 +163,42 @@ Sideboard
 Sites
 #####
 
-# Dual Site (1)
+# Elf-lord Site (3)
 
-1 Osteledan (FB)
-
-# Elf-lord Site (2)
-
-2 Lórien [E] (FB)
+3 Lórien [E] (FB)
 
 # Fallen-wizard Site (2)
 
 1 Rivendell [F] (FB)
 1 Thranduil's Halls [F] (FB)
 
-# Hero Site (19)
+# Hero Site (28)
 
 1 Amon Hen [H] (TW)
 1 Amon Lhaw [H] (TI)
 1 Amon Lind [H] (FB)
 1 Bandit Lair [H] (TW)
 1 Barad Tathren [H] (TI)
-1 Beorn's House [H] (TW)
+1 Barrow-downs [H] (TW)
 1 Caras Amarth [H] (FB)
 1 Cerin Amroth [H] (FB)
 1 Cor Angaladh [H] (FB)
+1 Dimrill Dale [H] (TW)
+1 Geann a-Lisch [H] (AS)
 1 Gladden Fields [H] (TW)
+1 Goblin-gate [H] (TW)
 1 Hermit's Hill [H] (DM)
 1 Joghul's Shrine [H] (GP)
 1 Mathlaburg [H] (GW)
+1 Moria [H] (TW)
 1 Mount Doom [H] (TW)
 1 Ost-in-Edhil [H] (TW)
+1 Raider-hold [H] (AS)
+1 Sarn Goriwing [H] (TW)
+1 Strayhold [H] (NE)
 1 Telpëmar [H] (FB)
 1 Temple of Lokuthor [H] (GP)
+1 Tom's House [H] (FB)
+1 Turukulon's Lair [H] (TI)
 1 Wellinghall [H] (TW)
 1 Woodmen-town [H] (TW)
