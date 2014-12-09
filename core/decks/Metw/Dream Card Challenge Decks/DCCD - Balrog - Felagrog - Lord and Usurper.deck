@@ -79,10 +79,10 @@ Pool
 
 1 Bûthrakaur (BA)
 1 Crook-legged Orc (BA)
-1 Doeth (Durthak) (WH)
 2 Goblin-miner (NE)
 1 Hurog (NE)
 1 Lugdush (WH)
+1 Orc Shaman (NE)
 2 Orc Veteran (LE)
 
 # Minion Resource (3)
@@ -95,20 +95,17 @@ Pool
 Sideboard
 #########
 
-# Hazard (14)
+# Hazard (12)
 
 1 Call of the Deeps (DF)
-1 Capricious Spirit (RS)
-1 Choked with Vanity (FB)
 1 Crossing the Border (DF)
-1 Doom of the Noldor (FB)
 1 Glutan (RS)
 1 Many Burdens (RS)
 1 Mensharag (TI)
-1 Muster Disperses (TW)
 1 Ninevet (DF)
 1 Old Enemies (DF)
 1 Slip Treacherously (AS)
+1 Too Much to Ask (WR)
 1 Vuk (SL)
 1 Wielder's Curse (GW)
 
@@ -118,50 +115,64 @@ Sideboard
 1 Goblin-miner (NE)
 2 Orc Grunt (NE)
 
-# Minion Resource (12)
+# Minion Resource (14)
 
 1 A New Domain (DF)
 1 An Evil Fortune (DF)
 1 Ancient Black Axe (AS)
 1 Blasting Fire (WH)
 1 Breach the Hold (BA)
+1 Grey Mountain Goblins (LE)
 1 Invade Their Domain (BA)
 1 Liquid Fire (WH)
+1 Long Forgotten Gold (GW)
 1 Lord and Usurper (BA)
 2 Mechanical Bow (WH)
 1 Orcs of Gundabad (LE)
 1 The Arkenstone [M] (PR)
+1 Voices of Malice (LE)
 
 #####
 Sites
 #####
 
-# Balrog Site (11)
+# Balrog Site (14)
 
 2 Moria [B] (BA)
 1 The Drowning-deeps [B] (BA)
 1 The Gem-deeps [B] (BA)
+1 The Pûkel-deeps [B] (BA)
 1 The Rusted-deeps [B] (BA)
+1 The Sulfur-deeps [B] (BA)
+1 The Under-courts [B] (BA)
 2 The Under-gates [B] (BA)
 1 The Under-grottos [B] (BA)
 1 The Under-leas [B] (BA)
 1 The Under-vaults [B] (BA)
 1 The Wind-deeps [B] (BA)
 
-# Minion Site (15)
+# Dual Site (2)
+
+1 Mines of Angûrath (DF)
+1 Mines of Falek-dim (DF)
+
+# Minion Site (17)
 
 1 Blue Mountain Dwarf-hold [M] (LE)
+1 Bree [M] (LE)
 1 Cameth Brin [M] (LE)
-1 Caves of Ûlund [M] (LE)
 1 Deep Cleft [M] (GW)
 1 Dimrill Dale [M] (LE)
 1 Dunnish Clan-hold [M] (LE)
 1 Goblin-gate [M] (LE)
+1 Gondmaeglom [M] (LE)
 1 Iron Hill Dwarf-hold [M] (LE)
 1 Ligr Wodaize Berne [M] (NW)
 1 Mathlaburg [M] (GW)
 1 Mount Gram [M] (LE)
 1 Mount Gundabad [M] (LE)
+1 Nurunkhizdín [M] (DF)
 1 Raider-hold [M] (LE)
 1 Steel Fall [M] (GW)
 1 The Wind Throne [M] (LE)
+

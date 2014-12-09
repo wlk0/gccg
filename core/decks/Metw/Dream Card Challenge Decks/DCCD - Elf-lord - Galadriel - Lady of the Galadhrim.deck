@@ -45,11 +45,9 @@ Deck
 1 Venomous Sting (WR)
 2 Watcher in the Water (TW)
 
-# Hero Character (5)
+# Hero Character (3)
 
 1 Celebrían (FB)
-1 Elven Handmaid (FB)
-1 Haldir (TW)
 1 Mallorn-dweller (FB)
 1 Wood-elf (FB)
 
@@ -82,9 +80,8 @@ Deck
 
 1 Blind to All Else
 1 Chief-guardian (FB)
-1 Great Achievement (DF)
+2 Great Achievement (DF)
 1 Great Patron (WH)
-1 Wizard's Trove (WH)
 
 
 ####
@@ -96,10 +93,11 @@ Pool
 1 Celedhring (FB)
 1 Nimloth (DM)
 
-# Hero Character (7)
+# Hero Character (8)
 
 1 Aegnor (FB)
 1 Celeborn, Lord of Lórien (FB)
+1 Elven Handmaid (FB)
 1 Fanar (FB)
 1 Mallorn-dweller (FB)
 1 Orophin (TW)
@@ -122,9 +120,10 @@ Pool
 Sideboard
 #########
 
-# Hazard (8)
+# Hazard (9)
 
 1 Beijabar Bees (NM)
+1 His Own Master (RS)
 1 Lost in Free-domains (LE)
 1 Majmun (SL)
 1 Muster Disperses (TW)
@@ -133,19 +132,19 @@ Sideboard
 1 The Will of the Ring (TW)
 1 Thrice Told Tales (RS)
 
-# Hero Resource (20)
+# Hero Resource (21)
 
 1 Cup of Farewell (DM)
 1 Elf-stone (TW)
 1 Forgotten Scrolls (DM)
 2 Leaf Brooch (DM)
+2 Lesser Ring (TW)
 1 Lost Tome (DM)
 1 Magic Ring of Courage (TW)
 1 Magic Ring of Nature (TW)
 1 Magic Ring of Stealth (TW)
 1 Magic Ring of Words (TW)
 1 Mirror of Galadriel (TW)
-1 Phial of Galadriel (DM)
 1 Rush along Recklessly (WR)
 1 Test of Lore (TW)
 1 Three Golden Hairs (TD)
@@ -153,11 +152,6 @@ Sideboard
 1 Tom Bombadil (TW)
 1 Very Active Governess (FB)
 2 Waybread (TD)
-
-# Minion Resource (2)
-
-1 Paltry Ring (LE)
-1 Trifling Ring (LE)
 
 #####
 Sites
