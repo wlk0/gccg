@@ -10,10 +10,13 @@ Deck
 
 # Dual Resource (4)
 
-1 Beasts of the Wood (WH)
-1 Elf-friend (FB)
+2 Beasts of the Wood (WH)
 1 Great Falcons of Mirkwood (GW)
-1 Helecthil, Light of the North (NW)
+1 Wild Hounds (WH)
+
+# Elf-lord Character (4)
+
+4 Thranduil of Mirkwood (FB)
 
 # Hazard (33)
 
@@ -23,98 +26,90 @@ Deck
 1 Alone and Unadvised (AS)
 1 Ambush! (TI)
 2 An Unexpected Outpost (DM)
-1 Black Crows (FB)
+2 Black Crows (FB)
 2 Chance of Being Lost (DM)
-2 Elf-lord Revealed in Wrath (LE)
+1 Doom of the Noldor (FB)
 2 Elven Archer (FB)
-2 Elven Custody (FB)
+1 Elven Custody (FB)
 3 Elves upon Errantry (LE)
-1 Evenstar of Her People (FB)
-1 Falathrim (FB)
+3 Ent in Search of the Entwives (LE)
 2 Galadhrim (AS)
 1 Grasping and Ungracious (TI)
 1 Lord of the Eagles (DF)
 1 Nameless Thing (DM)
-1 Old Enemies (DF)
-1 Shifting Paths (FB)
-1 Snow-elves (NW)
+1 Nothing to Eat or Drink (LE)
+2 Shifting Paths (FB)
 1 Sons of Elrond (FB)
-1 Taint of Glory (WR)
+1 Tauremornalómë (TI)
 1 Thranduil's Folk (LE)
 1 Twilight (TW)
 
-# Hero Character (7)
+# Hero Character (3)
 
-1 Aramacar (FB)
-1 Arhendhiril (FB)
-1 Elven Handmaid (FB)
-1 Huinen (FB)
-1 Othar (FB)
+2 Mallorn-dweller (FB)
 2 Wood-elf (FB)
 
-# Hero Resource (24)
+# Hero Resource (18)
 
 2 Ancient Knowledge (FB)
-1 Aranrûth (FB)
 1 Bow of the Galadhrim (AS)
-1 Emerald of the Mariner (TD)
-1 Great Friendship (FB)
+1 Great Bow of Yew (FB)
 2 Greenwood the Great (FB)
-1 Horns, Horns, Horns (DM)
+1 Hundreds of Butterflies (DM)
 1 Longbottom Leaf (BA)
-1 Many Turns and Doublings (TD)
 2 Marvels Told (TD)
+3 Muster (TW)
 1 Pass the Doors of Dol Guldur (DM)
 1 Raft-elves (FB)
-1 Reforging (TW)
-1 Refuge (TD)
-1 Rescue Prisoners (TW)
-1 Ringil (GW)
 1 Risky Blow (TW)
 2 Smoke Rings (DM)
-1 The Wind Is Turning (WR)
-1 Wood-elves (TW)
 
-# Minion Resource (3)
+# Minion Resource (4)
 
 1 Blackbole (LE)
-1 Crept Along Cleverly (WH)
+2 Crept Along Cleverly (WH)
 1 Swift Strokes (LE)
 
-# Stage Resource (2)
+# Stage Resource (7)
 
+1 Great Achievement (DF)
+1 Legacy of Smiths (WH)
+1 Lord of Wood and Beast (FB)
+2 Lust for Treasure (DF)
 1 Prince of Mirkwood (FB)
-1 Wardens of the Woodland Realm (FB)
+1 The King's Hunting (FB)
+
 
 ####
 Pool
 ####
 
-# Dual Character (1)
+# Hero Character (9)
 
-1 Hirbrand (NE)
-
-# Hero Character (4)
-
-1 Gimli, Son of Gloin (DF)
+1 Arhendhiril (FB)
+1 Bladorthin (FB)
+1 Elven Handmaid (FB)
 1 Heladil (GW)
+1 Huinen (FB)
 1 Legolas (TW)
-1 Mallorn-dweller (FB)
+1 Legolas of Greenwood (FB)
+1 Othar (FB)
+1 Wood-elf (FB)
 
 # Hero Resource (3)
 
+1 Elf-stone (TW)
 1 Healing Herbs (TW)
 1 Horn of Anor (TW)
-1 Star-glass (TW)
 
 # Minion Character (1)
 
 1 Nimloth (DM)
 
-# Stage Resource (3)
+# Stage Resource (2)
 
-1 The King's Hunting (FB)
-2 Thrall of the Voice (WH)
+1 Possessions of the Green-elves (FB)
+1 Trusted Counsellor (FB)
 
 #########
 Sideboard
@@ -122,41 +117,43 @@ Sideboard
 
 # Dual Resource (2)
 
-1 Down the Hurrying Waters (RS)
-1 Wild Hounds (WH)
+2 Bow of Yew (FB)
 
-# Hazard (5)
+# Hazard (9)
 
 1 Earth-tremors (DM)
+1 Falathrim (FB)
 1 He Is Lost to Us (FB)
 1 Lure of Magic (NE)
+1 Mirage (SL)
 1 Muster Disperses (TW)
-1 Sand-storm (SL)
+1 Snow-elves (NW)
+1 Too Much to Ask (WR)
+1 Vaurak (SL)
 
-# Hero Character (1)
-
-1 Bladorthin (FB)
-
-# Hero Resource (8)
+# Hero Resource (16)
 
 1 A Panoply of Wings (WH)
-1 Elf-path (TD)
-1 Elves of Taur Rómen (FB)
-1 Fellowship (TW)
+1 Aranrûth (FB)
+1 Arrows Shorn of Ebony (TD)
+1 Emerald of Doriath (TD)
+1 Emerald of the Mariner (TD)
 1 Great Bow of Lórien (FB)
-1 Muster (TW)
+2 Great-road (TW)
+1 Horns, Horns, Horns (DM)
+1 Many Turns and Doublings (TD)
+1 Noldo-lantern (DM)
 1 Rescue Prisoners (TW)
-1 The Great Eagles (TW)
-
-# Minion Resource (1)
-
-1 Swift Strokes (LE)
+1 Star-glass (TW)
+1 The Great Battle of Our Time (WR)
+1 The Hunt (DM)
+1 Wood-elves (TW)
 
 # Stage Resource (3)
 
-1 Great Achievement (DF)
-1 Legacy of Smiths (WH)
-1 Lord of Wood and Beast (FB)
+1 Kheleglin (FP)
+1 Legendary Hunt (FB)
+1 Wardens of the Woodland Realm (FB)
 
 #####
 Sites
@@ -171,27 +168,30 @@ Sites
 
 1 Lórien [F] (FB)
 
-# Hero Site (23)
+# Hero Site (26)
 
+1 Barak-shathur [H] (DF)
+1 Caras Amarth [H] (FB)
 1 Caves of Ûlund [H] (TW)
 1 Ceber Fanuin [H] (FB)
 1 Celebannon [H] (FB)
+1 Cor Angaladh [H] (FB)
 1 Dancing Spire [H] (TW)
 1 Dead Marshes [H] (TW)
 1 Dol Guldur [H] (TW)
-1 Eagles' Eyrie [H] (TW)
 1 Gold Hill [H] (TD)
+1 Gondmaeglom [H] (TD)
 1 Irerock [H] (TW)
 1 Iron Hill Dwarf-hold [H] (TW)
 1 Long Marshes [H] (DF)
 1 Long Peak [H] (GW)
 1 Mount Gundabad [H] (TW)
 1 Mountains of Mirkwood [H] (GW)
-1 Norr-dûm [H] (GW)
+1 Nurunkhizdín [H] (DF)
+1 Ovir Hollow [H] (TD)
+1 Rhosgobel [H] (TW)
 1 Rhûbar [H] (FB)
 1 Sarn Goriwing [H] (TW)
-1 Steel Fall [H] (GW)
-1 The Carrock [H] (DF)
 1 The Lonely Mountain [H] (TW)
 1 The Sulfur-deeps [H] (DM)
 1 The Wind Throne [H] (TW)
@@ -202,3 +202,4 @@ Sites
 1 Caras Amarth [M] (FB)
 1 Cor Angaladh [M] (FB)
 1 Mountains of Mirkwood [M] (GW)
+
