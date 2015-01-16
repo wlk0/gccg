@@ -10,8 +10,7 @@ v0.9.7
 [X] Added mofo's small repo to installed.xml
 [X] fixed function that places avatars on tables (now tables image height can be changed)
 [ ] Check if gccg_package diff works 
-[ ] Move ChangeLog to core.
-[ ] Move docs out of trunk.
+[X] Move ChangeLog to core.
 [X] Research on audio/visual notification when talked to while not in focus
 [ ] Find a way to normalize all sounds (try using replaygain tags).
 [ ] Some command to directly change 'username' file in windows.
