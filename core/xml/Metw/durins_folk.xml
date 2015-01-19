@@ -1082,10 +1082,10 @@
 			 <attr key="draw" value="2"/>
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Under-deeps"/>
-			 <attr key="adjacent" value="Wondrous Maps* (0), Ostigurth (7), The Under-courts (10)"/>
+			 <attr key="adjacent" value="Wondrous Maps* (0), Ostigurth (5), The Under-courts (6), The Limestone-caverns (8)"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
-			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 10 prowess (detainment if the company contains a Dwarf majority)"/>
-			 <attr key="special" value="Contains a hoard. Hidden Site. *You may move to this site from any Wondrous Maps site in Nurn or Horse Plains.  Dwarven Warparty may be played keyed to this site."/>
+			 <attr key="auto_attack" value="Dwarves - 4 strikes with 10 prowess(detainment if the company contains a Dwarf majority)"/>
+			 <attr key="special" value="Hidden Site. Tap a sage or avatar in the company, or discard a Lost Knowledge card, to reveal this site. Contains a hoard. *Any Wondrous Maps you have in play in Nurn or Horse Plains is considered a surface site of this site. Creatures played at this site attack normally, not as detainment."/>
 			 <attr key="keyword" value="Hidden Site"/>
 		</card>
 		<card name="Mines of Falek-dim" graphics="Mines of Falekdim.jpg" back="1" text="">

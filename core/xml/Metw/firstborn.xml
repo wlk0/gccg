@@ -1530,7 +1530,7 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Anfalas"/>
 			 <attr key="playable" value="Information"/>
-			 <attr key="auto_attack" value="Elves — 3 strikes with 11 prowess (only if you have 12 P or more)."/>
+			 <attr key="auto_attack" value="Elves — 3 strikes with 9 prowess (only if you have 12 P or more)."/>
 			 <attr key="special" value="Port. You cannot play any card which would make this site a Haven [H]. This site may not be used by overt companies. This site must be used as a site card for Edhellond by all Lord and Fallen-wizard players' companies with 12 or more P."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	         <attr key="keyword" value="Port"/>
@@ -1545,7 +1545,7 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Lindon"/>
 			 <attr key="playable" value="Information"/>
-			 <attr key="auto_attack" value="Elves —3 strikes with 11 prowess (only if you have 12 P or more)"/>
+			 <attr key="auto_attack" value="Elves —3 strikes with 9 prowess (only if you have 12 P or more)"/>
 			 <attr key="special" value="Port. You cannot play any card which would make this site a Haven [H]. This site may not be used by overt companies or if you are Círdan. This site must be used as a site card for Grey Havens by all other Lord and Fallen-wizard players with 12or more P."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	         <attr key="keyword" value="Port"/>
@@ -1687,7 +1687,7 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Rhudaur"/>
 			 <attr key="playable" value="Information"/>
-			 <attr key="auto_attack" value="Elves — 3 strikes with 11 prowess (only if you have 12 P or more)"/>
+			 <attr key="auto_attack" value="Elves — 3 strikes with 10 prowess (only if you have 12 P or more)"/>
 			 <attr key="special" value="You cannot play any card which would make this site a Haven [H]. This site may not be used by overt companies or if you are Elrond. This site must be used as a site card for Rivendell by all other Lord and Fallen-wizard players with 12 or more P."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
@@ -1740,7 +1740,7 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Woodland Realm"/>
 			 <attr key="playable" value="Information"/>
-			 <attr key="auto_attack" value="Elves — 3 strikes with 11 prowess (only if you have 12 P or more)"/>
+			 <attr key="auto_attack" value="Elves — 3 strikes with 9 prowess (only if you have 12 P or more)"/>
 			 <attr key="special" value="You cannot play any card which would make this site a Haven [H]. This site may not be used by overt companies or if you are Thranduil. This site must be used as a site card for Thranduil's Halls by all other Lord and Fallen-wizard players with 12 or more P."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
