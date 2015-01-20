@@ -91,13 +91,10 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (1)
-
-1 Battle of Five Armies (GW)
-
-# Hazard (7)
+# Hazard (8)
 
 1 Long Winter (TW)
+1 Lure of Expedience (TW)
 1 Many Burdens (RS)
 1 Muster Disperses (TW)
 1 Old Enemies (DF)
@@ -105,7 +102,7 @@ Sideboard
 1 Siege of Gondor (WR)
 1 Two or Three Tribes Present (DM)
 
-# Minion Resource (21)
+# Minion Resource (22)
 
 1 "Two-headed" Troll (LE)
 1 Always the Black Horses (TI)
@@ -136,6 +133,7 @@ Sites
 # Minion Site (32)
 
 1 Amon Hen [M] (LE)
+1 Amon Lind [M] (FB)
 1 Bree [M] (LE)
 1 Cameth Brin [M] (LE)
 1 Carn Dûm [M] (LE)
@@ -146,7 +144,6 @@ Sites
 1 Dunharrow [M] (LE)
 1 Edoras [M] (LE)
 1 Ettenmoors [M] (LE)
-1 Glittering Caves [M] (LE)
 1 Goblin-gate [M] (LE)
 1 Gondmaeglom [M] (LE)
 1 Isengard [M] (LE)

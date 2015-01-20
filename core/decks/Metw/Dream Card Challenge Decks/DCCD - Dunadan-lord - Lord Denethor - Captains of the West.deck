@@ -4,9 +4,14 @@
 #      DCCD - Dunadan-lord - Lord Denethor - Captains of the West
 #
 
+
 ####
 Deck
 ####
+
+# Dual Resource (1)
+
+1 Mace of Anárion (WR)
 
 # Dúnadan-lord Character (4)
 
@@ -17,30 +22,27 @@ Deck
 1 Ambusher (LE)
 1 An Unexpected Outpost (DM)
 1 Angmar Arises (PR)
-1 Barrow-wight (TW)
-1 Barrow-wight (LE)
+2 Barrow-wight (LE)
 1 Black Crows (FB)
 3 Chill Douser (DM)
+1 Darkness Ahead (TI)
 1 Death of a Kinsman (WR)
 1 Foolish Words (TD)
+1 Gandalf the White Rider (AS)
 1 Ghosts (LE)
 1 Haunted Place (TI)
 1 Ibûn (DF)
 2 Icy Touch (TD)
-1 Left on the Field (WR)
-1 Mewlips (TI)
+2 Mewlips (TI)
 1 Out of Practise (DF)
-1 Pale Dream-maker (DM)
-2 Plague of Wights (LE)
+3 Plague of Wights (LE)
+1 Power Built by Waiting (AS)
 1 Reaching Shadow (DM)
-1 Searching Eye (LE)
 1 Sons of Kings (LE)
 1 Spells of the Barrow-wights (DM)
-1 Stirring Bones (DM)
-1 Stirring Bones (LE)
-2 Ta-Fa-Lisch (DF)
+3 Stirring Bones (LE)
 1 Taint of Glory (WR)
-2 Twilight (LE)
+1 Twilight (LE)
 
 # Hero Character (5)
 
@@ -48,40 +50,37 @@ Deck
 1 Bergil (TW)
 1 Forlong (TW)
 1 Hirgon (WR)
-1 Ingold (WR)
+1 Húrin the Tall (WR)
 
-# Hero Resource (28)
+# Hero Resource (30)
 
+1 Archer of Ithilien (WR)
 1 Captains of the West (WR)
 3 Dark Quarrels (TW)
+2 Dodge (TW)
 1 Escaped Slaves (WR)
-1 Fellowship (TW)
 1 Glamdring (TW)
-1 Knowledge of the Enemy (DM)
+1 Great-road (TW)
+1 Hidden Valour (TI)
+2 Knowledge of the Enemy (DM)
 2 Lock nor Bar May Hinder (DF)
-1 Longbottom Leaf (BA)
-2 Many Turns and Doublings (TD)
 1 Marvels Told (TD)
 1 Orcrist (TW)
-1 Reforging (TW)
-2 Rescue Prisoners (TW)
+1 Palantír of Minas Tirith [H] (TW)
+3 Rescue Prisoners (TW)
 1 Rumours of Danger (WR)
-1 Safe from the Shadow (AS)
 1 Smoke Rings (DM)
 1 Steward of Gondor (WR)
-1 Stories of the Elder Days (WR)
-1 Trickery (TD)
+1 The Wind Is Turning (WR)
+1 True-hearted Man (RS)
 1 Ungolcrist (FB)
 2 War Preparations (WR)
 1 Withdrawn to Mordor (DM)
 
-# Stage Resource (5)
+# Stage Resource (2)
 
-1 Captain of the Tower Guard (WR)
-1 Great Achievement (DF)
 1 Kheleglin (FP)
 1 Leaguer of Pelargir (WR)
-1 Sworn to the Lord (FB)
 
 ####
 Pool
@@ -91,25 +90,27 @@ Pool
 
 1 Thorongil (WR)
 
-# Hero Character (6)
+# Hero Character (9)
 
 1 Anborn (TW)
 1 Boromir II (TW)
 1 Damrod (TW)
+1 Duilin (WR)
 1 Faramir (TW)
+1 Ingold (WR)
 1 Ioreth (TD)
 1 Mablung (TW)
+1 Robin Smallburrow (TW)
 
 # Hero Resource (3)
 
-1 Archer of Ithilien (WR)
+2 Archer of Ithilien (WR)
 1 Backpack (RS)
-1 Shield of Iron-bound Ash (TW)
 
 # Stage Resource (3)
 
-1 Captain of the Royal Rangers  (WR)
-1 Tower of Guard (WR)
+1 Captain of the Tower Guard (WR)
+1 The House of Mardil (WR)
 1 Trusted Counsellor (FB)
 
 #########
@@ -120,79 +121,78 @@ Sideboard
 
 1 Mighty Steed (TI)
 
-# Hazard (6)
+# Hazard (8)
 
 1 Call of the Deeps (DF)
-1 Eärcaraxë Ahunt (TD)
 1 Ice-drake (TD)
 1 King of the Dead (TI)
 1 Muster Disperses (LE)
+1 Searching Eye (LE)
+1 Slip Treacherously (AS)
+1 Ta-Fa-Lisch (DF)
 1 Too Much to Ask (WR)
 
-# Hero Character (1)
+# Hero Resource (13)
 
-1 Robin Smallburrow (TW)
-
-# Hero Resource (14)
-
-2 Archer of Ithilien (WR)
+1 Cram (TD)
 1 Healing Herbs (TW)
-1 Lore of the Ages (TD)
+1 Longbottom Leaf (BA)
 1 Many Foes He Fought (TD)
-1 Noldo-lantern (DM)
-1 Potion of Prowess (TW)
+1 Marvels Told (TD)
+1 Men of Lossarnach (WR)
 1 Putting away All Fear (WR)
+1 Rangers of Ithilien (TW)
+1 Smoke Rings (DM)
 1 Star-glass (TW)
-1 Tales of the Hunt (TD)
 1 The Ithil-stone (AS)
 1 Tower Guard of Minas Tirith (TW)
-1 Tower Raided (AS)
-1 True-hearted Man (RS)
+1 Tower of Ecthelion (WR)
 
-# Stage Resource (1)
+# Minion Resource (2)
 
+1 I'll Be At Your Heels (LE)
+1 I'll Report You (LE)
+
+# Stage Resource (6)
+
+1 Captain of the Royal Rangers  (WR)
+1 Eyes of the White Tower (WR)
 1 Legacy of Smiths (WH)
+1 Son of Ecthelion (WR)
+1 Sworn to the Lord (FB)
+1 Tower of Guard (WR)
 
 #####
 Sites
 #####
 
-# Fallen-wizard Site (1)
+# Hero Site (27)
 
-1 Edhellond [F] (FB)
-
-# Hero Site (33)
-
-1 Amon Lhaw [H] (TI)
 1 Amrûn [H] (SL)
 1 Barad-dûr [H] (TW)
 1 Barad-wath [H] (NE)
 1 Cair Andros [H] (WR)
-1 Cairn of the Colruh Hazurbal [H] (SL)
 1 Cirith Gorgor [H] (AS)
 1 Cirith Ungol [H] (TW)
-1 Coastal Signal Tower [H] (WR)
 1 Dead Marshes [H] (TW)
+1 Drúadan Forest [H] (TW)
 1 Durthang [H] (WR)
-1 Dûsalan [H] (SL)
 1 Gobel Mírlond [H] (AS)
-1 Haudh-in-Gwanûr [H] (DM)
 1 Henneth Annûn [H] (TW)
+1 Iorag Camp [H] (GP)
 1 Joghul's Shrine [H] (GP)
+1 Lossarnach [H] (WR)
 1 Lugarlur [H] (SL)
-1 Medlóshad [H] (GP)
+1 Minas Durlith [H] (NE)
 1 Minas Morgul [H] (TW)
 1 Minas Tirith [H] (TW)
 1 Mount Doom [H] (TW)
 1 Nûrniag Camp [H] (AS)
 1 Osgiliath [H] (WR)
-1 Ostigurth [H] (NE)
-1 Pelargir [H] (TW)
 1 Raider-hold [H] (AS)
 1 Shelob's Lair [H] (TW)
 1 Sturlurtsa [H] (GP)
-1 Temple of Kondri Odchi [H] (GP)
 1 The Hospice of Lost Faith [H] (SL)
 1 Urlurtsu Nurn [H] (DM)
 1 Vale of Erech [H] (TW)
-1 Vamag [H] (SL)
+
