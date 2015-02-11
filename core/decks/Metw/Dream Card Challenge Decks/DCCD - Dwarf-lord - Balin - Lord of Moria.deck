@@ -48,14 +48,13 @@ Deck
 2 Thrice Outnumbered (LE)
 1 Twilight (LE)
 
-# Hero Character (4)
+# Hero Character (3)
 
-1 Attack-lord (DF)
-1 Frerin (DF)
 1 Glóin (TW)
+1 Lipór (DF)
 1 Óin (TW)
 
-# Hero Resource (14)
+# Hero Resource (13)
 
 1 A Chance Meeting (TW)
 1 Blue Mountain Dwarves (TW)
@@ -100,9 +99,9 @@ Pool
 1 Bombur (TW)
 1 Dori (TW)
 1 Dwarven Miner (DF)
+1 Frerin (DF)
 1 Frár (DF)
 1 King's Advisor (DF)
-1 Lipór (DF)
 1 Mountaineer (DF)
 1 Pathfinder (DF)
 
@@ -186,21 +185,24 @@ Sites
 1 The Rusted-deeps [D] (DF)
 1 The Wind-deeps [D] (DF)
 
-# Dwarf-lord Site (2)
+# Dwarf-lord Site (3)
 
 2 Blue Mountain Dwarf-hold [D] (DF)
+1 Iron Hill Dwarf-hold [D] (DF)
 
 # Fallen-wizard Site (2)
 
 2 Deep Mines (WH)
 
-# Hero Site (20)
+# Hero Site (22)
 
+1 Barrow-downs [H] (TW)
 1 Bree [H] (TW)
 1 Carn Dûm [H] (TW)
 1 Creb Durga [H] (KN)
 1 Dimrill Dale [H] (TW)
 1 Dol Guldur [H] (TW)
+1 Dunharrow [H] (TW)
 1 Glittering Caves [H] (TW)
 1 Goblin-gate [H] (TW)
 1 Moria [H] (TW)
