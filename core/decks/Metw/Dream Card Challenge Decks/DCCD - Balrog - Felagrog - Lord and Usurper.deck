@@ -21,23 +21,24 @@ Deck
 # Hazard (34)
 
 2 An Unexpected Outpost (DM)
-1 Black Crows (FB)
 1 Caran-carach (NE)
 2 Dire Wolves (TD)
 3 Doors of Night (TW)
 2 Fell Winter (TW)
+1 Glutan (RS)
 2 Legacy of Carcaroth (NW)
-1 Lure of Nature (TW)
-1 Pierced by Many Wounds (DM)
+1 Peril Returned (TD)
+1 Power Built by Waiting (AS)
 1 Shut Yer Mouth (LE)
+1 Slip Treacherously (AS)
 1 The Pack at the Door (NW)
 2 Twilight (TW)
 3 Wake of War (TW)
-1 War-wargs (NW)
+2 War-wargs (NW)
 2 War-wolves (NW)
 2 Wargs (TW)
-2 Watcher in the Water (LE)
-2 Were-wolf (NE)
+1 Watcher in the Water (LE)
+1 Were-wolf (NE)
 1 White Wolves (NW)
 2 Wolves (TW)
 
@@ -75,10 +76,10 @@ Deck
 Pool
 ####
 
-# Minion Character (9)
+# Minion Character (10)
 
 1 Bûthrakaur (BA)
-1 Crook-legged Orc (BA)
+2 Crook-legged Orc (BA)
 2 Goblin-miner (NE)
 1 Hurog (NE)
 1 Lugdush (WH)
@@ -99,23 +100,23 @@ Sideboard
 
 1 Call of the Deeps (DF)
 1 Crossing the Border (DF)
-1 Glutan (RS)
+1 Drowning Seas (TW)
+1 Lure of Nature (TW)
 1 Many Burdens (RS)
 1 Mensharag (TI)
+1 Muster Disperses (TW)
 1 Ninevet (DF)
 1 Old Enemies (DF)
-1 Slip Treacherously (AS)
 1 Too Much to Ask (WR)
 1 Vuk (SL)
 1 Wielder's Curse (GW)
 
-# Minion Character (4)
+# Minion Character (3)
 
-1 Crook-legged Orc (BA)
 1 Goblin-miner (NE)
 2 Orc Grunt (NE)
 
-# Minion Resource (14)
+# Minion Resource (15)
 
 1 A New Domain (DF)
 1 An Evil Fortune (DF)
@@ -130,6 +131,7 @@ Sideboard
 2 Mechanical Bow (WH)
 1 Orcs of Gundabad (LE)
 1 The Arkenstone [M] (PR)
+1 The Ring Leaves Its Mark (LE)
 1 Voices of Malice (LE)
 
 #####
