@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      Clean the Greenwood
+#      MEFB - Clean the Greenwood [Thranduil]
 #
 
 ####
@@ -95,23 +95,23 @@ Deck
 Pool
 ####
 
+# Dual Resource (1)
+
+1 Bow of Yew (FB)
+
 # Hero Character (6)
 
 1 Bladorthin (FB)
+1 Glorfindel II (TW)
 1 Haldir (TW)
-1 Glorfindel (TW)
 1 Legolas (TW)
 1 Othar (FB)
 1 Wood-elf (FB)
 
-# Hero Resource (3)
+# Hero Resource (2)
 
 1 Star-glass (TW)
 1 Towers Destroyed (FB)
-
-# Dual Resource (4)
-
-1 Bow of Yew (FB)
 
 # Stage Resource (2)
 
@@ -124,8 +124,8 @@ Sideboard
 
 # Dual Resource (2)
 
-1 Desperate Strike (DF)
 1 Bow of Yew (FB)
+1 Desperate Strike (DF)
 
 # Hazard (14)
 
