@@ -2,15 +2,15 @@
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
 <ccg-setinfo name="Durin's Folk" dir="DurinsFolk" abbrev="DF" game="Middle-earth">
   <cards>
-	<card name="A Good Bit Laid By" graphics="A Good Bit Laid By.jpg" text="Unique. Thorin specific. Playable if you receive mp for Hoard Gathering or you have stored at least 3 major items at Blue Mountain Dwarf-hold. Your unique Dwarf characters which normally have 2 mind gain 1 mind and are worth 1 mp (to a maximum of 5 extra character points).">
+	<card name="A Good Bit Laid By" graphics="A Good Bit Laid By.jpg" text="Unique. Thorin specific. Playable on one of your Lordhavens [H] if you have stored at least two ore and/or treasure resources there. +3 to your GI. Your characters may play and make influence attempts here against any faction, as if at the site where the faction is normally playable: you must discard stored ore and/or treasure resources with a total mp value equal to the number of contiguous regions from this Lordhaven to the site where the faction is normally playable, minus 1 (resources worth 0 mp count as 1). After a successful influence attempt, a character in the company may tap to play a food item, which may be taken from your discard pile or sideboard.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="2"/>
-			 <attr key="sp" value="3"/>
+			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Thorin"/>
 		</card>
-		<card name="A More or Less Decent Giant" graphics="A More or Less Decent Giant.jpg" text="Giant. Playable at any non-Haven [H], non- Dark-hold [D] site in High Pass or a mountain region, with a company containing a diplomat (even if the site is tapped). For non-combat purposes his base prowess in considered to be 10. Cannot be duplicated on a given company.">
+		<card name="A More or Less Decent Giant" graphics="A More or Less Decent Giant.jpg" text="Giant. Playable at any tapped or untapped non- Haven, non-Dark-hold site in High Pass or a mountain region, with a company containing a diplomat. For non-combat attacks his base prowess in considered to be 10. Only one A More or Less Decent Giant may be in a given company.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Ally"/>
@@ -20,44 +20,45 @@
 			 <attr key="mp" value="1"/>
 			 <attr key="keyword" value="Giant"/>
 		</card>
-		<card name="A New Domain" graphics="A New Domain.jpg" text="Balrog specific. Playable during the site phase on a site where you have played Lord and Usurper. The site becomes one of your Dark-havens [K]. Additionally, Growing Shadow may be played on any of the regions adjacent to the site's region, regardless of any other requirements. Cannot be dublicated on a given site.">
+		<card name="A New Domain" graphics="A New Domain.jpg" text="Balrog specific. Playable on a site where you have played Lord and Usurper. The site becomes one of your Darkhavens [K]. Additionally, Growing Shadow may be played on the region containing the site (or an adjacent region), regardless of any other requirements, and it is not discarded until this card is discarded. Discard this card if the site leaves active play. Cannot be duplicated on a given site.">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="1"/>
+			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Balrog"/>
 		</card>
-		<card name="All This Dwarvish Racket" graphics="All This Dwarvish Racket.jpg" text="Each moving company containing a majority of Dwarves has its hazard limit increased by half the number of Dwarves in the company (round down fractions). Additionally, if Doors of Night is in play, the hazard player may draw an additional card for each Dwarf with a mind less than 5 in a moving company. Cannot be duplicated.">
+		<card name="All This Dwarvish Racket" graphics="All This Dwarvish Racket.jpg" text="Each moving company with a Dwarf majority has its hazard limit increased by half the number of Dwarves in the company (round down fractions). Additionally, if Doors of Night, Eyes of the Shadow or Growing Shadow is in play, the hazard player may draw an additional card for every Dwarf with a mind of four or less in a moving company during the movement/hazard phase. Discard this card when any play deck is exhausted. Cannot be duplicated.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Amon Lanc" graphics="Amon Lanc.jpg" text="Dwarf-lord specific. As a short-event, playable at Dol Guldur during the site phase. If a minion company is at this site, CvCC is initiated and cannot be cancelled. Additionally, you may tap a Dwarf or sage to search your play deck or discard pile for one of the following cards: Pass the Doors of Dol Guldur, Return to Old Dwellings or any manifestation of Thraín II. As a permanent-event, playable on Dol Guldur if Return to Old Dwellings is played on the site. All versions of Dol Guldur become a Border-hold [B] and a Dwarf-hold. Discard this card if Dol Guldur leaves active play.">
+		<card name="Amon Lanc" graphics="Amon Lanc.jpg" text="Dwarf-lord only. Playable during the site phase on Dol Guldur. Attacks against companies at the minion version of Dol Guldur are not cancelled as per the site card. You may tap a Dwarf or sage at the site to search your play deck or discard pile and take one Pass the Doors of Dol Guldur or manifestation of Thráin II into your hand. Additionally, if Return to Old Dwellings is played on the site, all versions of Dol Guldur become a Border-hold [B] and a Dwarf-hold. A character in a minion company may tap to discard this card after CvCC at the site. Discard this card if the site leaves active play.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event/Short-event"/>
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="An Evil Fortune" graphics="An Evil Fortune.jpg" text="Balrog specific. You may play Breach the Hold on any Under-deeps Ruins &amp; Lairs [R] with a Dwarf-hold surface site (as if at The Rusted-deeps). Additionally, you may play Invade Their Domain on any Dwarf-hold (as if on Iron Hill Dwarf-hold), if its adjacent Under-deeps site has Breach the Hold played on it. Cannot be duplicated by a given player.">
+		<card name="An Evil Fortune" graphics="An Evil Fortune.jpg" text="Balrog specific. You may play Breach the Hold on any Under-deeps site with an adjacent site that is a Dwarf-hold (as if on The Rusted-deeps). Additionally, you may play Invade Their Domain on any Dwarf-hold (as if on Iron Hill Dwarf-hold) with an adjacent Under-deeps site that has Breach the Hold played on it. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Balrog"/>
 		</card>
-		<card name="Arda Angered" graphics="Arda Angered.jpg" text="Each Pûkel-creature, Rock Fall, and Lava Flow attack has its prowess and strikes increased by 1 (by 2 if Doors of Night is in play). Cannot be duplicated.">
+		<card name="Arda Angered" graphics="Arda Angered.jpg" text="The number of strikes and prowess of each Pûkel-creature, Rock Fall and Lava Flow attack are each increased by one (by two if Doors of Night is in play). Cannot be duplicated.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Long-event"/>
 		</card>
-		<card name="At Your Service!" graphics="At Your Service.jpg" text="Dwarf only. One influence check by a Dwarf is modified by adding half his mind value (round up). Any negative modifications for his race or type are cancelled. If the check is successful you may remove one hazard permanent-event from the influencing character.">
+		<card name="At Your Service!" graphics="At Your Service.jpg" text="Dwarf only. One influence check by a Dwarf is modified by adding half his mind value (round up). Negative modifications for his race are cancelled. Afterwards, if the check is successful you may remove one hazard permanent-event from the influencing character. Cannot be duplicated on an influence attempt.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Dwarf only"/>
 		</card>
-		<card name="Attack-lord" graphics="Attacklord.jpg" text="Dwarf-lord specific. +2 EI against Dwarves with a lower prowess and mind. + 1 prowess against Orcs, Trolls and Drakes. tap: give +1 prowess to all Dwarves in his company against one attack (or in CvCC). Cannot be duplicated by a given player unless he has Folk of Durin in play.">
+		<card name="Attack-lord" graphics="Attacklord.jpg" text="+2 DI against Dwarves with a lower mind and prowess. + 1 prowess against Orcs, Trolls, and Drakes. Cannot be duplicated by a given player unless he has Folk of Durin in play. tap: give +1 prowess to all Dwarves in his company against one attack (or in CvCC).">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="5"/>
@@ -66,23 +67,23 @@
 			 <attr key="influence" value="1"/>
 			 <attr key="mp" value="2"/>
 			 <attr key="home_site" value="Any Dwarf-hold"/>
-			 <attr key="specific" value="Dwarf-lord"/>
 			 <attr key="skills" value="Warrior"/>
 			 <attr key="race" value="Dwarf"/>
 		</card>
-		<card name="Attercop! Attercop!" graphics="Attercop Attercop.jpg" text="Song. Playable on a Hobbit facing a strike from a Wolf, Spider or Animal attack. -5 to the strike's prowess. tIf untapped after this strike he may tap to face a second strike. If the strike is successful, the resulting body check is modified by +1.">
+		<card name="Attercop! Attercop!" graphics="Attercop Attercop.jpg" text="Song. Playable on a Hobbit facing a strike from an Animal, Awakened Plant, Spider, or Wolf attack. The Hobbit receives +5 prowess against the strike. tIf untapped after the strike, he may immediately tap to face a strike already assigned to another character in his company. Any resulting body check after this strike is modified by +1.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Song"/>
 			 <attr key="keyword" value="Hobbit only"/>
 		</card>
-		<card name="Balin" graphics="Balin2.jpg" text="Unique. Manifestation of Balin. Longbeard. Leader. +3 EI against Dwarves. +2 prowess against Orcs and Trolls. If you have Reconquest of Khazad-dûm in play, you may keep 1 more card than normal in your hand. -2 mp if eliminated.">
+		<card name="Balin" graphics="Balin2.jpg" text="Unique. Longbeard. Leader. +3 DI against Dwarves. +2 prowess against Orcs, Trolls and Wolves. -2 mp if eliminated. If you are Balin, values in brackets apply and your ore resources are worth full mp. If you have Lord of Dwarrowdelf and/or Reconquest of Khazad-dûm in play, you may keep one more card than normal in your hand.">
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="5"/>
 			 <attr key="body" value="8"/>
 			 <attr key="mind" value="7"/>
-			 <attr key="influence" value="2"/>
+			 <attr key="influence" value="2(5)"/>
+			 <attr key="gi" value="17"/>
 			 <attr key="mp" value="2"/>
 			 <attr key="home_site" value="Blue Mountain Dwarf-hold"/>
 			 <attr key="race" value="Dwarf"/>
@@ -91,7 +92,7 @@
 			 <attr key="keyword" value="Longbeard"/>
 			 <attr key="keyword" value="Avatar"/>
 		</card>
-		<card name="Balin, Dwarf of All Trades" graphics="Balin Dwarf of All Trades.jpg" text="Unique. Balin specific. Place this card on Balin if heis in play. If on Balin: tap: during your end-of-turn phase to take any skill card, which Balin could use, from your play deck to your hand. tap: during your organization phase to look at 3 random cards from your opponent's hand. If any of these cards is a creature playable keyed to your current site or region you may put the card to the bottom of opponent's play deck.">
+		<card name="Balin, Dwarf of All Trades" graphics="Balin Dwarf of All Trades.jpg" text="Unique. Balin specific. Place this card on Balin if he is in play. tap: during your end-of-turn phase to search your play deck for a resource requiring one of Balin's skills to play it and take it to your hand (reshuffle). tap: during your organization phase to look at three random cards from your opponent's hand. If any of these cards is a hazard creature playable at Balin's current site or the region containing that site (by type or name), opponent must place it on the bottom of his play deck. t">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -111,8 +112,8 @@
 			 <attr key="region" value="Cardolan"/>
 			 <attr key="haven" value="Carn Dûm"/>
 			 <attr key="playable" value="Items (minor, gold ring)"/>
-			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 8 prowess (detainment against covert companies that do not contain Elves)"/>
-			 <attr key="special" value="Hidden Site. Tap a sage when this site card is revelaed to move there. A Dwarf at this site may discard a Lost Knowledge he controls to make hoard items playable at this site until the end of turn. Petty-dwarves faction may be played at this site."/>
+			 <attr key="auto_attack" value="Dwarves - 3 strikes with 8 prowess (detainment against covert companies that do not contain an Elf)"/>
+			 <attr key="special" value="Hidden Site. Tap a sage in the company to reveal this site. The Petty-dwarves faction may be played at this site. If a Dwarf at this site discards a Lost Knowledge card he controls, the site contains a hoard until the end of the turn."/>
 			 <attr key="keyword" value="Hidden Site"/>		
 		</card>
 		<card name="Bar-en-Ibûn" graphics="BarenIbun.jpg" back="1" text="">
@@ -126,8 +127,8 @@
 			 <attr key="region" value="Cardolan"/>
 			 <attr key="haven" value="Rivendell"/>
 			 <attr key="playable" value="Items (minor, gold ring)"/>
-			 <attr key="auto_attack" value="Dwarves -- 3 strikes with 8 prowess (detainment against covert companies that do not contain Elves)"/>
-			 <attr key="special" value="Hidden Site. Tap a sage when this site card is revelaed to move there. A Dwarf at this site may discard a Lost Knowledge he controls to make hoard items playable at this site until the end of turn. Petty-dwarves faction may be played at this site."/>
+			 <attr key="auto_attack" value="Dwarves - 3 strikes with 8 prowess (detainment against companies that do not contain an Elf)"/>
+			 <attr key="special" value="Hidden Site. Tap a sage in the company to reveal this site. The Petty-dwarves faction may be played at this site. If a Dwarf at this site discards a Lost Knowledge card he controls, the site contains a hoard until the end of the turn."/>
 		     <attr key="keyword" value="Hidden Site"/>
 		</card>
 		<card name="Barak-shathur" graphics="Barakshathur.jpg" back="1" text="">
@@ -160,7 +161,7 @@
 			 <attr key="special" value="Once per turn, a Dwarf or sage in a covert company at this site may tap to shuffle one item with the word 'Dwarf' or 'Dwarven' in its card text or title from your discard pile or sideboard into your play deck (tap the site if untapped)."/>
 		     <attr key="keyword" value="Dwarf-hold"/>
 		</card>
-		<card name="Battle-axe of the Fallen" graphics="Battleaxe of the Fallen.jpg" text="Unique. Playable at Ruins of Belegost or Ruins of Nogrod if the company discards (for no effect) a Lost Knowledge card it controls. Weapon. Axe. Warrior only: +3 prowess to a maximum of 9. Dwarf only: +5 prowess against Spawn, Dragons and Drakes (to a maximum of 11). Dwarf-leader or Firebeard only: double the effects of The Dwarves are upon you! for Firebeard Dwarves in the company.">
+		<card name="Battle-axe of the Fallen" graphics="Battleaxe of the Fallen.jpg" text="Unique. Playable at Ruins of Belegost or Ruins of Nogrod if the company discards (for no effect) a Lost Knowledge card it controls. Weapon. Axe. +1 EI. Warrior only: +3 prowess to a maximum of 9 (if borne by a Dwarf, +5 prowess against Spawn, Dragons and Drakes to a maximum of 11). Dwarf leader or Firebeard only: double the effects of The Dwarves Are upon You! for Firebeard Dwarves in the company.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -174,25 +175,25 @@
 			 <attr key="keyword" value="Battle-gear"/>
 			 <attr key="keyword" value="Warrior only"/>
 		</card>
-		<card name="Bears of the Carrock" graphics="Bears of the Carrock.jpg" text="Unique. Playable at Beorn's House or The Carrock if the influence check is greater than 9. Standard Modifications: Sprautabern or a character with home site Beorn's House (+3), Beornings (+2). Rotate this card 90° (or place a token) if you play Beorning Skin-changers as a creature, or to cancel Beorning Skin-changers if played against any of your companies. This faction is worth 1 extra mp for each time rotated (to a maximum of 4).">
+		<card name="Bears of the Carrock" graphics="Bears of the Carrock.jpg" text="Unique. Playable at Beorn's House or The Carrock if the influence check is greater than 9. Standard Modifications: character with home site Beorn's House or Ligr Wodaize Berne (+3), Beornings (+2). Beorning Skin-changers cannot be played as an event against your companies. When you play Beorning Skin-changers as a creature, you may rotate this card 90° (or place a token). This faction gives +1 mp for each time rotated (to a maximum of 4 mp total).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Animal Faction"/>
 			 <attr key="mp" value="1(*)"/>
 		</card>
-		<card name="Behind Doors of Stone" graphics="Behind Doors of Stone.jpg" text="Playable on a Dwarf-hold, if you discard (for no effect) a Technology item stored at or played on the site. Opponent’s companies may not enter any version of this site; agents may not move to the site. Factions you have in play at this site are never worth more than 1 mp. Additionally, the roll to move between the site and any of its adjacent Under-deeps sites is (13). Breach the Hold may be played at any of those sites (discard this card if played successfully).Any opponent may tap 3 characters or an avatar at the site to discard this card. Cannot be duplicated on a given site.">
+		<card name="Behind Doors of Stone" graphics="Behind Doors of Stone.jpg" text="Playable on a Dwarf-hold if you discard (for no effect) a technology item stored at (or placed with) the site. Factions you have in play at this site are never worth more than 1 mp. Opponent's companies may not enter any version of the site and agents may not move to the site. The roll required to move between any version of the site and its adjacent Under-deeps sites is 13. Discard this card if Breach the Hold is played on any of its adjacent sites. Any opponent may tap three of his characters (or an avatar) at the site to discard this card. Cannot be duplicated on a given site.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="3"/>
 		</card>
-		<card name="Bilbo's Magic Ring" graphics="Bilbos Magic Ring.jpg" text="Unique. Ring. Manifestation of The One Ring. Playable only with a Gold Ring after a test result of 10 or more (+2 if tested at a Shadow-hold [S] or Dark-hold [D], -2 if tested at a Haven [H] or Free-hold [F]). May be used to satisfy the conditions of any manifestation of Gollum, Gollum's Fate, or The Precious. +3 prowess (up to double the normal prowess), +3 body (to a maximum of 10). +3 to EI. Bearer may make a CC modified by -1 to cancel a strike (except from Undead and Nazgul attacks). +1 CP to every character in the company. May be tested as a gold ring item. If the result is: 7 or 8, nothing happens; 9 or greater, The One Ring may be played; 6 or less, discard this card.">
+		<card name="Bilbo's Magic Ring" graphics="Bilbos Magic Ring.jpg" text="Unique. Ring. Manifestation of The One Ring. Playable at The Under-grottos if Gollum is not in play. May also be played after a failed attack from My Precious (instead of playing Gollum), if you tap a warrior, a scout, and a ranger in the company. +3 prowess, +3 body (to a maximum of 10), and +3 EI. +1 corruption point to every character in the bearer's company and/or at his site. You cannot play any resource that would allow you to win the game (e.g. A New Ringlord), except Gollum's Fate. This item may be tested as if a gold ring; discard when tested and make a roll to see which ring may be played: any unique ring (9+); any non-unique ring (any result).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Special Item"/>
-			 <attr key="prowess" value="-"/>
+			 <attr key="prowess" value="+3"/>
 			 <attr key="body" value="+3"/>
 			 <attr key="influence" value="+3"/>
 			 <attr key="mp" value="3"/>
@@ -206,10 +207,10 @@
 			 <attr key="draw" value="2"/>
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Númeriador"/>
-			 <attr key="special" value="Dwarf-lord specific. This site is a protected Lordhaven. If any of your companies is at this site, all attacks against it are cancelled. Characters with Blue Mountain Dwarf-hold as their home site may be brought into play under GI at this site, even if your Dwarf-lord is in play and not here."/>
+			 <attr key="special" value="Dwarf-lord only. This site is a protected Lordhaven [H]. If one of your companies is at this site, all attacks against it are cancelled and you receive the SP. Characters with Blue Mountain Dwarf-hold as a home site may be brought into play at this site regardless of the presence of any other character."/>
 			 <attr key="keyword" value="Dwarf-hold"/>
 		</card>
-		<card name="Bolg of the North" graphics="Bolg of the North.jpg" text="Unique. Manifestation of Bolg. Leader. Discard on a body check result of 9. +3 EI against Orcs. +1 prowess against Dwarves and Elves. When Bolg of the North is at Mount Gundabad you may keep 1 more card than normal in hand, and all attacks keyed to Mount Gundabad against his company are detainment. His EI is reduced by 2 if there is a manifestation of the The Witch-king or of Lieutenant of Angmar in play.">
+		<card name="Bolg of the North" graphics="Bolg of the North.jpg" text="Unique. Manifestation of Bolg. Leader. Discard on a body check result of 9. +2 DI against Orcs.  -2 DI if a manifestation of Rogrog or the The Witch-king of Angmar is in active play.+1 prowess against Dwarves and Elves. When Bolg of the North is at Mount Gundabad, you may keep one more card than normal in your hand, and all attacks against his company keyed to the site are detainment.">
 			 <attr key="type" value="Minion Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="7"/>
@@ -222,7 +223,7 @@
 			 <attr key="race" value="Orc"/>
 			 <attr key="keyword" value="Leader"/>
 		</card>
-		<card name="Bolg, Son of Azog" graphics="Bolg Son of Azog.jpg" text="Unique. Orc. Manifestation of Bolg. 1 strike. May be played keyed to The Under-leas, and to Gundabad, Dragon-gap and sites in these regions. May also be keyed to Angmar, Forovirkain, Grey Mountain Narrows, Grey Mountains, Misty Mountains Northern Spur, Northern Rhovanion and to sites in these regions if the company has faced a Wolf attack the same turn. One strike must always be assigned to the highest mind Dwarf in the company.">
+		<card name="Bolg, Son of Azog" graphics="Bolg Son of Azog.jpg" text="Unique. Orc. Manifestation of Bolg. One strike. May be played keyed to Gundabad and Dragon-gap; and may also be played at sites in these regions and at The Under- leas. Against a company that has faced a Wolf attack the same turn, Bolg, Son of Azog may also be keyed to Anduin Vales, Angmar, Forovirkain, Grey Mountains, Grey Mountain Narrows, Misty Mountains - Northern Spur, Northern Rhovanion; and to sites in these regions. One strike must always be assigned to the highest mind Dwarf in the company.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
@@ -233,7 +234,7 @@
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Orcs"/>
 		</card>
-		<card name="Borin" graphics="Borin.jpg" text="Unique. Firebeard. +1 prowess against Orcs. Wound Borin to cancel a Trap-attack (no body check is required; all strikes are considered defeated).">
+		<card name="Borin" graphics="Borin.jpg" text="Unique. Firebeard. +1 prowess against Drakes and Orcs. Wound Borin to automatically defeat all strikes from a Trap attack against his company (no body check is required).">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="4"/>
@@ -246,42 +247,43 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Firebeard"/>
 		</card>
-		<card name="Born under the Mountains" graphics="Born under the Mountains.jpg" text="Dwarf-lord specific. All your mp sources at Under-deeps sites count for the purpose of calling your Day of Reckoning. Any Under-deeps movement roll for your companies moving to a site where a minion company is present is automatically successful. You may discard this card (at any time) to cancel a Rock Fall attack, or to give all Dwarves at an Under-deeps site +2 prowess in CvCC. Cannot be duplicated by a given player.">
+		<card name="Born under the Mountains" graphics="Born under the Mountains.jpg" text="Dwarf-lord only. All your cards worth mp and located at Under-deeps sites count for the purpose of calling your Day of Reckoning. Any Under-deeps movement roll for your companies moving to a site where a minion company is present is automatically successful. You may discard this card at any time to cancel a Rock Fall attack against one of your companies, or to give all your Dwarves at an Under-deeps site +2 prowess in CvCC. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Call of the Deeps" graphics="Call of the Deeps.jpg" text="Playable on a company containing a majority of Dwarves and a treasure or greater item, which is moving to a non-Dwarf-hold, non-Under-deeps site. Opponent must replace the company's new site with a site from his site deck that is an Under-deeps site or surface site. The company must be able to legally move to this site.">
+		<card name="Call of the Deeps" graphics="Call of the Deeps.jpg" text="Playable on a company containing a greater or treasure item and a Dwarf majority, if moving to a non-Dwarf-hold, non-Under-deeps site. Opponent must replace the company's new site with a site from his location deck that is an Under-deeps site or surface site. The company must be able to legally move to this site (from their site of origin). If no such site is available, discard this card; otherwise, place it in opponent's mp.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
+			 <attr key="mp" value="1"/>
 		</card>
-		<card name="Carc" graphics="Carc.jpg" text="Unique. Animal. Flying. Playable at any tapped or untapped site in Northern Rhovanion. tap: cancel a strike against himself from a non-automatic-attack. Discard Carc to allow Information to be played at any Border-hold [B] site in Northern Rhovanion, Southern Rhovanion, Iron Hills or Dorwinion.">
+		<card name="Carc" graphics="Carc.jpg" text="Unique. Animal. Flying. Playable at any tapped or untapped non-Haven site in Northern Rhovanion. A Longbeard Dwarf may tap and play Carc from the discard pile. Place Carc in your sideboard to make Information playable at his current site in Northern Rhovanion, Southern Rhovanion, Iron Hills, or Dorwinion. tap: cancel a strike (not from an automatic-attack) against himself.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Diplomat Ally"/>
 			 <attr key="prowess" value="-2"/>
 			 <attr key="body" value="7"/>
-			 <attr key="mind" value="1"/>
+			 <attr key="mind" value="2"/>
 			 <attr key="mp" value="1"/>
 			 <attr key="keyword" value="Animal"/>
 			 <attr key="keyword" value="Flying"/>
 		</card>
-		<card name="Children of Aulë" graphics="Children of Aule.jpg" text="All Dwarves in play gain +1 body. Additionally, any Under-deeps movement rolls for companies containing a Dwarf is modified by +2. Cannot not be duplicated.">
+		<card name="Children of Aulë" graphics="Children of Aule.jpg" text="+1 body to all Dwarves in play. Additionally, all Under-deeps movement rolls are modified by adding the number of Dwarves of different descent (one for each type) in the moving company. Cannot not be duplicated.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Long-event"/>
 		</card>
-		<card name="Clad for War" graphics="Clad for War.jpg" text="All your battle-gear items are worth full mp if you have at least 3 of the 4 types of battle-gear items (weapon, shield, armor and helmet) in play. Cannot be duplicated by a given player.">
+		<card name="Clad for War" graphics="Clad for War.jpg" text="All your battle-gear resources are worth full mp, if you have at least three of the four types of battle- gear resources (armor, helmet, shield, or weapon) in play. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 		</card>
-		<card name="Clad in Chain-shirts" graphics="Clad in Chainshirts.jpg" text="Command. Playable on a Dwarf-leader during the organization phase. Return all other command cards on target leader to your hand when this card is played. -2 to leader's EI and +1 body to all Dwarves in his company. +2 prowess for every character facing a strike which weapons do not modify. You may return this card to your hand during any organization phase.">
+		<card name="Clad in Chain-shirts" graphics="Clad in Chainshirts.jpg" text="Command. Playable on a Dwarf leader during the organization phase. Return all other command cards on target leader to your hand when this card is played. -2 to leader's EI (to a minimum of 0). All Dwarves in his company receive +1 body, and +2 prowess against non-combat attacks (Traps, Rock Fall etc.). You may return this card to your hand during any organization phase. Cannot be duplicated in a given company.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -302,12 +304,12 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="prowess" value="-"/>
 			 <attr key="body" value="+1"/>
-			 <attr key="influence" value="+2"/>
+			 <attr key="influence" value="(+2)"/>
 			 <attr key="cp" value="1"/>
 			 <attr key="sp" value="1"/>
 			 <attr key="keyword" value="Battle-gear"/>
 		</card>
-		<card name="Crystals of Bilak-Khald" graphics="Crystals of BilakKhald.jpg" text="Ore. Playable during the site phase at Mines of Falek-dim or the Sulfer-deeps, on a Dwarf or a Goblin- miner. Tap the character. While on target character, make a roll during the untap phase; if the result is less than 5 target character must make a body check modified by +2. If bearer is at a Haven [H,K], he or a sage in the company may tap to place this card with a Dwarven Light-stone or Goblin Earth-plumb; any bonus the item gives is doubled. Cannot be duplicated on a given item.">
+		<card name="Crystals of Bilak-Khald" graphics="Crystals of BilakKhald.jpg" text="Ore. Playable during the site phase at Mines of Falek-dim or The Sulfur-deeps on a Dwarf or on an Orc bearing Miner's Pick. Tap the character. While on target character, make a roll during the untap phase; if the result is less than 5, target character must make a body check modified by +2. If target character is at a Haven [H,K] or Dwarf-hold, he or a sage in the company may tap to place this card with a Dwarven Light-stone, Goblin Earth-plumb or Noldo-lantern in the company. If placed with an item, any bonus the item gives is doubled.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -315,17 +317,18 @@
 			 <attr key="cp" value="1"/>
 			 <attr key="keyword" value="Ore"/>
 		</card>
-		<card name="Crossing the Border" graphics="Crossing the Border.jpg" text="Playable on a company that is not moving. The company faces an attack that is an exact copy of one automatic-attack of a site in the same or an adjacent region or of an adjacent Under-deeps site (attacker’s choice).">
+		<card name="Crossing the Border" graphics="Crossing the Border.jpg" text="Playable on a company that is not moving. This card creates an attack against the company, which is a duplicate of one automatic-attack of a site in the same or an adjacent region as the company's current site, or of an adjacent Under-deeps site (attacker's choice; cannot be a non-combat attack). If not in play, reveal the site from either location deck to establish the attack. The site must be a version which target company is allowed to use. Cannot be revealed as an on-guard card. Cannot be duplicated during a given movement/hazard phase.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Dáin" graphics="Dain2.jpg" text="Unique. Manifestation of Dáin II. Longbeard. Leader. +2 prowess against Orcs, + 1 prowess against Trolls, Drakes and Dragons. +2 EI against Dwarves and Men. If you are Dáin, all Man factions playable at sites in Wilderland are worth full mp. If King under the Mountain is played on him it is worth full mp, and when at the site where the Dragon was defeated you may keep 1 more card than normal in your hand. -3 mp if eliminated.">
+		<card name="Dáin" graphics="Dain2.jpg" text="Unique. Manifestation of Dáin II. Longbeard. Leader. +2 DI against Dwarves and Men. +1 prowess against Dragons, Drakes, Orcs and Trolls. -3 mp if eliminated. If you are Dain, values in brackets apply and your Man factions played at sites in Wilderland are worth full mp. If King under the Mountain is played on him, you may keep one more card than normal in your hand.">
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="6"/>
 			 <attr key="body" value="8"/>
 			 <attr key="mind" value="8"/>
-			 <attr key="influence" value="3"/>
+			 <attr key="influence" value="3(5)"/>
+			 <attr key="gi" value="19"/>
 			 <attr key="mp" value="3"/>
 			 <attr key="home_site" value="Iron Hill Dwarf-hold"/>
 			 <attr key="race" value="Dwarf"/>
@@ -335,19 +338,19 @@
 			 <attr key="keyword" value="Avatar"/>
 			 <attr key="keyword" value="Leader"/>
 		</card>
-		<card name="Dawn Comes Early" graphics="Dawn Comes Early.jpg" text="Environment. Playable on a Troll if Gates of Morning, The Sun Shone Fiercely or Sun is in play. Troll must make a body check modified by +1 (-1 if he is an Olog-hai or a Half-troll). Failing this check wounds him if unwounded and eliminates him if already wounded (treat a discard result as failing).">
+		<card name="Dawn Comes Early" graphics="Dawn Comes Early.jpg" text="Environment. Playable on a Troll at or moving to a non- Under-deeps, non-Darkhaven site if Doors of Night is not in play. Target Troll makes a body check, modified by +1 for each Gates of Morning, Sun, or The Sun Shone Fiercely in play, and by -1 if he is wounded, is at a surface site, or is an Olog-hai or Half-troll. Failing this check wounds the Troll, or eliminates him if already wounded (treat a discard result as failing).">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Environment"/>
 		</card>
-		<card name="Dawn Take You All!" graphics="Dawn Take You All.jpg" text="Ritual. Playable during CvCC on an untapped sage in a company at a non-Underdeeps site or surface siteC, if Gates of Morning is in play. Tap the sage. All Trolls at the same site are immediately wounded; Half-trolls and Olog-hai are not wounded but receive -2 prowess instead until the end of the turn. Sage makes a CC modified by -2.">
+		<card name="Dawn Take You All!" graphics="Dawn Take You All.jpg" text="Ritual. Playable after strikes are assigned in CvCC (but before resolving strikes) on a sage in a company at a non-Under-deeps, non-surface siteC, if Gates of Morning is in play. Tap the sage. All unwounded Trolls at the same site are immediately wounded (no body checks are required); Half-trolls and Olog-hai are not wounded but tapped instead (if untapped) and receive -2 prowess until the end of the turn. Sage makes a CP modified by -2.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Ritual"/>
 		</card>
-		<card name="Deep Mountain Fortress" graphics="Deep Mountain Fortress.jpg" text="Dwarf-lord specific. Playable during the site phase on an Under-deeps Ruins &amp; Lairs [R] with a surface site that is not a Shadow-hold [S] or Dark-hold [D]. The company faces an attack: Drake -- 2 strikes with 13 prowess (cannot be cancelled). Following the attack, tatap your Dwarf-lord or discard this card. The site becomes one of your Lord-havens [H] and a Dwarf-hold and loses all automatic-attacks. Nothing is considered playable as written on the site card. The site is never discarded or returned to the location deck. If one of your companies is at this site all attacks against it are cancelled. All other versions gain an additional automatic-attack: Dwarves -- 4 strikes with 8 prowess. Opponents may play Breach the Hold at any version of the affected site; discard both if played successfully. Cannot be duplicated on a given site.">
+		<card name="Deep Mountain Fortress" graphics="Deep Mountain Fortress.jpg" text="Dwarf-lord only. Playable during the site phase on an Under- deeps Ruins &amp; Lairs [R] with a surface site that is not a Shadow-hold [S] or Dark-hold [D]. The company faces an attack: Drake - 2 strikes with 13 prowess (cannot be cancelled). Following the attack, tap your Dwarf-lord or discard this card. The site becomes one of your protected Lordhavens [H] and a Dwarf-hold and loses all automatic-attacks. Nothing is considered playable as written on the site. The site does not leave active play until this card is discarded. Discard this card if Invade Their Domain is played on any version of the site.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -355,7 +358,7 @@
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Desperate Strike" graphics="Desperate Strike.jpg" text="Warrior only. +4 prowess and -2 body against a strike; -1 to warrior’s body. Cannot be played on a wounded character. After the attack, wound the character if not wounded (no body check is required).">
+		<card name="Desperate Strike" graphics="Desperate Strike.jpg" text="Warrior only. +4 prowess and -1 body against a strike; -2 to the strike's body. Cannot be played on a wounded character. After the attack, wound the character if not wounded (no body check is required).">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
@@ -374,32 +377,32 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Dry Tunnels" graphics="Dry Tunnels.jpg" text="Playable at the end of the organization phase on a company using Under-deeps movement. River cannot be played on the company’'s new site. Additionally, when The Way is Shut affects the company make a roll: if result is greater than 7 the effects are cancelled. The Reach of Ulmo cancels any ongoing effect of this card.">
+		<card name="Dry Tunnels" graphics="Dry Tunnels.jpg" text="Playable at the end of the organization phase on a moving company. If the company uses Under-deeps movement this turn, River cannot be played on the company's new site. Additionally, when The Way Is Shut affects the company make a roll: if result is greater than 7 the effects are cancelled. The Reach of Ulmo cancels any ongoing effect of this card.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Durang" graphics="Durang.jpg" text="Ore. Playable at any Under-deeps site on a Dwarf- miner or Goblin- miner (or on any Dwarf or Orc bearing Miner’s Pick). Discard this card to make Dark Forges playable at an Orc-hold or Reforging playable at a Dwarf-hold (as if Information were playable at the site).">
+		<card name="Durang" graphics="Durang.jpg" text="Ore. Playable at any tapped or untapped Under-deeps site by a Dwarven Miner or Goblin-miner (or any character bearing a Miner's Pick). Discard this card at an Orc-hold to make Dark Forges playable. or at a Dwarf-hold to make Reforging playable (as if Information were playable at the site).">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Special Item"/>
 			 <attr key="cp" value="1"/>
 			 <attr key="keyword" value="Ore"/>
 		</card>
-		<card name="Durin's Crown" graphics="Durins Crown.jpg" text="Unique. Helmet. Treasure. Playable at a Dragon’s Lair if a hazard manifestation of the corresponding Dragon is in play, or at Moria if a manifestation of the Balrog of Moria is in play. +1 to body. If borne by a non-Dwarf character, bearer must face an attack by a Dwarf character at the same site (opponent's choice) during his organization phase. Place a stored Reforging with this item to &quot;restore&quot; it. If restored: values in parenthesis apply. tap: during your organisation phase if bearer is at a Free-Hold [F], Border-Hold [B] or Ruins &amp; Lairs [R] to bring a Dwarf character into play under bearer's EI. Character may come from your hand or discard pile. Bearer makes a CC.">
+		<card name="Durin's Crown" graphics="Durins Crown.jpg" text="Unique. Helmet. Treasure. Playable at a Dragon's lair where an at home manifestation of a Dragon is in play (or has been defeated), or at Moria if a manifestation of Balrog of Moria is in play (or has been defeated). +1 body. +3 DI against Dwarves. If bearer is not a Dwarf, during the organization phase he must face an attack by a Dwarf character at his current site (if available; opponent's choice; as if CvCC between one-character companies). Place a stored Reforging with this item to restore it. If restored, values in parenthesis apply. tap: during your organization phase at a Free-Hold [F], Border-Hold [B], or Ruins &amp; Lairs [R] to bring a Dwarf into play under bearer's EI. The character may come from your hand or discard pile. Bearer makes a CC.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Special Item"/>
 			 <attr key="body" value="+1"/>
-			 <attr key="influence" value="+3"/>
+			 <attr key="influence" value="(+3)"/>
 			 <attr key="mp" value="2(4)"/>
 			 <attr key="cp" value="2(3)"/>
 			 <attr key="keyword" value="Battle-gear"/>
 			 <attr key="keyword" value="Helmet"/>
 			 <attr key="keyword" value="Treasure"/>
 		</card>
-		<card name="Durin's Day" graphics="Durins Day.jpg" text="Unique. Dwarf-lord specific. Playable on one of your Dwarf-characters if he is the highest mind Dwarf in play. Return this card to your hand if a Dwarf with a higher mind enters play. tap: during your end-of-turn phase to take Dragon-lore, Dwarven Hoard, or An Unexpected Party from your discard pile to your hand.">
+		<card name="Durin's Day" graphics="Durins Day.jpg" text="Unique. Dwarf-lord only. Playable on one of your Dwarf characters if he is the highest mind Dwarf in play. Return this card to your hand if a Dwarf with a higher mind is in play. tap: during your end-of-turn phase to take one Dragon-lore, Dwarven Hoard, or An Unexpected Party from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -423,37 +426,37 @@
              <attr key="keyword" value="Dungeon"/>
 			 <attr key="keyword" value="Hidden Site"/>
 		</card>
-		<card name="Dwarf-chopper" graphics="Dwarfchopper.jpg" text="Unique. Weapon. Axe. Playable at Deep-cleft or any non-Darkhaven [K] Under-deeps site. +2 prowess to a maximum of 9 (+4 against Dwarves to a maximum of 10). Leader only: +2 EI against Orcs. Hurog only: tap: face a Dwarf-attack as if he were a single character company.">
+		<card name="Dwarf-chopper" graphics="Dwarfchopper.jpg" text="Unique. Weapon. Axe. Playable at Deep-cleft or any non-Darkhaven Under-deeps site. Warrior only: +2 prowess to a maximum of 9 (+4 against Dwarves to a maximum of 10). Leader only: +2 DI against Orcs. Orc with mind 7 or more: tap: during strike assignment to allow bearer to face all strikes from a Dwarf attack (as though he were a one-character company).">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Special Item"/>
-			 <attr key="prowess" value="+2(4)"/>
+			 <attr key="prowess" value="+2"/>
 			 <attr key="body" value="-"/>
-			 <attr key="influence" value="+2"/>
+			 <attr key="influence" value="(+2)"/>
 			 <attr key="mp" value="2"/>
 			 <attr key="cp" value="3"/>
 			 <attr key="keyword" value="Axe"/>
 			 <attr key="keyword" value="Battle-gear"/>
 		</card>
-		<card name="Dwarf-friend" graphics="Dwarffriend.jpg" text="Playable on a non-Wizard, non-Ringwraith, non-Dwarf, non-overt character at a Dwarf-hold. Target character receives +2 EI against Dwarves and suffers no negative modifications according to his race when attempting to influence Dwarf factions. Additionally, target character is considered a Dwarf for non- environment and non-item effects or cards. Cannot be duplicated on a given character.">
+		<card name="Dwarf-friend" graphics="Dwarffriend.jpg" text="Playable on a character at a Dwarf-hold (not a Dwarf, Wizard, Ringwraith or overt character). Target character receives +2 EI against Dwarves. He suffers no negative modifications according to his race when attempting to influence Dwarf factions. Additionally, target character is also considered a Dwarf for the purpose of non-environment, non-item cards and effects. Cannot be duplicated on a given character.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="influence" value="+2"/>
+			 <attr key="influence" value="(+2)"/>
 		</card>
-		<card name="Dwarven Alchemist" graphics="Dwarven Alchemist.jpg" text="Playable on a Dwarf sage or a Dwarf with a mind of six or more at a Dwarf-hold. Target character gains the sage skill. Cannot be duplicated by a given player. tap: and tap target character during the organization phase at an untapped Dwarf-hold to play one technology special item with a character at the site. Recipient need not tap to receive this item and it may be taken from your discard pile or hand. Tap the site. ">
+		<card name="Dwarven Alchemist" graphics="Dwarven Alchemist.jpg" text="Playable on a Dwarf sage or a Dwarf with a mind of six or more at a Dwarf-hold. Target character gains the sage skill. Cannot be duplicated by a given player. tap: and tap target character during the organization phase at an untapped Dwarf-hold to play one technology special item with a character at the site. Recipient need not tap to receive this item and it may be taken from your discard pile or hand. Tap the site.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 		</card>
-		<card name="Dwarven Armoury" graphics="Dwarven Armoury.jpg" text="Playable if you have at least 2 Dwarf characters in play. Place up to 3 of the following items under this card from your hand, sideboard or discard pile when you play this card: Dwarven Chain-shirt, Miner's Pick, or Shield of Iron-bound Ash. If any of your companies is at a Dwarf-hold you may discard this card to play these items with the company (you need not tap these characters or the site).">
+		<card name="Dwarven Armoury" graphics="Dwarven Armoury.jpg" text="Playable if you have at least two Dwarves in play. Place up to three of the following items under this card from your hand, sideboard or discard pile when you play this card: Dwarven Chain- shirt, Miner's Pick, or Shield of Iron-bound Ash. You may discard this card to place these items with any of your characters at the same Dwarf-hold (only one item per character; discard any unplaced items); you need not tap the characters nor the site.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Dwarven Art of War" graphics="Dwarven Art of War.jpg" text="Command. Playable on a Dwarf-leader during the organization phase. Return all other command cards on target leader to your hand when this card is played. -2 to leader's EI: +1 to CC mady by Dwarves in his company bearing a battle-gear item (+2 if a hoard item). You may return this card to your hand during any organization phase.">
+		<card name="Dwarven Art of War" graphics="Dwarven Art of War.jpg" text="Command. Playable on a Dwarf leader during the organization phase. -2 to leader's EI (to a minimum of 0). +1 to all CC by Dwarves in his company bearing a battle-gear item (+2 if a hoard item). You may return this card to your hand during any organization phase. Cannot be duplicated in a given company.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -461,7 +464,7 @@
 			 <attr key="cp" value="(+1)"/>
 			 <attr key="keyword" value="Command"/>
 		</card>
-		<card name="Dwarven Chain-shirt" graphics="Dwarven Chainshirt.jpg" text="Armor. Playable at any tapped or untapped site where you have succesfully influenced a Dwarf faction or brought into play a Dwarf character this turn. May also be played during the organization phase (tap the site if untapped). +1 body to a maximum of 8.">
+		  <card name="Dwarven Chain-shirt" graphics="Dwarven Chainshirt.jpg" text="Armor. Playable at any tapped or untapped site where you have successfully influenced a Dwarf faction or brought into play a Dwarf character this turn. May also be played during the organization phase (tap the site if untapped). +1 body to a maximum of 8.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Special Item"/>
@@ -471,7 +474,7 @@
 			 <attr key="keyword" value="Battle-gear"/>
 			 <attr key="keyword" value="Armor"/>
 		</card>
-		<card name="Dwarven Cunning" graphics="Dwarven Cunning.jpg" text="Playable as a permanent-event on a site during the site phase, if your opponent is not of the same alignment. Tap a Dwarf in the company and face all of the site's automatic-attacks again (including any modifications). Any other player's companies face an attack (after facing any automatic-attacks) at the site: Traps -- 3 strikes wih 9 prowess. The site is not discarded or returned to the location deck. Discard this card after the attack is faced. Alternatively, playable as a short-event: tap a Dwarf to cancel a Trap-attack against his company or to discard Concealed Entrance at his site.">
+		<card name="Dwarven Cunning" graphics="Dwarven Cunning.jpg" text="Playable as a permanent-event on a site, if your opponent is not of the same alignment. Tap a Dwarf in your company at the site. The company must now face all of the site's automatic-attacks (if any). This card creates an additional automatic-attack at any other version of the site: Traps - 3 strikes with 9 prowess. The site does not leave active play until this card is discarded. Discard this card after its associated attack has been faced. Alternatively, playable as a short-event on a Dwarf: tap the Dwarf to cancel a Trap attack against his company or to discard Concealed Entrance at his site.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event/Short-event"/>
@@ -479,9 +482,9 @@
 		<card name="Dwarven Fire" graphics="Dwarven Fire.jpg" text="Technology. Playable by a Dwarf sage at a tapped or untapped Dwarf-hold. If stored, you may discard this item at any time to create an additional automatic-attack this turn at any version of a Dwarf-hold site you have in active play: Lava Flow - 3 strikes with 9 prowess. Body checks for characters that do not bear any armor, helmet or shield are modified by +1. Only one Dwarven Fire may be so discarded on a given turn.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
-			 <attr key="class" value="Permanent-event"/>
-			 <attr key="sp" value="1"/>
-			 <attr key="specific" value="Technology"/>
+			 <attr key="class" value="Special Item"/>
+			 <attr key="cp" value="1"/>
+			 <attr key="keyword" value="Technology"/>
 		</card>
 		<card name="Dwarven Heirlooms" graphics="Dwarven Heirlooms.jpg" text="Dwarf-lord only. You may play a hoard minor item with a company at a Dwarf-hold after the successful play of a resource that taps the site (instead of a normal minor item). Additionally, if this is one of your starting stage cards, your starting minor items may be non-unique hoard minor items.">
 			 <attr key="type" value="Stage Resource"/>
@@ -490,7 +493,7 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Dwarven Miner" graphics="Dwarven Miner.jpg" text="+1 prowess against Orcs and Trolls. -1 to all of his CC. -1 to his influence attempts. +1 to all rolls required for his company to move to adjacent Under-deeps sites. Cannot be duplicated on a company that does not contain a manifestation of a Dwarf-lord.">
+		<card name="Dwarven Miner" graphics="Dwarven Miner.jpg" text="+1 prowess against Orcs and Trolls. -1 to his CC. -1 to his influence attempts. +1 to his company's Under-deeps movement rolls. Unless it contains a manifestation of a Dwarf-lord, the company may contain only one Dwarven Miner.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="3"/>
@@ -502,7 +505,7 @@
 			 <attr key="skills" value="Warrior"/>
 			 <attr key="race" value="Dwarf"/>
 		</card>
-		<card name="Dwarven Warparty" graphics="Dwarven Warparty.jpg" text="Dwarves. 3 strikes (detainment against hero companies). May be played keyed to Angmar, Forochel, Grey Mountains, Grey Mountain Narrows, Gundabad, High Pass, Iron Hills, Northern Rhovanion, Númeriador, Redhorn Gate, or Withered Heath and to non-Dark-hold [D], non-Shadow- hold [S] sites in these regions. May also be keyed to any Dwarf-hold. If Gates of Morning is in play, may also be keyed to any Under-deeps site with a surface a site in the above regionsIf Doors of Night is in play, this becomes a normal attack against hero companies that do not contain a Dwarf.">
+		<card name="Dwarven Warparty" graphics="Dwarven Warparty.jpg" text="Dwarves. Three strikes. Detainment against hero companies. May be played keyed to any Dwarf-hold or ancient Dwarf-ruin; and also to the regions containing such a site and to High Pass. If Hunting Orcs or The Watchful Peace is in play, may also be played at any Under-deeps site. If The Dark Days is in play, the attack becomes non-detainment against hero companies that do not contain a Dwarf or a Wizard.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
@@ -512,7 +515,7 @@
 			 <attr key="strikes" value="3"/>
 			 <attr key="subclass" value="Dwarves"/>
 		</card>
-		<card name="Dwarven Axe" graphics="Dwarven Axe.jpg" text="Weapon. Warrior only. +2 prowess (to a maximum of 7); +3 prowess if held by a Dwarf (to a maximum of 8). If bearer is a minion or overt character, this item gives 3 CP.">
+		<card name="Dwarven Axe" graphics="Dwarven Axe.jpg" text="Weapon. Warrior only: +2 prowess (to a maximum of 7; +3 prowess if bearer is a Dwarf, to a maximum of 8). If bearer is a minion or overt character, this item gives 3 corruption points.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Major Item"/>
@@ -524,14 +527,14 @@
 			 <attr key="keyword" value="Battle-gear"/>
 			 <attr key="keyword" value="Warrior only"/>
 		</card>
-		<card name="Dwarven Galleries" graphics="Dwarven Galleries.jpg" text="Dwarf-lord only. Playable if you have 5 SP or more. Your stored To the Uttermost Foundations are each worth 2 mp. tap: during your end-of-turn phase to take one Dry Tunnels, Gnawed Ways, Into Dark Tunnels, New Tunnels, or Secret Ways from your discard pile or play deck (reshuffle) to your hand. Cannot be duplicated by a given player.">
+		<card name="Dwarven Galleries" graphics="Dwarven Galleries.jpg" text="Dwarf-lord only. Playable if you have 5 P or more. Your stored To the Uttermost Foundations are each worth 2 mp. tap: during your end-of-turn phase to take one Dry Tunnels, Gnawed Ways, Into Dark Tunnels, New Tunnels, or Secret Ways from your discard pile or play deck (reshuffle) to your hand. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Dworin" graphics="Dworin.jpg" text="Unique. Ironfist. +1 EI against Dwarves.+2 prowess against Orcs. tap: prevent Old Grudge from being discarded from play.">
+		<card name="Dworin" graphics="Dworin.jpg" text="Unique. Ironfist.  +1 DI against Dwarves. +1 prowess against Drakes and Orcs. tap: at any time to prevent Old Grudge from being discarded from play this phase.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="5"/>
@@ -544,7 +547,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Ironfist"/>
 		</card>
-		<card name="Eagles Ahunt" graphics="Eagles Ahunt.jpg" text="Unique. Manifestation of Eagle-watch. Flying. +2 prowess against characters and allies with Flying ability. Each overt company moving through Anduin Vales, Misty Mountains, High Pass or Redhorn Gap faces an attack: Animals. Eagles -- each character faces a strike. If Gates of Morning is in play this attack also affects Dunland, Enedwaith, Gap of Isen and Grey Mountain Narrows. Unless this attack is defeated, any character in a company facing an attack from Eagles Ahunt cannot use cards requiring scout skill this turn and any ongoing effects of such cards are cancelled.">
+		<card name="Eagles Ahunt" graphics="Eagles Ahunt.jpg" text="Unique.  +2 prowess against Dragons. Each overt company moving in Anduin Vales, Misty Mountains (Northern and Southern Spur), High Pass, and/or Redhorn Gate faces an attack (considered a hazard creature attack): Animals. Eagles. Flying - 4 strikes at 11/6 (attacker chooses defending characters). If Gates of Morning or The Watchful Peace is in play, this attack also affects Dunland, Enedwaith, Gap of Isen, Grey Mountain Narrows, and Wold &amp; Foothills. Unless this attack is defeated, no character in the company may use cards requiring scout or ranger skill this turn, and any ongoing effects of such cards are cancelled.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -563,7 +566,7 @@
 		     <attr key="region_type" value="{w}"/>
 			 <attr key="keyword" value="Mountain Region"/>
 		</card>
-		<card name="Expert Treasure-hunter" graphics="Expert Treasurehunter.jpg" text="Hobbit. 1 strike. +3 prowess against Dragon characters. Attacker chooses defending character; all strikes of Expert Treasure-hunter must target the same character. May be played following a non-detainment Dwarf creature attack or at any version of a site where a hero company with a Dwarf majority is present. Make a roll for each successfull strike instead of a body check (characters are not harmed): discard an item from the company (or stored at the site) with a random number closest to the roll (opponent's choice if tied).">
+		<card name="Expert Treasure-hunter" graphics="Expert Treasurehunter.jpg" text="Hobbit. One strike. +3 prowess against Dragons. Attacker chooses defending character; all strikes of Expert Treasure-hunter must be assigned to the same character. May only be played against minion and overt companies, following a non-detainment Dwarf creature attack or at any version of a site where a hero company with a Dwarf majority is present. Make a roll for a successful strike instead of a body check (character is not harmed): discard an item from the company with a random number closest to the result (defender's choice if tied).">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Creature"/>
@@ -573,11 +576,10 @@
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Hobbits"/>
 		</card>
-		<card name="Fear of Kin" graphics="Fear of Kin.jpg" text="Playable on a Dwarven Ring or a greater item borne by a Dwarf-lord, if he has at least 7 P. Item gives 2 less CP (toa minimum of 1) and cannot be transferred. At the beginning of the organization phase, make a roll and add the Dwarf-lord's mind. If the result is greater than his P, the Dwarf with the highest mind in his company (other than the Dwarf-lord) and any of his followers must leave the Dwarf-lord's company and move to another site. If there are no non-follower Dwarves in his company, the company must move. Cannot be duplicated on an item. Discard when any play deck is exhausted.">
+		<card name="Fear of Kin" graphics="Fear of Kin.jpg" text="Playable on a Dwarven Ring, treasure, or greater item borne by a Dwarf-lord. The item gives two fewer corruption points (to a minimum of one) and cannot be transferred during the organization phase. The Dwarf-lord receives 3 SP. At the end of the organization phase, if the Dwarf-lord's P total is greater than his mind, the highest mind Dwarf in the company (other than the Dwarf-lord) and any of his followers must split from the company: either of the companies must move to another site this turn. Otherwise, if there are no non-follower Dwarves in the company, the company must move. Cannot be duplicated on a given item. Discard if the item is stored.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="cp" value="(-2)"/>
 			 <attr key="sp" value="3"/>
 		</card>
 		<card name="Floi" graphics="Floi.jpg" text="Unique. Firebeard. +1 prowess against Orcs. -1 to his influence attempts. May tap to support a character in his company even if he is assigned a strike from the same attack.">
@@ -587,18 +589,17 @@
 			 <attr key="body" value="7"/>
 			 <attr key="mind" value="2"/>
 			 <attr key="influence" value="0"/>
-			 <attr key="cp" value="-1"/>
 			 <attr key="home_site" value="Iron Hill Dwarf-hold"/>
 			 <attr key="skills" value="Warrior"/>
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Firebeard"/>
 		</card>
-		<card name="Flooded to the Surface" graphics="Flooded to the Surface.jpg" text="Playable on an Under-deeps surface site if The Reach of Ulmo is in play. The site gains an additional automatic-attack which is an exact duplicate of the first automatic-attack of the adjacent Under-deeps site. Cannot be duplicated on a given site.">
+		<card name="Flooded to the Surface" graphics="Flooded to the Surface.jpg" text="Playable on an Under-deeps surface site. The hazard player may replace one of the site's automatic-attacks with one of the automatic-attacks of an adjacent Under-deeps site. Additionally, if The Reach of Ulmo is in play, any Animal or Drake creature keyable to Coastal Seas [C] may be played at the site. Discard this card if such an (automatic-)attack is defeated or when the site leaves active play. Cannot be duplicated on a given site.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Folk of Durin" graphics="Folk of Durin.jpg" text="Unique. Dwarf-lord specific. Playable at a tapped or untapped Moria if Reconquest of Khazad-dûm is in play, or at Mount Gundabad if Return to Old Dwellings is in play at the site and if the influence check is greater than 14. Standard Modifications: Lord of Dwarrowdelf Dwarf (+5), Longbeard Dwarf (+2)">
+		<card name="Folk of Durin" graphics="Folk of Durin.jpg" text="Unique. Dwarf-lord only. Playable at a tapped or untapped Moria if Reconquest of Khazad-dûm is in play (or Mount Gundabad if Return to Old Dwellings is played on the site) and if the influence check is greater than 14. Standard Modifications: Longbeard Dwarf (+2), Lord of Dwarrowdelf Dwarf (+5)">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
@@ -608,12 +609,12 @@
 			 <attr key="specific" value="Dwarf-lord"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Fortress Reclaimed" graphics="Fortress Reclaimed.jpg" text="Playable on a site if Rebuild the Town or Hold Rebuild and Repaired is played on it. This card overrides any conflicting hazardor resource. You may play here a non-Dragon, non-animal faction normally playable at a site in the region where target site is located (or adjacent region); the influence attempt is modified by -2. If you have played a faction at this site an additional automatic-attack is created against other player’s companies: same type as the faction -- 3 strikes with 8 prowess (detainment if the company is of the same alignment). Discard this card if Tempest of Fire is played on the site. Cannot be duplicated on a given site.">
+		<card name="Fortress Reclaimed" graphics="Fortress Reclaimed.jpg" text="Playable on a site if Rebuild the Town or Hold Rebuilt and Repaired is played on it. This card overrides any conflicting hazards and/or resources. You may play at the site a faction (not a Dragon or Animal faction) normally playable at a site in the same region as target site (or region adjacent): the influence attempt is modified by -2. If you have played a faction here, an additional automatic-attack is created at any other version of the site: same type as the faction - 3 strikes with 8 prowess (detainment if the company is of the same alignment). Discard this card during your end-of-turn phase if the site is a Ruins &amp; Lairs [R]. Cannot be duplicated on a given site.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-			<card name="Foundations of the Hoard" graphics="Foundations of the Hoard.jpg" text="Unique. Thráin specific. Playable on Thráin. You suffer no reduction in item mp at the end of the game if these are more than half of your mp total. Additionally, you may tap a Dwarven Ring Thráin bears to satisfy the hoard requirement for any items played with his company this turn. Thráin makes a CP.">
+			<card name="Foundations of the Hoard" graphics="Foundations of the Hoard.jpg" text="Unique. Thráin specific. Playable on Thráin. You suffer no reduction in item mp at the end of the game if these are more than half of your mp total. Additionally, you may tap a Dwarven Ring Thráin bears to satisfy the hoard requirement for any items played with his company this turn. Thráin makes a CC.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -621,20 +622,20 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Thráin"/>
 		</card>
-		<card name="Frár" graphics="Frar.jpg" text="Unique. Ironfist. +1 prowess against Orcs. -1 to his CC. +1 to his company's Under- deeps movement rolls.">
+		<card name="Frár" graphics="Frar.jpg" text="Unique. Ironfist. +1 prowess against Orcs. -1 to his CC. +1 to his company's Under-deeps movement rolls.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
-			 <attr key="prowess" value="4"/>
-			 <attr key="body" value="6"/>
+			 <attr key="prowess" value="2"/>
+			 <attr key="body" value="7"/>
 			 <attr key="mind" value="2"/>
 			 <attr key="influence" value="0"/>
 			 <attr key="cp" value="-1"/>
 			 <attr key="home_site" value="Iron Hill Dwarf-hold"/>
-			 <attr key="skills" value="Warrior"/>
+			 <attr key="skills" value="Warrior/Scout"/>
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Ironfist"/>
 		</card>
-		<card name="Frerin" graphics="Frerin.jpg" text="Unique. Longbeard. +2 EI against Dwarves. +2 prowess against Orcs. +2 EI against the Blue Mountain Dwarves faction. Any non-stage resource playable on a manifestation of Thorin II may also be played on Frerin, if no manifestation of Thorin II is in play.">
+		<card name="Frerin" graphics="Frerin.jpg" text="Unique. Longbeard. +2 DI against Dwarves. +2 prowess against Orcs. +2 DI against the Blue Mountain Dwarves faction. Unless Thorin II is in play, King under the Mountain may be played on Frerin (as if on Thorin II).">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="5"/>
@@ -647,7 +648,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Friendship of Old Renewed" graphics="Friendship of Old Renewed.jpg" text="Unique. Dáin specific. Playable during the site phase on Dáin at Thranduil's Halls. Dáin makes a CC modified by -3. Afterwards, tap Dáin and make an influence check (considered against an Elf character), modified by +3 if you have Wood-elves in play. If the result is less than 14 discard this card. Otherwise this card is worth 1 item mp for each of your unique factions in play (to a maximum of 4).">
+		<card name="Friendship of Old Renewed" graphics="Friendship of Old Renewed.jpg" text="Unique. Dáin specific. Playable on Dáin during the site phase at Thranduil's Halls. Dáin makes a CC modified by -3. Afterwards, tap Dáin and make a roll (considered an influence attempt against an Elf character), or take this card to hand; modify the roll by +3 if you have the Wood-elves faction in play. If the result is less than 14, discard this card. Otherwise, this card is worth 1 item mp for each of your unique factions in play at sites in Wilderland and its adjacent regions (to a maximum of 4).">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -656,14 +657,14 @@
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dáin"/>
 		</card>
-		<card name="Fungi" graphics="Fungi.jpg" text="Food item. Playable by a Dwarf or Orc at any tapped or untapped non-Dark-hold [D] Under-deeps site. If the company moves with Under-deeps movement, discard Fungi at the end of the movement/hazard phase to take another movement/hazard phase; you may untap one character in the company.">
+		<card name="Fungi" graphics="Fungi.jpg" text="Food item. Playable by a Dwarf or Orc at any tapped or untapped non-Dark-hold Under-deeps site. If the company moves with Under-deeps movement, discard Fungi at the end of the movement/hazard phase to immediately take another movement/hazard phase; you may untap one character in the company.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Special Item"/>
 			 <attr key="cp" value="1"/>
 			 <attr key="keyword" value="Food item"/>
 		</card>
-		<card name="Galion" graphics="Galion.jpg" text="Unique. Silvan. tap: bring one Old Winyards from your discard pile to your play deck (reshuffle).">
+		<card name="Galion" graphics="Galion.jpg" text="Unique. Silvan. tap: bring one Old Winyards from your discard pile to your play deck and shuffle.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -677,7 +678,7 @@
 			 <attr key="race" value="Elf"/>
 			 <attr key="keyword" value="Silvan"/>
 		</card>
-		<card name="Gandalf's Staff" graphics="Gandalfs Staff.jpg" text="Unique. Playable on a staff borne by Gandalf. Discard if the staff is not borne by Gandalf. Gandalf makes a CP when this card taps. tap: at the end of the organization phase to reduce the hazard limit for Gandalf's company by 1 (to a minimum of 2) if moving to a new site this turn. tap: at any time to give +2 to Gandalf's prowess and body against a strike. ">
+		<card name="Gandalf's Staff" graphics="Gandalfs Staff.jpg" text="Unique. Playable on a staff borne by Gandalf. Discard if the staff is not borne by Gandalf. Gandalf makes a CP when this card taps. tap: at the end of the organization phase to reduce the hazard limit for Gandalf's company by 1 (to a minimum of 2) if moving to a new site this turn. tap: at any time to give +2 to Gandalf's prowess and body against a strike.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -713,10 +714,10 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
 			 <attr key="auto_attack" value="Orcs -- 3 strikes with 8 prowess (detainment against overt companies);"/>
-			 <attr key="special" value="AAncient Dwarf-ruin. Non-Nazgûl creatures attack normally at this site, not as detainment. During the site phase, an Orc leader at the site may tap to discard one Profitable Trade in play with factions in Wilderland (factions remain in play)."/>
+			 <attr key="special" value="Ancient Dwarf-ruin. Non-Nazgûl creatures attack normally at this site, not as detainment. During the site phase, an Orc leader at the site may tap to discard one Profitable Trade in play with factions in Wilderland (factions remain in play). "/>
 			 <attr key="keyword" value="Ancient Dwarf-ruin"/>
 		</card>
-		<card name="Gimli's Axe" graphics="Gimlis Axe.jpg" text="Unique. Playable on a Dwarven Axe borne by Gimli. +1 to Gimli's prowess. You may always assign strikes to Gimli regardless of his status. Discard if the Dwarven Axe is not borne by Gimli. ">
+		<card name="Gimli's Axe" graphics="Gimlis Axe.jpg" text="Unique. Playable on a Dwarven Axe borne by Gimli. +1 to Gimli's prowess. You may always assign strikes to Gimli regardless of his status. Discard if the Dwarven Axe is not borne by Gimli.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -740,16 +741,16 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Glades of Flowering Stone" graphics="Glades of Flowering Stone.jpg" text="Unique. Dwarf-lord specific. Playable on The Gem-deeps, if a Dwarf-lord is there and you have Aglarond in play. You may store Dwarf-characters at The Gem-deeps (yielding no mp). This card is worth 1 faction mp for every 2 Dwarves stored there (to a maximum of 3). The Gem-deeps is not discarded or returned to the location deck while there is a Dwarf stored there. Every mp this card is worth reduces prowess and strikes of automatic-attacks and attacks keyed to the site by 1 (to a minimum of 1).">
+		<card name="Glades of Flowering Stone" graphics="Glades of Flowering Stone.jpg" text="Unique. Dwarf-lord only. Playable on The Gem-deeps if you have a Dwarf-lord there and if Glittering Caves or The Gem-deeps is a Haven [H] or Border-hold [B].  You may place any of your Dwarf characters here off to the side with this card. Characters (and any cards they control) placed with this card are not worth any mp; you may bring them into play at The Gem-deeps as if from hand. The site does not leave active play while there is a Dwarf with this card. For every two Dwarves placed with it, this card is worth 1 faction mp (to a maximum of 4) and the prowess and strikes of automatic-attacks and attacks keyed to the site are reduced by 1 (to a minimum of 1).">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(*)"/>
-			 <attr key="sp" value="1"/>
+			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Goblin-basher" graphics="Goblinbasher.jpg" text="Unique. Grey Agent. Manifestation of Beorn. +2 prowess against Orcs. -1 to his CC. Agent only: may attack an overt company at a Shadow-hold [S] (attack is not detainment). If an Orc, Wolf or Animal hazard creature is played on a company at or moving to a site in his current or adjacent region you may automatically transfer him to this site (even if you have the site in active play).">
+		<card name="Goblin-basher" graphics="Goblinbasher.jpg" text="Unique. Grey agent. Manifestation of Beorn. +2 prowess against Orcs. -1 to all of his CC. Agent only: may attack an overt company at a Shadow-hold [S] (the attack is not detainment). If an Orc, Wolf, or Animal hazard creature is played against a company at or moving to a site in the same region as his current site (or region adjacent), you may automatically transfer Goblin-basher to this site (even if you have the site in active play).">
 			 <attr key="type" value="Grey Agent Character"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
@@ -770,14 +771,14 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="prowess" value="(+2)"/>
 		</card>
-		<card name="Great Achievement" graphics="Great Achievement.jpg" text="Place this card on your avatar if he is in play. All cards that could be stored at a Haven [H] can be stored at one of your Havens. If on your avatar one of the following cards is worth full mp if played successfully (then place this card with it for 1 mp): Clean the Greenwood, Fate of the Ithil-stone, Into the Smoking Cone, King under the Mountain, Reconquest of Khazad-dûm, Pass the Doors of Dol Guldur, The Wood of Greenleaves, Towers Destroyed, or Tower Raided. Cannot be duplicated for each of these cards.">
+		<card name="Great Achievement" graphics="Great Achievement.jpg" text="Place this card on your avatar if he is in play. If this card is on your avatar and you receive any mp for one of the following resources, place it with that card; Clean the Greenwood, Fate of the Ithil-stone, Into the Smoking Cone, King under the Mountain, Reconquest of Khazad-dûm, Pass the Doors of Dol Guldur, Rescue Prisoners, Towers Destroyed, or Tower Raided. Target resource is now worth full mp, and this card gives 1 mp. Discard if target resource is discarded. Cannot be duplicated for each of the above named resources.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(1)"/>
 			 <attr key="sp" value="2"/>
 		</card>
-		<card name="Great Miners" graphics="Great Miners.jpg" text="Dwarf-lord specific. Playable if you have at least5 P. You may play Delver's Harvest and Earth- eater at any of your Under-deeps Dwarf-holds. Additionally, you receive full mp for Mithril, Map to Mithril, The Arkenstone, Gems of Arda, Vein of Arda or any other Ore card. This card is worth 2 mp if you have at least 3 different of these cards in play. Cannot be duplicated by a given player.">
+		<card name="Great Miners" graphics="Great Miners.jpg" text="Dwarf-lord only. Playable if you have 5 SP or more. You may play Delver's Harvest and Earth-eater at any of your Under-deeps Dwarf-holds (as if at the Deep Mines site). Additionally, your Map to Mithril, Mithril, The Arkenstone, Gems of Arda, Vein of Arda, or any other ore resource in active play are each worth full mp. If you have stored at least 3 different of such cards, this card is worth 2 mp. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -785,7 +786,7 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Halls of Khazad-dûm" graphics="Halls of Khazaddum.jpg" text="Playable during the site phase on Moria, if you have Return to Khazad-dûm is in play and the company contains a majority of Dwarves. The company faces 3 attacks (cannot be cancelled): Orcs -- 5 strikes with 8 prowess; Orcs -- 3 strikes with 11 prowess; Troll -- 1 strike with 14 prowess; Following the attacks, tap a Dwarf with mind 5 or greater or discard this card. Discard any Invade Their Domain played on Moria. Moria becomes a Border-hold [B] and loses its Orc automatic- attacks. A Balrog player may play Invade their Domain on Moria (none of the attacks may be cancelled). If successfully played this card is discarded.Discard if the site leaves active play. Cannot be duplicated.">
+		<card name="Halls of Khazad-dûm" graphics="Halls of Khazaddum.jpg" text="Playable during the site phase on Moria, if you have Return to Old Dwellings in play there and a company containing a Dwarf majority. The company faces 3 attacks (cannot be cancelled): Orcs - 5 strikes with 8 prowess; Orcs - 3 strikes with 11 prowess; Troll - 1 strike with 14 prowess; Following these attacks, tTatap a Dwarf with mind 5 or more in the company or discard this card. Discard any Invade Their Domain played on Moria. Moria becomes a Border-hold [B]. Discard this card if Invade Their Domain is played successfully on Moria, or if the site leaves active play. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -795,10 +796,9 @@
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="cp" value="(-2)"/>
 			 <attr key="keyword" value="Corruption"/>
 		</card>
-		<card name="Hermit Troll" graphics="Hermit Troll.jpg" text="Troll. 1 strike. May also be played keyed to a Ruins &amp; Lairs [R] that has at least two Wildernesses [w] or one Desert [e] in its site path.">
+		<card name="Hermit Troll" graphics="Hermit Troll.jpg" text="Troll. One strike. If revealed as an on-guard creature, attacker chooses defending characters. May also be played at a Ruins &amp; Lairs [R] that has at least two Wildernesses [w] or one Desert [e] in its site path or that is in a mountain region.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
@@ -809,7 +809,7 @@
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Trolls"/>
 		</card>
-		<card name="His Beard Long and Forked" graphics="His Beard Long and Forked.jpg" text="Playable on a Dwarf character with a mind of 5 or more (4 or more if a Longbeard). Target character becomes a leader and may tap to untap a Dwarf in his company. You may start the game with this card in lieu of a minor item.">
+		<card name="His Beard Long and Forked" graphics="His Beard Long and Forked.jpg" text="Playable on a Dwarf with a mind of five or more (four or more if a Longbeard). Target character becomes a leader and may tap to untap a Dwarf in his company. You may start the game with this card in lieu of a minor item.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -821,17 +821,17 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(*)"/>
 		</card>
-		<card name="Hunting Orcs" graphics="Hunting Orcs.jpg" text="Each player may take a Wondrous Maps from his discard pile or sideboard to hand during the end-of-turn phase. Additionally, Wondrous Maps can be played if the last region is a Dark-domain [d] or a Wilderness [w]. Cannot be duplicated.">
+		<card name="Hunting Orcs" graphics="Hunting Orcs.jpg" text="Each player may take one Wondrous Maps from his sideboard to his hand during the end-of-turn phase. Additionally, Wondrous Maps can be played if the last region is a Dark-domain [d] or a Wilderness [w]. Cannot be duplicated.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Long-event"/>
 		</card>
-		<card name="Hurling Rocks" graphics="Hurling Rocks.jpg" text="Any company moving through a mountain region or through High Pass, Redhorn Gate, Bosiri, Cleft of Goats or Narthalf faces an attack: Rock Fall - 2 strikes with 9 prowess. Additionally, Giant hazard creatures may be played keyed to these regions, and also to  regions adjacent if Arda Angered is in play.">
+		<card name="Hurling Rocks" graphics="Hurling Rocks.jpg" text="Any company moving in a mountain region or in High Pass, Redhorn Gate, Bosiri, Cleft of Goats, Clyan, Dragon Gap, or Narthalf faces an attack: Rock Fall - 2 strikes with 9 prowess. Additionally, non-unique Giant hazard creatures may be played keyed to these regions, and to adjacent regions if Arda Angered or Doors of Night is in play.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Long-event"/>
 		</card>
-		<card name="Ibûn" graphics="Ibun.jpg" text="Unique. Undead. Dwarf. 1 strike. May also be keyed to Shadow-land [s] or to an Ancient Dwarf-ruin, on a company that contains a treasure item. May also be played keyed to Bar-en-Ibûn, Cameth Brin and The Worthy Hills.">
+		<card name="Ibûn" graphics="Ibun.jpg" text="Unique. Undead. Dwarf. One strike. May also be played keyed to a Shadow-land [s] or Ancient Dwarf-ruin against a company containing a treasure item. May also be played at Bar-en-Ibûn, Cameth Brin, and The Worthy Hills.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -851,17 +851,17 @@
 			 <attr key="draw" value="2"/>
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Iron Hills"/>
-			 <attr key="special" value="Dwarf-lord specific. This site is a protected Lordhaven. If any of your companies is at this site, all attacks against it are cancelled. Characters with Iron Hill Dwarf-hold as their home site may be brought into play under GI at this site, even if your Dwarf-lord is in play and not here."/>
+			 <attr key="special" value="Special: Dwarf-lord only. This site is a protected Lordhaven [H]. If one of your companies is at this site, all attacks against it are cancelled and you receive the SP. Characters with Iron Hill Dwarf-hold or Barak-shathûr as a home site may be brought into play at this site, regardless of the presence of any other character."/>
 			 <attr key="keyword" value="Dwarf-hold"/>
 		</card>
-		<card name="Ironfists" graphics="Ironfists.jpg" text="Unique. Playable at Nurunkhizdín or Azagarbhun, or at Mount Gundabad if Return to Old Dwellings is played at the site, if the influence check is greater than 11. Standard Modifications: Ironfist Dwarf (+3), Longbeard Dwarf (-3) tap: make a non-unique Ore resource playable at the above named sites this turn.">
+		<card name="Ironfists" graphics="Ironfists.jpg" text="Unique. Playable at Nurunkhizdín, or at Mount Gundabad if Return to Old Dwellings is played on the site if the influence check is greater than 11 Standard Modifications: Ironfist Dwarf (+3), Longbeard Dwarf (-3) tap: make a non-unique ore resource playable at the above named sites this turn.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Dwarf Faction"/>
 			 <attr key="mp" value="3"/>
 		</card>
-		<card name="Ironfoot" graphics="Ironfoot.jpg" text="Unique. Armor. Place this card on a manifestation of Daín II if he is in play. +1 body to a maximum of 10. If on Dáin: tap: +2 prowess against a strike from an Animal, Orc, or Wolf attack. tap: during your end-of-turn phase to search your play deck (reshuffle) or discard pile for a Leg it Double Quick.">
+		<card name="Ironfoot" graphics="Ironfoot.jpg" text="Unique. Armor. Place this card on Dáin II if he is in play. +1 body to a maximum of 10. tap: give Dáin +2 prowess against a strike from an Animal, Orc, Spider, or Wolf attack. tap: during the organization phase to take one Leg it Double Quick from your discard pile or play deck (reshuffle) to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -872,25 +872,25 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="keyword" value="Battle-gear"/>
 		</card>
-		<card name="Jewel-healer" graphics="Jewelhealer.jpg" text="Playable on a non-warrior or sage Dwarf character at one of your Lord-havens [H] (or in your starting company). The character may tap and tap a jewel or ore resource in the company to heal (from wounded to tapped) one Dwarf in the company. Target Dwarf must make a CC, and the Dwarf so healed must make a body check modified by -2 (before being healed).">
+		<card name="Jewel-healer" graphics="Jewelhealer.jpg" text="Playable on a non-warrior or sage Dwarf at one of your Havens [H] (or in your starting company). Tap target character and a jewel or ore resource in his company, and make a CP: if still in play afterwards, a wounded Dwarf in the company may make a body check modified by -2 and (if still in play afterwards) heal from wounded to tapped.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 		</card>
-		<card name="Khazadshathûr" graphics="Khazadshathur.jpg" text="Unique. Helmet. Playable at Goblin-gate. +2 to body to a maximum of 9. Dwarf only: +1 EI against Dwarves. All dark enchantments targeting bearer are cancelled. tap: give +3 prowess (or +3 to the roll) against a strike for which weapons do not modify or prowess is not used to determine the result.">
+		<card name="Khazadshathûr" graphics="Khazadshathur.jpg" text="Unique. Helmet. Playable at Goblin-gate. +2 body to a maximum of 9. +1 DI against Dwarves. Dwarf only: Cancels all dark enchantments targeting bearer or any cards he controls. tap: +3 to bearer's prowess against a non-combat attack.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Special Item"/>
 			 <attr key="prowess" value="-"/>
 			 <attr key="body" value="+2"/>
-			 <attr key="influence" value="+1"/>
+			 <attr key="influence" value="(+1)"/>
 			 <attr key="mp" value="2"/>
 			 <attr key="cp" value="2"/>
 			 <attr key="keyword" value="Battle-gear"/>
 		</card>
-		<card name="King of Seven Houses" graphics="King of Seven Houses.jpg" text="Dwarf-lord specific. Playable on your Dwarf-lord at one of your Lord-havens [H] if he bears The One Ring. Only one King of Seven Houses may be played on a given turn. If at a Lord-haven during your end-of-turn phase and bearing The One Ring, opponent may play up to 3 creatures/events that are manifestations of an avatar, which attack your Dwarf-lord as if a single character company (cannot be cancelled); these may be taken from hand, deck or play. If unwounded after these attacks, make a roll: add 1 for each King of the Seven Houses you have in play. If the result is less than 5, your Dwarf-lord is eliminated; if greater than 8, you win the game.">
+		<card name="King of Seven Houses" graphics="King of Seven Houses.jpg" text="Dwarf-lord only. Playable during the site phase on your Dwarf-lord, if he is at a Dwarf-hold and bears The One Ring. Up to 3 different avatar hazard manifestations which create an attack may now attack your Dwarf-lord's company (resolve separately; cannot be cancelled; 1 strike of each attack must be assigned to the Dwarf-lord). Opponent may play these from his hand, discard pile or play deck (reshuffle), or he may use events in active play (discard after the attack if not defeated). Afterwards, if your Dwarf-lord is unwounded, make a roll and add 1 for each King of Seven Houses you have in play. If the result is less than 5, your Dwarf-lord is eliminated; if greater than 8, you win the game. Only one King of Seven Houses may be played on a given turn. You may return this card to your hand during the organization phase.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -898,7 +898,7 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="King Spider" graphics="King Spider.jpg" text="Spider. Traps. Before resolving the attack opponent must call odds or even. To assign strikes, each character in the company makes a roll: if the result corresponds with opponent's choice, character must face a strike (resolve strike immediately). Attack or strikes of King Spider cannot be cancelled by general card effects (e.g. Ruse), but scouts may tap to cancel a strike they are facing.">
+		<card name="King Spider" graphics="King Spider.jpg" text="Spider. Traps. Before assigning strikes, opponent must call odds or even. To assign strikes, each character in the company makes a roll: if the result corresponds with opponent's choice, the character must face a strike (resolve the strike immediately). Attack or strikes of King Spider cannot be cancelled by general card effects (e.g. Ruse), but a scout may tap to cancel a strike he is facing.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
@@ -907,9 +907,9 @@
 			 <attr key="mp" value="1"/>
 			 <attr key="playable" value="{w}{w}{s}{R}"/>
 			 <attr key="strikes" value="-"/>
-			 <attr key="subclass" value="Spiders"/>
+			 <attr key="subclass" value="Spiders, Traps"/>
 		</card>
-		<card name="King's Advisor" graphics="Kings Advisor.jpg" text="1 prowess against Orcs. Cannot be duplicated on a company that does not contain a Dwarf-lord. tap: take His Beard Long and Forked from your discard pile to your hand.">
+		<card name="King's Advisor" graphics="Kings Advisor.jpg" text="+1 prowess against Orcs. Unless it contains a manifestation of a Dwarf-lord, the company may contain only one King's Advisor. tap: take one His Beard Long and Forked from your discard pile to your hand. ">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="2"/>
@@ -921,7 +921,7 @@
 			 <attr key="skills" value="Warrior/Sage"/>
 			 <attr key="race" value="Dwarf"/>
 		</card>
-		<card name="King's Judge" graphics="Kings Judge.jpg" text="+1 EI against Dwarves. +3 EI against Dwarf factions. +1 prowess against Orcs. Cannot be duplicated on a company that does not contain a Dwarf-lord.">
+		<card name="King's Judge" graphics="Kings Judge.jpg" text="+1 DI against Dwarf characters. +2 DI against Dwarf factions. +1 prowess against Orcs. Unless it contains a manifestation of a Dwarf-lord, the company may contain only one King's Judge.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="2"/>
@@ -933,20 +933,20 @@
 			 <attr key="skills" value="Warrior/Diplomat"/>
 			 <attr key="race" value="Dwarf"/>
 		</card>
-		<card name="Kingdom of Old Restored" graphics="Kingdom of Old Restored.jpg" text="Playable on a site where you have defeated an at Home Dragon manifestation, or you have Halls of Khazad-dûm or Return to Old Dwellings in play. +4 to your GI. You may take one Hoard Gathering, No Strangers at this Time, or Profitable Trade from your sideboard to your hand when this card is played. The site becomes a Border-hold [B] and the region containing the site a Border-land [b]. During your end-of-turn phase, rotate this card 90° (or place a token); discard this card if it is worth less than -2 mp or if the site is a [R]. This card is worth 1 mp for each time rotated (to a maximum of 8); reduce this card’s mp by the number of factions (and cards played on these) in play at sites in the same territory by any opponent. A Dwarf-lord player receives full mp for this card. Cannot be duplicated by a given player.">
+		<card name="Kingdom of Old Restored" graphics="Kingdom of Old Restored.jpg" text="Playable on a site where you have defeated an at home Dragon manifestation or you have Return to Old Dwellings in play. +3 to your GI. The site become a Border-hold [B] and a Dwarf-hold. While you have a Dwarf at the site, rotate this card 90° (or place a token) during your end-of-turn phase. This card is worth 1 mp for each time rotated (to a maximum of 8), reduced by the number of factions (and cards played on these) any opponent has in play at sites in the same territory (or in an adjacent region) as target site. Discard this card if it is worth less than -1 mp, or if the site is a Ruins &amp; Lairs [R]. This card is worth full mp to a Dwarf-lord player. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(*)"/>
 		</card>
-		<card name="Knowledge of Arda's Treasures" graphics="Knowledge of Ardas Treasures.jpg" text="Dwarf-lord only. Playable on a Dwarf-lord. If the Dwarf-lord bears a Dwarven Ring, it is worth full mp and you may play ore resources at his current non- Haven surface site (if that resource is normally playable at the adjacent Under-deeps site). Additionally, you may tap a Dwarven Ring the Dwarf-lord bears to take one ore resource playable at his current site from your discard pile to your hand. The Dwarf-lord makes a CP modified by +2.">
+		<card name="Knowledge of Arda's Treasures" graphics="Knowledge of Ardas Treasures.jpg" text="Dwarf-lord only. Playable on a Dwarf-lord. If the Dwarf-lord bears a Dwarven Ring, it is worth full mp and you may play ore resources at his current non- Haven surface site (if that resource is normally playable at the adjacent Under-deeps site). Additionally, you may tap a Dwarven Ring the Dwarf-lord bears to take one ore resource playable at his current site from your discard pile to your hand. The Dwarf-lord makes a CC modified by +2.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Kori" graphics="Kori.jpg" text="Unique. Firebeard. Grey Agent. +1 prowess against Orcs and Trolls. Agent only: May use Under-deeps movement. tap: at the beginning of the site phase to create an additional automatic-attack this turn: Traps -- 2 strikes with 9 prowess. tap: during the movement/hazard phase, if at a company's new site, to prevent that company from moving again this turn.">
+		<card name="Kori" graphics="Kori.jpg" text="Unique. Firebeard. Grey agent. +1 prowess against Orcs and Trolls. Agent only: May use Under-deeps movement. tap: if at a company's new site to create an additional automatic-attack at the site this turn: Traps - 2 strikes with 9 prowess. This is considered an agent action. tap: if at a company's new site to prevent that company from moving again this turn. This is considered an agent action.">
 			 <attr key="type" value="Grey Agent Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="class" value="Warrior/Ranger Dwarf"/>
@@ -961,16 +961,19 @@
 			 <attr key="keyword" value="Grey Agent"/>
 			 <attr key="keyword" value="Firebeard"/>
 		</card>
-		<card name="Last of the Seven" graphics="Last of the Seven.jpg" text="Thráin specific. As a short-event playable on Thráin if no Dwarven Ring is in play; +2 to his prowess, +1 body, and+2 EI for the rest of the turn, and you may keep 1 more card than normal in your hand. Thráin makes a CC modified by -1. As a permanent-event playable on a Dwarven Ring borne by Thráin. -3 mp and -3 CP. Thráin must make a CC during his untap phase for every other Dwarven Ring in play; failing this CC you must discard a character in his company (ignore other effects). Discard if not borne by Thráin. Cannot be duplicated.">
+		<card name="Last of the Seven" graphics="Last of the Seven.jpg" text="Thráin specific. As a permanent-event, playable on a Dwarven Ring borne by Thráin. Discard if Thráin does not bear the ring. -2 mp and -2 corruption points for the ring. Thráin must make a CC during his untap phase for every other Dwarven Ring in play; if he fails, discard a character in his company (ignore any other effects). Cannot be duplicated. As a short-event, playable on Thráin if no Dwarven Ring is in play. +2 prowess, +1 body, +2 DI, and you may keep one more card than normal in your hand  this turn. Thráin makes a CC modified by -2. Cannot be duplicated on a given turn.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event/Short-event"/>
-			 <attr key="mp" value="(-3)"/>
-			 <attr key="cp" value="(-3)"/>
+			 <attr key="mp" value="(-2)"/>
+			 <attr key="cp" value="(-2)"/>
 			 <attr key="sp" value="2"/>
+			 <attr key="prowess" value="(+2)"/>
+			 <attr key="body" value="(+1)"/>
+			 <attr key="influence" value="(+2)"/>
 			 <attr key="specific" value="Thráin"/>
 		</card>
-		<card name="Lipór" graphics="Lipor.jpg" text="Unique. Longbeard. +2 prowess against Orcs. May play Knowledge of the Enemy at any site if his company has faced an Orc attack the same turn.">
+		<card name="Lipór" graphics="Lipor.jpg" text="Unique. Longbeard. +2 prowess against Orcs. May play Knowledge of the Enemy at any site, if his company has faced an Orc attack that turn.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="6"/>
@@ -983,7 +986,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Lock nor Bar May Hinder" graphics="Lock nor Bar May Hinder.jpg" text="Playable during the organization phase on a company with a character controlling Rescue Prisoners. You may play one character with the company from hand or discard pile, regardless of the company's current site, presence of an avatar, or the one character per turn limit.">
+		<card name="Lock nor Bar May Hinder" graphics="Lock nor Bar May Hinder.jpg" text="Playable during the organization phase on a company with a character controlling Rescue Prisoners. You may bring one character into play with the company, regardless of the company's current site, the presence of an avatar, or the one character per turn limit. The character may be taken from your hand or discard pile.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
@@ -1000,7 +1003,7 @@
 			 <attr key="haven" value="Lórien"/>
 			 <attr key="playable" value="Items (minor, major*)"/>
 			 <attr key="auto_attack" value="Undead -- 2 strikes with 7 prowess"/>
-			 <attr key="special" value="Swamp. *Major items are only playable at the site if the company has defeated the automatic-attack or has faced an Undead creature keyed to the site the same turn."/>
+			 <attr key="special" value="Swamp. *Major items are only playable at the site if the company has defeated an Undead attack the same turn."/>
 			 <attr key="keyword" value="Swamp"/>
 		</card>
 		<card name="Long Marshes" graphics="Long Marshes2.jpg" back="1" text="">
@@ -1015,7 +1018,7 @@
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Items (minor, major*)"/>
 			 <attr key="auto_attack" value="Undead -- 2 strikes with 7 prowess"/>
-			 <attr key="special" value="Swamp. *Major items are only playable at the site if the company has faced an Undead creature keyed to the site the same turn."/>
+			 <attr key="special" value="Swamp. *Major items are playable at the site if the company has defeated an Undead hazard creature the same turn."/>
 			 <attr key="keyword" value="Swamp"/>
 		</card>
 		<card name="Lóni" graphics="Loni.jpg" text="Unique. Ironfist. +1 prowess against Orcs. -1 to his CP. -1 to his influence attempts. tap: bring one food item from your discard pile to your play deck and shuffle.">
@@ -1027,11 +1030,11 @@
 			 <attr key="influence" value="0"/>
 			 <attr key="cp" value="-1"/>
 			 <attr key="home_site" value="Iron Hill Dwarf-hold"/>
-			 <attr key="skills" value="Warrior/Scout"/>
+			 <attr key="skills" value="Warrior"/>
 			 <attr key="race" value="Dwarf"/>
-			 <attr key="keyword" value="Longbeard"/>
+			 <attr key="keyword" value="Ironfist"/>
 		</card>
-		<card name="Lord of Dwarrowdelf" graphics="Lord of Dwarrowdelf.jpg" text="Unique. Dwarf-lord only. Playable on your Dwarf-lord, if he is at Moria or its adjacent sites and you have 8 P or more. +5 EI against Dwarves. Your Return to Old Dwellings, Halls of Khazad-dûm and Reconquest of Khazad-dûm are each worth full mp (if worth any). Unless a manifestation of Balrog of Moria has been defeated, discard this card if bearer is at a site that is not in Redhorn Gate or its adjacent regions and/or does not have Moria as adjacent site.">
+		<card name="Lord of Dwarrowdelf" graphics="Lord of Dwarrowdelf.jpg" text="Unique. Dwarf-lord only. Playable on your Dwarf-lord, if he is at Moria or its adjacent sites and you have 8 P or more. +5 DI against Dwarves. Your Return to Old Dwellings, Halls of Khazad-dûm and Reconquest of Khazad-dûm are each worth full mp (if worth any). Unless a manifestation of Balrog of Moria has been defeated, discard this card if bearer is at a site that is not in Redhorn Gate or its adjacent regions and or does not have Moria as adjacent site.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1040,7 +1043,7 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Lord of the Eagles" graphics="Lord of the Eagles.jpg" text="Unique. Animal. Flying. Manifestation of Gwaihir. 3 strikes. Attacker chooses defending characters. As a creature playable keyed to Anduin Vales, High Pass, Misty Mountains, Wold &amp; Foothills, or at sites in these regions. If The Watchful Peace is in play may also be played keyed to Shadow-lands [s] which are adjacent to any of the regions above. May only be played against minion and overt companies. As a short-event, bring one hazard creature marked with an (*) or Eagles Ahunt from your discard pile to your hand.">
+		<card name="Lord of the Eagles" graphics="Lord of the Eagles.jpg" text="Unique. Animal. Eagle. Manifestation of Gwaihir. Flying. Three strikes. Attacker chooses defending characters. As a creature, may be played keyed to Anduin Vales, High Pass, Misty Mountains (Northern and Southern Spur), Wold &amp; Foothills; and also at sites in these regions. May only be played against overt companies. If The Watchful Peace is in play, may also be played keyed to any non-Dark-domain region adjacent to one of the above named regions. As a short-event, bring Eagles Ahunt or one hazard creature with an asterisk (*) from your discard pile to your hand.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1056,11 +1059,11 @@
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="mp" value="(*)"/>
-			 <attr key="sp" value="3"/>
+			 <attr key="mp" value="(1)"/>
+			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Thranduil"/>
 		</card>
-		<card name="Mighty Was the Fallen" graphics="Mighty Was the Fallen.jpg" text="Playable on a company if a character from the company worth 2 mp or more was eliminated this turn and removed from the game (except by CC). This card may be stored at one of your Havens [H] for 1 mp. Discard this card if the company contains less than 2 characters. Cannot be duplicated for an eliminated character.">
+		<card name="Mighty Was the Fallen" graphics="Mighty Was the Fallen.jpg" text="Playable on a company if a character from the company worth 2 mp or more has been eliminated this turn (not by a CC). Discard this card if the company contains less than 2 characters. Store this card when the company is at one of your Havens [H]; it is worth 1 mp. Cannot be duplicated for an eliminated character.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1084,7 +1087,7 @@
 			 <attr key="region" value="Under-deeps"/>
 			 <attr key="adjacent" value="Wondrous Maps* (0), Ostigurth (5), The Under-courts (6), The Limestone-caverns (8)"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
-			 <attr key="auto_attack" value="Dwarves - 4 strikes with 10 prowess(detainment if the company contains a Dwarf majority)"/>
+			 <attr key="auto_attack" value="Dwarves - 4 strikes with 10 prowess (detainment if the company contains a Dwarf majority)"/>
 			 <attr key="special" value="Hidden Site. Tap a sage or avatar in the company, or discard a Lost Knowledge card, to reveal this site. Contains a hoard. *Any Wondrous Maps you have in play in Nurn or Horse Plains is considered a surface site of this site. Creatures played at this site attack normally, not as detainment."/>
 			 <attr key="keyword" value="Hidden Site"/>
 		</card>
@@ -1098,24 +1101,24 @@
 			 <attr key="region" value="Under-deeps"/>
 			 <attr key="adjacent" value="Gaurblog Lug (0), Nurunkhizdín (7), The Rusted-deeps (8), The Sulfur-deeps (7), The Under-courts (8)"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
-			 <attr key="auto_attack" value="(1st) Undead. Dwarves -- 3 strikes with 9 prowess(2nd) Opponent may play from hand a creature normally keyable to Shadow-hold [S]"/>
+			 <attr key="auto_attack" value="(1st) Undead. Dwarves - 3 strikes with 9 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-holds [S]"/>
 			 <attr key="special" value="Ancient Dwarf-ruin"/>
 			 <attr key="keyword" value="Ancient Dwarf-ruin"/>
 		</card>
-		<card name="Mining Settlement" graphics="Mining Settlement.jpg" text="Dwarf-lord specific. Playable during the site phase on a Ruins &amp; Lairs [R] that is an Ancient-Dwarf-hold or is in a mountain region. The site becomes a Dwarf-hold and one of your Lord-havens [H] and all automatic- attacks are replaced with: Dwarves -- 3 strikes with 9 prowess. Nothing is considered playable as written on the site card. If one of your companies is at this site, all attacks against it are cancelled. Other alignments may not use this site as a Haven [H]. Discard this card when the site leaves active play, or when a manifestation of the corresponding Dragon attacks at the stie. It cannot be discarded otherwise. Alternatively, playable on any Dwarf-hold: the site becomes a Protected Lord-haven [H].">
+		<card name="Mining Settlement" graphics="Mining Settlement.jpg" text="Dwarf-lord only. Playable during the site phase on a Ruins &amp; Lairs [R] that is an ancient Dwarf-ruin or is in a mountain region. The site becomes one of your Lordhavens [H] and a Dwarf-hold. Nothing is considered playable as written on the site card. Attacks against your companies at this site receive -1 to prowess and strikes (to a minimum of 1). Discard this card when the site leaves active play, or after a Dragon or Spawn attack at the site. Alternatively, playable on a Dwarf-hold. The site becomes one of your Lordhavens [H]; if it is already a Lordhaven, the site is protected.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Mithrandir" graphics="Mithrandir.jpg" text="Unique. Manifestation of Gandalf. Playable on a non-overt company without avatar, if you are a Wizard or Lord with less than 10 P. You may play spells on the company as if on Gandalf (no CC required). Discard this card if Sacrifice of Form is played (place Sacrifice of Form in your mp). Additionally, if the company moves to a Shadow-hold [S] or Dark-hold [D] opponent must reveal to you 3 hazard cards from his hand (or else his whole hand). Discard when Gandalf enters play or you have 10 or more P. Invert this card during your untap phase; if inverted, discard this card at the end of your turn.">
+		<card name="Mithrandir" graphics="Mithrandir.jpg" text="Unique. Manifestation of Gandalf. Playable on a non-overt company without avatar. You may play spells on the company as if on Gandalf (except True Fána): ignore any required CC. Discard this card when you play Sacrifice of Form: place Sacrifice of Form in your mp. Additionally, when the company moves to a Shadow-hold [S] or Dark-hold [D], opponent must reveal to you 3 hazards from his hand (or else his whole hand). Discard this card when Gandalf enters play or you have 10 SP or more. Invert this card during your untap phase; if inverted, discard this card at the end of your turn.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="More Than Meets the Eye" graphics="More Than Meets the Eye.jpg" text="Dwarf-lord only. If played as a starting stage card, your starting company may include Hobbits. Place this card on your Dwarf-lord if he is in play. +3 EI against Hobbits. You may play To Fealty Sworn at any site after successfully playing a Dwarf faction (as if at a Free-hold [F]). Additionally, during the organization phase you may bring a Hobbit character into play at his home site from your discard pile, if you tap either two Hobbits or four Dwarves in your company at the site. Cannot be duplicated by a given player.">
+		<card name="More Than Meets the Eye" graphics="More Than Meets the Eye.jpg" text="Dwarf-lord only. If played as a starting stage card, your starting company may include Hobbits. Place this card on your Dwarf-lord if he is in play. +3 DI against Hobbits. You may play To Fealty Sworn at any site after successfully playing a Dwarf faction (as if at a Free-hold [F]). Additionally, during the organization phase you may bring a Hobbit character into play at his home site from your discard pile, if you tap either two Hobbits or four Dwarves in your company at the site. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1130,7 +1133,7 @@
 			 <attr key="class" value="Dwarf Faction"/>
 			 <attr key="mp" value="2(4)"/>
 		</card>
-		<card name="Mountaineer" graphics="Mountaineer.jpg" text="+1 prowesss against Orcs.-1 to all of his CC.-1 to his influence attempts. Cannot be duplicated on a company that does not contain a Dwarf-lord. tap: at the end of the organization phase to allow his company to move through a mountain region (and not stop at a site therein).">
+		<card name="Mountaineer" graphics="Mountaineer.jpg" text="+1 prowess against Orcs. -1 to his CC. -1 to his influence attempts. Unless it contains a manifestation of a Dwarf-lord, the company may contain only one Mountaineer. tap: at the end of the organization phase to allow his company to move through a mountain region (and not stop at a site therein) that turn.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="2"/>
@@ -1142,7 +1145,7 @@
 			 <attr key="skills" value="Warrior/Scout"/>
 			 <attr key="race" value="Dwarf"/>
 		</card>
-		<card name="Náin, Son of Grór" graphics="Nain Son of Gror.jpg" text="Unique. Longbeard. +2 EI against Dwarves. +1 prowess against Orcs. King under the Mountain may be played on him. If he bears a jewel item: +1 to his prowess and body, and -2 to his EI. tap: bring one Songs of the Old from your discard pile to your play deck (reshuffle).">
+		<card name="Náin, Son of Grór" graphics="Nain Son of Gror.jpg" text="Unique. Longbeard. +2 DI against Dwarves. +1 prowess against Dragons and Orcs. King under the Mountain may be played on him (as if on Dáin II). If he bears a treasure item: +1 to his prowess and body, and -2 DI. tap: bring one Songs of the Old from your discard pile to your play deck and shuffle.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="4"/>
@@ -1155,7 +1158,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Náli" graphics="Nali.jpg" text="Unique. Firebeard. +1 prowess against Orcs.-1 to all of his CC. -3 to his influence attempts.">
+		<card name="Náli" graphics="Nali.jpg" text="Unique. Firebeard. +1 prowess against Orcs. -1 to his CC. -3 to his influence attempts.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="5"/>
@@ -1169,7 +1172,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Firebeard"/>
 		</card>
-		<card name="Narin" graphics="Narin.jpg" text="Unique. Ironfist. +2 EI against Dwarves. +2 prowess against Orcs. +2 EI against the Ironfists faction. If controlling Dwarven Ring of Thélor's Tribe: +1 to all of his CC and he becomes a leader and a sage.">
+		<card name="Narin" graphics="Narin.jpg" text="Unique. Ironfist. +2 DI against Dwarves. +2 prowess against Orcs. +2 DI against the Ironfists faction. If Narin bears Dwarven Ring of Thélor's Tribe: +1 to his CC, he becomes a leader, and he gains the sage skill.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="5"/>
@@ -1183,7 +1186,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Ironfist"/>
 		</card>
-		<card name="Naugol" graphics="Naugol.jpg" text="Dwarves. 3 strikes. +2 prowess against Orcs. Detainment against hero companies. Playable keyed to any Dwarf-hold or site where a Dwarf-lord is present, or to the region containing such site. If played as a long-event: any attacks from Ride against the Enemy and Old Enemies using a Dwarf character or Dwarf faction receive +1 to strikes and prowess and choose defending Orc characters. Cannot be duplicated.">
+		<card name="Naugol" graphics="Naugol.jpg" text="Dwarves. Three strikes. +2 prowess against Orcs. Detainment against hero companies. As a creature, may be played at any Dwarf-hold or site where a Dwarf-lord is present; and may also be played keyed to the region containing such a site. As a long-event, Naugol gives +1 to strikes and prowess of any Dwarf attack created by Old Enemies, and it causes Ride Against the Enemy to give +1 to strikes and prowess of any Dwarf attack created by it. Cannot be duplicated.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature/Long-event"/>
@@ -1193,7 +1196,7 @@
 			 <attr key="strikes" value="3"/>
 			 <attr key="subclass" value="Dwarves"/>
 		</card>
-		<card name="Naugrim" graphics="Naugrim.jpg" text="All Dwarf attacks receive +1 prowess and +1 body; Dwarf attacks with no body have 5 body. Discard this card if a Dwarf attack is defeated. Cannot be duplicated.">
+		<card name="Naugrim" graphics="Naugrim.jpg" text="All Dwarf attacks receive +1 prowess and +1 body; all Dwarf attacks with no body have 5 body. Discard this card when a Dwarf attack is defeated. Cannot be duplicated.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1204,7 +1207,7 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="1"/>
 		</card>
-		<card name="Ninevet" graphics="Ninevet.jpg" text="Animal. 1 strike. Attacker chooses defending characters. May also be played keyed to a Swamp or site in a Coastal Sea [c] region and on a company moving with Port-on- River movement. If Terror from the Deeps is in play may also be played keyed to any Under-deeps site.">
+		<card name="Ninevet" graphics="Ninevet.jpg" text="Animal. One strike. Attacker chooses defending characters. May also be played at any swamp or site in a Coastal Sea [c] region. If Terror from the Deeps is in play, may also be played at any Under-deeps site.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
@@ -1215,7 +1218,7 @@
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Animals"/>
 		</card>
-		<card name="No Mouse Unnoticed" graphics="No Mouse Unnoticed.jpg" text="Unique. Balin specific. Place this card on Balin if he is in play. Balin may make a CP and (if still in play afterwards) look at a card placed on-guard at his company's site.">
+		<card name="No Mouse Unnoticed" graphics="No Mouse Unnoticed.jpg" text="Unique. Balin specific. Place this card on Balin if he is in play. Balin may make a CC and (if still in play afterwards) look at a card placed on-guard at his company's site.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1223,7 +1226,7 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Balin"/>
 		</card>
-		<card name="Norin" graphics="Norin.jpg" text="Unique. Ironfist. +2 prowess against Men,Orcs and Trolls. Swordmaster may be played on him as if he were a sage.">
+		<card name="Norin" graphics="Norin.jpg" text="Unique. Ironfist. +2 prowess against Men, Orcs and Trolls. Swordmaster may be played on Norin as if he were a sage, and also at any Ruins &amp; Lairs [R] (as if information were playable at the site).">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1237,13 +1240,12 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Ironfist"/>
 		</card>
-		<card name="Not Badly Off" graphics="Not Badly Off.jpg" text="Unique. Thorin specific. Playable if you have 10 P or more, and you receive any mp for Hoard Gathering or have stored at  least 3 major items at Blue Mountain Dwarf-hold. Each of your Dwarves with a home site Blue Mountain Dwarf-hold receives +1 to his CP and +1 mind; if such a character now has 3 mind, he gives 1 character mp and does not cost any influence to control.">
+		<card name="Not Badly Off" graphics="Not Badly Off.jpg" text="Unique. Thorin specific. Playable if you have 10 SP or more, and you receive any mp for Hoard Gathering or have stored at least 3 major items at Blue Mountain Dwarf-hold. Each of your Dwarves with a home site Blue Mountain Dwarf-hold receives +1 to his CC and +1 mind; if such a character now has 3 mind, he gives 1 character mp and does not cost any influence to control.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="mp" value="2"/>
-			 <attr key="sp" value="2"/>
+			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Thorin"/>
 		</card>
 		<card name="Nurunkhizdín" graphics="Nurunkhizdin.jpg" back="1" text="">
@@ -1256,8 +1258,8 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Eorstan"/>
 			 <attr key="haven" value="Rhûbar"/>
-			 <attr key="auto_attack" value="Dwarves -- each character faces a strike with 7 prowess (detainment; canceled if the company contains only Dwarves)"/>
-			 <attr key="special" value="Discard a treasure item from the company during the site phase to search your play deck or discard pile for a Dwarf character who has this site as his home site: character may join the company (if enough influence is available to control him)."/>
+			 <attr key="auto_attack" value="Dwarves - each character faces  a strike with 7 prowess (detainment; cancelled if the company contains only Dwarves)"/>
+			 <attr key="special" value=" During the organization phase you may discard a treasure item from the company to bring into play a Dwarf with this site as a home site (regardless of his mind); the character may be played from hand, discard pile or play deck, but enough influence must be available to control him."/>
 			 <attr key="keyword" value="Dwarf-hold"/>
 		</card>
 		<card name="Nurunkhizdín" graphics="Nurunkhizdin2.jpg" back="1" text="">
@@ -1271,11 +1273,11 @@
 			 <attr key="region" value="Eorstan"/>
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
-			 <attr key="auto_attack" value="Dwarves -- 4 strikes with 10 prowess (detainment if the company contains a Dwarf)*"/>
+			 <attr key="auto_attack" value="* Dwarves - 4 strikes with 10 prowess(detainment if the company contains a Dwarf)"/>
 			 <attr key="special" value="*You may discard a treasure item from a covert company at this site to cancel the automatic-attack."/>
 			 <attr key="keyword" value="Dwarf-hold"/>
 		</card>
-		<card name="Oakenshield" graphics="Oakenshield.jpg" text="Unique. Shield. Place this card on a manifestation of Thorin II if he is in play. +1 body to a maximum of 10. If on Thorin: tap: allow him to face a strike from an attack against his company regardless of the attack's normal abilities or his status. tap: during your end-of-turn phase to take Block from your play deck (reshuffle) or discard pile into hand.">
+		<card name="Oakenshield" graphics="Oakenshield.jpg" text="Unique. Shield. Place this card on Thorin II if he is in play. +1 body to a maximum of 10. tap: allow Thorin to face a strike from an attack against his company, regardless of the attack's normal abilities or his status. tap: during your end-of-turn phase to take one Block from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1285,28 +1287,29 @@
 			 <attr key="cp" value="1"/>
 			 <attr key="sp" value="1"/>
 			 <attr key="keyword" value="Battle-gear"/>
+			 <attr key="keyword" value="Shield"/>
 		</card>
-		<card name="Old Enemies" graphics="Old Enemies.jpg" text="Playable on a hero faction in play. Each overt company moving through the region containing the site where the faction was played, or a region adjacent to this one, faces an attack: same type as the faction, with a number of strikes equal to the faction’s mp value. Each strike has a prowess of 10 and body of 7. If the attack is defeated, discard the faction. Cannot be duplicated on a given faction.">
+		<card name="Old Enemies" graphics="Old Enemies.jpg" text="Playable on a unique hero faction in active play. Each overt company moving through the region containing the site where the faction was played (or region adjacent) faces an attack: same type as the faction, with a number of strikes equal to the faction's normal mp. Each strike has a prowess of 10, and a body of 9 minus the number of strikes assigned. If the attack is defeated, the faction is eliminated (an overt character in the company may take the faction as a trophy). Cannot be duplicated on a given faction.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Old Grudge" graphics="Old Grudge.jpg" text="All Dwarves in play receive +1 prowess against Orcs, Trolls, Dragons and Drakes. Discard this card when any attack of this type is defeated by a company containing a least 1 Dwarf. Cannot be duplicated.">
+		<card name="Old Grudge" graphics="Old Grudge.jpg" text="All Dwarves in play receive +1 prowess against Orcs (+2 for Longbeards), Trolls, Drakes and Dragons (+2 for Ironfists). Discard this card when an attack of these types is defeated by a company containing at least one Dwarf. Cannot be duplicated.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Orc-archers" graphics="Orcarchers.jpg" text="Playable on an Orc attack with at least 4 strikes before strikes are assigned; does not count against the hazard limit. Each character faces a strike with 6 prowess; prowess against this strike cannot be modified, but character receives +1 prowess for each armor, helmet, and/or shield he bears and is able to use. Strikes from Orc Archers are never detainment, regardless of the company, site, region, or region-type on which they are played.">
+		<card name="Orc-archers" graphics="Orcarchers.jpg" text="Playable on an Orc attack with at least four strikes (before strikes are assigned); does not count against the hazard limit. Each character in the attacked company must immediately face a strike with 6 prowess; he receives +1 prowess against this strike for each armor, helmet, and/or shield he bears. Afterwards the Orc attack is resolved normally.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Orc-tortured" graphics="Orctortured.jpg" text="Playble on a character facing a strike from an Orc creature attack. If the strike is successful he is not harmed and is taken prisoner at a Dark-hold [D], Shadow-hold [S], or Ruins &amp; Lairs [R] in the same or adjacent region. At the start of his untap phase, make a body check for that character. Rescue-attacks (2): Orcs -- 2 strikes with 7 prowess, Orcs -- 1 strike with 10 prowess.">
+		<card name="Orc-tortured" graphics="Orctortured.jpg" text="Playble on a character facing a strike from an Orc creature attack. If the strike is successful, target character is not harmed and is taken prisoner at a Dark-hold [D], Shadow-hold [S], or Ruins &amp; Lairs [R]. At the start of his untap phase, make a body check for that character modified by -1. Rescue-attacks (2): Orcs -  2 strikes with 7 prowess, Orcs -  1 strike with 10 prowess.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Orcish Marauders" graphics="Orcish Marauders.jpg" text="Orcs. 2 strikes. If all strikes against a moving company are successful, tap the company's new site.">
+		<card name="Orcish Marauders" graphics="Orcish Marauders.jpg" text="Orcs. Two strikes. If all strikes against a moving company are successful, the company's new site is tapped.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
@@ -1317,7 +1320,7 @@
 			 <attr key="strikes" value="2"/>
 			 <attr key="subclass" value="Orcs"/>
 		</card>
-		<card name="Origin of Stone" graphics="Origin of Stone.jpg" text="Command. Playable during the organization phase on a Dwarf-leader. Return all other command cards on target leader to your hand when this card is played. -2 to leader's EI (to a minimum of 0) and +1 prowess to all Dwarves in his company. +1 to your Under-deep movement rolls. You may return this card to your hand during your organization phase.">
+		<card name="Origin of Stone" graphics="Origin of Stone.jpg" text="Command. Playable on a Dwarf leader during the organization phase. Return all other command cards on target leader to your hand when this card is played. -2 to leader's EI (to a minimum of 0). +1 prowess to all Dwarves in his company and +1 to the company's Under-deeps movement rolls. You may return this card to your hand during your organization phase. Cannot be duplicated in a given company.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1325,12 +1328,12 @@
 			 <attr key="influence" value="-2"/>
 			 <attr key="keyword" value="Command"/>
 		</card>
-		<card name="Out of Practise" graphics="Out of Practise.jpg" text="Playable on a non-Hobbit character with 2 or more skills. Target character must attempt to move to a different site each turn or tap at the end of the organization phase. Tap another character in the same company during the organization phase to attempt to remove this card by making a roll: if the result is greater than 6, discard this card. Cannot be duplicated on a given character.">
+		<card name="Out of Practise" graphics="Out of Practise.jpg" text="Playable on a non-Hobbit character with two or more skills. Target character must attempt to move to a different site each turn or tap at the end of his organization phase. Once per turn during his organization phase, another character in the company may tap to attempt to remove this card. Make a roll: if the result is greater than 6, discard this card. Cannot be duplicated on a given character.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Pale Enchanted Gold" graphics="Pale Enchanted Gold.jpg" text="Hoard item. Treasure. Playable at any tapped or untapped site that contains a hoard. Discard this item to cancel a detainment attack by Elves or any one attack by Dwarves or Men against the company. Alternatively, discard to give +4 to an influence attempt against a Dwarf or Man character, ally or faction. Dragon- sickness may be played on the bearer of this item.">
+		<card name="Pale Enchanted Gold" graphics="Pale Enchanted Gold.jpg" text="Hoard item. Treasure. Playable at any tapped or untapped site that contains a hoard. Discard this item to cancel a detainment attack by Elves or any one attack by Dwarves or Men against the company. Alternatively, discard to give +4 to an influence attempt against a Dwarf or Man character, ally or faction. Dragon-sickness may be played on the bearer of this item.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Special Item"/>
@@ -1339,7 +1342,7 @@
 			 <attr key="keyword" value="Treasure"/>
 			 <attr key="keyword" value="Hoard Item"/>
 		</card>
-		<card name="Pathfinder" graphics="Pathfinder.jpg" text="+1 prowess against Orcs. -1 to all of his CC.-1 to his influence attempts. Cannot be duplicated on a company that does not contain a Dwarf-lord. tap: cancel a Drake, Orc or Troll attack keyed to Wilderness [w] (by type or name).">
+		<card name="Pathfinder" graphics="Pathfinder.jpg" text="+1 prowess against Orcs. -1 to his CC. -1 to his influence attempts. Unless it contains a manifestation of a Dwarf-lord, the company may contain only one Pathfinder. tap: cancel a Drake, Orc, or Troll attack keyed to Wilderness [w] against his company.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="2"/>
@@ -1352,40 +1355,40 @@
 			 <attr key="skills" value="Warrior/Ranger"/>
 			 <attr key="race" value="Dwarf"/>
 		</card>
-		<card name="Pipe" graphics="Pipe.jpg" text="Tap a non-Elf bearer during your end-of-turn phase and make a CC to bring one Longbottom Leaf, Old Toby, Pipe Weed or Smoke Rings from your discard pile to your play deck (reshuffle). If bearer is Gandalf or Saruman you may take one of these cards to your hand instead.">
+		<card name="Pipe" graphics="Pipe.jpg" text="Unless bearer is an Elf he may tap during the end-of-turn phase and make a CC to bring one Longbottom Leaf, Old Toby, Pipe Weed or Smoke Rings from your discard pile to your play deck and shuffle. If bearer is Gandalf or Saruman, you may take one of these cards to your hand instead.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Minor Item"/>
 			 <attr key="cp" value="1"/>
 		</card>
-		<card name="Pipe Weed" graphics="Pipe Weed.jpg" text="Playable on a non-Elf character bearing a Pipe or with a home site in Eriador. Tap the character. You may look at the top 5 cards of your play deck and place them back on top in any order you choose. Character makes a CC (modified by -2 for Hobbits).">
+		<card name="Pipe Weed" graphics="Pipe Weed.jpg" text="Playable on a non-Elf character bearing a Pipe or with a home site in Eriador. Tap the character. You may look at the top five cards of your play deck and place them back on top in any order you choose. Character makes a CC (modified by -2 if a Hobbit).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Pit Trap" graphics="Pit Trap.jpg" text="Playable on-guard on an ancient Dwarf-ruin or any site with a Dwarf, Orc, or Trap automatic-attack. Reveal this card after the company has faced any automatic-attacks. Make a roll and add 2 for every scout in the company; if the result is less than 13, all characters with the same random number as the result face an attack: Trap -- 1 strike with 14 prowess; character receives +1 to his prowess if he bears any armor, helmet or shield. Any following body check is modified by +2.">
+		<card name="Pit Trap" graphics="Pit Trap.jpg" text="Playable on-guard at an ancient Dwarf-ruin or site with a Dwarf, Orc, or Trap automatic-attack. Reveal this card after the company has faced all automatic-attacks. Make a roll and add 1 for every scout and every ranger in the company; if the result is less than 13, the company faces an attack: Trap - 1 strike with 12 prowess, which must be assigned to the character with the random number closest to the roll's result (defender's choice if tied). +1 to the defending character's prowess for any armor, helmet, or shield he bears. Any resulting body check is modified by +1.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Pity Mixed with Horror" graphics="Pity Mixed with Horror.jpg" text="Playable on a character. Make a CC for each corruption card played on the character; discard the corruption card after a successful CC. This card may also be played as a hazard.">
+		<card name="Pity Mixed with Horror" graphics="Pity Mixed with Horror.jpg" text="Playable on a character. Target character must make a CP for each corruption card he controls;  after each successful CC discard the corruption card. This card may also be played as a hazard.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Pocket Handkerchief" graphics="Pocket Handkerchief.jpg" text="May not be included with a starting company unless it contains a Hobbit. Discard this item to cancel any effect that would return bearer to your hand (or would discard him, if bearer is a Hobbit.)">
+		<card name="Pocket Handkerchief" graphics="Pocket Handkerchief.jpg" text="May not be included with a starting company (unless it contains a Hobbit). Discard this item to cancel any effect that would return the bearer to your hand this turn (or would discard him, if bearer is a Hobbit).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Minor Item"/>
 			 <attr key="cp" value="1"/>
 		</card>
-		<card name="Profitable Trade" graphics="Profitable Trade.jpg" text="Place this card in your mp. Any unique non-aninal, non-overt, non-special faction you have in play may be placed with this card; if there is a faction under this card, any additional factions under this card must be playable at different sites in the same or an adjacent region (or in the same territory). This card is worth 2 mp if there are at least 3 factions of different race placed with it.">
+		<card name="Profitable Trade" graphics="Profitable Trade.jpg" text="Place this card in your mp. Any unique faction you have in play (except Animal, overt and special factions) may be placed with this card. If there is a faction with this card, any additional factions must have been played at different sites in the same or an adjacent region (or in the same territory). This card is worth 2 mp if there are at least 3 factions of different race placed with it.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="mp" value="(2)"/>
 		</card>
-		<card name="Promise of Treasure" graphics="Promise of Treasure.jpg" text="Playable on a non-avatar Dwarf in your avatar's company (or in your starting company). +1 to his mind and +1 to his CP. Additionally, each of your Return to Old Dwellings in play is worth full mp. Discard this card if bearer transfers an item to another character. Cannot be duplicated on a given character.">
+		<card name="Promise of Treasure" graphics="Promise of Treasure.jpg" text="Playable on a non-avatar Dwarf in your avatar's company (or in your starting company). +1 to his mind and +1 to his CC. Additionally, each of your Return to Old Dwellings in play is worth full mp. Discard this card if bearer transfers an item to another character. Cannot be duplicated on a given character.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1393,14 +1396,14 @@
 			 <attr key="cp" value="+1"/>
 			 <attr key="sp" value="1"/>
 		</card>
-		<card name="Ravens of Northern Rhovanion" graphics="Ravens of Northern Rhovanion.jpg" text="Unique. Playable at any site in Northern Rhovanion if the influence check is greater than 8. Standard Modifications: Roäc the Raven or Carc in the company (+3). Longbeard Dwarves and characters with home site Dale or Lake Town may play this faction at a tapped site. tap: give +2 to an influence check against any hero faction playable at sites in Northern Rhovanion, Southern Rhovanion, Dorwinion and Iron Hills.">
+		<card name="Ravens of Northern Rhovanion" graphics="Ravens of Northern Rhovanion.jpg" text="Unique. Playable at any site in Northern Rhovanion if the influence check is greater than 8. Standard Modifications: Carc or Roäc the Raven is in the company (+3). Longbeard Dwarves and characters with home site Dale or Lake-town may play this faction at a tapped site. tap: give +2 to an influence check against a hero faction playable at a site in Northern Rhovanion, Southern Rhovanion, Dorwinion or Iron Hills.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Animal Faction"/>
 			 <attr key="mp" value="1"/>
 		</card>
-		<card name="Reconquest of Khazad-dûm" graphics="Reconquest of Khazaddum.jpg" text="Playable if you have Halls of Khazad-dûm in play.  Balrog players must use the minion version for Moria. Invert this card if one of your companies has defeated a manifestation of Balrog of Moria: it is worth 5 mp and all versions of Moria become a Free-hold [F] and a Dwarf-hold; replace all automatic-attacks with: Dwarves - 4 strikes with 10 prowess (detainment against hero companies; cancelled against your companies). Discard this card if Halls of Khazad-dûm is not in play. Cannot be duplicated by a given player.">
+		<card name="Reconquest of Khazad-dûm" graphics="Reconquest of Khazaddum.jpg" text="Playable if you have Halls of Khazad-dûm in play. Balrog players must use the minion version for Moria. Invert this card if one of your companies has defeated a manifestation of Balrog of Moria: it is worth 5 mp and all versions of Moria become a Free-hold [F] and a Dwarf-hold; replace all automatic-attacks with: Dwarves - 4 strikes with 10 prowess (detainment against hero companies; cancelled against your companies). Discard this card if Halls of Khazad-dûm is not in play. Cannot be duplicated by a given player.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1411,7 +1414,7 @@
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Return to Old Dwellings" graphics="Return to Old Dwellings.jpg" text="Playble during the site phase on an ancient Dwarf-ruin with an automatic-attack. The company faces all automatic-attacks again, with +2 to prowess and strikes. Afterwards, opponent may search his sideboard, play deck or discard pile for a creature playable at the site, which attacks the company. None of these attacks may be cancelled. After these attacks, tap a Dwarf in the company or discard this card. The site becomes a Ruins &amp; Lairs [R]. All its automatic-attacks have their number of strikes reduced to one; discard any Invade Their Domain in play at the site. The site does not leave active play until this card is discarded. Discard this card if any opponent plays a minion faction or Invade Their Domain at the site. Cannot be duplicated on a given site. ">
+		<card name="Return to Old Dwellings" graphics="Return to Old Dwellings.jpg" text="Playable during the site phase on an ancient Dwarf-ruin with an automatic-attack. The company faces all automatic-attacks again, with +2 to prowess and strikes. Afterwards, opponent may search his sideboard, play deck or discard pile for a creature playable at the site, which attacks the company. None of these attacks may be cancelled. After these attacks, tap a Dwarf in the company or discard this card. The site becomes a Ruins &amp; Lairs [R]. All its automatic-attacks have their number of strikes reduced to one; discard any Invade Their Domain in play at the site. The site does not leave active play until this card is discarded. Discard this card if any opponent plays a minion faction or Invade Their Domain at the site. Cannot be duplicated on a given site.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1427,8 +1430,8 @@
 			 <attr key="region" value="Under-deeps"/>
 			 <attr key="adjacent" value="Blue Mountain Dwarf-hold (11)*, The Drowning-deeps (11)*"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
-			 <attr key="auto_attack" value="(1st) Traps -- 3 strikes with 8 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-hold [S]"/>
-			 <attr key="special" value=" Ancient Dwarf-ruin. * Hero companies may discard a Lost Knowledge card from the company to lower the movement roll by 7."/>
+			 <attr key="auto_attack" value=" (1st) Rock Fall  - 3 strikes with 8 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-holds [S]."/>
+			 <attr key="special" value="Ancient Dwarf-ruin. *Discard a Lost Knowledge card from a company moving to/from this site to give +7 to its Under-deeps movement roll."/>
 			 <attr key="keyword" value="Ancient Dwarf-ruin"/>
 		</card>
 		<card name="Ruins of Nogrod" graphics="Ruins of Nogrod.jpg" back="1" text="">
@@ -1442,7 +1445,7 @@
 			 <attr key="adjacent" value="Blue Mountain Dwarf-hold (11)*, The Drowning-deeps (11)*, The Under-caves (11)*"/>
 			 <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
 			 <attr key="auto_attack" value="(1st) Traps -- 4 strikes with 10 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-hold [S]"/>
-		     <attr key="special" value=" Ancient Dwarf-ruin. * Hero companies may discard a Lost Knowledge card from the company to lower the movement roll by 7."/>
+		     <attr key="special" value="Ancient Dwarf-ruin. *Discard a Lost Knowledge card from a company moving to/from this site to give +7 to its Under-deeps movement roll."/>
 			 <attr key="keyword" value="Ancient Dwarf-ruin"/>
 		</card>
 		<card name="Shimmer of Hope" graphics="Shimmer of Hope.jpg" text="Playable on a company at an Under-deeps surface site which is a Ruins &amp; Lairs [R], Shadow-hold [S] or Dark-hold [D]. The company may either move an additional region when moving this turn, or you may discard as many corruption cards from characters in the company as there are strikes in the site's first automatic-attack. Cannot be duplicated on a given turn.">
@@ -1450,16 +1453,17 @@
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="Son of Dáin" graphics="Son of Dain.jpg" text="Unique. Dwarf-lord only. Playable on Thorin III Stonehelm. He becomes a leader. +1 prowess against Men. If Dáin II has been eliminated, you may take this card from your sideboard to your hand and Thorin III Stonehelm receives +3 EI. If you are Dáin, Thorin III costs only 4 points of influence to control and may only be controlled by Dáin or GI. tap: during your end-of-turn phase to take a non- unique Dwarf character from your discard pile to your hand.">
+		<card name="Son of Dáin" graphics="Son of Dain.jpg" text="Unique. Dwarf-lord only. Playable on Thorin III Stonehelm. He becomes a leader. +1 prowess against Men. If Dáin II has been eliminated, you may take this card from your sideboard to your hand and Thorin III Stonehelm receives +3 DI. If you are Dáin, Thorin III costs only 4 points of influence to control and may only be controlled by Dáin or GI. tap: during your end-of-turn phase to take a non-unique Dwarf character from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
-			 <attr key="influence" value="+3"/>
+			 <attr key="influence" value="(+3)"/>
+			 <attr key="prowess" value="(+1)"/>
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Son of Fundin" graphics="Son of Fundin.jpg" text="Unique. Balin specific. Place this card on Balin if he is in play. If this is a starting stage card one of your starting minor items may be Share of the Treasure. tap: during your your end-of-turn phase (if on Balin) to take Return to Khazad-dûm, Lord of Dwarrowdelf or a non-unique Dwarf character from your discard pile to your hand.">
+		<card name="Son of Fundin" graphics="Son of Fundin.jpg" text="Unique. Balin specific. If this is a starting stage card, one of your starting minor items may be Share of the Treasure. Place this card on Balin if he is in play. tap: during your your end-of-turn phase to take one Lord of Dwarrowdelf, Orc-mail, Return to Old Dwellings, or a non-unique Dwarf character from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1467,7 +1471,7 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Balin"/>
 		</card>
-		<card name="Son of Nain" graphics="Son of Nain.jpg" text="Unique. Dáin specific. Place this card on Dáin if he is in play. If this is a starting stage card one of your starting minor items may be Necklace of Silver and Pearls. tap: during your end-of-turn phase (if on Dáin) to take Mining Settlement, Strength from the Ered Engrin or a non-unique Dwarf character from discard pile to your hand.">
+		<card name="Son of Nain" graphics="Son of Nain.jpg" text="Unique. Dáin specific. If this is a starting stage card, one of your starting minor items may be Necklace of Silver and Pearls. Place this card on Dáin if he is in play. tap: during your end-of-turn phase to take one Mining Settlement, Kingdom of Old Restored, Strength from the Ered Engrin, or a non-unique Dwarf character from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1475,7 +1479,7 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Dáin"/>
 		</card>
-		<card name="Son of Thráin" graphics="Son of Thrain.jpg" text="Unique. Thorin specific. Place this card on Thorin if in play. If this is a starting stage card one of your starting minor items may be Thrór's Map. tap: during your end-of-turn phase (if on Thorin) to take King under the Mountain, Master of Esgaroth, Old Predjudice or a non-unique Dwarf character from discard pile to hand.">
+		<card name="Son of Thráin" graphics="Son of Thrain.jpg" text="Unique. Thorin specific. If this is a starting stage card, one of your starting minor items may be Thrór's Map. Place this card on Thorin if he is in play. tap: during your end-of-turn phase to take one King under the Mountain, Master of Esgaroth, Old Prejudice, or a non-unique Dwarf character from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1483,7 +1487,7 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Thorin"/>
 		</card>
-		<card name="Son of Thrór" graphics="Son of Thror.jpg" text="Unique. Thráin specific. Place this card on Thráin if in play. If this is a starting stage card one of your starting minor items may be Lost Tome. tap: during your end-of-turn phase (if on Thráin) to take Last of the Seven, Lord of Dwarrowdelf, or Test of Fire from discard pile to hand.">
+		<card name="Son of Thrór" graphics="Son of Thror.jpg" text="Unique. Thráin specific. If this is a starting stage card, one of your starting minor items may be Lost Tome. Place this card on Thráin if he is in play. tap: during your end-of-turn phase to take one Last of the Seven, Lord of Dwarrowdelf, or Test of Form from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1492,13 +1496,14 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Thráin"/>
 		</card>
-		<card name="Songs of the Old" graphics="Songs of the Old.jpg" text="Dwarf only. Untap all instrument items in the company. Additionally, you may take an instrument item playable at the site from your discard pile to your hand. If the Dwarf is at an Ancient Dwarf-ruin and bears an instrument, you may take any Dwarf specific resource from your discard pile to your hand instead.">
+		<card name="Songs of the Old" graphics="Songs of the Old.jpg" text="Dwarf only. Song. Untap all instrument items in the company. Additionally, you may take an instrument item playable at the Dwarf's current site from your discard pile to your hand. If the Dwarf is at an Ancient Dwarf-ruin and bears an instrument, you may take one Dwarf only or Dwarf-lord only resource (not Songs of the Old) from your discard pile to your hand instead.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Song"/>
+			 <attr key="keyword" value="Dwarf only"/>
 		</card>
-		<card name="Strength from the Ered Engrin" graphics="Strength from the Ered Engrin.jpg" text="Unique. Dáin specific. If you have a Dwarf faction in play in Wilderland or The Northern Waste, any attacks from Ahunt Dragon manifestations against your companies in these territories receive -1 to strikes, prowess and body (after all other modifiers; to no minimum).">
+		<card name="Strength from the Ered Engrin" graphics="Strength from the Ered Engrin.jpg" text="Unique. Dáin specific. Attacks created by Dragon hazard manifestations against your companies at or moving to a site in Wilderland or The Northern Waste receive -1 to strikes, prowess, and body (to a minimum of 2) for each Dwarf faction you have in play at sites in these territories. Discard this card when you have defeated such a modified attack.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1506,7 +1511,7 @@
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dáin"/>
 		</card>
-		<card name="Swordmaster" graphics="Swordmaster.jpg" text="Sage only. Playable on an untapped sage at an untapped site where Information is playable during site phase. Tap the site and the sage. Gives the sage warrior skill. If the sage is already a warrior, he can use 2weapons (both modifiers count). If he uses 2 weapons, he can not use a shield. Cannot be duplicated on a given character.">
+		<card name="Swordmaster" graphics="Swordmaster.jpg" text="Sage only. Playable during the site phase on a sage at a site where Information is playable. Tap the sage and the site. The sage gains the warrior skill. If he is already a warrior, he can use two weapons (or a two-handed weapon and a shield); both modifiers count. If he uses two weapons, he cannot use a shield. May not be duplicated on a given character.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1514,17 +1519,17 @@
 			 <attr key="keyword" value="Information"/>
 			 <attr key="keyword" value="Sage only"/>
 		</card>
-		<card name="Ta-Fa-Lisch" graphics="TaFaLisch.jpg" text="Undead. 3 strikes. Playable at any Ancient Dwarf-ruin or site containing a hoard. Unless the attack is cancelled or defeated, place this card with the site to which it was keyed. Place Ta-fa-lisch with the first character to play an item at the site. Character faces an attack from this creature at the start of every movement/hazard phase (as if a single character company, not counting against the hazard limit) until it is defeated or the item it was transfered with is stored or leaves play (then remove this card from the game).">
+		<card name="Ta-Fa-Lisch" graphics="TaFaLisch.jpg" text="Undead. Three strikes. May be played at any ancient Dwarf-ruin or site containing a hoard. Unless the attack is cancelled or defeated, place Ta-Fa-Lisch with the site. After an item is played at the site, place this card with the item. The bearer of target item faces an attack from this creature at the start of each of his movement/hazard phases (as if a single character company) until it is defeated, or until the item is stored or leaves active play (then remove this card from the game). ">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
-			 <attr key="prowess" value="10"/>
+			 <attr key="prowess" value="8"/>
 			 <attr key="body" value="-"/>
 			 <attr key="mp" value="1"/>
 			 <attr key="strikes" value="3"/>
 			 <attr key="subclass" value="Undead"/>
 		</card>
-		<card name="Tarin" graphics="Tarin.jpg" text="Unique. Firebeard. Agent. +1 prowess against Orcs and Elves. Agent only: May move to any Dwarf-hold (even if a Protected Lord-haven H). tap: discard an item stored at (or placed with) his current site (defender's choice).">
+		<card name="Tarin" graphics="Tarin.jpg" text="Unique. Firebeard. Agent. +1 prowess against Elves. -1 to his CC. Agent only: tap: return one item or ore resource (of defender's choice) stored at (or placed with) Tarin's current site to opponent's hand.">
 			 <attr key="type" value="Minion Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="agent" value="yes"/>
@@ -1543,7 +1548,7 @@
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="The Back Door" graphics="The Back Door.jpg" text="On any company moving through a mountain region (or region adjacent) that contains an Orc-hold, one Orc hazard creature may be played for each non-scout, non-ranger character in the company, regardless of the company's site path and not counting against the hazard limit. Alternatively, if Doors of Night is in play, non-unique Orc creatures can be keyed to surface sites of any Under-deeps site.">
+	   <card name="The Back Door" graphics="The Back Door.jpg" text="Non-unique Orc hazard creatures may be played keyed to any mountain region or region containing an Orc-hold; and also at sites in such regions. If Doors of Night or Shadow of Mordor is in play, they may also be played at any Under-deeps surface site.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Long-event"/>
@@ -1561,6 +1566,7 @@
 			 <attr key="playable" value="Information, Items (minor)"/>
 			 <attr key="special" value="you may play Eagle Mounts here as if at Eagles Eyrie."/>
 			 <attr key="auto_attack" value="Animals. Bears - 2 strikes with 6 prowess (detainment against a company containing a character with home site Beorn's House)"/>
+			 <attr key="special" value="Port-on-Anduin. You may play Eagle-mounts here as if at Eagles' Eyrie."/>
 		</card>
 		<card name="The Carrock" graphics="The Carrock2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1572,9 +1578,9 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Anduin Vales"/>
 			 <attr key="haven" value="Dol Guldur"/>
-			 <attr key="playable" value="Information, Items (minor, major*) *—non-battle-gear items only—"/>
+			 <attr key="playable" value="Information, Items (minor)"/>
 			 <attr key="auto_attack" value="Animals. Bears -- 2 strikes with 9 prowess"/>
-			 <attr key="special" value="Lord of the Carrock may always be played at this site against an overt company regardless of any other cards played."/>
+			 <attr key="special" value="Port-on-Anduin. Lord of the Carrock may always be played at this site against an overt company, regardless of any other cards played or the hazard limit."/>
 		</card>
 		<card name="The Drowning-deeps" graphics="The Drowningdeeps.jpg" back="1" text="">
 			 <attr key="type" value="Dual Site"/>
@@ -1584,10 +1590,10 @@
 			 <attr key="draw" value="2"/>
 			 <attr key="draw_opp" value="3"/>
 			 <attr key="region" value="Under-deeps"/>
-			 <attr key="adjacent" value="Blue Mountain Dwarf-hold (8), Remains of Thangorodrim (10), Ruins of Belegost (11), Ruins of Nogrod (11), The Under-vaults (9),"/>
+			 <attr key="adjacent" value="Blue Mountain Dwarf-hold (9), Remains of Thangorodrim (9), Ruins of Belegost (11), Ruins of Nogrod (11), The Under-vaults (9)"/>
 			 <attr key="playable" value="Items (minor, major)"/>
-			 <attr key="auto_attack" value="(1st) Drake -- 2 strikes with 11 prowess; (2nd) Opponent may play as an automatic-attack 1 non-unique hazard creature from his hand normally keyed to CoastalSeas [c]."/>
-			 <attr key="special" value="Creatures keyed to Coastal Sea [c] may be keyed to this site."/>
+			 <attr key="auto_attack" value="(1st) Drake - 2 strikes with 11 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Coastal Seas [c]"/>
+			 <attr key="special" value="Any creature playable keyed to Coastal Seas may be played keyed to this site."/>
 		</card>
 		<card name="The Rusted-deeps" graphics="The Rusteddeeps.jpg" back="1" text="">
 			 <attr key="type" value="Dual Site"/>
@@ -1597,16 +1603,17 @@
 			 <attr key="draw" value="2"/>
 			 <attr key="draw_opp" value="3"/>
 			 <attr key="region" value="Under-deeps"/>
-			 <attr key="adjacent" value=" Iron Hill Dwarf-hold (8), Barak-shathûr (8), Mines of Falek-dim (8), Ruins of Kheledkhizdín (8), The Cobalt-deeps (8), The Wind-deeps (9)"/>
+			 <attr key="adjacent" value="Iron Hill Dwarf-hold (8), Barak-shathûr (8), Mines of Falek-dim (8), Ruins of Kheledkhizdín (8), The Cobalt-deeps (8), The Wind-deeps (9)"/>
 			 <attr key="playable" value="Items (minor, major)"/>
-			 <attr key="auto_attack" value="(1st) Drake -- 2 strikes with 11 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to a Shadow-hold [S]"/>
-			 <attr key="special" value="Any Dragon creature playable keyed to a site in Wilderland may be keyed to this site."/>
+			 <attr key="auto_attack" value="(1st) Drake - 2 strikes with 11 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-holds [S]"/>
+			 <attr key="special" value=" Any Dragon creature playable keyed to a site in Wilderland may be played at this site."/>
 		</card>
-		<card name="The Seven Houses" graphics="The Seven Houses.jpg" text="Unique. Dwarf-lord only. Playable if you have in play at least 7 P and two non-Longbeard Dwarves of different descent (e.g. Firebeard, Ironfist, etc.). This card is worth 1 mp for each of your Dwarf factions in active play. Discard this card if the conditions to play it do not exist. tap: during your end-of-turn phase to take a Dwarf faction or a non-unique Dwarf character from your discard pile to your hand.">
+		<card name="The Seven Houses" graphics="The Seven Houses.jpg" text="Unique. Dwarf-lord only. Playable if you have in play at least 7 SP and two non-Longbeard Dwarves of different descent (e.g. Firebeard, Ironfist, etc.). This card is worth 1 mp for each of your Dwarf factions in active play. Discard this card if the conditions to play it do not exist. tap: during your end-of-turn phase to take a Dwarf faction or a non-unique Dwarf character from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
+			 <attr key="mp" value="(*)"/>
 			 <attr key="sp" value="2"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
@@ -1616,14 +1623,14 @@
 			 <attr key="unique" value="yes"/>
 			 <attr key="site_type" value="{R}"/>
 			 <attr key="draw" value="1"/>
-			 <attr key="draw_opp" value="4"/>
+			 <attr key="draw_opp" value="3"/>
 			 <attr key="region" value="Under-deeps"/>
 			 <attr key="adjacent" value="The Wind Throne (0), The Cobalt-deeps (5), The Rusted-deeps (9), The Under-leas (6)"/>
 			 <attr key="playable" value="Items (minor, major)"/>
-			 <attr key="auto_attack" value="(1st) Orcs (1st attack) -- 3 strikes with 7 prowess; (2nd) Opponent may play as an automatic- attack 1 non- unique hazard creature from his hand normally keyed to a Shadow-hold [S]"/>
+			 <attr key="auto_attack" value="(1st) Orcs - 3 strikes with 7 prowess; (2nd) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to Shadow-holds [S]"/>
 			 <attr key="special" value="Any Drake creature not playable keyed to a Desert [e] region may be keyed to this site."/>
 		</card>
-		<card name="This Cannot Be Borne!" graphics="This Cannot Be Borne.jpg" text="Unique. Dwarf-lord only. Playable on your Dwarf-lord if you have in active play at least: 10 P, 1 Dwarf faction, The Seven Houses, and 5 Dwarf characters. +1 to his CP. Invert this card during the site phase at an ancient Dwarf-ruin if the company has eliminated a manifestation of a Dragon or Spawn creature while at the site that turn. If inverted, this card is worth 2 mp, and the next influence attempt made by your Lord against a Dwarf faction or character, or against an ally or item controlled by a Dwarf, is automatically successful; afterwards, place this card in your mp.">
+		<card name="This Cannot Be Borne!" graphics="This Cannot Be Borne.jpg" text="Unique. Dwarf-lord only. Playable on your Dwarf-lord if you have in active play at least: 10 SP, 1 Dwarf faction, The Seven Houses, and 5 Dwarf characters. +1 to his CP. Invert this card during the site phase at an ancient Dwarf-ruin if the company has eliminated a manifestation of a Dragon or Spawn creature while at the site that turn. If inverted, this card is worth 2 mp, and the next influence attempt made by your Lord against a Dwarf faction or character, or against an ally or item controlled by a Dwarf, is automatically successful; afterwards, place this card in your mp.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1633,12 +1640,13 @@
 			 <attr key="sp" value="4"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="Thorin" graphics="Thorin2.jpg" text="Unique. Manifestation of Thorin II. Longbeard. Leader. +2 EI against Dwarves. +3 prowess against Orcs, +1 prowess against Trolls. -3 mp if eliminated. If you are Thorin, you may keep 1 more card than normal in your hand if Reconquest of Khazad-dûm is in play. If King under the Mountain is played on him it is worth full mp, and when at the site where the Dragon was defeated you may keep 1 more card than normal in hand.">
+		<card name="Thorin" graphics="Thorin2.jpg" text="Unique. Manifestation of Thorin II. Longbeard. Leader. +2 DI against Dwarves. +2 prowess against Orcs, Trolls, and Wolves. -3 mp if eliminated. If you are Thorin, values in brackets apply and your hoard items are worth full mp. If you have Reconquest of Khazad-dûm in play and/or King under the Mountain is played on him, you may keep one more card than normal in your hand.">
 			 <attr key="rarity" value="C"/>
 			 <attr key="prowess" value="6"/>
 			 <attr key="body" value="8"/>
+			 <attr key="gi" value="18"/>
 			 <attr key="mind" value="9"/>
-			 <attr key="influence" value="3"/>
+			 <attr key="influence" value="3(4)"/>
 			 <attr key="mp" value="3"/>
 			 <attr key="home_site" value="Blue Mountain Dwarf-hold"/>
 			 <attr key="race" value="Dwarf"/>
@@ -1648,7 +1656,7 @@
 			 <attr key="keyword" value="Avatar"/>
 			 <attr key="keyword" value="Leader"/>
 		</card>
-		<card name="Thorin III Stonehelm" graphics="Thorin III Stonehelm.jpg" text="Unique. Longbeard. +2 EI against Dwarves. +1 prowess against Orcs and Wolves. Any resource playable on a manifestation of Dáin II may also be played on Thorin III Stonehelm, if a manifestation of Dáin II is not in play.">
+		<card name="Thorin III Stonehelm" graphics="Thorin III Stonehelm.jpg" text="Unique. Longbeard. +2 DI against Dwarves. +1 prowess against Men, Orcs and Wolves. If Dáin II has been eliminated, Thorin III Stonehelm is considered a Dwarf-lord for the purpose of playing and interpreting resources, and King under the Mountain may be played on him (as if on Dáin II). tap: take one All the Bells Ringing from your discard pile to your hand.">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
@@ -1662,13 +1670,14 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Longbeard"/>
 		</card>
-		<card name="Thráin" graphics="Thrain2.jpg" text="Unique. Manifestation of Thráin II. Longbeard. Leader.+3 EI against Dwarves. +1 prowess against Dragons, Drakes, Orcs and Trolls. -3 mp if eliminated. If you are Thráin, all treasure items played at The Lonely Mountain are worth full mp. If King under the Mountain is played on him it is worth full mp, and when at the site where the Dragon was defeated you may keep 1 more card than normal in hand. If Lord of Dwarrowdelf is played on him and he is at Moria you may keep 1 more card than normal in hand.">
+		<card name="Thráin" graphics="Thrain2.jpg" text="Unique. Manifestation of Thráin II. Longbeard. Leader. +3 DEI against Dwarves. +1 prowess against Dragons, Drakes, Orcs and Trolls. -3 mp if eliminated. If you are Thráin, values in brackets apply and your treasure items are worth full mp. If King under the Mountain and/or Lord of Dwarrowdelf is played on Thráin, you may keep one more card than normal in your hand.">
 			 <attr key="rarity" value="C"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="prowess" value="7"/>
 			 <attr key="body" value="8"/>
+			 <attr key="gi" value="18"/>
 			 <attr key="mind" value="10"/>
-			 <attr key="influence" value="3"/>
+			 <attr key="influence" value="3(6)"/>
 			 <attr key="mp" value="3"/>
 			 <attr key="home_site" value="Any Dwarf-hold"/>
 			 <attr key="race" value="Dwarf"/>
@@ -1678,18 +1687,18 @@
 			 <attr key="keyword" value="Avatar"/>
 			 <attr key="keyword" value="Leader"/>
 		</card>
-		<card name="Threat of Many Feet" graphics="Threat of Many Feet.jpg" text="Does not count against the hazard limit. Against moving companies hazard creatures may be keyed to the site of origin (or the last site moved to this turn). Cannot be duplicated.">
+		<card name="Threat of Many Feet" graphics="Threat of Many Feet.jpg" text="Does not count against the hazard limit. Against moving companies hazard creatures may be played keyed to the site of origin (or the last site moved to this turn). Cannot be duplicated.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Long-event"/>
 		</card>
-		<card name="Three Guesseses" graphics="Three Guesseses.jpg" text="When making a riddling roll, make 3 rolls modified by -2 and choose any of the results to use. May also be played during opponent's site phase.">
+		<card name="Three Guesseses" graphics="Three Guesseses.jpg" text="When making a riddling roll, make three rolls modified by -2 and choose one of the results to use. May also be played during your opponent's site phase, if a riddling roll is called for.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Riddling attempt"/>
 		</card>
-		<card name="Thulin II" graphics="Thulin II.jpg" text="Unique. Ironfist. +2 EI against Dwarves. +2 prowess against Dwarves. If played as a hero character and not controlled by your avatar, make a roll during the untap phase; if the result is less than 5 discard Thulin II (one item may be transferred).">
+		<card name="Thulin II" graphics="Thulin II.jpg" text="Unique. Ironfist. +2 DI against Dwarves. +2 prowess against Dwarves. When in play as a hero character and not controlled by your avatar, make a roll during the untap phase; if the result is less than 5, discard Thulin II (one item may be transferred to a character in his company).">
 			 <attr key="type" value="Minion Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="5"/>
@@ -1702,7 +1711,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Ironfist"/>
 		</card>
-		<card name="Tupór" graphics="Tupor.jpg" text="Unique. Firebeard. +1 EI against Dwarves. +1 prowess against Orcs and Wolves. Túpor is considered a sage for the purpose of riddling attempts; any resource played to modify a riddling roll may be taken to hand instead of discarding it after a non-successful riddling attempt.">
+		<card name="Tupór" graphics="Tupor.jpg" text="Unique. Firebeard. +1 DI against Dwarves. +1 prowess against Orcs and Wolves. Túpor is considered a sage for the purpose of riddling attempts. You may take any resource played to modify a riddling roll in his company to hand instead of discarding it from play (it may not be used for the same riddling roll).">
 			 <attr key="type" value="Hero Character"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="prowess" value="5"/>
@@ -1715,7 +1724,7 @@
 			 <attr key="race" value="Dwarf"/>
 			 <attr key="keyword" value="Firebeard"/>
 		</card>
-		<card name="Value Food and Cheer" graphics="Value Food and Cheer.jpg" text="Playable on a character. Tap character if untapped. +2 to any rolls to remove hazards played on target character (+5 if you discard a food item from the company).">
+		<card name="Value Food and Cheer" graphics="Value Food and Cheer.jpg" text="Playable on a character. Tap character if untapped. +2 to any rolls to remove hazards played on target character (+5 if you discard a food item from the company, for no other effect).">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
@@ -1731,18 +1740,18 @@
 			 <attr key="keyword" value="Two-handed"/>
 			 <attr key="keyword" value="Warrior only"/>
 		</card>
-		<card name="We Must Away!" graphics="We Must Away.jpg" text="Playable at the end of the organization phase on a moving company that contains at least 2 Dwarves. Untap all characters in the company. The company may move an additional region this turn (to a maximum of 6). Cannot be duplicated on a given company.">
+		<card name="We Must Away!" graphics="We Must Away.jpg" text="Playable at the end of the organization phase on a moving company that contains at least two Dwarves. Untap all characters in the company. The company may move an additional region this turn (to a maximum of 6). Cannot be duplicated on a given company.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
 		</card>
-		<card name="What Have I Got in My Pocket?" graphics="What Have I Got in My Pocket.jpg" text="Riddling Attempt. Playable during the site phase on a character at the same site as one of opponent's companies. Tap the character. Opponent chooses a character from his company for this riddling attempt. Each player makes a riddling roll, modified by +2 if his character is a sage and by +1 if a Hobbit (re-roll ties). The player with the highest result wins: he names an item (not a unique item already in play) and the other player reveals his hand. If the item is revealed the winner may immediately play that item with the riddling character from hand or discard pile; loser discards the revealed item.">
+		<card name="What Have I Got in My Pocket?" graphics="Riddling attempt. Playable during the site phase on a character at the same site as one of opponent's companies. Tap the character. Opponent chooses a character from his company for this riddling attempt. Each player makes a riddling roll, modified by +2 if his character is a sage and by +2 if a Hobbit (re-roll ties). The player with the highest result wins: he names an item (not a unique item already in play) and the other player reveals his hand. If the item is revealed the winner may immediately play a copy of the item with the riddling character from his hand, discard pile or sideboard (this does not tap the site); loser discards the revealed item.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Short-event"/>
 			 <attr key="keyword" value="Riddling attempt"/>
 		</card>
-		<card name="Without a Glance of Longing" graphics="Without a Glance of Longing.jpg" text="Playable on a company during the organization phase. Any CC made by characters in the company this organization phase resulting from attempts to transfer or store items or events are modified by +2.">
+		<card name="Without a Glance of Longing" graphics="Without a Glance of Longing.jpg" text="Playable on a company. Any CC made by characters in the company from attempts to play or transfer items, or from storing items or events are modified by +2 this turn. Cannot be duplicated on a given company in a given turn.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
