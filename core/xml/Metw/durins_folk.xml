@@ -898,7 +898,7 @@
 			 <attr key="sp" value="3"/>
 			 <attr key="specific" value="Dwarf-lord"/>
 		</card>
-		<card name="King Spider" graphics="King Spider.jpg" text="Spider. Traps. Before assigning strikes, opponent must call odds or even. To assign strikes, each character in the company makes a roll: if the result corresponds with opponent's choice, the character must face a strike (resolve the strike immediately). Attack or strikes of King Spider cannot be cancelled by general card effects (e.g. Ruse), but a scout may tap to cancel a strike he is facing.">
+		<card name="King-spider" graphics="Kingspider.jpg" text="Spider. Traps. Before assigning strikes, opponent must call odds or even. To assign strikes, each character in the company makes a roll: if the result corresponds with opponent's choice, the character must face a strike (resolve the strike immediately). Attack or strikes of King Spider cannot be cancelled by general card effects (e.g. Ruse), but a scout may tap to cancel a strike he is facing.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Creature"/>
