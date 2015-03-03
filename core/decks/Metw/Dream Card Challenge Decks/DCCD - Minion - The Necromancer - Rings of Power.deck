@@ -12,15 +12,14 @@ Deck
 
 1 Vaal Gark (SL)
 
-# Dual Resource (5)
+# Dual Resource (3)
 
-1 Flight Unmarked (RS)
 1 Local Hospitality (RS)
-1 Mornaugrim (DF)
 2 Rings of Power (RS)
 
 # Hazard (34)
 
+1 Ambusher (TW)
 1 An Unexpected Outpost (DM)
 1 Black Crows (FB)
 1 Caran-carach (NE)
@@ -31,17 +30,17 @@ Deck
 1 Demons of Aglarond (TI)
 3 Doors of Night (TW)
 1 Echoes of Morgoth's Cry (ML)
+1 Eloeklo, Lindor's Bane (NW)
 1 Foolish Words (TD)
 1 Many Sorrows Befall (TD)
 1 Morgai-flies (NM)
 1 Morgul Night (TW)
 1 Mouth of Sauron (TW)
-1 Nameless Thing (DM)
 3 Nobody's Friend (DM)
 1 Out of Practise (DF)
 1 Peril Returned (TD)
 1 Power Built by Waiting (AS)
-2 Slayer (LE)
+1 Sellswords Between Charters (LE)
 1 Twilight (LE)
 2 Vampire (NE)
 3 Were-wolf (NE)
@@ -55,7 +54,7 @@ Deck
 1 Tarin (DF)
 1 Wolf (TI)
 
-# Minion Resource (29)
+# Minion Resource (31)
 
 3 A Nice Place to Hide (LE)
 2 Blasting Fire (WH)
@@ -64,8 +63,10 @@ Deck
 1 Dark Tryst (AS)
 1 Hatred (NE)
 3 Hold Rebuilt and Repaired (AS)
-1 Iron-road (LE)
-2 Not Slay Needlessly (LE)
+2 Iron-road (LE)
+1 News Must Get Through (LE)
+1 Not Slay Needlessly (LE)
+1 Orcs of Dol Guldur (AS)
 1 Secrets of Their Forging (LE)
 4 The Necromancer (NE)
 1 Tokens to Show (AS)
@@ -102,19 +103,21 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (1)
+# Dual Resource (3)
 
+1 Flight Unmarked (RS)
 1 Mordor in Ruins (NE)
+1 Mornaugrim (DF)
 
 # Hazard (9)
 
 1 Angmar Arises (DM)
+1 Choking Shadows (TW)
 1 Demons of Vatra (SL)
+1 Drowning Seas (TW)
 1 Heritage Forsaken (WR)
-1 Lost in Free-domains (TW)
 1 Many Shapes of Power and Fear (ML)
 1 Muster Disperses (TW)
-1 Pilfer Anything Unwatched (AS)
 1 Reaching Shadow (DM)
 1 Seek without Success (DM)
 
@@ -122,63 +125,63 @@ Sideboard
 
 1 Vein of Arda (DM)
 
-# Minion Resource (19)
+# Minion Resource (17)
 
 1 Abhorred Ring (NE)
+1 Black Steed (NE)
 1 Bolvag (NE)
 1 Bright Gold Ring (LE)
 2 Broad-headed Spear (LE)
-1 Dwarven Ring of Durin's Tribe [M] (LE)
-1 Gleaming Gold Ring (LE)
+1 Dwarven Ring of Dwálin's Tribe [M] (LE)
 1 Knowledge of Nenya (FB)
 1 Lord of Gifts (NM)
 1 Magic Ring of Fury (LE)
 1 Magic Ring of Savagery (LE)
 1 Maranya (FP)
 1 Minor Ring (LE)
-1 Orcs of Dol Guldur (AS)
 1 Paltry Ring (LE)
 1 Ring of Adamant (FB)
 1 Swift Strokes (LE)
-1 Test of Fire (LE)
 1 Trifling Ring (LE)
 
 #####
 Sites
 #####
 
+# Dual Site (1)
+
+1 Mines of Angûrath [D] (DF)
+
 # Minion Site (32)
 
 1 Amon Hen [M] (LE)
 1 Amon Lhaw [M] (TI)
-1 Amon Lind [M] (FB)
 1 Barad-dûr [M] (LE)
-1 Barad-wath [M] (NE)
 1 Barak-shathur [M] (DF)
 1 Beorn's House [M] (LE)
-1 Bree [M] (LE)
 1 Ceber Fanuin [M] (FB)
 1 Cerin Amroth [M] (FB)
+1 Chey Goumal [M] (GP)
 1 Dale [M] (LE)
+1 Dol Amroth [M] (LE)
 2 Dol Guldur [M] (LE)
 1 Dunharrow [M] (LE)
 1 Edoras [M] (LE)
-1 Gaurblog Lug [M] (DF)
-1 Goblin-gate [M] (LE)
 1 Iron Hill Dwarf-hold [M] (LE)
-1 Isengard [M] (LE)
 1 Joghul's Shrine [M] (GP)
 1 Lake-town [M] (LE)
 1 Lórien [M] (AS)
 1 Minas Durlith [M] (NE)
 1 Minas Morgul [M] (LE)
+1 Minas Tirith [M] (LE)
 1 Mount Doom [M] (LE)
 1 Nurunkhizdín [M] (DF)
 1 Nûrniag Camp [M] (LE)
 1 Ostigurth [M] (NE)
-1 Relerindú [M] (GP)
-1 Strayhold [M] (NE)
 1 The Carrock [M] (DF)
+1 The Gem-deeps [M] (AS)
+1 The Under-courts [M] (AS)
 1 The Wind Throne [M] (LE)
+1 Temple of Kondri Odchi [M] (GP)
 1 Thranduil's Halls [M] (LE)
-
+1 Woodmen-town [M] (LE)

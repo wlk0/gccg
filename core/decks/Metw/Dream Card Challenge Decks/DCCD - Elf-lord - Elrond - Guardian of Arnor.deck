@@ -8,27 +8,27 @@
 Deck
 ####
 
-# Dual Resource (4)
+# Dual Resource (5)
 
 2 Elf-friend (FB)
+1 Mighty Steed (TI)
 2 Well Aimed (FB)
 
 # Elf-lord Character (4)
 
 4 Elrond Half-elven (FB)
 
-# Hazard (32)
+# Hazard (33)
 
 1 An Unexpected Outpost (DM)
-1 Ando-anca Ahunt (GW)
 1 Black Crows (FB)
 2 Cave Worm (TD)
 3 Cave-drake (TW)
 1 Crossing the Border (DF)
 1 Darkness Ahead (TI)
-1 Dragon's Blood (TD)
 1 Flooded to the Surface (DF)
 1 From the Pits of Angband (TD)
+1 Lord of the Woods (FB)
 1 Lost in Emyn Muil (TI)
 2 Marsh-drake (TD)
 1 Nameless Thing (DM)
@@ -37,22 +37,23 @@ Deck
 1 Shut Yer Mouth (LE)
 2 Summons from Long Sleep (AS)
 1 Taint of Deep Lore (WR)
-1 The Reach of Ulmo (DM)
+1 Taint of the Wilds (RS)
+1 Terror from the Deeps (DF)
+1 Tidings of Bold Spies (LE)
 1 Tidings of Doubt and Danger (LE)
 1 True Fire-drake (TD)
 1 Twilight (TW)
 1 Watchers at the Gate (WR)
-1 Wielder's Curse (GW)
 1 Winged Fire-drake (TD)
 1 Witch-king of Angmar (TW)
 1 Wound of Long Burden (DM)
 1 Wyrmsiege (DF)
 
-# Hero Character (3)
+# Hero Character (4)
 
 1 Emissary of the House (FB)
 1 Erestor (FB)
-1 Ranger of Arnor (KN)
+2 Ranger of Arnor (KN)
 
 # Hero Resource (21)
 
@@ -62,19 +63,20 @@ Deck
 1 Elves of the House (FB)
 3 Great-road (TW)
 1 Great Bow of Yew (FB)
+1 Hall of Fire (DM)
 1 Lossoth (TW)
-2 Many Turns and Doublings (TD)
+1 Many Turns and Doublings (TD)
 2 Marvels Told (TD)
 1 Narsil (TW)
-1 Palantír of Amon Sûl [H] (TW)
+1 Palantír of Annúminas [H] (TW)
 1 Rangers of the North (TW)
 1 Ring of Barahir (WR)
 1 Sojourn in the Golden Wood (RS)
 1 Spirit of Celebrian (FB)
 
-# Minion Resource (4)
+# Minion Resource (3)
 
-2 Dark Tryst (AS)
+1 Crept Along Cleverly (WH)
 2 Precious Burden (NE)
 
 # Stage Resource (4)
@@ -100,9 +102,9 @@ Pool
 1 Elladan (TW)
 1 Elrohir (TW)
 1 Elven Handmaid (FB)
-1 Fanar (FB)
 1 Glorfindel II (TW)
 1 Halbarad of the North (WR)
+1 Mallorn-dweller (FB)
 1 Strider (BA)
 
 # Hero Resource (2)
@@ -119,21 +121,26 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (2)
+# Dual Resource (1)
 
 1 Flight Unmarked (RS)
-1 Mighty Steed (TI)
 
-# Hazard (6)
+# Hazard (10)
 
 1 Ash-drake (NE)
+1 Doors of Night (LE)
 1 Drought (SL)
 1 Lost in Free-domains (TW)
+1 Muster Disperses (LE)
 1 Ring-chained (NM)
 1 Too Much to Ask (WR)
+1 Twilight (LE)
 1 Vaurak (SL)
+1 Wield It While I May (ML)
+1 Wielder's Curse (GW)
 
-# Hero Resource (14)
+
+# Hero Resource (13)
 
 1 Adamant Helmet (TD)
 1 Align Palantír (TW)
@@ -146,7 +153,6 @@ Sideboard
 1 Sulhelka (FB)
 1 True Fána (TW)
 1 Vilya (TW)
-1 Wielded Twice (TD)
 1 Wizard Uncloaked (TD)
 1 Wizard's Flame (TW)
 
@@ -169,8 +175,9 @@ Sites
 
 1 Grey Havens [F] (FB)
 
-# Hero Site (26)
+# Hero Site (27)
 
+1 Amon Lind [H] (FB)
 1 Annúminas [H] (KN)
 1 Barrow-downs [H] (TW)
 1 Bree [H] (TW)
@@ -181,19 +188,19 @@ Sites
 1 Dead Man's Dike [H] (KN)
 1 Ettenmoors [H] (TW)
 1 Gondring's Lair [H] (NW)
-1 Hostel of the Sisters of Nienna [H] (KN)
-1 Litash [H] (NW)
 1 Lossadan Cairn [H] (TW)
 1 Lossadan Camp [H] (TW)
 1 Moria [H] (TW)
 1 Mount Gram [H] (TW)
 1 Mount Gundabad [H] (TW)
 1 Mount Rerir [H] (FB)
+1 Ruskea Vene [H] (NW)
 1 The Iron-deeps [H] (DM)
 1 The Last Bridge [H] (RS)
 1 The Under-Caves [H] (KN)
+1 The Under-leas [H] (DM)
 1 The Under-vaults [H] (DM)
 1 The White Towers [H] (TW)
-1 The Willow Dingle [H] (RS)
 1 Tol Lamfirith [H] (KN)
+1 Weathertop [H] (TW)
 1 Zarak Dûm [H] (TD)
