@@ -1,7 +1,7 @@
 #
-# GCCG v0.9.6.3 Middle-earth deck
+# GCCG v0.9.7.9 Middle-earth deck
 #
-#      CP - Balin - Lord of Moria
+#      [CP] Balin Lord of Moria
 #
 
 ####
@@ -13,14 +13,12 @@ Deck
 1 Adûnaphel (TW)
 1 Agburanar at Home (TD)
 3 An Unexpected Outpost (DM)
-1 Arthadan Rangers (LE)
 1 Bairanax at Home (TD)
 3 Cave-drake (TW)
 1 Corsairs of Umbar (TW)
 1 Daelomin at Home (TD)
 1 Fell Fowl (CPS)
 1 Foolish Words (LE)
-1 Galadhrim (AS)
 1 Leucaruth at Home (TD)
 1 Mouth of Sauron (TW)
 1 My Precious (DM)
@@ -30,6 +28,7 @@ Deck
 1 Scatha at Home (TD)
 1 Scorba at Home (TD)
 3 Sellswords Between Charters (LE)
+2 Slayer (LE)
 1 Ûvatha the Horseman (TW)
 
 # Hero Character (1)
@@ -42,9 +41,9 @@ Deck
 3 Dark Numbers (DM)
 2 Dark Quarrels (TW)
 2 Eyes of Mandos (DM)
+1 Free to Choose (DM)
 3 Hiding (TW)
 1 Leaf Brooch (DM)
-1 Linyuilë (KN)
 3 Longbottom Leaf (BA)
 3 Lucky Search (TW)
 2 Marvels Told (TD)
