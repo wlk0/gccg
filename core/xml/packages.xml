@@ -3,6 +3,8 @@
 <modules>
   <store dir="build/modules"/>
   <source url="http://gccg.sourceforge.net/modules/"/>
+  <source url="http://gccg.bornano.fr/gccg/"/>
+ 
   <source url="http://www.reneploetz.de/gccg/"/>
   <source url="http://lotrtcgwiki.com/files/gccg/"/>
   <source url="http://games.phtn.de/gccg/"/>
