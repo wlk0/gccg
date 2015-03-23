@@ -1,0 +1,214 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      DCCD - Fallen-wizard - Alatar - Hunt on the Plains of Palisor
+#
+
+####
+Deck
+####
+
+# Dual Resource (7)
+
+1 Anguirel (NW)
+1 Flight Unmarked (RS)
+1 Logath Herdsmen (GP)
+2 Share of the Treasure (GW)
+1 Skis and Fur-coats (NW)
+1 Trained Falcon (GP)
+
+# Fallen-wizard Character (4)
+
+4 Alatar [F] (WH)
+
+# Hazard (35)
+
+1 Ambusher (LE)
+2 An Unexpected Outpost (DM)
+1 Beorning Skin-changers (BA)
+1 Black Vapour (BA)
+1 Corsairs of Umbar (TW)
+2 Flies and Spiders (DM)
+1 Foolish Words (TD)
+2 Full of Froth and Rage (AS)
+2 Giant Spiders (TW)
+1 Greed (TW)
+1 King-spider (DF)
+1 Lawless Men (LE)
+1 Lesser Spiders (TD)
+1 Pick-pocket (TW)
+1 Pierced by Many Wounds (DM)
+1 Rank upon Rank (DM)
+3 Ransom (NE)
+2 Ruffians (WR)
+3 Sellswords Between Charters (LE)
+1 Shelob's Brood (BA)
+1 Slayer (LE)
+1 Spider of the Môrlat (DM)
+2 The Border-watch (LE)
+1 Troll-purse (DM)
+1 Twilight (LE)
+
+# Hero Character (5)
+
+1 Dworin (DF)
+1 Narin (DF)
+1 Shipwright (FB)
+1 Ulvûn the Owl-keeper (ML)
+1 Wood-elf (FB)
+
+# Hero Resource (20)
+
+1 A Friend or Three (TW)
+1 And Forth He Hastened (TD)
+1 Dark Quarrels (TW)
+2 Ford (TW)
+1 Longbottom Leaf (BA)
+1 Magical Harp (TD)
+1 Marvels Told (TD)
+1 New Supplies (RS)
+1 Noble Hound (DM)
+1 Precious Gold Ring (TW)
+1 Reforging (TW)
+1 Ringil (GW)
+2 Risky Blow (TW)
+1 Smoke Rings (DM)
+1 The Great Battle of Our Time (WR)
+1 The Old Thrush (TW)
+1 The Wind Is Turning (WR)
+1 Wain-easterlings [H] (AS)
+
+# Minion Character (1)
+
+1 Bertok (ML)
+
+# Minion Resource (3)
+
+1 Crept Along Cleverly (WH)
+1 Weigh All Things to a Nicety (LE)
+1 Whispers of Rings (BA)
+
+# Stage Resource (5)
+
+1 Bow of Alatar (WH)
+1 Guarded Haven (WH)
+1 Hidden Haven (WH)
+2 Mission to the East (GP)
+
+####
+Pool
+####
+
+# Dual Character (1)
+
+1 Seyran (GP)
+
+# Hero Character (2)
+
+1 Maran (GP)
+1 Yanos Kosvar (GP)
+
+# Hero Resource (2)
+
+1 Black Arrow (PR)
+1 Star-glass (TW)
+
+# Minion Resource (1)
+
+1 Fizzling Torch (NE)
+
+# Stage Resource (2)
+
+1 Squire of the Hunt (WH)
+1 Thrall of the Voice (WH)
+
+#########
+Sideboard
+#########
+
+# Dual Resource (3)
+
+1 Lothragh (ML)
+1 Ring of Detection (NW)
+1 Trained Falcon (GP)
+
+# Hazard (4)
+
+1 Covetous Thoughts (LE)
+1 Hard to Tame (DF)
+1 Heart Grown Cold (WH)
+1 Ungoliant's Progeny (BA)
+
+# Hero Resource (5)
+
+1 Cram (TD)
+1 Healing Herbs (TW)
+1 Noble Hound (DM)
+1 Ringlore (TW)
+1 Wizard's Flame (TW)
+
+# Minion Resource (7)
+
+1 Binding-ring (LE)
+1 Bitter Cold (LE)
+2 Cult of Long Night (GP)
+1 Dwarven Ring of Thélor's Tribe [M] (AS)
+1 Emerald of Unlight (ML)
+1 Ring of Frost (GP)
+
+# Stage Resource (11)
+
+1 Allies in the East and South (WR)
+1 An Untimely Brood (WH)
+1 Blind to All Else (WH)
+1 Double-dealing (WH)
+1 Gatherer of Loyalties (WH)
+1 Great Patron (WH)
+1 Huntsman's Garb (WH)
+1 Legacy of Smiths (WH)
+1 Promise of Treasure (DF)
+1 The Great Hunt (WH)
+1 Wizard's Myrmidon (WH)
+
+#####
+Sites
+#####
+
+# Dual Site (4)
+
+1 Mines of Falek-dim (DF)
+1 Ruins of Kheledkhizdin (ML)
+1 The Rusted-deeps [D] (DF)
+1 The Wind-deeps [D] (DF)
+
+# Hero Site (25)
+
+1 Caves of Ûlund [H] (TW)
+1 Celeb-ost [H] (NW)
+1 Collarmount [H] (GW)
+1 Elyamû [H] (ML)
+1 Gaurblog Lug [H] (DF)
+1 Hollow Spire [H] (ML)
+1 Joghul's Shrine [H] (GP)
+1 Lar-huz [H] (GP)
+1 Logath Camp [H] (GP)
+1 Lothragh Camp [H] (ML)
+1 Mirror Halls [H] (ML)
+1 Nan Morsereg [H] (GP)
+1 Nurunkhizdín [H] (DF)
+1 Númenórean Tomb [H] (ML)
+1 Rhûbar [H] (FB)
+1 Shoreless Isles [H] (ML)
+1 Steel Fall [H] (GW)
+1 The Lonely Mountain [H] (TW)
+1 The Wind Throne [H] (TW)
+1 Thunder Cleft [H] (GW)
+1 Tol Buruth [H] (NE)
+1 Tower of the Wolf-friend [H] (GW)
+1 Wain-Easterling Camp [H] (GP)
+1 Yjuvït [H] (ML)
+1 Zayandaur [H] (ML)
+
+# Minion Site (1)
+
+1 Mirror Halls [M] (ML)

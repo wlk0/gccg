@@ -8,9 +8,8 @@
 Deck
 ####
 
-# Dual Resource (4)
+# Dual Resource (3)
 
-1 Deadly Dart (PR)
 1 Elf-friend (FB)
 1 Morinehtar (GP)
 1 Well Aimed (FB)
@@ -20,7 +19,7 @@ Deck
 1 Fram Wyrmslayer (GW)
 1 Goblin-basher (DF)
 
-# Hazard (34)
+# Hazard (35)
 
 2 An Unexpected Outpost (DM)
 1 Bairanax at Home (TD)
@@ -33,6 +32,7 @@ Deck
 1 Foolish Words (TD)
 1 Fruitless Victory (NE)
 2 Great Northern Bear (GW)
+1 Ice-drake (TD)
 2 Kelvar Enraged (GW)
 1 Land-drake (TD)
 1 Lord of the Eagles (DF)
@@ -61,13 +61,15 @@ Deck
 1 Wacho (TW)
 1 Wídfara (TI)
 
-# Hero Resource (31)
+# Hero Resource (32)
 
 1 Aiwendil (NW)
 1 Aranrûth (FB)
+1 Armory (DM)
+1 Carc (DF)
 1 Concealment (TW)
+1 Cup of Farewell (DM)
 2 Dragon-feuds (TD)
-1 Elf-stone (TW)
 1 Great Bow of Yew (FB)
 1 Kindling of the Spirit (TW)
 2 Long They Journeyed (GP)
@@ -77,13 +79,12 @@ Deck
 1 Mithrandir (DF)
 1 Necklace of Girion [H] (DM)
 1 New Supplies (RS)
-1 Noble Hound (DM)
+2 Noble Hound (DM)
 1 Not at Home (TD)
 1 Of the Race of Dale (GW)
 1 Ravens of Northern Rhovanion (DF)
-1 Reforging (TW)
 2 Saw Further and Deeper (DM)
-2 Smoke Rings (DM)
+1 Smoke Rings (DM)
 1 Thane's Attire (GW)
 1 The Wind Is Turning (WR)
 1 Vanishment (TW)
@@ -114,33 +115,53 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (4)
+# Dual Resource (7)
 
+1 Deadly Dart (PR)
 1 Dragon-scales (GW)
+1 Dragon-teeth Necklace (GW)
+1 Evermarking Scar (ML)
 1 Hollow by the Left Breast (GW)
 1 Sharp Blade (WR)
 1 Well Aimed (FB)
 
-# Hazard (4)
+# Hazard (8)
 
+1 Aamumeren Isä (NW)
 1 Covetous Thoughts (LE)
 1 Earth-tremors (DM)
 1 Fell-bear (NW)
 1 Lure of Magic (NE)
+1 Sand-drake (TD)
+1 Terror from the Deeps (DF)
+1 Twilight (TW)
 
-# Hero Resource (12)
+# Hero Resource (25)
 
 1 Alert the Folk (TD)
+1 Alliance of Free Peoples (AS)
 1 Block (TW)
-1 Carc (DF)
+1 Blood of Huan (FB)
 1 Cram (TD)
+1 Draw Swords Together (TI)
+1 Elf-stone (TW)
+1 Emerald of Doriath (TD)
+1 Fly, You Fools! (RS)
+1 Gates of Morning (TW)
 1 Healing Herbs (TW)
+1 Hidden Valour (TI)
 1 Horns, Horns, Horns (DM)
 1 Iron Hill Dwarves (TW)
+1 Keeping of Good Faith (TI)
 1 King of Dale (GW)
 1 Marvels Told (TD)
 1 Men of Lake-town (TD)
+1 Necklace of Silver and Pearls (TD)
+1 Reforging (TW)
+1 Rohir Weregild (TI)
+1 Sacrifice of Form (TW)
 1 Star-glass (TW)
+1 The Evenstar (TW)
 1 The Old Thrush (TW)
 
 #####
@@ -152,7 +173,6 @@ Sites
 1 Buhr Widu [H] (TD)
 1 Cave of the Urdharkonur [H] (GW)
 1 Ceber Fanuin [H] (FB)
-1 Celebannon [H] (FB)
 1 Dale [H] (TD)
 1 Dancing Spire [H] (TW)
 1 Framsburg [H] (TD)
@@ -179,3 +199,4 @@ Sites
 1 The Wind Throne [H] (TW)
 1 Thranduil's Halls [H] (TW)
 1 Tower of the Wolf-friend [H] (GW)
+1 Woodmen-town [H] (TW)
