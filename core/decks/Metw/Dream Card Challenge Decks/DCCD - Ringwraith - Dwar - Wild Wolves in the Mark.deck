@@ -20,7 +20,7 @@ Deck
 2 Hobgoblins (TD)
 1 Hobgoblins (LE)
 1 Host of Bats (TD)
-2 Legacy of Carcaroth (NW)
+2 Legacy of Carcharoth (NW)
 1 Orc-guard (TW)
 1 Orc-watch (TW)
 1 Orc-watch (LE)
@@ -90,10 +90,9 @@ Pool
 1 Grishnákh (LE)
 1 Virsh (NE)
 
-# Minion Resource (4)
+# Minion Resource (3)
 
 1 Dog-lord of Waw (GP)
-1 Fizzling Torch (NE)
 1 Orc-endurance (NE)
 1 Orc-pouch (NE)
 
@@ -105,17 +104,24 @@ Sideboard
 
 1 Essay on Ringcraft (FB)
 
-# Hazard (4)
+# Hazard (8)
 
+1 Bolg, Son of Azog (DF)
+1 Earth-tremors (DM)
+1 Lost in Free-domains (TW)
+1 Lure of Expedience (LE)
 1 Nameless Thing (DM)
 1 Uiendarlaif (GP)
 1 War-wolves (NW)
 1 White Wolves (NW)
 
-# Minion Resource (15)
+# Minion Resource (21)
 
+1 Abduction (NE)
 1 Black Rider (LE)
 1 Dwar Unleashed (LE)
+1 Fizzling Torch (NE)
+1 Gé of Ogamur (GP)
 1 Magic Ring of Delusion (LE)
 1 Misty Mountain Wargs (LE)
 1 Orc-draughts (LE)
@@ -123,10 +129,11 @@ Sideboard
 1 Poison (LE)
 2 Saw-toothed Blade (LE)
 1 Slew the Great Warrior (TI)
-1 War-warg (LE)
+2 War-warg (LE)
+1 War-wolf (LE)
 1 White Mountain Wolves (LE)
 1 Wolf-den (NE)
-1 Wolf-steed (NW)
+2 Wolf-steed (NW)
 1 Wolves of Isengard (TI)
 
 #####
@@ -159,7 +166,7 @@ Sites
 1 Mount Gundabad [M] (LE)
 1 Ost-in-Edhil [M] (LE)
 1 Ruined Signal Tower [M] (LE)
-1 Sonotor's Mound (GW)
+1 Sonotor's Mound [M] (GW)
 1 Stone-circle [M] (LE)
 1 Telpëmar [M] (FB)
 1 Tharagrondost [M] (WR)
