@@ -79,13 +79,15 @@ Deck
 Pool
 ####
 
-# Minion Character (5)
+# Minion Character (7)
 
 1 Durlog (GW)
 1 Grimson the Fearless (GW)
+1 Luitprand (LE)
 1 Mountain-maggot (BA)
 1 Orc Grunt (NE)
 1 Talmog (GW)
+1 Woffung (DM)
 
 # Minion Resource (6)
 
@@ -116,19 +118,12 @@ Sideboard
 1 Twilight (TW)
 1 Uruial (GW)
 
-# Hero Character (3)
+# Hero Character (4)
 
 1 Bard Bowman (TW)
+1 Dwarven Miner (DF)
 1 Eodoric (GW)
 1 The Master (GW)
-
-# Hero Resource (1)
-
-1 Carc (DF)
-
-# Minion Character (1)
-
-1 Luitprand (LE)
 
 # Minion Resource (15)
 
@@ -140,6 +135,7 @@ Sideboard
 1 Fizzling Torch (NE)
 1 Foul-smelling Paste (LE)
 1 Made His Dwelling There (GW)
+1 Memories of Old Torture (BA)
 1 Orcs of His Dominion (GW)
 1 Orcs of the Claw (GW)
 1 Scales and Jewels (GW)
@@ -155,12 +151,11 @@ Sites
 
 3 Dragon's Den (GW)
 
-# Minion Site (30)
+# Minion Site (27)
 
 1 Buhr Thurasig [M] (GW)
 1 Buhr Widu [M] (LE)
 1 Caras Amarth [M] (FB)
-1 Cave of the Urdharkonur [M] (GW)
 1 Caves of Ûlund [M] (LE)
 1 Cor Angaladh [M] (FB)
 1 Dale [M] (LE)
@@ -168,7 +163,6 @@ Sites
 1 Framsburg [M] (AS)
 1 Gold Hill [M] (AS)
 1 Gondmaeglom [M] (LE)
-1 Gyogorasag Sanctuary [M] (GW)
 1 Irerock [M] (AS)
 1 Iron Hill Dwarf-hold [M] (LE)
 1 Kala Dulakurth [M] (NW)
@@ -176,7 +170,6 @@ Sites
 1 Long Marshes [M] (DF)
 1 Long Peak [M] (GW)
 1 Mount Gundabad [M] (LE)
-1 Mountains of Mirkwood [M] (GW)
 1 Norr-dûm [M] (GW)
 1 Ovir Hollow [M] (AS)
 1 Sarn Goriwing [M] (LE)

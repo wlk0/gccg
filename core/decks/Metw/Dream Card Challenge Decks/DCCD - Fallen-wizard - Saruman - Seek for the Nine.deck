@@ -39,7 +39,7 @@ Deck
 1 Pit Trap (DF)
 1 Rain-drake (TD)
 1 Shut Yer Mouth (LE)
-2 Slayer (TW)
+2 Slayer (LE)
 1 Snow in the Mountains (NW)
 1 Taint of Ambition (WR)
 1 The Nazgûl are Abroad (TW)
@@ -64,7 +64,7 @@ Deck
 1 Hundreds of Butterflies (DM)
 2 Smoke Rings (DM)
 1 The Wind Is Turning (WR)
-1 Wain-easterlings [H] (AS)
+1 Wizard's Flame (TW)
 1 Wizard's Pupil (WR)
 1 Wizard's Resolve (RS)
 
@@ -110,9 +110,9 @@ Pool
 
 # Minion Character (4)
 
+1 Dâsakûn (DM)
 1 Hador (LE)
 1 Layos (LE)
-1 Dâsakûn (DM)
 1 Ulrac (GP)
 
 # Minion Resource (1)
@@ -136,15 +136,15 @@ Sideboard
 
 # Hazard (7)
 
-1 Lost in Free-domains (LE)
+1 Covetous Thoughts (LE)
+1 Lost in Free-domains (TW)
 1 Lure of Magic (NE)
 1 Many Burdens (RS)
-1 Muster Disperses (TW)
-1 Covetous Thoughts (LE)
+1 Muster Disperses (LE)
 1 The Ring's Betrayal (TW)
 1 Too Much to Ask (WR)
 
-# Hero Resource (11)
+# Hero Resource (12)
 
 1 Beautiful Gold Ring (TW)
 1 Healing Herbs (TW)
@@ -152,9 +152,10 @@ Sideboard
 1 Longbottom Leaf (BA)
 1 Lordly Presence (TW)
 1 Lost Tome (DM)
-1 Star-glass (TW)
-2 Ring for Mortal Men [H] (NM)
+1 Ring for Mortal Men [H] (NM)
 1 Ringlore (TW)
+1 Star-glass (TW)
+1 Wain-easterlings [H] (AS)
 1 Wizard's Flame (TW)
 1 Wizard's Test (TW)
 
