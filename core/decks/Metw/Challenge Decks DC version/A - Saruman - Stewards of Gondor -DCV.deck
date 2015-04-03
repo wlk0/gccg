@@ -54,16 +54,16 @@ Deck
 2 Halfling Strength (TW)
 2 Hauberk of Bright Mail (TW)
 1 Knights of Dol Amroth (TW)
+1 Many Turns and Doublings (TD)
 3 Marvels Told (TD)
 1 Men of Anfalas (TW)
 1 Men of Anórien (TW)
 1 Men of Lebennin (TW)
 1 Palantír of Orthanc [H] (TW)
-1 Pipe Weed (DF)
+1 Pocket Handkerchief (DF)
 1 Rangers of Ithilien (TW)
 1 Sapling of the White Tree (TW)
 1 Scroll of Isildur [H] (TW)
-1 Smoke Rings (DM)
 3 Stealth (TW)
 1 Treebeard (TW)
 
@@ -79,34 +79,34 @@ Pool
 1 Glorfindel II (TW)
 1 Sam Gamgee (TW)
 
-# Hero Resource (4)
+# Hero Resource (3)
 
 1 Cram (TD)
 1 Horn of Anor (TW)
 1 Pipe (DF)
-1 Pocket-handkerchief (DF)
 
 #########
 Sideboard
 #########
 
-# Hazard (9)
+# Hazard (8)
 
 1 Call of Home (TW)
 1 Eärcaraxë Ahunt (TD)
 1 Incite Defenders (LE)
-3 Muster Disperses (TW)
+2 Muster Disperses (TW)
 2 Rebel-talk (LE)
 1 Twilight (TW)
 
-# Hero Resource (11)
+# Hero Resource (12)
 
 1 Align Palantír (TW)
 1 Elves of Edhellond (FP)
-1 Many Turns and Doublings (TD)
+1 Pipe Weed (DF)
 2 Promptings of Wisdom (WH)
 1 Rebuild the Town (DM)
 1 Riders of Rohan (TW)
+1 Smoke Rings (DM)
 1 The White Tree (TW)
 1 Vanishment (TW)
 1 Wizard Uncloaked (TD)
@@ -116,8 +116,9 @@ Sideboard
 Sites
 #####
 
-# Hero Site (17)
+# Hero Site (20)
 
+1 Calembel [H] (WR)
 1 Dol Amroth [H] (TW)
 1 Edhellond [H] (TW)
 1 Edoras [H] (TW)
@@ -126,12 +127,14 @@ Sites
 1 Isengard [H] (TW)
 1 Isildur's Tomb [H] (TI)
 1 Isle of the Ulond [H] (TD)
+1 Linhir [H] (WR)
 1 Lond Galen [H] (TW)
-1 Lugarlur [H] (SL)
+1 Lossarnach [H] (WR)
 1 Lórien [H] (TW)
 1 Minas Tirith [H] (TW)
 1 Moria [H] (TW)
 1 Pelargir [H] (TW)
 1 Rivendell [H] (TW)
+1 Tharagrondost [H] (WR)
 1 Tolfalas [H] (TW)
 1 Wellinghall [H] (TW)
