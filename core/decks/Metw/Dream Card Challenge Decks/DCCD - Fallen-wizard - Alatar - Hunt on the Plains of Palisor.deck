@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Fallen-wizard - Alatar - Hunt on the Plains of Palisor
+#      DCCD - Fallen-wizard - Hunt on the Plains of Palisor
 #
 
 ####
@@ -57,7 +57,7 @@ Deck
 1 Ulvûn the Owl-keeper (ML)
 1 Wood-elf (FB)
 
-# Hero Resource (20)
+# Hero Resource (21)
 
 1 A Friend or Three (TW)
 1 And Forth He Hastened (TD)
@@ -72,7 +72,7 @@ Deck
 1 Reforging (TW)
 1 Ringil (GW)
 2 Risky Blow (TW)
-1 Smoke Rings (DM)
+2 Smoke Rings (DM)
 1 The Great Battle of Our Time (WR)
 1 The Old Thrush (TW)
 1 The Wind Is Turning (WR)
@@ -82,10 +82,9 @@ Deck
 
 1 Bertok (ML)
 
-# Minion Resource (3)
+# Minion Resource (2)
 
 1 Crept Along Cleverly (WH)
-1 Weigh All Things to a Nicety (LE)
 1 Whispers of Rings (BA)
 
 # Stage Resource (5)
