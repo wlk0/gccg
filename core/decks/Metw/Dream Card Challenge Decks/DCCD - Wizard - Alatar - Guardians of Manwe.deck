@@ -1,0 +1,221 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      DCCD - Wizard - Alatar - Guardians of Manwe
+#
+
+####
+Deck
+####
+
+# Dual Character (1)
+
+1 Dúnadan Mariner (WR)
+
+# Dual Resource (5)
+
+1 Bow-master (GW)
+2 Elf-friend (FB)
+1 The Gwaedhel-spear (WR)
+1 The Gwaedhel-sword (WR)
+
+# Hazard (33)
+
+2 Ambush! (TI)
+2 An Unexpected Outpost (DM)
+1 Arthadan Rangers (LE)
+1 Drums (DM)
+2 Durin's Folk (AS)
+2 Dwarven Travelers (AS)
+2 Dwarven Warparty (DF)
+1 Evenstar of Her People (FB)
+1 Falathrim (FB)
+1 Foolish Words (LE)
+1 Galadhrim (AS)
+1 Goldberry, the River-daughter (FB)
+1 Ladnoca (SL)
+1 Lord of the Woods (FB)
+1 Lure of Expedience (LE)
+2 Naugrim (DF)
+1 Neeker-breekers (PR)
+1 Nothing to Eat or Drink (LE)
+1 Pallando the Soul-keeper (AS)
+1 Returned Beyond All Hope (AS)
+1 Snow-elves (NW)
+1 Taint of Ambition (WR)
+1 The Dark Days (FB)
+1 The Oldest (FB)
+2 The Watchful Peace (FB)
+1 Twilight (TW)
+
+# Hero Character (9)
+
+4 Alatar [H] (TW)
+1 Gilraen (KN)
+1 Imrahil (TW)
+1 Midhir (GP)
+1 Ranger of Arnor (KN)
+1 Tharúdan (FB)
+
+# Hero Resource (28)
+
+1 Banishment (NW)
+1 Crisfuin (FB)
+2 Eagle-mounts (TW)
+1 Elves of Edhellond (FP)
+1 Escape (TW)
+2 Great-road (TW)
+1 Gwaihir (TW)
+2 Horns, Horns, Horns (DM)
+1 Lindion the Oronín (DM)
+1 Lordly Presence (TW)
+3 Lucky Strike (TW)
+1 Marvels Told (TD)
+1 Meneldor (RS)
+1 Muster (TW)
+2 Refuge (TD)
+2 The Road to the West (GP)
+1 The Windlord Found Me (DM)
+1 Token of Goodwill (DM)
+2 White Mountains (TW)
+1 Wielded Twice (TD)
+
+####
+Pool
+####
+
+# Dual Resource (1)
+
+1 Bow of Yew (FB)
+
+# Hero Character (8)
+
+1 Angbor (WR)
+1 Annalena (TW)
+1 Arathorn II (KN)
+1 Ascarnil (FB)
+1 Elladan (TW)
+1 Elrohir (TW)
+1 Orthir (GP)
+1 Wood-elf (FB)
+
+# Hero Resource (2)
+
+1 Elven Rope (BA)
+1 Pipe (DF)
+
+#########
+Sideboard
+#########
+
+# Hazard (7)
+
+1 Elven Archer (FB)
+1 Elven Custody (FB)
+1 Elves upon Errantry (LE)
+1 Expert Treasure-hunter (DF)
+1 He Is Lost to Us (FB)
+1 Ice-giant (NW)
+1 The Ring Has Moved On (RS)
+
+# Hero Resource (22)
+
+1 Ancient Knowledge (FB)
+1 Avari (GP)
+1 Banishment (NW)
+1 Eagle-watch (RS)
+1 Elendilmir (WR)
+1 Elves of Taur Rómen (FB)
+1 Gaerennon (NW)
+1 Hands Clasped, Hair Mingling (WR)
+1 Helechoth (NW)
+1 Here, There, or Yonder (TD)
+1 Hwanin (SL)
+1 Longbottom Leaf (BA)
+1 Many Leagues (RS)
+1 No Strangers at this Time (AS)
+1 Rebuild the Town (DM)
+1 Refugees (TI)
+2 Smoke Rings (DM)
+1 Taarum Elves (GP)
+1 The Great Eagles (TW)
+1 Ulmodili (SL)
+1 Where the Stars are Strange (RS)
+
+# Minion Resource (1)
+
+1 Spying out the Land (LE)
+
+#####
+Sites
+#####
+
+# Hero Site (68)
+
+1 Alkyad [H] (GP)
+1 Arentaurr [H] (GP)
+1 Auz Azunan [H] (SL)
+1 Cairn of the Colruh Hazurbal [H] (SL)
+1 Calembel [H] (WR)
+1 Cerin Amroth [H] (FB)
+1 Creb Durga [H] (KN)
+1 Daeron's Pool [H] (GW)
+1 Dancing Spire [H] (TW)
+1 Dead Marshes [H] (TW)
+1 Dol Amroth [H] (TW)
+1 Dunharrow [H] (TW)
+1 Eagles' Eyrie [H] (TW)
+2 Edhellond [H] (TW)
+1 Edoras [H] (TW)
+1 Eithel Morgoth [H] (NW)
+1 Elanthia [H] (GP)
+1 Evermist [H] (NW)
+1 Geann a-Lisch [H] (AS)
+1 Gobel Mírlond [H] (AS)
+1 Grey Havens [H] (TW)
+1 Hau Nysrin [H] (SL)
+1 Hazaj Tollin [H] (SL)
+1 Helloth [H] (NW)
+1 Helm's Deep [H] (TI)
+1 Hermit's Hill [H] (DM)
+1 Himring [H] (TW)
+1 Hyvät Kalat [H] (NW)
+1 Isengard [H] (TW)
+1 Isildur's Tomb [H] (TI)
+1 Isle of the Ulond [H] (TD)
+1 Isles of the Dead that Live [H] (TW)
+1 Kadar an-Khâradun [H] (DS)
+1 Korlea [H] (SL)
+1 Linhir [H] (WR)
+1 Linnarthurras [H] (NW)
+1 Lond Anarion [H] (DS)
+1 Lond Daer [H] (KN)
+1 Lugarlur [H] (SL)
+1 Lórien [H] (TW)
+1 Mathlaburg [H] (GW)
+1 Minas Tirith [H] (TW)
+1 Moria [H] (TW)
+1 Mount Rerir [H] (FB)
+1 Narik-Zadan [H] (SL)
+1 Osgiliath [H] (WR)
+1 Pelargir [H] (TW)
+1 Pelican Islands [H] (SL)
+1 Rhûbar [H] (FB)
+1 Rivendell [H] (TW)
+1 Setmaenen [H] (WR)
+1 Stone-circle [H] (TW)
+1 Sturlurtsa [H] (GP)
+1 Temple of Kondri Odchi [H] (GP)
+1 Tharagrondost [H] (WR)
+1 Tharbad [H] (TD)
+1 The Carrock [H] (DF)
+1 The Hospice of Lost Faith [H] (SL)
+1 The Stones [H] (TW)
+1 Tol Morwen [H] (NW)
+1 Tolfalas [H] (TW)
+1 Târik an-Bawîba [H] (BO)
+1 Umbar [H] (SL)
+1 Vale of Erech [H] (TW)
+1 Vamag [H] (SL)
+1 Variag Camp [H] (TW)
+1 Ûrêzâyan [H] (SL)
