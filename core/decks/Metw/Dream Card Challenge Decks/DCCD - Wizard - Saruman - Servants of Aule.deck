@@ -1,0 +1,197 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      DCCD - Wizard - Saruman - Servants of Aule
+#
+
+####
+Deck
+####
+
+# Dual Resource (6)
+
+2 Children of Aulë (DF)
+1 Dwarven Axe (DF)
+1 Fungi (DF)
+1 Origin of Stone (DF)
+1 Tunnels Traversed (ML)
+
+# Grey Agent Character (1)
+
+1 Kori (DF)
+
+# Hazard (35)
+
+1 Ambusher (LE)
+2 An Unexpected Outpost (DM)
+1 Corsairs of Umbar (TW)
+3 Doors of Night (TW)
+1 Foolish Words (LE)
+3 Giant (TW)
+3 Hurling Rocks (DF)
+2 Ice-giant (NW)
+1 Ireful Flames (PR)
+1 No Way Forward (DM)
+3 Rank upon Rank (DM)
+1 Rebel-talk (LE)
+1 Sellswords Between Charters (LE)
+1 Shut Yer Mouth (LE)
+1 So You've Come Back (LE)
+1 Sorijan Raiders (SL)
+1 Thrice Told Tales (RS)
+1 Thunder's Companion (TD)
+2 Thunder's Companion (LE)
+1 Too Narrow a Hole (GW)
+2 Twilight (LE)
+1 Will Shaken (AS)
+1 Wound of Long Burden (DM)
+
+# Hero Character (9)
+
+1 Bifur (TW)
+1 Dwalin (TW)
+1 Fíli (TW)
+1 Glóin (TW)
+1 King's Advisor (DF)
+4 Saruman [H] (TW)
+
+# Hero Resource (29)
+
+2 A Chance Meeting (TW)
+1 A More or Less Decent Giant (DF)
+1 Aglarond (TI)
+2 An Unexpected Party (DM)
+1 Angrist (ML)
+1 Battle-axe of the Fallen (DF)
+1 Blue Mountain Dwarves (TW)
+1 Clan Bonds (DF)
+1 Durin's Axe (TW)
+2 Dwarven Armoury (DF)
+2 Dwarven Light-stone (DM)
+3 Forgotten Scrolls (DM)
+1 Here, There, or Yonder (TD)
+1 Map to Mithril (TD)
+1 Marvels Told (TD)
+1 Mighty Was the Fallen (DF)
+1 Noldo-lantern (DM)
+1 Not at Home (TD)
+1 Secret Ways (DM)
+3 The Dwarves Are upon You! (DM)
+1 We Must Away! (DF)
+
+####
+Pool
+####
+
+# Dual Resource (2)
+
+1 His Beard Long and Forked (DF)
+1 Miner's Pick (DF)
+
+# Hero Character (10)
+
+1 Attack-lord (DF)
+1 Balin [H] (TW)
+1 Bofur (TW)
+1 Bombur (TW)
+1 Dwarven Miner (DF)
+1 Frerin (DF)
+1 Kíli (TW)
+1 Thorin II (TW)
+1 Thráin II (TD)
+1 Óin (TW)
+
+# Hero Resource (1)
+
+1 Pipe (DF)
+
+#########
+Sideboard
+#########
+
+# Dual Resource (2)
+
+1 Dwarven Chain-shirt (DF)
+1 Miner's Pick (DF)
+
+# Hazard (6)
+
+1 Awaken Defenders (LE)
+1 Imagination Run Away (GW)
+1 Leaving Middle-Earth (RS)
+1 Peril Returned (TD)
+1 Sea Serpent (TD)
+1 Stout Men of Gondor (AS)
+
+# Hero Resource (22)
+
+1 Book of Mazarbul (TW)
+1 Dwarven Hoard (TD)
+1 Focussed Staff (RS)
+1 Gems of Arda (DM)
+1 Gollum (TW)
+1 Halls of Khazad-dûm (DF)
+1 Into Dark Tunnels (DM)
+1 Longbottom Leaf (BA)
+1 Mithril (DM)
+1 Pipe Weed (DF)
+1 Restored to Its Owner (DF)
+1 Return to Old Dwellings (DF)
+1 Safe from the Shadow (AS)
+1 Shield of Iron-bound Ash (TW)
+1 Smoke Rings (DM)
+1 The Arkenstone [H] (TW)
+1 Vanishment (TW)
+1 Warm Now Be Heart and Limb (TD)
+1 Without a Glance of Longing (DF)
+1 Wizard's Flame (TW)
+1 Wizard's Resolve (RS)
+1 Wizard's Staff (TD)
+
+#####
+Sites
+#####
+
+# Dual Site (12)
+
+1 Ancient Maze (ML)
+1 Durin's Tower (DF)
+1 Grop-kûlkodar (ML)
+1 Mines of Falek-dim (DF)
+1 Remains of Thangorodrim [D] (ML)
+1 Ruins of Belegost (DF)
+1 Ruins of Kheledkhizdin (ML)
+1 Ruins of Nogrod (DF)
+1 The Cobalt-deeps (NW)
+1 The Drowning-deeps [D] (DF)
+1 The Rusted-deeps [D] (DF)
+1 The Wind-deeps [D] (DF)
+
+# Hero Site (26)
+
+1 Amon Hen [H] (TW)
+1 Blue Mountain Dwarf-hold [H] (TW)
+1 Carn Dûm [H] (TW)
+1 Creb Durga [H] (KN)
+1 Dimrill Dale [H] (TW)
+1 Giant's Isle [H] (RS)
+1 Glittering Caves [H] (TW)
+1 Goblin-gate [H] (TW)
+1 Isengard [H] (TW)
+1 Lórien [H] (TW)
+1 Moria [H] (TW)
+1 Mount Gram [H] (TW)
+1 Mount Gundabad [H] (TW)
+1 Pendrath na-Udûn [H] (NW)
+1 Rivendell [H] (TW)
+1 The Gem-deeps [H] (DM)
+1 The Iron-deeps [H] (DM)
+1 The Pits of Angband [H] (ML)
+1 The Sulfur-deeps [H] (DM)
+1 The Under-Caves [H] (KN)
+1 The Under-forges [H] (NW)
+1 The Under-gates [H] (DM)
+1 The Under-grottos [H] (DM)
+1 The Under-leas [H] (DM)
+1 The Under-vaults [H] (DM)
+1 Thilgon's Tomb [H] (NW)
