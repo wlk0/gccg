@@ -609,7 +609,7 @@
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
-    <card name="The Under-vaults" graphics="TheUndervaults.jpg" back="1" text="">
+    <card name="The Under-vaults" graphics="TheUndervaultsDC.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gram (0), The Iron-deeps (7), The Under-leas (7)"/>
        <attr key="draw" value="2"/>
