@@ -8,10 +8,10 @@
 Deck
 ####
 
-# Dual Resource (5)
+# Dual Resource (4)
 
 1 Dwarven Art of War (DF)
-2 Dwarven Axe (DF)
+1 Dwarven Axe (DF)
 2 Old Grudge (DF)
 
 # Dwarf-lord Character (4)
@@ -32,7 +32,7 @@ Deck
 1 Grasping and Ungracious (TI)
 1 Greed (TW)
 1 Legacy of Carcharoth (NW)
-1 No Memory of This Place (RS)
+1 Out of Practice (FB)
 1 Peril Returned (TD)
 1 Power Built by Waiting (AS)
 2 The Pack at the Door (NW)
@@ -51,24 +51,25 @@ Deck
 1 Dís (DF)
 1 Fíli (TW)
 
-# Hero Resource (20)
+# Hero Resource (21)
 
 1 A Chance Meeting (TW)
 1 A More or Less Decent Giant (DF)
 1 Blue Mountain Dwarves (TW)
+1 Clan Bonds (DF)
 1 Cup of Farewell (DM)
 1 Durin's Axe (TW)
 1 Escape (TW)
-1 Habergeon of Silver (TD)
 1 Khazadshathûr (DF)
 1 Knowledge of the Enemy (DM)
 1 Magical Harp (TD)
 1 Marvels Told (TD)
 1 Kingdom of Old Restored (DF)
 2 Return to Old Dwellings (DF)
-1 Shimmer of Hope (DF)
 2 Smoke Rings (DM)
+1 Valiant Sword (TD)
 3 The Dwarves Are upon You! (DM)
+1 The Mithril-coat [H] (TW)
 
 # Minion Resource (6)
 
@@ -118,9 +119,8 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (4)
+# Dual Resource (3)
 
-1 Axe-master (GW)
 1 Dwarven Cunning (DF)
 1 Fortress Reclaimed (DF)
 1 His Beard Long and Forked (DF)
@@ -155,6 +155,7 @@ Sideboard
 # Minion Resource (1)
 
 1 Old Prejudice (LE)
+1 Old Treasure (AS)
 
 # Stage Resource (3)
 
@@ -174,7 +175,7 @@ Sites
 
 2 Blue Mountain Dwarf-hold [D] (DF)
 
-# Hero Site (29)
+# Hero Site (30)
 
 1 Bar-en-Ibûn [H] (DF)
 1 Barrow-downs [H] (TW)
@@ -196,10 +197,11 @@ Sites
 1 Mount Gundabad [H] (TW)
 1 Mount Rerir [H] (FB)
 1 Nurunkhizdín [H] (DF)
+1 Ruined Signal Tower [H] (TW)
 1 Thaurung [H] (NW)
-1 The Gem-deeps [H] (DM)
 1 The Iron-deeps [H] (DM)
 1 The Under-Caves [H] (KN)
+1 The Under-gates [H] (DM)
 1 The Under-leas [H] (DM)
 1 The Under-vaults [H] (DM)
 1 The Wind Throne [H] (TW)

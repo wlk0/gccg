@@ -8,12 +8,11 @@
 Deck
 ####
 
-# Dual Resource (5)
+# Dual Resource (4)
 
 2 Dwarf-friend (DF)
 1 Dwarven Art of War (DF)
 1 Origin of Stone (DF)
-1 Profitable Trade (DF)
 
 # Dwarf-lord Character (4)
 
@@ -39,17 +38,17 @@ Deck
 2 Naugol (DF)
 3 Naugrim (DF)
 1 Nothing to Eat or Drink (LE)
-1 Out of Practise (DF)
+1 Out of Practice (DF)
 2 Pierced by Many Wounds (DM)
 2 Ride Against the Enemy (AS)
 1 Shifting Paths (FB)
-2 Twilight (TW)
+2 Twilight (LE)
 
 # Hero Character (3)
 
 1 Fram Framson (TD)
+1 King's Advisor (DF)
 1 Náli (DF)
-1 Tupór (DF)
 
 # Hero Resource (25)
 
@@ -61,9 +60,10 @@ Deck
 2 Great Friendship (FB)
 2 Healing Song (FB)
 1 Iron Hill Dwarves (TW)
+1 Marvels Told (TD)
 1 Men of Dale (TD)
 1 Not at Home (TD)
-2 Reforging (TW)
+1 Reforging (TW)
 1 Smoke Rings (DM)
 2 Songs of the Old (DF)
 1 Thane's Attire (GW)
@@ -75,8 +75,9 @@ Deck
 
 1 Fori the Beardless (DM)
 
-# Stage Resource (3)
+# Stage Resource (4)
 
+1 Great Achievement (DF)
 1 Ironfoot (DF)
 1 Legacy of Smiths (WH)
 1 Trusted Counsellor (FB)
@@ -84,6 +85,10 @@ Deck
 ####
 Pool
 ####
+
+# Dual Resource (1)
+
+1 Bow of Yew (FB)
 
 # Hero Character (10)
 
@@ -98,9 +103,8 @@ Pool
 1 Pathfinder (DF)
 1 Thorin III Stonehelm (DF)
 
-# Hero Resource (3)
+# Hero Resource (2)
 
-1 Black Arrow (PR)
 1 Healing Herbs (TW)
 1 Pipe (DF)
 
@@ -114,10 +118,11 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (2)
+# Dual Resource (3)
 
 1 Desperate Strike (DF)
 1 Durang (DF)
+1 Profitable Trade (DF)
 
 # Hazard (10)
 
@@ -141,16 +146,15 @@ Sideboard
 1 King under the Mountain (TD)
 2 Longbottom Leaf (BA)
 1 Magical Harp (TD)
-1 Marvels Told (TD)
 1 Noble Hound (DM)
+1 Reforging (TW)
 1 Returned Exiles (TD)
 1 Smoke Rings (DM)
 2 The Old Thrush (TW)
 
-# Stage Resource (4)
+# Stage Resource (3)
 
 1 Friendship of Old Renewed (DF)
-1 Great Achievement (DF)
 1 Mining Settlement (DF)
 1 Strength from the Ered Engrin (DF)
 

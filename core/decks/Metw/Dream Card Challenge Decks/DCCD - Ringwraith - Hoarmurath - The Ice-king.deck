@@ -19,11 +19,11 @@ Deck
 1 Fell Winter (TW)
 1 Fell Winter (LE)
 1 Hurnkennec (TI)
-1 Legacy of Carcharoth (NW)
 1 Lesser Spiders (TD)
 1 Many Shapes of Power and Fear (ML)
 1 Monstrosity of Diverse Shape (BA)
 1 Morgoth's Ring (ML)
+1 Peril Returned (TD)
 1 Spawn of Ungoliant (BA)
 1 The Pack at the Door (NW)
 1 Twilight (TW)
@@ -31,41 +31,43 @@ Deck
 3 Wake of War (TW)
 2 Wargs (TW)
 1 Wargs (LE)
-2 Were-wolf (NE)
+1 Were-wolf (NE)
 3 White Wolves (NW)
+1 Wolves (TW)
 
 # Hero Resource (1)
 
 1 Torque of Hues (TW)
 
-# Minion Character (11)
+# Minion Character (10)
 
 4 Hoarmûrath the Ringwraith (LE)
 2 Ice-troll (NW)
 1 Nadash (NW)
 3 Orc Grunt (NE)
-1 Orc Tracker (LE)
 
 # Minion Resource (32)
 
-2 Ancient Secrets (BA)
-2 Black Rider (LE)
+1 Ancient Secrets (BA)
+1 Black Rider (LE)
 3 Blasting Fire (WH)
 1 Call to Arms (KN)
 1 Crept Along Cleverly (WH)
 1 Dark Defenders (NE)
 1 Dark Forges (NE)
-1 Hidden Ways (LE)
 1 Hoarmûrath Unleashed (LE)
 2 Ice-king of Urd (ML)
-1 Large Warrior Loose (NE)
+1 Iron-road (LE)
 1 Mechanical Bow (WH)
 3 Orcs of the Barl Syrnac (ML)
 1 Snow-trolls (NW)
 2 The Goblins Are upon You! (NE)
+1 The Ring Leaves Its Mark (LE)
 1 The Runeknife of Risinth (NW)
+1 Voices of Malice (LE)
 3 War-wolf (LE)
 1 Wargs of the Tundra (ML)
+1 We Have Come to Kill (LE)
 3 Weigh All Things to a Nicety (LE)
 1 What of the Dawn? (TI)
 
@@ -73,12 +75,14 @@ Deck
 Pool
 ####
 
-# Minion Character (6)
+# Minion Character (8)
 
 1 Dakalmog (NW)
 1 Durba (NW)
 1 Ologong (ML)
 2 Orc Brawler (LE)
+1 Orc Shaman (NE)
+1 Orc Tracker (LE)
 1 Urdrak (NW)
 
 # Minion Resource (3)
@@ -95,60 +99,79 @@ Sideboard
 
 1 Flight Unmarked (RS)
 
-# Hazard (5)
+# Hazard (10)
 
 1 Desire All for Thy Belly (BA)
+1 Drought (SL)
 1 Drowning Seas (TW)
-1 New Moon (TW)
+1 Eyes of the Shadow (DM)
+1 Muster Disperses (LE)
 1 Night (TW)
-1 Quicksand (SL)
+1 Ninevet (DF)
+1 Shelob's Brood (BA)
+1 Slip Treacherously (AS)
+1 Too Much to Ask (WR)
 
 # Minion Character (1)
 
 1 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (13)
+# Hero Resource (1)
 
+1 The Mithril-coat (TW)
+
+# Minion Resource (17)
+
+1 Abomination Nursed in Darkness (ML)
+1 Ancient Secrets (BA)
 1 Bitter Cold (LE)
+1 Black Rider (LE)
 1 Consumed by Dragon-fire (GW)
-2 Gifts as Given of Old (LE)
+2 Far Below the Deepest Delvings (AS)
+1 Gifts as Given of Old (LE)
 1 Gostir Roused (ML)
 1 Hammer of the Underworld (ML)
+1 Iron Shield of Old (AS)
 1 Our Own Wolves (AS)
 2 Roam the Waste (BA)
 1 Snow-hammer (ML)
-1 The Mithril-coat [M] (LE)
 1 The Sled-horde (ML)
 1 The Under-roads (AS)
+
 
 #####
 Sites
 #####
 
-# Dual Site (3)
+# Dual Site (4)
 
+1 Grop-kûlkodar (ML)
 1 Ruins of Kheledkhizdin (ML)
 1 The Cobalt-deeps (NW)
 1 The Rusted-deeps [D] (DF)
 
-# Minion Site (22)
+# Minion Site (26)
 
 1 Bernastath [M] (NW)
-1 Buhr Thurasig [M] (GW)
+1 Carn Dûm [M] (LE)
+1 Caves of Ûlund [M] (LE)
 1 Celeb-ost [M] (NW)
 1 Collarmount [M] (GW)
 1 Deep Cleft [M] (GW)
 1 Dol Guldur [M] (LE)
-1 Elyamû [M] (ML)
 1 Hollow Spire [M] (ML)
 1 Kala Dulakurth [M] (NW)
 1 Lar-huz [M] (GP)
+1 Lothragh Camp [M] (ML)
 1 Lugdruong [M] (ML)
 1 Mirror Halls [M] (ML)
 1 Mornost [M] (NW)
 1 Númenórean Tomb [M] (ML)
 1 Olyavud [M] (ML)
+1 Shab Arch [M] (GW)
 2 Shapôl Udûn [M] (ML)
+1 The Gem-deeps [M] (AS)
+1 The Lonely Mountain [M] (LE)
 1 The Vaults of Utûmno [M] (ML)
 1 Tol Ringurthur [M] (ML)
 1 Tower of the Wolf-friend [M] (GW)

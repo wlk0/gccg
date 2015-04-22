@@ -43,14 +43,13 @@ Deck
 
 # Minion Character (4)
 
-1 Bolg of the North (DF)
 1 Orc Captain (LE)
+1 Orc Shaman (NE)
 2 Orc Tracker (LE)
 
 # Minion Resource (29)
 
-1 A Worthy Substitute (NE)
-2 Ancient Secrets (BA)
+1 Ancient Secrets (BA)
 2 Broad-headed Spear (LE)
 2 Burning Rick, Cot, and Tree (LE)
 2 Dark Forges (NE)
@@ -69,7 +68,8 @@ Deck
 1 Swarm of Bats (LE)
 2 Swift Strokes (LE)
 1 Tokens to Show (AS)
-2 Weigh All Things to a Nicety (LE)
+1 Voices of Malice (LE)
+3 Weigh All Things to a Nicety (LE)
 
 ####
 Pool
@@ -77,9 +77,10 @@ Pool
 
 # Minion Character (10)
 
+1 Bolg of the North (DF)
 1 Bûthrakaur (BA)
 2 Crook-legged Orc (BA)
-2 Goblin-miner (NE)
+1 Goblin-miner (NE)
 1 Hurog (NE)
 1 Lugdush (WH)
 1 Orc Shaman (NE)
@@ -89,17 +90,18 @@ Pool
 
 1 Fizzling Torch (NE)
 1 Foul-smelling Paste (LE)
-1 Trophy-belt (NE)
+1 Whip (LE)
+
 
 #########
 Sideboard
 #########
 
-# Hazard (12)
+# Hazard (10)
 
 1 Call of the Deeps (DF)
 1 Crossing the Border (DF)
-1 Lure of Nature (TW)
+1 Lure of the Senses (TW)
 1 Many Burdens (RS)
 1 Mensharag (TI)
 1 Muster Disperses (TW)
@@ -107,12 +109,10 @@ Sideboard
 1 Old Enemies (DF)
 1 Slip Treacherously (AS)
 1 Too Much to Ask (WR)
-1 Vuk (SL)
-1 Wielder's Curse (GW)
 
-# Minion Character (3)
+# Minion Character (4)
 
-1 Goblin-miner (NE)
+2 Goblin-miner (NE)
 2 Orc Grunt (NE)
 
 # Minion Resource (16)
@@ -120,18 +120,18 @@ Sideboard
 1 A New Domain (DF)
 1 An Evil Fortune (DF)
 1 Ancient Black Axe (AS)
-1 Blasting Fire (WH)
+1 Ancient Secrets (BA)
+1 Angband Revisited (BA)
 1 Breach the Hold (BA)
 1 Grey Mountain Goblins (LE)
 1 Invade Their Domain (BA)
-1 Liquid Fire (WH)
+2 Liquid Fire (WH)
 1 Long Forgotten Gold (GW)
 1 Lord and Usurper (BA)
 2 Mechanical Bow (WH)
 1 Orcs of Gundabad (LE)
 1 The Arkenstone [M] (PR)
-1 The Ring Leaves Its Mark (LE)
-1 Voices of Malice (LE)
+
 
 #####
 Sites
@@ -142,23 +142,23 @@ Sites
 2 Moria [B] (BA)
 1 The Drowning-deeps [B] (BA)
 1 The Gem-deeps [B] (BA)
+1 The Iron-deeps [B] (BA)
 1 The Pûkel-deeps [B] (BA)
 1 The Rusted-deeps [B] (BA)
 1 The Sulfur-deeps [B] (BA)
-1 The Under-courts [B] (BA)
 2 The Under-gates [B] (BA)
 1 The Under-grottos [B] (BA)
 1 The Under-leas [B] (BA)
 1 The Under-vaults [B] (BA)
 1 The Wind-deeps [B] (BA)
 
-# Dual Site (2)
+# Dual Site (1)
 
-1 Mines of Angûrath (DF)
-1 Mines of Falek-dim (DF)
+1 Mines of Falek-dim [D] (DF)
 
-# Minion Site (17)
+# Minion Site (18)
 
+1 Barrow-downs [M] (LE)
 1 Blue Mountain Dwarf-hold [M] (LE)
 1 Bree [M] (LE)
 1 Cameth Brin [M] (LE)
