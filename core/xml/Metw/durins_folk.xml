@@ -1328,7 +1328,7 @@
 			 <attr key="influence" value="-2"/>
 			 <attr key="keyword" value="Command"/>
 		</card>
-		<card name="Out of Practise" graphics="Out of Practise.jpg" text="Playable on a non-Hobbit character with two or more skills. Target character must attempt to move to a different site each turn or tap at the end of his organization phase. Once per turn during his organization phase, another character in the company may tap to attempt to remove this card. Make a roll: if the result is greater than 6, discard this card. Cannot be duplicated on a given character.">
+		<card name="Out of Practice" graphics="Out of Practice.jpg" text="Playable on a non-Hobbit character with two or more skills. Target character must attempt to move to a different site each turn or tap at the end of his organization phase. Once per turn during his organization phase, another character in the company may tap to attempt to remove this card. Make a roll: if the result is greater than 6, discard this card. Cannot be duplicated on a given character.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
