@@ -39,7 +39,7 @@ Deck
 1 Lure of Expedience (LE)
 1 Men of the Wood (GW)
 1 Mouth of Sauron (TW)
-1 Out of Practise (DF)
+1 Out of Practice (DF)
 3 Rank upon Rank (DM)
 1 Ransom (NE)
 2 Ruffians (WR)
@@ -59,12 +59,11 @@ Deck
 1 A Chance Meeting (TW)
 1 Blue Mountain Dwarves (TW)
 2 Clan Bonds (DF)
-2 Concealment (TW)
+3 Concealment (TW)
 1 Durin's Axe (TW)
 1 Marvels Told (TD)
 2 Smoke Rings (DM)
 2 The Dwarves Are upon You! (DM)
-1 Vein of Arda (DM)
 
 # Minion Character (1)
 
@@ -79,7 +78,7 @@ Deck
 
 # Stage Resource (7)
 
-1 Crimson Hood (DF)
+1 Balin, Dwarf of All Trades (DF)
 3 Deep Mountain Fortress (DF)
 1 Dwarven Galleries (DF)
 1 Great Miners (DF)
@@ -96,13 +95,13 @@ Pool
 
 # Hero Character (8)
 
+1 Attack-lord (DF)
 1 Bombur (TW)
 1 Dori (TW)
 1 Dwarven Miner (DF)
 1 Frerin (DF)
 1 Frár (DF)
 1 King's Advisor (DF)
-1 Mountaineer (DF)
 1 Pathfinder (DF)
 
 # Hero Resource (1)
@@ -120,7 +119,7 @@ Pool
 
 # Stage Resource (3)
 
-1 Balin, Dwarf of All Trades (DF)
+1 Crimson Hood (DF)
 1 Promise of Treasure (DF)
 1 Son of Fundin (DF)
 
@@ -145,12 +144,11 @@ Sideboard
 1 Muster Disperses (LE)
 1 Variag Horse-raiders (GP)
 
-# Hero Character (2)
+# Hero Character (1)
 
-1 Attack-lord (DF)
 1 Dwarven Miner (DF)
 
-# Hero Resource (13)
+# Hero Resource (14)
 
 1 Book of Mazarbul (TW)
 1 Gems of Arda (DM)
@@ -164,6 +162,7 @@ Sideboard
 1 Reconquest of Khazad-dûm (DF)
 1 Return to Old Dwellings (DF)
 1 The Old Thrush (TW)
+1 Vein of Arda (DM)
 
 # Stage Resource (4)
 
@@ -176,10 +175,9 @@ Sideboard
 Sites
 #####
 
-# Dual Site (6)
+# Dual Site (5)
 
 1 Durin's Tower (DF)
-1 Ruins of Belegost (DF)
 1 Ruins of Nogrod (DF)
 1 The Drowning-deeps [D] (DF)
 1 The Rusted-deeps [D] (DF)
