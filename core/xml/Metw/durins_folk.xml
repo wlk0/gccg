@@ -1740,7 +1740,7 @@
 			 <attr key="keyword" value="Two-handed"/>
 			 <attr key="keyword" value="Warrior only"/>
 		</card>
-		<card name="We Must Away!" graphics="We Must Away.jpg" text="Playable at the end of the organization phase on a moving company that contains at least two Dwarves. Untap all characters in the company. The company may move an additional region this turn (to a maximum of 6). Cannot be duplicated on a given company.">
+		<card name="We Must Away" graphics="We Must Away.jpg" text="Playable at the end of the organization phase on a moving company that contains at least two Dwarves. Untap all characters in the company. The company may move an additional region this turn (to a maximum of 6). Cannot be duplicated on a given company.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
