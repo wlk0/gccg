@@ -18,7 +18,6 @@ Deck
 2 Ghosts (LE)
 2 Greater Specters (TI)
 1 Ibûn (DF)
-1 Long Winter (TW)
 2 Mewlips (TI)
 1 Morgul Night (TW)
 1 Out of the Swamps (TI)
@@ -26,9 +25,11 @@ Deck
 2 Plague of Wights (TW)
 2 Sleepless Malice (TD)
 1 Slip Treacherously (AS)
+1 Snow in the Mountains (NW)
 1 Spells of the Barrow-wights (DM)
 2 Stirring Bones (DM)
-2 Ta-Fa-Lisch (DF)
+1 Stirring Bones (LE)
+1 Ta-Fa-Lisch (DF)
 2 The Moon Is Dead (DM)
 1 Twilight (TW)
 
@@ -52,7 +53,7 @@ Deck
 1 Iron-home (KN)
 2 Iron-road (LE)
 1 No More Nonsense (LE)
-1 Riven Gate (AS)
+1 Sable Shield (LE)
 2 Swift Strokes (LE)
 2 The Goblins Are upon You! (NE)
 1 The Iron Crown [M] (LE)
@@ -90,17 +91,16 @@ Pool
 Sideboard
 #########
 
-# Hazard (10)
+# Hazard (9)
 
+1 Drought (SL)
+1 Drowning Seas (TW)
 1 Fell Winter (TW)
 1 King of the Dead (TI)
+1 Long Winter (TW)
 1 Lure of Expedience (LE)
 1 Lure of the Senses (TW)
 1 Muster Disperses (TW)
-1 Sand-storm (SL)
-1 Siege of Gondor (WR)
-1 Snow in the Mountains (NW)
-1 Taint of Glory (WR)
 1 Twilight (TW)
 
 # Minion Character (2)
@@ -108,7 +108,7 @@ Sideboard
 1 Hoarmûrath the Ringwraith (LE)
 1 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (18)
+# Minion Resource (19)
 
 1 Angmarim [M] (AS)
 2 Black Rider (LE)
@@ -118,8 +118,10 @@ Sideboard
 1 Magic Ring of Savagery (LE)
 1 Magic Ring of Weals (LE)
 1 Minor Ring (LE)
+1 Morgul-apprentice (NE)
 1 Orcs of Angmar (LE)
-2 Test of Fire (LE)
+1 Riven Gate (AS)
+1 Test of Fire (LE)
 1 Trifling Ring (LE)
 1 Trophy-belt (NE)
 1 Vasamacil (KN)
