@@ -274,13 +274,6 @@
 			 <attr key="specific" value="Sauron"/>
 			 <attr key="keyword" value="startable"/>
 		</card>
-		<card name="The Ring's Dominion" graphics="The Rings Dominion.jpg" text="Playable on your Fallen-wizard or Elf-lord if Spells Born of Discord is in play. Instead of tapping to use a magic ring he bears, he may make a CC and tap the magic ring.">
-			 <attr key="type" value="Stage Resource"/>
-			 <attr key="rarity" value="U"/>
-			 <attr key="class" value="Permanent-event"/>
-			 <attr key="cp" value="1"/>
-			 <attr key="sp" value="2"/>
-		</card>
 		<card name="Unspeakable Beauty" graphics="Unspeakable Beauty.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men borne by a female Man or Dúnadan character (or by Adûnaphel the Ringwraith). Bearer may designate one male character in her company which may be controlled costing no EI; you may bring such a character into play regardless of his mind value and he must always be controlled by bearer (regardless of any hazard effects). Additionally, +10 to bearer’s influence attempts against opponent’s male characters. This modification cannot be altered by any other effect.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
@@ -308,13 +301,18 @@
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
+		<card name="x" graphics=".jpg" text="">
+			 <attr key="type" value="Minion Resource"/>
+			 <attr key="rarity" value="U"/>
+			 <attr key="class" value="Permanent-event"/>
+		</card>
 		<card name="Y" graphics=".jpg" text="">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
 		<card name="Z" graphics=".jpg" text="">
-			 <attr key="type" value="Minion Resource"/>
+			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
