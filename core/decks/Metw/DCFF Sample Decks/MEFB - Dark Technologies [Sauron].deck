@@ -1,9 +1,8 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      Dark Technologies
+#      MEFB - Dark Technologies [Sauron]
 #
-
 
 ####
 Deck
@@ -27,8 +26,8 @@ Deck
 1 Doubled Vigilance (DM)
 1 Gandalf the White Rider (AS)
 2 Hermit Troll (DF)
-2 Hobgoblins (LE)
 1 Hoarmûrath of Dír (TW)
+2 Hobgoblins (LE)
 3 Little Snuffler (DM)
 1 Many Sorrows Befall (TD)
 3 Minions Stir (LE)
@@ -37,7 +36,7 @@ Deck
 2 Orc-raiders (TW)
 3 Orc-warband (LE)
 2 Orcish Marauders (DF)
-1 Out of Practise (DF)
+1 Out of Practice (DF)
 2 Pierced by Many Wounds (DM)
 2 Twilight (TW)
 1 Uruk-lieutenant (LE)
@@ -135,11 +134,11 @@ Sideboard
 1 Scroll of Isildur [M] (LE)
 1 Secrets of Their Forging (LE)
 1 Swift Strokes (LE)
-1 Voices of Malice (LE)
 1 Test of Fire (LE)
 1 The Great Eye (AS)
 1 The Reviled Ring (LE)
 1 Trifling Ring (LE)
+1 Voices of Malice (LE)
 
 #####
 Sites
@@ -186,4 +185,3 @@ Sites
 1 The Worthy Hills [M] (LE)
 1 Vale of Erech [M] (LE)
 1 Weathertop [M] (AS)
-

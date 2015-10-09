@@ -1,9 +1,8 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Dunadan-lord - Lord Denethor - Captains of the West
+#      DCCD - Dunadan-lord - Lord Denethor - Captains of Gondor
 #
-
 
 ####
 Deck
@@ -17,12 +16,12 @@ Deck
 
 4 Lord Denethor (WR)
 
-# Hazard (33)
+# Hazard (34)
 
 1 Ambusher (LE)
 1 An Unexpected Outpost (DM)
-1 Angmar Arises (DM)
-2 Barrow-wight (LE)
+1 Angmar Arises (PR)
+2 Barrow-wight (TW)
 1 Black Crows (FB)
 3 Chill Douser (DM)
 1 Darkness Ahead (TI)
@@ -38,6 +37,7 @@ Deck
 3 Plague of Wights (LE)
 1 Power Built by Waiting (AS)
 1 Reaching Shadow (DM)
+1 Searching Eye (LE)
 1 Sons of Kings (LE)
 1 Spells of the Barrow-wights (DM)
 3 Stirring Bones (LE)
@@ -52,7 +52,7 @@ Deck
 1 Hirgon (WR)
 1 Húrin the Tall (WR)
 
-# Hero Resource (30)
+# Hero Resource (29)
 
 1 Archer of Ithilien (WR)
 1 Captains of the West (WR)
@@ -66,7 +66,6 @@ Deck
 2 Lock nor Bar May Hinder (DF)
 1 Marvels Told (TD)
 1 Orcrist (TW)
-1 Palantír of Minas Tirith [H] (TW)
 3 Rescue Prisoners (TW)
 1 Rumours of Danger (WR)
 1 Smoke Rings (DM)
@@ -109,7 +108,7 @@ Pool
 
 # Stage Resource (3)
 
-1 Captain of the Tower Guard (WR)
+1 Captain of the Royal Rangers  (WR)
 1 The House of Mardil (WR)
 1 Trusted Counsellor (FB)
 
@@ -126,7 +125,7 @@ Sideboard
 1 Corsairs of Umbar (TW)
 1 FEAR! FIRE! FOES! (AS)
 1 King of the Dead (TI)
-1 Many Burdens (RS)
+1 Many Burdens (NE)
 1 Muster Disperses (LE)
 1 Slip Treacherously (AS)
 1 Ta-Fa-Lisch (DF)
@@ -155,7 +154,7 @@ Sideboard
 
 # Stage Resource (6)
 
-1 Captain of the Royal Rangers  (WR)
+1 Captain of the Tower Guard (WR)
 1 Eyes of the White Tower (WR)
 1 Legacy of Smiths (WH)
 1 Son of Ecthelion (WR)
@@ -166,7 +165,7 @@ Sideboard
 Sites
 #####
 
-# Hero Site (29)
+# Hero Site (30)
 
 1 Amrûn [H] (SL)
 1 Barad-dûr [H] (TW)
@@ -177,13 +176,12 @@ Sites
 1 Dead Marshes [H] (TW)
 1 Dol Guldur [H] (TW)
 1 Drúadan Forest [H] (TW)
-1 Durthang [H] (WR)
+1 Durthang [H] (NE)
 1 Gobel Mírlond [H] (AS)
-1 Haudh-in-Gwanûr [H] (DM)
 1 Henneth Annûn [H] (TW)
 1 Iorag Camp [H] (GP)
 1 Joghul's Shrine [H] (GP)
-1 Lugarlur [H] (SL)
+1 Lugarlur [H] (NE)
 1 Minas Durlith [H] (NE)
 1 Minas Morgul [H] (TW)
 1 Minas Tirith [H] (TW)
@@ -195,7 +193,7 @@ Sites
 1 Shelob's Lair [H] (TW)
 1 Sturlurtsa [H] (GP)
 1 The Hospice of Lost Faith [H] (SL)
+1 Thuringwathost [H] (NE)
 1 Tolfalas [H] (TW)
 1 Urlurtsu Nurn [H] (DM)
-
-
+1 Vale of Erech [H] (TW)
