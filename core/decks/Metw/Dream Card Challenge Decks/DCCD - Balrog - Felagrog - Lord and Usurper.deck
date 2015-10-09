@@ -92,7 +92,6 @@ Pool
 1 Foul-smelling Paste (LE)
 1 Whip (LE)
 
-
 #########
 Sideboard
 #########
@@ -101,8 +100,8 @@ Sideboard
 
 1 Call of the Deeps (DF)
 1 Crossing the Border (DF)
-1 Lure of the Senses (TW)
-1 Many Burdens (RS)
+1 Lure of the Senses (LE)
+1 Many Burdens (NE)
 1 Mensharag (TI)
 1 Muster Disperses (TW)
 1 Ninevet (DF)
@@ -132,7 +131,6 @@ Sideboard
 1 Orcs of Gundabad (LE)
 1 The Arkenstone [M] (PR)
 
-
 #####
 Sites
 #####
@@ -154,7 +152,7 @@ Sites
 
 # Dual Site (1)
 
-1 Mines of Falek-dim [D] (DF)
+1 Mines of Falek-dim (DF)
 
 # Minion Site (18)
 
@@ -169,7 +167,7 @@ Sites
 1 Gondmaeglom [M] (LE)
 1 Iron Hill Dwarf-hold [M] (LE)
 1 Ligr Wodaize Berne [M] (NW)
-1 Mathlaburg [M] (GW)
+1 Mathlaburg [M] (NE)
 1 Mount Gram [M] (LE)
 1 Mount Gundabad [M] (LE)
 1 Nurunkhizdín [M] (DF)

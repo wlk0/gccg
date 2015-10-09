@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      {blue}DCFF - Dáin - Trade Is King{white}
+#      MEDF - Trade is King [Dain]
 #
 
 ####
@@ -36,7 +36,7 @@ Deck
 1 Marsh-drake (TD)
 1 Mouth of Sauron (TW)
 2 Nameless Thing (DM)
-1 Out of Practise (DF)
+1 Out of Practice (DF)
 1 Revealed to all Watchers (DM)
 1 Saruman the Wise (AS)
 1 Summons from Long Sleep (AS)
@@ -197,7 +197,7 @@ Sites
 1 The Rusted-deeps [D] (DF)
 1 The Wind-deeps [D] (DF)
 
-# Dwarf-lord Site (2)
+# Dwarf-lord Site (3)
 
 3 Iron Hill Dwarf-hold [D] (DF)
 
@@ -207,7 +207,7 @@ Sites
 1 Rivendell [F] (FB)
 1 Thranduil's Halls [F] (FB)
 
-# Hero Site (36)
+# Hero Site (35)
 
 1 Amon Hen [H] (TW)
 1 Bandit Lair [H] (TW)
@@ -244,4 +244,3 @@ Sites
 1 The Lonely Mountain [H] (TW)
 1 The Wind Throne [H] (TW)
 1 Zarak Dûm [H] (TD)
-

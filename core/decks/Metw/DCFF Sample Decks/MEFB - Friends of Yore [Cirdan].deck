@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      Friends of Yore
+#      MEFB - Friends of Yore [Cirdan]
 #
 
 ####
@@ -33,7 +33,7 @@ Deck
 1 Mouth of Sauron (TW)
 1 Nature's Revenge (WH)
 1 Old Man Willow (TW)
-1 Out of Practise (DF)
+1 Out of Practice (DF)
 2 Parsimony of Seclusion (TD)
 2 Protecting Their Domain (FB)
 1 Saruman the Wise (AS)
@@ -81,12 +81,11 @@ Deck
 1 Kinsman and Ambassador (FB)
 1 Trusted Counsellor (FB)
 
-
 ####
 Pool
 ####
 
-# Hero Character (6)
+# Hero Character (7)
 
 1 Annalena (TW)
 1 Bladorthin (FB)
@@ -111,7 +110,6 @@ Pool
 
 1 The Sea's Prowess (FB)
 1 Thrall of the Voice (WH)
-
 
 #########
 Sideboard
@@ -241,4 +239,3 @@ Sites
 1 Variag Camp [H] (TW)
 1 Wose Passage-hold [H] (TW)
 1 Zarak Dûm [H] (TD)
-
