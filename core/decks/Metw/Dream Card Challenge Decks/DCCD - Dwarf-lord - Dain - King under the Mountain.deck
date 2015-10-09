@@ -42,7 +42,7 @@ Deck
 2 Pierced by Many Wounds (DM)
 2 Ride Against the Enemy (AS)
 1 Shifting Paths (FB)
-2 Twilight (LE)
+2 Twilight (TW)
 
 # Hero Character (3)
 
@@ -90,7 +90,7 @@ Pool
 
 1 Bow of Yew (FB)
 
-# Hero Character (10)
+# Hero Character (11)
 
 1 Attack-lord (DF)
 1 Dwalin (TW)
@@ -101,7 +101,7 @@ Pool
 1 Lóni (DF)
 1 Náin, Son of Grór (DF)
 1 Pathfinder (DF)
-1 Thorin III Stonehelm (DF)
+2 Thorin III Stonehelm (DF)
 
 # Hero Resource (2)
 
@@ -127,11 +127,11 @@ Sideboard
 # Hazard (10)
 
 1 Angurth Ahunt (GW)
-1 Call of Home (TW)
+1 Call of Home (LE)
 1 He Is Lost to Us (FB)
 1 Lost at Sea (TW)
-1 Lure of Expedience (TW)
-1 Many Burdens (RS)
+1 Lure of Expedience (LE)
+1 Many Burdens (NE)
 1 Nameless Thing (DM)
 1 Old Enemies (DF)
 1 The Ring's Betrayal (TW)
@@ -205,4 +205,3 @@ Sites
 1 The Wind Throne [H] (TW)
 1 Thunder Cleft [H] (GW)
 1 Zarak Dûm [H] (TD)
-
