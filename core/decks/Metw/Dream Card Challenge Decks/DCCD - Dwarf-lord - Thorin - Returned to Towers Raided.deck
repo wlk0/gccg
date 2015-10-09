@@ -32,7 +32,7 @@ Deck
 1 Grasping and Ungracious (TI)
 1 Greed (TW)
 1 Legacy of Carcharoth (NW)
-1 Out of Practice (FB)
+1 Out of Practice (DF)
 1 Peril Returned (TD)
 1 Power Built by Waiting (AS)
 2 The Pack at the Door (NW)
@@ -61,15 +61,15 @@ Deck
 1 Durin's Axe (TW)
 1 Escape (TW)
 1 Khazadshathûr (DF)
+1 Kingdom of Old Restored (DF)
 1 Knowledge of the Enemy (DM)
 1 Magical Harp (TD)
 1 Marvels Told (TD)
-1 Kingdom of Old Restored (DF)
 2 Return to Old Dwellings (DF)
 2 Smoke Rings (DM)
-1 Valiant Sword (TD)
 3 The Dwarves Are upon You! (DM)
 1 The Mithril-coat [H] (TW)
+1 Valiant Sword (TD)
 
 # Minion Resource (6)
 
@@ -87,18 +87,14 @@ Deck
 Pool
 ####
 
-# Dual Character (1)
-
-1 Dár (SL)
-
 # Hero Character (9)
 
 1 Attack-lord (DF)
 1 Dworin (DF)
 1 Frerin (DF)
 1 Glóin (TW)
-1 Lipór (DF)
 1 King's Advisor (DF)
+1 Lipór (DF)
 1 Norin (DF)
 1 Náin, Son of Grór (DF)
 1 Pathfinder (DF)
@@ -152,7 +148,7 @@ Sideboard
 1 Star-glass (TW)
 1 Tower Raided (AS)
 
-# Minion Resource (1)
+# Minion Resource (2)
 
 1 Old Prejudice (LE)
 1 Old Treasure (AS)

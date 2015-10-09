@@ -23,7 +23,7 @@ Deck
 
 1 Kori (DF)
 
-# Hazard (33)
+# Hazard (32)
 
 2 Ambusher (TW)
 1 An Unexpected Outpost (DM)
@@ -36,10 +36,9 @@ Deck
 2 Hurling Rocks (DF)
 2 Lawless Men (LE)
 1 Lord of the Woods (FB)
-1 Lure of Expedience (LE)
-1 Men of the Wood (GW)
+1 Lure of Expedience (TW)
+1 Men of the Wood (NE)
 1 Mouth of Sauron (TW)
-1 Out of Practice (DF)
 3 Rank upon Rank (DM)
 1 Ransom (NE)
 2 Ruffians (WR)
@@ -84,7 +83,6 @@ Deck
 1 Great Miners (DF)
 1 Legacy of Smiths (WH)
 
-
 ####
 Pool
 ####
@@ -108,14 +106,9 @@ Pool
 
 1 Pipe (DF)
 
-# Minion Character (1)
-
-1 Gulla (LE)
-
-# Minion Resource (2)
+# Minion Resource (1)
 
 1 Foul-smelling Paste (LE)
-1 Strange Rations (LE)
 
 # Stage Resource (3)
 
@@ -140,7 +133,7 @@ Sideboard
 1 Covetous Thoughts (LE)
 1 Dunlending Raiders (TD)
 1 Horse-lords (LE)
-1 Many Burdens (RS)
+1 Many Burdens (NE)
 1 Muster Disperses (LE)
 1 Variag Horse-raiders (GP)
 
@@ -175,9 +168,10 @@ Sideboard
 Sites
 #####
 
-# Dual Site (5)
+# Dual Site (6)
 
 1 Durin's Tower (DF)
+1 Ruins of Belegost (DF)
 1 Ruins of Nogrod (DF)
 1 The Drowning-deeps [D] (DF)
 1 The Rusted-deeps [D] (DF)
