@@ -929,7 +929,7 @@
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="mp" value="1"/>
-			 <attr key="class" value="Permanent-event or Short-event"/>
+			 <attr key="class" value="Permanent-event/Short-event"/>
 	</card>
 	<card name="The Three Are Together" graphics="The Three Are Together.jpg" text="Unique. Playable during the organization phase on a company at a Haven [H] containing Elrond, Galadriel, and Gandalf (or Círdan if Realm of Narya is in play). These characters in the company receive +2 to their prowess and EI, and +2 to any CP they make for playing a resource short-event. Discard this card if the company does not contain three of the above named characters (or manifestations thereof).">
 			 <attr key="type" value="Hero Resource"/>
