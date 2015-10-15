@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Elf-lord - Elrond - Guardian of Arnor
+#      DCCD - Elf-lord - Elrond - Guardians of Arnor
 #
 
 ####
@@ -61,8 +61,8 @@ Deck
 1 Bow of Dragon-horn (TD)
 3 Choose a Mortal Life (FB)
 1 Elves of the House (FB)
-3 Great-road (TW)
 1 Great Bow of Yew (FB)
+3 Great-road (TW)
 1 Hall of Fire (DM)
 1 Lossoth (TW)
 1 Many Turns and Doublings (TD)
@@ -84,7 +84,6 @@ Deck
 1 Fosterhome of Royal Heirs (FB)
 2 Possessions of the High-elves (FB)
 1 Trusted Counsellor (FB)
-
 
 ####
 Pool
@@ -139,7 +138,7 @@ Sideboard
 1 Wield It While I May (ML)
 1 Wielder's Curse (GW)
 
-# Hero Resource (13)
+# Hero Resource (14)
 
 1 Adamant Helmet (TD)
 1 Align Palantír (TW)
@@ -175,7 +174,7 @@ Sites
 
 1 Grey Havens [F] (FB)
 
-# Hero Site (29
+# Hero Site (29)
 
 1 Amon Lind [H] (FB)
 1 Annúminas [H] (KN)

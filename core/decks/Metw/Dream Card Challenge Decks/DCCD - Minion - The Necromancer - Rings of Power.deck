@@ -23,12 +23,12 @@ Deck
 1 An Unexpected Outpost (DM)
 1 Black Crows (FB)
 1 Caran-carach (NE)
-2 Cave-drake (TW)
+2 Cave-drake (LE)
 1 Choking Shadows (TW)
 1 Dark Designs of Mordor (NE)
 2 Darkness Ahead (TI)
 1 Demons of Aglarond (TI)
-3 Doors of Night (LE)
+3 Doors of Night (TW)
 1 Echoes of Morgoth's Cry (ML)
 1 Eloeklo, Lindor's Bane (NW)
 1 Foolish Words (TD)
@@ -93,10 +93,9 @@ Pool
 1 Tros Hesnef (LE)
 1 Uchel (LE)
 
-# Minion Resource (3)
+# Minion Resource (2)
 
-1 Foundations Remain (NE)
-1 Master-smith (NE)
+1 Open to the Summons (WH)
 1 Whispers of Rings (BA)
 
 #########
@@ -150,7 +149,7 @@ Sites
 
 # Dual Site (1)
 
-1 Mines of Angûrath [D] (DF)
+1 Mines of Angûrath (DF)
 
 # Minion Site (32)
 
@@ -178,10 +177,10 @@ Sites
 1 Nurunkhizdín [M] (DF)
 1 Nûrniag Camp [M] (LE)
 1 Ostigurth [M] (NE)
+1 Temple of Kondri Odchi [M] (GP)
 1 The Carrock [M] (DF)
 1 The Gem-deeps [M] (AS)
 1 The Under-courts [M] (AS)
 1 The Wind Throne [M] (LE)
-1 Temple of Kondri Odchi [M] (GP)
 1 Thranduil's Halls [M] (LE)
 1 Woodmen-town [M] (LE)
