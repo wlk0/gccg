@@ -13,7 +13,7 @@ Deck
 2 On the Precious (WR)
 1 Rings of Power (RS)
 
-# Hazard (33)
+# Hazard (34)
 
 2 An Unexpected Outpost (DM)
 1 Assassin (TW)
@@ -33,6 +33,7 @@ Deck
 1 Pierced by Many Wounds (DM)
 1 Power Built by Waiting (AS)
 2 Protecting Their Domain (FB)
+1 Seized upon the Bearer (RS)
 1 Spiders Huge and Horrible (NE)
 1 Taint of the Wilds (RS)
 1 Tidings of Bold Spies (LE)
@@ -50,26 +51,26 @@ Deck
 4 Khamûl the Ringwraith (LE)
 1 Leärdinoth (NE)
 
-# Minion Resource (29)
+# Minion Resource (30)
 
 1 A Nice Place to Hide (LE)
 1 Black Rain (LE)
 2 Black Rider (LE)
 1 By the Ringwraith's Word (LE)
-1 Call to Arms (KN)
-1 Dark Riders (NE)
+1 Call to Arms (NE)
 1 Favoured by the Eye (NE)
 2 Gold Ring that Sauron Fancies (LE)
 1 Grimbúrz (NE)
 1 High Helm (LE)
-1 Hionvor of Womawas Drus (GP)
+1 Hionvor of Womawas Drus (NE)
 2 Iron-road (LE)
 1 Large Warrior Loose (NE)
-1 Not Slay Needlessly (LE)
+2 Not Slay Needlessly (LE)
 1 Ruse (LE)
 2 That Ain't No Secret (LE)
 1 The Ring Leaves Its Mark (LE)
 3 The Tormented Earth (AS)
+1 The Úlairi Arose (NE)
 1 Voices of Malice (LE)
 3 Weigh All Things to a Nicety (LE)
 1 Whispers of Rings (BA)
@@ -78,12 +79,15 @@ Deck
 Pool
 ####
 
-# Minion Character (10)
+# Dual Character (1)
 
 1 Daurukh (GP)
+
+# Minion Character (9)
+
 1 Eradan (LE)
 1 Luitprand (LE)
-1 Miruimor (NE)
+1 Miruimor (SL)
 1 Nevido Smôd (LE)
 1 Nimloth (DM)
 1 Odoacer (LE)
@@ -93,7 +97,7 @@ Pool
 
 # Minion Resource (3)
 
-1 Hionvor of Womawas Drus (GP)
+1 Hionvor of Womawas Drus (NE)
 1 Open to the Summons (WH)
 1 Whispers of Rings (BA)
 
@@ -110,12 +114,12 @@ Sideboard
 # Hazard (8)
 
 1 Call of Home (TW)
+1 Capricious Spirit (RS)
+1 Many Burdens (NE)
 1 Muster Disperses (TW)
-1 Many Burdens (RS)
 1 New Moon (TW)
-1 Seized upon the Bearer (RS)
-1 Slip Treacherously (AS)
 1 Shelob's Brood (BA)
+1 Slip Treacherously (AS)
 1 Too Much to Ask (WR)
 
 # Minion Character (2)
@@ -128,9 +132,9 @@ Sideboard
 1 Abhorred Ring (NE)
 1 Bright Gold Ring (LE)
 1 Cham-en-Faroth (NE)
-1 Consumed by Dragon-fire (GW)
+1 Consumed by Dragon-fire (NE)
 1 Curse the Baggins! (NE)
-1 Dragon-helm of Uon (GP)
+1 Dragon-helm of Uon (NE)
 1 Dwarven Ring of Thrár's Tribe [M] (AS)
 1 Gondring Roused (NW)
 1 Magic Ring of Savagery (LE)
@@ -156,11 +160,11 @@ Sites
 1 Caras Amarth [M] (FB)
 1 Carn Dûm [M] (LE)
 1 Caves of Ûlund [M] (LE)
-1 Ceber Fanuin 
+1 Ceber Fanuin [M] (FB)
 1 Cor Angaladh [M] (FB)
 1 Dale [M] (LE)
 1 Dancing Spire [M] (AS)
-1 Dimrill Dale
+1 Dimrill Dale [M] (LE)
 2 Dol Guldur [M] (LE)
 1 Edoras [M] (LE)
 1 Gladden Fields [M] (LE)

@@ -12,7 +12,7 @@ Deck
 
 2 Mighty Steed (TI)
 2 Rings of Power (RS)
-1 Rivermen of the Anduin Vales (GW)
+1 Rivermen of the Anduin Vales (NE)
 
 # Fallen-wizard Character (4)
 
@@ -25,21 +25,21 @@ Deck
 2 Black Crows (FB)
 1 Chance of Being Lost (DM)
 2 Ent in Search of the Entwives (LE)
-1 Foolish Words (TD)
 1 Fell Beast (TW)
+1 Foolish Words (TD)
 1 Frightful Guardian (GW)
 1 Great Northern Bear (GW)
 1 Hoarmûrath of Dír (TW)
 1 Lure of the Senses (LE)
 2 Marsh-drake (TD)
-1 Men of the Wood (GW)
+1 Men of the Wood (NE)
 2 Mensharag (TI)
 2 Old Man Willow (TW)
 1 Out of Practice (DF)
 1 Pit Trap (DF)
 1 Rain-drake (TD)
 1 Shut Yer Mouth (LE)
-2 Slayer (LE)
+2 Slayer (TW)
 1 Snow in the Mountains (NW)
 1 Taint of Ambition (WR)
 1 The Nazgûl are Abroad (TW)
@@ -68,9 +68,10 @@ Deck
 1 Wizard's Pupil (WR)
 1 Wizard's Resolve (RS)
 
-# Minion Character (1)
+# Minion Character (2)
 
 1 Aknazeh (BO)
+1 Nevido Smôd (LE)
 
 # Minion Resource (5)
 
@@ -96,7 +97,7 @@ Pool
 1 Hord (SL)
 1 Jehn Remak (SL)
 
-# Hero Character (3)
+# Hero Character (4)
 
 1 Ceorl (TI)
 1 Kavâtha (BO)
@@ -137,18 +138,18 @@ Sideboard
 # Hazard (7)
 
 1 Covetous Thoughts (LE)
-1 Lost in Free-domains (TW)
+1 Lost in Free-domains (LE)
 1 Lure of Magic (NE)
-1 Many Burdens (RS)
-1 Muster Disperses (LE)
+1 Many Burdens (NE)
+1 Muster Disperses (TW)
 1 The Ring's Betrayal (TW)
 1 Too Much to Ask (WR)
 
-# Hero Resource (12)
+# Hero Resource (13)
 
 1 Beautiful Gold Ring (TW)
-1 Healing Herbs (TW)
 1 First of the Order (DM)
+1 Healing Herbs (TW)
 1 Longbottom Leaf (BA)
 1 Lordly Presence (TW)
 1 Lost Tome (DM)
@@ -164,8 +165,8 @@ Sideboard
 1 Dwarven Ring of Thélor's Tribe [M] (AS)
 1 Magic Ring of Fury (LE)
 1 Magic Ring of Weals (LE)
-1 Trifling Ring (LE)
 1 The Tormented Earth (AS)
+1 Trifling Ring (LE)
 1 White Light Broken (WH)
 
 # Stage Resource (2)
@@ -181,7 +182,7 @@ Sites
 
 2 Isengard [F] (WH)
 
-# Hero Site (28)
+# Hero Site (29)
 
 1 Amon Hen [H] (TW)
 1 Amon Lhaw [H] (TI)
@@ -200,14 +201,15 @@ Sites
 1 Gyogorasag Sanctuary [H] (GW)
 1 Iorag Camp [H] (GP)
 1 Joghul's Shrine [H] (GP)
+1 Mathlaburg [H] (NE)
 1 Raider-hold [H] (AS)
 1 Rhosgobel [H] (TW)
 1 Sarn Goriwing [H] (TW)
 1 Strayhold [H] (NE)
-1 Temple of Lokuthor [H] (GP)
 1 Temple of Kondri Odchi [H] (GP)
+1 Temple of Lokuthor [H] (NE)
 1 The Carrock [H] (DF)
-1 The Under-courts [H] (DM)
 1 The Sulfur-deeps [H] (DM)
-1 Tol Buruth [H] (NE)
+1 The Under-courts [H] (DM)
+1 Tol Buruth [H] (GP)
 1 Wain-Easterling Camp [H] (GP)
