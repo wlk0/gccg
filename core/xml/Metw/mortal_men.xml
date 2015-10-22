@@ -246,11 +246,9 @@
 		</card>
 		<card name="Seek for the Nine" graphics="Seek for the Nine.jpg" text="Unique. Pallando and Saruman specific. Playable if you have at least 7 P and a Ring for Mortal Men in play. You may bring into play any Man or Dúnadan character regardless of his mind. Your Man and Dúnadan characters and factions are worth full mp. Your Ring for Mortal Men borne by a Man or Dúnadan character are worth twice the bearer’s mp.">
 			 <attr key="type" value="Stage Resource"/>
-			 <attr key="rarity" value="R"/>
-			 <attr key="unique" value="yes"/>
+			 <attr key="rarity" value="U"/>
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="sp" value="3"/>
-			 <attr key="specific" value="Fallen-wizard"/>
 		</card>
 		<card name="Slaves to the Ring" graphics="Slaves to the Ring.jpg" text="Playable on a Man or Dúnadan faction, if you have a character bearing a Ring for Mortal at the site where the faction is in play. Target faction cannot not be influenced or discarded by any means. Discard this card and target faction if you do not control a Ring for Mortal Men.">
 			 <attr key="type" value="Dual Resource"/>
