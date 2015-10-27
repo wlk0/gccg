@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Dragon-lord - Smaug -The Golden
+#      DCCD - Dragon-lord - Smaug - The Golden
 #
 
 ####
@@ -111,7 +111,7 @@ Sideboard
 1 Ash-drake (NE)
 1 Cursed Treasure (GW)
 1 Muster Disperses (TW)
-1 Politics (WR)
+1 Politics (NE)
 1 Ring-chained (NM)
 1 Slip Treacherously (AS)
 1 Too Much to Ask (WR)
@@ -125,7 +125,7 @@ Sideboard
 1 Eodoric (GW)
 1 The Master (GW)
 
-# Minion Resource (16)
+# Minion Resource (17)
 
 1 Back to the Fray (LE)
 1 Beaten into Submission (GW)
@@ -134,11 +134,12 @@ Sideboard
 2 Fire-storm (GW)
 1 Fizzling Torch (NE)
 1 Foul-smelling Paste (LE)
+1 Gloaming Golden Hoard (GW)
+1 Long Lying on His Costly Bed (GW)
 1 Made His Dwelling There (GW)
 1 Memories of Old Torture (BA)
 1 Orcs of His Dominion (GW)
 1 Orcs of the Claw (GW)
-1 Scales and Jewels (GW)
 1 The Arkenstone [M] (PR)
 1 Trophy-belt (NE)
 1 Voices of Malice (LE)
