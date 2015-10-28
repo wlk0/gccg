@@ -78,7 +78,7 @@ Deck
 Pool
 ####
 
-# Hero Character (8)
+# Hero Character (10)
 
 1 Bifur (TW)
 1 Bilbo (TW)
@@ -87,9 +87,9 @@ Pool
 1 Glóin (TW)
 1 Narin (DF)
 1 Náli (DF)
-1 Óin (TW)
 1 Pathfinder (DF)
 1 Sam Gamgee (TW)
+1 Óin (TW)
 
 # Hero Resource (3)
 
@@ -106,19 +106,20 @@ Pool
 Sideboard
 #########
 
-# Hazard (6)
-
-1 Covetous Thoughts (LE)
-1 Lure of the Senses (TW)
-1 Muster Disperses (TW)
-1 Too Much to Ask (WR)
-1 Tookish Blood (TW)
-1 Watcher in the Water (TW)
-
 # Dual Resource (2)
 
 1 Dwarven Chain-shirt (DF)
 1 Miner's Pick (DF)
+
+# Hazard (7)
+
+1 Dark Shapes Gathered There (NE)
+1 Lure of the Senses (TW)
+1 Muster Disperses (TW)
+1 Reaching Shadow (DM)
+1 Too Much to Ask (WR)
+1 Tookish Blood (TW)
+1 Watcher in the Water (TW)
 
 # Hero Resource (17)
 
@@ -129,9 +130,9 @@ Sideboard
 1 Lesser Ring (TW)
 1 Longbottom Leaf (BA)
 1 Lost Tome (DM)
-1 Marvels Told (TD)
 1 Magic Ring of Nature (TW)
 1 Magic Ring of Stealth (TW)
+1 Marvels Told (TD)
 1 Pipe (DF)
 1 Restored to Its Owner (DF)
 1 Return to Old Dwellings (DF)
@@ -160,9 +161,9 @@ Sites
 
 1 Bag End [H] (TW)
 1 Bandit Lair [H] (TW)
-1 Barrow-downs [H] (TW)
 1 Bar-en-Ibûn [H] (DF)
 1 Barak-shathur [H] (DF)
+1 Barrow-downs [H] (TW)
 1 Bree [H] (TW)
 1 Caras Amarth [H] (FB)
 1 Caves of Ûlund [H] (TW)
