@@ -3405,6 +3405,7 @@
        <attr key="site_path" value="{w}{b}{s}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Cirith Ungol" graphics="CirithUngol.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3432,6 +3433,7 @@
        <attr key="site_path" value="{w}{b}{s}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Dead Marshes" graphics="DeadMarshes.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3678,6 +3680,7 @@
        <attr key="site_path" value="{w}{b}{s}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Iron Hill Dwarf-hold" graphics="IronHillDwarfhold.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3769,6 +3772,7 @@
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Lossadan Camp" graphics="LossadanCamp.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3780,6 +3784,7 @@
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Northern Waste"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Minas Morgul" graphics="MinasMorgul.jpg" back="1" text="">
@@ -4278,6 +4283,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Gap of Isen" graphics="GapofIsen.jpg" back="1" text="">
        <attr key="move_to" value="Enedhwaith, Fangorn, Old Pûkel-land, Rohan"/>
@@ -4464,6 +4470,7 @@
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Wold &amp; Foothills" graphics="WoldFoothills.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Brown Lands, Fangorn, Redhorn Gate, Rohan"/>

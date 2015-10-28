@@ -150,7 +150,7 @@ Sideboard
 
 1 Binding-ring (LE)
 1 Bitter Cold (LE)
-2 Cult of Long Night (GP)
+2 Cult of the Long Night (NE)
 1 Dwarven Ring of Thélor's Tribe [M] (AS)
 1 Emerald of Unlight (ML)
 1 Ring of Frost (GP)
@@ -180,7 +180,7 @@ Sites
 1 The Rusted-deeps [D] (DF)
 1 The Wind-deeps [D] (DF)
 
-# Hero Site (25)
+# Hero Site (24)
 
 1 Caves of Ûlund [H] (TW)
 1 Celeb-ost [H] (NW)
@@ -193,7 +193,6 @@ Sites
 1 Logath Camp [H] (GP)
 1 Lothragh Camp [H] (ML)
 1 Mirror Halls [H] (ML)
-1 Nan Morsereg [H] (GP)
 1 Nurunkhizdín [H] (DF)
 1 Númenórean Tomb [H] (ML)
 1 Rhûbar [H] (FB)
@@ -202,12 +201,13 @@ Sites
 1 The Lonely Mountain [H] (TW)
 1 The Wind Throne [H] (TW)
 1 Thunder Cleft [H] (GW)
-1 Tol Buruth [H] (NE)
+1 Tol Buruth [H] (GP)
 1 Tower of the Wolf-friend [H] (GW)
 1 Wain-Easterling Camp [H] (GP)
 1 Yjuvït [H] (ML)
 1 Zayandaur [H] (ML)
 
-# Minion Site (1)
+# Minion Site (2)
 
 1 Mirror Halls [M] (ML)
+1 Nan Morsereg [M] (NE)

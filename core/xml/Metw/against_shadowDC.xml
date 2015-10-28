@@ -1115,6 +1115,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{w}{w}{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Eagles' Eyrie" graphics="EaglesEyrie.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1185,6 +1186,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{w}{w}{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Grey Havens" graphics="GreyHavens.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1228,6 +1230,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{w}{w}{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="The Iron-deeps" graphics="TheIrondeeps.jpg" back="1" text="">
        <attr key="unique" value="yes"/>

@@ -3043,6 +3043,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{w}{w}{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Cirith Gorgor" graphics="CirithGorgor.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3467,6 +3468,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
     </card>
     <card name="Lossadan Camp" graphics="LossadanCamp.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3481,6 +3483,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="The Northern Waste"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Minas Morgul" graphics="MinasMorgul.jpg" back="1" text="">
