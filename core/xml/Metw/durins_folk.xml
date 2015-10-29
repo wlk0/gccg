@@ -114,6 +114,7 @@
 			 <attr key="playable" value="Items (minor, gold ring)"/>
 			 <attr key="auto_attack" value="Dwarves - 3 strikes with 8 prowess (detainment against covert companies that do not contain an Elf)"/>
 			 <attr key="special" value="Hidden Site. Tap a sage in the company to reveal this site. The Petty-dwarves faction may be played at this site. If a Dwarf at this site discards a Lost Knowledge card he controls, the site contains a hoard until the end of the turn."/>
+			 <attr key="keyword" value="Eriador"/>
 			 <attr key="keyword" value="Hidden Site"/>		
 		</card>
 		<card name="Bar-en-Ibûn" graphics="BarenIbun.jpg" back="1" text="">
@@ -130,6 +131,7 @@
 			 <attr key="auto_attack" value="Dwarves - 3 strikes with 8 prowess (detainment against companies that do not contain an Elf)"/>
 			 <attr key="special" value="Hidden Site. Tap a sage in the company to reveal this site. The Petty-dwarves faction may be played at this site. If a Dwarf at this site discards a Lost Knowledge card he controls, the site contains a hoard until the end of the turn."/>
 		     <attr key="keyword" value="Hidden Site"/>
+			 <attr key="keyword" value="Eriador"/>
 		</card>
 		<card name="Barak-shathur" graphics="Barakshathur.jpg" back="1" text="">
 			 <attr key="type" value="Hero Site"/>
@@ -209,6 +211,7 @@
 			 <attr key="region" value="Númeriador"/>
 			 <attr key="special" value="Dwarf-lord only. This site is a protected Lordhaven [H]. If one of your companies is at this site, all attacks against it are cancelled and you receive the SP. Characters with Blue Mountain Dwarf-hold as a home site may be brought into play at this site regardless of the presence of any other character."/>
 			 <attr key="keyword" value="Dwarf-hold"/>
+			 <attr key="keyword" value="Eriador"/>
 		</card>
 		<card name="Bolg of the North" graphics="Bolg of the North.jpg" text="Unique. Manifestation of Bolg. Leader. Discard on a body check result of 9. +2 DI against Orcs.  -2 DI if a manifestation of Rogrog or the The Witch-king of Angmar is in active play.+1 prowess against Dwarves and Elves. When Bolg of the North is at Mount Gundabad, you may keep one more card than normal in your hand, and all attacks against his company keyed to the site are detainment.">
 			 <attr key="type" value="Minion Character"/>
@@ -1567,6 +1570,7 @@
 			 <attr key="special" value="you may play Eagle Mounts here as if at Eagles Eyrie."/>
 			 <attr key="auto_attack" value="Animals. Bears - 2 strikes with 6 prowess (detainment against a company containing a character with home site Beorn's House)"/>
 			 <attr key="special" value="Port-on-Anduin. You may play Eagle-mounts here as if at Eagles' Eyrie."/>
+			 <attr key="keyword" value="Wilderland"/>
 		</card>
 		<card name="The Carrock" graphics="The Carrock2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1581,6 +1585,7 @@
 			 <attr key="playable" value="Information, Items (minor)"/>
 			 <attr key="auto_attack" value="Animals. Bears -- 2 strikes with 9 prowess"/>
 			 <attr key="special" value="Port-on-Anduin. Lord of the Carrock may always be played at this site against an overt company, regardless of any other cards played or the hazard limit."/>
+			 <attr key="keyword" value="Wilderland"/>
 		</card>
 		<card name="The Drowning-deeps" graphics="The Drowningdeeps.jpg" back="1" text="">
 			 <attr key="type" value="Dual Site"/>

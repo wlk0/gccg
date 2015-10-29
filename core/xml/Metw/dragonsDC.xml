@@ -1394,6 +1394,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Wilderland"/>
 	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Gold Hill" graphics="GoldHill.jpg" back="1" text="">
@@ -1436,6 +1437,7 @@
        <attr key="site_path" value="{w}{c}{c}"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Ovir Hollow" graphics="OvirHollow.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1463,6 +1465,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Port"/>
 	   <attr key="keyword" value="Swamp"/>
     </card>
@@ -1478,6 +1481,7 @@
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
     </card>
   </cards>

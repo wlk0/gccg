@@ -656,6 +656,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -672,6 +673,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -687,6 +689,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -702,6 +705,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Dol Guldur" graphics="DolGuldur.jpg" back="1" text="">
@@ -775,6 +779,7 @@
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Moria" graphics="Moria.jpg" back="1" text="">
        <attr key="draw" value="1"/>
@@ -788,6 +793,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Balrog Site"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="The Pûkel-deeps" graphics="ThePukeldeeps.jpg" back="1" text="">

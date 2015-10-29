@@ -1028,6 +1028,7 @@
        <attr key="rarity" value="R2"/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{s}{f}{w}{s}{d}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -1044,6 +1045,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{w}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Gobel Mírlond" graphics="GobelMirlond.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1057,6 +1059,9 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{f}{c}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
+	   <attr key="keyword" value="The Sun-lands"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -1072,6 +1077,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{f}{c}{w}{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Raider-hold" graphics="Raiderhold.jpg" back="1" text="">
@@ -1086,6 +1092,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{s}{s}{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port-on-Sea of Rhûn"/>
     </card>
@@ -1102,6 +1109,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Dancing Spire" graphics="DancingSpire.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1129,6 +1137,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Edhellond" graphics="Edhellond.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1143,6 +1152,8 @@
        <attr key="rarity" value="R2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}{w}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Elf-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -1159,6 +1170,7 @@
        <attr key="rarity" value="R2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}"/>
+	   <attr key="keyword" value="Wilderland"/>
 	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="The Gem-deeps" graphics="TheGemdeeps.jpg" back="1" text="">
@@ -1202,6 +1214,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}"/>
 	   <attr key="keyword" value="Elf-hold"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Port"/>
     </card>
     <card name="Himring" graphics="Himring.jpg" back="1" text="">
@@ -1217,6 +1230,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{c}{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Irerock" graphics="Irerock.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1258,6 +1272,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Isles of the Dead that Live" graphics="IslesoftheDeadthatLiveDC.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1272,6 +1287,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Lórien" graphics="Lorien.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -1356,6 +1372,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Elf-hold"/>
     </card>
     <card name="The Sulfur-deeps" graphics="TheSulfurdeeps.jpg" back="1" text="">
@@ -1384,6 +1401,8 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}{c}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Port"/>
     </card>
     <card name="The Under-courts" graphics="TheUndercourts.jpg" back="1" text="">
@@ -1478,6 +1497,7 @@
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Wellinghall" graphics="Wellinghall.jpg" back="1" text="">
        <attr key="unique" value="yes"/>

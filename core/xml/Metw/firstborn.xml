@@ -1367,6 +1367,7 @@
 			 <attr key="auto_attack" value="Elves  2 strikes with 8 prowess (detainment against hero companies)"/>
 			 <attr key="special" value="Dunland; Hollin. Tap an Elf at the site with a mind of 5 or more to make major items or gold ring items playable at the site this turn."/>
 			 <attr key="keyword" value="Elf-hold"/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Amon Lind" graphics="Amon Lind2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1381,6 +1382,7 @@
 			 <attr key="playable" value="Items (minor, gold ring)"/>
 			 <attr key="auto_attack" value="Elves — 2 strikes with 8 prowess (detainment against covert companies)"/>
 			 <attr key="special" value="Dunland; Hollin. Minion Elves may be brought into play at this site under DI. Slew the Great Warrior may be played at this site regardless of the requirement to have a faction in play."/>
+			 <attr key="keyword" value="Eriador"/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
 	<card name="Caras Amarth" graphics="Caras Amarth.jpg" back="1" text="">
@@ -1539,6 +1541,8 @@
 			 <attr key="playable" value="Information"/>
 			 <attr key="auto_attack" value="Elves - 3 strikes with 9 prowess (cancelled if you have less than 6 P;detainment if you have less than 12 P)"/>
 			 <attr key="special" value="Port. You cannot play any card that would make this site a Haven [H]. This site may not be used by overt companies. You receive the P if one of your companies is at this site."/>
+             <attr key="keyword" value="Gondor"/>
+	         <attr key="keyword" value="Greater Gondor"/>
 			 <attr key="keyword" value="Elf-hold"/>
 	         <attr key="keyword" value="Port"/>
 	</card>
@@ -1555,6 +1559,7 @@
 			 <attr key="auto_attack" value="Elves - 3 strikes with 9 prowess (cancelled if you have less than 6 P;detainment if you have less than 12 P)"/>
 			 <attr key="special" value="Port. You cannot play any card that would make this site a Haven [H]. This site may not be used by overt companies or if you are Círdan. You receive the P if one of your companies is at this site."/>
 			 <attr key="keyword" value="Elf-hold"/>
+			 <attr key="keyword" value="Eriador"/>
 	         <attr key="keyword" value="Port"/>
 	</card>
 	<card name="Grey Havens" graphics="Grey Havens.jpg" back="1" text="">
@@ -1568,6 +1573,7 @@
 			 <attr key="region" value="Lindon"/>
 			 <attr key="special" value="Círdan the Shipwright specific. Port. This site is a protected Lordhaven [H]. If one of your companies is at this site, all attacks against it are cancelled and you receive the P. Characters with Grey Havens as a home site may be brought into play at this site, regardless of the presence of any other character."/>
 			 <attr key="keyword" value="Elf-hold"/>
+			 <attr key="keyword" value="Eriador"/>
 	         <attr key="keyword" value="Port"/>
 	</card>
 	<card name="Heart of the Halls" graphics="Heart of the Halls.jpg" back="1" text="">
@@ -1623,6 +1629,7 @@
 			 <attr key="playable" value="Items (minor, major, greater)"/>
 			 <attr key="auto_attack" value="Undead - 3 strikes with 9 prowess (cannot be cancelled by a card or ability requiring a skill); each character wounded must make a CC"/>
 			 <attr key="special" value="Any CP made by characters at this site is modified by (an additional) -1."/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Mount Rerir" graphics="Mount Rerir2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1637,6 +1644,7 @@
 			 <attr key="playable" value="Items (minor, major, greater)"/>
 			 <attr key="auto_attack" value="Undead - 3 strikes with 9 prowess; cannot be cancelled by a skill card; each character wounded must make a CC"/>
 			 <attr key="special" value="Non-Nazgûl creatures played at this site attack normally, not as detainment. Any CP by characters at this site is modified by (an additional) -1."/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
     <card name="Osteledan" graphics="Osteledan.jpg" back="1" text="">
 			 <attr key="type" value="Dual Site"/>
@@ -1664,6 +1672,7 @@
 			 <attr key="haven2" value="Elanthia - {w}{s}{w}{w}{w}{w}"/>
 			 <attr key="haven3" value="Cybrethil - {w}{c}{b}{w}{w}{w}"/>
 			 <attr key="special" value="Port-on-Sea of Rhûn."/>
+			 <attr key="keyword" value="The Great Central Plains"/>
 			 <attr key="keyword" value="Elf-hold"/>
 	         <attr key="keyword" value="Port-on-Sea of Rhûn."/>
 	</card>
@@ -1680,6 +1689,7 @@
 			 <attr key="playable" value="Items (minor, major, greater)"/>
 			 <attr key="auto_attack" value="(1st) Elves - each character faces a strike with 9 prowess (detainment against covert companies); (2nd) Animals (Elvish Hounds) - 4 strikes with 9 prowess (against overt companies only)"/>
 			 <attr key="special" value="Port-on-Sea of Rhûn. Any company moving to this site has its hazard limit increased by 2. A minion company may not attack another company at this site. A Ringwraith may not move to this site."/>
+			 <attr key="keyword" value="The Great Central Plains"/>
 			 <attr key="keyword" value="Elf-hold"/>
 	         <attr key="keyword" value="Port-on-Sea of Rhûn."/>
 	</card>
@@ -1696,6 +1706,7 @@
 			 <attr key="auto_attack" value="  Elves - 3 strikes with 10 prowess (cancelled if you have less than 6 P; detainment if you have less than 12 P)"/>
 			 <attr key="special" value="You cannot play any card that would make this site a Haven [H]. This site may not be used by overt companies or if you are Elrond. You receive the P if one of your companies is at this site."/>
 			 <attr key="keyword" value="Elf-hold"/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Rivendell" graphics="Rivendell.jpg" back="1" text="">
 			 <attr key="type" value="Elf-lord Site"/>
@@ -1706,6 +1717,7 @@
 			 <attr key="draw_opp" value="2"/>
 			 <attr key="region" value="Rhudaur"/>
 			 <attr key="special" value="Elrond Half-elven specific. This site is a protected Lordhaven [H]. If one of your companies is at this site, all attacks against it are cancelled and you receive the SP. Characters with Rivendell as a home site may be brought into play at this site, regardless of the presence of any other character."/>
+			 <attr key="keyword" value="Eriador"/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
 	<card name="Telpëmar" graphics="Telpemar.jpg" back="1" text="">
@@ -1721,6 +1733,7 @@
 			 <attr key="playable" value="Information, Items (minor, gold ring*)"/>
 			 <attr key="auto_attack" value="Men - 2 strikes with 7 prowess"/>
 			 <attr key="special" value="*Each time after the company has played a ring at the site, it immediately faces an attack: Trap - 1 strike with 10 prowess."/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Telpëmar" graphics="Telpemar2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1735,6 +1748,7 @@
 			 <attr key="playable" value="Information, Items (minor, gold ring*)"/>
 			 <attr key="auto_attack" value="Men - 2 strikes with 7 prowess"/>
 			 <attr key="special" value="*After the company has played a ring at the site, it faces an attack: Trap - 1 strike with 10 prowess. One non-unique Elf creature may be played regardless of the site path and not counting against the hazard limit against a company at or moving to this site. Contains a hoard."/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Thranduil's Halls" graphics="Thranduils Halls2.jpg" back="1" text="">
 			 <attr key="type" value="Fallen-wizard Site"/>
@@ -1773,6 +1787,7 @@
 			 <attr key="region" value="Old Forest*"/>
 			 <attr key="haven" value="Rivendell"/>
 			 <attr key="special" value="Only Awakend Plant and creatures with an asterisk (*) can be keyed to this site. Healing effects affect all characters at the site."/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Tom's House" graphics="Toms House2.jpg" back="1" text="">
 			 <attr key="type" value="Minion Site"/>
@@ -1786,7 +1801,8 @@
 			 <attr key="haven" value="Carn Dûm"/>
 			 <attr key="playable" value="Items (minor, major, gold ring)"/>
 			 <attr key="auto_attack" value="Maia — 2 strikes with 15 prowess (cannot be cancelled)."/>
-			 <attr key="special" value=" Only Awakend Plant and creatures with an asterisk (*) may be keyed to the site. Once tapped, this site cannot be untapped."/>
+			 <attr key="special" value=" Only Awakened Plant and creatures with an asterisk (*) may be keyed to the site. Once tapped, this site cannot be untapped."/>
+			 <attr key="keyword" value="Eriador"/>
 	</card>
 	<card name="Old Forest*" graphics="Old Forest.jpg" back="1" text="">
              <attr key="move_to" value="Arthedain, Cardolan, The Shire"/>
@@ -1798,6 +1814,7 @@
 			 <attr key="type" value="Region"/>
 			 <attr key="rarity" value="U"/>
              <attr key="region_type" value="{w}"/>
+			 <attr key="keyword" value="The Great Central Plains"/>
 	</card>
 	</cards>
 </ccg-setinfo>
