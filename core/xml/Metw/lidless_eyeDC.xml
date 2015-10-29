@@ -2876,6 +2876,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}{s}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Bag End" graphics="BagEnd.jpg" back="1" text="">
@@ -2891,6 +2892,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Hobbit-hold"/>
     </card>
     <card name="Bandit Lair" graphics="BanditLair.jpg" back="1" text="">
@@ -2906,6 +2908,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Barad-dûr" graphics="Baraddur.jpg" back="1" text="{cyan} UEP: A mode card isn't required for a Ringwraith to move to Barad-dur.">
        <attr key="unique" value="yes"/>
@@ -2921,6 +2924,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -2937,6 +2941,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Beorn's House" graphics="BeornsHouse.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -2952,6 +2957,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}"/>
 	   <attr key="keyword" value="Man-hold"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Blue Mountain Dwarf-hold" graphics="BlueMountainDwarfhold.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -2967,6 +2973,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
 	   <attr key="keyword" value="Dwarf-hold"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Bree" graphics="Bree.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -2982,6 +2989,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Buhr Widu" graphics="BuhrWidu.jpg" back="1" text="">
@@ -3011,6 +3019,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Carn Dûm" graphics="CarnDum.jpg" back="1" text="">
@@ -3027,6 +3036,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
@@ -3058,6 +3068,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{d}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -3074,6 +3085,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Dale" graphics="Dale.jpg" back="1" text="">
@@ -3121,6 +3133,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Dol Amroth" graphics="DolAmroth.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3135,6 +3148,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}{f}{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port"/>
@@ -3170,6 +3185,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Wose-hold"/>
     </card>
     <card name="Dunharrow" graphics="Dunharrow.jpg" back="1" text="">
@@ -3185,6 +3202,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}{s}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Dunnish Clan-hold" graphics="DunnishClanhold.jpg" back="1" text="">
@@ -3200,6 +3218,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Easterling Camp" graphics="EasterlingCamp.jpg" back="1" text="">
@@ -3215,6 +3234,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{w}{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Edoras" graphics="Edoras.jpg" back="1" text="">
@@ -3230,6 +3250,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}{s}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Ettenmoors" graphics="Ettenmoors.jpg" back="1" text="">
@@ -3245,6 +3266,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Geann a-Lisch" graphics="GeannaLisch.jpg" back="1" text="">
        <attr key="draw" value="2"/>
@@ -3258,6 +3280,7 @@
        <attr key="rarity" value="CB+F5"/>
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Gladden Fields" graphics="GladdenFields.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3273,6 +3296,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}"/>
 	   <attr key="keyword" value="Swamp"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Glittering Caves" graphics="GlitteringCaves.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3287,6 +3311,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{s}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Gobel Mírlond" graphics="GobelMirlond.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3301,6 +3326,9 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
+	   <attr key="keyword" value="The Sun-lands"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port"/>
@@ -3320,6 +3348,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}"/>
 	   <attr key="keyword" value="Orc-hold"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Gondmaeglom" graphics="Gondmaeglom.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3349,6 +3378,9 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
+	   <attr key="keyword" value="The Sun-lands"/>
     </card>
     <card name="Henneth Annûn" graphics="HennethAnnun.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3363,6 +3395,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Hermit's Hill" graphics="HermitsHill.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3407,6 +3441,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{s}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Lake-town" graphics="Laketown.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3437,6 +3472,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}{w}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -3498,6 +3535,7 @@
        <attr key="rarity" value="CB+F5"/>
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Minas Tirith" graphics="MinasTirith.jpg" back="1" text="">
@@ -3513,6 +3551,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Battleground"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Man-hold"/>
@@ -3533,6 +3573,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{s}{w}{w}"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Mount Doom" graphics="MountDoom.jpg" back="1" text="">
@@ -3549,6 +3590,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Volcano"/>
     </card>
     <card name="Mount Gram" graphics="MountGram.jpg" back="1" text="">
@@ -3565,6 +3607,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}"/>
 	   <attr key="keyword" value="Orc-hold"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Mount Gundabad" graphics="MountGundabad.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3595,6 +3638,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{d}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Ost-in-Edhil" graphics="OstinEdhil.jpg" back="1" text="">
@@ -3610,6 +3654,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
 	</card>
     <card name="Pelargir" graphics="Pelargir.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3624,6 +3669,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port"/>
@@ -3642,6 +3689,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{d}{w}{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port-on-Sea of Rhûn"/>
     </card>
@@ -3658,6 +3706,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Sarn Goriwing" graphics="SarnGoriwing.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3688,6 +3737,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Shrel-Kain" graphics="ShrelKain.jpg" back="1" text="">
@@ -3719,8 +3769,11 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Oasis"/>
+	   <attr key="keyword" value="The Sun-lands"/>
     </card>
     <card name="Stone-circle" graphics="Stonecircle.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3735,6 +3788,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="The Stones" graphics="TheStones.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3749,6 +3803,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Tharbad" graphics="Tharbad.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3766,6 +3821,7 @@
        <attr key="site_path" value="{s}{w}{w}"/>
 	   <attr key="keyword" value="Port"/>
 	   <attr key="keyword" value="Swamp"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Thranduil's Halls" graphics="ThranduilsHalls.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3796,6 +3852,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{d}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Vale of Erech" graphics="ValeofErech.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3810,6 +3867,8 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{f}{f}{s}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Variag Camp" graphics="VariagCamp.jpg" back="1" text="">
@@ -3825,6 +3884,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}{s}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="The White Towers" graphics="TheWhiteTowers.jpg" back="1" text="">
@@ -3840,6 +3900,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="The Wind Throne" graphics="TheWindThrone.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3884,6 +3945,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}{w}{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Wose Passage-hold" graphics="WosePassagehold.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3898,6 +3960,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Wose-hold"/>
     </card>
     <card name="Zarak Dûm" graphics="ZarakDum.jpg" back="1" text="">
@@ -3914,6 +3977,7 @@
        <attr key="type" value="Minion Site"/>
        <attr key="site_path" value="{s}"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
   </cards>
 </ccg-setinfo>

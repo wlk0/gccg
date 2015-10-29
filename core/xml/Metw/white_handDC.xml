@@ -452,6 +452,7 @@
        <attr key="draw_opp" value="2"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Rhosgobel" graphics="RhosgobelDC.jpg" back="1" text="">
@@ -472,6 +473,7 @@
        <attr key="draw_opp" value="2"/>
        <attr key="rarity" value="C4"/>
        <attr key="type" value="Fallen-wizard Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="A Merrier World" graphics="AMerrierWorld.jpg" text="Playable if you have more than 7 stage points. Hazards your companies defeat (for which you otherwise get 1 MP) are each worth full kill marshalling points. Cannot be duplicated by a given player.">
        <attr key="sp" value="2"/>

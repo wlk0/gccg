@@ -476,6 +476,9 @@
        <attr key="class" value=""/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{f}{c}{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
+	   <attr key="keyword" value="The Sun-lands"/>
     </card>
     <card name="Hermit's Hill" graphics="HermitsHill.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -636,6 +639,7 @@
        <attr key="class" value=""/>
        <attr key="type" value="Hero Site"/>
        <attr key="site_path" value="{w}{f}{c}{w}{s}{d}"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="An Article Missing" graphics="AnArticleMissing.jpg" text="Tap a scout agent at target company's new site. Agent may attack (not counting against hazard limit) with a +4 modification to his prowess during the movement/ hazard phase. Attacker chooses defending characters. A successful strike doesn't wound the defending character; instead the company must discard one item (defender's choice).">

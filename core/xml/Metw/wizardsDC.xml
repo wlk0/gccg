@@ -3272,6 +3272,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Port-on-Anduin"/>
     </card>
     <card name="Bag End" graphics="BagEnd.jpg" back="1" text="">
@@ -3284,6 +3285,7 @@
        <attr key="site_path" value="{w}{w}{f}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Hobbit-hold"/>
     </card>
     <card name="Bandit Lair" graphics="BanditLair.jpg" back="1" text="">
@@ -3298,6 +3300,7 @@
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="F3"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Barad-dûr" graphics="Baraddur.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3312,6 +3315,7 @@
        <attr key="site_path" value="{w}{b}{f}{w}{s}{d}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	   <attr key="keyword" value="Troll-hold"/>
     </card>
@@ -3328,6 +3332,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Beorn's House" graphics="BeornsHouse.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3339,6 +3344,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Wilderland"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Blue Mountain Dwarf-hold" graphics="BlueMountainDwarfhold.jpg" back="1" text="">
@@ -3351,6 +3357,7 @@
        <attr key="site_path" value="{f}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Dwarf-hold"/>
     </card>
     <card name="Bree" graphics="Bree.jpg" back="1" text="">
@@ -3363,6 +3370,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Cameth Brin" graphics="CamethBrin.jpg" back="1" text="">
@@ -3375,6 +3383,7 @@
        <attr key="site_path" value="{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Carn Dûm" graphics="CarnDum.jpg" back="1" text="">
@@ -3389,6 +3398,7 @@
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Orc-hold"/>
@@ -3419,6 +3429,7 @@
        <attr key="site_path" value="{w}{b}{f}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Dancing Spire" graphics="DancingSpire.jpg" back="1" text="">
@@ -3462,6 +3473,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Dol Amroth" graphics="DolAmroth.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3473,6 +3485,8 @@
        <attr key="site_path" value="{w}{f}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -3502,6 +3516,8 @@
        <attr key="site_path" value="{w}{b}{f}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Wose-hold"/>
     </card>
     <card name="Dunharrow" graphics="Dunharrow.jpg" back="1" text="">
@@ -3514,6 +3530,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Dunnish Clan-hold" graphics="DunnishClanhold.jpg" back="1" text="">
@@ -3526,6 +3543,7 @@
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Eagles' Eyrie" graphics="EaglesEyrie.jpg" back="1" text="">
@@ -3538,6 +3556,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Easterling Camp" graphics="EasterlingCamp.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3549,6 +3568,7 @@
        <attr key="site_path" value="{w}{s}{s}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Edhellond" graphics="Edhellond.jpg" back="1" text="">
@@ -3560,6 +3580,8 @@
        <attr key="draw_opp" value="2"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Elf-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -3573,6 +3595,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Ettenmoors" graphics="Ettenmoors.jpg" back="1" text="">
@@ -3587,6 +3610,7 @@
        <attr key="site_path" value="{w}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Gladden Fields" graphics="GladdenFields.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3601,6 +3625,7 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Wilderland"/>
 	   <attr key="keyword" value="Swamp"/>
     </card>
     <card name="Glittering Caves" graphics="GlitteringCaves.jpg" back="1" text="">
@@ -3615,6 +3640,7 @@
        <attr key="site_path" value="{w}{b}{b}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Goblin-gate" graphics="Goblingate.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3628,6 +3654,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Grey Havens" graphics="GreyHavens.jpg" back="1" text="">
@@ -3639,6 +3666,7 @@
        <attr key="draw_opp" value="2"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Elf-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -3652,6 +3680,8 @@
        <attr key="site_path" value="{w}{b}{f}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
     </card>
     <card name="Himring" graphics="Himring.jpg" back="1" text="">
@@ -3667,6 +3697,7 @@
        <attr key="site_path" value="{f}{c}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Irerock" graphics="Irerock.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3706,6 +3737,7 @@
        <attr key="site_path" value="{w}{b}{b}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Isles of the Dead that Live" graphics="IslesoftheDeadthatLive.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3720,6 +3752,7 @@
        <attr key="site_path" value="{f}{c}{c}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Lake-town" graphics="Laketown.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3744,6 +3777,8 @@
        <attr key="site_path" value="{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Port"/>
     </card>
@@ -3800,6 +3835,7 @@
        <attr key="site_path" value="{w}{b}{f}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Minas Tirith" graphics="MinasTirith.jpg" back="1" text="">
@@ -3812,6 +3848,8 @@
        <attr key="site_path" value="{w}{b}{f}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Battleground"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Man-hold"/>
@@ -3829,6 +3867,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F3"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Ancient Dwarf-ruin"/>
 	   <attr key="keyword" value="Orc-hold"/>
 	</card>
@@ -3843,6 +3882,7 @@
        <attr key="site_path" value="{w}{b}{f}{w}{s}{d}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Volcano"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
@@ -3858,6 +3898,7 @@
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Mount Gundabad" graphics="MountGundabad.jpg" back="1" text="">
@@ -3900,6 +3941,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Pelargir" graphics="Pelargir.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3911,6 +3953,8 @@
        <attr key="site_path" value="{w}{b}{f}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Dúnadan-hold"/>
 	   <attr key="keyword" value="Port"/>
 	   <attr key="keyword" value="Port-on-Anduin"/>
@@ -3937,6 +3981,7 @@
        <attr key="draw_opp" value="2"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
 	   <attr key="keyword" value="Elf-hold"/>
     </card>
     <card name="Ruined Signal Tower" graphics="RuinedSignalTower.jpg" back="1" text="">
@@ -3951,6 +3996,7 @@
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Sarn Goriwing" graphics="SarnGoriwing.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -3978,6 +4024,7 @@
        <attr key="site_path" value="{w}{b}{f}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Orc-hold"/>
     </card>
     <card name="Shrel-Kain" graphics="ShrelKain.jpg" back="1" text="">
@@ -4003,8 +4050,11 @@
        <attr key="site_path" value="{w}{f}{c}{w}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
 	   <attr key="keyword" value="Man-hold"/>
 	   <attr key="keyword" value="Oasis"/>
+	   <attr key="keyword" value="The Sun-lands"/>
     </card>
     <card name="Stone-circle" graphics="Stonecircle.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -4018,6 +4068,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="The Lonely Mountain" graphics="TheLonelyMountain.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -4045,6 +4096,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="The White Towers" graphics="TheWhiteTowers.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -4057,6 +4109,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="The Wind Throne" graphics="TheWindThrone.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -4096,6 +4149,8 @@
        <attr key="site_path" value="{w}{f}{c}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Port"/>
     </card>
     <card name="Vale of Erech" graphics="ValeofErech.jpg" back="1" text="">
@@ -4108,6 +4163,8 @@
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Variag Camp" graphics="VariagCamp.jpg" back="1" text="">
@@ -4120,6 +4177,7 @@
        <attr key="site_path" value="{w}{f}{c}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Mordor"/>
 	   <attr key="keyword" value="Man-hold"/>
     </card>
     <card name="Weathertop" graphics="Weathertop.jpg" back="1" text="">
@@ -4134,6 +4192,7 @@
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F4"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Wellinghall" graphics="Wellinghall.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
@@ -4168,6 +4227,7 @@
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
+	   <attr key="keyword" value="Greater Gondor"/>
 	   <attr key="keyword" value="Wose-hold"/>
     </card>
     <card name="Andrast" graphics="Andrast.jpg" back="1" text="">
@@ -4175,108 +4235,129 @@
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Andrast Coast" graphics="AndrastCoast.jpg" back="1" text="">
        <attr key="move_to" value="Andrast, Bay of Belfalas, Eriadoran Coast"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Anduin Vales" graphics="AnduinVales.jpg" back="1" text="">
        <attr key="move_to" value="Brown Lands, Grey Mountain Narrows, Gundabad, High Pass, Southern Mirkwood, Western Mirkwood, Wold &amp; Foothills, Woodland Realm"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{b}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Anfalas" graphics="Anfalas.jpg" back="1" text="">
        <attr key="move_to" value="Andrast, Bay of Belfalas, Belfalas, Lamedon, Old Pûkel Gap"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
-    </card>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	</card>
     <card name="Angmar" graphics="Angmar.jpg" back="1" text="">
        <attr key="move_to" value="Arthedain, Forochel, Gundabad, Rhudaur"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Anórien" graphics="Anorien.jpg" back="1" text="">
        <attr key="move_to" value="Ithilien, Lebennin, Rohan"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Arthedain" graphics="Arthedain.jpg" back="1" text="">
        <attr key="move_to" value="Angmar, Cardolan, Forochel, Lindon, Númeriador, Rhudaur, The Shire"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Bay of Belfalas" graphics="BayofBelfalas.jpg" back="1" text="">
        <attr key="move_to" value="Andrast Coast, Andrast, Mouths of the Anduin, Anfalas, Belfalas"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Belfalas" graphics="Belfalas.jpg" back="1" text="">
        <attr key="move_to" value="Mouths of the Anduin, Anfalas, Bay of Belfalas, Lamedon, Lebennin"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Brown Lands" graphics="BrownLands.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Dagorlad, Southern Mirkwood, Wold &amp; Foothills"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Cardolan" graphics="Cardolan.jpg" back="1" text="">
        <attr key="move_to" value="Arthedain, Dunland, Enedhwaith, Eriadoran Coast, Hollin, Rhudaur, The Shire"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Dagorlad" graphics="Dagorlad.jpg" back="1" text="">
        <attr key="move_to" value="Brown Lands, Horse Plains, Ithilien, Southern Mirkwood, Southern Rhovanion"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Dorwinion" graphics="Dorwinion.jpg" back="1" text="">
        <attr key="move_to" value="Northern Rhovanion, Southern Rhovanion"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{b}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Dunland" graphics="Dunland.jpg" back="1" text="">
        <attr key="move_to" value="Cardolan, Enedhwaith, Hollin"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Elven Shores" graphics="ElvenShores.jpg" back="1" text="">
        <attr key="move_to" value="Eriadoran Coast, Lindon"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Enedhwaith" graphics="Enedhwaith.jpg" back="1" text="">
        <attr key="move_to" value="Cardolan, Dunland, Eriadoran Coast, Gap of Isen, Old Pûkel-land"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Eriadoran Coast" graphics="EriadoranCoast.jpg" back="1" text="">
        <attr key="move_to" value="Andrast, Andrast Coast, Cardolan, Elven Shores, Enedhwaith, Old Pûkel-land"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{c}"/>
+	   <attr key="keyword" value="The Sundering Seas"/>
     </card>
     <card name="Fangorn" graphics="Fangorn.jpg" back="1" text="">
        <attr key="move_to" value="Gap of Isen, Rohan, Wold &amp; Foothills"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Forochel" graphics="Forochel.jpg" back="1" text="">
        <attr key="move_to" value="Angmar, Arthedain, Númeriador"/>
@@ -4290,180 +4371,219 @@
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{b}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Gorgoroth" graphics="Gorgoroth.jpg" back="1" text="">
        <attr key="move_to" value="Imlad Morgul, Nurn, Udûn"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{d}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Grey Mountain Narrows" graphics="GreyMountainNarrows.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Northern Rhovanion, Withered Heath, Woodland Realm"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Gundabad" graphics="Gundabad.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Angmar"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{d}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Harondor" graphics="Harondor.jpg" back="1" text="">
        <attr key="move_to" value="Mouths of the Anduin, Ithilien, Khand"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
+	   <attr key="keyword" value="Harnendor"/>
+	   <attr key="keyword" value="The Sun-lands"/>
     </card>
     <card name="Heart of Mirkwood" graphics="HeartofMirkwood.jpg" back="1" text="">
        <attr key="move_to" value="Northern Rhovanion, Southern Mirkwood, Southern Rhovanion, Western Mirkwood, Woodland Realm"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Mirkwood"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="High Pass" graphics="HighPass.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Rhudaur"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Hollin" graphics="Hollin.jpg" back="1" text="">
        <attr key="move_to" value="Cardolan, Dunland, Redhorn Gate, Rhudaur"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Horse Plains" graphics="HorsePlains.jpg" back="1" text="">
        <attr key="move_to" value="Dagorlad, Nurn, Southern Rhovanion"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Imlad Morgul" graphics="ImladMorgul.jpg" back="1" text="">
        <attr key="move_to" value="Gorgoroth, Ithilien"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Iron Hills" graphics="IronHills.jpg" back="1" text="">
        <attr key="move_to" value="Northern Rhovanion, Withered Heath"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Ithilien" graphics="Ithilien.jpg" back="1" text="">
        <attr key="move_to" value="Anórien, Dagorlad, Harondor, Imlad Morgul"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Khand" graphics="Khand.jpg" back="1" text="">
        <attr key="move_to" value="Harondor, Nurn"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{s}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Lamedon" graphics="Lamedon.jpg" back="1" text="">
        <attr key="move_to" value="Anfalas, Belfalas, Lebennin"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{b}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Lebennin" graphics="Lebennin.jpg" back="1" text="">
        <attr key="move_to" value="Mouths of the Anduin, Anórien, Belfalas, Lamedon"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{f}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Lindon" graphics="Lindon.jpg" back="1" text="">
        <attr key="move_to" value="Arthedain, Elven Shores, Númeriador"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{f}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Mouths of the Anduin" graphics="MouthsoftheAnduin.jpg" back="1" text="">
        <attr key="move_to" value="Bay of Belfalas, Belfalas, Harondor, Lebennin"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{c}"/>
+	   <attr key="keyword" value="Gondor"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Northern Rhovanion" graphics="NorthernRhovanion.jpg" back="1" text="">
        <attr key="move_to" value="Dorwinion, Heart of Mirkwood, Iron Hills, Southern Rhovanion, Withered Heath, Woodland Realm, Grey Mountain Narrows"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Númeriador" graphics="Numeriador.jpg" back="1" text="">
        <attr key="move_to" value="Arthedain, Forochel, Lindon"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Nurn" graphics="Nurn.jpg" back="1" text="">
        <attr key="move_to" value="Gorgoroth, Horse Plains, Khand"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{d}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Old Pûkel Gap" graphics="OldPukelGap.jpg" back="1" text="">
        <attr key="move_to" value="Anfalas, Old Pûkel-land"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Old Pûkel-land" graphics="OldPukelland.jpg" back="1" text="">
        <attr key="move_to" value="Andrast, Enedhwaith, Eriadoran Coast, Gap of Isen, Old Pûkel Gap"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Redhorn Gate" graphics="RedhornGate.jpg" back="1" text="">
        <attr key="move_to" value="Hollin, Wold &amp; Foothills"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Rhudaur" graphics="Rhudaur.jpg" back="1" text="">
        <attr key="move_to" value="Angmar, Arthedain, Cardolan, High Pass, Hollin"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Rohan" graphics="Rohan.jpg" back="1" text="">
        <attr key="move_to" value="Anórien, Fangorn, Gap of Isen, Wold &amp; Foothills"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{b}"/>
+	   <attr key="keyword" value="Greater Gondor"/>
     </card>
     <card name="Southern Mirkwood" graphics="SouthernMirkwood.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Brown Lands, Dagorlad, Heart of Mirkwood, Southern Rhovanion, Western Mirkwood"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{d}"/>
+	   <attr key="keyword" value="Mirkwood"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Southern Rhovanion" graphics="SouthernRhovanion.jpg" back="1" text="">
        <attr key="move_to" value="Dagorlad, Dorwinion, Heart of Mirkwood, Horse Plains, Northern Rhovanion, Southern Mirkwood"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="The Shire" graphics="TheShire.jpg" back="1" text="">
        <attr key="move_to" value="Arthedain, Cardolan"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{f}"/>
+	   <attr key="keyword" value="Eriador"/>
     </card>
     <card name="Udûn" graphics="Udun.jpg" back="1" text="">
        <attr key="move_to" value="Gorgoroth"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{d}"/>
+	   <attr key="keyword" value="Mordor"/>
     </card>
     <card name="Western Mirkwood" graphics="WesternMirkwood.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Heart of Mirkwood, Southern Mirkwood, Woodland Realm"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Mirkwood"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Withered Heath" graphics="WitheredHeath.jpg" back="1" text="">
        <attr key="move_to" value="Iron Hills, Northern Rhovanion, Grey Mountain Narrows"/>
@@ -4477,12 +4597,15 @@
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{w}"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
     <card name="Woodland Realm" graphics="WoodlandRealm.jpg" back="1" text="">
        <attr key="move_to" value="Anduin Vales, Heart of Mirkwood, Northern Rhovanion, Western Mirkwood, Grey Mountain Narrows"/>
        <attr key="rarity" value="CB2"/>
        <attr key="type" value="Region"/>
        <attr key="region_type" value="{b}"/>
+	   <attr key="keyword" value="Mirkwood"/>
+	   <attr key="keyword" value="Wilderland"/>
     </card>
   </cards>
 </ccg-setinfo>
