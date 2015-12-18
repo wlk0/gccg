@@ -1439,7 +1439,7 @@
 			 <attr key="region" value="Southern Mirkwood"/>
 			 <attr key="haven" value="Dol Guldur"/>
 			 <attr key="playable" value="Information, Items (minor, gold ring)"/>
-			 <attr key="auto_attack" value="Elves — 2 strikes with 10 prowess (detainment if the company contains an Elf and Huinen is not at the site)"/>
+			 <attr key="auto_attack" value="Elves — 3 strikes with 10 prowess (detainment if the company contains an Elf and Huinen is not at the site)"/>
 			 <attr key="special" value="Hidden site. Tap an Elf in the company to reveal this site."/>
 			 <attr key="keyword" value="Elf-hold"/>
 	</card>
