@@ -20,40 +20,40 @@ Deck
 
 2 An Unexpected Outpost (DM)
 1 Bregalad (FB)
-1 Curse Him, Root and Branch! (FB)
-1 Dark Heart (FB)
-3 Ent in Search of the Entwives (LE)
+2 Ent in Search of the Entwives (LE)
 1 Fangorn* (FB)
 1 Finglas (FB)
+1 Foolish Words (LE)
 3 Huorn (TW)
 2 Nature's Revenge (WH)
 2 Neeker-breekers (PR)
-3 Old Man Willow (TW)
+2 Old Man Willow (TW)
 3 Protecting Their Domain (FB)
+1 Sellswords Between Charters (LE)
 2 Sentinel of the Grove (FB)
 1 Stench of Mordor (LE)
+1 The Black Enemy's Wrath (DM)
 3 Tree-herder (FB)
 1 Twilight (LE)
+1 Watcher in the Water (TW)
 3 Wrath of the Olvar (FB)
 
-# Hero Character (6)
+# Hero Character (4)
 
 1 Attack-lord (DF)
-1 Borin (DF)
-1 King's Advisor (DF)
+1 King's Judge (DF)
 1 Norin (DF)
-1 Ori (TW)
 1 Pathfinder (DF)
 
-# Hero Resource (30)
+# Hero Resource (29)
 
 1 A Chance Meeting (TW)
 1 Bill the Pony (TW)
 1 Blue Mountain Dwarves (TW)
 1 Clan Bonds (DF)
-2 Concealment (TW)
-1 Dwarven Armoury (DF)
-2 Halfling Stealth (TW)
+1 Concealment (TW)
+2 Escape (TW)
+1 Halfling Stealth (TW)
 2 Halfling Strength (TW)
 1 Iron Hill Dwarves (TW)
 1 Ironfists (DF)
@@ -69,10 +69,10 @@ Deck
 1 Torque of Hues (TW)
 3 We Must Away (DF)
 
-# Stage Resource (2)
+# Stage Resource (3)
 
 1 Blind to All Else (WH)
-1 Mining Settlement (DF)
+2 Mining Settlement (DF)
 
 ####
 Pool
@@ -93,8 +93,7 @@ Pool
 
 # Hero Resource (3)
 
-1 Backpack (RS)
-1 Healing Herbs (TW)
+2 Backpack (RS)
 1 Rumours of Rings (BA)
 
 # Stage Resource (2)
@@ -106,37 +105,34 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (2)
+# Hazard (8)
 
-1 Dwarven Chain-shirt (DF)
-1 Miner's Pick (DF)
-
-# Hazard (7)
-
-1 Dark Shapes Gathered There (NE)
+1 Covetous Thoughts (LE)
+1 Drowning Seas (TW)
+1 He Is Lost to Us (FB)
+1 Lost in Free-domains (LE)
 1 Lure of the Senses (TW)
-1 Muster Disperses (TW)
-1 Reaching Shadow (DM)
+1 Nameless Thing (DM)
 1 Too Much to Ask (WR)
 1 Tookish Blood (TW)
-1 Watcher in the Water (TW)
 
-# Hero Resource (17)
+# Hero Resource (18)
 
 1 Aglarond (TI)
 1 Book of Mazarbul (TW)
 1 Dwarven Ring of Durin's Tribe [H] (TW)
 1 Dwarven Ring of Thélor's Tribe [H] (TW)
+1 Elven Rope (BA)
+1 Healing Herbs (TW)
 1 Lesser Ring (TW)
 1 Longbottom Leaf (BA)
 1 Lost Tome (DM)
 1 Magic Ring of Nature (TW)
 1 Magic Ring of Stealth (TW)
+1 Noble Hound (DM)
 1 Marvels Told (TD)
 1 Pipe (DF)
-1 Restored to Its Owner (DF)
 1 Return to Old Dwellings (DF)
-1 Shield of Iron-bound Ash (TW)
 1 Star-glass (TW)
 1 Test of Form (TW)
 1 The Arkenstone [H] (TW)
@@ -152,12 +148,12 @@ Sideboard
 Sites
 #####
 
-# Dwarf-lord Site (2)
+# Dwarf-lord Site (4)
 
-1 Blue Mountain Dwarf-hold [D] (DF)
-1 Iron Hill Dwarf-hold [D] (DF)
+2 Blue Mountain Dwarf-hold [D] (DF)
+2 Iron Hill Dwarf-hold [D] (DF)
 
-# Hero Site (31)
+# Hero Site (29)
 
 1 Bag End [H] (TW)
 1 Bandit Lair [H] (TW)
@@ -173,7 +169,6 @@ Sites
 1 Glittering Caves [H] (TW)
 1 Goblin-gate [H] (TW)
 1 Gondmaeglom [H] (TD)
-1 Gyogorasag Sanctuary [H] (GW)
 1 Isengard [H] (TW)
 1 Isles of the Dead that Live [H] (TW)
 1 Long Marshes [H] (DF)
@@ -187,6 +182,6 @@ Sites
 1 Telpëmar [H] (FB)
 1 The Lonely Mountain [H] (TW)
 1 The Under-grottos [H] (DM)
-1 Turukulon's Lair [H] (TI)
 1 Wellinghall [H] (TW)
 1 Zarak Dûm [H] (TD)
+

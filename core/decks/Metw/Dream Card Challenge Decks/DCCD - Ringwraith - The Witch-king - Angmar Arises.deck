@@ -44,9 +44,9 @@ Deck
 
 1 Bade to Rule (LE)
 1 Black-mail Coat (LE)
-1 Breeder's Stock (KN)
+1 Breeder's Stock (NE)
 3 Burning Rick, Cot, and Tree (LE)
-1 Call to Arms (KN)
+1 Call to Arms (NE)
 1 Creating Their Domain (NE)
 1 Fizzling Torch (NE)
 1 Hatred (NE)
@@ -58,7 +58,7 @@ Deck
 2 The Goblins Are upon You! (NE)
 1 The Iron Crown [M] (LE)
 3 The Least of Gold Rings (LE)
-1 The Morgul-lord (KN)
+1 The Morgul-lord (NE)
 1 The Ring Leaves Its Mark (LE)
 2 The Tormented Earth (AS)
 2 Voices of Malice (LE)
@@ -83,7 +83,7 @@ Pool
 
 # Minion Resource (3)
 
-1 The Morgul-lord (KN)
+1 The Morgul-lord (NE)
 1 Whip (LE)
 1 Whispers of Rings (BA)
 
@@ -110,6 +110,7 @@ Sideboard
 
 # Minion Resource (19)
 
+1 Ancient Secrets (BA)
 1 Angmarim [M] (AS)
 2 Black Rider (LE)
 1 Crept Along Cleverly (WH)
@@ -123,8 +124,7 @@ Sideboard
 1 Riven Gate (AS)
 1 Test of Fire (LE)
 1 Trifling Ring (LE)
-1 Trophy-belt (NE)
-1 Vasamacil (KN)
+1 Vasamacil (NE)
 2 War-wolf (LE)
 1 Warrior-priests of Angmar (NW)
 
