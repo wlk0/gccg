@@ -3,6 +3,8 @@
 #
 
 use File::Path;
+use Proc::Daemon;
+use Cwd;
 
 # Globals
 
@@ -420,7 +422,7 @@ sub launch_server
     }
     print "[$type] $cmd\n";
     sleep(1);
-    system("$cmd &");
+    $pid = Proc::Daemon::Init({work_dir => cwd(), exec_command => $cmd});
 }
 
 #
