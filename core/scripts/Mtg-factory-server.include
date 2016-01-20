@@ -217,12 +217,45 @@ def InitDistributions
   distribution{"BNG"}{"booster"}=((1,"THS/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"JOU"}=(,);
   distribution{"JOU"}{"booster"}=((1,"THS/L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+# the following is only for reference, since VMA has a separate procedure
   distribution{"VMA"}=(,);
-  distribution{"VMA"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+  distribution{"VMA"}{"booster"}=((1,"4*C+4*U+2*R+M+2*S"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"CMS"}=(,);
   distribution{"CMS"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
   distribution{"M15"}=(,);
   distribution{"M15"}{"booster"}=((1,"L"),(10,"C"),(3,"U"),(1,"2*R+M"));
+}
+
+#
+# ProduceVMA_Booster() - Produce Vintage Masters booster.
+#
+def ProduceVMA_Booster
+{
+  push(p);
+  push(i);
+  p=RandomCardSet("VMA",((11,"C"),(3,"U"),(1,"2*R+M")));
+
+# falling back on the procedure given in distribution{"MOD"} involves
+# constructing and destructing a 1000-element list for every single pack,
+# which is wasteful
+  i=random(982);
+
+  if(i<18)
+    p[0]=random(cards{"VMA"}{"S"});
+  else if(i<48)
+    p[0]=random(cards{"VMA"}{"M"});
+  else if(i<258)
+    p[0]=random(cards{"VMA"}{"R"});
+  else if(i<578)
+    p[0]=random(cards{"VMA"}{"U"});
+  else
+# it's already a common, but replace it with a new one anyway
+# since the foil slot is supposed to allow duplicates
+    p[0]=random(cards{"VMA"}{"C"});
+
+  return(p);
+  i=pop();
+  p=pop();
 }
 
 #
