@@ -19,14 +19,14 @@
   <cardset source="vc2.xml"/>
   <cardset source="vc3.xml"/>
   <cardset source="durins_folk.xml"/> 
-  <cardset source="mortal_men.xml"/>
+  <cardset source="necromancer.xml"/>
   <cardset source="great_wyrms.xml"/>
-  <cardset source="northern_waste.xml"/>
   <cardset source="return_shadow.xml"/>
   <cardset source="treason_isengard.xml"/>
   <cardset source="war_ring.xml"/>
-  <cardset source="necromancer.xml"/>
+  <cardset source="mortal_men.xml"/>
   <cardset source="kingdom_north.xml"/>
+  <cardset source="northern_waste.xml"/>
   <cardset source="sun_lands.xml"/>
   <cardset source="morgothslegacy.xml"/>
   <cardset source="centralplains.xml"/>
