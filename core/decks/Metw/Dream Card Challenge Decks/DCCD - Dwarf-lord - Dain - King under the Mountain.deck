@@ -18,13 +18,13 @@ Deck
 
 4 Dáin (DF)
 
-# Grey Agent Character (2)
+# Grey Agent Character (1)
 
 1 Fram Wyrmslayer (GW)
-1 Goblin-basher (DF)
 
-# Hazard (32)
+# Hazard (33)
 
+1 Alatar the Hunter (AS)
 2 An Unexpected Outpost (DM)
 1 Angurth at Home (GW)
 1 Chance of Being Lost (DM)
@@ -37,11 +37,11 @@ Deck
 1 Ibûn (DF)
 2 Naugol (DF)
 3 Naugrim (DF)
-1 Nothing to Eat or Drink (LE)
+2 Nothing to Eat or Drink (LE)
 1 Out of Practice (DF)
-2 Pierced by Many Wounds (DM)
+1 Pierced by Many Wounds (DM)
+1 Returned Beyond All Hope (AS)
 2 Ride Against the Enemy (AS)
-1 Shifting Paths (FB)
 2 Twilight (TW)
 
 # Hero Character (3)
@@ -90,7 +90,7 @@ Pool
 
 1 Bow of Yew (FB)
 
-# Hero Character (11)
+# Hero Character (10)
 
 1 Attack-lord (DF)
 1 Dwalin (TW)
@@ -101,7 +101,7 @@ Pool
 1 Lóni (DF)
 1 Náin, Son of Grór (DF)
 1 Pathfinder (DF)
-2 Thorin III Stonehelm (DF)
+1 Thorin III Stonehelm (DF)
 
 # Hero Resource (2)
 
@@ -124,12 +124,13 @@ Sideboard
 1 Durang (DF)
 1 Profitable Trade (DF)
 
-# Hazard (10)
+# Hazard (11)
 
 1 Angurth Ahunt (GW)
 1 Call of Home (LE)
 1 He Is Lost to Us (FB)
 1 Lost at Sea (TW)
+1 Lost in Free-domains (LE)
 1 Lure of Expedience (LE)
 1 Many Burdens (NE)
 1 Nameless Thing (DM)
@@ -137,12 +138,11 @@ Sideboard
 1 The Ring's Betrayal (TW)
 1 Too Much to Ask (WR)
 
-# Hero Resource (14)
+# Hero Resource (13)
 
 1 Block (TW)
 1 Carc (DF)
 1 Horn of Defiance (GW)
-1 Ironfists (DF)
 1 King under the Mountain (TD)
 2 Longbottom Leaf (BA)
 1 Magical Harp (TD)
@@ -177,15 +177,13 @@ Sites
 1 Deep Mines (WH)
 1 Thranduil's Halls [F] (FB)
 
-# Hero Site (26)
+# Hero Site (24)
 
 1 Barak-shathur [H] (DF)
-1 Carn Dûm [H] (TW)
 1 Caves of Ûlund [H] (TW)
 1 Cirith Helkaloke [H] (GW)
 1 Dale [H] (TD)
 1 Dancing Spire [H] (TW)
-1 Deep Cleft [H] (GW)
 1 Framsburg [H] (TD)
 1 Gold Hill [H] (TD)
 1 Gondmaeglom [H] (TD)
@@ -193,11 +191,11 @@ Sites
 1 Lake-town [H] (TW)
 1 Long Marshes [H] (DF)
 1 Long Peak [H] (GW)
+1 Moria [H] (TW)
 1 Mount Gundabad [H] (TW)
 1 Norr-dûm [H] (GW)
 1 Nurunkhizdín [H] (DF)
 1 Ovir Hollow [H] (TD)
-1 Sarn Goriwing [H] (TW)
 1 Shab Arch [H] (GW)
 1 Shrel-Kain [H] (TW)
 1 The Carrock [H] (DF)

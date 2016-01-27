@@ -8,11 +8,9 @@
 Deck
 ####
 
-# Dual Resource (5)
+# Dual Resource (2)
 
 2 Elf-friend (FB)
-1 Mighty Steed (TI)
-2 Well Aimed (FB)
 
 # Elf-lord Character (4)
 
@@ -26,19 +24,17 @@ Deck
 3 Cave-drake (TW)
 1 Crossing the Border (DF)
 1 Darkness Ahead (TI)
-1 Flooded to the Surface (DF)
+2 Flooded to the Surface (DF)
 1 From the Pits of Angband (TD)
 1 Lord of the Woods (FB)
-1 Lost in Emyn Muil (TI)
 2 Marsh-drake (TD)
-1 Nameless Thing (DM)
 1 Out of Practice (DF)
-1 Rain-drake (TD)
+2 Rain-drake (TD)
 1 Shut Yer Mouth (LE)
 2 Summons from Long Sleep (AS)
 1 Taint of Deep Lore (WR)
-1 Taint of the Wilds (RS)
 1 Terror from the Deeps (DF)
+1 The Reach of Ulmo (DM)
 1 Tidings of Bold Spies (LE)
 1 Tidings of Doubt and Danger (LE)
 1 True Fire-drake (TD)
@@ -51,28 +47,31 @@ Deck
 
 # Hero Character (4)
 
+1 Ascarnil (FB)
+1 Elven Handmaid (FB)
 1 Emissary of the House (FB)
 1 Erestor (FB)
-2 Ranger of Arnor (KN)
 
-# Hero Resource (21)
+# Hero Resource (24)
 
 1 Asfaloth (RS)
 1 Bow of Dragon-horn (TD)
 3 Choose a Mortal Life (FB)
 1 Elves of the House (FB)
-1 Great Bow of Yew (FB)
 3 Great-road (TW)
 1 Hall of Fire (DM)
+2 Knowledge of the Enemy (DM)
 1 Lossoth (TW)
+1 Lucky Strike (TW)
 1 Many Turns and Doublings (TD)
 2 Marvels Told (TD)
 1 Narsil (TW)
 1 Palantír of Annúminas [H] (TW)
 1 Rangers of the North (TW)
 1 Ring of Barahir (WR)
-1 Sojourn in the Golden Wood (RS)
 1 Spirit of Celebrian (FB)
+1 Sword of Gondolin (TW)
+1 Trickery (TD)
 
 # Minion Resource (3)
 
@@ -128,22 +127,22 @@ Sideboard
 
 1 Ash-drake (NE)
 1 Doors of Night (LE)
-1 Drought (SL)
 1 Lost in Free-domains (TW)
 1 Muster Disperses (LE)
+1 Nameless Thing (DM)
 1 Ring-chained (NM)
+1 Sand-drake (TD)
 1 Too Much to Ask (WR)
 1 Twilight (LE)
 1 Vaurak (SL)
-1 Wield It While I May (ML)
 1 Wielder's Curse (GW)
 
 # Hero Resource (14)
 
 1 Adamant Helmet (TD)
 1 Align Palantír (TW)
-1 Attuning the Blade (FB)
-1 Banner of Elendil's House (WR)
+1 Elf-stone (TW)
+1 Elven Blade (FB)
 1 Jewel of Beleriand (AS)
 1 Longbottom Leaf (BA)
 1 Noble Hound (DM)
@@ -174,7 +173,7 @@ Sites
 
 1 Grey Havens [F] (FB)
 
-# Hero Site (29)
+# Hero Site (30)
 
 1 Amon Lind [H] (FB)
 1 Annúminas [H] (KN)
@@ -196,6 +195,7 @@ Sites
 1 Mount Rerir [H] (FB)
 1 Ruskea Vene [H] (NW)
 1 Tharbad [H] (TD)
+1 Thaurung [H] (NW)
 1 The Iron-deeps [H] (DM)
 1 The Last Bridge [H] (RS)
 1 The Under-Caves [H] (KN)
