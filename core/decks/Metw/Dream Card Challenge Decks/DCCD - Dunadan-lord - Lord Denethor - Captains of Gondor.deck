@@ -16,7 +16,7 @@ Deck
 
 4 Lord Denethor (WR)
 
-# Hazard (34)
+# Hazard (33)
 
 1 Ambusher (LE)
 1 An Unexpected Outpost (DM)
@@ -24,24 +24,22 @@ Deck
 2 Barrow-wight (TW)
 1 Black Crows (FB)
 3 Chill Douser (DM)
+1 Dark Designs of Mordor (NE)
 1 Darkness Ahead (TI)
 1 Death of a Kinsman (WR)
 1 Foolish Words (TD)
+1 Fruitless Victory (NE)
 1 Gandalf the White Rider (AS)
 1 Ghosts (LE)
 1 Haunted Place (TI)
-1 Ibûn (DF)
 2 Icy Touch (TD)
-2 Mewlips (TI)
+3 Mewlips (TI)
 1 Out of Practice (DF)
 3 Plague of Wights (LE)
 1 Power Built by Waiting (AS)
 1 Reaching Shadow (DM)
-1 Searching Eye (LE)
 1 Sons of Kings (LE)
-1 Spells of the Barrow-wights (DM)
 3 Stirring Bones (LE)
-1 Taint of Glory (WR)
 1 Twilight (LE)
 
 # Hero Character (5)
@@ -52,10 +50,9 @@ Deck
 1 Hirgon (WR)
 1 Húrin the Tall (WR)
 
-# Hero Resource (29)
+# Hero Resource (30)
 
 1 Archer of Ithilien (WR)
-1 Captains of the West (WR)
 3 Dark Quarrels (TW)
 2 Dodge (TW)
 1 Escaped Slaves (WR)
@@ -66,10 +63,11 @@ Deck
 2 Lock nor Bar May Hinder (DF)
 1 Marvels Told (TD)
 1 Orcrist (TW)
+1 Palantír of Minas Tirith (TW)
 3 Rescue Prisoners (TW)
 1 Rumours of Danger (WR)
-1 Smoke Rings (DM)
-1 Steward of Gondor (WR)
+1 Safe from the Shadow (AS)
+2 Smoke Rings (DM)
 1 The Wind Is Turning (WR)
 1 True-hearted Man (RS)
 1 Ungolcrist (FB)
@@ -108,7 +106,7 @@ Pool
 
 # Stage Resource (3)
 
-1 Captain of the Royal Rangers  (WR)
+1 Captain of the Tower Guard (WR)
 1 The House of Mardil (WR)
 1 Trusted Counsellor (FB)
 
@@ -116,36 +114,33 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (1)
-
-1 Mighty Steed (TI)
-
-# Hazard (8)
+# Hazard (9)
 
 1 Corsairs of Umbar (TW)
+1 Covetous Thoughts (LE)
 1 FEAR! FIRE! FOES! (AS)
-1 King of the Dead (TI)
 1 Many Burdens (NE)
 1 Muster Disperses (LE)
+1 Searching Eye (LE)
 1 Slip Treacherously (AS)
-1 Ta-Fa-Lisch (DF)
+1 Spells of the Barrow-wights (DM)
 1 Too Much to Ask (WR)
 
-# Hero Resource (13)
+# Hero Resource (12)
 
+1 Captains of the West (WR)
 1 Cram (TD)
 1 Garrison at Cair Andros (WR)
 1 Healing Herbs (TW)
 1 Longbottom Leaf (BA)
 1 Many Foes He Fought (TD)
 1 Marvels Told (TD)
-1 Putting away All Fear (WR)
+1 Men of Lebennin (TW)
+1 Noble Hound (DM)
 1 Rangers of Ithilien (TW)
-1 Smoke Rings (DM)
+1 Steward of Gondor (WR)
 1 Star-glass (TW)
 1 The Ithil-stone (AS)
-1 Tower Guard of Minas Tirith (TW)
-1 Tower of Ecthelion (WR)
 
 # Minion Resource (2)
 
@@ -154,7 +149,7 @@ Sideboard
 
 # Stage Resource (6)
 
-1 Captain of the Tower Guard (WR)
+1 Captain of the Royal Rangers  (WR)
 1 Eyes of the White Tower (WR)
 1 Legacy of Smiths (WH)
 1 Son of Ecthelion (WR)

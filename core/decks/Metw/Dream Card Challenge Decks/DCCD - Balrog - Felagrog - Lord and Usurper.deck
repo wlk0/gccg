@@ -47,7 +47,7 @@ Deck
 1 Orc Shaman (NE)
 2 Orc Tracker (LE)
 
-# Minion Resource (29)
+# Minion Resource (28)
 
 1 Ancient Secrets (BA)
 2 Broad-headed Spear (LE)
@@ -56,12 +56,10 @@ Deck
 1 Dwarf-chopper (DF)
 2 Foe Dismayed (BA)
 1 Gangways over the Fire (BA)
-1 Great Bats (AS)
 1 Great Lord of Goblin-gate (AS)
-1 Hatred (NE)
 1 High Helm (LE)
 1 I'll Report You (LE)
-1 Marauding Band of Orcs (NE)
+2 Marauding Band of Orcs (NE)
 1 Orcs of Moria (LE)
 1 Orders from the Great Demon (BA)
 2 Strangling Coils (BA)
@@ -96,13 +94,12 @@ Pool
 Sideboard
 #########
 
-# Hazard (10)
+# Hazard (9)
 
 1 Call of the Deeps (DF)
 1 Crossing the Border (DF)
 1 Lure of the Senses (LE)
 1 Many Burdens (NE)
-1 Mensharag (TI)
 1 Muster Disperses (TW)
 1 Ninevet (DF)
 1 Old Enemies (DF)
@@ -120,8 +117,8 @@ Sideboard
 1 An Evil Fortune (DF)
 1 Ancient Black Axe (AS)
 1 Ancient Secrets (BA)
-1 Angband Revisited (BA)
 1 Breach the Hold (BA)
+1 Great Bats (AS)
 1 Grey Mountain Goblins (LE)
 1 Invade Their Domain (BA)
 2 Liquid Fire (WH)
@@ -130,6 +127,7 @@ Sideboard
 2 Mechanical Bow (WH)
 1 Orcs of Gundabad (LE)
 1 The Arkenstone [M] (PR)
+1 Voices of Malice (LE)
 
 #####
 Sites
@@ -154,8 +152,9 @@ Sites
 
 1 Mines of Falek-dim (DF)
 
-# Minion Site (18)
+# Minion Site (20)
 
+1 Amon Lind [M] (FB)
 1 Barrow-downs [M] (LE)
 1 Blue Mountain Dwarf-hold [M] (LE)
 1 Bree [M] (LE)
@@ -172,5 +171,6 @@ Sites
 1 Mount Gundabad [M] (LE)
 1 Nurunkhizdín [M] (DF)
 1 Raider-hold [M] (LE)
+1 Sarn Goriwing [M] (LE)
 1 Steel Fall [M] (GW)
 1 The Wind Throne [M] (LE)

@@ -45,27 +45,27 @@ Deck
 1 Tidings of Bold Spies (LE)
 1 Twilight (TW)
 
-# Minion Character (5)
+# Minion Character (6)
 
 4 Adûnaphel the Ringwraith (LE)
 1 Horseman in the Night (LE)
+1 Lomëlindë (NE)
 
 # Minion Resource (27)
 
+1 Ard Once Vain (SL)
 1 Black Númenóreans [M] (AS)
 1 Cult of the Dark Lord (SL)
-2 Dark Embassy (NE)
-3 Deeper Shadow (LE)
-2 In the Name of Mordor (LE)
-1 News Must Get Through (LE)
-1 Not Careful about That (NE)
+3 Dark Embassy (NE)
+2 Deeper Shadow (LE)
+3 In the Name of Mordor (LE)
 1 Not Slay Needlessly (LE)
 1 Palantír of Minas Tirith [M] (LE)
 1 Ruse (LE)
 2 That Ain't No Secret (LE)
 1 The Kuilëondo (WR)
-2 The Names Among Them (LE)
-1 Tribute to Sauron (NE)
+1 The Names Among Them (LE)
+2 Tribute to Sauron (NE)
 1 Umbarean Corsairs (LE)
 1 Voices of Malice (LE)
 3 Weigh All Things to a Nicety (LE)
@@ -75,18 +75,18 @@ Deck
 Pool
 ####
 
-# Dual Character (2)
+# Dual Character (3)
 
 1 Dúnadan Mariner (WR)
+1 Harngorin (SL)
 1 Jehn Remak (SL)
 
-# Minion Character (8)
+# Minion Character (7)
 
 1 Dâiruzôr (BO)
 1 Firiel (DM)
 1 Ivic (DM)
 1 Jerrek (LE)
-1 Lomëlindë (NE)
 1 Mélorak (SL)
 1 Sangahyando (SL)
 1 Súrion (DM)
@@ -95,7 +95,7 @@ Pool
 
 1 Ard Once Vain (SL)
 1 Open to the Summons (WH)
-1 Thrall-ring (AS)
+1 Orc-liqor (LE)
 
 #########
 Sideboard
@@ -119,10 +119,11 @@ Sideboard
 1 Twilight (TW)
 1 Variag Horse-raiders (GP)
 
-# Minion Resource (13)
+# Minion Resource (16)
 
 1 Adûnaphel's Lute (SL)
 1 Ancient Secrets (BA)
+1 Bright Gold Ring (LE)
 1 Channels of Chey (GP)
 1 Faithless Steward (AS)
 1 Focus Palantír (LE)
@@ -130,6 +131,7 @@ Sideboard
 1 Haradrim [M] (AS)
 1 Heralded Lord (LE)
 1 Palantír of Osgiliath [M] (LE)
+1 Phantom Devised by Wizardry (NE)
 1 Secret Book (AS)
 1 Southrons [M] (LE)
 1 Stabbed Him in His Sleep (LE)

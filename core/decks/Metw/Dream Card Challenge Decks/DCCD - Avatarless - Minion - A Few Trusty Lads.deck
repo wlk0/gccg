@@ -8,15 +8,11 @@
 Deck
 ####
 
-# Dual Resource (3)
-
-1 Anguirel (NW)
-2 Flight Unmarked (RS)
-
 # Hazard (34)
 
 2 An Unexpected Outpost (DM)
 2 Doors of Night (TW)
+1 Fruitless Victory (NE)
 2 Hobgoblins (TD)
 3 Little Snuffler (DM)
 3 Minions Stir (TW)
@@ -25,7 +21,7 @@ Deck
 2 Orc-raiders (TW)
 1 Orc-tortured (DF)
 2 Orc-warband (TW)
-2 Orcish Marauders (DF)
+1 Orcish Marauders (DF)
 2 Pierced by Many Wounds (DM)
 1 Shadow of Mordor (TD)
 1 Shut Yer Mouth (LE)
@@ -41,11 +37,11 @@ Deck
 3 Orc Grunt (NE)
 1 Orc Tracker (LE)
 
-# Minion Resource (31)
+# Minion Resource (34)
 
-1 Blasting Fire (WH)
+2 Blasting Fire (WH)
 1 Crack in the Wall (LE)
-2 Crooked Promptings (LE)
+3 Crooked Promptings (LE)
 1 Dwarf-chopper (DF)
 2 Elf-skin War Drum (NE)
 1 Elfhewer (GW)
@@ -55,15 +51,16 @@ Deck
 1 Misty Mountain Wargs (LE)
 1 No More Nonsense (LE)
 3 Orc Quarrels (LE)
-2 Orc-garrison (NE)
+3 Orc-garrison (NE)
 1 Orcs of Gundabad (LE)
 2 Swift Strokes (LE)
 1 The Ashdurbuk (NE)
 2 The Goblins Are upon You! (NE)
 2 Voices of Malice (LE)
-2 War-wolf (LE)
+1 War-wolf (LE)
 2 Weigh All Things to a Nicety (LE)
 1 Where There's a Whip (LE)
+1 Wolves of Isengard (TI)
 
 ####
 Pool
@@ -96,11 +93,11 @@ Sideboard
 
 1 Lure of Expedience (LE)
 1 Many Burdens (NE)
-1 Muster Disperses (TW)
+1 Nameless Thing (DM)
 1 Old Enemies (DF)
 1 Politics (NE)
-1 Siege of Gondor (WR)
 1 Too Much to Ask (WR)
+1 Trouble on All Borders (AS)
 1 Two or Three Tribes Present (DM)
 
 # Minion Resource (22)
@@ -111,18 +108,18 @@ Sideboard
 1 Cave Troll (BA)
 1 Fizzling Torch (NE)
 1 Foul-smelling Paste (LE)
-1 I'll Be At Your Heels (LE)
 1 I'll Report You (LE)
 2 Orc-draughts (LE)
 2 Orc-liquor (LE)
 1 Orcs of Moria (LE)
 1 Slew the Great Warrior (NE)
+1 Smart and Secret (LE)
 1 Trophy-belt (NE)
-1 War-wolf (LE)
+2 War-wolf (LE)
 1 Whip (LE)
-1 Wolf-den (NE)
-3 Wolf-steed (NW)
-1 Wolves of Isengard (TI)
+2 Wolf-den (NE)
+2 Wolf-steed (NW)
+
 
 #####
 Sites
@@ -132,32 +129,34 @@ Sites
 
 1 The Wind-deeps [D] (DF)
 
-# Minion Site (32)
+# Minion Site (34)
 
 1 Amon Hen [M] (LE)
 1 Amon Lind [M] (FB)
 1 Bree [M] (LE)
 1 Cameth Brin [M] (LE)
 1 Carn Dûm [M] (LE)
-1 Dale [M] (LE)
+1 Dead Marshes [M] (LE)
 1 Deep Cleft [M] (GW)
 1 Dimrill Dale [M] (LE)
 1 Dol Guldur [M] (LE)
 1 Dunharrow [M] (LE)
 1 Edoras [M] (LE)
 1 Ettenmoors [M] (LE)
+1 Geann a-Lisch [M] (LE)
 1 Goblin-gate [M] (LE)
 1 Gondmaeglom [M] (LE)
+1 Glittering Caves [M] (LE)
 1 Isengard [M] (LE)
 1 Kala Dulakurth [M] (NW)
 1 Mathlaburg [M] (NE)
+1 Minas Morgul [M] (LE)
 1 Moria [M] (LE)
 1 Morkai [M] (KN)
 1 Mount Gram [M] (LE)
 1 Mount Gundabad [M] (LE)
 1 Sarn Goriwing [M] (LE)
 1 Sonotor's Mound [M] (GW)
-1 Steel Fall [M] (GW)
 1 The Carrock [M] (DF)
 1 The Iron-deeps [M] (AS)
 1 The Under-gates [M] (AS)
