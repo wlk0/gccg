@@ -8,10 +8,10 @@
 Deck
 ####
 
-# Dual Resource (5)
+# Dual Resource (4)
 
 2 Mighty Steed (TI)
-2 Rings of Power (RS)
+1 Rings of Power (RS)
 1 Rivermen of the Anduin Vales (NE)
 
 # Fallen-wizard Character (4)
@@ -24,6 +24,7 @@ Deck
 2 An Unexpected Outpost (DM)
 2 Black Crows (FB)
 1 Chance of Being Lost (DM)
+1 Doors of Night (LE)
 2 Ent in Search of the Entwives (LE)
 1 Fell Beast (TW)
 1 Foolish Words (TD)
@@ -34,44 +35,39 @@ Deck
 2 Marsh-drake (TD)
 1 Men of the Wood (NE)
 2 Mensharag (TI)
+1 Nobody's Friend (DM)
 2 Old Man Willow (TW)
 1 Out of Practice (DF)
-1 Pit Trap (DF)
 1 Rain-drake (TD)
-1 Shut Yer Mouth (LE)
 2 Slayer (TW)
+1 Slipped out Quietly (NE)
 1 Snow in the Mountains (NW)
-1 Taint of Ambition (WR)
 1 The Nazgûl are Abroad (TW)
 1 Twilight (LE)
 2 Withstand the Nine (NE)
 
-# Hero Character (2)
-
-1 Bahadur (BO)
-1 Peath (TW)
-
-# Hero Resource (17)
+# Hero Resource (18)
 
 2 A Chance Meeting (TW)
 1 And Forth He Hastened (TD)
-1 Beautiful Gold Ring (TW)
+2 Beautiful Gold Ring (TW)
 1 Concealment (TW)
 1 Dark Quarrels (TW)
 1 Erû's Gift (NM)
 2 Fair Gold Ring (TW)
 1 Glamdring (TW)
 1 Hundreds of Butterflies (DM)
+1 Marvels Told (TD)
 2 Smoke Rings (DM)
 1 The Wind Is Turning (WR)
-1 Wizard's Flame (TW)
 1 Wizard's Pupil (WR)
 1 Wizard's Resolve (RS)
 
-# Minion Character (2)
+# Minion Character (4)
 
-1 Aknazeh (BO)
-1 Nevido Smôd (LE)
+1 Dâsakûn (DM)
+2 Swarthy Sneering Fellow (NE)
+1 Ullis (NE)
 
 # Minion Resource (5)
 
@@ -83,7 +79,7 @@ Deck
 
 1 Gatherer of Loyalties (WH)
 1 Great Patron (WH)
-1 Never Refuse (WH)
+1 Lore of the Rings (NM)
 1 The Forge-master (WH)
 1 Thrall of the Voice (WH)
 1 Wizard's Myrmidon (WH)
@@ -97,10 +93,12 @@ Pool
 1 Hord (SL)
 1 Jehn Remak (SL)
 
-# Hero Character (4)
+# Hero Character (6)
 
+1 Bahadur (BO)
 1 Ceorl (TI)
 1 Kavâtha (BO)
+1 Peath (TW)
 1 Psousèn the Valorous (BO)
 1 Wídfara (TI)
 
@@ -108,17 +106,12 @@ Pool
 
 1 Backpack (RS)
 1 Black Arrow (PR)
+1 Rumours of Rings (BA)
 
-# Minion Character (4)
+# Minion Character (2)
 
-1 Dâsakûn (DM)
-1 Hador (LE)
 1 Layos (LE)
 1 Ulrac (GP)
-
-# Minion Resource (1)
-
-1 Whispers of Rings (BA)
 
 # Stage Resource (3)
 
@@ -138,36 +131,36 @@ Sideboard
 # Hazard (7)
 
 1 Covetous Thoughts (LE)
-1 Lost in Free-domains (LE)
 1 Lure of Magic (NE)
 1 Many Burdens (NE)
 1 Muster Disperses (TW)
+1 Nameless Thing (DM)
 1 The Ring's Betrayal (TW)
 1 Too Much to Ask (WR)
 
-# Hero Resource (13)
+# Hero Resource (17)
 
-1 Beautiful Gold Ring (TW)
+1 Dwarven Ring of Thélor's Tribe [H] (TW)
 1 First of the Order (DM)
 1 Healing Herbs (TW)
+2 Lesser Ring (TW)
 1 Longbottom Leaf (BA)
 1 Lordly Presence (TW)
 1 Lost Tome (DM)
-2 Ring for Mortal Men [H] (NM)
+1 Magic Ring of Courage (TW)
+1 Magic Ring of Nature (TW)
+1 Noble Steed (WH)
+1 Ring for Mortal Men [H] (NM)
 1 Ringlore (TW)
 1 Star-glass (TW)
 1 Wain-easterlings [H] (AS)
 1 Wizard's Flame (TW)
 1 Wizard's Test (TW)
 
-# Minion Resource (6)
+# Minion Resource (2)
 
-1 Dwarven Ring of Thélor's Tribe [M] (AS)
-1 Magic Ring of Fury (LE)
-1 Magic Ring of Weals (LE)
 1 The Tormented Earth (AS)
-1 Trifling Ring (LE)
-1 White Light Broken (WH)
+1 Wisdom to Wield (LE)
 
 # Stage Resource (2)
 
