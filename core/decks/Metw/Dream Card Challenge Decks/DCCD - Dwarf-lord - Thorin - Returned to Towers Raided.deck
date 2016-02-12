@@ -8,9 +8,8 @@
 Deck
 ####
 
-# Dual Resource (4)
+# Dual Resource (3)
 
-1 Dwarven Art of War (DF)
 1 Dwarven Axe (DF)
 2 Old Grudge (DF)
 
@@ -44,58 +43,69 @@ Deck
 1 Were-wolf (NE)
 3 Wolves (TW)
 
-# Hero Character (4)
+# Minion Character (1)
+
+1 Drór (DM)
+
+# Hero Character (5)
 
 1 Bifur (TW)
 1 Bofur (TW)
 1 Dís (DF)
 1 Fíli (TW)
+1 Norin (DF)
 
-# Hero Resource (21)
+# Hero Resource (23)
 
 1 A Chance Meeting (TW)
 1 A More or Less Decent Giant (DF)
 1 Blue Mountain Dwarves (TW)
 1 Clan Bonds (DF)
 1 Cup of Farewell (DM)
+1 Dark Numbers (DM)
+1 Dark Quarrels (TW)
 1 Durin's Axe (TW)
 1 Escape (TW)
 1 Khazadshathûr (DF)
 1 Kingdom of Old Restored (DF)
 1 Knowledge of the Enemy (DM)
 1 Magical Harp (TD)
-1 Marvels Told (TD)
+2 Marvels Told (TD)
 2 Return to Old Dwellings (DF)
-2 Smoke Rings (DM)
+1 Smoke Rings (DM)
 3 The Dwarves Are upon You! (DM)
 1 The Mithril-coat [H] (TW)
 1 Valiant Sword (TD)
 
-# Minion Resource (6)
+# Minion Resource (4)
 
-1 Crack in the Wall (LE)
-2 Crept Along Cleverly (WH)
+1 Crept Along Cleverly (WH)
 2 Swift Strokes (LE)
 1 We Have Come to Kill (LE)
 
-# Stage Resource (2)
+# Stage Resource (3)
 
 1 Clad for War (DF)
-1 Son of Thráin (DF)
+1 Great Achievement (DF)
+1 Promise of Treasure (DF)
 
 ####
 Pool
 ####
 
+# Dual Character (1)
+
+1 Dár (SL)
+
 # Hero Character (9)
 
 1 Attack-lord (DF)
+1 Bombur (TW)
 1 Dworin (DF)
 1 Frerin (DF)
 1 Glóin (TW)
 1 King's Advisor (DF)
 1 Lipór (DF)
-1 Norin (DF)
 1 Náin, Son of Grór (DF)
 1 Pathfinder (DF)
 
@@ -108,7 +118,7 @@ Pool
 # Stage Resource (3)
 
 1 Oakenshield (DF)
-1 Promise of Treasure (DF)
+1 Son of Thráin (DF)
 1 Trusted Counsellor (FB)
 
 #########
@@ -117,9 +127,9 @@ Sideboard
 
 # Dual Resource (3)
 
+1 Dwarven Art of War (DF)
 1 Dwarven Cunning (DF)
 1 Fortress Reclaimed (DF)
-1 His Beard Long and Forked (DF)
 
 # Hazard (8)
 
@@ -132,30 +142,29 @@ Sideboard
 1 Slip Treacherously (AS)
 1 Too Much to Ask (WR)
 
-# Hero Resource (14)
+# Hero Resource (15)
 
 1 Block (TW)
 1 Fireworks (DM)
+1 Forgotten Scrolls (DM)
 1 Healing Herbs (TW)
 1 Ironfists (DF)
 2 Longbottom Leaf (BA)
-1 Marvels Told (TD)
+1 Necklace of Silver and Pearls (TD)
 1 No Strangers at this Time (AS)
 1 Noble Hound (DM)
 1 Petty-dwarves [H] (AS)
-1 Pipe Weed (DF)
 1 Rebuild the Town (DM)
+1 Smoke Rings (DM)
 1 Star-glass (TW)
 1 Tower Raided (AS)
 
-# Minion Resource (2)
+# Minion Resource (1)
 
 1 Old Prejudice (LE)
-1 Old Treasure (AS)
 
-# Stage Resource (3)
+# Stage Resource (2)
 
-1 Great Achievement (DF)
 1 Mining Settlement (DF)
 1 The Seven Houses (DF)
 

@@ -12,13 +12,11 @@ Deck
 
 2 Dúnadan Mariner (WR)
 
-# Dual Resource (6)
+# Dual Resource (4)
 
-1 Desperate Strike (DF)
 1 Foliant of Warfare (RN)
 2 Mighty Steed (TI)
 1 Southron Scimitar (SL)
-1 The Gwaedhel-sword (WR)
 
 # Hazard (33)
 
@@ -29,6 +27,7 @@ Deck
 1 Fruitless Victory (NE)
 2 Lawless Men (LE)
 1 Lord of the Woods (FB)
+1 Nobody's Friend (DM)
 1 Out of Practice (DF)
 3 Pick-pocket (TW)
 2 Pierced by Many Wounds (DM)
@@ -37,7 +36,6 @@ Deck
 1 Ransom (NE)
 1 Rats! (LE)
 3 Ruffians (WR)
-1 Seized upon the Bearer (RS)
 2 Sellswords Between Charters (LE)
 1 Taint of Glory (WR)
 2 Thrice Outnumbered (LE)
@@ -49,19 +47,21 @@ Deck
 
 4 Adûnaphel the Ringwraith (LE)
 1 Horseman in the Night (LE)
-1 Lomëlindë (NE)
+1 Râisha (DM)
 
-# Minion Resource (27)
+# Minion Resource (29)
 
-1 Ard Once Vain (SL)
+1 Ard Once Vain (NE)
 1 Black Númenóreans [M] (AS)
 1 Cult of the Dark Lord (SL)
 3 Dark Embassy (NE)
 2 Deeper Shadow (LE)
+1 Diversion (LE)
 3 In the Name of Mordor (LE)
 1 Not Slay Needlessly (LE)
-1 Palantír of Minas Tirith [M] (LE)
 1 Ruse (LE)
+1 Secret Book (AS)
+1 Southrons [M] (LE)
 2 That Ain't No Secret (LE)
 1 The Kuilëondo (WR)
 1 The Names Among Them (LE)
@@ -93,7 +93,7 @@ Pool
 
 # Minion Resource (3)
 
-1 Ard Once Vain (SL)
+1 Ard Once Vain (NE)
 1 Open to the Summons (WH)
 1 Orc-liqor (LE)
 
@@ -101,39 +101,40 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (2)
+# Dual Resource (3)
 
 1 Oliphaunt (SL)
+1 Mounted Lance (TI)
 1 Tarma of Ar-Pharazôn (SL)
 
-# Hazard (10)
+# Hazard (11)
 
 1 Angmarim Tribesmen (KN)
 1 Cardolanian Whalers (NW)
 1 Corsairs of Umbar (TW)
+1 Grima Wormtongue (TI)
 1 Lure of the Senses (TW)
-1 Men of the Wood (GW)
+1 Men of the Wood (NE)
 1 Muster Disperses (TW)
 1 Stout Men of Gondor (AS)
 1 Too Much to Ask (WR)
 1 Twilight (TW)
 1 Variag Horse-raiders (GP)
 
-# Minion Resource (16)
+# Minion Resource (15)
 
-1 Adûnaphel's Lute (SL)
+1 Adûnaphel's Lute (NE)
 1 Ancient Secrets (BA)
 1 Bright Gold Ring (LE)
-1 Channels of Chey (GP)
 1 Faithless Steward (AS)
 1 Focus Palantír (LE)
 1 Foul-smelling Paste (LE)
 1 Haradrim [M] (AS)
 1 Heralded Lord (LE)
+1 Palantír of Minas Tirith [M] (LE)
 1 Palantír of Osgiliath [M] (LE)
 1 Phantom Devised by Wizardry (NE)
 1 Secret Book (AS)
-1 Southrons [M] (LE)
 1 Stabbed Him in His Sleep (LE)
 1 Symbol of Malice (KN)
 1 Voices of Malice (LE)
