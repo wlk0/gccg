@@ -46,12 +46,12 @@ Deck
 1 Black-mail Coat (LE)
 3 Burning Rick, Cot, and Tree (LE)
 2 Call to Arms (NE)
-1 Creating Their Domain (NE)
+2 Creating Their Domain (NE)
 1 Fizzling Torch (NE)
 1 Hatred (NE)
 1 High Helm (LE)
 1 Iron-home (KN)
-3 Iron-road (LE)
+2 Iron-road (LE)
 1 No More Nonsense (LE)
 2 Swift Strokes (LE)
 2 The Goblins Are upon You! (NE)
@@ -88,9 +88,10 @@ Pool
 Sideboard
 #########
 
-# Hazard (8)
+# Hazard (9)
 
 1 Drowning Seas (TW)
+1 Gloom (TW)
 1 Fell Winter (TW)
 1 King of the Dead (TI)
 1 Long Winter (TW)
@@ -104,12 +105,11 @@ Sideboard
 1 Hoarmûrath the Ringwraith (LE)
 1 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (20)
+# Minion Resource (19)
 
 1 Ancient Secrets (BA)
 1 Angmarim [M] (AS)
-1 Black Rider (LE)
-2 Black Horse (AS)
+2 Black Rider (LE)
 1 Crept Along Cleverly (WH)
 1 Hillmen [M] (LE)
 1 Magic Ring of Fury (LE)
