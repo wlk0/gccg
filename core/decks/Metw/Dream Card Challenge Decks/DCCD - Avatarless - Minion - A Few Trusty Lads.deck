@@ -17,6 +17,7 @@ Deck
 3 Little Snuffler (DM)
 3 Minions Stir (TW)
 2 Orc-archers (DF)
+1 Orc-battalion (NE)
 2 Orc-lieutenant (TW)
 2 Orc-raiders (TW)
 1 Orc-tortured (DF)
@@ -26,7 +27,6 @@ Deck
 1 Shadow of Mordor (TD)
 1 Shut Yer Mouth (LE)
 2 Soldiers of the Dark Lord (NE)
-1 Taint of Glory (WR)
 1 The Back Door (DF)
 1 Twilight (TW)
 2 Wolf-riders (TD)
@@ -125,11 +125,7 @@ Sideboard
 Sites
 #####
 
-# Dual Site (1)
-
-1 The Wind-deeps [D] (DF)
-
-# Minion Site (34)
+# Minion Site (33)
 
 1 Amon Hen [M] (LE)
 1 Amon Lind [M] (FB)
@@ -138,7 +134,6 @@ Sites
 1 Carn Dûm [M] (LE)
 1 Dead Marshes [M] (LE)
 1 Deep Cleft [M] (GW)
-1 Dimrill Dale [M] (LE)
 1 Dol Guldur [M] (LE)
 1 Dunharrow [M] (LE)
 1 Edoras [M] (LE)
