@@ -53,23 +53,24 @@ Deck
 # Hero Resource (30)
 
 1 Archer of Ithilien (WR)
-3 Dark Quarrels (TW)
+2 Dark Quarrels (TW)
 2 Dodge (TW)
+1 Escape (TW)
 1 Escaped Slaves (WR)
 1 Glamdring (TW)
 1 Great-road (TW)
 1 Hidden Valour (TI)
 2 Knowledge of the Enemy (DM)
 2 Lock nor Bar May Hinder (DF)
-1 Marvels Told (TD)
+1 Longbottom Leaf (BA)
+2 Marvels Told (TD)
 1 Orcrist (TW)
 1 Palantír of Minas Tirith (TW)
 3 Rescue Prisoners (TW)
 1 Rumours of Danger (WR)
 1 Safe from the Shadow (AS)
-2 Smoke Rings (DM)
+1 Smoke Rings (DM)
 1 The Wind Is Turning (WR)
-1 True-hearted Man (RS)
 1 Ungolcrist (FB)
 2 War Preparations (WR)
 1 Withdrawn to Mordor (DM)
@@ -87,14 +88,13 @@ Pool
 
 1 Thorongil (WR)
 
-# Hero Character (9)
+# Hero Character (8)
 
 1 Anborn (TW)
 1 Boromir II (TW)
 1 Damrod (TW)
 1 Duilin (WR)
 1 Faramir (TW)
-1 Ingold (WR)
 1 Ioreth (TD)
 1 Mablung (TW)
 1 Robin Smallburrow (TW)
@@ -106,7 +106,7 @@ Pool
 
 # Stage Resource (3)
 
-1 Captain of the Tower Guard (WR)
+1 Captain of the Royal Rangers  (WR)
 1 The House of Mardil (WR)
 1 Trusted Counsellor (FB)
 
@@ -114,11 +114,12 @@ Pool
 Sideboard
 #########
 
-# Hazard (9)
+# Hazard (10)
 
 1 Corsairs of Umbar (TW)
 1 Covetous Thoughts (LE)
 1 FEAR! FIRE! FOES! (AS)
+1 Lure of Expedience (LE)
 1 Many Burdens (NE)
 1 Muster Disperses (LE)
 1 Searching Eye (LE)
@@ -130,17 +131,16 @@ Sideboard
 
 1 Captains of the West (WR)
 1 Cram (TD)
-1 Garrison at Cair Andros (WR)
 1 Healing Herbs (TW)
-1 Longbottom Leaf (BA)
 1 Many Foes He Fought (TD)
-1 Marvels Told (TD)
 1 Men of Lebennin (TW)
 1 Noble Hound (DM)
 1 Rangers of Ithilien (TW)
+1 Smoke Rings (DM)
 1 Steward of Gondor (WR)
 1 Star-glass (TW)
 1 The Ithil-stone (AS)
+1 True-hearted Man (RS)
 
 # Minion Resource (2)
 
@@ -149,7 +149,7 @@ Sideboard
 
 # Stage Resource (6)
 
-1 Captain of the Royal Rangers  (WR)
+1 Captain of the Tower Guard  (WR)
 1 Eyes of the White Tower (WR)
 1 Legacy of Smiths (WH)
 1 Son of Ecthelion (WR)
