@@ -848,7 +848,7 @@
 	   <attr key="keyword" value="Hoard Item"/>
 	   <attr key="keyword" value="Warrior only"/>
     </card>
-    <card name="Belegaer" graphics="BelegaerDC.jpg" text="Playable during organization phase on a company moving without region cards. Company may move from a site of origin in one of the following regions to a new site in one of the following regions: Lindon, Elven Shores, Eriadoran Coast, Andrast Coast, Bay of Belfalas, Mouths of the Anduin, Enedhwaith, Old Pûkel-land, Andrast, Anfalas, Belfalas, Lebennin, and Harondor. The site path is [ccc] and the hazard limit is decreased by two to a minimum of two.">
+    <card name="Belegaer" graphics="BelegaerDC.jpg" text="	">
        <attr key="rarity" value="C1"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -965,7 +965,7 @@
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
     </card>
-    <card name="Forod" graphics="Forod.jpg" text="Playable during organization phase on a company moving without regon cards. Company may move from a site of origin in one of the following regions to a new site in one of the following regions: Lindon, Forochel, Angmar, Gundabad, Grey Mountain Narrows, Withered Heath, and Iron Hills. The site path is [w w w] and the hazard limit is decreased by two to a minimum of two.">
+    <card name="Forod" graphics="Forod.jpg" text="Playable during organization phase on a company moving without region cards. Company may move from a site of origin in one of the following regions to a new site in one of the following regions: Lindon, Forochel, Angmar, Gundabad, Grey Mountain Narrows, Withered Heath, and Iron Hills. The site path is [w w w] and the hazard limit is decreased by two to a minimum of two.">
        <attr key="rarity" value="C1"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
