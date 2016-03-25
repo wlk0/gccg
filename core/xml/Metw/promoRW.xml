@@ -37,16 +37,16 @@ Action: A player may reveal and discard from his hand an item that would normall
     <card name="Fatty Bolger" graphics="FattyBolgerRW.jpg" text="Unique.  If played during the organization phase, may only be brought into play at Bag End.  +1 to corruption checks.
 Action: You may tap Fatty Bolger when a Hobbit in his company is facing a strike to cancel it.  -1 Corruption.">
        <attr key="unique" value="yes"/>
-       <attr key="corruption" value="-1"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Scout"/>
-       <attr key="mp" value="1"/>
-       <attr key="body" value="8"/>
+       <attr key="mp" value="0"/>
+       <attr key="body" value="9"/>
        <attr key="prowess" value="1"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="rarity" value="P"/>
        <attr key="race" value="Hobbit"/>
        <attr key="type" value="Hero Character"/>
-       <attr key="mind" value="3"/>
+       <attr key="mind" value="1"/>
        <attr key="influence" value="0"/>
     </card>
     <card name="The Arkenstone" graphics="TheArkenstoneRW.jpg" text="Unique.  Playable at the Lonely Mountain.  Bearer receives +5 EI against Dwarves and +5 to influence checks against Dwarf factions.  The mind of all Dwarves increases by one.">

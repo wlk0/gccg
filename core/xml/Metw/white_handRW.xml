@@ -32,18 +32,18 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="influence" value="0"/>
 	   <attr key="keyword" value="Half-orc"/>
     </card>
-    <card name="Euog" graphics="EuogRW.jpg" text="Unique.  Half-Orc.  Does not make a company overt.  Playable if you have A Strident Spawn in play.  +2 EI against Orc characters.  +2 to influence checks against Orc factions.  Discard on a body check result equal to his body.">
+    <card name="Euog" graphics="EuogRW.jpg" text="Unique.  Half-Orc.  Does not make a company overt.  Playable if you have A Strident Spawn in play.  +3 EI against Orc characters.  +3 to influence checks against Orc factions.  Discard on a body check result equal to his body.">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="None"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="5"/>
        <attr key="rarity" value="R2"/>
        <attr key="race" value="Orc"/>
        <attr key="type" value="Minion Character"/>
        <attr key="mind" value="5"/>
-       <attr key="influence" value="1"/>
+       <attr key="influence" value="0"/>
 	   <attr key="keyword" value="Half-orc"/>
 	   <attr key="keyword" value="Leader"/>
     </card>
@@ -138,7 +138,7 @@ Action: Untap Gandalf at the beginning of the Long-Event phase.">
        <attr key="skills" value="Warrior/Scout"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="None"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="1"/>
        <attr key="rarity" value="C3"/>
        <attr key="race" value="Orc"/>
@@ -151,7 +151,7 @@ Action: Untap Gandalf at the beginning of the Long-Event phase.">
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="None"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="3"/>
        <attr key="rarity" value="C3"/>
        <attr key="race" value="Orc"/>
@@ -165,7 +165,7 @@ Action: Untap Gandalf at the beginning of the Long-Event phase.">
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Isengard"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="5"/>
        <attr key="rarity" value="R2"/>
        <attr key="race" value="Orc"/>
@@ -474,78 +474,78 @@ Action: Place this card with a site during the site phase at a B or S to make al
        <attr key="type" value="Minion Resource"/>
 	   <attr key="keyword" value="Technology"/>
     </card>
-    <card name="Deep Mines" graphics="DeepMinesRW.jpg" back="1" text="This site's surface site is one of your Protected H chosen at the time this card is played.
+    <card name="Deep Mines" graphics="DeepMinesRW.jpg" back="1" text="This site's surface site is one of your Protected H chosen at the time this card is played, with a roll of 0 to move between them.
 Each player's copy of this card is considered a separate site.
 This card is always returned to the location deck.">
 	<attr key="adjacent" value="Ancient Deep-Hold (7)"/>
        <attr key="sp" value="3"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Under-Deeps"/>
        <attr key="site_type" value="{R}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
 	<attr key="keyword" value="Under-Deeps"/>
     </card>
     <card name="Isengard" graphics="IsengardRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="site_type" value="{H}"/>
 	<attr key="auto_attack" value="Maia — 3 strikes at 13 prowess"/>
        <attr key="special" value="If you are Saruman, this automatic-attack is removed, and if any of your companies is at this site, all attacks against it are canceled."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
     </card>
     <card name="Rhosgobel" graphics="RhosgobelRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{H}"/>
 	<attr key="auto_attack" value="Maia — 2 strikes at 13 prowess"/>
-       <attr key="special" value="If you are Radagast, this automatic-attack is removed, if any of your companies is at this site, all attacks against it are canceled, and this site is protected."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="special" value="If you are Radagast, this automatic-attack is removed, and if any of your companies is at this site, all attacks against it are canceled, and this site is protected."/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
     </card>
     <card name="The White Towers" graphics="TheWhiteTowersRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="site_type" value="{H}"/>
 	<attr key="auto_attack" value="Maia — 2 strikes at 13 prowess"/>
        <attr key="special" value="If you are Pallando, this automatic-attack is removed, and if any of your companies is at this site, all attacks against it are canceled."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C4"/>
        <attr key="type" value="Fallen-wizard Site"/>
     </card>
     <card name="Barad-Dûr" graphics="BaradDurRW.jpg" back="1" text="">
 	<attr key="sp" value="4"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{D}"/>
        <attr key="special" value="If you have more than 10 P, automatic-attacks at this site are detainment.  Any character wounded by the automatic-attack is eliminated."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
 	<attr key="auto_attack" value="Maia — 1 strike at 20 prowess; attacker assigns all strikes"/>
     </card>
     <card name="Dol Guldur" graphics="DolGuldurRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{D}"/>
        <attr key="special" value="If you have more than 9 P, the automatic-attacks are detainment.  Any Gold Ring Item may be played here, regardless of the playability requirement written on the item card."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
 	<attr key="palayble" value="Items, (minor, gold ring)"/>
 	<attr key="auto_attack" value="Nazgûl - 2 strikes at 15 prowess"/>
     </card>
     <card name="Carn Dûm" graphics="CarnDumRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{D}"/>
        <attr key="special" value="If you have more than 7 P, the automatic-attacks are detainment and you may not play Greater Items here."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
@@ -553,22 +553,22 @@ This card is always returned to the location deck.">
 Trolls — 2 strikes at 10 prowess"/>
     </card>
     <card name="Geann a-Lisch" graphics="GeannaLischRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
-       <attr key="region" value="Old Pûkel-Land"/>
+       <attr key="draw" value="0"/>
+       <attr key="region" value="Old Pûkel-land"/>
        <attr key="site_type" value="{R}"/>
        <attr key="special" value="If you have more than 9 P, the automatic-attacks are detainment.  Resource permanent events may not be played on or at this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Items (minor, major)"/>
 	<attr key="auto_attack" value="Men — 4 strikes at 8 prowess"/>
     </card>
     <card name="Grey Havens" graphics="GreyHavensRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Lindon"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="special" value="If you have less than 10 P, the automatic-attacks are detainment."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="special" value="If you have less than 10 P and the company at this site is not overt, the automatic-attacks are detainment."/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Information, Items (Minor, Major)"/>
@@ -576,11 +576,11 @@ Trolls — 2 strikes at 10 prowess"/>
 Elves — 3 strikes at 9 prowess"/>
     </card>
     <card name="Rivendell" graphics="RivendellRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="special" value="If you have less than 10 P, the automatic-attacks are detainment."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="special" value="If you have less than 10 P and the company at this site is not overt, the automatic-attacks are detainment."/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Information, Items (Minor)"/>
@@ -588,11 +588,11 @@ Elves — 3 strikes at 9 prowess"/>
 Dúnedain — 3 strikes at 9 prowess"/>
     </card>
     <card name="Lórien" graphics="LorienRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Wold &amp; Foothills"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="special" value="If you have less than 8 P, the automatic-attacks are detainment and you may not play Greater Items here."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="special" value="If you have less than 8 P and the company at this site is not overt, the automatic-attacks are detainment and you may not play Greater Items here."/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
@@ -601,11 +601,11 @@ Elves — 3 strikes at 9 prowess
 Elves — 2 strikes at 10 prowess"/>
     </card>
     <card name="Edhellond" graphics="EdhellondRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anfalas"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="special" value="If you have less than 10 P, the automatic-attacks are detainment."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="special" value="If you have less than 10 P and the company at this site is not overt, the automatic-attacks are detainment."/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Information, Items (Minor, Major, Gold Ring)"/>
@@ -614,11 +614,11 @@ Dúnedain — 3 strikes at 9 prowess"/>
     </card>
     <card name="Ancient Deep-Hold" graphics="AncientDeepHoldRW.jpg" back="1" text="">
 	<attr key="adjacent" value="Deep Mines (7)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Under-Deeps"/>
        <attr key="site_type" value="{R}"/>
        <attr key="special" value="Action: You may tap your avatar at this site during the site phase to untap it."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="rarity" value="C3"/>
        <attr key="type" value="Fallen-wizard Site"/>
        <attr key="playable" value="Items (minor, major, greater)"/>

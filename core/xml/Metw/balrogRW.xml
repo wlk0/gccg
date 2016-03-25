@@ -21,7 +21,7 @@ Steps 1 and 2 are ignored for Company vs Company Combat, and both players may en
 4. Under-Deeps roll.
 If still moving:
 5.  Apply effects of the new site.
-6.  Draw up to the amount of cards indicated.
+6.  Draw up to the amount of cards indicated (1 for every two regions; 1 if the required roll is up to 7, 2 if greater than 7).
 7.  Establish the base hazard limit.
 8.  Hazard Play/Resource Play
 10.  Initiate effects that would enable a company to move again; if this happens, return to step one.
@@ -93,7 +93,7 @@ Action: You may reveal this card from your hand to discard any non-character man
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Moria, The Under-gates"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="7"/>
+       <attr key="prowess" value="8"/>
        <attr key="rarity" value="C1"/>
        <attr key="race" value="Orc"/>
        <attr key="type" value="Minion Character"/>
@@ -113,7 +113,7 @@ Action: You may reveal this card from your hand to discard any non-character man
        <attr key="race" value="Troll"/>
        <attr key="type" value="Minion Character"/>
        <attr key="mind" value="9"/>
-       <attr key="influence" value="0"/>
+       <attr key="influence" value="1"/>
 	   <attr key="keyword" value="Leader"/>
     </card>
     <card name="Crook-legged Orc" graphics="CrookleggedOrcRW.jpg" text="Balrog specific.  Discard on a body check result equal to his body.  You may bring this card from your sideboard to your hand during the organization phase, revealing it to your opponent.  You may play this character during the organization phase in addition to another character if you have not already played a character with three mind or less.">
@@ -121,7 +121,7 @@ Action: You may reveal this card from your hand to discard any non-character man
        <attr key="specific" value="Balrog"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Any non-Dark-hold Under-deeps site"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="6"/>
        <attr key="prowess" value="3"/>
        <attr key="rarity" value="C2"/>
        <attr key="race" value="Orc"/>
@@ -135,7 +135,7 @@ Action: You may reveal this card from your hand to discard any non-character man
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any non-Dark-hold Under-deeps site"/>
        <attr key="body" value="7"/>
-       <attr key="prowess" value="5"/>
+       <attr key="prowess" value="6"/>
        <attr key="rarity" value="C2"/>
        <attr key="race" value="Troll"/>
        <attr key="type" value="Minion Character"/>
@@ -162,7 +162,7 @@ Action: You may reveal this card from your hand to discard any non-character man
        <attr key="mp" value="3"/>
        <attr key="home_site" value="Moria, The Under-gates"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="7"/>
+       <attr key="prowess" value="6"/>
        <attr key="rarity" value="C1"/>
        <attr key="race" value="Troll"/>
        <attr key="type" value="Minion Character"/>
@@ -284,7 +284,7 @@ Trigger: When the bearer would otherwise untap, discard this card instead.">
        <attr key="spawn" value="yes"/>
 	   <attr key="keyword" value="Spawn"/>
     </card>
-    <card name="The Sun Shone Fiercely" graphics="TheSunShoneFiercelyRW.jpg" text="Environment.  Any overt company with a b or f in their site path must return to their site of origin unless the contain a Ranger.  Additionally, if Gates of Morning is in play, each Minion site with a b or f in its site path is tapped when the card play action of this card resolves.  Any such sites revealed while this card is in play are also tapped when they are revealed.  Cannot be duplicated.">
+    <card name="The Sun Shone Fiercely" graphics="TheSunShoneFiercelyRW.jpg" text="Environment.  Any overt company with a b or f in their site path must return to their site of origin unless the contain a Ranger.  Additionally, if Gates of Morning is in play, each Minion site in a b or f is tapped when the card play action of this card resolves.  Any such sites revealed while this card is in play are also tapped when they are revealed.  Cannot be duplicated.">
        <attr key="rarity" value="C1"/>
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hazard"/>
@@ -746,12 +746,12 @@ Action: Before the roll is made when facing a strike in Company vs Company Comba
     <card name="Ancient Deep-hold" graphics="AncientDeepholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value=" One Under-Deeps R, chosen when this card is revealed as a new site (7).  Once chosen, this choice cannot be altered."/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Under-deeps"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor, major, gold ring)"/>
        <attr key="special" value="This site is never discarded or returned to the location deck.  Any Spider or Undead creature may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead — 4 strikes at 7 prowess
 Undead — 3 strikes at 8 prowess
 Undead — 2 strikes at 10 prowess
@@ -763,13 +763,13 @@ Whenever any strike of these attacks succeeds, the defending character must make
     </card>
     <card name="Barad-dûr" graphics="BaraddurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="Successful strikes from the automatic-attacks and rescue attacks at this site do not harm a character; instead, they are taken prisoner.  The rescue attack is Maia — 1 strike at 24 prowess.
 Items do not tap this site when played."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Orcs — 4 strikes at 7 prowess
 Trolls — 3 strikes at 9 prowess
 Nazgûl — 2 strikes at 15 prowess
@@ -781,12 +781,12 @@ Maia — 1 strike at 24 prowess"/>
     </card>
     <card name="Carn Dûm" graphics="CarnDumRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Creatures keyed to this site attack normally, not as detainment."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value=" Orcs — 4 strikes at 7 prowess
 Nazgûl — 1 strike at 17 prowess"/>
        <attr key="rarity" value="C1"/>
@@ -796,12 +796,12 @@ Nazgûl — 1 strike at 17 prowess"/>
     </card>
     <card name="Cirith Gorgor" graphics="CirithGorgorRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Udûn"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="Creatures keyed to this site attack normally, not as detainment."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Orcs — 5 strikes at 8 prowess
 Trolls — 2 strikes at 10 prowess
 Nazgûl — 1 strike at 16 prowess"/>
@@ -812,12 +812,12 @@ Nazgûl — 1 strike at 16 prowess"/>
     </card>
     <card name="Cirith Ungol" graphics="CirithUngolRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Creatures keyed to this site attack normally, not as detainment."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Orcs — 4 strikes at 7 prowess"/>
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
@@ -825,12 +825,12 @@ Nazgûl — 1 strike at 16 prowess"/>
     </card>
     <card name="Dol Guldur" graphics="DolGuldurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Information, Items (minor, major, gold ring)"/>
        <attr key="special" value=""/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Orcs — 3 strikes at 7 prowess
 Trolls — 2 strikes at 8 prowess
 Nazgûl — 2 strikes at 15 prowess"/>
@@ -842,12 +842,12 @@ Nazgûl — 2 strikes at 15 prowess"/>
     <card name="The Drowning-deeps" graphics="TheDrowningdeepsRW.jpg" back="1" text="{green} DCE: add to adjacent sites: Ruins of Belegost (12), Ruins of Nogrod (12)">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Blue Mountain Dwarf-Hold (13), The Under-Vaults (8), Remains of Thangorodrim (9)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Númeriador"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Drake hazard or hazard keyable to c by type may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Drake — 2 strikes at 11 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to c by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>
@@ -858,12 +858,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="Glittering Caves" graphics="GlitteringCavesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Helm's Deep (0), The Pûkel-Deeps (8), The Under-Gates (6)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value="Any Undead or Pûkel-creature hazard may be keyed to this site."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Pûkel-Creature — 3 strikes at 9 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>
@@ -874,12 +874,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Iron-deeps" graphics="TheIrondeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Carn Dûm (0), The Under-Vaults (7), The Under-Leas (6)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Drake hazard except Sea Serpent may be keyed to this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Trolls — 3 strikes at 9 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>
@@ -889,12 +889,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     </card>
     <card name="Minas Morgul" graphics="MinasMorgulRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
        <attr key="special" value="The first Information resource played at this site each turn does not tap it."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Undead — 3 strikes at 9 prowess
 Pûkel-Creature — Each character is assigned a strike at 9 prowess.  Any successful strike takes a character prisoner at this site.  The rescue attack is Nazgûl — 1 strike at 15 prowess
 Nazgûl — 1 strikes at 17 prowess"/>
@@ -903,12 +903,12 @@ Nazgûl — 1 strikes at 17 prowess"/>
        <attr key="type" value="Balrog Site"/>
     </card>
     <card name="Moria" graphics="MoriaRW.jpg" back="1" text="">
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="site_type" value="{H}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="If one of your companies is at this site, all attacks against it are canceled.  Attack keyed to this site are detainment against your companies."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="C2"/>
        <attr key="class" value=""/>
@@ -918,12 +918,12 @@ Nazgûl — 1 strikes at 17 prowess"/>
     <card name="The Pûkel-deeps" graphics="ThePukeldeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value=" Dunharrow (0), The Gem-deeps (8), The Sulfur-deeps (9)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="Any Undead creature or Pûkel-creature may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Pûkel-creature (1st attack) 2 strikes with 11 prowess; (2nd attack) Opponent may play as an automatic-attack one non-unique hazard creature from his hand normally keyed to a Shadow-hold"/>
        <attr key="rarity" value="C1"/>
        <attr key="class" value=""/>
@@ -933,12 +933,12 @@ Nazgûl — 1 strikes at 17 prowess"/>
     <card name="Remains of Thangorodrim" graphics="RemainsofThangorodrimRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="The Drowning-Deeps (9)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Under-deeps"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
        <attr key="special" value="Any hazard keyable to c by type may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Drake — 2 strikes at 12 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to c by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>
@@ -949,12 +949,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Rusted-deeps" graphics="TheRusteddeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Iron Hill Dwarf-Hold (13), The Wind-Deeps (8)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Iron Hills"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Dragon except Ëarcaraxë may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Drake — 2 strikes at 11 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>
@@ -965,12 +965,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Sulfur-deeps" graphics="TheSulfurdeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Dol Guldur (0), The Under-Gates (6), The Pûkel-Deeps (9), The Under-Galleries (9), The Under-Courts (7)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any roll made to leave this site is modified by -1 for each Spawn hazard in play."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls — 2 strikes at 9 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>
@@ -981,12 +981,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Under-courts" graphics="TheUndercourtsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Barad-Dûr (0), The Under-Galleries (6), The Sulfur-Deeps (7)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="Creatures keyed to this site attack normally, not as detainment."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Trolls — 3 strikes at 10 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type.
 Nazgûl — 2 strikes at 16 prowess"/>
@@ -998,12 +998,12 @@ Nazgûl — 2 strikes at 16 prowess"/>
     <card name="The Under-galleries" graphics="TheUndergalleriesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Cirith Gorgor (0), The Under-Courts (6), The Sulfur-Deeps (9)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Udûn"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="Creatures keyed to this site attack normally, not as detainment."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls — 4 strikes at 9 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R by type.  The company faces an attack with equivalent attributes and type.
 Nazgûl — 2 strikes at 16 prowess"/>
@@ -1014,12 +1014,12 @@ Nazgûl — 2 strikes at 16 prowess"/>
     </card>
     <card name="The Under-gates" graphics="TheUndergatesRW.jpg" back="1" text="">
        <attr key="adjacent" value="Moria (0), Glittering Caves (6), The Sulfur-Deeps (6), The Under-Leas (4), The Under-Grottos (6)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="site_type" value="{H}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="If one of your companies is at this site, all attacks against it are canceled.  Attack keyed to this site are detainment against your companies."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="C2"/>
        <attr key="class" value=""/>
@@ -1029,12 +1029,12 @@ Nazgûl — 2 strikes at 16 prowess"/>
     <card name="The Under-grottos" graphics="TheUndergrottosRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Goblin-Gate (0), The Under-Leas (6), The Under-Gates (9)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="High Pass"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (gold ring)"/>
        <attr key="special" value=" To move to or from this site, your company must control at least one Maker's Map.  Any Ring Test at this site is modified by +2."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Drake — 2 strikes at 11 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C2"/>
@@ -1045,12 +1045,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Under-leas" graphics="TheUnderleasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gundabad (0), The Wind-Deeps (8), The Iron-Deeps (6), The Under-Grottos (6), The Under-Gates (4), The Under-Vaults (5)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gundabad"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value=""/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs — 5 strikes at 7 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C2"/>
@@ -1061,12 +1061,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Under-vaults" graphics="TheUndervaultsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gram (0), The Iron-Deeps (8), The Under-Leas (5), The Drowning-Deeps (8)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Undead may be keyed to this site."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead — 3 strikes at 8 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C2"/>
@@ -1077,12 +1077,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Wind-deeps" graphics="TheWinddeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="The Wind Throne (0), The Under-Leas (5), The Rusted-Deeps (8)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Grey Mountain Narrows"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Drake hazard except Sea Serpent may be keyed to this site."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs — 3 strikes at 7 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="C1"/>

@@ -5,6 +5,7 @@
 
     <card name="Asternak" graphics="AsternakRW.jpg" text="Unique. +2 to influence checks against any faction playable at his home site.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Variag Camp"/>
@@ -49,20 +50,20 @@
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Dol Guldur"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Elf"/>
        <attr key="type" value="Minion Character"/>
        <attr key="mind" value="6"/>
-       <attr key="influence" value="1"/>
+       <attr key="influence" value="2"/>
     </card>
     <card name="Carambor" graphics="CaramborRW.jpg" text="Unique.  Action: If your play deck has at least 20 cards in it, during step 10 of the movement process, tap Carambor to enable his company to move again using region movement.  At least one of the region cards played must be a w; this is checked during step 2 of the movement process.">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Scout/Ranger"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Carn Dûm"/>
-       <attr key="body" value="8"/>
-       <attr key="prowess" value="5"/>
+       <attr key="body" value="9"/>
+       <attr key="prowess" value="6"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Elf"/>
        <attr key="type" value="Minion Character"/>
@@ -90,7 +91,7 @@ Action: You may tap this character when facing an attack keyed to Forochel, Angm
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Lossadan Camp"/>
        <attr key="body" value="7"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Man"/>
        <attr key="type" value="Minion Character"/>
@@ -116,7 +117,7 @@ Action: You may tap this character when facing an attack keyed to Forochel, Angm
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Dunnish Clan-Hold, Bree"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="2"/>
+       <attr key="prowess" value="1"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Man"/>
        <attr key="type" value="Minion Character"/>
@@ -126,14 +127,14 @@ Action: You may tap this character when facing an attack keyed to Forochel, Angm
     <card name="Eradan" graphics="EradanRW.jpg" text="Unique.">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Scout/Ranger"/>
-       <attr key="mp" value="1"/>
+       <attr key="mp" value="2"/>
        <attr key="home_site" value="Dol Guldur"/>
        <attr key="body" value="8"/>
        <attr key="prowess" value="5"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Dúnadan"/>
        <attr key="type" value="Minion Character"/>
-       <attr key="mind" value="4"/>
+       <attr key="mind" value="5"/>
        <attr key="influence" value="0"/>
     </card>
     <card name="Gorbag" graphics="GorbagRW.jpg" text="Unique.  Leader.  Discard on a body check result equal to his body.  +3 EI against Orc characters.  +3 to influence checks against Orc factions.
@@ -156,7 +157,7 @@ Special: May be at a non-H site with Ringwraiths, but may not move with them.">
        <attr key="skills" value="Warrior/Scout"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any site in Imlad Morgul"/>
-       <attr key="body" value="8"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="4"/>
        <attr key="rarity" value="F1"/>
        <attr key="race" value="Orc"/>
@@ -179,11 +180,11 @@ Special: May be at a non-H site with Ringwraiths, but may not move with them.">
     </card>
     <card name="Hador" graphics="HadorRW.jpg" text="Unique.">
        <attr key="unique" value="yes"/>
-       <attr key="skills" value="Warrior/Scout/Sage/Sorceror"/>
+       <attr key="skills" value="Warrior/Sage/Sorceror"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Dol Guldur"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="6"/>
+       <attr key="prowess" value="7"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Dúnadan"/>
        <attr key="type" value="Minion Character"/>
@@ -194,11 +195,11 @@ Special: May be at a non-H site with Ringwraiths, but may not move with them.">
     <card name="Hendolen" graphics="HendolenRW.jpg" text="Unique.  +2 EI against Elf characters.  +1 to influence checks against factions with F or B home sites.
 Action: May tap to cancel a detainment attack against his company.">
        <attr key="unique" value="yes"/>
-       <attr key="skills" value="Sage/Diplomat"/>
+       <attr key="skills" value="Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Minas Morgul"/>
-       <attr key="body" value="7"/>
-       <attr key="prowess" value="3"/>
+       <attr key="body" value="8"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Elf"/>
        <attr key="type" value="Minion Character"/>
@@ -207,6 +208,7 @@ Action: May tap to cancel a detainment attack against his company.">
     </card>
     <card name="Horseman in the Night" graphics="HorsemanintheNightRW.jpg" text="+1 to influence checks against factions.  +1 prowess when facing a detainment strike.">
        <attr key="skills" value="Warrior/Diplomat"/>
+       <attr key="corruption" value="1"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any Dark-hold"/>
        <attr key="body" value="7"/>
@@ -258,7 +260,7 @@ Action: May tap to cancel a detainment attack against his company.">
     </card>
     <card name="Lieutenant of Angmar" graphics="LieutenantofAngmarRW.jpg" text="Unique.  Leader.  Manifestation of Rogrog.  Discard on a body check result equal to his body.  +4 EI against Orc characters and/or Troll characters.  +4 to influence checks against Orc factions and Troll factions.  If Lieutenant of Angmar is at Carn Dûm, your hand size increases by one.">
        <attr key="unique" value="yes"/>
-       <attr key="skills" value="Warrior/Scout"/>
+       <attr key="skills" value="Warrior/Scout/Ranger"/>
        <attr key="mp" value="3"/>
        <attr key="home_site" value="Carn Dûm"/>
        <attr key="body" value="9"/>
@@ -275,7 +277,7 @@ Action: May tap to cancel a detainment attack against his company.">
        <attr key="skills" value="Warrior/Sage"/>
        <attr key="mp" value="3"/>
        <attr key="home_site" value="Dol Guldur"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="7"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Troll"/>
@@ -303,7 +305,7 @@ Action: May tap to cancel a detainment attack against his company.">
        <attr key="skills" value="Scout"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Lake-town"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="6"/>
        <attr key="prowess" value="3"/>
        <attr key="rarity" value="F1"/>
        <attr key="race" value="Man"/>
@@ -317,19 +319,19 @@ Action: May tap to cancel a detainment attack against his company.">
        <attr key="mp" value="3"/>
        <attr key="home_site" value="Barad-dûr"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="6"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Dúnadan"/>
        <attr key="type" value="Minion Character"/>
        <attr key="mind" value="9"/>
-       <attr key="influence" value="4"/>
+       <attr key="influence" value="5"/>
     </card>
     <card name="Muzgash" graphics="MuzgashRW.jpg" text="Unique.  Discard on a body check result equal to his body.">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Any site in Imlad Morgul"/>
-       <attr key="body" value="8"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="4"/>
        <attr key="rarity" value="F1"/>
        <attr key="race" value="Orc"/>
@@ -342,7 +344,7 @@ Action: May tap to cancel a detainment attack against his company.">
        <attr key="skills" value="Warrior/Sage"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Dol Guldur"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="6"/>
        <attr key="prowess" value="3"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Dwarf"/>
@@ -355,7 +357,7 @@ Action: May tap to cancel a detainment attack against his company.">
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Easterling Camp"/>
-       <attr key="body" value="8"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="4"/>
        <attr key="rarity" value="F1"/>
        <attr key="race" value="Man"/>
@@ -365,6 +367,7 @@ Action: May tap to cancel a detainment attack against his company.">
     </card>
     <card name="Odoacer" graphics="OdoacerRW.jpg" text="Unique.  +3 to influence checks against the Woodmen faction and the Beornings faction.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Ranger"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Woodmen-town"/>
@@ -382,7 +385,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any Dark-hold"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="5"/>
+       <attr key="prowess" value="6"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Troll"/>
        <attr key="type" value="Minion Character"/>
@@ -392,6 +395,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
     <card name="Orc Brawler" graphics="OrcBrawlerRW.jpg" text="Discard on a body check result equal to or one less than his body.  1 Corruption.
 Special: If you are a Balrog player, this character’s home site is instead any non-D Under-deeps site.">
        <attr key="skills" value="Warrior"/>
+       <attr key="corruption" value="1"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Any Dark-hold"/>
        <attr key="body" value="8"/>
@@ -404,11 +408,11 @@ Special: If you are a Balrog player, this character’s home site is instead any n
     </card>
     <card name="Orc Captain" graphics="OrcCaptainRW.jpg" text="Leader.  Discard on a body check result equal to his body.  +3 EI against Orc characters.  +3 to influence checks against Orc factions.
 Special: If you are a Balrog player, this character’s home site is instead any non-D Under-deeps site.">
-       <attr key="skills" value="Warrior"/>
+       <attr key="skills" value="Warrior/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Any Dark-hold"/>
-       <attr key="body" value="8"/>
-       <attr key="prowess" value="5"/>
+       <attr key="body" value="7"/>
+       <attr key="prowess" value="6"/>
        <attr key="rarity" value="U+F1"/>
        <attr key="race" value="Orc"/>
        <attr key="type" value="Minion Character"/>
@@ -422,7 +426,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any Dark-hold"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="U+F1"/>
        <attr key="race" value="Orc"/>
        <attr key="type" value="Minion Character"/>
@@ -446,6 +450,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
     <card name="Orc Tracker" graphics="OrcTrackerRW.jpg" text="Discard on a body check result equal to or one less than his body.
 Special: If you are a Balrog player, this character’s home site is instead any non-D Under-deeps site.">
        <attr key="skills" value="Warrior/Ranger"/>
+       <attr key="corruption" value="1"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any Dark-hold"/>
        <attr key="body" value="8"/>
@@ -471,6 +476,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
     </card>
     <card name="Ostisen" graphics="OstisenRW.jpg" text="Unique.  +2 prowess when facing a Dúnadan strike or Man strike.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Scout"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Vale of Erech"/>
@@ -528,7 +534,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Dunnish Clan-hold"/>
        <attr key="body" value="6"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="3"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Man"/>
        <attr key="type" value="Minion Character"/>
@@ -540,7 +546,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any site in Imlad Morgul"/>
-       <attr key="body" value="8"/>
+       <attr key="body" value="9"/>
        <attr key="prowess" value="6"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Orc"/>
@@ -554,7 +560,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Minas Morgul"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Dúnadan"/>
        <attr key="type" value="Minion Character"/>
@@ -603,6 +609,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
     </card>
     <card name="Tros Hesnef" graphics="TrosHesnefRW.jpg" text="Unique.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="home_site" value="Easterling Camp"/>
@@ -633,7 +640,7 @@ Special: If you are a Balrog player, this character’s home site is instead any n
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any site in Imlad Morgul"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="3"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Orc"/>
        <attr key="type" value="Minion Character"/>
@@ -2517,7 +2524,7 @@ Otherwise, bearer gains the Scout skill.  Cannot be duplicated on a given charac
 	<attr key="body" value="+3"/>
     </card>
     <card name="The One Ring" graphics="TheOneRingRW.jpg" text="Unique.  The One Ring.  Playable after a Ring Test indicates The One Ring.  Bearer receives +5 to prowess to a maximum of double his starting prowess.  All characters in the bearer’s company including the bearer receive an additional corruption point.
-Action: The bearer may make a corruption check when facing a non-Undead, non-Nazgûl strike to cancel the strike.">
+Action: The bearer may make a corruption check when facing a non-Undead, non-Nazgûl strike to cancel the strike.  May not be stored.">
        <attr key="unique" value="yes"/>
        <attr key="corruption" value="6"/>
        <attr key="mp" value="6"/>
@@ -2724,11 +2731,11 @@ Special: If stored at Barad-dûr, this card is worth 5 mp and all your ring tests
     <card name="Amon Hen" graphics="AmonHenRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 1 strike at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2738,11 +2745,11 @@ Special: If stored at Barad-dûr, this card is worth 5 mp and all your ring tests
     <card name="Bag End" graphics="BagEndRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="The Shire"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Hobbits - 5 strikes at 5 prowess; Dúnedain - 3 strikes at 11 prowess; Maia - 2 strikes at 13 prowess; Dúnedain - 1 strike at 16 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2753,11 +2760,11 @@ Special: If stored at Barad-dûr, this card is worth 5 mp and all your ring tests
     <card name="Bandit Lair" graphics="BanditLairRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Brown Lands"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, gold ring)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 3 strikes at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2767,13 +2774,13 @@ Special: If stored at Barad-dûr, this card is worth 5 mp and all your ring tests
     <card name="Barad-dûr" graphics="BaraddurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{H}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="Site Path to Dol Guldur: d d s d
 Any attack keyed to this site is detainment.  If one of your companies is at this site, all attacks against it are canceled."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="F5"/>
        <attr key="class" value=""/>
@@ -2784,11 +2791,11 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Barrow-downs" graphics="BarrowdownsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 1 strike at 12 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -2798,11 +2805,11 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Beorn's House" graphics="BeornsHouseRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (gold ring)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike has 10 prowess and is detainment against a covert company.
 (Against a Ringwraith Company) Men — 1 strike at 16 prowess"/>
        <attr key="rarity" value="U"/>
@@ -2813,11 +2820,11 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Blue Mountain Dwarf-hold" graphics="BlueMountainDwarfholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Númeriador"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dwarves — 4 strikes at 10 prowess
 (Against An Overt Company) Dwarves — 4 strikes at 10 prowess
 (Against A Ringwraith Company) Maia — 2 strikes at 13 prowess"/>
@@ -2830,12 +2837,12 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Bree" graphics="BreeRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Information, Items (minor, gold ring)"/>
        <attr key="special" value="Agent Minions may be brought into play as characters at this site regardless of their home site."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dúnedain — This attack has a number of strikes equal to the number of characters in the company; each strike is at 7 prowess and is detainment against a covert company.
 (Against An Overt Company): Dúnedain — 3 strikes at 9 prowess"/>
        <attr key="rarity" value="U"/>
@@ -2846,11 +2853,11 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Buhr Widu" graphics="BuhrWiduRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Rhovanion"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls - 1 strike at 10 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -2860,11 +2867,11 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Cameth Brin" graphics="CamethBrinRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=" Men — 3 strikes at 7 prowess (detainment against covert companies)"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2873,7 +2880,8 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
 	   <attr key="special" value="The only major items that may be played at this site are weapons, armor, shields, and helmets."/>
     </card>
     <card name="Carn Dûm" graphics="CarnDumRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Carn Dûm"/>
        <attr key="haven1" value="{d}{s}{d}{s}"/>
        <attr key="region" value="Angmar"/>
        <attr key="haven2" value="{w}{w}{w}{w}{s}"/>
@@ -2882,7 +2890,7 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
        <attr key="special" value="Site Path to Dol Guldur: s d b d
 Site Path to Geann a-Lisch: s w w w w
 Any attack keyed to this site is detainment.  If one of your companies is at this site, all attacks against it are canceled."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="CB+F5"/>
        <attr key="class" value=""/>
@@ -2892,11 +2900,11 @@ Any attack keyed to this site is detainment.  If one of your companies is at thi
     <card name="Caves of Ûlund" graphics="CavesofUlundRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 13 prowess"/>
        <attr key="rarity" value="F2"/>
        <attr key="class" value=""/>
@@ -2909,11 +2917,11 @@ This site contains a hoard."/>
     <card name="Cirith Gorgor" graphics="CirithGorgorRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Udûn"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2924,11 +2932,11 @@ This site contains a hoard."/>
     <card name="Cirith Ungol" graphics="CirithUngolRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2938,11 +2946,11 @@ This site contains a hoard."/>
     <card name="Dale" graphics="DaleRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Northern Rhovanion"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Drake — 2 strikes at 9 prowess"/>
        <attr key="rarity" value="F2"/>
        <attr key="class" value=""/>
@@ -2953,12 +2961,12 @@ This site contains a hoard."/>
     <card name="Dead Marshes" graphics="DeadMarshesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Dagorlad"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Creatures keyed to this site are not detainment."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 2 strikes at 8 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2968,11 +2976,11 @@ This site contains a hoard."/>
     <card name="Dimrill Dale" graphics="DimrillDaleRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dwarves — 2 strike at 8 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -2983,11 +2991,11 @@ This site contains a hoard."/>
     <card name="Dol Amroth" graphics="DolAmrothRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Belfalas"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Men — 3 strikes at 9 prowess (detainment against a covert company)
 (Against An Overt Company) Dúnedain — 3 strikes at 10 prowess
 (Against A Ringwraith Company) Maia — 2 strikes at 13 prowess "/>
@@ -2997,14 +3005,15 @@ This site contains a hoard."/>
        <attr key="site_path" value="{w}{w}{b}{f}"/>
     </card>
     <card name="Dol Guldur" graphics="DolGuldurRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Dol Guldur"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{H}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="Site Path to Carn Dûm: d b d s
 Site Path to Barad-Dûr: d s d d
 Attacks keyed to this site are detainment.  If one of your companies is at this site all attacks against it are canceled."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="CB+F5"/>
        <attr key="class" value=""/>
@@ -3014,11 +3023,11 @@ Attacks keyed to this site are detainment.  If one of your companies is at this 
     <card name="Drúadan Forest" graphics="DruadanForestRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anórien"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 3 strikes at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3028,11 +3037,11 @@ Attacks keyed to this site are detainment.  If one of your companies is at this 
     <card name="Dunharrow" graphics="DunharrowRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — 4 strikes at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3043,11 +3052,11 @@ Attacks keyed to this site are detainment.  If one of your companies is at this 
     <card name="Dunnish Clan-hold" graphics="DunnishClanholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Dunland"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — 4 strikes at 9 prowess (detainment against covert companies)"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3058,11 +3067,11 @@ Attacks keyed to this site are detainment.  If one of your companies is at this 
     <card name="Easterling Camp" graphics="EasterlingCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Horse Plains"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="(Against An Overt Company) Men — 4 strikes at 8 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3072,11 +3081,11 @@ Attacks keyed to this site are detainment.  If one of your companies is at this 
     <card name="Edoras" graphics="EdorasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="This attack has a number of strikes equal to the number of characters in the company; each strike is at 10 prowess and is detainment against a covert company.
 (Against An Overt Company) Men — 3 strikes at 12 prowess
 (Against A Ringwraith Company) Maia — 2 strikes at 13 prowess"/>
@@ -3088,11 +3097,11 @@ Attacks keyed to this site are detainment.  If one of your companies is at this 
     <card name="Ettenmoors" graphics="EttenmoorsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls — 1 strike at 9 prowess
 Animals — 2 strikes at 8 prowess"/>
        <attr key="rarity" value="F5"/>
@@ -3101,14 +3110,15 @@ Animals — 2 strikes at 8 prowess"/>
        <attr key="site_path" value="{s}{w}"/>
     </card>
     <card name="Geann a-Lisch" graphics="GeannaLischRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Geann a-Lisch"/>
        <attr key="region" value="Old Pûkel-land"/>
        <attr key="site_type" value="{H}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="Site Path to Carn Dûm: w w w w s
 Resources may not be stored at this site.
 Hazards that may be keyed to R may be keyed to Geann a-Lisch.  If one of your companies is at this site, attacks against it are detainment."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="CB+F5"/>
        <attr key="class" value=""/>
@@ -3117,11 +3127,11 @@ Hazards that may be keyed to R may be keyed to Geann a-Lisch.  If one of your co
     <card name="Gladden Fields" graphics="GladdenFieldsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Maia — 1 strike at 13 prowess (detainment)"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3131,11 +3141,11 @@ Hazards that may be keyed to R may be keyed to Geann a-Lisch.  If one of your co
     <card name="Helm's Deep" graphics="HelmsDeepRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — 3 strikes at 8 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3146,11 +3156,11 @@ Hazards that may be keyed to R may be keyed to Geann a-Lisch.  If one of your co
     <card name="Gobel Mírlond" graphics="GobelMirlondRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Harondor"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — 2 strikes at 9 prowess (detainment against covert companies)"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3160,12 +3170,12 @@ Hazards that may be keyed to R may be keyed to Geann a-Lisch.  If one of your co
     <card name="Goblin-gate" graphics="GoblingateRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="High Pass"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Hazards keyed to this site are not detainment"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 6 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3176,11 +3186,11 @@ Hazards that may be keyed to R may be keyed to Geann a-Lisch.  If one of your co
     <card name="Gondmaeglom" graphics="GondmaeglomRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Grey Mountain Narrows"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 14 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3193,11 +3203,11 @@ This site contains a hoard."/>
     <card name="Haudh-in-Gwanûr" graphics="HaudhinGwanurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Harondor"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 1 strike at 10 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3207,11 +3217,11 @@ This site contains a hoard."/>
     <card name="Henneth Annûn" graphics="HennethAnnunRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Ithilien"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dúnedain — 3 strikes at 11 prowess"/>
 	<attr key="special" value="You may only move to this site if you have stored a resource which required Information.  When this site would otherwise be placed in your discard pile, place it in your mp pile instead — you receive 2 mp."/>
        <attr key="rarity" value="U"/>
@@ -3222,12 +3232,12 @@ This site contains a hoard."/>
     <card name="Hermit's Hill" graphics="HermitsHillRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Wold &amp; Foothills"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value="Action: A company at this site may discard two minor items during the site phase to place any Gold Ring Item from your hand with a character in the company.  The recipient of such an item immediately makes a corruption check."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 3 strikes at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3237,11 +3247,11 @@ This site contains a hoard."/>
     <card name="Iron Hill Dwarf-hold" graphics="IronHillDwarfholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Iron Hills"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dwarves — 4 strikes at 10 prowess
 (Against An Overt Company) Dwarves — 4 strikes at 10 prowess
 (Against A Ringwraith Company) Maia — 2 strikes at 13"/>
@@ -3254,11 +3264,11 @@ This site contains a hoard."/>
     <card name="Isengard" graphics="IsengardRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Information, Items (minor, major,greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Animals — 3 strikes at 7 prowess
 (Against An Overt Company) Maia — 3 strikes at 13  prowess
 (Against A Ringwraith Company) Maia — 1 strike at 16 prowess"/>
@@ -3270,11 +3280,11 @@ This site contains a hoard."/>
     <card name="Lake-town" graphics="LaketownRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Northern Rhovanion"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — 4 strikes at 6 prowess (detainment against a covert company)"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3284,11 +3294,11 @@ This site contains a hoard."/>
     <card name="Lond Galen" graphics="LondGalenRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anfalas"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike is at 6 prowess and the strikes are detainment against a covert company."/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3298,11 +3308,11 @@ This site contains a hoard."/>
     <card name="The Lonely Mountain" graphics="TheLonelyMountainRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Northern Rhovanion"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 14 prowess"/>
 	<attr key="special" value=""/>
        <attr key="rarity" value="F2"/>
@@ -3315,11 +3325,11 @@ This site contains a hoard."/>
     <card name="Lossadan Cairn" graphics="LossadanCairnRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Forochel"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Animals — 2 strikes at 6 prowess
 Undead — 2 strikes at 8 prowess"/>
 	<attr key="special" value="The only Greater Items that may be played here are Palantíri."/>
@@ -3331,11 +3341,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Lossadan Camp" graphics="LossadanCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Forochel"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (gold ring)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike is at 7 prowess and the strikes are detainment against a covert company."/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3343,13 +3353,13 @@ Undead — 2 strikes at 8 prowess"/>
        <attr key="site_path" value="{s}{w}"/>
     </card>
     <card name="Minas Morgul" graphics="MinasMorgulRW.jpg" back="1" text="">
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="haven" value="Barad-Dûr"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="Any Ringwraith may be brought into play at this site."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="CB+F5"/>
        <attr key="class" value=""/>
@@ -3359,11 +3369,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Minas Tirith" graphics="MinasTirithRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anórien"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Dúnedain — This attack has a number of strikes equal to the number of characters in the company; each strike is at 8 prowess.
 (Against An Overt Company) Dúnedain — 4 strikes at 11 prowess
 (Against A Ringwraith Company) Maia — 4 strikes at 13 prowess"/>
@@ -3375,12 +3385,12 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Moria" graphics="MoriaRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="Hazards keyed to this site are not detainment"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="(Against A Covert Company) Orcs — 4 strikes at 7 prowess
 (Against An Overt Company) Dwarves — 4 strikes at 7 prowess"/>
        <attr key="rarity" value="F2"/>
@@ -3392,12 +3402,12 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Mount Doom" graphics="MountDoomRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="1"/>
        <attr key="region" value="Gorgoroth"/>
-       <attr key="site_type" value="{S}"/>
+       <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Information"/>
        <attr key="special" value="Only a Ringwraith company may move to this site."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3407,11 +3417,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Mount Gram" graphics="MountGramRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3422,11 +3432,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Mount Gundabad" graphics="MountGundabadRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gundabad"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs — This attack has a number of strikes equal to the number of characters in the company; each strike is at 7 prowess and the strikes are detainment against an overt company."/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3437,11 +3447,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Nûrniag Camp" graphics="NurniagCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Nurn"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3451,11 +3461,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Ost-in-Edhil" graphics="OstinEdhilRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Hollin"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Animals - 3 strikes at 5 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3465,11 +3475,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Pelargir" graphics="PelargirRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Lebennin"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike is at 8 prowess and all strikes are detainment against a covert company.
 (Against An Overt Company) Dúnedain — 3 strikes at 11 prowess
 (Against A Ringwraith Company) Maia — 2 strikes at 13 prowess"/>
@@ -3481,11 +3491,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Raider-hold" graphics="RaiderholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Horse Plains"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike is at 7 prowess."/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3496,11 +3506,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Ruined Signal Tower" graphics="RuinedSignalTowerRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Enedhwaith"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Spiders - 2 strikes at 8 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3510,11 +3520,11 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Sarn Goriwing" graphics="SarnGoriwingRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Heart of Mirkwood"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 5 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3524,13 +3534,13 @@ Undead — 2 strikes at 8 prowess"/>
     <card name="Shelob's Lair" graphics="ShelobsLairRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="If a Manifestation of Shelob has been defeated, the second automatic-attack is removed.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs — 2 strikes at 8 prowess
 Spider — 1 strike at 16 prowess.  Each successful strike of this attack automatically eliminates the defending character.  This attack may not be canceled."/>
        <attr key="rarity" value="U"/>
@@ -3542,11 +3552,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Shrel-Kain" graphics="ShrelKainRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Dorwinion"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Men — 3 strikes at 8 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3556,11 +3566,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Southron Oasis" graphics="SouthronOasisRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Harondor"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="(Against An Overt Company) Men — 4 strikes at 8 prowess (detainment)"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3570,11 +3580,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Stone-circle" graphics="StonecircleRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Old Pûkel Gap"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Pûkel-creature - 1 strike at 9 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3584,11 +3594,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="The Stones" graphics="TheStonesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Andrast"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Pûkel-creatures - 2 strikes at 9 prowess"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value=""/>
@@ -3598,12 +3608,12 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Tharbad" graphics="TharbadRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value="Items may be played at this site even if it is tapped."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 3 strikes at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3613,11 +3623,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Thranduil's Halls" graphics="ThranduilsHallsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Woodland Realm"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Elves — Each non-Elf character is assigned a strike; this strike is at 9 prowess
 (Against An Overt Company) Elves — 3 strikes at 10 prowess
 (Against a Ringwraith Company) Maia — 2 strikes at 13 prowess"/>
@@ -3634,7 +3644,7 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value=""/>
        <attr key="special" value="Action: During the organization phase, you may tap your Ringwraith at this site to bring a character from your discard pile to your hand."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="R"/>
        <attr key="class" value=""/>
@@ -3644,11 +3654,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Vale of Erech" graphics="ValeofErechRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Lamedon"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — 3 strikes at 5 prowess"/>
        <attr key="rarity" value="F3"/>
        <attr key="class" value=""/>
@@ -3658,11 +3668,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Variag Camp" graphics="VariagCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Barad-Dûr"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Khand"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value=""/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3672,11 +3682,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="The White Towers" graphics="TheWhiteTowersRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Animals - 2 strikes at 6 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3687,11 +3697,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="The Wind Throne" graphics="TheWindThroneRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Grey Mountain Narrows"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 7 prowess"/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3702,11 +3712,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Woodmen-town" graphics="WoodmentownRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Western Mirkwood"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value=""/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike is at 6 prowess and is detainment against a covert company."/>
        <attr key="rarity" value="F1"/>
        <attr key="class" value=""/>
@@ -3716,12 +3726,12 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="The Worthy Hills" graphics="TheWorthyHillsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
        <attr key="special" value="Resources do not tap this site when played and this site may not be tapped by hazards."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men — This attack has a number of strikes equal to the number of characters in the company; each strike is at 9 prowess."/>
        <attr key="rarity" value="R"/>
        <attr key="class" value=""/>
@@ -3731,11 +3741,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Wose Passage-hold" graphics="WosePassageholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Old Pûkel-land"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 3 strikes at 5 prowess"/>
        <attr key="rarity" value="U"/>
        <attr key="class" value=""/>
@@ -3745,11 +3755,11 @@ Spider — 1 strike at 16 prowess.  Each successful strike of this attack automati
     <card name="Zarak Dûm" graphics="ZarakDumRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 11 prowess"/>
 	<attr key="special" value="Scorba's Lair.  If a Manifestation of Scorba has been defeated, the automatic attack is removed.
 This site contains a hoard."/>
