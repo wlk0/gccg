@@ -50,7 +50,7 @@
        <attr key="skills" value="Scout/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Dunnish Clan-hold"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="3"/>
        <attr key="rarity" value="U2"/>
        <attr key="race" value="Man"/>
@@ -65,7 +65,7 @@
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Any Ruins and Lairs"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="6"/>
+       <attr key="prowess" value="7"/>
        <attr key="rarity" value="U2"/>
        <attr key="race" value="Troll"/>
        <attr key="type" value="Minion Character"/>
@@ -932,7 +932,7 @@ Special: If this attack is defeated, treat this card as a hazard creature for th
 	<attr key="mind" value="9"/>
     </card>
 
-    <card name="Itangast Roused" graphics="ItangastRousedRW.jpg" text="Unique.  Multiple Manifestation of Itangast.  The influence check against this faction may be modified by eliminating any number ofcharacters other than the influencer in the influencer’s company.  Each character so eliminated modifies the influence attempt by their mind.  Attacks created by Manifestations of Itangast against your companies are canceled.
+    <card name="Itangast Roused" graphics="ItangastRousedRW.jpg" text="Unique.  Multiple Manifestation of Itangast.  The influence check against this faction may be modified by eliminating any number of characters other than the influencer in the influencer’s company.  Each character so eliminated modifies the influence attempt by their mind.  Attacks created by Manifestations of Itangast against your companies are canceled.
 Action Trigger: A company that moves through at least one of the following regions faces an attack: Dragon —3 strikes at 18 prowess, 8 body: Withered Heath, Grey Mountain Narrows, Iron Hills, Northern Rhovanion.
 Special: If this attack is defeated, treat this card as a hazard creature for the purpose of determining kill mp.">
        <attr key="unique" value="yes"/>
@@ -1162,12 +1162,12 @@ Action: Discard during the site phase at a site with a hoard to untap it.">
     <card name="Geann a-Lisch" graphics="GeannaLischRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Old Pûkel-land"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Information, Items (minor, major)"/>
        <attr key="special" value="Any Man hazard creature may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 4 strikes at 8 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
@@ -1177,11 +1177,11 @@ Action: Discard during the site phase at a site with a hoard to untap it.">
     <card name="Gobel Mírlond" graphics="GobelMirlondRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Harondor"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 4 strikes at 9 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
@@ -1192,11 +1192,11 @@ Action: Discard during the site phase at a site with a hoard to untap it.">
     <card name="Nûrniag Camp" graphics="NurniagCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Nurn"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="5"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Men — 4 strikes at 7 prowess (detainment)
 Men — 3 strikes at 8 prowess (detainment)
 Nazgûl — 1 strike at 15 prowess"/>
@@ -1210,11 +1210,11 @@ Any Nazgûl may be keyed to this site."/>
     <card name="Raider-hold" graphics="RaiderholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Horse Plains"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Men - 4 strikes at 9 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
@@ -1224,12 +1224,12 @@ Any Nazgûl may be keyed to this site."/>
     <card name="The Worthy Hills" graphics="TheWorthyHillsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
        <attr key="special" value="Action: During the site phase, tap one Sage and tap one Scout at this site to untap it."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Men - This attack has a number of strikes equal to the number of characters in the company; each strike is at 9 prowess and is detainment."/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Hero Site"/>
@@ -1239,11 +1239,11 @@ Any Nazgûl may be keyed to this site."/>
     <card name="Dancing Spire" graphics="DancingSpireRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 2 strikes at 11 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1256,11 +1256,11 @@ This site contains a hoard."/>
     <card name="Eagles' Eyrie" graphics="EaglesEyrieRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Animals - 2 strikes at 10 prowess; attacker assigns all strikes"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1272,12 +1272,12 @@ This site contains a hoard."/>
     <card name="Edhellond" graphics="EdhellondRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anfalas"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
        <attr key="special" value="The base hazard limit against any company moving to or at this site is modified by +2.  This site untaps during your untap phase."/>
-       <attr key="draw_opp" value="5"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Elves — 4 strikes at 10 prowess
 Dúnedain — 3 strikes at 11 prowess
 Maia — 2 strikes at 13 prowess"/>
@@ -1289,13 +1289,13 @@ Maia — 2 strikes at 13 prowess"/>
     <card name="Framsburg" graphics="FramsburgRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value="The first minor item played at this site during the site phase does not tap the site.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 1 strike at 10 prowess"/>
        <attr key="rarity" value="R2"/>
        <attr key="type" value="Minion Site"/>
@@ -1306,12 +1306,12 @@ This site contains a hoard."/>
     <card name="Glittering Caves" graphics="GlitteringCavesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Helm's Deep (0), The Pûkel-Deeps (9), The Under-Gates (6)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="Any Undead or Pûkel-Creature may be keyed to this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Undead — 3 strikes at 9 prowess
 After the first automatic-attack is faced, opponent may reveal and discard a non-unique hazard creature from his hand that may be keyed to S by type.  An automatic-attack is created with equivalent attributes and type."/>
        <attr key="rarity" value="R2"/>
@@ -1322,11 +1322,11 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="Gold Hill" graphics="GoldHillRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 15 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1339,13 +1339,13 @@ This site contains a hoard."/>
     <card name="Grey Havens" graphics="GreyHavensRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Lindon"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
        <attr key="special" value="The base hazard limit of any company moving to this site or at this site is modified by +2.  Information cards do not tap this site when played.
 Stolen knowledge.  When this site would otherwise be discarded, it is placed in your mp pile and is worth 3 miscellaneous mp."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Elves — 3 strikes at 8 prowess
 Elves — 2 strikes at 10 prowess
 Maia — 2 strikes at 13 prowess
@@ -1359,12 +1359,12 @@ Elf — 1 strike at 15 prowess"/>
     <card name="Himring" graphics="HimringRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Elven Shores"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="An overt company moving to this site taps one untapped character during step 5 of the movement process."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 1 strike at 8 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1374,11 +1374,11 @@ Elf — 1 strike at 15 prowess"/>
     <card name="Irerock" graphics="IrerockRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 14 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1391,11 +1391,11 @@ This site contains a hoard."/>
     <card name="The Iron-deeps" graphics="TheIrondeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Carn Dûm (0), The Under-Leas (5), The Under-Vaults (6)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls - 3 strikes at 9 prowess (detainment)"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1405,13 +1405,13 @@ This site contains a hoard."/>
     <card name="Isle of the Ulond" graphics="IsleoftheUlondRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Andrast Coast"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor, major)"/>
        <attr key="special" value="Eärcaraxë's Lair.  If a Manifestation of Eärcaraxë has been defeated, this automatic-attack is removed.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 14 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1422,12 +1422,12 @@ This site contains a hoard."/>
     <card name="Isles of the Dead that Live" graphics="IslesoftheDeadthatLiveRW.jpg" back="1" text="{green} DCE: Change: Tap an overt character not a covert!">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Eriadoran Coast"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="An overt company may not move to this site.  A covert company moving to this site taps one untapped character during step 5 of the movement process."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 1 strike at 10 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1436,12 +1436,12 @@ This site contains a hoard."/>
     <card name="Lórien" graphics="LorienRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Wold &amp; Foothills"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="If the last automatic attack is not defeated, any character that was assigned a strike from it is taken prisoner at this site.  The rescue-attack is an exact copy of the last attack and its strikes will take characters prisoner under the same conditions.  The base hazard limit against any company moving to or at this site is modified by +2.  Items do not tap this site when played."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Elves — 4 strikes at 8 prowess
 Elves — 3 strikes at 9 prowess
 Maia — 2 strikes at 15 prowess
@@ -1453,12 +1453,12 @@ Elves — 1 strike at 10 prowess, 10 body."/>
     <card name="Old Forest" graphics="OldForestRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="site_type" value="{B}"/>
        <attr key="special" value="Action: You may tap this site during the site phase to place a Ring Special Item other than the One Ring from your hand with a character at this site.
 Action: You may tap a Sage at this site during the organization phase to untap it."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Awakened Plant — 1 strike at 10 prowess
 Maia — 2 strikes at 15 prowess"/>
        <attr key="rarity" value="U2"/>
@@ -1468,11 +1468,11 @@ Maia — 2 strikes at 15 prowess"/>
     <card name="Ovir Hollow" graphics="OvirHollowRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Grey Mountain Narrows"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 12 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1484,12 +1484,12 @@ This site contains a hoard."/>
     <card name="The Pûkel-deeps" graphics="ThePukeldeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value=" Dunharrow (0), The Gem-deeps (9), The Sulfur-deeps (9)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="Any Undead or Pûkel-Creature may be keyed to this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Pûkel-Creature — 2 strikes at 11 prowess
 After the first automatic-attack is faced, opponent may reveal and discard a non-unique hazard creature from his hand that may be keyed to S by type.  An automatic-attack is created with equivalent attributes and type."/>
        <attr key="rarity" value="R2"/>
@@ -1499,12 +1499,12 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="Rhosgobel" graphics="RhosgobelRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Dol Guldur"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor)"/>
        <attr key="special" value="If a manifestation of Radagast is in play or has been eliminated, the second automatic-attack is removed."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Animals — 1 strike at 10 prowess
 Maia — 1 strike at 13 prowess"/>
        <attr key="rarity" value="R2"/>
@@ -1514,13 +1514,13 @@ Maia — 1 strike at 13 prowess"/>
     <card name="Rivendell" graphics="RivendellRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Information, Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="The base hazard limit against any company moving to or at this site is modified by +2.
 Lost Knowledge.  When this site would otherwise be discarded, instead place it in your mp pile.  It is worth 2 mp, and all your ring tests are modified by +1."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Elves — 4 strikes at 8 prowess
 Dúnedain — 3 strikes at 10 prowess
 Dúnedain — 1 strike at 15 prowess
@@ -1533,11 +1533,11 @@ Elves — 1 strike at 18 prowess"/>
     <card name="The Sulfur-deeps" graphics="TheSulfurdeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Dol Guldur (0), The Under-Courts (4), The Under-Gates (4), The Pûkel-Deeps (9)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls - 2 strikes at 10 prowess (detainment)"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1546,12 +1546,12 @@ Elves — 1 strike at 18 prowess"/>
     <card name="Tolfalas" graphics="TolfalasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Mouths of the Anduin"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="An overt company moving to this site taps one untapped character during step 5 of the movement process.  The only Greater Items that may be played at this site are Palantíri."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Dúnedain — 3 strikes at 9 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1560,11 +1560,11 @@ Elves — 1 strike at 18 prowess"/>
     <card name="The Under-courts" graphics="TheUndercourtsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Barad-Dûr (0), The Sulfur-Deeps (4), The Under-Galleries (4)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls - 3 strikes at 10 prowess (detainment)"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1573,11 +1573,11 @@ Elves — 1 strike at 18 prowess"/>
     <card name="The Under-galleries" graphics="TheUndergalleriesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Cirith Gorgor (0), The Under-Courts (4), The Sulfur-Deeps (7)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Udûn"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Trolls - 4 strikes at 10 prowess (detainment)"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1586,12 +1586,12 @@ Elves — 1 strike at 18 prowess"/>
     <card name="The Under-gates" graphics="TheUndergatesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Moria (0), Glittering Caves (6), The Sulfur-Deeps (4), The Under-Grottos (7), The Under-Leas (5)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="Creatures keyed to this site are not detainment.  If a manifestation of the Balrog has been defeated, the first automatic-attack is removed."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Spawn — 2 strikes at 18 prowess, 9 body
 After the first automatic-attack is faced, opponent may reveal and discard a non-unique hazard creature from his hand that may be keyed to R by type.  An automatic-attack is created with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
@@ -1601,12 +1601,12 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="The Under-grottos" graphics="TheUndergrottosRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Goblin-Gate (0), Glittering Caves (9), The Sulfur-Deeps (9)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="High Pass"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="Any Orc creature may be keyed to this site.  +1 to all ring tests by a company at this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Orcs — 4 strikes at 7 prowess
 After the first automatic-attack is faced, opponent may reveal and discard a non-unique hazard creature from his hand that may be keyed to S by type.  An automatic-attack is created with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
@@ -1616,12 +1616,12 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="The Under-leas" graphics="TheUnderleasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gundabad (0), The Iron-Deeps (5), The Under-Grottos (7), The Under-Gates (5), The Under-Vaults (6)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gundabad"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Orc may be keyed to this site.  Creatures keyed to this site are not detainment."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Orcs — 5 strikes at 7 prowess
 After the first automatic-attack is faced, opponent may reveal and discard a non-unique hazard creature from his hand that may be keyed to R by type.  An automatic-attack is created with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
@@ -1631,12 +1631,12 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="The Under-vaults" graphics="TheUndervaultsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gram (0), The Iron-Deeps (9), The Under-Leas (9)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
        <attr key="special" value="Any Undead may be keyed to this site."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead — 3 strikes at 8 prowess
 After the first automatic-attack is faced, opponent may reveal and discard a non-unique hazard creature from his hand that may be keyed to S by type.  An automatic-attack is created with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
@@ -1646,11 +1646,11 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="Weathertop" graphics="WeathertopRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Carn Dûm"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Animals - 2 strikes at 6 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="type" value="Minion Site"/>
@@ -1659,11 +1659,11 @@ After the first automatic-attack is faced, opponent may reveal and discard a non
     <card name="Wellinghall" graphics="WellinghallRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Geann a-Lisch"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Fangorn"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Awakened Plant — 2 strikes at 10 prowess
 Awakened Plant — 2 strikes at 10 prowess
 Awakened Plant — 1 strike at 15 prowess (neither the attack nor the strike may be canceled)"/>

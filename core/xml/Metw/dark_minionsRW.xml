@@ -6,7 +6,7 @@
     <card name="Anarin" graphics="AnarinRW.jpg" text="Unique.  Agent.  As an Agent, may move to any H.
 Action: As an Agent, may tap at a company’s new or current site to attack them during the movement/hazard phase.">
        <attr key="unique" value="yes"/>
-       <attr key="skills" value="Scout/Diplomat"/>
+       <attr key="skills" value="Warrior/Scout/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="prowess" value="4"/>
        <attr key="body" value="8"/>
@@ -25,8 +25,8 @@ Action: As an Agent, you may tap and discard Baduila at a company’s new site to 
        <attr key="skills" value="Warrior/Scout/Ranger"/>
        <attr key="mp" value="3"/>
        <attr key="home_site" value="Mount Gram, Mount Gundabad"/>
-       <attr key="body" value="8"/>
-       <attr key="prowess" value="6"/>
+       <attr key="body" value="9"/>
+       <attr key="prowess" value="7"/>
        <attr key="rarity" value="R2"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Man"/>
@@ -55,7 +55,7 @@ Action: As an Agent, you may tap and discard Baduila at a company’s new site to 
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Easterling Camp, Variag Camp, Shrel-Kain"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="6"/>
        <attr key="rarity" value="U2"/>
        <attr key="agent" value="yes"/>
@@ -71,7 +71,7 @@ Action: As an Agent, you may tap and discard Baduila at a company’s new site to 
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Dunnish Clan-hold, Bree, Cameth Brin"/>
        <attr key="body" value="3"/>
-       <attr key="prowess" value="6"/>
+       <attr key="prowess" value="7"/>
        <attr key="rarity" value="C1"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Man"/>
@@ -100,15 +100,15 @@ Action: As an Agent, you may tap and discard Baduila at a company’s new site to 
        <attr key="skills" value="Scout/Sage/Diplomat/Shadow-Mage/Spirit-Mage"/>
        <attr key="mp" value="3"/>
        <attr key="home_site" value="Carn Dûm"/>
-       <attr key="body" value="9"/>
-       <attr key="prowess" value="5"/>
+       <attr key="body" value="8"/>
+       <attr key="prowess" value="4"/>
        <attr key="rarity" value="R2"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Man"/>
        <attr key="class" value="Agent"/>
        <attr key="type" value="Minion Character"/>
        <attr key="mind" value="8"/>
-       <attr key="influence" value="3"/>
+       <attr key="influence" value="2"/>
 	<attr key="keyword" value="Mage"/>
     </card>
     <card name="Elwen" graphics="ElwenRW.jpg" text="Unique.  Agent.  +2 EI against Elf characters.  +2 to influence checks against Elf factions.  As an Agent, may move to any H.">
@@ -146,7 +146,7 @@ Action: As an Agent, you may tap and discard Baduila at a company’s new site to 
        <attr key="skills" value="Sage/Diplomat/Shadow-Mage"/>
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Pelargir, Vale of Erech"/>
-       <attr key="body" value="8"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="3"/>
        <attr key="rarity" value="R2"/>
        <attr key="agent" value="yes"/>
@@ -163,7 +163,7 @@ Action: As an Agent, you may tap and discard Baduila at a company’s new site to 
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Iron Hill Dwarf-hold"/>
        <attr key="body" value="7"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="5"/>
        <attr key="rarity" value="U2"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Dwarf"/>
@@ -215,7 +215,7 @@ Action: As an Agent, may tap to make an influence check against an opponent’s al
        <attr key="race" value="Dúnadan"/>
        <attr key="class" value="Agent"/>
        <attr key="type" value="Minion Character"/>
-       <attr key="mind" value="9"/>
+       <attr key="mind" value="10"/>
        <attr key="influence" value="4"/>
 	<attr key="keyword" value="Mage"/>
     </card>
@@ -231,7 +231,7 @@ Action: As an Agent, may tap to make an influence check against an opponent’s al
        <attr key="race" value="Man"/>
        <attr key="class" value="Agent"/>
        <attr key="type" value="Minion Character"/>
-       <attr key="mind" value="8"/>
+       <attr key="mind" value="9"/>
        <attr key="influence" value="2"/>
 	<attr key="keyword" value="Mage"/>
     </card>
@@ -285,7 +285,7 @@ Action: As an Agent, may tap to make an influence check against an opponent’s al
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Cameth Brin, Dunnish Clan-hold"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="6"/>
        <attr key="rarity" value="C1"/>
        <attr key="agent" value="yes"/>
@@ -316,7 +316,7 @@ Action: As an Agent, may tap to make an influence check against an opponent’s al
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Drúadan Forest, Wose Passage-hold, Stone-circle"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="2"/>
+       <attr key="prowess" value="3"/>
        <attr key="rarity" value="U2"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Man"/>
@@ -378,7 +378,7 @@ Action: As an Agent, may tap to make an influence check against an opponent’s al
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Sarn Goriwing, Dol Guldur"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="5"/>
+       <attr key="prowess" value="4"/>
        <attr key="rarity" value="R2"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Man"/>
@@ -409,7 +409,7 @@ Action: As an Agent, may tap to make an influence check against an opponent’s al
        <attr key="mp" value="2"/>
        <attr key="home_site" value="Edoras, Dunharrow, Isengard"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="1"/>
+       <attr key="prowess" value="2"/>
        <attr key="rarity" value="R2"/>
        <attr key="agent" value="yes"/>
        <attr key="race" value="Man"/>
@@ -453,12 +453,12 @@ Action: If My Precious attacks and is not defeated, any character in the defendi
     <card name="Glittering Caves" graphics="GlitteringCavesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Helm's Deep (0), The Pûkel-Deeps (8), The Under-Gates (7)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="Any Undead or Pûkel-Creature may be keyed to this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Undead — 3 strikes at 9 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R or S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
@@ -469,11 +469,11 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="Haudh-in-Gwanûr" graphics="HaudhinGwanurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Harondor"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Undead - 1 strike at 10 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value=""/>
@@ -483,12 +483,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="Hermit's Hill" graphics="HermitsHillRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Wold &amp; Foothills"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value="Action: A company at this site may discard two minor items during the site phase to place any major item from your hand with a character in the company."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="auto_attack" value="Men - 3 strikes at 6 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value=""/>
@@ -498,12 +498,12 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Iron-deeps" graphics="TheIrondeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Carn Dûm (0), The Under-Leas (6), The Under-Vaults (7)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="If the Witch-king of Angmar is in play as a permanent-event, it must be used as an additional automatic-attack (discard after use-ignore result of defeat)."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="auto_attack" value="Trolls - 3 strikes with 9 prowess;After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R by type.  The company faces an attack with equivalent attributes and type.
 If the Witch-King of Angmar is in play as a permanent event, the company faces another automatic-attack: Nazgûl — 1 strike at 17 prowess, 12 body"/>
        <attr key="rarity" value="R2"/>
@@ -514,12 +514,12 @@ If the Witch-King of Angmar is in play as a permanent event, the company faces a
     <card name="The Pûkel-deeps" graphics="ThePukeldeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Dunharrow (0), Glittering Caves (8), The Sulfur-Deeps (9)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="Any Undead or Pûkel-Creature may be keyed to this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Pûkel-Creature — 3 strikes at 9 prowess
 After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
@@ -530,11 +530,11 @@ After the first automatic attack is faced, opponent may reveal and discard from 
     <card name="The Sulfur-deeps" graphics="TheSulfurdeepsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Dol Guldur (0), The Under-Courts (5), The Pûkel-Deeps (9), The Under-Gates (5)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="auto_attack" value="Trolls - 2 strikes at 9 prowess;After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type.
 If Khamûl the Easterling is in play as a permanent event, the company faces another automatic-attack: Nazgûl — 1 strike at 18 prowess, 8 body"/>
        <attr key="rarity" value="R2"/>
@@ -545,11 +545,11 @@ If Khamûl the Easterling is in play as a permanent event, the company faces anot
     <card name="The Under-courts" graphics="TheUndercourtsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Barad-Dûr (0), The Sulfur-Deeps (5), The Under-Galleries (4)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="auto_attack" value="Trolls - 3 strikes at 10 prowess; After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type.
 If any Nazgûl is in play as a permanent event, the company faces another automatic-attack: Nazgûl — 1 strike at 15 prowess, 10 body"/>
        <attr key="rarity" value="R2"/>
@@ -560,12 +560,12 @@ If any Nazgûl is in play as a permanent event, the company faces another automat
     <card name="The Under-galleries" graphics="TheUndergalleriesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Morannon (0), The Under-Courts (4), The Sulfur-Deeps (8)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Udûn"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="When this site would otherwise be discarded, place this card in your Marshalling Point pile — you gain 3 miscellaneous mp."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="auto_attack" value="Trolls - 4 strikes at 9 prowess; After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="R2"/>
        <attr key="class" value=""/>
@@ -575,13 +575,13 @@ If any Nazgûl is in play as a permanent event, the company faces another automat
     <card name="The Under-gates" graphics="TheUndergatesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Adjacent Sites: Moria (0), Glittering Caves (7), The Sulfur-Deeps (5), The Under-Grottos (8), The Under-Leas (6)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
        <attr key="special" value="If a Manifestation of the Balrog has been defeated, the first automatic attack is removed.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Spawn — 2 strikes at 16 prowess, 9 body; After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value=""/>
@@ -592,12 +592,12 @@ This site contains a hoard."/>
     <card name="The Under-grottos" graphics="TheUndergrottosRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Goblin-Gate (0), The Under-Leas (8), The Under-Gates (8)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="High Pass"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="+2 to all ring tests at this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Orcs - 4 strikes with 7 prowess; After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value=""/>
@@ -607,11 +607,11 @@ This site contains a hoard."/>
     <card name="The Under-leas" graphics="TheUnderleasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gundabad (0), The Iron-Deeps (6), The Under-Grottos (8), The Under-Gates (6), The Under-Vaults (7)"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gundabad"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="auto_attack" value="Orcs - 5 strikes with 7 prowess; After the first automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to R by type.  The company faces an attack with equivalent attributes and type.
 If The Witch-King of Angmar is in play as a permanent event, the company faces another automatic-attack: Nazgûl — 1 strike at 17 prowess, 12 body"/>
        <attr key="rarity" value="U2"/>
@@ -622,12 +622,12 @@ If The Witch-King of Angmar is in play as a permanent event, the company faces a
     <card name="The Under-vaults" graphics="TheUndervaultsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="adjacent" value="Mount Gram (0), The Iron-Deeps (7), The Under-Leas (7)"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
        <attr key="special" value="Any Undead may be keyed to this site."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="auto_attack" value="Undead - 3 strikes with 8 prowess; After the automatic attack is faced, opponent may reveal and discard from their hand a creature card that can be keyed to S by type.  The company faces an attack with equivalent attributes and type."/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value=""/>
@@ -637,11 +637,11 @@ If The Witch-King of Angmar is in play as a permanent event, the company faces a
     <card name="Urlurtsu Nurn" graphics="UrlurtsuNurnRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Nurn"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="5"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="auto_attack" value="Orcs - 4 strikes at 7 prowess"/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value=""/>
@@ -1137,7 +1137,6 @@ May not be duplicated on a given company.">
        <attr key="type" value="Hero Resource"/>
     </card>
     <card name="Armory" graphics="ArmoryRW.jpg" text="Once per organization phase, you may place a minor item weapon, shield, armor, or helmet off to the side with this card.  Such an item may come from your hand or sideboard.  Any item placed off to the side with this card may be played as though it were in your hand.  A maximum of two items may be placed off to the side with this card.">
-       <attr key="mp" value="(1)"/>
        <attr key="rarity" value="U2"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -1381,7 +1380,7 @@ Trigger: Discard this card if an avatar joins the company.">
     </card>
     <card name="The Doors of Dol Guldur" graphics="TheDoorsofDolGuldurRW.jpg" text="Stolen Knowledge.  Playable on a company if the company controls a Stolen Knowledge card.
 Action: You may tap this card during the site phase if the company successfully plays Rescue Prisoners at Dol Guldur or rescues characters taken prisoner there.  This card never untaps.  Once tapped, no other copy of this card can be tapped.
-Action: If tapped, this card can be stored at a H.  When stored, all automatic-attacks at all D and all S receive -1 prowess and -1 strike.  If stored, your receive this card’s mp.">
+Action: If tapped, this card can be stored at a H.  When stored, all automatic-attacks at all D and all S receive -1 prowess and -1 strike (to a minimum of 1 strike).  If stored, your receive this card’s mp.">
 	   <attr key="mp" value="(4)"/>
        <attr key="rarity" value="R2"/>
        <attr key="class" value="Permanent-event"/>
@@ -1440,7 +1439,6 @@ Action: This card may be stored at a H during the organization phase.">
     </card>
     <card name="When You Know More" graphics="WhenYouKnowMoreRW.jpg" text="Playable on an untapped Sage during the site phase at a site where Information is playable.  Tap the Sage.
 Action: Tap the sage to modify one influence check by a character in his company by +2.  Sage makes a corruption check.">
-	   <attr key="mp" value="1"/>
        <attr key="rarity" value="C2"/>
        <attr key="class" value="Permanent-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -1604,11 +1602,12 @@ Action: You may discard this ally to discard a prisoner-taking card played on a 
     </card>
     <card name="Folco Boffin" graphics="FolcoBoffinRW.jpg" text="Unique.  Folco Boffin allows Hobbit characters to be played at his current site during the organization phase.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="-3"/>
        <attr key="skills" value="Scout"/>
        <attr key="mp" value="1"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="0"/>
+       <attr key="prowess" value="1"/>
        <attr key="rarity" value="U2"/>
        <attr key="race" value="Hobbit"/>
        <attr key="class" value=""/>

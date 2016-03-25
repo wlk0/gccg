@@ -301,7 +301,7 @@ Special: If the automatic-attack created by this card is defeated, this card is 
        <attr key="type" value="Hazard"/>
 	   <attr key="keyword" value="Environment"/>
     </card>
-    <card name="Foul Fumes" graphics="FoulFumesRW.jpg" text="Environment.  A Wizard or Fallen Wizard player’s companies with a s or d in their site path must return to their site of origin unless they contain a ranger.  Additionally, if Doors of Night is in play, each Hero or Fallen Wizard site with a s or a d in its site path is tapped when the card play action of this card resolves.  Any such sites revealed while this card is in play are also tapped when they are revealed.  Cannot be duplicated.">
+    <card name="Foul Fumes" graphics="FoulFumesRW.jpg" text="Environment.  A Wizard or Fallen Wizard player’s companies with a s or d in their site path must return to their site of origin unless they contain a ranger.  Additionally, if Doors of Night is in play, each Hero or Fallen Wizard site in a s or a d is tapped when the card play action of this card resolves.  Any such sites revealed while this card is in play are also tapped when they are revealed.  Cannot be duplicated.">
        <attr key="rarity" value="CA"/>
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hazard"/>
@@ -441,7 +441,7 @@ Action: Use one against the hazard limit and discard this card to access hazards
        <attr key="class" value="Creature"/>
        <attr key="type" value="Hazard"/>
     </card>
-    <card name="Long Winter" graphics="LongWinterRW.jpg" text="Environment.  A company with w w in their site path must return to its site of origin unless it contains a ranger.  Additionally, if Doors of Night is in play, all sites with w w in their site path are tapped when the card play action of this card resolves.  Any such sites revealed while this card is in play are also tapped when they are revealed.  Cannot be duplicated.  ">
+    <card name="Long Winter" graphics="LongWinterRW.jpg" text="Environment.  A company with w w in their site path must return to its site of origin unless it contains a ranger.  Additionally, if Doors of Night is in play, all sites in a w are tapped when the card play action of this card resolves.  Any such sites revealed while this card is in play are also tapped when they are revealed.  Cannot be duplicated.  ">
        <attr key="rarity" value="CA"/>
        <attr key="class" value="Long-event"/>
        <attr key="type" value="Hazard"/>
@@ -812,7 +812,7 @@ Action: tap a character in the defending company to cancel an attack from this c
        <attr key="type" value="Hazard"/>
 	   <attr key="keyword" value="Environment"/>
     </card>
-    <card name="Storms of Ossë" graphics="StormsofOsseRW.jpg" text="Environment.  Playable on a site with a c in its site path if Doors of Night is in play.  Tap the site.">
+    <card name="Storms of Ossë" graphics="StormsofOsseRW.jpg" text="Environment.  Playable on a site in a c if Doors of Night is in play.  Tap the site.">
        <attr key="rarity" value="R"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hazard"/>
@@ -1048,7 +1048,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Scout/Ranger"/>
        <attr key="mp" value="0"/>
-       <attr key="body" value="8"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="2"/>
        <attr key="home_site" value="Pelargir"/>
        <attr key="rarity" value="U"/>
@@ -1100,7 +1100,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Scout/Sage"/>
        <attr key="mp" value="1"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="3"/>
        <attr key="home_site" value="Rivendell"/>
        <attr key="rarity" value="R"/>
@@ -1141,7 +1141,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="body" value="6"/>
-       <attr key="prowess" value="2"/>
+       <attr key="prowess" value="4"/>
        <attr key="home_site" value="Bree"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Man"/>
@@ -1153,7 +1153,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="2"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="7"/>
        <attr key="home_site" value="Beorn's House"/>
        <attr key="rarity" value="F1"/>
@@ -1164,6 +1164,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
     </card>
     <card name="Beregond" graphics="BeregondRW.jpg" text="Unique.  -1 to influence checks against factions.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="body" value="8"/>
@@ -1219,18 +1220,18 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="corruption" value="-4"/>
        <attr key="skills" value="Scout/Sage"/>
        <attr key="mp" value="2"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="10"/>
        <attr key="prowess" value="1"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Hobbit"/>
        <attr key="type" value="Hero Character"/>
        <attr key="mind" value="5"/>
-       <attr key="influence" value="1"/>
+       <attr key="influence" value="0"/>
     </card>
     <card name="Bofur" graphics="BofurRW.jpg" text="Unique.  +1 prowess when facing an Orc strike.  -1 to influence checks against factions.  1 Corruption.">
        <attr key="unique" value="yes"/>
-       <attr key="corruption" value="1"/>
+       <attr key="corruption" value="0"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="body" value="7"/>
@@ -1247,7 +1248,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
-       <attr key="body" value="6"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="3"/>
        <attr key="home_site" value="Blue Mountain Dwarf-hold"/>
        <attr key="rarity" value="U"/>
@@ -1261,13 +1262,13 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="1"/>
-       <attr key="body" value="7"/>
-       <attr key="prowess" value="6"/>
+       <attr key="body" value="9"/>
+       <attr key="prowess" value="7"/>
        <attr key="home_site" value="Minas Tirith"/>
        <attr key="rarity" value="F2"/>
        <attr key="race" value="Dúnadan"/>
        <attr key="type" value="Hero Character"/>
-       <attr key="mind" value="4"/>
+       <attr key="mind" value="5"/>
        <attr key="influence" value="1"/>
     </card>
     <card name="Celeborn" graphics="CelebornRW.jpg" text="Unique.  +5 EI against any manifestation of Galadriel.">
@@ -1285,10 +1286,10 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
     </card>
     <card name="Círdan" graphics="CirdanRW.jpg" text="Unique.  If Círdan is at the Grey Havens, your hand size increases by one.  +2 to influence checks against the Elves of Lindon faction.  May tap to cancel an attack keyed to a c by name or by type.  -3 mp if eliminated.">
        <attr key="unique" value="yes"/>
-       <attr key="skills" value="Warrior/Sage/Diplomat"/>
+       <attr key="skills" value="Sage/Diplomat"/>
        <attr key="mp" value="3"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="6"/>
+       <attr key="prowess" value="5"/>
        <attr key="home_site" value="Grey Havens"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Elf"/>
@@ -1340,7 +1341,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
-       <attr key="body" value="6"/>
+       <attr key="body" value="7"/>
        <attr key="prowess" value="3"/>
        <attr key="home_site" value="Blue Mountain Dwarf-hold"/>
        <attr key="rarity" value="U"/>
@@ -1351,7 +1352,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
     </card>
     <card name="Dwalin" graphics="DwalinRW.jpg" text="Unique.  +1 prowess when facing an Orc strike.  -1 to influence checks against factions.  1 Corruption.">
        <attr key="unique" value="yes"/>
-       <attr key="corruption" value="1"/>
+       <attr key="corruption" value="0"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
        <attr key="body" value="7"/>
@@ -1393,7 +1394,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Sage/Diplomat"/>
        <attr key="mp" value="3"/>
-       <attr key="body" value="9"/>
+       <attr key="body" value="8"/>
        <attr key="prowess" value="7"/>
        <attr key="home_site" value="Rivendell"/>
        <attr key="rarity" value="R"/>
@@ -1488,7 +1489,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="skills" value="Scout/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="1"/>
+       <attr key="prowess" value="0"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Hobbit"/>
@@ -1526,7 +1527,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="0"/>
-       <attr key="body" value="7"/>
+       <attr key="body" value="6"/>
        <attr key="prowess" value="3"/>
        <attr key="home_site" value="Edoras"/>
        <attr key="rarity" value="U"/>
@@ -1538,7 +1539,7 @@ Special Movement: If at a H when one of your companies is facing an attack, Alat
     <card name="Gandalf" graphics="GandalfRW.jpg" text="Unique.  Avatar.  -5 mp if eliminated.  You may not play this card if your opponent is Fallen Gandalf.  -2 Corruption.
 Action: You may tap Gandalf to test a Gold Ring Item in his company.">
        <attr key="unique" value="yes"/>
-       <attr key="corruption" value="1"/>
+       <attr key="corruption" value="-1"/>
        <attr key="skills" value="Warrior/Scout/Sage/Diplomat"/>
        <attr key="body" value="9"/>
        <attr key="prowess" value="6"/>
@@ -1592,6 +1593,7 @@ Action: You may tap Gandalf to test a Gold Ring Item in his company.">
     </card>
     <card name="Glóin" graphics="GloinRW.jpg" text="Unique.  +2 to influence checks against the Blue Mountain Dwarves faction.  +1 prowess when facing an Orc strike.  +1 EI against Dwarf characters.  +1 to influence checks against any Dwarf faction.">
        <attr key="unique" value="yes"/>
+       <attr key="corruption" value="1"/>
        <attr key="skills" value="Warrior/Diplomat"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="7"/>
@@ -1644,11 +1646,11 @@ Action: You may tap Gandalf to test a Gold Ring Item in his company.">
     </card>
     <card name="Haldir" graphics="HaldirRW.jpg" text="Unique.  -1 to influence checks against factions.  1 Corruption.">
        <attr key="unique" value="yes"/>
-       <attr key="corruption" value="1"/>
+       <attr key="corruption" value="0"/>
        <attr key="skills" value="Warrior"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="4"/>
+       <attr key="prowess" value="5"/>
        <attr key="home_site" value="Lórien"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Elf"/>
@@ -1730,7 +1732,7 @@ Action: May tap to untap Pippin.">
        <attr key="skills" value="Scout"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="1"/>
+       <attr key="prowess" value="2"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Hobbit"/>
@@ -1757,7 +1759,7 @@ Action: May tap to untap Pippin.">
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="8"/>
-       <attr key="prowess" value="3"/>
+       <attr key="prowess" value="4"/>
        <attr key="home_site" value="Blue Mountain Dwarf-hold"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Dwarf"/>
@@ -1778,7 +1780,7 @@ Action: May tap to untap Pippin.">
        <attr key="mind" value="2"/>
        <attr key="influence" value="0"/>
     </card>
-    <card name="Orophin" graphics="OrophinRW.jpg" text="Unique.  -1 to influence checks against factions.  1 Corruption.">
+    <card name="Orophin" graphics="OrophinRW.jpg" text="Unique.  -1 to influence checks against factions.">
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Ranger"/>
        <attr key="mp" value="0"/>
@@ -1824,7 +1826,7 @@ Action: Tap Pippin during the organization phase to transfer an item to his cont
        <attr key="skills" value="Scout"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="1"/>
+       <attr key="prowess" value="2"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="rarity" value="U"/>
        <attr key="race" value="Hobbit"/>
@@ -1852,13 +1854,13 @@ Action: Tap Pippin during the organization phase to transfer an item to his cont
        <attr key="skills" value="Scout"/>
        <attr key="mp" value="1"/>
        <attr key="body" value="9"/>
-       <attr key="prowess" value="1"/>
+       <attr key="prowess" value="0"/>
        <attr key="home_site" value="Bag End"/>
        <attr key="rarity" value="F2"/>
        <attr key="race" value="Hobbit"/>
        <attr key="type" value="Hero Character"/>
        <attr key="mind" value="3"/>
-       <attr key="influence" value="0"/>
+       <attr key="influence" value="1"/>
     </card>
     <card name="Sam Gamgee" graphics="SamGamgeeRW.jpg" text="Unique.  If brought into play during the organization phase, may only be brought into play at Bag End.  -3 Corruption.">
        <attr key="unique" value="yes"/>
@@ -1905,14 +1907,14 @@ Action: At the beginning of your end-of-turn phase, you may make a corruption ch
        <attr key="unique" value="yes"/>
        <attr key="skills" value="Warrior/Scout/Diplomat"/>
        <attr key="mp" value="3"/>
-       <attr key="body" value="8"/>
-       <attr key="prowess" value="5"/>
+       <attr key="body" value="7"/>
+       <attr key="prowess" value="6"/>
        <attr key="home_site" value="Blue Mountain Dwarf-hold"/>
        <attr key="rarity" value="R"/>
        <attr key="race" value="Dwarf"/>
        <attr key="type" value="Hero Character"/>
        <attr key="mind" value="8"/>
-       <attr key="influence" value="2"/>
+       <attr key="influence" value="3"/>
     </card>
     <card name="Thranduil" graphics="ThranduilRW.jpg" text="Unique.  +2 to influence checks against the Wood-Elves faction.  +1 EI against Man characters.">
        <attr key="unique" value="yes"/>
@@ -2250,7 +2252,7 @@ Action: Tap a Dwarf bearer during the site phase to search your play deck or dis
 	   <attr key="keyword" value="Dwarven Ring"/>
     </card>
     <card name="Eagle-mounts" graphics="EaglemountsRW.jpg" text="Playable during the organization phase on a company with a Diplomat at Eagle’s Eyrie.
-Special Movement: The company may declare as its new site any non-Under-deeps, non-S, non-D site.  The company moves through no regions during the movement/hazard phase.  Discard when the company’s movement/hazard phase ends.">
+Special Movement: The company may declare as its new site any non-Under-deeps, non-S, non-D site.  The company moves through no regions during the movement/hazard phase, and each player draws one card for the movement.  Discard when the company’s movement/hazard phase ends.">
        <attr key="rarity" value="R"/>
        <attr key="class" value="Short-event"/>
        <attr key="type" value="Hero Resource"/>
@@ -2466,7 +2468,7 @@ Action: If borne by a Warrior facing a strike, tap this card to eliminate the -3
        <attr key="type" value="Hero Resource"/>
 	   <attr key="keyword" value="Shield"/>
     </card>
-    <card name="Gwaihir" graphics="GwaihirRW.jpg" text="Unique.  Special Movement: If Gwaihir’s controlling character is the only character in his company and not at an Under-deeps site, tap Gwaihir to declare movement to any site not in a d, s, or Under-deeps.  The company moves through no regions during the movement/hazard phase.">
+    <card name="Gwaihir" graphics="GwaihirRW.jpg" text="Unique.  Special Movement: If Gwaihir’s controlling character is the only character in his company and not at an Under-deeps site, tap Gwaihir to declare movement to any site not in a d, s, or Under-deeps.  The company moves through no regions during the movement/hazard phase.  You and your opponent draw one card for this movement.">
        <attr key="unique" value="yes"/>
        <attr key="mp" value="2"/>
        <attr key="body" value="8"/>
@@ -2750,13 +2752,13 @@ Special: This card is neither discarded nor canceled by Doors of Night.">
     <card name="Morannon" graphics="MorannonRW.jpg" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="None"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Udûn"/>
        <attr key="auto_attack" value="Orcs - 4 strikes at 9 prowess; Trolls - 3 strikes at 10 prowess; Trolls - 2 strikes at 11 prowess; Nazgûl - 1 strike at 15 prowess"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="This site may only be moved to by region movement by a company whose site of origin is in Dagorlad.  If a company contains any non-scouts, they must enter the site during the site phase.  To leave this site, make a roll during step 2 of the movement process and subtract the number of non-Scouts in the company.  If the result is less than 7, the company may not move."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="site_path" value="-"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -2900,7 +2902,7 @@ Action: With its bearer able to use a Palantír, tap this card to discard any one
 	   <attr key="keyword" value="Palantír"/>
     </card>
     <card name="Paths of the Dead" graphics="PathsoftheDeadRW.jpg" text="Playable on Aragorn II during the organization phase if his company is at Dunharrow or the Pûkel-deeps.
-Special Movement: Play Vale of Erech as the new site for Aragorn II’s company.  The company moves through no regions.  Any undead creatures may be keyed to the site against this company; no other creatures may be keyed.  Discard this card at the end of the turn.
+Special Movement: Play Vale of Erech as the new site for Aragorn II’s company.  The company moves through no regions.  Any undead creatures may be keyed to the site against this company; no other creatures may be keyed.  You draw one card for the movement; your opponent may draw two.  Discard this card at the end of the turn.
 Trigger: If the company no longer contains Aragorn II, eliminate all other members of the company.">
        <attr key="rarity" value="R"/>
        <attr key="class" value="Short-event"/>
@@ -3250,7 +3252,7 @@ In all cases, discard at the end of the turn.">
        <attr key="type" value="Hero Resource"/>
     </card>
     <card name="The One Ring" graphics="TheOneRingRW.jpg" text="Unique.  The One Ring.  Playable after a Ring Test indicates The One Ring.  Bearer receives +5 to prowess to a maximum of double his starting prowess.  All characters in the bearer’s company including the bearer receive an additional corruption point.
-Action: Bearer may make a corruption check when facing a non-undead, non-Nazgûl, non-Ringwraith strike to cancel the strike.">
+Action: Bearer may make a corruption check when facing a non-undead, non-Nazgûl, non-Ringwraith strike to cancel the strike.  May not be stored.">
        <attr key="unique" value="yes"/>
        <attr key="corruption" value="6"/>
        <attr key="mp" value="6"/>
@@ -3447,13 +3449,13 @@ Action: You may discard this card to test a Gold Ring Item.  Make two rolls and 
     <card name="Amon Hen" graphics="AmonHenRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="auto_attack" value="Undead - 1 strike at 6 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor)"/>
        <attr key="special" value="Each character wounded must make a corruption check."/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
@@ -3461,10 +3463,10 @@ Action: You may discard this card to test a Gold Ring Item.  Make two rolls and 
     <card name="Bag End" graphics="BagEndRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="The Shire"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}{f}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
@@ -3472,12 +3474,12 @@ Action: You may discard this card to test a Gold Ring Item.  Make two rolls and 
     <card name="Bandit Lair" graphics="BanditLairRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Brown Lands"/>
        <attr key="auto_attack" value="Men - 3 strikes at 6 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="F3"/>
        <attr key="type" value="Hero Site"/>
@@ -3485,7 +3487,7 @@ Action: You may discard this card to test a Gold Ring Item.  Make two rolls and 
     <card name="Barad-dûr" graphics="BaraddurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="auto_attack" value="Orcs - 4 strikes at 9 prowess; Trolls - 3 strikes at 10 prowess; Nazgûl - 2 strikes at 15 prowess; Maia - 1 strike at 20 prowess"/>
        <attr key="site_type" value="{D}"/>
@@ -3493,7 +3495,7 @@ Action: You may discard this card to test a Gold Ring Item.  Make two rolls and 
        <attr key="special" value="This site must be entered during the site phase.  Successful strikes from the automatic-attacks at this site do not harm a character.  Instead, they are taken prisoner.  The rescue attack is Maia — 1 strike at 20 prowess.
 Any company moving to this site has its hazard limit increased by 2.
 Items and events played at this site do not tap it, and items and events which require a tapped site may be played at this site."/>
-       <attr key="draw_opp" value="6"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="site_path" value="{w}{s}{s}{s}{d}{d}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3502,12 +3504,12 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Barrow-downs" graphics="BarrowdownsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="auto_attack" value="Undead - 1 strike at 12 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -3515,10 +3517,10 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Beorn's House" graphics="BeornsHouseRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -3526,10 +3528,10 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Blue Mountain Dwarf-hold" graphics="BlueMountainDwarfholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Grey Havens"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Númeriador"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{f}{w}"/>
 	<attr key="special" value="This is not an Under-deeps surface site for hazard play effects."/>
        <attr key="rarity" value="CB"/>
@@ -3539,10 +3541,10 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Bree" graphics="BreeRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -3550,10 +3552,10 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Cameth Brin" graphics="CamethBrinRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3561,12 +3563,12 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Carn Dûm" graphics="CarnDumRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 7 prowess; Trolls - 2 strikes at 8 prowess; Undead - 1 strike at 9 prowess"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3575,14 +3577,14 @@ Items and events played at this site do not tap it, and items and events which r
     <card name="Caves of Ûlund" graphics="CavesofUlundRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 13 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
 	<attr key="special" value="Agburanar's Lair.  If a manifestation of Agburanar has been defeated, the automatic-attack is removed.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{s}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -3591,14 +3593,14 @@ This site contains a hoard."/>
     <card name="Cirith Ungol" graphics="CirithUngolRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="auto_attack" value="Orcs - 4 strikes at 8 prowess; Orcs - 3 strikes at 9 prowess; Orcs - 2 strikes at 10 prowess"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
 	<attr key="special" value="This site must be entered during the site phase.
 To leave this site, make a roll during step 2 of the movement process and subtract the number of non-Warriors in the company.  If the result is less than 7, the company may not move."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{b}{f}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3606,14 +3608,14 @@ To leave this site, make a roll during step 2 of the movement process and subtra
     <card name="Dancing Spire" graphics="DancingSpireRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="auto_attack" value="Dragon - 2 strikes at 11 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
 	<attr key="special" value="Daelomin's Lair.  If any manifestation of Daelomin has been defeated, the automatic-attack is removed.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{s}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -3622,13 +3624,13 @@ This site contains a hoard."/>
     <card name="Dead Marshes" graphics="DeadMarshesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Dagorlad"/>
        <attr key="auto_attack" value="Undead - 2 strikes at 8 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="Each character wounded must make a corruption check."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{s}{s}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -3636,12 +3638,12 @@ This site contains a hoard."/>
     <card name="Dimrill Dale" graphics="DimrillDaleRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="auto_attack" value="Orcs - 1 strike at 6 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -3649,10 +3651,10 @@ This site contains a hoard."/>
     <card name="Dol Amroth" graphics="DolAmrothRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Belfalas"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{f}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3660,12 +3662,12 @@ This site contains a hoard."/>
     <card name="Dol Guldur" graphics="DolGuldurRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="auto_attack" value="Orcs - 4 strikes at 8 prowess; Trolls - 3 strikes at 9 prowess; Spiders - 2 strikes at 10 prowess"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Information, Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="2"/>
        <attr key="site_path" value="{w}{b}{d}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3674,11 +3676,11 @@ This site contains a hoard."/>
     <card name="Drúadan Forest" graphics="DruadanForestRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anórien"/>
 	<attr key="auto_attack" value="Pûkel-Creature — This attack has a number of strikes equal to the number of characters in the company; each strike is at 9 prowess (detainment)"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{f}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3686,10 +3688,10 @@ This site contains a hoard."/>
     <card name="Dunharrow" graphics="DunharrowRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3698,10 +3700,10 @@ This site contains a hoard."/>
     <card name="Dunnish Clan-hold" graphics="DunnishClanholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Dunland"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -3709,11 +3711,11 @@ This site contains a hoard."/>
     <card name="Eagles' Eyrie" graphics="EaglesEyrieRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
 	<attr key="auto_attack" value="Animals - 1 strike at 10 prowess (detainment)"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3721,22 +3723,23 @@ This site contains a hoard."/>
     <card name="Easterling Camp" graphics="EasterlingCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="4"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Horse Plains"/>
 	<attr key="auto_attack" value="Men - 4 strikes at 8 prowess (detainment)"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{s}{s}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
     </card>
     <card name="Edhellond" graphics="EdhellondRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Edhellond"/>
        <attr key="haven1" value="Grey Havens - {f}{c}{c}{c}{c}{b}"/>
        <attr key="region" value="Anfalas"/>
        <attr key="haven2" value="Lórien - {w}{b}{b}{w}{w}{b}"/>
        <attr key="site_type" value="{H}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
 	<attr key="special" value="This site untaps during the untap phase."/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3744,10 +3747,10 @@ This site contains a hoard."/>
     <card name="Edoras" graphics="EdorasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rohan"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -3755,7 +3758,7 @@ This site contains a hoard."/>
     <card name="Ettenmoors" graphics="EttenmoorsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="auto_attack" value="Trolls - 3 strikes at 12 prowess"/>
        <attr key="site_type" value="{R}"/>
@@ -3769,12 +3772,12 @@ This site contains a hoard."/>
     <card name="Gladden Fields" graphics="GladdenFieldsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anduin Vales"/>
        <attr key="auto_attack" value="Maia - 3 strikes at 10 prowess (detainment)"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (gold ring)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
@@ -3782,12 +3785,12 @@ This site contains a hoard."/>
     <card name="Helm's Deep" graphics="HelmsDeepRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="auto_attack" value="Men - 3 strikes at 8 prowess"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
 	<attr key="special" value="The only Major Items that can be played here are non-unique weapons, armor, shields, or helmets."/>
        <attr key="site_path" value="{w}{b}{b}"/>
        <attr key="rarity" value="U"/>
@@ -3797,24 +3800,25 @@ This site contains a hoard."/>
     <card name="Goblin-gate" graphics="GoblingateRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="High Pass"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 6 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
 	   <attr key="keyword" value="Surface Site"/>
     </card>
     <card name="Grey Havens" graphics="GreyHavensRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Grey Havens"/>
        <attr key="haven1" value="Rivendell - {w}{w}{f}"/>
        <attr key="region" value="Lindon"/>
        <attr key="haven2" value="Edhellond - {b}{c}{c}{c}{c}{f}"/>
        <attr key="site_type" value="{H}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
 	<attr key="special" value="This site untaps during the untap phase."/>
@@ -3822,10 +3826,10 @@ This site contains a hoard."/>
     <card name="Henneth Annûn" graphics="HennethAnnunRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Ithilien"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
 	<attr key="auto_attack" value="Dúnedain — This attack has a number of strikes equal to the number of characters in the company; each strike is at 10 prowess (detainment)"/>
        <attr key="site_path" value="{w}{b}{f}{w}"/>
        <attr key="rarity" value="F1"/>
@@ -3834,12 +3838,12 @@ This site contains a hoard."/>
     <card name="Himring" graphics="HimringRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Grey Havens"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Elven Shores"/>
        <attr key="auto_attack" value="Undead - 1 strike at 8 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{f}{c}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -3847,12 +3851,12 @@ This site contains a hoard."/>
     <card name="Irerock" graphics="IrerockRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Withered Heath"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 14 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
 	<attr key="special" value="Leucaruth's Lair.  If a manifestation of Leucaruth has been defeated, the automatic-attack is removed.
 This site contains a hoard."/>
        <attr key="site_path" value="{w}{b}{s}{w}"/>
@@ -3863,10 +3867,10 @@ This site contains a hoard."/>
     <card name="Iron Hill Dwarf-hold" graphics="IronHillDwarfholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Iron Hills"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
 	<attr key="special" value="This site is not considered an Under-deeps surface site for hazard play effects."/>
        <attr key="site_path" value="{w}{b}{b}{w}{w}"/>
        <attr key="rarity" value="F1"/>
@@ -3876,12 +3880,12 @@ This site contains a hoard."/>
     <card name="Isengard" graphics="IsengardRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gap of Isen"/>
        <attr key="auto_attack" value="Animals - 3 strikes at 7 prowess; Maia - 3 strikes at 10 prowess (detainment)"/>
        <attr key="site_type" value="{B}"/>
        <attr key="playable" value="Information, Items (minor, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
 	<attr key="special" value="If any manifestation of Saruman is in play, the second automatic-attack is removed."/>
        <attr key="site_path" value="{w}{b}{b}"/>
        <attr key="rarity" value="F2"/>
@@ -3890,12 +3894,12 @@ This site contains a hoard."/>
     <card name="Isles of the Dead that Live" graphics="IslesoftheDeadthatLiveRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Grey Havens"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Eriadoran Coast"/>
        <attr key="auto_attack" value="Undead - 2 strikes at 8 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, gold ring)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{f}{c}{c}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3903,11 +3907,11 @@ This site contains a hoard."/>
     <card name="Lake-town" graphics="LaketownRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Northern Rhovanion"/>
 	<attr key="auto_attack" value="Men - 1 strike at 6 prowess (detainment)"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{b}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3915,21 +3919,22 @@ This site contains a hoard."/>
     <card name="Lond Galen" graphics="LondGalenRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Anfalas"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
     </card>
     <card name="Lórien" graphics="LorienRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Lórien"/>
        <attr key="haven1" value="Rivendell - {w}{w}{w}{w}"/>
        <attr key="region" value="Wold &amp; Foothills"/>
        <attr key="haven2" value="Edhellond - {w}{b}{b}{w}{w}{b}"/>
        <attr key="site_type" value="{H}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="CB"/>
 	<attr key="Special" value="This site untaps during the untap phase."/>
        <attr key="type" value="Hero Site"/>
@@ -3937,13 +3942,13 @@ This site contains a hoard."/>
     <card name="Lossadan Cairn" graphics="LossadanCairnRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Forochel"/>
        <attr key="auto_attack" value="Undead - 2 strikes at 8 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="The only Greater Items that may be played at this site are Palantíri."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
@@ -3951,10 +3956,10 @@ This site contains a hoard."/>
     <card name="Lossadan Camp" graphics="LossadanCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Forochel"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -3962,7 +3967,7 @@ This site contains a hoard."/>
     <card name="Minas Morgul" graphics="MinasMorgulRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="auto_attack" value="Pûkel-Creature — This attack has a number of strikes equal to the number of characters in the company; each strike is at 9 prowess
 Undead — 3 strikes at 10 prowess
@@ -3970,7 +3975,7 @@ Nazgûl — 1 strike at 15 prowess"/>
        <attr key="site_type" value="{D}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="To leave this site, make a roll during step 2 of the movement process and subtract the number of non-sages in the company.  If the result is less than 7, the company may not move."/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{b}{f}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -3978,10 +3983,10 @@ Nazgûl — 1 strike at 15 prowess"/>
     <card name="Minas Tirith" graphics="MinasTirithRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="1"/>
        <attr key="region" value="Anórien"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{f}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
@@ -3989,12 +3994,12 @@ Nazgûl — 1 strike at 15 prowess"/>
     <card name="Moria" graphics="MoriaRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Redhorn Gate"/>
        <attr key="auto_attack" value="Animals — This attack has a number of strikes equal to the number of characters in the company; each strike is at 8 prowess; Orcs - 4 strikes at 9 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F3"/>
        <attr key="type" value="Hero Site"/>
@@ -4003,13 +4008,13 @@ Nazgûl — 1 strike at 15 prowess"/>
     <card name="Mount Doom" graphics="MountDoomRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gorgoroth"/>
        <attr key="site_type" value="{D}"/>
        <attr key="special" value="This site may only be moved to using region movement from a site in Imlad Morgul, Gorgoroth, Udûn, or Nurn.
 Hazard creatures may be keyed to this site regardless of countering effects in play.
 The base hazard limit against any company at or moving to this site is modified by +2."/>
-       <attr key="draw_opp" value="6"/>
+       <attr key="draw_opp" value="3"/>
        <attr key="site_path" value=""/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -4017,12 +4022,12 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Mount Gram" graphics="MountGramRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Angmar"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 6 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{s}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
@@ -4031,12 +4036,12 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Mount Gundabad" graphics="MountGundabadRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Gundabad"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 7 prowess; Orcs - 2 strikes at 8 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{b}{d}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -4045,11 +4050,11 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Old Forest" graphics="OldForestRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Cardolan"/>
        <attr key="site_type" value="{B}"/>
        <attr key="auto_attack" value="Awakened Plant - 2 strikes at 8 prowess"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
@@ -4057,7 +4062,7 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Ost-in-Edhil" graphics="OstinEdhilRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Hollin"/>
        <attr key="auto_attack" value="Animals - 3 strikes at 5 prowess"/>
        <attr key="site_type" value="{R}"/>
@@ -4070,10 +4075,10 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Pelargir" graphics="PelargirRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Lebennin"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{f}{f}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -4081,23 +4086,24 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Rhosgobel" graphics="RhosgobelRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Southern Mirkwood"/>
        <attr key="site_type" value="{F}"/>
        <attr key="playable" value="Items (minor)"/>
        <attr key="special" value="Characters at this site may heal during the untap phase as though it were a H.  One non-unique ally may be played at this site during the site phase regardless of its normal home site, even if the site is tapped."/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{d}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
     </card>
     <card name="Rivendell" graphics="RivendellRW.jpg" back="1" text="">
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
+       <attr key="haven" value="Rivendell"/>
        <attr key="haven1" value="Lórien - {w}{w}{w}{w}"/>
        <attr key="region" value="Rhudaur"/>
        <attr key="haven2" value="Grey Havens - {f}{w}{w}"/>
        <attr key="site_type" value="{H}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
 	   <attr key="special" value="This site untaps during the untap phase."/>
@@ -4105,12 +4111,12 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Ruined Signal Tower" graphics="RuinedSignalTowerRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Enedhwaith"/>
        <attr key="auto_attack" value="Spiders - 2 strikes at 8 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
@@ -4118,12 +4124,12 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Sarn Goriwing" graphics="SarnGoriwingRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Heart of Mirkwood"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 7 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{w}{w}"/>
        <attr key="rarity" value="CA"/>
        <attr key="type" value="Hero Site"/>
@@ -4131,12 +4137,12 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Shelob's Lair" graphics="ShelobsLairRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Imlad Morgul"/>
        <attr key="auto_attack" value="Orcs - 2 strikes at 8 prowess; Spider - 1 strike at 18 prowess"/>
        <attr key="site_type" value="{S}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{b}{f}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4145,10 +4151,10 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Shrel-Kain" graphics="ShrelKainRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Dorwinion"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="3"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{b}{w}{b}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -4156,10 +4162,10 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Southron Oasis" graphics="SouthronOasisRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Harondor"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{c}{c}{w}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4168,12 +4174,12 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="Stone-circle" graphics="StonecircleRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Old Pûkel Gap"/>
        <attr key="auto_attack" value="Pûkel-Creature - 1 strike at 9 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{w}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4181,14 +4187,14 @@ The base hazard limit against any company at or moving to this site is modified 
     <card name="The Lonely Mountain" graphics="TheLonelyMountainRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Northern Rhovanion"/>
        <attr key="auto_attack" value="Dragon - 1 strike at 14 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater, gold ring)"/>
 	<attr key="special" value="Smaug's Lair.  If a manifestation of Smaug has been defeated, remove the automatic-attack.
 This site contains a hoard."/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{b}{w}"/>
        <attr key="rarity" value="F2"/>
        <attr key="type" value="Hero Site"/>
@@ -4197,12 +4203,12 @@ This site contains a hoard."/>
     <card name="The Stones" graphics="TheStonesRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Andrast"/>
        <attr key="auto_attack" value="Pûkel-Creature - 1 strike at 9 prowess; Pûkel-Creature - 1 strike at 9 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{w}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4210,11 +4216,11 @@ This site contains a hoard."/>
     <card name="The White Towers" graphics="TheWhiteTowersRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="auto_attack" value="Animals - 2 strikes at 5 prowess"/>
        <attr key="site_type" value="{R}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="U"/>
        <attr key="type" value="Hero Site"/>
@@ -4222,12 +4228,12 @@ This site contains a hoard."/>
     <card name="The Wind Throne" graphics="TheWindThroneRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Grey Mountain Narrows"/>
        <attr key="auto_attack" value="Orcs - 3 strikes at 7 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information, Items (minor)"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{w}{b}{s}"/>
        <attr key="rarity" value="F5"/>
        <attr key="type" value="Hero Site"/>
@@ -4236,10 +4242,10 @@ This site contains a hoard."/>
     <card name="Thranduil's Halls" graphics="ThranduilsHallsRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Woodland Realm"/>
        <attr key="site_type" value="{F}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{b}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -4247,13 +4253,13 @@ This site contains a hoard."/>
     <card name="Tolfalas" graphics="TolfalasRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Mouths of the Anduin"/>
        <attr key="auto_attack" value="Undead - 3 strikes at 7 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Items (minor, major, greater)"/>
        <attr key="special" value="The only Greater Items that may be played here are Palantíri"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{c}{c}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4261,10 +4267,10 @@ This site contains a hoard."/>
     <card name="Vale of Erech" graphics="ValeofErechRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Lamedon"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{b}{b}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4272,10 +4278,10 @@ This site contains a hoard."/>
     <card name="Variag Camp" graphics="VariagCampRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="3"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Khand"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="4"/>
+       <attr key="draw_opp" value="1"/>
        <attr key="site_path" value="{b}{c}{c}{w}{s}"/>
        <attr key="rarity" value="R"/>
        <attr key="type" value="Hero Site"/>
@@ -4283,12 +4289,12 @@ This site contains a hoard."/>
     <card name="Weathertop" graphics="WeathertopRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Rivendell"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Arthedain"/>
        <attr key="auto_attack" value="Animals - 2 strikes at 6 prowess"/>
        <attr key="site_type" value="{R}"/>
        <attr key="playable" value="Information"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F4"/>
        <attr key="type" value="Hero Site"/>
@@ -4296,11 +4302,11 @@ This site contains a hoard."/>
     <card name="Wellinghall" graphics="WellinghallRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="1"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Fangorn"/>
        <attr key="site_type" value="{F}"/>
 	<attr key="auto_attack" value="Awakened Plants - 2 strikes at 10 prowess (detainment)"/>
-       <attr key="draw_opp" value="1"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}"/>
        <attr key="rarity" value="F1"/>
        <attr key="type" value="Hero Site"/>
@@ -4308,10 +4314,10 @@ This site contains a hoard."/>
     <card name="Woodmen-town" graphics="WoodmentownRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Lórien"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Western Mirkwood"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{b}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
@@ -4319,10 +4325,10 @@ This site contains a hoard."/>
     <card name="Wose Passage-hold" graphics="WosePassageholdRW.jpg" back="1" text="">
        <attr key="unique" value="yes"/>
        <attr key="haven" value="Edhellond"/>
-       <attr key="draw" value="2"/>
+       <attr key="draw" value="0"/>
        <attr key="region" value="Old Pûkel-land"/>
        <attr key="site_type" value="{B}"/>
-       <attr key="draw_opp" value="2"/>
+       <attr key="draw_opp" value="0"/>
        <attr key="site_path" value="{w}{w}{w}"/>
        <attr key="rarity" value="CB"/>
        <attr key="type" value="Hero Site"/>
