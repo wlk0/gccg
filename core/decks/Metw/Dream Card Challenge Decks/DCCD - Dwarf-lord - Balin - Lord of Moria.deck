@@ -12,7 +12,7 @@ Deck
 
 1 Dwarven Art of War (DF)
 3 Dwarven Axe (DF)
-1 Fungi (DF)
+1 Old Grudge (DF)
 2 Origin of Stone (DF)
 
 # Dwarf-lord Character (3)
@@ -23,27 +23,27 @@ Deck
 
 1 Kori (DF)
 
-# Hazard (32)
+# Hazard (33)
 
 2 Ambusher (TW)
 1 An Unexpected Outpost (DM)
-1 Balrog of Moria (TW)
-1 Foolish Words (TD)
+2 Doors of Night (LE)
+1 Foolish Words (LE)
 1 Frightful Guardian (GW)
 3 Giant (TW)
 1 Grima Wormtongue (TI)
 1 His Own Master (RS)
 2 Hurling Rocks (DF)
-2 Lawless Men (LE)
+3 Lawless Men (LE)
+1 Lord of the Eorlingas (TI)
 1 Lord of the Woods (FB)
 1 Lure of Expedience (TW)
 1 Men of the Wood (NE)
 1 Mouth of Sauron (TW)
+1 Out of Practice (DF)
 3 Rank upon Rank (DM)
 1 Ransom (NE)
-2 Ruffians (WR)
 3 Sellswords Between Charters (LE)
-1 Taint of Glory (WR)
 2 Thrice Outnumbered (LE)
 1 Twilight (LE)
 
@@ -78,10 +78,10 @@ Deck
 # Stage Resource (7)
 
 1 Balin, Dwarf of All Trades (DF)
+1 Clad for War (DF)
 3 Deep Mountain Fortress (DF)
 1 Dwarven Galleries (DF)
 1 Great Miners (DF)
-1 Legacy of Smiths (WH)
 
 ####
 Pool
@@ -106,15 +106,21 @@ Pool
 
 1 Pipe (DF)
 
-# Minion Resource (1)
+# Minion Character (1)
+
+1 Gulla (LE)
+
+# Minion Resource (2)
 
 1 Foul-smelling Paste (LE)
+1 Strange Rations (LE)
 
 # Stage Resource (3)
 
 1 Crimson Hood (DF)
 1 Promise of Treasure (DF)
 1 Son of Fundin (DF)
+
 
 #########
 Sideboard
@@ -127,7 +133,7 @@ Sideboard
 
 # Hazard (9)
 
-1 Bardings (GW)
+1 Balrog of Moria (TW)
 1 Cardolanian Whalers (NW)
 1 Corsairs of Umbar (TW)
 1 Covetous Thoughts (LE)
@@ -135,15 +141,14 @@ Sideboard
 1 Horse-lords (LE)
 1 Many Burdens (NE)
 1 Muster Disperses (LE)
-1 Variag Horse-raiders (GP)
+1 Nameless Thing (DM)
 
 # Hero Character (1)
 
 1 Dwarven Miner (DF)
 
-# Hero Resource (14)
+# Hero Resource (13)
 
-1 Book of Mazarbul (TW)
 1 Gems of Arda (DM)
 1 Gollum (TW)
 1 Halls of Khazad-dûm (DF)
@@ -156,6 +161,10 @@ Sideboard
 1 Return to Old Dwellings (DF)
 1 The Old Thrush (TW)
 1 Vein of Arda (DM)
+
+# Minion Resource (1)
+
+1 I'll Be At Your Heels (LE)
 
 # Stage Resource (4)
 
@@ -186,8 +195,9 @@ Sites
 
 2 Deep Mines (WH)
 
-# Hero Site (22)
+# Hero Site (23)
 
+1 Amon Lind [H] (FB)
 1 Barrow-downs [H] (TW)
 1 Bree [H] (TW)
 1 Carn Dûm [H] (TW)
