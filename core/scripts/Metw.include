@@ -327,6 +327,7 @@ color2region{3}{(250,100,0)}="Hollin";
 color2region{3}{(150,150,150)}="Horse Plains";
 color2region{3}{(88,233,33)}="Hyarmenfalas";
 color2region{3}{(255,0,255)}="Ithilien";
+color2region{3}{(255,50,50)}="Imlad Morgul";
 color2region{3}{(192,192,192)}="Khand";
 color2region{3}{(100,100,200)}="Lamedon";
 color2region{3}{(128,255,255)}="Lebennin";
