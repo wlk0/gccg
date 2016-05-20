@@ -16,16 +16,6 @@
 			 <attr key="body" value="-"/>
 			 <attr key="cp" value="+1"/>
 		</card>
-        <card name="Beijabar Bees" graphics="Beijabar Bees.jpg" text="Vermin, Animals. 20 strikes. Playable only if Doors of Night is not in play. Detainment. May be played keyed to Anduin Vales, Beorn’s House, Rhosgobel and The Carrock. Cannot be played on a company containg a character with one of these sites as a home site. May also be played as a resource short-event by such character before initiating CvCC: opponent’s company faces an attack by Beijabar Bees.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Creature"/>
-			 <attr key="prowess" value="0/-"/>
-			 <attr key="mp" value="1*"/>
-			 <attr key="strikes" value="20"/>
-			 <attr key="subclass" value="Animals, Vermin"/>
-			 <attr key="keyword" value="Vermin"/>
-		</card>
 		<card name="Between Two Worlds" graphics="Between Two Worlds.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men if borne by a Man or Dúnadan with a normal mind of 8 or more. Bearer may tap test any gold ring item in his company. All non-Maia, non-Nazgul, non-Undead strikes against the bearer are ineffectual. Bearer may not have followers. Bearer must make a CC to move. Bearer may not bear non-ring items.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
@@ -34,7 +24,6 @@
 			 <attr key="cp" value="8"/>
 			 <attr key="keyword" value="Stature card"/>
 		</card>
-
 		<card name="Bound up with It" graphics="Bound up with It.jpg" text="Unique. All players must now test any gold ring items they have in play; only ring special items with a printed mp of 3 or more may be played resulting this test. Additionally, any Narya, Nenya or Vilya played this turn may be shuffled into the play deck instead of discarded. Any discarded Ring for Mortal Men may be shuffled into the play deck. This card may also be played as a hazard.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="R"/>
@@ -45,12 +34,6 @@
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
-		</card>
-		<card name="Death Carrying Vermin" graphics="Death Carrying Vermin.jpg" text="Disease. Playable on a character after a successful strike from a Vermin attack, if Doors of Night is in play. Target character must make a body check; failing this check only wounds the character. If not wounded after the check, discard this card. Target character must make a body check modified by -3 at the beginning of each of his untap phases. Any effect that would normally heal the character removes this card instead. Cannot be duplicated on a given character.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Permanent-event"/>
-			 <attr key="keyword" value="Disease"/>
 		</card>
 		<card name="Doomed to Die" graphics="Doomed to Die.jpg" text="As a permanent event, any character bearing a Ring for Mortal Men targeted by a stature card has his mind reduced by 3. Any character whose mind is reduced to 0 or less due to the effects of this card is eliminated; a Sauron player receives his mp as character mp. As a short event, playable on a Dúnadan or Man character with a body less than 9: character must make a CC modified by -2.">
 			 <attr key="type" value="Hazard"/>
@@ -72,6 +55,17 @@
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Short-event"/>
+		</card>
+		<card name="Familiar" graphics="Familiar.jpg" text="Magic. Spirit-magic. Playable on a spirit-magic-using character if his company has faced a vermin attack this turn (or if Swarm of Bats is in play on the company). This card becomes an ally under target characterâ€™s control, with a prowess equal to its controllerâ€™s mind (10 if an avatar). Familiar normally cannot be attacked. tap: if opponent has a company at a site in the same or an adjacent region as Familiar, to reveal a number of cards from the top of his play deck equal to controllerâ€™s mind The first creature revealed attacks Familar. After the attack, discard the creature and shuffle all other cards back into the play deck. If the attack was successful, discard Familiar; otherwise invert Familiar, which now gives 1 ally mp.">
+			 <attr key="type" value="Minion Resource"/>
+			 <attr key="rarity" value="C"/>
+			 <attr key="class" value="Permanent-event"/>
+			 <attr key="prowess" value="*"/>
+			 <attr key="body" value="-"/>
+			 <attr key="mind" value="1"/>
+			 <attr key="mp" value="(1)"/>
+			 <attr key="magic" value="Spirit-magic"/>
+			 <attr key="keyword" value="Scout ally"/>
 		</card>
 		<card name="Fell Deeds" graphics="Fell Deeds.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men,if borne by a Ringwraith or a Man or Dúnadan warrior. Bearer’s company becomes overt and may initiate CvCC against any other company (you receive kill mp from it). The body of all strikes against characters in the company is reduced by -1. Additionally, any item in the company has its maximum bonus to prowess and/or body increased to 10 (if lower than 10).">
 			 <attr key="type" value="Dual Resource"/>
@@ -102,11 +96,6 @@
 			 <attr key="rarity" value="C"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="It Stinks" graphics="It Stinks.jpg" text="All sites with an Orc automatic-attack gain an additional automatic-attack: Vermin — 7 strikes with 4 prowess (detainment). Any wounded character facing a strike from this attack must make a body check. Cannot be duplicated.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Permanent-event"/>
-		</card>
 		<card name="King of Mighty Words" graphics="King of Mighty Words.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men,if borne by a Man or Dúnadan diplomat. +4 to bearer’s EI. One Man or Dúnadan character may be played at the bearer’s current site during the organization phase, in addition to the one character per turn limit. Such character may be taken from your hand, discard pile or sideboard.">
 			 <attr key="type" value="Dual Resource"/>
 			 <attr key="rarity" value="U"/>
@@ -115,16 +104,6 @@
 			 <attr key="influence" value="+4"/>
 			 <attr key="cp" value="8"/>
 			 <attr key="keyword" value="Stature card"/>
-		</card>
-		<card name="Leeches" graphics="Leeches.jpg" text="Vermin. Animals. May be played keyed to any swamp, or on a company using port-on-river movement or having faced Enchanted Stream or River this turn. Detainment. Each character faces one strike. Any character tapped by Leeches must make a roll; if the result is greater than the character’s body +2, he is wounded. If no strike of the attack is successful, Leeches are defeated.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Creature"/>
-			 <attr key="prowess" value="7"/>
-			 <attr key="body" value="-"/>
-			 <attr key="mp" value="1"/>
-			 <attr key="strikes" value="1/each"/>
-			 <attr key="subclass" value="Animals, Vermin"/>
 		</card>
 		<card name="Lord of Beasts" graphics="Lord of Beasts.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men,if borne by a Man or Dúnadan with a normal prowess of6 or more. Bearer gains the ranger skill. The region containing his current site is also considered a Wilderness [w] for the purpose of resource play. Any hazards which affect the prowess/body of Animal attacks also affect the bearer. Your animal factions give an additional mp.">
 			 <attr key="type" value="Hero Resource"/>
@@ -271,6 +250,13 @@
 			 <attr key="class" value="Permanent-event"/>
 			 <attr key="specific" value="Sauron"/>
 			 <attr key="keyword" value="startable"/>
+		</card>
+		<card name="Under His Dominion" graphics="Under His Dominion.jpg" text="Playable on an opponent'€™s character taken prisoner at a Dark-hold [D] or Darkhaven [K]. The character is released into his own company at a site in an adjacent region. He gives -2 mp and cannot be discarded by his controlling player or by a CP. He cannot tap during the site phase. Once per phase, the hazard player may modify one roll for an entity in his company by +2 or -2. This card cannot be the target of resource events. During the organization phase, a sage in the company may tap to attempt to remove this card. Make a roll; if the result is greater than the characterâ€™s mind, discard this card.">
+			 <attr key="type" value="Hazard"/>
+			 <attr key="rarity" value="U"/>
+			 <attr key="class" value="Permanent-event"/>
+			 <attr key="mp" value="-2"/>
+			 <attr key="keyword" value="Prisoner"/>
 		</card>
 		<card name="Unspeakable Beauty" graphics="Unspeakable Beauty.jpg" text="Unique. Stature card. Playable on a Ring for Mortal Men borne by a female Man or Dúnadan character (or by Adûnaphel the Ringwraith). Bearer may designate one male character in her company which may be controlled costing no EI; you may bring such a character into play regardless of his mind value and he must always be controlled by bearer (regardless of any hazard effects). Additionally, +10 to bearer’s influence attempts against opponent’s male characters. This modification cannot be altered by any other effect.">
 			 <attr key="type" value="Dual Resource"/>
