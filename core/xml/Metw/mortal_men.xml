@@ -135,18 +135,6 @@
 			 <attr key="cp" value="8"/>
 			 <attr key="keyword" value="Stature card"/>
 		</card>
-		<card name="Morgai-flies" graphics="Morgaiflies.jpg" text="Vermin. Animals. 20 strikes. Detainment. May also be played keyed to a region containing a magic-using minion character’s current site, if you control the magic user.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Creature"/>
-			 <attr key="prowess" value="1"/>
-			 <attr key="body" value="-"/>
-			 <attr key="mp" value="1"/>
-			 <attr key="playable" value="{s}{d}"/>
-			 <attr key="strikes" value="20"/>
-			 <attr key="subclass" value="Animals, Vermin"/>
-			 <attr key="keyword" value="Vermin"/>
-		</card>
 		<card name="News from Realms Past" graphics="News from Realms Past.jpg" text="Playable on your Ringwraith at one of his home sites outside Mordor or Mirkwood. Discard your Ringwraith and any allies and followers he controls. Place any other cards he controls with this card “off to the side”; return them to your Ringwraith when he enters play again. Your Ringwraith may now be in a company with non- Ringwraith characters and may play Ring for Mortal Men at Barad-dûr (Dol Guldur if The Necromancer is in play and Dark Spires Rising is not inverted). Any attacks keyed to Dark-domain or [d] Shadow-land [s] attack normal against your Ringwraith’s company.">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="C"/>
@@ -209,13 +197,6 @@
 			 <attr key="mp" value="-1(1)"/>
 			 <attr key="cp" value="3"/>
 			 <attr key="keyword" value="Man Ring"/>
-		</card>
-		<card name="Ring-chained" graphics="Ringchained.jpg" text="Corruption. Playable on a character bearing a ring item. The character receives 2 CP and makes a CC at the end of each of his phases if he does not bear a ring item. During his organization phase, if the character does not bear a ring item, he may tap to attempt to remove this card by making a roll — if the result is greater than 6, discard this card. Cannnot be duplicated on a given character.">
-			 <attr key="type" value="Hazard"/>
-			 <attr key="rarity" value="C"/>
-			 <attr key="class" value="Permanent-event"/>
-			 <attr key="cp" value="2"/>
-			 <attr key="keyword" value="Corruption"/>
 		</card>
 		<card name="Secret Precious" graphics="Secret Precious.jpg" text="Lost Knowledge. Tap a scout and a sage at a Free-hold [F] or Border-hold [B] to make gold ring items playable at the site until the end of the turn. Opponent may bring one hazard from his sideboard or discard pile to his play deck (reshuffle).">
 			 <attr key="type" value="Hero Resource"/>
