@@ -21,7 +21,7 @@
        <attr key="body" value="10"/>
        <attr key="prowess" value="15"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -45,7 +45,7 @@
        <attr key="body" value="9"/>
        <attr key="prowess" value="16"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -257,7 +257,7 @@
        <attr key="body" value="10"/>
        <attr key="prowess" value="15"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -369,7 +369,7 @@
        <attr key="body" value="9"/>
        <attr key="prowess" value="15"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -392,7 +392,7 @@
        <attr key="body" value="10"/>
        <attr key="prowess" value="15"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -404,7 +404,7 @@
        <attr key="body" value="8"/>
        <attr key="prowess" value="18"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -686,7 +686,7 @@
        <attr key="body" value="10"/>
        <attr key="prowess" value="15"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -883,7 +883,7 @@
        <attr key="body" value="9"/>
        <attr key="prowess" value="15"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
@@ -940,7 +940,7 @@
        <attr key="body" value="12"/>
        <attr key="prowess" value="17"/>
        <attr key="playable" value="{d}{D}"/>
-       <attr key="subclass" value="Nazgul"/>
+       <attr key="subclass" value="Nazgûl"/>
        <attr key="rarity" value="R"/>
        <attr key="class" value="Creature/Permanent-event"/>
        <attr key="type" value="Hazard"/>
