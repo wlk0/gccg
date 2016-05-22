@@ -34,7 +34,7 @@ Deck
 1 Grasping and Ungracious (TI)
 1 Lord of the Woods (FB)
 1 Lure of Expedience (TW)
-1 Morgai-flies (NM)
+1 Morgai-flies (NE)
 1 Neeker-breekers (PR)
 1 Out of Practice (DF)
 1 Peril Returned (TD)
@@ -47,10 +47,6 @@ Deck
 1 Wargs (LE)
 1 Were-wolf (NE)
 3 Wolves (TW)
-
-# Minion Character (1)
-
-1 Drór (DM)
 
 # Hero Character (4)
 
@@ -80,6 +76,10 @@ Deck
 1 The Mithril-coat [H] (TW)
 1 Valiant Sword (TD)
 
+# Minion Character (1)
+
+1 Drór (DM)
+
 # Minion Resource (5)
 
 2 Crept Along Cleverly (WH)
@@ -108,8 +108,8 @@ Pool
 1 Frerin (DF)
 1 King's Advisor (DF)
 1 Lipór (DF)
-1 Náin, Son of Grór (DF)
 1 Norin (DF)
+1 Náin, Son of Grór (DF)
 1 Pathfinder (DF)
 
 # Hero Resource (3)
@@ -180,7 +180,7 @@ Sites
 
 1 The Drowning-deeps [D] (DF)
 
-# Dwarf-lord Site (2)
+# Dwarf-lord Site (3)
 
 2 Blue Mountain Dwarf-hold [D] (DF)
 1 Iron Hill Dwarf-hold [D] (DF)

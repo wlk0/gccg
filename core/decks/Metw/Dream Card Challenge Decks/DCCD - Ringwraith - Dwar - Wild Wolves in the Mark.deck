@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Ringwraith - Dwar - Wild Wolves in the Mark
+#      DCCD - Ringwraith - Dwar - Wild Wolves
 #
 
 ####
@@ -40,9 +40,10 @@ Deck
 1 Wolf-riders (TD)
 2 Wolves (TW)
 
-# Minion Character (10)
+# Minion Character (11)
 
 3 Dwar the Ringwraith (LE)
+1 Grishnákh (LE)
 1 Lugdush (WH)
 3 Orc Grunt (NE)
 1 Orc Shaman (NE)
@@ -52,9 +53,9 @@ Deck
 # Minion Resource (35)
 
 1 All Thought Bent upon It (LE)
-1 Breeder's Stock (KN)
+1 Breeder's Stock (NE)
 2 Burning Rick, Cot, and Tree (LE)
-1 Call to Arms (KN)
+1 Call to Arms (NE)
 2 Driven as by a Madness (AS)
 1 Gifts as Given of Old (LE)
 1 Goblins of Goblin-gate (LE)
@@ -87,12 +88,12 @@ Pool
 1 Bulrakur (NE)
 1 Durba (NW)
 1 Gaurhir (NE)
-1 Grishnákh (LE)
+1 Orc Archer (NE)
 1 Virsh (NE)
 
 # Minion Resource (3)
 
-1 Dog-lord of Waw (GP)
+1 Dog-lord of Waw (NE)
 1 Orc-endurance (NE)
 1 Orc-pouch (NE)
 
@@ -121,14 +122,14 @@ Sideboard
 1 Black Rider (LE)
 1 Dwar Unleashed (LE)
 1 Fizzling Torch (NE)
-1 Gé of Ogamur (GP)
+1 Gé of Ogamur (NE)
 1 Magic Ring of Delusion (LE)
 1 Misty Mountain Wargs (LE)
 1 Orc-draughts (LE)
 1 Orc-liquor (LE)
 1 Poison (LE)
 2 Saw-toothed Blade (LE)
-1 Slew the Great Warrior (TI)
+1 Slew the Great Warrior (NE)
 2 War-warg (LE)
 1 War-wolf (LE)
 1 White Mountain Wolves (LE)
@@ -152,7 +153,7 @@ Sites
 1 Dol Guldur [M] (LE)
 1 Dunharrow [M] (LE)
 1 Dunnish Clan-hold [M] (LE)
-1 Durthang [M] (WR)
+1 Durthang [M] (NE)
 1 Ettenmoors [M] (LE)
 1 Geann a-Lisch [M] (LE)
 1 Glittering Caves [M] (LE)
@@ -160,7 +161,7 @@ Sites
 1 Helm's Deep [M] (TI)
 1 Hermit's Hill [M] (LE)
 1 Isengard [M] (LE)
-1 Mathlaburg [M] (GW)
+1 Mathlaburg [M] (NE)
 1 Moria [M] (LE)
 1 Morkai [M] (KN)
 1 Mount Gundabad [M] (LE)
