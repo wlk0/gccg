@@ -266,11 +266,6 @@
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Permanent-event"/>
 		</card>
-		<card name="Q" graphics=".jpg" text="">
-			 <attr key="type" value="Minion Resource"/>
-			 <attr key="rarity" value="U"/>
-			 <attr key="class" value="Permanent-event"/>
-		</card>	
 		<card name="U" graphics=".jpg" text="">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="U"/>
