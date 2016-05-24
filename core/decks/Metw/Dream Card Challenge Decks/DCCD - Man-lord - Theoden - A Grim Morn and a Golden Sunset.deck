@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Man-lord - Theoden - A Grim Morn and a Golden Sunset
+#      DCCD - Man-lord - Theoden - Grim Morn and a Golden Sunset
 #
 
 ####
@@ -50,9 +50,9 @@ Deck
 2 Evermind (TI)
 1 Gúthwinë (TI)
 2 Halfling Stealth (TW)
+1 Herugrim (TI)
 1 Horn of Eorl (TI)
 1 Hour of Need (DM)
-1 Herugrim (TI)
 1 Lord of the Mark (TI)
 2 Lucky Strike (TW)
 1 Marvels Told (TD)
@@ -64,8 +64,8 @@ Deck
 1 Red Arrow (TW)
 1 Riders of Rohan (TW)
 1 Shadowfax (TW)
-1 Son of Éomund (TI)
 2 Smoke Rings (DM)
+1 Son of Éomund (TI)
 1 The Great Battle of Our Time (WR)
 1 The Wind Is Turning (WR)
 1 Token of Goodwill (DM)
@@ -92,7 +92,7 @@ Pool
 1 Ceorl (TI)
 1 Dúnhere (TI)
 1 Elfhelm (TI)
-1 Grimbold of Westfold (TI)
+1 Grimbold (TI)
 1 Hirgon (WR)
 1 Merry (TW)
 1 Morwen of Lossarnach (TI)
@@ -124,10 +124,10 @@ Sideboard
 1 Covetous Thoughts (LE)
 1 Horse-lords (LE)
 1 Lost at Sea (TW)
-1 Many Burdens (RS)
+1 Many Burdens (NE)
 1 Muster Disperses (LE)
 1 Nameless Thing (DM)
-1 Politics (WR)
+1 Politics (NE)
 1 Scatha Ahunt (TD)
 1 Siege of Gondor (WR)
 
@@ -158,7 +158,7 @@ Sideboard
 Sites
 #####
 
-# Hero Site (25)
+# Hero Site (27)
 
 1 Amon Hen [H] (TW)
 1 Amon Lind [H] (FB)
@@ -169,15 +169,15 @@ Sites
 1 Dunnish Clan-hold [H] (TW)
 1 Edoras [H] (TW)
 1 Geann a-Lisch [H] (AS)
-1 Gobel Mírlond [H] (AS)
 1 Glittering Caves [H] (TW)
+1 Gobel Mírlond [H] (AS)
 1 Haudh-in-Gwanûr [H] (DM)
 1 Helm's Deep [H] (TI)
 1 Hermit's Hill [H] (DM)
 1 Isengard [H] (TW)
-1 Lórien [H] (TW)
 1 Lossarnach [H] (WR)
-1 Mathlaburg [H] (GW)
+1 Lórien [H] (TW)
+1 Mathlaburg [H] (NE)
 1 Minas Tirith [H] (TW)
 1 Osgiliath [H] (WR)
 1 Raider-hold [H] (AS)

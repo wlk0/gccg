@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Minion - Warlord - Ardagor - Terror of Cardolan
+#      DCCD - Warlord - Ardagor - Terror of Cardolan
 #
 
 ####
@@ -19,7 +19,7 @@ Deck
 # Hazard (33)
 
 2 An Unexpected Outpost (DM)
-1 Arda Marred (ML)
+1 Arda Marred (NE)
 1 Bûthrakaur the Green (DM)
 3 Doors of Night (TW)
 1 Echoes of Númenor's Fall (SL)
@@ -59,9 +59,9 @@ Deck
 1 Bloodspike (NE)
 1 Bone-basher (NE)
 1 Bone-hilted Broadsword (GW)
-1 Breeder's Stock (KN)
+1 Breeder's Stock (NE)
 1 Burning Rick, Cot, and Tree (LE)
-1 Call to Arms (KN)
+1 Call to Arms (NE)
 1 Cave Troll (BA)
 1 Crept Along Cleverly (WH)
 1 Driven as by a Madness (AS)
@@ -79,7 +79,7 @@ Deck
 1 Poison of his Voice (WH)
 1 Records Unread (AS)
 1 Regiment of Black Crows (AS)
-1 Slew the Great Warrior (TI)
+1 Slew the Great Warrior (NE)
 1 Under His Blow (LE)
 1 Voices of Malice (LE)
 2 Weigh All Things to a Nicety (LE)
@@ -113,7 +113,7 @@ Sideboard
 # Dual Resource (3)
 
 1 Engines of Defense (WR)
-1 Mace-master (NE)
+1 Mace-master (WR)
 1 The Dunmen's Dogs (KN)
 
 # Hazard (9)
@@ -121,9 +121,9 @@ Sideboard
 1 Bloodeye Ravish (KN)
 1 Drowning Seas (TW)
 1 In Darkness Bind Them (DM)
-1 Many Burdens (RS)
+1 Many Burdens (NE)
 1 Ninevet (DF)
-1 Politics (WR)
+1 Politics (NE)
 1 Rain-drake (TD)
 1 Snow-troll (NW)
 1 Umagaur the Pale (DM)

@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      dccd - Ringwraith - Adûnaphel - Faithless Stewards
+#      DCCD - Ringwraith - Adunaphel - Faithless Stewards
 #
 
 ####
@@ -52,7 +52,7 @@ Deck
 # Minion Resource (29)
 
 1 Ard Once Vain (NE)
-1 Black Númenóreans [M] (AS)
+1 Black Númenóreans (AS)
 1 Cult of the Dark Lord (NE)
 3 Dark Embassy (NE)
 2 Deeper Shadow (LE)
@@ -103,8 +103,8 @@ Sideboard
 
 # Dual Resource (3)
 
-1 Oliphaunt (SL)
 1 Mounted Lance (TI)
+1 Oliphaunt (SL)
 1 Tarma of Ar-Pharazôn (SL)
 
 # Hazard (11)
@@ -119,7 +119,7 @@ Sideboard
 1 Stout Men of Gondor (AS)
 1 Too Much to Ask (WR)
 1 Twilight (TW)
-1 Variag Horse-raiders (GP)
+1 Variag Horse-raiders (NE)
 
 # Minion Resource (15)
 
@@ -175,6 +175,5 @@ Sites
 1 The Hospice of Lost Faith [M] (SL)
 1 Tolfalas [M] (AS)
 1 Umbar [M] (SL)
-1 Vamag [M] (SL)
 1 Vale of Erech [M] (LE)
-
+1 Vamag [M] (SL)

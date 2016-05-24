@@ -16,8 +16,8 @@ Deck
 
 2 An Unexpected Outpost (DM)
 1 Beorning Skin-changers (BA)
-2 Boars (FB)
 1 Black Crows (FB)
+2 Boars (FB)
 1 Canadras Ahunt (NW)
 1 Eagles Ahunt (DF)
 2 Ent in Search of the Entwives (LE)
@@ -106,8 +106,8 @@ Sideboard
 # Hazard (7)
 
 1 Fell Turtle (TW)
-1 Muster Disperses (LE)
 1 Majmun (SL)
+1 Muster Disperses (LE)
 1 Nameless Thing (DM)
 1 Slip Treacherously (AS)
 1 Terror of Halifirien (TI)
@@ -138,12 +138,16 @@ Sideboard
 Sites
 #####
 
+# Hazard (1)
+
+1 Canadras [H] #1 (NW)
+
 # Hero Site (28)
 
 1 Achrond [H] (NW)
 1 Amon Anlug [H] (NW)
 1 Bernastath [H] (NW)
-1 Canadras [H] #1 (NW)
+1 Canadras [H] #2 (NW)
 1 Ei Missa [H] (NW)
 1 Eithel Morgoth [H] (NW)
 2 Evermist [H] (NW)
@@ -167,4 +171,3 @@ Sites
 1 Thaurung [H] (NW)
 1 Thilgon's Tomb [H] (NW)
 1 Tol Morwen [H] (NW)
-
