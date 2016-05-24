@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Ringwraith - Ûvatha - The Baradhrim League
+#      DCCD - Ringwraith - Uvatha - The Baradhrim League
 #
 
 ####
@@ -11,7 +11,7 @@ Deck
 # Dual Resource (2)
 
 1 Iorags (GP)
-1 Sceptre of Spirits (GP)
+1 Sceptre of Spirits (NE)
 
 # Hazard (33)
 
@@ -19,7 +19,7 @@ Deck
 1 "Tom" (Tûma) (TW)
 1 "William" (Wûluag) (TW)
 2 An Unexpected Outpost (DM)
-2 Arda Marred (ML)
+2 Arda Marred (NE)
 1 Black Crows (FB)
 1 Bonds of Winter (NW)
 2 Choking Shadows (TW)
@@ -48,7 +48,7 @@ Deck
 # Minion Resource (31)
 
 3 Black Steed (NE)
-2 Call to Arms (KN)
+2 Call to Arms (NE)
 2 Creating Their Domain (NE)
 1 Deeper Shadow (LE)
 2 Forced March (LE)
@@ -62,7 +62,7 @@ Deck
 1 The Ring Leaves Its Mark (LE)
 1 Tribute to Sauron (NE)
 2 Usriev of Treachery (AS)
-1 Variag-king of Khand (GP)
+1 Variag-king of Khand (NE)
 1 Variags of Khand [M] (LE)
 1 Voices of Malice (LE)
 3 Weigh All Things to a Nicety (LE)
@@ -92,7 +92,7 @@ Pool
 # Minion Resource (3)
 
 1 Blazon of the Eye (LE)
-1 Variag-king of Khand (GP)
+1 Variag-king of Khand (NE)
 1 Whip (LE)
 
 #########
@@ -103,7 +103,7 @@ Sideboard
 
 1 Drowning Seas (TW)
 1 Greed (TW)
-1 Many Burdens (RS)
+1 Many Burdens (NE)
 1 Muster Disperses (TW)
 1 No Place for a Pony (RS)
 1 Seized by Terror (DM)
@@ -111,21 +111,22 @@ Sideboard
 1 The Burden of Time (TW)
 1 Too Much to Ask (WR)
 
-# Minion Resource (19)
+# Minion Resource (20)
 
 1 Ancient Secrets (BA)
 1 Balchoth (LE)
-1 Bat-winged Helmet (GP)
+1 Bat-winged Helmet (NE)
 1 Binding-ring (LE)
-1 Corsairs of Rhûn [M] (AS)
 1 Channels of Chey (GP)
+1 Corsairs of Rhûn (AS)
 1 Easterlings [M] (LE)
 1 Favoured by the Eye (NE)
 1 Fizzling Torch (NE)
 1 Heralded Lord (LE)
-2 Horse-tamer (GP)
+2 Horse-tamer (NE)
 1 Phantom Devised by Wizardry (NE)
-1 Ring of the Dispossessed (GP)
+1 Ring of the Dispossessed (NE)
+1 Servants in the South and East (NE)
 1 Sojourn in Shadows (WH)
 2 The Baradhrim League (GP)
 1 Voices of Malice (LE)
@@ -135,7 +136,7 @@ Sideboard
 Sites
 #####
 
-# Minion Site (30)
+# Minion Site (33)
 
 1 Adan Tomb [M] (GP)
 1 Amrûn [M] (SL)
@@ -151,18 +152,20 @@ Sites
 1 Korondaj [M] (SL)
 1 Kref Masar [M] (SL)
 1 Lar-huz [M] (GP)
+1 Lâorkí [M] (GP)
 1 Medlóshad [M] (GP)
 2 Minas Morgul [M] (LE)
-1 Mistrand [M] (GP)
+1 Mistrand [M] (NE)
+1 Nennûrad [M] (GP)
 1 Nûrniag Camp [M] (LE)
-1 Oraishapek's Mound [M] (GP)
+1 Oraishapek's Mound [M] (NE)
 1 Raider-hold [M] (LE)
 1 Relerindú [M] (GP)
+1 Riavod [M] (GP)
 1 Strayhold [M] (NE)
 1 Sturlurtsa [M] (GP)
 1 Temple of Kondri Odchi [M] (GP)
-1 Temple of Lokuthor [M] (GP)
-1 Tol Buruth [M] (NE)
+1 Temple of Lokuthor [M] (NE)
+1 Tol Buruth [M] (GP)
 1 Variag Camp [M] (LE)
 1 Wain-Easterling Camp [M] (GP)
-

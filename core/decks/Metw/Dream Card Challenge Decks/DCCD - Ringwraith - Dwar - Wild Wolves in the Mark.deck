@@ -1,21 +1,20 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Ringwraith - Dwar - Wild Wolves
+#      DCCD - Ringwraith - Dwar - Wild Wolves in the Mark
 #
 
 ####
 Deck
 ####
 
-# Hazard (35)
+# Hazard (34)
 
 1 An Unexpected Outpost (DM)
 1 Caran-carach (NE)
 1 Despair of the Heart (LE)
 2 Doors of Night (TW)
 1 Doors of Night (LE)
-1 Eyes of the Shadow (DM)
 1 Glutan (RS)
 2 Hobgoblins (TD)
 1 Hobgoblins (LE)
@@ -50,7 +49,7 @@ Deck
 1 Uglúk (WH)
 1 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (35)
+# Minion Resource (34)
 
 1 All Thought Bent upon It (LE)
 1 Breeder's Stock (NE)
@@ -59,10 +58,10 @@ Deck
 2 Driven as by a Madness (AS)
 1 Gifts as Given of Old (LE)
 1 Goblins of Goblin-gate (LE)
+1 Guardian Spirit (NW)
 3 Hold Rebuilt and Repaired (AS)
 1 I'll Report You (LE)
 2 Mechanical Bow (WH)
-1 Old Cache (LE)
 1 Orcs of Isengard (TI)
 1 Our Own Wolves (AS)
 1 Palantír of Orthanc [M] (LE)
@@ -77,7 +76,6 @@ Deck
 1 We Must Join with Him (TI)
 2 Weigh All Things to a Nicety (LE)
 1 Wolf-steed (NW)
-1 Wolves' Feed (KN)
 
 ####
 Pool
@@ -128,7 +126,6 @@ Sideboard
 1 Orc-draughts (LE)
 1 Orc-liquor (LE)
 1 Poison (LE)
-2 Saw-toothed Blade (LE)
 1 Slew the Great Warrior (NE)
 2 War-warg (LE)
 1 War-wolf (LE)
@@ -136,6 +133,8 @@ Sideboard
 1 Wolf-den (NE)
 2 Wolf-steed (NW)
 1 Wolves of Isengard (TI)
+1 Wolves' Feed (KN)
+1 Yellow-fanged Guard (NE)
 
 #####
 Sites

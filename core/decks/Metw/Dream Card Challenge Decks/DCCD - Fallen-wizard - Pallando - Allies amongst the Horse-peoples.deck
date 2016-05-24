@@ -8,9 +8,8 @@
 Deck
 ####
 
-# Dual Character (5)
+# Dual Character (4)
 
-1 Aryen the Beastmaster (GW)
 1 Daurukh (GP)
 1 Jehn Remak (SL)
 1 Khandash (SL)
@@ -27,8 +26,9 @@ Deck
 
 4 Pallando [F] (WH)
 
-# Grey Agent Character (1)
+# Grey Agent Character (2)
 
+1 Aryen (NE)
 1 Kori (DF)
 
 # Hazard (33)
@@ -159,11 +159,11 @@ Sideboard
 
 # Minion Resource (6)
 
-1 Bone Dragon (NE)
+1 Bone Dragon (GW)
 1 Magic Ring of Fury (LE)
 1 Minor Ring (LE)
-1 Ring of Flame (GP)
-1 Ring of the Dispossessed (GP)
+1 Ring of Flame (NE)
+1 Ring of the Dispossessed (NE)
 1 Secret Book (AS)
 
 # Stage Resource (5)
@@ -178,7 +178,7 @@ Sideboard
 Sites
 #####
 
-# Hero Site (25)
+# Hero Site (27)
 
 1 Amrûn [H] (SL)
 1 An Karagmir [H] (SL)
@@ -191,22 +191,19 @@ Sites
 1 Joghul's Shrine [H] (GP)
 1 Kref Masar [H] (SL)
 1 Maresh [H] (SL)
-1 Mistrand [H] (GP)
+1 Mistrand [H] (NE)
 1 Monastery of the True Faith [H] (SL)
 1 Mount Arysis [H] (SL)
 1 Nûrniag Camp [H] (AS)
+1 Oraishapek's Mound [H] (NE)
 1 Poison Rock [H] (BO)
 1 Southron Oasis [H] (TW)
 1 Sturlurtsa [H] (GP)
 1 Temple of Kondri Odchi [H] (GP)
+1 Temple of Lokuthor [H] (NE)
 1 The Hospice of Lost Faith [H] (SL)
 1 Thraath [H] (GP)
 1 Ulk Chey Sart [H] (GP)
 1 Ulk Jey Ama [H] (GP)
 1 Variag Camp [H] (TW)
 1 Wain-Easterling Camp [H] (GP)
-
-# Minion Site (2)
-
-1 Oraishapek's Mound [M] (GP)
-1 Temple of Lokuthor [M] (GP)

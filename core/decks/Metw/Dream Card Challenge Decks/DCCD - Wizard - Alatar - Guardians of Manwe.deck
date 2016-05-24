@@ -12,8 +12,9 @@ Deck
 
 1 Dúnadan Mariner (WR)
 
-# Dual Resource (5)
+# Dual Resource (6)
 
+1 Banishment (NE)
 1 Bow-master (GW)
 2 Elf-friend (FB)
 1 The Gwaedhel-spear (WR)
@@ -21,7 +22,7 @@ Deck
 
 # Hazard (33)
 
-2 Ambush! (TI)
+2 Ambushed (NE)
 2 An Unexpected Outpost (DM)
 1 Arthadan Rangers (LE)
 1 Drums (DM)
@@ -57,9 +58,8 @@ Deck
 1 Ranger of Arnor (KN)
 1 Tharúdan (FB)
 
-# Hero Resource (28)
+# Hero Resource (27)
 
-1 Banishment (NW)
 1 Crisfuin (FB)
 2 Eagle-mounts (TW)
 1 Elves of Edhellond (FP)
@@ -108,6 +108,10 @@ Pool
 Sideboard
 #########
 
+# Dual Resource (1)
+
+1 Banishment (NE)
+
 # Hazard (7)
 
 1 Elven Archer (FB)
@@ -118,11 +122,10 @@ Sideboard
 1 Ice-giant (NW)
 1 The Ring Has Moved On (RS)
 
-# Hero Resource (22)
+# Hero Resource (21)
 
 1 Ancient Knowledge (FB)
 1 Avari (GP)
-1 Banishment (NW)
 1 Eagle-watch (RS)
 1 Elendilmir (WR)
 1 Elves of Taur Rómen (FB)
@@ -190,9 +193,9 @@ Sites
 1 Linnarthurras [H] (NW)
 1 Lond Anarion [H] (DS)
 1 Lond Daer [H] (KN)
-1 Lugarlur [H] (SL)
+1 Lugarlur [H] (NE)
 1 Lórien [H] (TW)
-1 Mathlaburg [H] (GW)
+1 Mathlaburg [H] (NE)
 1 Minas Tirith [H] (TW)
 1 Moria [H] (TW)
 1 Mount Rerir [H] (FB)
