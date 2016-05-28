@@ -82,7 +82,7 @@
        <attr key="mind" value="3"/>
        <attr key="influence" value="1"/>
     </card>
-    <card name="The Arkenstone" graphics="TheArkenstoneDC.jpg" text="Unique. +5 to bearer's direct influence against Dwarves and Dwarf factions. Each Dwarf in play has +1 mind. If the bearer of this item is at the same site as a Dwarf character, you may discard this item to force the discard of the Dwarf (and all non-follower cards he controls).">
+    <card name="The Arkenstone" graphics="TheArkenstoneDC.jpg" text="Unique. Hoard item. Jewel +5 to bearer's direct influence against Dwarves and Dwarf factions. Each Dwarf in play has +1 mind. If the bearer of this item is at the same site as a non-avatar Dwarf character, you may discard this item to force the discard of the Dwarf (and all non-follower cards he controls).">
        <attr key="unique" value="yes"/>
        <attr key="corruption" value="3"/>
        <attr key="mp" value="3"/>
