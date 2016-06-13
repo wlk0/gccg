@@ -47,25 +47,25 @@ Deck
 
 # Minion Resource (31)
 
+1 Ancient Secrets (BA)
 3 Black Steed (NE)
 2 Call to Arms (NE)
-2 Creating Their Domain (NE)
-1 Deeper Shadow (LE)
-2 Forced March (LE)
+1 Crooked Promptings (LE)
+2 Deeper Shadow (LE)
+1 Easterlings [M] (LE)
 1 Freeze the Flesh (LE)
 1 Join With That Power (AS)
 1 Not Slay Needlessly (LE)
-1 Nûriags (AS)
+1 Orc Quarrels (LE)
 1 Ovatha's Bow (GP)
-2 Records Unread (AS)
+3 Records Unread (AS)
 1 The Baradhrim League (GP)
-1 The Ring Leaves Its Mark (LE)
-1 Tribute to Sauron (NE)
+2 Tribute to Sauron (NE)
 2 Usriev of Treachery (AS)
 1 Variag-king of Khand (NE)
 1 Variags of Khand [M] (LE)
 1 Voices of Malice (LE)
-3 Weigh All Things to a Nicety (LE)
+2 Weigh All Things to a Nicety (LE)
 2 Well-preserved (AS)
 1 Whispers of Rings (BA)
 
@@ -73,17 +73,17 @@ Deck
 Pool
 ####
 
-# Dual Character (2)
+# Dual Character (1)
 
-1 Harngorin (SL)
-1 Khandash (SL)
+1 Hungh (GP)
 
-# Minion Character (8)
+# Minion Character (9)
 
 1 Asternak (LE)
-1 Burdîlgoth (SL)
 1 Dâsakûn (DM)
 1 Gorovod (GP)
+1 Grachev Hos (NE)
+1 Horseman in the Night (LE)
 1 Mîonid (AS)
 1 Nazog (SL)
 1 Nevido Smôd (LE)
@@ -91,7 +91,7 @@ Pool
 
 # Minion Resource (3)
 
-1 Blazon of the Eye (LE)
+1 Creating Their Domain (NE)
 1 Variag-king of Khand (NE)
 1 Whip (LE)
 
@@ -99,10 +99,12 @@ Pool
 Sideboard
 #########
 
-# Hazard (9)
+# Hazard (11)
 
 1 Drowning Seas (TW)
 1 Greed (TW)
+1 Lost in Free-domains (TW)
+1 Lure of the Senses (LE)
 1 Many Burdens (NE)
 1 Muster Disperses (TW)
 1 No Place for a Pony (RS)
@@ -111,24 +113,24 @@ Sideboard
 1 The Burden of Time (TW)
 1 Too Much to Ask (WR)
 
-# Minion Resource (20)
+# Minion Resource (19)
 
-1 Ancient Secrets (BA)
 1 Balchoth (LE)
 1 Bat-winged Helmet (NE)
 1 Binding-ring (LE)
-1 Channels of Chey (GP)
 1 Corsairs of Rhûn (AS)
-1 Easterlings [M] (LE)
 1 Favoured by the Eye (NE)
+1 Feagwath (NE)
 1 Fizzling Torch (NE)
+1 Forced March (LE)
 1 Heralded Lord (LE)
 2 Horse-tamer (NE)
+1 Nûriags (AS)
 1 Phantom Devised by Wizardry (NE)
 1 Ring of the Dispossessed (NE)
 1 Servants in the South and East (NE)
 1 Sojourn in Shadows (WH)
-2 The Baradhrim League (GP)
+1 The Baradhrim League (GP)
 1 Voices of Malice (LE)
 1 Wain-easterlings [M] (AS)
 
