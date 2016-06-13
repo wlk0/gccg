@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Dragon-lord - Smaug - The Golden
+#      DCCD - Dragon-lord - Smaug - Chiefest of Calamities
 #
 
 ####
@@ -39,12 +39,10 @@ Deck
 2 Worm's Stench (TD)
 1 Wyrmsiege (DF)
 
-# Minion Character (8)
+# Minion Character (6)
 
-1 Crook-legged Orc (BA)
 3 Grim-faced Northman (GW)
-1 Mountain-maggot (BA)
-1 Orc Brawler (LE)
+1 Orc Grunt (NE)
 2 Orc of the Claw (GW)
 
 # Minion Resource (33)
@@ -78,13 +76,15 @@ Deck
 Pool
 ####
 
-# Minion Character (9)
+# Minion Character (10)
 
+1 Crook-legged Orc (BA)
 1 Dragon's Disciple (GW)
 1 Durlog (GW)
 1 Grimson the Fearless (GW)
 1 Luitprand (LE)
-2 Orc Grunt (NE)
+1 Mountain-maggot (BA)
+1 Orc Brawler (LE)
 1 Orc Shaman (NE)
 1 Talmog (GW)
 1 Woffung (DM)
