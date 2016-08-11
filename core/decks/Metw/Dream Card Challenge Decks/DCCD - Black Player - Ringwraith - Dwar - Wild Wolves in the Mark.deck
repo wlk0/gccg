@@ -1,14 +1,14 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Ringwraith - Dwar - Wild Wolves in the Mark
+#      DCCD - Black Player - Ringwraith - Dwar - Wild Wolves in the Mark
 #
 
 ####
 Deck
 ####
 
-# Hazard (34)
+# Hazard (33)
 
 1 An Unexpected Outpost (DM)
 1 Caran-carach (NE)
@@ -22,7 +22,6 @@ Deck
 2 Legacy of Carcharoth (NW)
 1 Orc-guard (TW)
 1 Orc-watch (TW)
-1 Orc-watch (LE)
 1 Peril Returned (TD)
 1 Pierced by Many Wounds (DM)
 1 Slip Treacherously (AS)
@@ -48,13 +47,12 @@ Deck
 2 Orc Grunt (NE)
 1 Orc Shaman (NE)
 1 Uglúk (WH)
-1 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (34)
+# Minion Resource (33)
 
 1 All Thought Bent upon It (LE)
 1 Breeder's Stock (NE)
-2 Burning Rick, Cot, and Tree (LE)
+1 Burning Rick, Cot, and Tree (LE)
 1 Call to Arms (NE)
 1 Calm Song (GW)
 1 Deeper Shadow (LE)
@@ -65,7 +63,6 @@ Deck
 3 Hold Rebuilt and Repaired (AS)
 1 I'll Report You (LE)
 2 Mechanical Bow (WH)
-1 Orcs of Isengard (TI)
 1 Our Own Wolves (AS)
 1 Palantír of Orthanc [M] (LE)
 1 Records Unread (AS)
@@ -78,12 +75,13 @@ Deck
 1 We Must Join with Him (TI)
 2 Weigh All Things to a Nicety (LE)
 1 Wolf-steed (NW)
+1 Yellow-fanged Guard (NE)
 
 ####
 Pool
 ####
 
-# Minion Character (5)
+# Minion Character (4)
 
 1 Bulrakur (NE)
 1 Durba (NW)
@@ -115,7 +113,11 @@ Sideboard
 1 War-wolves (NW)
 1 White Wolves (NW)
 
-# Minion Resource (21)
+# Minion Character (1)
+
+1 Ûvatha the Ringwraith (LE)
+
+# Minion Resource (20)
 
 1 Abduction (NE)
 1 Black Rider (LE)
@@ -126,16 +128,16 @@ Sideboard
 1 Misty Mountain Wargs (LE)
 1 Orc-draughts (LE)
 1 Orc-liquor (LE)
+1 Orcs of Isengard (TI)
 1 Poison (LE)
 1 Slew the Great Warrior (NE)
 2 War-warg (LE)
 1 War-wolf (LE)
 1 White Mountain Wolves (LE)
 1 Wolf-den (NE)
-2 Wolf-steed (NW)
+1 Wolf-steed (NW)
 1 Wolves of Isengard (TI)
 1 Wolves' Feed (KN)
-1 Yellow-fanged Guard (NE)
 
 #####
 Sites

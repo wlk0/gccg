@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      DCCD - Fallen-wizard - Radagast - Search for the Entwives
+#      DCCD - White Player - Fallen-wizard - Radagast - Search for the Entwives
 #
 
 ####
@@ -136,9 +136,8 @@ Sideboard
 1 Dirwood Spear (WR)
 1 Stone Mace (WR)
 
-# Hazard (7)
+# Hazard (6)
 
-1 Drought (SL)
 1 Early Harvest (AS)
 1 He Is Lost to Us (FB)
 1 Orc-watch (TW)
@@ -169,12 +168,11 @@ Sideboard
 
 1 Crept Along Cleverly (WH)
 
-# Stage Resource (5)
+# Stage Resource (4)
 
 1 An Untimely Brood (WH)
 1 Girdle of Radagast (WH)
 1 Guarded Haven (WH)
-1 The Trees Have Ears (FB)
 1 Wizard's Trove (WH)
 
 #####
