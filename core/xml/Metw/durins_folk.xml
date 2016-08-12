@@ -1474,7 +1474,7 @@
 			 <attr key="sp" value="1"/>
 			 <attr key="specific" value="Balin"/>
 		</card>
-		<card name="Son of Nain" graphics="Son of Nain.jpg" text="Unique. Dáin specific. If this is a starting stage card, one of your starting minor items may be Necklace of Silver and Pearls. Place this card on Dáin if he is in play. tap: during your end-of-turn phase to take one Mining Settlement, Kingdom of Old Restored, Strength from the Ered Engrin, or a non-unique Dwarf character from your discard pile to your hand.">
+		<card name="Son of Náin" graphics="Son of Nain.jpg" text="Unique. Dáin specific. If this is a starting stage card, one of your starting minor items may be Necklace of Silver and Pearls. Place this card on Dáin if he is in play. tap: during your end-of-turn phase to take one Mining Settlement, Kingdom of Old Restored, Strength from the Ered Engrin, or a non-unique Dwarf character from your discard pile to your hand.">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="R"/>
 			 <attr key="unique" value="yes"/>
