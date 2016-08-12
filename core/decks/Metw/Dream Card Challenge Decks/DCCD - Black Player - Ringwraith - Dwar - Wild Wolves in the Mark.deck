@@ -8,6 +8,10 @@
 Deck
 ####
 
+# Dual Resource (1)
+
+1 Essay on Ringcraft (FB)
+
 # Hazard (33)
 
 1 An Unexpected Outpost (DM)
@@ -26,7 +30,7 @@ Deck
 1 Pierced by Many Wounds (DM)
 1 Slip Treacherously (AS)
 1 The Pack at the Door (NW)
-1 Twilight (LE)
+1 Twilight (TW)
 1 Wake of War (TW)
 2 Wake of War (LE)
 1 War-wargs (NW)
@@ -41,30 +45,28 @@ Deck
 # Minion Character (11)
 
 4 Dwar the Ringwraith (LE)
-1 Grishnákh (LE)
 1 Lugdush (WH)
 1 Orc Archer (NE)
 2 Orc Grunt (NE)
+1 Orc Tracker (LE)
 1 Orc Shaman (NE)
 1 Uglúk (WH)
 
-# Minion Resource (33)
+# Minion Resource (32)
 
 1 All Thought Bent upon It (LE)
-1 Breeder's Stock (NE)
-1 Burning Rick, Cot, and Tree (LE)
+2 Burning Rick, Cot, and Tree (LE)
 1 Call to Arms (NE)
 1 Calm Song (GW)
 1 Deeper Shadow (LE)
 2 Driven as by a Madness (AS)
-1 Gifts as Given of Old (LE)
 1 Goblins of Goblin-gate (LE)
 1 Guardian Spirit (NW)
 3 Hold Rebuilt and Repaired (AS)
 1 I'll Report You (LE)
 2 Mechanical Bow (WH)
-1 Our Own Wolves (AS)
 1 Palantír of Orthanc [M] (LE)
+1 Precious Burden (NE)
 1 Records Unread (AS)
 1 Sharkû (TI)
 2 Swarm of Bats (LE)
@@ -81,26 +83,23 @@ Deck
 Pool
 ####
 
-# Minion Character (4)
+# Minion Character (5)
 
 1 Bulrakur (NE)
 1 Durba (NW)
 1 Gaurhir (NE)
+1 Orc Brawler (LE)
 1 Virsh (NE)
 
 # Minion Resource (3)
 
 1 Dog-lord of Waw (NE)
-1 Orc-endurance (NE)
 1 Orc-pouch (NE)
+1 Whip (LE)
 
 #########
 Sideboard
 #########
-
-# Dual Resource (1)
-
-1 Essay on Ringcraft (FB)
 
 # Hazard (8)
 
@@ -108,27 +107,28 @@ Sideboard
 1 Earth-tremors (DM)
 1 Lost in Free-domains (TW)
 1 Lure of Expedience (LE)
+1 Muster Disperses (TW)
 1 Nameless Thing (DM)
 1 Uiendarlaif (GP)
-1 War-wolves (NW)
 1 White Wolves (NW)
 
 # Minion Character (1)
 
 1 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (20)
+# Minion Resource (21)
 
 1 Abduction (NE)
 1 Black Rider (LE)
 1 Dwar Unleashed (LE)
 1 Fizzling Torch (NE)
-1 Gé of Ogamur (NE)
+1 Foul-smelling Paste (LE)
+1 Gifts as Given of Old (LE)
 1 Magic Ring of Delusion (LE)
+1 Minor Ring (LE)
 1 Misty Mountain Wargs (LE)
-1 Orc-draughts (LE)
-1 Orc-liquor (LE)
 1 Orcs of Isengard (TI)
+1 Orc-liquor (LE)
 1 Poison (LE)
 1 Slew the Great Warrior (NE)
 2 War-warg (LE)
@@ -143,13 +143,13 @@ Sideboard
 Sites
 #####
 
-# Minion Site (33)
+# Minion Site (32)
 
 1 Amon Lhaw [M] (TI)
 1 Amon Lind [M] (FB)
 1 Bree [M] (LE)
 1 Cameth Brin [M] (LE)
-2 Carn Dûm [M] (LE)
+1 Carn Dûm [M] (LE)
 1 Creb Durga [M] (KN)
 1 Dimrill Dale [M] (LE)
 2 Dol Guldur [M] (LE)
