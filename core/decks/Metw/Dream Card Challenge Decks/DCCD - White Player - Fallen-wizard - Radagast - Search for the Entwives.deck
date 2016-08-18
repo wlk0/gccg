@@ -12,12 +12,10 @@ Deck
 
 1 Wose Elite Hunter (WR)
 
-# Dual Resource (5)
+# Dual Resource (3)
 
 1 Beasts of the Wood (WH)
-1 Great Falcons of Mirkwood (NE)
 2 Old Drûg (WR)
-1 Wose Hunter Tattoo (WR)
 
 # Fallen-wizard Character (4)
 
@@ -26,31 +24,29 @@ Deck
 # Hazard (33)
 
 2 An Unexpected Outpost (DM)
-1 Black Crows (FB)
 1 Bregalad (FB)
 1 Come at Need (AS)
 1 Curse Him, Root and Branch! (FB)
-1 Drought (SL)
 2 Ent in Search of the Entwives (LE)
 1 Fladrif (FB)
+1 Foolish Words (LE)
 2 Gloom (TW)
-1 Great Northern Bear (GW)
-1 Hoarmûrath of Dír (TW)
-1 Huorn (TW)
+2 Huorn (TW)
 1 Huorn (LE)
 1 Lord of the Eagles (DF)
 1 Lure of Nature (TW)
 1 Marsh-drake (TD)
 1 Memories of Axe-wielders (TI)
-1 Nameless Thing (DM)
 1 Nature's Revenge (WH)
 2 Old Man Willow (TW)
+1 Out of Practice (DF)
 2 Peril Returned (TD)
-1 Rain-drake (TD)
 2 Sentinel of the Grove (FB)
+1 Tauremornalómë (TI)
 2 Tree-herder (FB)
 1 Twilight (LE)
-1 Wrath of the Olvar (FB)
+1 Winged Fire-drake (TD)
+2 Wrath of the Olvar (FB)
 
 # Hero Character (4)
 
@@ -59,13 +55,12 @@ Deck
 1 Taurnil (RS)
 1 Wood-elf (FB)
 
-# Hero Resource (24)
+# Hero Resource (26)
 
 2 Almost Felt You Liked the Forest! (TI)
 1 Beechbone (TI)
 1 Bow of the Galadhrim (AS)
-1 Cup of Farewell (DM)
-1 Dark Numbers (DM)
+2 Cup of Farewell (DM)
 2 Ent-draughts (TW)
 1 Ent-moot (TI)
 1 Ents of Fangorn (TW)
@@ -75,20 +70,17 @@ Deck
 1 Horn of Eorl (TI)
 1 Last March of the Ents (TI)
 1 Leaflock (TW)
-1 Tempering Friendship (TW)
+2 Tempering Friendship (TW)
 1 The Wind Is Turning (WR)
 1 Treebeard (TW)
 2 Trickery (TD)
+1 Twice-baked Cakes (TD)
 1 Woses of Old Pûkel-land (TW)
 1 Woses of the Drúadan Forest (TW)
 
 # Minion Character (1)
 
 1 Pôn-ora-Pôn (DM)
-
-# Minion Resource (1)
-
-1 Blackbole (LE)
 
 # Stage Resource (4)
 
@@ -130,22 +122,24 @@ Pool
 Sideboard
 #########
 
-# Dual Resource (3)
+# Dual Resource (4)
 
 1 Blood-stone Amulet (WR)
 1 Dirwood Spear (WR)
 1 Stone Mace (WR)
+1 Wose Hunter Tattoo (WR)
 
-# Hazard (6)
+# Hazard (7)
 
+1 Ash-drake (NE)
 1 Early Harvest (AS)
+1 Great Northern Bear (GW)
 1 He Is Lost to Us (FB)
-1 Orc-watch (TW)
+1 Many Burdens (NE)
+1 Nameless Thing (DM)
 1 Sand-drake (TD)
-1 True Cold-drake (TD)
-1 Wandering Eldar (LE)
 
-# Hero Resource (16)
+# Hero Resource (15)
 
 1 Bounty of the Earth-maidens (GP)
 1 Cast aside Regret and Fear (TI)
@@ -158,7 +152,6 @@ Sideboard
 1 Miraearon (TI)
 1 New Best Friend (RS)
 1 Smoke Rings (DM)
-1 Twice-baked Cakes (TD)
 1 Wandlimb (TI)
 1 Willowshanks (TI)
 1 Wizard's River-horses (TW)
@@ -168,12 +161,11 @@ Sideboard
 
 1 Crept Along Cleverly (WH)
 
-# Stage Resource (4)
+# Stage Resource (3)
 
 1 An Untimely Brood (WH)
 1 Girdle of Radagast (WH)
 1 Guarded Haven (WH)
-1 Wizard's Trove (WH)
 
 #####
 Sites
@@ -184,15 +176,15 @@ Sites
 1 Lórien [F] (FB)
 2 Rhosgobel [F] (WH)
 
-# Hero Site (26)
+# Hero Site (27)
 
 1 Amon Hen [H] (TW)
 1 Bag End [H] (TW)
-1 Bandit Lair [H] (TW)
 1 Buhr Widu [H] (TD)
-1 Cor Angaladh [H] (FB)
+1 Caras Amarth [H] (FB)
 1 Drúadan Forest [H] (TW)
 1 Edoras [H] (TW)
+1 Framsburg [H] (TD)
 1 Geann a-Lisch [H] (AS)
 1 Glittering Caves [H] (TW)
 1 Gyogorasag Sanctuary [H] (GW)
@@ -204,17 +196,12 @@ Sites
 1 Lind-or-Burúm [H] (TI)
 1 Logath Camp [H] (GP)
 1 Moria [H] (TW)
-1 Mountains of Mirkwood [H] (NE)
 1 Rhosgobel [H] (TW)
+1 Rhûbar [H] (FB)
 1 Ruined Signal Tower [H] (TW)
 1 Sarn Goriwing [H] (TW)
-1 Stone-circle [H] (TW)
 1 The Carrock [H] (DF)
+1 The Stones [H] (TW)
 1 Wellinghall [H] (TW)
+1 Woodmen-town [H] (TW)
 1 Wose Passage-hold [H] (TW)
-
-# Minion Site (3)
-
-1 Caras Amarth [M] (FB)
-1 Cor Angaladh [M] (FB)
-1 Mountains of Mirkwood [M] (NE)
