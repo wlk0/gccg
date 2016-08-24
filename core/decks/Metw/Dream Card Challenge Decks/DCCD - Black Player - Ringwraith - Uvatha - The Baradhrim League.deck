@@ -8,9 +8,8 @@
 Deck
 ####
 
-# Dual Resource (2)
+# Dual Resource (1)
 
-1 Iorags (GP)
 1 Sceptre of Spirits (NE)
 
 # Hazard (33)
@@ -40,14 +39,16 @@ Deck
 1 Umagaur the Pale (DM)
 1 Wild Trolls (LE)
 
-# Minion Character (5)
+# Minion Character (6)
 
 1 Djerul (NE)
+1 Ullis (NE)
 4 Ûvatha the Ringwraith (LE)
 
-# Minion Resource (31)
+# Minion Resource (32)
 
 1 Ancient Secrets (BA)
+1 Balchoth (LE)
 3 Black Steed (NE)
 2 Call to Arms (NE)
 1 Crooked Promptings (LE)
@@ -73,11 +74,12 @@ Deck
 Pool
 ####
 
-# Dual Character (1)
+# Dual Character (2)
 
+1 Daurukh (GP)
 1 Hungh (GP)
 
-# Minion Character (9)
+# Minion Character (8)
 
 1 Asternak (LE)
 1 Dâsakûn (DM)
@@ -86,7 +88,6 @@ Pool
 1 Horseman in the Night (LE)
 1 Mîonid (AS)
 1 Nazog (SL)
-1 Nevido Smôd (LE)
 1 Tros Hesnef (LE)
 
 # Minion Resource (3)
@@ -98,6 +99,10 @@ Pool
 #########
 Sideboard
 #########
+
+# Dual Resource (1)
+
+1 Iorags (GP)
 
 # Hazard (11)
 
@@ -113,9 +118,8 @@ Sideboard
 1 The Burden of Time (TW)
 1 Too Much to Ask (WR)
 
-# Minion Resource (19)
+# Minion Resource (18)
 
-1 Balchoth (LE)
 1 Bat-winged Helmet (NE)
 1 Binding-ring (LE)
 1 Corsairs of Rhûn (AS)
