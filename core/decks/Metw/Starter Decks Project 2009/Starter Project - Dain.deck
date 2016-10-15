@@ -1,0 +1,124 @@
+#
+# GCCG v0.9.6.3 Middle-earth deck
+#
+#      Starter Project - Dain
+#
+
+####
+Deck
+####
+
+# Dual Resource (5)
+
+1 Children of Aulë (DF)
+1 Dwarven Art of War (DF)
+1 Dwarven Axe (DF)
+1 Fungi (DF)
+1 Old Grudge (DF)
+
+# Dwarf-lord Character (2)
+
+2 Dáin (DF)
+
+# Hazard (20)
+
+1 Cave-drake (TW)
+1 Crebain (TW)
+2 Doors of Night (TW)
+1 Dragon's Curse (TD)
+1 Dwarven Warparty (DF)
+1 Fell Winter (TW)
+1 Giant Spiders (TW)
+1 King-spider (DF)
+1 Land-drake (TD)
+2 Lesser Spiders (TD)
+1 Light-drake (TD)
+1 Lure of the Senses (TW)
+1 Marsh-drake (TD)
+1 Watcher in the Water (LE)
+1 Winged Fire-drake (TD)
+3 Worm's Stench (TD)
+
+# Hero Character (5)
+
+1 Bain (GW)
+1 Brand (TD)
+1 Floi (DF)
+1 Gimli, Son of Gloin (DF)
+1 Náli (DF)
+
+# Hero Resource (15)
+
+1 A More or Less Decent Giant (DF)
+1 Ancient Stair (DM)
+1 Durin's Axe (TW)
+1 Dwarven Light-stone (DM)
+1 Forewarned Is Forearmed (DM)
+1 I Know Much about You (DM)
+2 Into Dark Tunnels (DM)
+1 Iron Hill Dwarves (TW)
+1 Men of Dale (TD)
+1 Noldo-lantern (DM)
+1 Secret Ways (DM)
+1 The Dwarves Are upon You! (DM)
+1 To the Uttermost Foundations (DM)
+1 Vein of Arda (DM)
+
+####
+Pool
+####
+
+# Dual Resource (1)
+
+1 Miner's Pick (DF)
+
+# Grey Agent Character (1)
+
+1 Kori (DF)
+
+# Hero Character (5)
+
+1 Borin (DF)
+1 Dwarven Miner (DF)
+1 Dworin (DF)
+1 Frár (DF)
+1 Lóni (DF)
+
+# Hero Resource (2)
+
+1 Cram (TD)
+1 Draw Swords Together (TI)
+
+#########
+Sideboard
+#########
+
+#####
+Sites
+#####
+
+# Dual Site (4)
+
+1 Mines of Falek-dim (DF)
+1 The Cobalt-deeps (NW)
+1 The Rusted-deeps [D] (DF)
+1 The Wind-deeps [D] (DF)
+
+# Hero Site (16)
+
+1 Cirith Helkaloke [H] (GW)
+1 Dale [H] (TD)
+1 Gaurblog Lug [H] (DF)
+1 Goblin-gate [H] (TW)
+1 Iron Hill Dwarf-hold [H] (TW)
+1 Kala Dulakurth [H] (NW)
+1 Long Peak [H] (GW)
+1 Lórien [H] (TW)
+1 Mount Gundabad [H] (TW)
+1 Nurunkhizdín [H] (DF)
+1 Ovir Hollow [H] (TD)
+1 Rivendell [H] (TW)
+1 The Under-gates [H] (DM)
+1 The Under-grottos [H] (DM)
+1 The Under-leas [H] (DM)
+1 The Wind Throne [H] (TW)
