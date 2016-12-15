@@ -35,6 +35,7 @@
   <cardset source="dominion_of_the_seven.xml"/>
   <cardset source="court_of_ardor.xml"/>
   <cardset source="CoolPlaySet.xml"/>
+  <cardset source="necromancer_missions.xml"/>
       
   <image file="b.png" tag="{b}"/>
   <image file="c.png" tag="{c}"/>
