@@ -2,7 +2,7 @@
 <!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
 <ccg-setinfo name="Firstborn Promo" dir="firstborn_promo" abbrev="FP" game="Middle-earth">
 	<cards>
-		<card name="Camthalion" graphics="Camthalion.jpg" text="Unique. Elf. 1 strike. +2 prowess against Elves.May be played keyed to any Dark-domain [d] or Dark-hold [D], if there is a Nazgul permanent-event or Ringwraith in play, or to any Shadow-hold [S] following a Nazgul attack. Cannot be targetted by spells or magic. As a short-event, playable on a hero character moving through a Dark-domain or to/from a Dark-hold. Character loses all his skills for the rest of the turn; discard any Knowledge or Information events he controls.">
+		<card name="Camthalion" graphics="Camthalion.jpg" text="Unique. Elf. 1 strike. Detainment against minion companies. +2 prowess against Elves. May also be played at Shadow-holds [S] if a Nazgûl or Ringwraith is in play. May also be played against a company that has faced a non-detainment Nazgûl attack this turn. As a short-event, playable on a hero character moving through a Dark-domain or to a Dark-hold. Target character loses all skills for the rest of the turn and must discard any Knowledge or Information events he controls. Camthalion's attack or effects are not affected by spells or magic.">
 			 <attr key="type" value="Hazard"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
@@ -12,7 +12,7 @@
 			 <attr key="strikes" value="1"/>
 			 <attr key="subclass" value="Elves"/>
 		</card>
-		<card name="Ellindiel" graphics="Ellindiel.jpg" text="Unique. Noldo. Grey Agent. +2 EI against characters with a home site in Eriador. Discard if in company with an Elf or Dúnadan with a higher mind.Any Wisp of Pale Sheen may be played keyed to Ellindiel's current non-Free-hold [F] site.">
+		<card name="Ellindiel" graphics="Ellindiel.jpg" text="Unique. Noldo. Grey Agent. +2 EI against characters with a home site in Eriador. May not be in a company with an Elf or Dúnadan with a higher mind. Wisp of Pale Sheen may always be played keyed to Ellindiel's current non-Haven site. Agent only: Elven Wards affects any company moving through the region containing her current site (as if through Hollin).">
 			 <attr key="type" value="Grey Agent Character"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
@@ -27,14 +27,14 @@
 			 <attr key="keyword" value="Grey Agent"/>
 			 <attr key="keyword" value="Noldo"/>
 		</card>
-		<card name="Elves of Edhellond" graphics="Elves of Edhellond.jpg" text="Unique. Playable at Edhellond if the influence check is greater than 10.Standard Modifications: Elves (+2), Dúnedain (+1), character with home site Edhellond (+2). This faction is worth 2 mp if no manifestation of Eärcaraxë is in active play. If Círdor is at Edhellond, you may play Sail to the West as if at Grey Havens.">
+		<card name="Elves of Edhellond" graphics="Elves of Edhellond.jpg" text="Unique. Playable at Edhellond if the influence check is greater than 10. Standard Modifications: Dúnedain (+2), Elves (+2), character with home site Edhellond (+2). If Círdor is at Edhellond you may play Sail to the West on characters there as if they were at Grey Havens. This faction is worth 2 mp if no manifestation of Eärcaraxë is in active play.">
 			 <attr key="type" value="Hero Resource"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
 			 <attr key="class" value="Elf Faction"/>
 			 <attr key="mp" value="1(2)"/>
 		</card>
-		<card name="Kheleglin" graphics="Kheleglin.jpg" text="Unique. Elf. Noldo. Playable at any Dark-hold [D], if you discard (for no effect) a Stolen Knowledge card from the company. Kheleglin comes into play wounded. tap: if at an Elf-hold and discard a (stored) Reforging from his company to search your discard pile or sideboard.for a Noldo Lantern, which may be placed with a character in the company.">
+		<card name="Kheleglin" graphics="Kheleglin.jpg" text="Unique. Elf. Noldo. Playable at any Dark-hold [D], if you discard (for no effect) a Stolen Knowledge card from the company. After Kheleglin comes into play, wound him. tap: while at a Haven [H] and discard a stored Reforging (or from the company) to search your discard pile or sideboard for a Noldo Lantern, which may be placed with a character in the company (you need not tap the character nor the site).">
 			 <attr key="type" value="Stage Resource"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
@@ -44,7 +44,7 @@
 			 <attr key="mp" value="2"/>
 			 <attr key="keyword" value="Noldo"/>
 		</card>
-		<card name="Maranya" graphics="Maranya.jpg" text="Unique. Mind Ring. Playable on Celedhring at Barad-dûr(or in your starting company in lieu of a minor item). You may play Mithril and Vein of Arda as minion resources. Celedhring only: during site phase at a Shadow-hold [S] or Dark-hold [D] you may:tap: store and/or play Dark Forges as if at a Darkhaven [K].tap: place a Vein of Arda or Mithril in the company with an item in the company: it becomes a jewel and all of its bonusses are increased by 1.Celedhring makes a corruption check at -2.">
+		<card name="Maranya" graphics="Maranya.jpg" text="Unique. Mind Ring. Playable at Barad-dûr or Dol Guldur by an Elf with a mind of 7 or more. May also be played with Celedhring in a starting company in lieu of a starting minor item. +1 body. -1 to mind (to a minimum of 1). You may play and use Mithril and Vein of Arda as minion resources. Sage only: tap: if in a minion company at a Shadow-hold [S] or Dark-hold [D] to store or discard Dark Forges as if at a Darkhaven. Celedhring only: tap: if at a Haven [H,K] to place a stored Vein of Arda with an item in the company. If Vein of Arda is with an item, it becomes a jewel and any bonuses it gives are increased by 1. Bearer makes a corruption check modified by -2 when you tap this item.">
 			 <attr key="type" value="Minion Resource"/>
 			 <attr key="rarity" value="P"/>
 			 <attr key="unique" value="yes"/>
