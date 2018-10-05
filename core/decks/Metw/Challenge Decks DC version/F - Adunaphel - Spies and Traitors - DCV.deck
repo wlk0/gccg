@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      F - Adunaphel - Spies and Traitors - DCV
+#      F Adunaphel - Spies and Traitors - DCV1
 #
 
 ####
@@ -11,7 +11,7 @@ Deck
 # Dual Resource (3)
 
 2 Mighty Steed (TI)
-1 Rivermen of the Anduin Vales (GW)
+1 Rivermen of the Anduin Vales (NE)
 
 # Hazard (33)
 
@@ -105,11 +105,11 @@ Sideboard
 
 1 Dwarven Ring of Thrár's Tribe [M] (AS)
 1 Dwarven Ring of Thélor's Tribe [M] (AS)
+1 Mighty in Their Day (NE)
 1 Minor Ring (LE)
 1 Orc Quarrels (LE)
 2 Piercing All Shadows (WH)
 1 Poisonous Despair (LE)
-1 Shadows of the Power (NE)
 1 Stinker (LE)
 1 Sudden Call (LE)
 1 Voices of Malice (LE)
@@ -134,7 +134,7 @@ Sites
 1 Giant's Isle [M] (RS)
 1 Goblin-gate [M] (LE)
 1 Lond Daer [M] (KN)
-1 Mathlaburg [M] (GW)
+1 Mathlaburg [M] (NE)
 1 Moria [M] (LE)
 1 The Worthy Hills [M] (LE)
 1 Thranduil's Halls [M] (LE)

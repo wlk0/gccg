@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      L - Uvatha - Wolves - DCV
+#      L - Uvatha - Wolves - DCV1
 #
 
 ####
@@ -25,10 +25,10 @@ Deck
 1 Exhalation of Decay (DM)
 2 Faces of the Dead (DM)
 3 Ghouls (LE)
-1 Grima Wormtongue (TI)
 3 Left Behind (TD)
 2 Lure of Expedience (LE)
 2 Lure of the Senses (LE)
+1 Men of the Wood (NE)
 1 Muster Disperses (LE)
 1 Núrnen (NE)
 2 Seized by Terror (DM)
@@ -104,8 +104,9 @@ Sideboard
 1 Foolish Words (LE)
 1 Itangast Ahunt (TD)
 
-# Minion Resource (10)
+# Minion Resource (12)
 
+1 A Worthy Substitute (NE)
 2 Black Rider (LE)
 1 Goblins of Goblin-gate (LE)
 1 Orc Quarrels (LE)
@@ -113,6 +114,7 @@ Sideboard
 1 Piercing All Shadows (WH)
 1 Smaug Roused (LE)
 1 Sudden Call (LE)
+1 The Wargs Wield the Goblins (NW)
 1 Voices of Malice (LE)
 1 Words of Menace and Deceit (LE)
 

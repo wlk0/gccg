@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      E - Gandalf - Return of the King - DCV
+#      E - Gandalf - Return of the King - DCV1
 #
 
 ####
@@ -10,7 +10,7 @@ Deck
 
 # Dual Resource (1)
 
-1 Rivermen of the Anduin Vales (GW)
+1 Rivermen of the Anduin Vales (NE)
 
 # Hazard (34)
 
@@ -135,7 +135,7 @@ Sites
 1 Isengard [H] (TW)
 1 Linhir [H] (WR)
 1 Lórien [H] (TW)
-1 Mathlaburg [H] (GW)
+1 Mathlaburg [H] (NE)
 1 Minas Tirith [H] (TW)
 1 Moria [H] (TW)
 1 Rivendell [H] (TW)

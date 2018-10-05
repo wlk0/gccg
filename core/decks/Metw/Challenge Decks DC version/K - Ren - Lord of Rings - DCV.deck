@@ -1,7 +1,7 @@
 #
 # GCCG v0.9.6.3 Middle-earth deck
 #
-#      K - Ren - Lord of Rings - DCV
+#      K - Ren - Lord of Rings - DCV1
 #
 
 ####
@@ -54,7 +54,7 @@ Deck
 2 Dark Tryst (AS)
 1 Gifts as Given of Old (LE)
 2 Gold Ring that Sauron Fancies (LE)
-1 Guldurim (NE)
+1 Minor Ring (LE)
 3 Not Slay Needlessly (LE)
 2 Orc Quarrels (LE)
 1 Palantír of Orthanc [M] (LE)
@@ -102,8 +102,9 @@ Sideboard
 # Minion Resource (11)
 
 1 Dwarven Ring of Thélor's Tribe [M] (AS)
+1 Focus Palantír (LE)
 1 Magic Ring of Fury (LE)
-2 Minor Ring (LE)
+1 Minor Ring (LE)
 1 Piercing All Shadows (WH)
 1 Rumor of the One (LE)
 1 Southrons [M] (LE)
@@ -129,7 +130,7 @@ Sites
 1 Gladden Fields [M] (LE)
 1 Isengard [M] (LE)
 1 Kref Masar [M] (SL)
-1 Mathlaburg [M] (GW)
+1 Mathlaburg [M] (NE)
 1 Minas Morgul [M] (LE)
 1 Moria [M] (LE)
 1 Mount Arysis [M] (SL)
